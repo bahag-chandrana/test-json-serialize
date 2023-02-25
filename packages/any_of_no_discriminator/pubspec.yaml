@@ -8,11 +8,11 @@ environment:
 
 dependencies:
   dio: '^5.0.0'
-  freezed_annotation: '^2.0.3'
-  json_annotation: '^4.4.0'
+  freezed_annotation: '^2.2.0'
+  json_annotation: '^4.8.0'
 
 dev_dependencies:
-  freezed: '^2.0.3'
-  json_serializable: '^6.1.4'
+  freezed: '^2.3.2'
+  json_serializable: '^6.6.1'
   build_runner: any
   test: ^1.16.0
