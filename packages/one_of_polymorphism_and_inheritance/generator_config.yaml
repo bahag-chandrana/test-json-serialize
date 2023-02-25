@@ -1,0 +1,5 @@
+pubName: one_of_polymorphism_and_inheritance
+pubDescription: An
+pubLibrary: "OneOfPolymorphismAndInheritanceApiClient"
+additionalProperties:
+  serializationLibrary: freezed

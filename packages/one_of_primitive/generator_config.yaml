@@ -1,0 +1,5 @@
+pubName: one_of_primitive
+pubDescription: An
+pubLibrary: "OneOfPrimitiveApiClient"
+additionalProperties:
+  serializationLibrary: freezed

@@ -1,0 +1,5 @@
+pubName: any_of_discriminator
+pubDescription: An
+pubLibrary: "AnyOfDiscriminatorApiClient"
+additionalProperties:
+  serializationLibrary: freezed

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/packages/any_of_discriminator/melos_any_of_discriminator.iml" filepath="$PROJECT_DIR$/packages/any_of_discriminator/melos_any_of_discriminator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/any_of_no_discriminator/melos_any_of_no_discriminator.iml" filepath="$PROJECT_DIR$/packages/any_of_no_discriminator/melos_any_of_no_discriminator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/one_of_array_map_import/melos_one_of_array_map_import.iml" filepath="$PROJECT_DIR$/packages/one_of_array_map_import/melos_one_of_array_map_import.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/one_of_discriminator/melos_one_of_discriminator.iml" filepath="$PROJECT_DIR$/packages/one_of_discriminator/melos_one_of_discriminator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/one_of_no_discriminator/melos_one_of_no_discriminator.iml" filepath="$PROJECT_DIR$/packages/one_of_no_discriminator/melos_one_of_no_discriminator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/one_of_non_primitive/melos_one_of_non_primitive.iml" filepath="$PROJECT_DIR$/packages/one_of_non_primitive/melos_one_of_non_primitive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/one_of_polymorphism_and_inheritance/melos_one_of_polymorphism_and_inheritance.iml" filepath="$PROJECT_DIR$/packages/one_of_polymorphism_and_inheritance/melos_one_of_polymorphism_and_inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/one_of_primitive/melos_one_of_primitive.iml" filepath="$PROJECT_DIR$/packages/one_of_primitive/melos_one_of_primitive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_dart-dio-gen-test.iml" filepath="$PROJECT_DIR$/melos_dart-dio-gen-test.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,5 @@
+pubName: one_of_array_map_import
+pubDescription: An
+pubLibrary: "OneOfArrayMapImportApiClient"
+additionalProperties:
+  serializationLibrary: freezed

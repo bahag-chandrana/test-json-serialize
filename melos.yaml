@@ -1,0 +1,121 @@
+name: dart-dio-gen-test
+
+packages:
+  - packages/**
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+
+scripts:
+  generate_all:
+    run: |
+      melos run any_of_discriminator &&
+      melos run any_of_no_discriminator &&
+      melos run one_of_no_discriminator &&
+      melos run one_of_discriminator &&
+      melos run one_of_array_map_import &&
+      melos run one_of_non_primitive &&
+      melos run one_of_polymorphism_and_inheritance &&
+      melos run one_of_primitive
+
+  any_of_no_discriminator:
+    run: melos run generate_api
+    env:
+      SPEC: any_of_no_discriminator
+    select-package:
+      scope:
+        - "*any_of_no_discriminator*"
+  any_of_discriminator:
+    run: melos run generate_api
+    env:
+      SPEC: any_of_discriminator
+    select-package:
+      scope:
+        - "*any_of_discriminator*"
+  one_of_no_discriminator:
+    run: melos run generate_api
+    env:
+      SPEC: one_of_no_discriminator
+    select-package:
+      scope:
+        - "*one_of_no_discriminator*"
+  one_of_array_map_import:
+    run: melos run generate_api
+    env:
+      SPEC: one_of_array_map_import
+    select-package:
+      scope:
+        - "*one_of_array_map_import*"
+  debug_one_of_array_map_import:
+    run: melos run debug_generate_api
+    env:
+      SPEC: one_of_array_map_import
+    select-package:
+      scope:
+        - "*one_of_array_map_import*"
+  one_of_discriminator:
+    run: melos run generate_api
+    env:
+      SPEC: one_of_discriminator
+    select-package:
+      scope:
+        - "*one_of_discriminator*"
+  one_of_non_primitive:
+    run: melos run generate_api
+    env:
+      SPEC: one_of_non_primitive
+    select-package:
+      scope:
+        - "*one_of_non_primitive*"
+  one_of_polymorphism_and_inheritance:
+    run: melos run generate_api
+    env:
+      SPEC: one_of_polymorphism_and_inheritance
+    select-package:
+      scope:
+        - "*one_of_polymorphism_and_inheritance*"
+  one_of_primitive:
+    run: melos run generate_api
+    env:
+      SPEC: one_of_primitive
+    select-package:
+      scope:
+        - "*one_of_primitive*"
+  one_of_pandi_bv:
+    run: melos run generate_api
+    env:
+      SPEC: one_of_polymorphism_and_inheritance
+    select-package:
+      scope:
+        - "*one_of_pandi_bv*"
+  deb:freezed_gcp:
+    run: melos run debug_generate_api
+    env:
+      SPEC: gcp_analytics_api2
+    select-package:
+      scope:
+        - "*freezed_gcp_anlaytics*"
+  generate_api:
+    run: |
+      melos exec -- java -jar ../openapi-generator-cli.jar generate \
+      -i ../specs/$SPEC.yaml \
+      -g dart-dio \
+      -c generator_config.yaml &&
+      melos exec -- rm -rf test &&
+      melos run build_runner_delete
+  debug_generate_api:
+    run: |
+      melos exec -- java \
+      -jar "-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:6005" ../openapi-generator-cli.jar generate \
+      -i ../specs/$SPEC.yaml \
+      -g dart-dio \
+      -c generator_config.yaml &&
+      melos exec -- rm -rf test &&
+      melos run build_runner_delete
+  build_runner_delete:
+    run: |
+      melos exec -- flutter pub get &&
+      melos exec -- flutter pub run build_runner build --delete-conflicting-outputs &&
+      melos exec -- dart fix --apply
+      melos exec -- dart format .
