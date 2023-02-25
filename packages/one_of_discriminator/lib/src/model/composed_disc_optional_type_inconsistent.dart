@@ -38,7 +38,7 @@ class ComposedDiscOptionalTypeInconsistent
 
   factory ComposedDiscOptionalTypeInconsistent.fromJson(
       Map<String, dynamic> json) {
-    final fromJsonMethods = <FromJsonMethodType<Object>>[
+    final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       DiscOptionalTypeCorrect.fromJson,
       DiscOptionalTypeIncorrect.fromJson,
     ];
@@ -46,7 +46,7 @@ class ComposedDiscOptionalTypeInconsistent
     ComposedDiscOptionalTypeInconsistent? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
-        final parsedModel = fromJsonMethod.call(json);
+        final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
         switch (deserializedModel.runtimeType) {
           case DiscOptionalTypeCorrect:

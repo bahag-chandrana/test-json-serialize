@@ -32,14 +32,14 @@ class ComposedDiscOptionalTypeCorrect with _$ComposedDiscOptionalTypeCorrect {
   }) = ComposedDiscOptionalTypeCorrectUnknown;
 
   factory ComposedDiscOptionalTypeCorrect.fromJson(Map<String, dynamic> json) {
-    final fromJsonMethods = <FromJsonMethodType<Object>>[
+    final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       DiscOptionalTypeCorrect.fromJson,
     ];
     final deserializedModels = <ComposedDiscOptionalTypeCorrect>[];
     ComposedDiscOptionalTypeCorrect? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
-        final parsedModel = fromJsonMethod.call(json);
+        final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
         switch (deserializedModel.runtimeType) {
           case DiscOptionalTypeCorrect:

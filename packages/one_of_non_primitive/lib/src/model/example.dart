@@ -37,7 +37,7 @@ class Example with _$Example {
   }) = ExampleUnknown;
 
   factory Example.fromJson(Map<String, dynamic> json) {
-    final fromJsonMethods = <FromJsonMethodType<Object>>[
+    final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       DateTimeInUnion.fromJson,
       StringInUnion.fromJson,
       IntInUnion.fromJson,
@@ -47,7 +47,7 @@ class Example with _$Example {
     Example? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
-        final parsedModel = fromJsonMethod.call(json);
+        final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
         switch (deserializedModel.runtimeType) {
           case DateTimeInUnion:

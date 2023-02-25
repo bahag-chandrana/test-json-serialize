@@ -38,7 +38,7 @@ class FooRefOrValue with _$FooRefOrValue {
   }) = FooRefOrValueUnknown;
 
   factory FooRefOrValue.fromJson(Map<String, dynamic> json) {
-    final fromJsonMethods = <FromJsonMethodType<Object>>[
+    final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       Foo.fromJson,
       FooRef.fromJson,
     ];
@@ -46,7 +46,7 @@ class FooRefOrValue with _$FooRefOrValue {
     FooRefOrValue? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
-        final parsedModel = fromJsonMethod.call(json);
+        final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
         switch (deserializedModel.runtimeType) {
           case Foo:

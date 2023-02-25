@@ -35,7 +35,7 @@ class Fruit with _$Fruit {
   }) = FruitUnknown;
 
   factory Fruit.fromJson(Map<String, dynamic> json) {
-    final fromJsonMethods = <FromJsonMethodType<Object>>[
+    final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       <Grape>[].fromJson,
       <String, Apple>{}.fromJson,
     ];
@@ -43,7 +43,7 @@ class Fruit with _$Fruit {
     Fruit? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
-        final parsedModel = fromJsonMethod.call(json);
+        final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
         switch (deserializedModel.runtimeType) {
           case List<Grape>:
@@ -93,21 +93,25 @@ class Fruit with _$Fruit {
 }
 
 extension on List<Grape> {
-  List<Grape> fromJson(Map<String, dynamic> json) {
-    return [];
+  dynamic fromJson(Map<String, dynamic> json) {
+    return json["listGrapeValue"];
   }
 
   Map<String, dynamic> toJson() {
-    return <String, dynamic>{};
+    return <String, dynamic>{
+      "listGrapeValue": this,
+    };
   }
 }
 
 extension on Map<String, Apple> {
-  Map<String, Apple> fromJson(Map<String, dynamic> json) {
-    return {};
+  dynamic fromJson(Map<String, dynamic> json) {
+    return json["mapStringAppleValue"];
   }
 
   Map<String, dynamic> toJson() {
-    return <String, dynamic>{};
+    return <String, dynamic>{
+      "mapStringAppleValue": this,
+    };
   }
 }

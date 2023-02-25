@@ -37,7 +37,7 @@ class FruitReqDisc with _$FruitReqDisc {
   }) = FruitReqDiscUnknown;
 
   factory FruitReqDisc.fromJson(Map<String, dynamic> json) {
-    final fromJsonMethods = <FromJsonMethodType<Object>>[
+    final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       AppleReqDisc.fromJson,
       BananaReqDisc.fromJson,
     ];
@@ -45,7 +45,7 @@ class FruitReqDisc with _$FruitReqDisc {
     FruitReqDisc? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
-        final parsedModel = fromJsonMethod.call(json);
+        final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
         switch (deserializedModel.runtimeType) {
           case AppleReqDisc:
