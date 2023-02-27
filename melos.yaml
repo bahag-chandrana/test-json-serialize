@@ -10,6 +10,7 @@ command:
 scripts:
   generate_all:
     run: |
+      melos run pet_store &&
       melos run any_of_discriminator &&
       melos run any_of_no_discriminator &&
       melos run one_of_no_discriminator &&
@@ -19,6 +20,20 @@ scripts:
       melos run one_of_polymorphism_and_inheritance &&
       melos run one_of_primitive
 
+  pet_store:
+    run: melos run generate_api
+    env:
+      SPEC: pet_store
+    select-package:
+      scope:
+        - "*pet_store*"
+  pet_store_bv:
+    run: melos run generate_api
+    env:
+      SPEC: pet_store
+    select-package:
+      scope:
+        - "*pet_store_bv*"
   any_of_no_discriminator:
     run: melos run generate_api
     env:
@@ -42,13 +57,6 @@ scripts:
         - "*one_of_no_discriminator*"
   one_of_array_map_import:
     run: melos run generate_api
-    env:
-      SPEC: one_of_array_map_import
-    select-package:
-      scope:
-        - "*one_of_array_map_import*"
-  debug_one_of_array_map_import:
-    run: melos run debug_generate_api
     env:
       SPEC: one_of_array_map_import
     select-package:
@@ -89,13 +97,7 @@ scripts:
     select-package:
       scope:
         - "*one_of_pandi_bv*"
-  deb:freezed_gcp:
-    run: melos run debug_generate_api
-    env:
-      SPEC: gcp_analytics_api2
-    select-package:
-      scope:
-        - "*freezed_gcp_anlaytics*"
+
   generate_api:
     run: |
       melos exec -- java -jar ../openapi-generator-cli.jar generate \

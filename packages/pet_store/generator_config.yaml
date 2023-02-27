@@ -1,0 +1,5 @@
+pubName: pet_store
+pubDescription: Pet store sample 3.0
+pubLibrary: "PetStoreApiClient"
+additionalProperties:
+  serializationLibrary: freezed
