@@ -1,0 +1,6 @@
+pubName: pet_store_union_response
+pubDescription: pet_store_union_response
+pubLibrary: "PetStoreUnionResponseApiClient"
+additionalProperties:
+  serializationLibrary: freezed
+  freezedUnionResponse: true

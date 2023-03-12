@@ -204,7 +204,7 @@ class PetApi {
     );
 
     final _queryParameters = <String, dynamic>{
-      r'status': ListParam(status, ListFormat.csv),
+      r'status': status,
     };
 
     final _response = await _dio.request<Object>(

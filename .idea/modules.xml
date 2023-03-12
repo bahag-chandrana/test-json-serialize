@@ -10,6 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/packages/one_of_non_primitive/melos_one_of_non_primitive.iml" filepath="$PROJECT_DIR$/packages/one_of_non_primitive/melos_one_of_non_primitive.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/one_of_polymorphism_and_inheritance/melos_one_of_polymorphism_and_inheritance.iml" filepath="$PROJECT_DIR$/packages/one_of_polymorphism_and_inheritance/melos_one_of_polymorphism_and_inheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/one_of_primitive/melos_one_of_primitive.iml" filepath="$PROJECT_DIR$/packages/one_of_primitive/melos_one_of_primitive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/pet_store/melos_pet_store.iml" filepath="$PROJECT_DIR$/packages/pet_store/melos_pet_store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/pet_store_bv/melos_pet_store_bv.iml" filepath="$PROJECT_DIR$/packages/pet_store_bv/melos_pet_store_bv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/pet_store_union_response/melos_pet_store_union_response.iml" filepath="$PROJECT_DIR$/packages/pet_store_union_response/melos_pet_store_union_response.iml" />
       <module fileurl="file://$PROJECT_DIR$/melos_dart-dio-gen-test.iml" filepath="$PROJECT_DIR$/melos_dart-dio-gen-test.iml" />
     </modules>
   </component>

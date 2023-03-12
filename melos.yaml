@@ -27,13 +27,13 @@ scripts:
     select-package:
       scope:
         - "*pet_store*"
-  pet_store_bv:
+  pet_store_union_response:
     run: melos run generate_api
     env:
       SPEC: pet_store
     select-package:
       scope:
-        - "*pet_store_bv*"
+        - "*pet_store_union_response*"
   any_of_no_discriminator:
     run: melos run generate_api
     env:
