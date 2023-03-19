@@ -227,28 +227,16 @@ Map<String, dynamic> _$$_FruitInlineDiscOneOf1ToJson(
       'fruitType': instance.fruitType,
     };
 
-_$_FruitInlineInlineDiscOneOf _$$_FruitInlineInlineDiscOneOfFromJson(
+_$_FruitInlineInlineDiscOneOfOneOf _$$_FruitInlineInlineDiscOneOfOneOfFromJson(
         Map<String, dynamic> json) =>
-    _$_FruitInlineInlineDiscOneOf(
-      seeds: json['seeds'] as int,
+    _$_FruitInlineInlineDiscOneOfOneOf(
+      fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_FruitInlineInlineDiscOneOfToJson(
-        _$_FruitInlineInlineDiscOneOf instance) =>
+Map<String, dynamic> _$$_FruitInlineInlineDiscOneOfOneOfToJson(
+        _$_FruitInlineInlineDiscOneOfOneOf instance) =>
     <String, dynamic>{
-      'seeds': instance.seeds,
-    };
-
-_$_FruitInlineInlineDiscOneOf1 _$$_FruitInlineInlineDiscOneOf1FromJson(
-        Map<String, dynamic> json) =>
-    _$_FruitInlineInlineDiscOneOf1(
-      length: json['length'] as int,
-    );
-
-Map<String, dynamic> _$$_FruitInlineInlineDiscOneOf1ToJson(
-        _$_FruitInlineInlineDiscOneOf1 instance) =>
-    <String, dynamic>{
-      'length': instance.length,
+      'fruitType': instance.fruitType,
     };
 
 _$_FruitType _$$_FruitTypeFromJson(Map<String, dynamic> json) => _$_FruitType(

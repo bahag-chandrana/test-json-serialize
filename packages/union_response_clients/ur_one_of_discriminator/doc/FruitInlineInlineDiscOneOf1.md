@@ -9,6 +9,7 @@ import 'package:ur_one_of_discriminator/api.dart';
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **length** | **int** |  | 
+**fruitType** | **String** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

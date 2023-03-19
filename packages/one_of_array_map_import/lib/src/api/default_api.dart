@@ -4,7 +4,6 @@
 
 import 'dart:async';
 
-import 'dart:convert';
 import '../model/models.dart';
 import 'package:dio/dio.dart';
 
@@ -121,7 +120,7 @@ class DefaultApi {
     dynamic _bodyData;
 
     try {
-      _bodyData = jsonEncode(body);
+      _bodyData = body;
     } catch (error, stackTrace) {
       throw DioError(
         requestOptions: _options.compose(

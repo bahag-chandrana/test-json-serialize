@@ -8,8 +8,7 @@ part of 'models.dart';
 /// FruitInlineInlineDisc
 ///
 /// Properties:
-/// * [seeds]
-/// * [length]
+/// * [fruitType]
 
 @freezed
 class FruitInlineInlineDisc with _$FruitInlineInlineDisc {

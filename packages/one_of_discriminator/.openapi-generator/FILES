@@ -34,6 +34,7 @@ doc/FruitInlineDiscOneOf1.md
 doc/FruitInlineInlineDisc.md
 doc/FruitInlineInlineDiscOneOf.md
 doc/FruitInlineInlineDiscOneOf1.md
+doc/FruitInlineInlineDiscOneOfOneOf.md
 doc/FruitOneOfDisc.md
 doc/FruitReqDisc.md
 doc/FruitType.md
@@ -77,6 +78,7 @@ lib/src/model/fruit_inline_disc_one_of1.dart
 lib/src/model/fruit_inline_inline_disc.dart
 lib/src/model/fruit_inline_inline_disc_one_of.dart
 lib/src/model/fruit_inline_inline_disc_one_of1.dart
+lib/src/model/fruit_inline_inline_disc_one_of_one_of.dart
 lib/src/model/fruit_one_of_disc.dart
 lib/src/model/fruit_req_disc.dart
 lib/src/model/fruit_type.dart
@@ -114,6 +116,7 @@ test/fruit_inline_disc_one_of1_test.dart
 test/fruit_inline_disc_one_of_test.dart
 test/fruit_inline_disc_test.dart
 test/fruit_inline_inline_disc_one_of1_test.dart
+test/fruit_inline_inline_disc_one_of_one_of_test.dart
 test/fruit_inline_inline_disc_one_of_test.dart
 test/fruit_inline_inline_disc_test.dart
 test/fruit_one_of_disc_test.dart

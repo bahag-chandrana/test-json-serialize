@@ -12728,20 +12728,79 @@ abstract class FruitInlineInlineDiscUnknown extends FruitInlineInlineDisc {
       get copyWith => throw _privateConstructorUsedError;
 }
 
-FruitInlineInlineDiscAnyOf _$FruitInlineInlineDiscAnyOfFromJson(
-    Map<String, dynamic> json) {
-  return _FruitInlineInlineDiscAnyOf.fromJson(json);
-}
-
 /// @nodoc
 mixin _$FruitInlineInlineDiscAnyOf {
-  @JsonKey(name: r'seeds')
-  int get seeds => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $FruitInlineInlineDiscAnyOfCopyWith<FruitInlineInlineDiscAnyOf>
-      get copyWith => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf> deserializedModels)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(FruitInlineInlineDiscAnyOfUnknown value) unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -12750,8 +12809,6 @@ abstract class $FruitInlineInlineDiscAnyOfCopyWith<$Res> {
           $Res Function(FruitInlineInlineDiscAnyOf) then) =
       _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
           FruitInlineInlineDiscAnyOf>;
-  @useResult
-  $Res call({@JsonKey(name: r'seeds') int seeds});
 }
 
 /// @nodoc
@@ -12764,135 +12821,564 @@ class _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? seeds = null,
-  }) {
-    return _then(_value.copyWith(
-      seeds: null == seeds
-          ? _value.seeds
-          : seeds // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
 }
 
 /// @nodoc
-abstract class _$$_FruitInlineInlineDiscAnyOfCopyWith<$Res>
-    implements $FruitInlineInlineDiscAnyOfCopyWith<$Res> {
-  factory _$$_FruitInlineInlineDiscAnyOfCopyWith(
-          _$_FruitInlineInlineDiscAnyOf value,
-          $Res Function(_$_FruitInlineInlineDiscAnyOf) then) =
-      __$$_FruitInlineInlineDiscAnyOfCopyWithImpl<$Res>;
-  @override
+abstract class _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+    $Res> {
+  factory _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWith(
+          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value,
+          $Res Function(
+                  _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf)
+              then) =
+      __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+          $Res>;
   @useResult
-  $Res call({@JsonKey(name: r'seeds') int seeds});
+  $Res call(
+      {FruitInlineInlineDiscAnyOfAnyOf fruitInlineInlineDiscAnyOfAnyOfValue});
+
+  $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>
+      get fruitInlineInlineDiscAnyOfAnyOfValue;
 }
 
 /// @nodoc
-class __$$_FruitInlineInlineDiscAnyOfCopyWithImpl<$Res>
+class __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+        $Res>
     extends _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
-        _$_FruitInlineInlineDiscAnyOf>
-    implements _$$_FruitInlineInlineDiscAnyOfCopyWith<$Res> {
-  __$$_FruitInlineInlineDiscAnyOfCopyWithImpl(
-      _$_FruitInlineInlineDiscAnyOf _value,
-      $Res Function(_$_FruitInlineInlineDiscAnyOf) _then)
+        _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf>
+    implements
+        _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+            $Res> {
+  __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl(
+      _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf _value,
+      $Res Function(
+              _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf)
+          _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? seeds = null,
+    Object? fruitInlineInlineDiscAnyOfAnyOfValue = null,
   }) {
-    return _then(_$_FruitInlineInlineDiscAnyOf(
-      seeds: null == seeds
-          ? _value.seeds
-          : seeds // ignore: cast_nullable_to_non_nullable
-              as int,
+    return _then(_$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf(
+      fruitInlineInlineDiscAnyOfAnyOfValue: null ==
+              fruitInlineInlineDiscAnyOfAnyOfValue
+          ? _value.fruitInlineInlineDiscAnyOfAnyOfValue
+          : fruitInlineInlineDiscAnyOfAnyOfValue // ignore: cast_nullable_to_non_nullable
+              as FruitInlineInlineDiscAnyOfAnyOf,
     ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>
+      get fruitInlineInlineDiscAnyOfAnyOfValue {
+    return $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>(
+        _value.fruitInlineInlineDiscAnyOfAnyOfValue, (value) {
+      return _then(
+          _value.copyWith(fruitInlineInlineDiscAnyOfAnyOfValue: value));
+    });
   }
 }
 
 /// @nodoc
-@JsonSerializable()
-class _$_FruitInlineInlineDiscAnyOf extends _FruitInlineInlineDiscAnyOf {
-  const _$_FruitInlineInlineDiscAnyOf(
-      {@JsonKey(name: r'seeds') required this.seeds})
+
+class _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf
+    extends FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf {
+  const _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf(
+      {required this.fruitInlineInlineDiscAnyOfAnyOfValue})
       : super._();
 
-  factory _$_FruitInlineInlineDiscAnyOf.fromJson(Map<String, dynamic> json) =>
-      _$$_FruitInlineInlineDiscAnyOfFromJson(json);
-
   @override
-  @JsonKey(name: r'seeds')
-  final int seeds;
+  final FruitInlineInlineDiscAnyOfAnyOf fruitInlineInlineDiscAnyOfAnyOfValue;
 
   @override
   String toString() {
-    return 'FruitInlineInlineDiscAnyOf(seeds: $seeds)';
+    return 'FruitInlineInlineDiscAnyOf.asFruitInlineInlineDiscAnyOfAnyOf(fruitInlineInlineDiscAnyOfAnyOfValue: $fruitInlineInlineDiscAnyOfAnyOfValue)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FruitInlineInlineDiscAnyOf &&
-            (identical(other.seeds, seeds) || other.seeds == seeds));
+            other
+                is _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf &&
+            (identical(other.fruitInlineInlineDiscAnyOfAnyOfValue,
+                    fruitInlineInlineDiscAnyOfAnyOfValue) ||
+                other.fruitInlineInlineDiscAnyOfAnyOfValue ==
+                    fruitInlineInlineDiscAnyOfAnyOfValue));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, seeds);
+  int get hashCode =>
+      Object.hash(runtimeType, fruitInlineInlineDiscAnyOfAnyOfValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FruitInlineInlineDiscAnyOfCopyWith<_$_FruitInlineInlineDiscAnyOf>
-      get copyWith => __$$_FruitInlineInlineDiscAnyOfCopyWithImpl<
-          _$_FruitInlineInlineDiscAnyOf>(this, _$identity);
+  _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf>
+      get copyWith =>
+          __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+                  _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf>(
+              this, _$identity);
 
   @override
-  Map<String, dynamic> toJson() {
-    return _$$_FruitInlineInlineDiscAnyOfToJson(
-      this,
-    );
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf> deserializedModels)
+        unknown,
+  }) {
+    return asFruitInlineInlineDiscAnyOfAnyOf(
+        fruitInlineInlineDiscAnyOfAnyOfValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
+        unknown,
+  }) {
+    return asFruitInlineInlineDiscAnyOfAnyOf
+        ?.call(fruitInlineInlineDiscAnyOfAnyOfValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asFruitInlineInlineDiscAnyOfAnyOf != null) {
+      return asFruitInlineInlineDiscAnyOfAnyOf(
+          fruitInlineInlineDiscAnyOfAnyOfValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(FruitInlineInlineDiscAnyOfUnknown value) unknown,
+  }) {
+    return asFruitInlineInlineDiscAnyOfAnyOf(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
+  }) {
+    return asFruitInlineInlineDiscAnyOfAnyOf?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asFruitInlineInlineDiscAnyOfAnyOf != null) {
+      return asFruitInlineInlineDiscAnyOfAnyOf(this);
+    }
+    return orElse();
   }
 }
 
-abstract class _FruitInlineInlineDiscAnyOf extends FruitInlineInlineDiscAnyOf {
-  const factory _FruitInlineInlineDiscAnyOf(
-          {@JsonKey(name: r'seeds') required final int seeds}) =
-      _$_FruitInlineInlineDiscAnyOf;
-  const _FruitInlineInlineDiscAnyOf._() : super._();
+abstract class FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf
+    extends FruitInlineInlineDiscAnyOf {
+  const factory FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf(
+          {required final FruitInlineInlineDiscAnyOfAnyOf
+              fruitInlineInlineDiscAnyOfAnyOfValue}) =
+      _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf;
+  const FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf._()
+      : super._();
 
-  factory _FruitInlineInlineDiscAnyOf.fromJson(Map<String, dynamic> json) =
-      _$_FruitInlineInlineDiscAnyOf.fromJson;
-
-  @override
-  @JsonKey(name: r'seeds')
-  int get seeds;
-  @override
+  FruitInlineInlineDiscAnyOfAnyOf get fruitInlineInlineDiscAnyOfAnyOfValue;
   @JsonKey(ignore: true)
-  _$$_FruitInlineInlineDiscAnyOfCopyWith<_$_FruitInlineInlineDiscAnyOf>
+  _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf>
       get copyWith => throw _privateConstructorUsedError;
 }
 
-FruitInlineInlineDiscAnyOf1 _$FruitInlineInlineDiscAnyOf1FromJson(
-    Map<String, dynamic> json) {
-  return _FruitInlineInlineDiscAnyOf1.fromJson(json);
+/// @nodoc
+abstract class _$$FruitInlineInlineDiscAnyOfUnknownCopyWith<$Res> {
+  factory _$$FruitInlineInlineDiscAnyOfUnknownCopyWith(
+          _$FruitInlineInlineDiscAnyOfUnknown value,
+          $Res Function(_$FruitInlineInlineDiscAnyOfUnknown) then) =
+      __$$FruitInlineInlineDiscAnyOfUnknownCopyWithImpl<$Res>;
+  @useResult
+  $Res call(
+      {String message,
+      Map<String, dynamic> json,
+      DeserializationErrorType errorType,
+      List<Type> possibleTypes,
+      List<FruitInlineInlineDiscAnyOf> deserializedModels});
+}
+
+/// @nodoc
+class __$$FruitInlineInlineDiscAnyOfUnknownCopyWithImpl<$Res>
+    extends _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
+        _$FruitInlineInlineDiscAnyOfUnknown>
+    implements _$$FruitInlineInlineDiscAnyOfUnknownCopyWith<$Res> {
+  __$$FruitInlineInlineDiscAnyOfUnknownCopyWithImpl(
+      _$FruitInlineInlineDiscAnyOfUnknown _value,
+      $Res Function(_$FruitInlineInlineDiscAnyOfUnknown) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+    Object? json = null,
+    Object? errorType = null,
+    Object? possibleTypes = null,
+    Object? deserializedModels = null,
+  }) {
+    return _then(_$FruitInlineInlineDiscAnyOfUnknown(
+      message: null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      json: null == json
+          ? _value._json
+          : json // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      errorType: null == errorType
+          ? _value.errorType
+          : errorType // ignore: cast_nullable_to_non_nullable
+              as DeserializationErrorType,
+      possibleTypes: null == possibleTypes
+          ? _value._possibleTypes
+          : possibleTypes // ignore: cast_nullable_to_non_nullable
+              as List<Type>,
+      deserializedModels: null == deserializedModels
+          ? _value._deserializedModels
+          : deserializedModels // ignore: cast_nullable_to_non_nullable
+              as List<FruitInlineInlineDiscAnyOf>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$FruitInlineInlineDiscAnyOfUnknown
+    extends FruitInlineInlineDiscAnyOfUnknown {
+  const _$FruitInlineInlineDiscAnyOfUnknown(
+      {this.message = 'Json does not satisfy any available types',
+      required final Map<String, dynamic> json,
+      this.errorType = DeserializationErrorType.UnKnownType,
+      final List<Type> possibleTypes = const <Type>[
+        FruitInlineInlineDiscAnyOfAnyOf
+      ],
+      final List<FruitInlineInlineDiscAnyOf> deserializedModels =
+          const <FruitInlineInlineDiscAnyOf>[]})
+      : _json = json,
+        _possibleTypes = possibleTypes,
+        _deserializedModels = deserializedModels,
+        super._();
+
+  @override
+  @JsonKey()
+  final String message;
+  final Map<String, dynamic> _json;
+  @override
+  Map<String, dynamic> get json {
+    if (_json is EqualUnmodifiableMapView) return _json;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_json);
+  }
+
+  @override
+  @JsonKey()
+  final DeserializationErrorType errorType;
+  final List<Type> _possibleTypes;
+  @override
+  @JsonKey()
+  List<Type> get possibleTypes {
+    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_possibleTypes);
+  }
+
+  final List<FruitInlineInlineDiscAnyOf> _deserializedModels;
+  @override
+  @JsonKey()
+  List<FruitInlineInlineDiscAnyOf> get deserializedModels {
+    if (_deserializedModels is EqualUnmodifiableListView)
+      return _deserializedModels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_deserializedModels);
+  }
+
+  @override
+  String toString() {
+    return 'FruitInlineInlineDiscAnyOf.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FruitInlineInlineDiscAnyOfUnknown &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality().equals(other._json, _json) &&
+            (identical(other.errorType, errorType) ||
+                other.errorType == errorType) &&
+            const DeepCollectionEquality()
+                .equals(other._possibleTypes, _possibleTypes) &&
+            const DeepCollectionEquality()
+                .equals(other._deserializedModels, _deserializedModels));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      message,
+      const DeepCollectionEquality().hash(_json),
+      errorType,
+      const DeepCollectionEquality().hash(_possibleTypes),
+      const DeepCollectionEquality().hash(_deserializedModels));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$FruitInlineInlineDiscAnyOfUnknownCopyWith<
+          _$FruitInlineInlineDiscAnyOfUnknown>
+      get copyWith => __$$FruitInlineInlineDiscAnyOfUnknownCopyWithImpl<
+          _$FruitInlineInlineDiscAnyOfUnknown>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf> deserializedModels)
+        unknown,
+  }) {
+    return unknown(message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
+        unknown,
+  }) {
+    return unknown?.call(
+        message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(
+          message, json, errorType, possibleTypes, deserializedModels);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(FruitInlineInlineDiscAnyOfUnknown value) unknown,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FruitInlineInlineDiscAnyOfUnknown
+    extends FruitInlineInlineDiscAnyOf {
+  const factory FruitInlineInlineDiscAnyOfUnknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<FruitInlineInlineDiscAnyOf> deserializedModels}) =
+      _$FruitInlineInlineDiscAnyOfUnknown;
+  const FruitInlineInlineDiscAnyOfUnknown._() : super._();
+
+  String get message;
+  Map<String, dynamic> get json;
+  DeserializationErrorType get errorType;
+  List<Type> get possibleTypes;
+  List<FruitInlineInlineDiscAnyOf> get deserializedModels;
+  @JsonKey(ignore: true)
+  _$$FruitInlineInlineDiscAnyOfUnknownCopyWith<
+          _$FruitInlineInlineDiscAnyOfUnknown>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 mixin _$FruitInlineInlineDiscAnyOf1 {
-  @JsonKey(name: r'length')
-  int get length => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $FruitInlineInlineDiscAnyOf1CopyWith<FruitInlineInlineDiscAnyOf1>
-      get copyWith => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf1> deserializedModels)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(FruitInlineInlineDiscAnyOf1Unknown value) unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -12902,8 +13388,6 @@ abstract class $FruitInlineInlineDiscAnyOf1CopyWith<$Res> {
           $Res Function(FruitInlineInlineDiscAnyOf1) then) =
       _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
           FruitInlineInlineDiscAnyOf1>;
-  @useResult
-  $Res call({@JsonKey(name: r'length') int length});
 }
 
 /// @nodoc
@@ -12916,119 +13400,646 @@ class _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? length = null,
-  }) {
-    return _then(_value.copyWith(
-      length: null == length
-          ? _value.length
-          : length // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
 }
 
 /// @nodoc
-abstract class _$$_FruitInlineInlineDiscAnyOf1CopyWith<$Res>
-    implements $FruitInlineInlineDiscAnyOf1CopyWith<$Res> {
-  factory _$$_FruitInlineInlineDiscAnyOf1CopyWith(
-          _$_FruitInlineInlineDiscAnyOf1 value,
-          $Res Function(_$_FruitInlineInlineDiscAnyOf1) then) =
-      __$$_FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res>;
-  @override
+abstract class _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+    $Res> {
+  factory _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWith(
+          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value,
+          $Res Function(
+                  _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf)
+              then) =
+      __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+          $Res>;
   @useResult
-  $Res call({@JsonKey(name: r'length') int length});
+  $Res call(
+      {FruitInlineInlineDiscAnyOfAnyOf fruitInlineInlineDiscAnyOfAnyOfValue});
+
+  $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>
+      get fruitInlineInlineDiscAnyOfAnyOfValue;
 }
 
 /// @nodoc
-class __$$_FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res>
+class __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+        $Res>
     extends _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
-        _$_FruitInlineInlineDiscAnyOf1>
-    implements _$$_FruitInlineInlineDiscAnyOf1CopyWith<$Res> {
-  __$$_FruitInlineInlineDiscAnyOf1CopyWithImpl(
-      _$_FruitInlineInlineDiscAnyOf1 _value,
-      $Res Function(_$_FruitInlineInlineDiscAnyOf1) _then)
+        _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf>
+    implements
+        _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+            $Res> {
+  __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl(
+      _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf _value,
+      $Res Function(
+              _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf)
+          _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? length = null,
+    Object? fruitInlineInlineDiscAnyOfAnyOfValue = null,
   }) {
-    return _then(_$_FruitInlineInlineDiscAnyOf1(
-      length: null == length
-          ? _value.length
-          : length // ignore: cast_nullable_to_non_nullable
-              as int,
+    return _then(_$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf(
+      fruitInlineInlineDiscAnyOfAnyOfValue: null ==
+              fruitInlineInlineDiscAnyOfAnyOfValue
+          ? _value.fruitInlineInlineDiscAnyOfAnyOfValue
+          : fruitInlineInlineDiscAnyOfAnyOfValue // ignore: cast_nullable_to_non_nullable
+              as FruitInlineInlineDiscAnyOfAnyOf,
     ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>
+      get fruitInlineInlineDiscAnyOfAnyOfValue {
+    return $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>(
+        _value.fruitInlineInlineDiscAnyOfAnyOfValue, (value) {
+      return _then(
+          _value.copyWith(fruitInlineInlineDiscAnyOfAnyOfValue: value));
+    });
   }
 }
 
 /// @nodoc
-@JsonSerializable()
-class _$_FruitInlineInlineDiscAnyOf1 extends _FruitInlineInlineDiscAnyOf1 {
-  const _$_FruitInlineInlineDiscAnyOf1(
-      {@JsonKey(name: r'length') required this.length})
+
+class _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf
+    extends FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf {
+  const _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf(
+      {required this.fruitInlineInlineDiscAnyOfAnyOfValue})
       : super._();
 
-  factory _$_FruitInlineInlineDiscAnyOf1.fromJson(Map<String, dynamic> json) =>
-      _$$_FruitInlineInlineDiscAnyOf1FromJson(json);
-
   @override
-  @JsonKey(name: r'length')
-  final int length;
+  final FruitInlineInlineDiscAnyOfAnyOf fruitInlineInlineDiscAnyOfAnyOfValue;
 
   @override
   String toString() {
-    return 'FruitInlineInlineDiscAnyOf1(length: $length)';
+    return 'FruitInlineInlineDiscAnyOf1.asFruitInlineInlineDiscAnyOfAnyOf(fruitInlineInlineDiscAnyOfAnyOfValue: $fruitInlineInlineDiscAnyOfAnyOfValue)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FruitInlineInlineDiscAnyOf1 &&
-            (identical(other.length, length) || other.length == length));
+            other
+                is _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf &&
+            (identical(other.fruitInlineInlineDiscAnyOfAnyOfValue,
+                    fruitInlineInlineDiscAnyOfAnyOfValue) ||
+                other.fruitInlineInlineDiscAnyOfAnyOfValue ==
+                    fruitInlineInlineDiscAnyOfAnyOfValue));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, length);
+  int get hashCode =>
+      Object.hash(runtimeType, fruitInlineInlineDiscAnyOfAnyOfValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FruitInlineInlineDiscAnyOf1CopyWith<_$_FruitInlineInlineDiscAnyOf1>
-      get copyWith => __$$_FruitInlineInlineDiscAnyOf1CopyWithImpl<
-          _$_FruitInlineInlineDiscAnyOf1>(this, _$identity);
+  _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf>
+      get copyWith =>
+          __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+                  _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf1> deserializedModels)
+        unknown,
+  }) {
+    return asFruitInlineInlineDiscAnyOfAnyOf(
+        fruitInlineInlineDiscAnyOfAnyOfValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
+        unknown,
+  }) {
+    return asFruitInlineInlineDiscAnyOfAnyOf
+        ?.call(fruitInlineInlineDiscAnyOfAnyOfValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asFruitInlineInlineDiscAnyOfAnyOf != null) {
+      return asFruitInlineInlineDiscAnyOfAnyOf(
+          fruitInlineInlineDiscAnyOfAnyOfValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(FruitInlineInlineDiscAnyOf1Unknown value) unknown,
+  }) {
+    return asFruitInlineInlineDiscAnyOfAnyOf(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
+  }) {
+    return asFruitInlineInlineDiscAnyOfAnyOf?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asFruitInlineInlineDiscAnyOfAnyOf != null) {
+      return asFruitInlineInlineDiscAnyOfAnyOf(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf
+    extends FruitInlineInlineDiscAnyOf1 {
+  const factory FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf(
+          {required final FruitInlineInlineDiscAnyOfAnyOf
+              fruitInlineInlineDiscAnyOfAnyOfValue}) =
+      _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf;
+  const FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf._()
+      : super._();
+
+  FruitInlineInlineDiscAnyOfAnyOf get fruitInlineInlineDiscAnyOfAnyOfValue;
+  @JsonKey(ignore: true)
+  _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith<$Res> {
+  factory _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith(
+          _$FruitInlineInlineDiscAnyOf1Unknown value,
+          $Res Function(_$FruitInlineInlineDiscAnyOf1Unknown) then) =
+      __$$FruitInlineInlineDiscAnyOf1UnknownCopyWithImpl<$Res>;
+  @useResult
+  $Res call(
+      {String message,
+      Map<String, dynamic> json,
+      DeserializationErrorType errorType,
+      List<Type> possibleTypes,
+      List<FruitInlineInlineDiscAnyOf1> deserializedModels});
+}
+
+/// @nodoc
+class __$$FruitInlineInlineDiscAnyOf1UnknownCopyWithImpl<$Res>
+    extends _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
+        _$FruitInlineInlineDiscAnyOf1Unknown>
+    implements _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith<$Res> {
+  __$$FruitInlineInlineDiscAnyOf1UnknownCopyWithImpl(
+      _$FruitInlineInlineDiscAnyOf1Unknown _value,
+      $Res Function(_$FruitInlineInlineDiscAnyOf1Unknown) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+    Object? json = null,
+    Object? errorType = null,
+    Object? possibleTypes = null,
+    Object? deserializedModels = null,
+  }) {
+    return _then(_$FruitInlineInlineDiscAnyOf1Unknown(
+      message: null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      json: null == json
+          ? _value._json
+          : json // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      errorType: null == errorType
+          ? _value.errorType
+          : errorType // ignore: cast_nullable_to_non_nullable
+              as DeserializationErrorType,
+      possibleTypes: null == possibleTypes
+          ? _value._possibleTypes
+          : possibleTypes // ignore: cast_nullable_to_non_nullable
+              as List<Type>,
+      deserializedModels: null == deserializedModels
+          ? _value._deserializedModels
+          : deserializedModels // ignore: cast_nullable_to_non_nullable
+              as List<FruitInlineInlineDiscAnyOf1>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$FruitInlineInlineDiscAnyOf1Unknown
+    extends FruitInlineInlineDiscAnyOf1Unknown {
+  const _$FruitInlineInlineDiscAnyOf1Unknown(
+      {this.message = 'Json does not satisfy any available types',
+      required final Map<String, dynamic> json,
+      this.errorType = DeserializationErrorType.UnKnownType,
+      final List<Type> possibleTypes = const <Type>[
+        FruitInlineInlineDiscAnyOfAnyOf
+      ],
+      final List<FruitInlineInlineDiscAnyOf1> deserializedModels =
+          const <FruitInlineInlineDiscAnyOf1>[]})
+      : _json = json,
+        _possibleTypes = possibleTypes,
+        _deserializedModels = deserializedModels,
+        super._();
+
+  @override
+  @JsonKey()
+  final String message;
+  final Map<String, dynamic> _json;
+  @override
+  Map<String, dynamic> get json {
+    if (_json is EqualUnmodifiableMapView) return _json;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_json);
+  }
+
+  @override
+  @JsonKey()
+  final DeserializationErrorType errorType;
+  final List<Type> _possibleTypes;
+  @override
+  @JsonKey()
+  List<Type> get possibleTypes {
+    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_possibleTypes);
+  }
+
+  final List<FruitInlineInlineDiscAnyOf1> _deserializedModels;
+  @override
+  @JsonKey()
+  List<FruitInlineInlineDiscAnyOf1> get deserializedModels {
+    if (_deserializedModels is EqualUnmodifiableListView)
+      return _deserializedModels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_deserializedModels);
+  }
+
+  @override
+  String toString() {
+    return 'FruitInlineInlineDiscAnyOf1.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FruitInlineInlineDiscAnyOf1Unknown &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality().equals(other._json, _json) &&
+            (identical(other.errorType, errorType) ||
+                other.errorType == errorType) &&
+            const DeepCollectionEquality()
+                .equals(other._possibleTypes, _possibleTypes) &&
+            const DeepCollectionEquality()
+                .equals(other._deserializedModels, _deserializedModels));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      message,
+      const DeepCollectionEquality().hash(_json),
+      errorType,
+      const DeepCollectionEquality().hash(_possibleTypes),
+      const DeepCollectionEquality().hash(_deserializedModels));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith<
+          _$FruitInlineInlineDiscAnyOf1Unknown>
+      get copyWith => __$$FruitInlineInlineDiscAnyOf1UnknownCopyWithImpl<
+          _$FruitInlineInlineDiscAnyOf1Unknown>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf1> deserializedModels)
+        unknown,
+  }) {
+    return unknown(message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
+        unknown,
+  }) {
+    return unknown?.call(
+        message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOfAnyOf
+                fruitInlineInlineDiscAnyOfAnyOfValue)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(
+          message, json, errorType, possibleTypes, deserializedModels);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    required TResult Function(FruitInlineInlineDiscAnyOf1Unknown value) unknown,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult? Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
+        asFruitInlineInlineDiscAnyOfAnyOf,
+    TResult Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FruitInlineInlineDiscAnyOf1Unknown
+    extends FruitInlineInlineDiscAnyOf1 {
+  const factory FruitInlineInlineDiscAnyOf1Unknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<FruitInlineInlineDiscAnyOf1> deserializedModels}) =
+      _$FruitInlineInlineDiscAnyOf1Unknown;
+  const FruitInlineInlineDiscAnyOf1Unknown._() : super._();
+
+  String get message;
+  Map<String, dynamic> get json;
+  DeserializationErrorType get errorType;
+  List<Type> get possibleTypes;
+  List<FruitInlineInlineDiscAnyOf1> get deserializedModels;
+  @JsonKey(ignore: true)
+  _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith<
+          _$FruitInlineInlineDiscAnyOf1Unknown>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+FruitInlineInlineDiscAnyOfAnyOf _$FruitInlineInlineDiscAnyOfAnyOfFromJson(
+    Map<String, dynamic> json) {
+  return _FruitInlineInlineDiscAnyOfAnyOf.fromJson(json);
+}
+
+/// @nodoc
+mixin _$FruitInlineInlineDiscAnyOfAnyOf {
+  @JsonKey(name: r'fruitType')
+  String get fruitType => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $FruitInlineInlineDiscAnyOfAnyOfCopyWith<FruitInlineInlineDiscAnyOfAnyOf>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res> {
+  factory $FruitInlineInlineDiscAnyOfAnyOfCopyWith(
+          FruitInlineInlineDiscAnyOfAnyOf value,
+          $Res Function(FruitInlineInlineDiscAnyOfAnyOf) then) =
+      _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res,
+          FruitInlineInlineDiscAnyOfAnyOf>;
+  @useResult
+  $Res call({@JsonKey(name: r'fruitType') String fruitType});
+}
+
+/// @nodoc
+class _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res,
+        $Val extends FruitInlineInlineDiscAnyOfAnyOf>
+    implements $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res> {
+  _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? fruitType = null,
+  }) {
+    return _then(_value.copyWith(
+      fruitType: null == fruitType
+          ? _value.fruitType
+          : fruitType // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$_FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>
+    implements $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res> {
+  factory _$$_FruitInlineInlineDiscAnyOfAnyOfCopyWith(
+          _$_FruitInlineInlineDiscAnyOfAnyOf value,
+          $Res Function(_$_FruitInlineInlineDiscAnyOfAnyOf) then) =
+      __$$_FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({@JsonKey(name: r'fruitType') String fruitType});
+}
+
+/// @nodoc
+class __$$_FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res>
+    extends _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res,
+        _$_FruitInlineInlineDiscAnyOfAnyOf>
+    implements _$$_FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res> {
+  __$$_FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl(
+      _$_FruitInlineInlineDiscAnyOfAnyOf _value,
+      $Res Function(_$_FruitInlineInlineDiscAnyOfAnyOf) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? fruitType = null,
+  }) {
+    return _then(_$_FruitInlineInlineDiscAnyOfAnyOf(
+      fruitType: null == fruitType
+          ? _value.fruitType
+          : fruitType // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_FruitInlineInlineDiscAnyOfAnyOf
+    extends _FruitInlineInlineDiscAnyOfAnyOf {
+  const _$_FruitInlineInlineDiscAnyOfAnyOf(
+      {@JsonKey(name: r'fruitType') required this.fruitType})
+      : super._();
+
+  factory _$_FruitInlineInlineDiscAnyOfAnyOf.fromJson(
+          Map<String, dynamic> json) =>
+      _$$_FruitInlineInlineDiscAnyOfAnyOfFromJson(json);
+
+  @override
+  @JsonKey(name: r'fruitType')
+  final String fruitType;
+
+  @override
+  String toString() {
+    return 'FruitInlineInlineDiscAnyOfAnyOf(fruitType: $fruitType)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_FruitInlineInlineDiscAnyOfAnyOf &&
+            (identical(other.fruitType, fruitType) ||
+                other.fruitType == fruitType));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, fruitType);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_FruitInlineInlineDiscAnyOfAnyOfCopyWith<
+          _$_FruitInlineInlineDiscAnyOfAnyOf>
+      get copyWith => __$$_FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+          _$_FruitInlineInlineDiscAnyOfAnyOf>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FruitInlineInlineDiscAnyOf1ToJson(
+    return _$$_FruitInlineInlineDiscAnyOfAnyOfToJson(
       this,
     );
   }
 }
 
-abstract class _FruitInlineInlineDiscAnyOf1
-    extends FruitInlineInlineDiscAnyOf1 {
-  const factory _FruitInlineInlineDiscAnyOf1(
-          {@JsonKey(name: r'length') required final int length}) =
-      _$_FruitInlineInlineDiscAnyOf1;
-  const _FruitInlineInlineDiscAnyOf1._() : super._();
+abstract class _FruitInlineInlineDiscAnyOfAnyOf
+    extends FruitInlineInlineDiscAnyOfAnyOf {
+  const factory _FruitInlineInlineDiscAnyOfAnyOf(
+          {@JsonKey(name: r'fruitType') required final String fruitType}) =
+      _$_FruitInlineInlineDiscAnyOfAnyOf;
+  const _FruitInlineInlineDiscAnyOfAnyOf._() : super._();
 
-  factory _FruitInlineInlineDiscAnyOf1.fromJson(Map<String, dynamic> json) =
-      _$_FruitInlineInlineDiscAnyOf1.fromJson;
+  factory _FruitInlineInlineDiscAnyOfAnyOf.fromJson(Map<String, dynamic> json) =
+      _$_FruitInlineInlineDiscAnyOfAnyOf.fromJson;
 
   @override
-  @JsonKey(name: r'length')
-  int get length;
+  @JsonKey(name: r'fruitType')
+  String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_FruitInlineInlineDiscAnyOf1CopyWith<_$_FruitInlineInlineDiscAnyOf1>
+  _$$_FruitInlineInlineDiscAnyOfAnyOfCopyWith<
+          _$_FruitInlineInlineDiscAnyOfAnyOf>
       get copyWith => throw _privateConstructorUsedError;
 }
 

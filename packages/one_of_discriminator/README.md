@@ -99,6 +99,7 @@ Class | Method | HTTP request | Description
  - [FruitInlineInlineDisc](doc/FruitInlineInlineDisc.md)
  - [FruitInlineInlineDiscOneOf](doc/FruitInlineInlineDiscOneOf.md)
  - [FruitInlineInlineDiscOneOf1](doc/FruitInlineInlineDiscOneOf1.md)
+ - [FruitInlineInlineDiscOneOfOneOf](doc/FruitInlineInlineDiscOneOfOneOf.md)
  - [FruitOneOfDisc](doc/FruitOneOfDisc.md)
  - [FruitReqDisc](doc/FruitReqDisc.md)
  - [FruitType](doc/FruitType.md)
