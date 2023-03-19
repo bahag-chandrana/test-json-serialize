@@ -1,0 +1,6 @@
+pubName: ur_any_of_no_discriminator
+pubDescription: An api client package
+pubLibrary: "UrAnyOfNoDiscriminatorApiClient"
+additionalProperties:
+  serializationLibrary: freezed
+  freezedUnionResponse: true

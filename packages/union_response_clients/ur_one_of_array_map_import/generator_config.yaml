@@ -1,0 +1,6 @@
+pubName: ur_one_of_array_map_import
+pubDescription: An
+pubLibrary: "UrOneOfArrayMapImportApiClient"
+additionalProperties:
+  serializationLibrary: freezed
+  freezedUnionResponse: true

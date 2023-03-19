@@ -1,0 +1,6 @@
+pubName: ur_one_of_non_primitive
+pubDescription: An
+pubLibrary: "UrOneOfNonPrimitiveApiClient"
+additionalProperties:
+  serializationLibrary: freezed
+  freezedUnionResponse: true

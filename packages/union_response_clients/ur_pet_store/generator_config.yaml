@@ -1,0 +1,6 @@
+pubName: ur_pet_store
+pubDescription: An api client package
+pubLibrary: "UrPetStoreApiClient"
+additionalProperties:
+  serializationLibrary: freezed
+  freezedUnionResponse: true

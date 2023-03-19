@@ -1,0 +1,6 @@
+pubName: ur_one_of_discriminator
+pubDescription: An
+pubLibrary: "UrOneOfDiscriminatorApiClient"
+additionalProperties:
+  serializationLibrary: freezed
+  freezedUnionResponse: true

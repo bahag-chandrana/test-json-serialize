@@ -1,0 +1,6 @@
+pubName: ur_one_of_polymorphism_and_inheritance
+pubDescription: An
+pubLibrary: "UrOneOfPolymorphismAndInheritanceApiClient"
+additionalProperties:
+  serializationLibrary: freezed
+  freezedUnionResponse: true
