@@ -19,17 +19,16 @@ class ComposedDiscMissingFromProperties
           {required DiscMissingFromProperties discMissingFromPropertiesValue}) =
       ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties;
   const factory ComposedDiscMissingFromProperties.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       DiscMissingFromProperties,
     ])
-        List<Type> possibleTypes,
+    List<Type> possibleTypes,
     @Default(<ComposedDiscMissingFromProperties>[])
-        List<ComposedDiscMissingFromProperties> deserializedModels,
+    List<ComposedDiscMissingFromProperties> deserializedModels,
   }) = ComposedDiscMissingFromPropertiesUnknown;
 
   factory ComposedDiscMissingFromProperties.fromJson(

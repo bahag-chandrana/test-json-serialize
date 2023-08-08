@@ -40,7 +40,7 @@ class Entity with _$Entity {
     @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[]) List<Type> possibleTypes,
     @Default(<Entity>[]) List<Entity> deserializedModels,
   }) = EntityUnknown;

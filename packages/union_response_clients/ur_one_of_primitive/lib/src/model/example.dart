@@ -18,18 +18,16 @@ class Example with _$Example {
   const factory Example.asIntInUnion({required IntInUnion intValue}) =
       ExampleAsIntInUnion;
   const factory Example.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       Child,
       int,
     ])
-        List<Type> possibleTypes,
-    @Default(<Example>[])
-        List<Example> deserializedModels,
+    List<Type> possibleTypes,
+    @Default(<Example>[]) List<Example> deserializedModels,
   }) = ExampleUnknown;
 
   factory Example.fromJson(Map<String, dynamic> json) {

@@ -32,7 +32,7 @@ class PetApi {
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
   /// Returns a [Future] containing a [Response] with a [Pet] as data
-  /// Throws [DioError] if API call or serialization fails
+  /// Throws [DioException] if API call or serialization fails
   Future<Response<Pet>> addPet({
     required Pet pet,
     CancelToken? cancelToken,
@@ -67,12 +67,12 @@ class PetApi {
       const _type = FullType(Pet);
       _bodyData = _serializers.serialize(pet, specifiedType: _type);
     } catch (error, stackTrace) {
-      throw DioError(
+      throw DioException(
         requestOptions: _options.compose(
           _dio.options,
           _path,
         ),
-        type: DioErrorType.unknown,
+        type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
       );
@@ -87,19 +87,21 @@ class PetApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    Pet _responseData;
+    Pet? _responseData;
 
     try {
-      const _responseType = FullType(Pet);
-      _responseData = _serializers.deserialize(
-        _response.data!,
-        specifiedType: _responseType,
-      ) as Pet;
+      final rawResponse = _response.data;
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(Pet),
+            ) as Pet;
     } catch (error, stackTrace) {
-      throw DioError(
+      throw DioException(
         requestOptions: _response.requestOptions,
         response: _response,
-        type: DioErrorType.unknown,
+        type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
       );
@@ -131,7 +133,7 @@ class PetApi {
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
   /// Returns a [Future]
-  /// Throws [DioError] if API call or serialization fails
+  /// Throws [DioException] if API call or serialization fails
   Future<Response<void>> deletePet({
     required int petId,
     String? apiKey,
@@ -142,8 +144,10 @@ class PetApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path =
-        r'/pet/{petId}'.replaceAll('{' r'petId' '}', petId.toString());
+    final _path = r'/pet/{petId}'.replaceAll(
+        '{' r'petId' '}',
+        encodeQueryParameter(_serializers, petId, const FullType(int))
+            .toString());
     final _options = Options(
       method: r'DELETE',
       headers: <String, dynamic>{
@@ -186,9 +190,9 @@ class PetApi {
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<Pet>] as data
-  /// Throws [DioError] if API call or serialization fails
+  /// Throws [DioException] if API call or serialization fails
   Future<Response<BuiltList<Pet>>> findPetsByStatus({
-    required BuiltList<String> status,
+    @Deprecated('status is deprecated') required BuiltList<String> status,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -232,19 +236,21 @@ class PetApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    BuiltList<Pet> _responseData;
+    BuiltList<Pet>? _responseData;
 
     try {
-      const _responseType = FullType(BuiltList, [FullType(Pet)]);
-      _responseData = _serializers.deserialize(
-        _response.data!,
-        specifiedType: _responseType,
-      ) as BuiltList<Pet>;
+      final rawResponse = _response.data;
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(Pet)]),
+            ) as BuiltList<Pet>;
     } catch (error, stackTrace) {
-      throw DioError(
+      throw DioException(
         requestOptions: _response.requestOptions,
         response: _response,
-        type: DioErrorType.unknown,
+        type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
       );
@@ -275,7 +281,7 @@ class PetApi {
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<Pet>] as data
-  /// Throws [DioError] if API call or serialization fails
+  /// Throws [DioException] if API call or serialization fails
   @Deprecated('This operation has been deprecated')
   Future<Response<BuiltList<Pet>>> findPetsByTags({
     required BuiltList<String> tags,
@@ -322,19 +328,21 @@ class PetApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    BuiltList<Pet> _responseData;
+    BuiltList<Pet>? _responseData;
 
     try {
-      const _responseType = FullType(BuiltList, [FullType(Pet)]);
-      _responseData = _serializers.deserialize(
-        _response.data!,
-        specifiedType: _responseType,
-      ) as BuiltList<Pet>;
+      final rawResponse = _response.data;
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(Pet)]),
+            ) as BuiltList<Pet>;
     } catch (error, stackTrace) {
-      throw DioError(
+      throw DioException(
         requestOptions: _response.requestOptions,
         response: _response,
-        type: DioErrorType.unknown,
+        type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
       );
@@ -365,7 +373,7 @@ class PetApi {
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
   /// Returns a [Future] containing a [Response] with a [Pet] as data
-  /// Throws [DioError] if API call or serialization fails
+  /// Throws [DioException] if API call or serialization fails
   Future<Response<Pet>> getPetById({
     required int petId,
     CancelToken? cancelToken,
@@ -375,8 +383,10 @@ class PetApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path =
-        r'/pet/{petId}'.replaceAll('{' r'petId' '}', petId.toString());
+    final _path = r'/pet/{petId}'.replaceAll(
+        '{' r'petId' '}',
+        encodeQueryParameter(_serializers, petId, const FullType(int))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -404,19 +414,21 @@ class PetApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    Pet _responseData;
+    Pet? _responseData;
 
     try {
-      const _responseType = FullType(Pet);
-      _responseData = _serializers.deserialize(
-        _response.data!,
-        specifiedType: _responseType,
-      ) as Pet;
+      final rawResponse = _response.data;
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(Pet),
+            ) as Pet;
     } catch (error, stackTrace) {
-      throw DioError(
+      throw DioException(
         requestOptions: _response.requestOptions,
         response: _response,
-        type: DioErrorType.unknown,
+        type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
       );
@@ -447,7 +459,7 @@ class PetApi {
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
   /// Returns a [Future] containing a [Response] with a [Pet] as data
-  /// Throws [DioError] if API call or serialization fails
+  /// Throws [DioException] if API call or serialization fails
   Future<Response<Pet>> updatePet({
     required Pet pet,
     CancelToken? cancelToken,
@@ -482,12 +494,12 @@ class PetApi {
       const _type = FullType(Pet);
       _bodyData = _serializers.serialize(pet, specifiedType: _type);
     } catch (error, stackTrace) {
-      throw DioError(
+      throw DioException(
         requestOptions: _options.compose(
           _dio.options,
           _path,
         ),
-        type: DioErrorType.unknown,
+        type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
       );
@@ -502,19 +514,21 @@ class PetApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    Pet _responseData;
+    Pet? _responseData;
 
     try {
-      const _responseType = FullType(Pet);
-      _responseData = _serializers.deserialize(
-        _response.data!,
-        specifiedType: _responseType,
-      ) as Pet;
+      final rawResponse = _response.data;
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(Pet),
+            ) as Pet;
     } catch (error, stackTrace) {
-      throw DioError(
+      throw DioException(
         requestOptions: _response.requestOptions,
         response: _response,
-        type: DioErrorType.unknown,
+        type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
       );
@@ -547,7 +561,7 @@ class PetApi {
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
   /// Returns a [Future]
-  /// Throws [DioError] if API call or serialization fails
+  /// Throws [DioException] if API call or serialization fails
   Future<Response<void>> updatePetWithForm({
     required int petId,
     String? name,
@@ -559,8 +573,10 @@ class PetApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path =
-        r'/pet/{petId}'.replaceAll('{' r'petId' '}', petId.toString());
+    final _path = r'/pet/{petId}'.replaceAll(
+        '{' r'petId' '}',
+        encodeQueryParameter(_serializers, petId, const FullType(int))
+            .toString());
     final _options = Options(
       method: r'POST',
       headers: <String, dynamic>{
@@ -591,12 +607,12 @@ class PetApi {
               _serializers, status, const FullType(String)),
       };
     } catch (error, stackTrace) {
-      throw DioError(
+      throw DioException(
         requestOptions: _options.compose(
           _dio.options,
           _path,
         ),
-        type: DioErrorType.unknown,
+        type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
       );
@@ -629,7 +645,7 @@ class PetApi {
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
   /// Returns a [Future] containing a [Response] with a [ApiResponse] as data
-  /// Throws [DioError] if API call or serialization fails
+  /// Throws [DioException] if API call or serialization fails
   Future<Response<ApiResponse>> uploadFile({
     required int petId,
     String? additionalMetadata,
@@ -641,8 +657,10 @@ class PetApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/pet/{petId}/uploadImage'
-        .replaceAll('{' r'petId' '}', petId.toString());
+    final _path = r'/pet/{petId}/uploadImage'.replaceAll(
+        '{' r'petId' '}',
+        encodeQueryParameter(_serializers, petId, const FullType(int))
+            .toString());
     final _options = Options(
       method: r'POST',
       headers: <String, dynamic>{
@@ -671,12 +689,12 @@ class PetApi {
         if (file != null) r'file': file,
       });
     } catch (error, stackTrace) {
-      throw DioError(
+      throw DioException(
         requestOptions: _options.compose(
           _dio.options,
           _path,
         ),
-        type: DioErrorType.unknown,
+        type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
       );
@@ -691,19 +709,21 @@ class PetApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    ApiResponse _responseData;
+    ApiResponse? _responseData;
 
     try {
-      const _responseType = FullType(ApiResponse);
-      _responseData = _serializers.deserialize(
-        _response.data!,
-        specifiedType: _responseType,
-      ) as ApiResponse;
+      final rawResponse = _response.data;
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(ApiResponse),
+            ) as ApiResponse;
     } catch (error, stackTrace) {
-      throw DioError(
+      throw DioException(
         requestOptions: _response.requestOptions,
         response: _response,
-        type: DioErrorType.unknown,
+        type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
       );

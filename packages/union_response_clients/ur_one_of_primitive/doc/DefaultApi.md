@@ -26,7 +26,7 @@ final api = UrOneOfPrimitive().getDefaultApi();
 try {
     final response = api.list();
     print(response);
-} catch on DioError (e) {
+} catch on DioException (e) {
     print('Exception when calling DefaultApi->list: $e\n');
 }
 ```

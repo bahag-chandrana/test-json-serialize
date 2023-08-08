@@ -2,7 +2,7 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-// ignore_for_file: unused_element, invalid_annotation_target
+// ignore_for_file: unused_element
 import 'package:pet_store_bv/src/model/category.dart';
 import 'package:pet_store_bv/src/model/tag.dart';
 import 'package:built_collection/built_collection.dart';
@@ -38,6 +38,7 @@ abstract class Pet implements Built<Pet, PetBuilder> {
   BuiltList<Tag>? get tags;
 
   /// pet status in the store
+  @Deprecated('status has been deprecated')
   @BuiltValueField(wireName: r'status')
   PetStatusEnum? get status;
   // enum statusEnum {  available,  pending,  sold,  };

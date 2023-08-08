@@ -20,3 +20,7 @@ lib/src/model/fruit.dart
 lib/src/model/models.dart
 lib/src/model/primitive_union_types.dart
 pubspec.yaml
+test/apple_test.dart
+test/banana_test.dart
+test/default_api_test.dart
+test/fruit_test.dart

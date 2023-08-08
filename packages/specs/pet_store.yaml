@@ -1,11 +1,15 @@
 openapi: 3.0.3
 servers:
-  - url: "http://petstore.swagger.io/v2"
+  - url: "http://petstore.swagger.io/v5/customer_masterdata/2"
+    description: "prod stage"
+  - url: "http://petstore.swagger.io/v3"
+    description: "dev stage"    
+  - url: "http://petstore.swagger.io/v4"
 info:
   description: |
     This is a sample server Petstore server. For this sample, you can use the api key
     `special-key` to test the authorization filters.
-  version: 1.0.0
+  version: 1.0.3
   title: OpenAPI Petstore
   license:
     name: Apache-2.0

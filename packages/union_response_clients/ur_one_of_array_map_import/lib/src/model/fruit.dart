@@ -20,18 +20,16 @@ class Fruit with _$Fruit {
           {required Map<String, Apple> mapStringAppleValue}) =
       FruitAsMapStringApple;
   const factory Fruit.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       List<Grape>,
       Map<String, Apple>,
     ])
-        List<Type> possibleTypes,
-    @Default(<Fruit>[])
-        List<Fruit> deserializedModels,
+    List<Type> possibleTypes,
+    @Default(<Fruit>[]) List<Fruit> deserializedModels,
   }) = FruitUnknown;
 
   factory Fruit.fromJson(Map<String, dynamic> json) {

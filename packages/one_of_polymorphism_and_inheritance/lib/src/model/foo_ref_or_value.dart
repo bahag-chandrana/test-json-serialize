@@ -23,18 +23,16 @@ class FooRefOrValue with _$FooRefOrValue {
   const factory FooRefOrValue.asFooRef({required FooRef fooRefValue}) =
       FooRefOrValueAsFooRef;
   const factory FooRefOrValue.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       Foo,
       FooRef,
     ])
-        List<Type> possibleTypes,
-    @Default(<FooRefOrValue>[])
-        List<FooRefOrValue> deserializedModels,
+    List<Type> possibleTypes,
+    @Default(<FooRefOrValue>[]) List<FooRefOrValue> deserializedModels,
   }) = FooRefOrValueUnknown;
 
   factory FooRefOrValue.fromJson(Map<String, dynamic> json) {

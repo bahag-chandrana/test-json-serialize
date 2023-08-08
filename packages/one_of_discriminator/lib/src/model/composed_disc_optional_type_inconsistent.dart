@@ -22,18 +22,17 @@ class ComposedDiscOptionalTypeInconsistent
           {required DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue}) =
       ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect;
   const factory ComposedDiscOptionalTypeInconsistent.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       DiscOptionalTypeCorrect,
       DiscOptionalTypeIncorrect,
     ])
-        List<Type> possibleTypes,
+    List<Type> possibleTypes,
     @Default(<ComposedDiscOptionalTypeInconsistent>[])
-        List<ComposedDiscOptionalTypeInconsistent> deserializedModels,
+    List<ComposedDiscOptionalTypeInconsistent> deserializedModels,
   }) = ComposedDiscOptionalTypeInconsistentUnknown;
 
   factory ComposedDiscOptionalTypeInconsistent.fromJson(

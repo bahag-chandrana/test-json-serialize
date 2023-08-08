@@ -6,12 +6,10 @@ part 'models.g.dart';
 
 part 'primitive_union_types.dart';
 part 'apple_all_of_disc.dart';
-part 'apple_any_of_disc.dart';
 part 'apple_grandparent_disc.dart';
 part 'apple_one_of_disc.dart';
 part 'apple_req_disc.dart';
 part 'banana_all_of_disc.dart';
-part 'banana_any_of_disc.dart';
 part 'banana_grandparent_disc.dart';
 part 'banana_one_of_disc.dart';
 part 'banana_req_disc.dart';

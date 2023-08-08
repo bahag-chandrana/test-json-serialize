@@ -3,10 +3,6 @@ name: dart-dio-gen-test
 packages:
   - packages/**
 
-command:
-  bootstrap:
-    usePubspecOverrides: true
-
 scripts:
   generate_all:
     run: |
@@ -33,70 +29,70 @@ scripts:
     run: melos run generate_api
     env:
       SPEC: pet_store
-    select-package:
+    packageFilters:
       scope:
         - "pet_store"
   pet_store_bv:
     run: melos run generate_api
     env:
       SPEC: pet_store
-    select-package:
+    packageFilters:
       scope:
         - "pet_store_bv"
   any_of_no_discriminator:
     run: melos run generate_api
     env:
       SPEC: any_of_no_discriminator
-    select-package:
+    packageFilters:
       scope:
         - "any_of_no_discriminator"
   any_of_discriminator:
     run: melos run generate_api
     env:
       SPEC: any_of_discriminator
-    select-package:
+    packageFilters:
       scope:
         - "any_of_discriminator"
   one_of_no_discriminator:
     run: melos run generate_api
     env:
       SPEC: one_of_no_discriminator
-    select-package:
+    packageFilters:
       scope:
         - "one_of_no_discriminator"
   one_of_array_map_import:
     run: melos run generate_api
     env:
       SPEC: one_of_array_map_import
-    select-package:
+    packageFilters:
       scope:
         - "one_of_array_map_import"
   one_of_discriminator:
     run: melos run generate_api
     env:
       SPEC: one_of_discriminator
-    select-package:
+    packageFilters:
       scope:
         - "one_of_discriminator"
   one_of_non_primitive:
     run: melos run generate_api
     env:
       SPEC: one_of_non_primitive
-    select-package:
+    packageFilters:
       scope:
         - "one_of_non_primitive"
   one_of_polymorphism_and_inheritance:
     run: melos run generate_api
     env:
       SPEC: one_of_polymorphism_and_inheritance
-    select-package:
+    packageFilters:
       scope:
         - "one_of_polymorphism_and_inheritance"
   one_of_primitive:
     run: melos run generate_api
     env:
       SPEC: one_of_primitive
-    select-package:
+    packageFilters:
       scope:
         - "one_of_primitive"
 
@@ -104,63 +100,63 @@ scripts:
     run: melos run ur_generate_api
     env:
       SPEC: pet_store
-    select-package:
+    packageFilters:
       scope:
         - "ur_pet_store"
   ur_any_of_discriminator:
     run: melos run ur_generate_api
     env:
       SPEC: any_of_discriminator
-    select-package:
+    packageFilters:
       scope:
         - "ur_any_of_discriminator"
   ur_any_of_no_discriminator:
     run: melos run ur_generate_api
     env:
       SPEC: any_of_discriminator
-    select-package:
+    packageFilters:
       scope:
         - "ur_any_of_no_discriminator"
   ur_one_of_array_map_import:
     run: melos run ur_generate_api
     env:
       SPEC: one_of_array_map_import
-    select-package:
+    packageFilters:
       scope:
         - "ur_one_of_array_map_import"
   ur_one_of_discriminator:
     run: melos run ur_generate_api
     env:
       SPEC: one_of_discriminator
-    select-package:
+    packageFilters:
       scope:
         - "ur_one_of_discriminator"
   ur_one_of_no_discriminator:
     run: melos run ur_generate_api
     env:
       SPEC: one_of_no_discriminator
-    select-package:
+    packageFilters:
       scope:
         - "ur_one_of_no_discriminator"
   ur_one_of_non_primitive:
     run: melos run ur_generate_api
     env:
       SPEC: one_of_non_primitive
-    select-package:
+    packageFilters:
       scope:
         - "ur_one_of_non_primitive"
   ur_one_of_polymorphism_and_inheritance:
     run: melos run ur_generate_api
     env:
       SPEC: one_of_polymorphism_and_inheritance
-    select-package:
+    packageFilters:
       scope:
         - "ur_one_of_polymorphism_and_inheritance"
   ur_one_of_primitive:
     run: melos run ur_generate_api
     env:
       SPEC: one_of_primitive
-    select-package:
+    packageFilters:
       scope:
         - "ur_one_of_primitive"
   generate_api:

@@ -20,20 +20,18 @@ class Example with _$Example {
   const factory Example.asNumInUnion({required NumInUnion numValue}) =
       ExampleAsNumInUnion;
   const factory Example.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       DateTime,
       String,
       int,
       num,
     ])
-        List<Type> possibleTypes,
-    @Default(<Example>[])
-        List<Example> deserializedModels,
+    List<Type> possibleTypes,
+    @Default(<Example>[]) List<Example> deserializedModels,
   }) = ExampleUnknown;
 
   factory Example.fromJson(Map<String, dynamic> json) {

@@ -51,7 +51,7 @@ final api = UrOneOfDiscriminator().getDefaultApi();
 try {
     final response = await api.rootGet();
     print(response);
-} catch on DioError (e) {
+} catch on DioException (e) {
     print("Exception when calling DefaultApi->rootGet: $e\n");
 }
 
@@ -69,12 +69,10 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [AppleAllOfDisc](doc/AppleAllOfDisc.md)
- - [AppleAnyOfDisc](doc/AppleAnyOfDisc.md)
  - [AppleGrandparentDisc](doc/AppleGrandparentDisc.md)
  - [AppleOneOfDisc](doc/AppleOneOfDisc.md)
  - [AppleReqDisc](doc/AppleReqDisc.md)
  - [BananaAllOfDisc](doc/BananaAllOfDisc.md)
- - [BananaAnyOfDisc](doc/BananaAnyOfDisc.md)
  - [BananaGrandparentDisc](doc/BananaGrandparentDisc.md)
  - [BananaOneOfDisc](doc/BananaOneOfDisc.md)
  - [BananaReqDisc](doc/BananaReqDisc.md)
@@ -108,7 +106,7 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Authorization
 
- All endpoints do not require authorization.
+Endpoints do not require authorization.
 
 
 ## Author

@@ -14,31 +14,23 @@ part of 'models.dart';
 class FruitAnyOfDisc with _$FruitAnyOfDisc {
   const FruitAnyOfDisc._();
 
-  const factory FruitAnyOfDisc.asAppleAnyOfDisc(
-          {required AppleAnyOfDisc appleAnyOfDiscValue}) =
-      FruitAnyOfDiscAsAppleAnyOfDisc;
-  const factory FruitAnyOfDisc.asBananaAnyOfDisc(
-          {required BananaAnyOfDisc bananaAnyOfDiscValue}) =
-      FruitAnyOfDiscAsBananaAnyOfDisc;
+  const factory FruitAnyOfDisc.asFruitType(
+      {required FruitType fruitTypeValue}) = FruitAnyOfDiscAsFruitType;
   const factory FruitAnyOfDisc.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
-      AppleAnyOfDisc,
-      BananaAnyOfDisc,
+      FruitType,
     ])
-        List<Type> possibleTypes,
-    @Default(<FruitAnyOfDisc>[])
-        List<FruitAnyOfDisc> deserializedModels,
+    List<Type> possibleTypes,
+    @Default(<FruitAnyOfDisc>[]) List<FruitAnyOfDisc> deserializedModels,
   }) = FruitAnyOfDiscUnknown;
 
   factory FruitAnyOfDisc.fromJson(Map<String, dynamic> json) {
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
-      AppleAnyOfDisc.fromJson,
-      BananaAnyOfDisc.fromJson,
+      FruitType.fromJson,
     ];
     final deserializedModels = <FruitAnyOfDisc>[];
     FruitAnyOfDisc? deserializedModel;
@@ -47,14 +39,9 @@ class FruitAnyOfDisc with _$FruitAnyOfDisc {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
         switch (deserializedModel.runtimeType) {
-          case AppleAnyOfDisc:
-            deserializedModel = FruitAnyOfDisc.asAppleAnyOfDisc(
-              appleAnyOfDiscValue: parsedModel as AppleAnyOfDisc,
-            );
-            break;
-          case BananaAnyOfDisc:
-            deserializedModel = FruitAnyOfDisc.asBananaAnyOfDisc(
-              bananaAnyOfDiscValue: parsedModel as BananaAnyOfDisc,
+          case FruitType:
+            deserializedModel = FruitAnyOfDisc.asFruitType(
+              fruitTypeValue: parsedModel as FruitType,
             );
             break;
           default:
@@ -85,8 +72,7 @@ class FruitAnyOfDisc with _$FruitAnyOfDisc {
 
   Map<String, dynamic> toJson() {
     return when(
-      asAppleAnyOfDisc: (asAppleAnyOfDisc) => asAppleAnyOfDisc.toJson(),
-      asBananaAnyOfDisc: (asBananaAnyOfDisc) => asBananaAnyOfDisc.toJson(),
+      asFruitType: (asFruitType) => asFruitType.toJson(),
       unknown: (message, json, errorType, possibleTypes, deserializedModels) =>
           <String, dynamic>{},
     );

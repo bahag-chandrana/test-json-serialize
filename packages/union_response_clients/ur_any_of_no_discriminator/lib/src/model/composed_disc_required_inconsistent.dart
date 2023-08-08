@@ -21,18 +21,17 @@ class ComposedDiscRequiredInconsistent with _$ComposedDiscRequiredInconsistent {
           {required FruitType fruitTypeValue}) =
       ComposedDiscRequiredInconsistentAsFruitType;
   const factory ComposedDiscRequiredInconsistent.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       DiscOptionalTypeCorrect,
       FruitType,
     ])
-        List<Type> possibleTypes,
+    List<Type> possibleTypes,
     @Default(<ComposedDiscRequiredInconsistent>[])
-        List<ComposedDiscRequiredInconsistent> deserializedModels,
+    List<ComposedDiscRequiredInconsistent> deserializedModels,
   }) = ComposedDiscRequiredInconsistentUnknown;
 
   factory ComposedDiscRequiredInconsistent.fromJson(Map<String, dynamic> json) {

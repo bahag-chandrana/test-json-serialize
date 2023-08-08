@@ -23,18 +23,16 @@ class BarRefOrValue with _$BarRefOrValue {
   const factory BarRefOrValue.asBarRef({required BarRef barRefValue}) =
       BarRefOrValueAsBarRef;
   const factory BarRefOrValue.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       Bar,
       BarRef,
     ])
-        List<Type> possibleTypes,
-    @Default(<BarRefOrValue>[])
-        List<BarRefOrValue> deserializedModels,
+    List<Type> possibleTypes,
+    @Default(<BarRefOrValue>[]) List<BarRefOrValue> deserializedModels,
   }) = BarRefOrValueUnknown;
 
   factory BarRefOrValue.fromJson(Map<String, dynamic> json) {

@@ -27,7 +27,7 @@ final api = UrOneOfArrayMapImport().getDefaultApi();
 try {
     final response = api.rootGet();
     print(response);
-} catch on DioError (e) {
+} catch on DioException (e) {
     print('Exception when calling DefaultApi->rootGet: $e\n');
 }
 ```
@@ -64,7 +64,7 @@ final Object body = ; // Object |
 
 try {
     api.test(body);
-} catch on DioError (e) {
+} catch on DioException (e) {
     print('Exception when calling DefaultApi->test: $e\n');
 }
 ```

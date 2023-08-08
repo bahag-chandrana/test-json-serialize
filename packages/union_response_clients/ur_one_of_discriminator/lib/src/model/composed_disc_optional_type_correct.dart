@@ -18,17 +18,16 @@ class ComposedDiscOptionalTypeCorrect with _$ComposedDiscOptionalTypeCorrect {
           {required DiscOptionalTypeCorrect discOptionalTypeCorrectValue}) =
       ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect;
   const factory ComposedDiscOptionalTypeCorrect.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       DiscOptionalTypeCorrect,
     ])
-        List<Type> possibleTypes,
+    List<Type> possibleTypes,
     @Default(<ComposedDiscOptionalTypeCorrect>[])
-        List<ComposedDiscOptionalTypeCorrect> deserializedModels,
+    List<ComposedDiscOptionalTypeCorrect> deserializedModels,
   }) = ComposedDiscOptionalTypeCorrectUnknown;
 
   factory ComposedDiscOptionalTypeCorrect.fromJson(Map<String, dynamic> json) {

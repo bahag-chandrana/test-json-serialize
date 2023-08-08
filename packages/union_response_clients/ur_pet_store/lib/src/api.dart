@@ -12,7 +12,8 @@ import 'package:ur_pet_store/src/api/store_api.dart';
 import 'package:ur_pet_store/src/api/user_api.dart';
 
 class UrPetStore {
-  static const String basePath = r'http://petstore.swagger.io/v2';
+  static const String basePath =
+      r'http://petstore.swagger.io/v5/customer_masterdata/2';
 
   final Dio dio;
   UrPetStore({

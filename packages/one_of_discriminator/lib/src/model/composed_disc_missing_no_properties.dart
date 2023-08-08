@@ -15,17 +15,16 @@ class ComposedDiscMissingNoProperties with _$ComposedDiscMissingNoProperties {
           {required ObjectInUnion objectValue}) =
       ComposedDiscMissingNoPropertiesAsObject;
   const factory ComposedDiscMissingNoProperties.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       Object,
     ])
-        List<Type> possibleTypes,
+    List<Type> possibleTypes,
     @Default(<ComposedDiscMissingNoProperties>[])
-        List<ComposedDiscMissingNoProperties> deserializedModels,
+    List<ComposedDiscMissingNoProperties> deserializedModels,
   }) = ComposedDiscMissingNoPropertiesUnknown;
 
   factory ComposedDiscMissingNoProperties.fromJson(Map<String, dynamic> json) {

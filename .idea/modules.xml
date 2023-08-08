@@ -12,7 +12,15 @@
       <module fileurl="file://$PROJECT_DIR$/packages/one_of_primitive/melos_one_of_primitive.iml" filepath="$PROJECT_DIR$/packages/one_of_primitive/melos_one_of_primitive.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/pet_store/melos_pet_store.iml" filepath="$PROJECT_DIR$/packages/pet_store/melos_pet_store.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/pet_store_bv/melos_pet_store_bv.iml" filepath="$PROJECT_DIR$/packages/pet_store_bv/melos_pet_store_bv.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/pet_store_union_response/melos_pet_store_union_response.iml" filepath="$PROJECT_DIR$/packages/pet_store_union_response/melos_pet_store_union_response.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/union_response_clients/ur_any_of_discriminator/melos_ur_any_of_discriminator.iml" filepath="$PROJECT_DIR$/packages/union_response_clients/ur_any_of_discriminator/melos_ur_any_of_discriminator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/union_response_clients/ur_any_of_no_discriminator/melos_ur_any_of_no_discriminator.iml" filepath="$PROJECT_DIR$/packages/union_response_clients/ur_any_of_no_discriminator/melos_ur_any_of_no_discriminator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/union_response_clients/ur_one_of_array_map_import/melos_ur_one_of_array_map_import.iml" filepath="$PROJECT_DIR$/packages/union_response_clients/ur_one_of_array_map_import/melos_ur_one_of_array_map_import.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/union_response_clients/ur_one_of_discriminator/melos_ur_one_of_discriminator.iml" filepath="$PROJECT_DIR$/packages/union_response_clients/ur_one_of_discriminator/melos_ur_one_of_discriminator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/union_response_clients/ur_one_of_no_discriminator/melos_ur_one_of_no_discriminator.iml" filepath="$PROJECT_DIR$/packages/union_response_clients/ur_one_of_no_discriminator/melos_ur_one_of_no_discriminator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/union_response_clients/ur_one_of_non_primitive/melos_ur_one_of_non_primitive.iml" filepath="$PROJECT_DIR$/packages/union_response_clients/ur_one_of_non_primitive/melos_ur_one_of_non_primitive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/union_response_clients/ur_one_of_polymorphism_and_inheritance/melos_ur_one_of_polymorphism_and_inheritance.iml" filepath="$PROJECT_DIR$/packages/union_response_clients/ur_one_of_polymorphism_and_inheritance/melos_ur_one_of_polymorphism_and_inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/union_response_clients/ur_one_of_primitive/melos_ur_one_of_primitive.iml" filepath="$PROJECT_DIR$/packages/union_response_clients/ur_one_of_primitive/melos_ur_one_of_primitive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/union_response_clients/ur_pet_store/melos_ur_pet_store.iml" filepath="$PROJECT_DIR$/packages/union_response_clients/ur_pet_store/melos_ur_pet_store.iml" />
       <module fileurl="file://$PROJECT_DIR$/melos_dart-dio-gen-test.iml" filepath="$PROJECT_DIR$/melos_dart-dio-gen-test.iml" />
     </modules>
   </component>

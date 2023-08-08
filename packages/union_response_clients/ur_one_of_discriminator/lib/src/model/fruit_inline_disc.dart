@@ -23,18 +23,16 @@ class FruitInlineDisc with _$FruitInlineDisc {
           {required FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value}) =
       FruitInlineDiscAsFruitInlineDiscOneOf1;
   const factory FruitInlineDisc.unknown({
-    @Default('Json does not satisfy any available types')
-        String message,
+    @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
-        DeserializationErrorType errorType,
+    DeserializationErrorType errorType,
     @Default(<Type>[
       FruitInlineDiscOneOf,
       FruitInlineDiscOneOf1,
     ])
-        List<Type> possibleTypes,
-    @Default(<FruitInlineDisc>[])
-        List<FruitInlineDisc> deserializedModels,
+    List<Type> possibleTypes,
+    @Default(<FruitInlineDisc>[]) List<FruitInlineDisc> deserializedModels,
   }) = FruitInlineDiscUnknown;
 
   factory FruitInlineDisc.fromJson(Map<String, dynamic> json) {
