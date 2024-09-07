@@ -1,7 +1,5 @@
 //ignore_for_file: invalid_annotation_target
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:dio/dio.dart';
-import 'dart:convert';
 
 part 'models.freezed.dart';
 part 'models.g.dart';

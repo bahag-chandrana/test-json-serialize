@@ -12,7 +12,7 @@ part of 'models.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 IntInUnion _$IntInUnionFromJson(Map<String, dynamic> json) {
   return _IntInUnion.fromJson(json);
@@ -62,22 +62,22 @@ class _$IntInUnionCopyWithImpl<$Res, $Val extends IntInUnion>
 }
 
 /// @nodoc
-abstract class _$$_IntInUnionCopyWith<$Res>
+abstract class _$$IntInUnionImplCopyWith<$Res>
     implements $IntInUnionCopyWith<$Res> {
-  factory _$$_IntInUnionCopyWith(
-          _$_IntInUnion value, $Res Function(_$_IntInUnion) then) =
-      __$$_IntInUnionCopyWithImpl<$Res>;
+  factory _$$IntInUnionImplCopyWith(
+          _$IntInUnionImpl value, $Res Function(_$IntInUnionImpl) then) =
+      __$$IntInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$$_IntInUnionCopyWithImpl<$Res>
-    extends _$IntInUnionCopyWithImpl<$Res, _$_IntInUnion>
-    implements _$$_IntInUnionCopyWith<$Res> {
-  __$$_IntInUnionCopyWithImpl(
-      _$_IntInUnion _value, $Res Function(_$_IntInUnion) _then)
+class __$$IntInUnionImplCopyWithImpl<$Res>
+    extends _$IntInUnionCopyWithImpl<$Res, _$IntInUnionImpl>
+    implements _$$IntInUnionImplCopyWith<$Res> {
+  __$$IntInUnionImplCopyWithImpl(
+      _$IntInUnionImpl _value, $Res Function(_$IntInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -85,7 +85,7 @@ class __$$_IntInUnionCopyWithImpl<$Res>
   $Res call({
     Object? intValue = null,
   }) {
-    return _then(_$_IntInUnion(
+    return _then(_$IntInUnionImpl(
       intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
@@ -96,11 +96,11 @@ class __$$_IntInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_IntInUnion implements _IntInUnion {
-  const _$_IntInUnion({required this.intValue});
+class _$IntInUnionImpl implements _IntInUnion {
+  const _$IntInUnionImpl({required this.intValue});
 
-  factory _$_IntInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_IntInUnionFromJson(json);
+  factory _$IntInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$IntInUnionImplFromJson(json);
 
   @override
   final int intValue;
@@ -111,10 +111,10 @@ class _$_IntInUnion implements _IntInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_IntInUnion &&
+            other is _$IntInUnionImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -126,28 +126,28 @@ class _$_IntInUnion implements _IntInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_IntInUnionCopyWith<_$_IntInUnion> get copyWith =>
-      __$$_IntInUnionCopyWithImpl<_$_IntInUnion>(this, _$identity);
+  _$$IntInUnionImplCopyWith<_$IntInUnionImpl> get copyWith =>
+      __$$IntInUnionImplCopyWithImpl<_$IntInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_IntInUnionToJson(
+    return _$$IntInUnionImplToJson(
       this,
     );
   }
 }
 
 abstract class _IntInUnion implements IntInUnion {
-  const factory _IntInUnion({required final int intValue}) = _$_IntInUnion;
+  const factory _IntInUnion({required final int intValue}) = _$IntInUnionImpl;
 
   factory _IntInUnion.fromJson(Map<String, dynamic> json) =
-      _$_IntInUnion.fromJson;
+      _$IntInUnionImpl.fromJson;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$$_IntInUnionCopyWith<_$_IntInUnion> get copyWith =>
+  _$$IntInUnionImplCopyWith<_$IntInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -199,22 +199,22 @@ class _$StringInUnionCopyWithImpl<$Res, $Val extends StringInUnion>
 }
 
 /// @nodoc
-abstract class _$$_StringInUnionCopyWith<$Res>
+abstract class _$$StringInUnionImplCopyWith<$Res>
     implements $StringInUnionCopyWith<$Res> {
-  factory _$$_StringInUnionCopyWith(
-          _$_StringInUnion value, $Res Function(_$_StringInUnion) then) =
-      __$$_StringInUnionCopyWithImpl<$Res>;
+  factory _$$StringInUnionImplCopyWith(
+          _$StringInUnionImpl value, $Res Function(_$StringInUnionImpl) then) =
+      __$$StringInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$$_StringInUnionCopyWithImpl<$Res>
-    extends _$StringInUnionCopyWithImpl<$Res, _$_StringInUnion>
-    implements _$$_StringInUnionCopyWith<$Res> {
-  __$$_StringInUnionCopyWithImpl(
-      _$_StringInUnion _value, $Res Function(_$_StringInUnion) _then)
+class __$$StringInUnionImplCopyWithImpl<$Res>
+    extends _$StringInUnionCopyWithImpl<$Res, _$StringInUnionImpl>
+    implements _$$StringInUnionImplCopyWith<$Res> {
+  __$$StringInUnionImplCopyWithImpl(
+      _$StringInUnionImpl _value, $Res Function(_$StringInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -222,7 +222,7 @@ class __$$_StringInUnionCopyWithImpl<$Res>
   $Res call({
     Object? stringValue = null,
   }) {
-    return _then(_$_StringInUnion(
+    return _then(_$StringInUnionImpl(
       stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
@@ -233,11 +233,11 @@ class __$$_StringInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_StringInUnion implements _StringInUnion {
-  const _$_StringInUnion({required this.stringValue});
+class _$StringInUnionImpl implements _StringInUnion {
+  const _$StringInUnionImpl({required this.stringValue});
 
-  factory _$_StringInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_StringInUnionFromJson(json);
+  factory _$StringInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$StringInUnionImplFromJson(json);
 
   @override
   final String stringValue;
@@ -248,10 +248,10 @@ class _$_StringInUnion implements _StringInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_StringInUnion &&
+            other is _$StringInUnionImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -263,12 +263,12 @@ class _$_StringInUnion implements _StringInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_StringInUnionCopyWith<_$_StringInUnion> get copyWith =>
-      __$$_StringInUnionCopyWithImpl<_$_StringInUnion>(this, _$identity);
+  _$$StringInUnionImplCopyWith<_$StringInUnionImpl> get copyWith =>
+      __$$StringInUnionImplCopyWithImpl<_$StringInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_StringInUnionToJson(
+    return _$$StringInUnionImplToJson(
       this,
     );
   }
@@ -276,16 +276,16 @@ class _$_StringInUnion implements _StringInUnion {
 
 abstract class _StringInUnion implements StringInUnion {
   const factory _StringInUnion({required final String stringValue}) =
-      _$_StringInUnion;
+      _$StringInUnionImpl;
 
   factory _StringInUnion.fromJson(Map<String, dynamic> json) =
-      _$_StringInUnion.fromJson;
+      _$StringInUnionImpl.fromJson;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$$_StringInUnionCopyWith<_$_StringInUnion> get copyWith =>
+  _$$StringInUnionImplCopyWith<_$StringInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -337,22 +337,22 @@ class _$BoolInUnionCopyWithImpl<$Res, $Val extends BoolInUnion>
 }
 
 /// @nodoc
-abstract class _$$_BoolInUnionCopyWith<$Res>
+abstract class _$$BoolInUnionImplCopyWith<$Res>
     implements $BoolInUnionCopyWith<$Res> {
-  factory _$$_BoolInUnionCopyWith(
-          _$_BoolInUnion value, $Res Function(_$_BoolInUnion) then) =
-      __$$_BoolInUnionCopyWithImpl<$Res>;
+  factory _$$BoolInUnionImplCopyWith(
+          _$BoolInUnionImpl value, $Res Function(_$BoolInUnionImpl) then) =
+      __$$BoolInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool boolValue});
 }
 
 /// @nodoc
-class __$$_BoolInUnionCopyWithImpl<$Res>
-    extends _$BoolInUnionCopyWithImpl<$Res, _$_BoolInUnion>
-    implements _$$_BoolInUnionCopyWith<$Res> {
-  __$$_BoolInUnionCopyWithImpl(
-      _$_BoolInUnion _value, $Res Function(_$_BoolInUnion) _then)
+class __$$BoolInUnionImplCopyWithImpl<$Res>
+    extends _$BoolInUnionCopyWithImpl<$Res, _$BoolInUnionImpl>
+    implements _$$BoolInUnionImplCopyWith<$Res> {
+  __$$BoolInUnionImplCopyWithImpl(
+      _$BoolInUnionImpl _value, $Res Function(_$BoolInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -360,7 +360,7 @@ class __$$_BoolInUnionCopyWithImpl<$Res>
   $Res call({
     Object? boolValue = null,
   }) {
-    return _then(_$_BoolInUnion(
+    return _then(_$BoolInUnionImpl(
       boolValue: null == boolValue
           ? _value.boolValue
           : boolValue // ignore: cast_nullable_to_non_nullable
@@ -371,11 +371,11 @@ class __$$_BoolInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_BoolInUnion implements _BoolInUnion {
-  const _$_BoolInUnion({required this.boolValue});
+class _$BoolInUnionImpl implements _BoolInUnion {
+  const _$BoolInUnionImpl({required this.boolValue});
 
-  factory _$_BoolInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_BoolInUnionFromJson(json);
+  factory _$BoolInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$BoolInUnionImplFromJson(json);
 
   @override
   final bool boolValue;
@@ -386,10 +386,10 @@ class _$_BoolInUnion implements _BoolInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_BoolInUnion &&
+            other is _$BoolInUnionImpl &&
             (identical(other.boolValue, boolValue) ||
                 other.boolValue == boolValue));
   }
@@ -401,28 +401,29 @@ class _$_BoolInUnion implements _BoolInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_BoolInUnionCopyWith<_$_BoolInUnion> get copyWith =>
-      __$$_BoolInUnionCopyWithImpl<_$_BoolInUnion>(this, _$identity);
+  _$$BoolInUnionImplCopyWith<_$BoolInUnionImpl> get copyWith =>
+      __$$BoolInUnionImplCopyWithImpl<_$BoolInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BoolInUnionToJson(
+    return _$$BoolInUnionImplToJson(
       this,
     );
   }
 }
 
 abstract class _BoolInUnion implements BoolInUnion {
-  const factory _BoolInUnion({required final bool boolValue}) = _$_BoolInUnion;
+  const factory _BoolInUnion({required final bool boolValue}) =
+      _$BoolInUnionImpl;
 
   factory _BoolInUnion.fromJson(Map<String, dynamic> json) =
-      _$_BoolInUnion.fromJson;
+      _$BoolInUnionImpl.fromJson;
 
   @override
   bool get boolValue;
   @override
   @JsonKey(ignore: true)
-  _$$_BoolInUnionCopyWith<_$_BoolInUnion> get copyWith =>
+  _$$BoolInUnionImplCopyWith<_$BoolInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -474,22 +475,22 @@ class _$DoubleInUnionCopyWithImpl<$Res, $Val extends DoubleInUnion>
 }
 
 /// @nodoc
-abstract class _$$_DoubleInUnionCopyWith<$Res>
+abstract class _$$DoubleInUnionImplCopyWith<$Res>
     implements $DoubleInUnionCopyWith<$Res> {
-  factory _$$_DoubleInUnionCopyWith(
-          _$_DoubleInUnion value, $Res Function(_$_DoubleInUnion) then) =
-      __$$_DoubleInUnionCopyWithImpl<$Res>;
+  factory _$$DoubleInUnionImplCopyWith(
+          _$DoubleInUnionImpl value, $Res Function(_$DoubleInUnionImpl) then) =
+      __$$DoubleInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({double doubleValue});
 }
 
 /// @nodoc
-class __$$_DoubleInUnionCopyWithImpl<$Res>
-    extends _$DoubleInUnionCopyWithImpl<$Res, _$_DoubleInUnion>
-    implements _$$_DoubleInUnionCopyWith<$Res> {
-  __$$_DoubleInUnionCopyWithImpl(
-      _$_DoubleInUnion _value, $Res Function(_$_DoubleInUnion) _then)
+class __$$DoubleInUnionImplCopyWithImpl<$Res>
+    extends _$DoubleInUnionCopyWithImpl<$Res, _$DoubleInUnionImpl>
+    implements _$$DoubleInUnionImplCopyWith<$Res> {
+  __$$DoubleInUnionImplCopyWithImpl(
+      _$DoubleInUnionImpl _value, $Res Function(_$DoubleInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -497,7 +498,7 @@ class __$$_DoubleInUnionCopyWithImpl<$Res>
   $Res call({
     Object? doubleValue = null,
   }) {
-    return _then(_$_DoubleInUnion(
+    return _then(_$DoubleInUnionImpl(
       doubleValue: null == doubleValue
           ? _value.doubleValue
           : doubleValue // ignore: cast_nullable_to_non_nullable
@@ -508,11 +509,11 @@ class __$$_DoubleInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DoubleInUnion implements _DoubleInUnion {
-  const _$_DoubleInUnion({required this.doubleValue});
+class _$DoubleInUnionImpl implements _DoubleInUnion {
+  const _$DoubleInUnionImpl({required this.doubleValue});
 
-  factory _$_DoubleInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_DoubleInUnionFromJson(json);
+  factory _$DoubleInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DoubleInUnionImplFromJson(json);
 
   @override
   final double doubleValue;
@@ -523,10 +524,10 @@ class _$_DoubleInUnion implements _DoubleInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DoubleInUnion &&
+            other is _$DoubleInUnionImpl &&
             (identical(other.doubleValue, doubleValue) ||
                 other.doubleValue == doubleValue));
   }
@@ -538,12 +539,12 @@ class _$_DoubleInUnion implements _DoubleInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DoubleInUnionCopyWith<_$_DoubleInUnion> get copyWith =>
-      __$$_DoubleInUnionCopyWithImpl<_$_DoubleInUnion>(this, _$identity);
+  _$$DoubleInUnionImplCopyWith<_$DoubleInUnionImpl> get copyWith =>
+      __$$DoubleInUnionImplCopyWithImpl<_$DoubleInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DoubleInUnionToJson(
+    return _$$DoubleInUnionImplToJson(
       this,
     );
   }
@@ -551,16 +552,16 @@ class _$_DoubleInUnion implements _DoubleInUnion {
 
 abstract class _DoubleInUnion implements DoubleInUnion {
   const factory _DoubleInUnion({required final double doubleValue}) =
-      _$_DoubleInUnion;
+      _$DoubleInUnionImpl;
 
   factory _DoubleInUnion.fromJson(Map<String, dynamic> json) =
-      _$_DoubleInUnion.fromJson;
+      _$DoubleInUnionImpl.fromJson;
 
   @override
   double get doubleValue;
   @override
   @JsonKey(ignore: true)
-  _$$_DoubleInUnionCopyWith<_$_DoubleInUnion> get copyWith =>
+  _$$DoubleInUnionImplCopyWith<_$DoubleInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -609,22 +610,22 @@ class _$ObjectInUnionCopyWithImpl<$Res, $Val extends ObjectInUnion>
 }
 
 /// @nodoc
-abstract class _$$_ObjectInUnionCopyWith<$Res>
+abstract class _$$ObjectInUnionImplCopyWith<$Res>
     implements $ObjectInUnionCopyWith<$Res> {
-  factory _$$_ObjectInUnionCopyWith(
-          _$_ObjectInUnion value, $Res Function(_$_ObjectInUnion) then) =
-      __$$_ObjectInUnionCopyWithImpl<$Res>;
+  factory _$$ObjectInUnionImplCopyWith(
+          _$ObjectInUnionImpl value, $Res Function(_$ObjectInUnionImpl) then) =
+      __$$ObjectInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object objectValue});
 }
 
 /// @nodoc
-class __$$_ObjectInUnionCopyWithImpl<$Res>
-    extends _$ObjectInUnionCopyWithImpl<$Res, _$_ObjectInUnion>
-    implements _$$_ObjectInUnionCopyWith<$Res> {
-  __$$_ObjectInUnionCopyWithImpl(
-      _$_ObjectInUnion _value, $Res Function(_$_ObjectInUnion) _then)
+class __$$ObjectInUnionImplCopyWithImpl<$Res>
+    extends _$ObjectInUnionCopyWithImpl<$Res, _$ObjectInUnionImpl>
+    implements _$$ObjectInUnionImplCopyWith<$Res> {
+  __$$ObjectInUnionImplCopyWithImpl(
+      _$ObjectInUnionImpl _value, $Res Function(_$ObjectInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -632,7 +633,7 @@ class __$$_ObjectInUnionCopyWithImpl<$Res>
   $Res call({
     Object? objectValue = null,
   }) {
-    return _then(_$_ObjectInUnion(
+    return _then(_$ObjectInUnionImpl(
       objectValue: null == objectValue ? _value.objectValue : objectValue,
     ));
   }
@@ -640,11 +641,11 @@ class __$$_ObjectInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ObjectInUnion implements _ObjectInUnion {
-  const _$_ObjectInUnion({required this.objectValue});
+class _$ObjectInUnionImpl implements _ObjectInUnion {
+  const _$ObjectInUnionImpl({required this.objectValue});
 
-  factory _$_ObjectInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_ObjectInUnionFromJson(json);
+  factory _$ObjectInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ObjectInUnionImplFromJson(json);
 
   @override
   final Object objectValue;
@@ -655,10 +656,10 @@ class _$_ObjectInUnion implements _ObjectInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ObjectInUnion &&
+            other is _$ObjectInUnionImpl &&
             const DeepCollectionEquality()
                 .equals(other.objectValue, objectValue));
   }
@@ -671,12 +672,12 @@ class _$_ObjectInUnion implements _ObjectInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ObjectInUnionCopyWith<_$_ObjectInUnion> get copyWith =>
-      __$$_ObjectInUnionCopyWithImpl<_$_ObjectInUnion>(this, _$identity);
+  _$$ObjectInUnionImplCopyWith<_$ObjectInUnionImpl> get copyWith =>
+      __$$ObjectInUnionImplCopyWithImpl<_$ObjectInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ObjectInUnionToJson(
+    return _$$ObjectInUnionImplToJson(
       this,
     );
   }
@@ -684,16 +685,16 @@ class _$_ObjectInUnion implements _ObjectInUnion {
 
 abstract class _ObjectInUnion implements ObjectInUnion {
   const factory _ObjectInUnion({required final Object objectValue}) =
-      _$_ObjectInUnion;
+      _$ObjectInUnionImpl;
 
   factory _ObjectInUnion.fromJson(Map<String, dynamic> json) =
-      _$_ObjectInUnion.fromJson;
+      _$ObjectInUnionImpl.fromJson;
 
   @override
   Object get objectValue;
   @override
   @JsonKey(ignore: true)
-  _$$_ObjectInUnionCopyWith<_$_ObjectInUnion> get copyWith =>
+  _$$ObjectInUnionImplCopyWith<_$ObjectInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -745,22 +746,22 @@ class _$NumInUnionCopyWithImpl<$Res, $Val extends NumInUnion>
 }
 
 /// @nodoc
-abstract class _$$_NumInUnionCopyWith<$Res>
+abstract class _$$NumInUnionImplCopyWith<$Res>
     implements $NumInUnionCopyWith<$Res> {
-  factory _$$_NumInUnionCopyWith(
-          _$_NumInUnion value, $Res Function(_$_NumInUnion) then) =
-      __$$_NumInUnionCopyWithImpl<$Res>;
+  factory _$$NumInUnionImplCopyWith(
+          _$NumInUnionImpl value, $Res Function(_$NumInUnionImpl) then) =
+      __$$NumInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({num numValue});
 }
 
 /// @nodoc
-class __$$_NumInUnionCopyWithImpl<$Res>
-    extends _$NumInUnionCopyWithImpl<$Res, _$_NumInUnion>
-    implements _$$_NumInUnionCopyWith<$Res> {
-  __$$_NumInUnionCopyWithImpl(
-      _$_NumInUnion _value, $Res Function(_$_NumInUnion) _then)
+class __$$NumInUnionImplCopyWithImpl<$Res>
+    extends _$NumInUnionCopyWithImpl<$Res, _$NumInUnionImpl>
+    implements _$$NumInUnionImplCopyWith<$Res> {
+  __$$NumInUnionImplCopyWithImpl(
+      _$NumInUnionImpl _value, $Res Function(_$NumInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -768,7 +769,7 @@ class __$$_NumInUnionCopyWithImpl<$Res>
   $Res call({
     Object? numValue = null,
   }) {
-    return _then(_$_NumInUnion(
+    return _then(_$NumInUnionImpl(
       numValue: null == numValue
           ? _value.numValue
           : numValue // ignore: cast_nullable_to_non_nullable
@@ -779,11 +780,11 @@ class __$$_NumInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_NumInUnion implements _NumInUnion {
-  const _$_NumInUnion({required this.numValue});
+class _$NumInUnionImpl implements _NumInUnion {
+  const _$NumInUnionImpl({required this.numValue});
 
-  factory _$_NumInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_NumInUnionFromJson(json);
+  factory _$NumInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$NumInUnionImplFromJson(json);
 
   @override
   final num numValue;
@@ -794,10 +795,10 @@ class _$_NumInUnion implements _NumInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_NumInUnion &&
+            other is _$NumInUnionImpl &&
             (identical(other.numValue, numValue) ||
                 other.numValue == numValue));
   }
@@ -809,28 +810,28 @@ class _$_NumInUnion implements _NumInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_NumInUnionCopyWith<_$_NumInUnion> get copyWith =>
-      __$$_NumInUnionCopyWithImpl<_$_NumInUnion>(this, _$identity);
+  _$$NumInUnionImplCopyWith<_$NumInUnionImpl> get copyWith =>
+      __$$NumInUnionImplCopyWithImpl<_$NumInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NumInUnionToJson(
+    return _$$NumInUnionImplToJson(
       this,
     );
   }
 }
 
 abstract class _NumInUnion implements NumInUnion {
-  const factory _NumInUnion({required final num numValue}) = _$_NumInUnion;
+  const factory _NumInUnion({required final num numValue}) = _$NumInUnionImpl;
 
   factory _NumInUnion.fromJson(Map<String, dynamic> json) =
-      _$_NumInUnion.fromJson;
+      _$NumInUnionImpl.fromJson;
 
   @override
   num get numValue;
   @override
   @JsonKey(ignore: true)
-  _$$_NumInUnionCopyWith<_$_NumInUnion> get copyWith =>
+  _$$NumInUnionImplCopyWith<_$NumInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -882,22 +883,22 @@ class _$DateTimeInUnionCopyWithImpl<$Res, $Val extends DateTimeInUnion>
 }
 
 /// @nodoc
-abstract class _$$_DateTimeInUnionCopyWith<$Res>
+abstract class _$$DateTimeInUnionImplCopyWith<$Res>
     implements $DateTimeInUnionCopyWith<$Res> {
-  factory _$$_DateTimeInUnionCopyWith(
-          _$_DateTimeInUnion value, $Res Function(_$_DateTimeInUnion) then) =
-      __$$_DateTimeInUnionCopyWithImpl<$Res>;
+  factory _$$DateTimeInUnionImplCopyWith(_$DateTimeInUnionImpl value,
+          $Res Function(_$DateTimeInUnionImpl) then) =
+      __$$DateTimeInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({DateTime dateTimeValue});
 }
 
 /// @nodoc
-class __$$_DateTimeInUnionCopyWithImpl<$Res>
-    extends _$DateTimeInUnionCopyWithImpl<$Res, _$_DateTimeInUnion>
-    implements _$$_DateTimeInUnionCopyWith<$Res> {
-  __$$_DateTimeInUnionCopyWithImpl(
-      _$_DateTimeInUnion _value, $Res Function(_$_DateTimeInUnion) _then)
+class __$$DateTimeInUnionImplCopyWithImpl<$Res>
+    extends _$DateTimeInUnionCopyWithImpl<$Res, _$DateTimeInUnionImpl>
+    implements _$$DateTimeInUnionImplCopyWith<$Res> {
+  __$$DateTimeInUnionImplCopyWithImpl(
+      _$DateTimeInUnionImpl _value, $Res Function(_$DateTimeInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -905,7 +906,7 @@ class __$$_DateTimeInUnionCopyWithImpl<$Res>
   $Res call({
     Object? dateTimeValue = null,
   }) {
-    return _then(_$_DateTimeInUnion(
+    return _then(_$DateTimeInUnionImpl(
       dateTimeValue: null == dateTimeValue
           ? _value.dateTimeValue
           : dateTimeValue // ignore: cast_nullable_to_non_nullable
@@ -916,11 +917,11 @@ class __$$_DateTimeInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DateTimeInUnion implements _DateTimeInUnion {
-  const _$_DateTimeInUnion({required this.dateTimeValue});
+class _$DateTimeInUnionImpl implements _DateTimeInUnion {
+  const _$DateTimeInUnionImpl({required this.dateTimeValue});
 
-  factory _$_DateTimeInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_DateTimeInUnionFromJson(json);
+  factory _$DateTimeInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DateTimeInUnionImplFromJson(json);
 
   @override
   final DateTime dateTimeValue;
@@ -931,10 +932,10 @@ class _$_DateTimeInUnion implements _DateTimeInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DateTimeInUnion &&
+            other is _$DateTimeInUnionImpl &&
             (identical(other.dateTimeValue, dateTimeValue) ||
                 other.dateTimeValue == dateTimeValue));
   }
@@ -946,12 +947,13 @@ class _$_DateTimeInUnion implements _DateTimeInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DateTimeInUnionCopyWith<_$_DateTimeInUnion> get copyWith =>
-      __$$_DateTimeInUnionCopyWithImpl<_$_DateTimeInUnion>(this, _$identity);
+  _$$DateTimeInUnionImplCopyWith<_$DateTimeInUnionImpl> get copyWith =>
+      __$$DateTimeInUnionImplCopyWithImpl<_$DateTimeInUnionImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DateTimeInUnionToJson(
+    return _$$DateTimeInUnionImplToJson(
       this,
     );
   }
@@ -959,16 +961,16 @@ class _$_DateTimeInUnion implements _DateTimeInUnion {
 
 abstract class _DateTimeInUnion implements DateTimeInUnion {
   const factory _DateTimeInUnion({required final DateTime dateTimeValue}) =
-      _$_DateTimeInUnion;
+      _$DateTimeInUnionImpl;
 
   factory _DateTimeInUnion.fromJson(Map<String, dynamic> json) =
-      _$_DateTimeInUnion.fromJson;
+      _$DateTimeInUnionImpl.fromJson;
 
   @override
   DateTime get dateTimeValue;
   @override
   @JsonKey(ignore: true)
-  _$$_DateTimeInUnionCopyWith<_$_DateTimeInUnion> get copyWith =>
+  _$$DateTimeInUnionImplCopyWith<_$DateTimeInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -1034,10 +1036,10 @@ class _$RootGetDataCopyWithImpl<$Res, $Val extends RootGetData>
 }
 
 /// @nodoc
-abstract class _$$RootGetDataAs200CopyWith<$Res> {
-  factory _$$RootGetDataAs200CopyWith(
-          _$RootGetDataAs200 value, $Res Function(_$RootGetDataAs200) then) =
-      __$$RootGetDataAs200CopyWithImpl<$Res>;
+abstract class _$$RootGetDataAs200ImplCopyWith<$Res> {
+  factory _$$RootGetDataAs200ImplCopyWith(_$RootGetDataAs200Impl value,
+          $Res Function(_$RootGetDataAs200Impl) then) =
+      __$$RootGetDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({FruitAllOfDisc responseData});
 
@@ -1045,11 +1047,11 @@ abstract class _$$RootGetDataAs200CopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$RootGetDataAs200CopyWithImpl<$Res>
-    extends _$RootGetDataCopyWithImpl<$Res, _$RootGetDataAs200>
-    implements _$$RootGetDataAs200CopyWith<$Res> {
-  __$$RootGetDataAs200CopyWithImpl(
-      _$RootGetDataAs200 _value, $Res Function(_$RootGetDataAs200) _then)
+class __$$RootGetDataAs200ImplCopyWithImpl<$Res>
+    extends _$RootGetDataCopyWithImpl<$Res, _$RootGetDataAs200Impl>
+    implements _$$RootGetDataAs200ImplCopyWith<$Res> {
+  __$$RootGetDataAs200ImplCopyWithImpl(_$RootGetDataAs200Impl _value,
+      $Res Function(_$RootGetDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1057,7 +1059,7 @@ class __$$RootGetDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$RootGetDataAs200(
+    return _then(_$RootGetDataAs200Impl(
       responseData: null == responseData
           ? _value.responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -1076,8 +1078,8 @@ class __$$RootGetDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$RootGetDataAs200 extends RootGetDataAs200 {
-  const _$RootGetDataAs200({required this.responseData}) : super._();
+class _$RootGetDataAs200Impl extends RootGetDataAs200 {
+  const _$RootGetDataAs200Impl({required this.responseData}) : super._();
 
   @override
   final FruitAllOfDisc responseData;
@@ -1088,10 +1090,10 @@ class _$RootGetDataAs200 extends RootGetDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$RootGetDataAs200 &&
+            other is _$RootGetDataAs200Impl &&
             (identical(other.responseData, responseData) ||
                 other.responseData == responseData));
   }
@@ -1102,8 +1104,9 @@ class _$RootGetDataAs200 extends RootGetDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$RootGetDataAs200CopyWith<_$RootGetDataAs200> get copyWith =>
-      __$$RootGetDataAs200CopyWithImpl<_$RootGetDataAs200>(this, _$identity);
+  _$$RootGetDataAs200ImplCopyWith<_$RootGetDataAs200Impl> get copyWith =>
+      __$$RootGetDataAs200ImplCopyWithImpl<_$RootGetDataAs200Impl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1170,31 +1173,33 @@ class _$RootGetDataAs200 extends RootGetDataAs200 {
 
 abstract class RootGetDataAs200 extends RootGetData {
   const factory RootGetDataAs200({required final FruitAllOfDisc responseData}) =
-      _$RootGetDataAs200;
+      _$RootGetDataAs200Impl;
   const RootGetDataAs200._() : super._();
 
   @override
   FruitAllOfDisc get responseData;
   @JsonKey(ignore: true)
-  _$$RootGetDataAs200CopyWith<_$RootGetDataAs200> get copyWith =>
+  _$$RootGetDataAs200ImplCopyWith<_$RootGetDataAs200Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$RootGetResponseUnknownCopyWith<$Res> {
-  factory _$$RootGetResponseUnknownCopyWith(_$RootGetResponseUnknown value,
-          $Res Function(_$RootGetResponseUnknown) then) =
-      __$$RootGetResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$RootGetResponseUnknownImplCopyWith<$Res> {
+  factory _$$RootGetResponseUnknownImplCopyWith(
+          _$RootGetResponseUnknownImpl value,
+          $Res Function(_$RootGetResponseUnknownImpl) then) =
+      __$$RootGetResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$RootGetResponseUnknownCopyWithImpl<$Res>
-    extends _$RootGetDataCopyWithImpl<$Res, _$RootGetResponseUnknown>
-    implements _$$RootGetResponseUnknownCopyWith<$Res> {
-  __$$RootGetResponseUnknownCopyWithImpl(_$RootGetResponseUnknown _value,
-      $Res Function(_$RootGetResponseUnknown) _then)
+class __$$RootGetResponseUnknownImplCopyWithImpl<$Res>
+    extends _$RootGetDataCopyWithImpl<$Res, _$RootGetResponseUnknownImpl>
+    implements _$$RootGetResponseUnknownImplCopyWith<$Res> {
+  __$$RootGetResponseUnknownImplCopyWithImpl(
+      _$RootGetResponseUnknownImpl _value,
+      $Res Function(_$RootGetResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1203,7 +1208,7 @@ class __$$RootGetResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$RootGetResponseUnknown(
+    return _then(_$RootGetResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -1216,8 +1221,9 @@ class __$$RootGetResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$RootGetResponseUnknown extends RootGetResponseUnknown {
-  const _$RootGetResponseUnknown({this.statusCode, required this.responseData})
+class _$RootGetResponseUnknownImpl extends RootGetResponseUnknown {
+  const _$RootGetResponseUnknownImpl(
+      {this.statusCode, required this.responseData})
       : super._();
 
   @override
@@ -1231,10 +1237,10 @@ class _$RootGetResponseUnknown extends RootGetResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$RootGetResponseUnknown &&
+            other is _$RootGetResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -1248,9 +1254,9 @@ class _$RootGetResponseUnknown extends RootGetResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$RootGetResponseUnknownCopyWith<_$RootGetResponseUnknown> get copyWith =>
-      __$$RootGetResponseUnknownCopyWithImpl<_$RootGetResponseUnknown>(
-          this, _$identity);
+  _$$RootGetResponseUnknownImplCopyWith<_$RootGetResponseUnknownImpl>
+      get copyWith => __$$RootGetResponseUnknownImplCopyWithImpl<
+          _$RootGetResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1318,15 +1324,15 @@ class _$RootGetResponseUnknown extends RootGetResponseUnknown {
 abstract class RootGetResponseUnknown extends RootGetData {
   const factory RootGetResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$RootGetResponseUnknown;
+      required final Object? responseData}) = _$RootGetResponseUnknownImpl;
   const RootGetResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$RootGetResponseUnknownCopyWith<_$RootGetResponseUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$RootGetResponseUnknownImplCopyWith<_$RootGetResponseUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 AppleAllOfDisc _$AppleAllOfDiscFromJson(Map<String, dynamic> json) {
@@ -1387,11 +1393,11 @@ class _$AppleAllOfDiscCopyWithImpl<$Res, $Val extends AppleAllOfDisc>
 }
 
 /// @nodoc
-abstract class _$$_AppleAllOfDiscCopyWith<$Res>
+abstract class _$$AppleAllOfDiscImplCopyWith<$Res>
     implements $AppleAllOfDiscCopyWith<$Res> {
-  factory _$$_AppleAllOfDiscCopyWith(
-          _$_AppleAllOfDisc value, $Res Function(_$_AppleAllOfDisc) then) =
-      __$$_AppleAllOfDiscCopyWithImpl<$Res>;
+  factory _$$AppleAllOfDiscImplCopyWith(_$AppleAllOfDiscImpl value,
+          $Res Function(_$AppleAllOfDiscImpl) then) =
+      __$$AppleAllOfDiscImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -1400,11 +1406,11 @@ abstract class _$$_AppleAllOfDiscCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_AppleAllOfDiscCopyWithImpl<$Res>
-    extends _$AppleAllOfDiscCopyWithImpl<$Res, _$_AppleAllOfDisc>
-    implements _$$_AppleAllOfDiscCopyWith<$Res> {
-  __$$_AppleAllOfDiscCopyWithImpl(
-      _$_AppleAllOfDisc _value, $Res Function(_$_AppleAllOfDisc) _then)
+class __$$AppleAllOfDiscImplCopyWithImpl<$Res>
+    extends _$AppleAllOfDiscCopyWithImpl<$Res, _$AppleAllOfDiscImpl>
+    implements _$$AppleAllOfDiscImplCopyWith<$Res> {
+  __$$AppleAllOfDiscImplCopyWithImpl(
+      _$AppleAllOfDiscImpl _value, $Res Function(_$AppleAllOfDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1413,7 +1419,7 @@ class __$$_AppleAllOfDiscCopyWithImpl<$Res>
     Object? seeds = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_AppleAllOfDisc(
+    return _then(_$AppleAllOfDiscImpl(
       seeds: null == seeds
           ? _value.seeds
           : seeds // ignore: cast_nullable_to_non_nullable
@@ -1428,14 +1434,14 @@ class __$$_AppleAllOfDiscCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AppleAllOfDisc extends _AppleAllOfDisc {
-  const _$_AppleAllOfDisc(
+class _$AppleAllOfDiscImpl extends _AppleAllOfDisc {
+  const _$AppleAllOfDiscImpl(
       {@JsonKey(name: r'seeds') required this.seeds,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_AppleAllOfDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_AppleAllOfDiscFromJson(json);
+  factory _$AppleAllOfDiscImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AppleAllOfDiscImplFromJson(json);
 
   @override
   @JsonKey(name: r'seeds')
@@ -1450,10 +1456,10 @@ class _$_AppleAllOfDisc extends _AppleAllOfDisc {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AppleAllOfDisc &&
+            other is _$AppleAllOfDiscImpl &&
             (identical(other.seeds, seeds) || other.seeds == seeds) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -1466,12 +1472,13 @@ class _$_AppleAllOfDisc extends _AppleAllOfDisc {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AppleAllOfDiscCopyWith<_$_AppleAllOfDisc> get copyWith =>
-      __$$_AppleAllOfDiscCopyWithImpl<_$_AppleAllOfDisc>(this, _$identity);
+  _$$AppleAllOfDiscImplCopyWith<_$AppleAllOfDiscImpl> get copyWith =>
+      __$$AppleAllOfDiscImplCopyWithImpl<_$AppleAllOfDiscImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AppleAllOfDiscToJson(
+    return _$$AppleAllOfDiscImplToJson(
       this,
     );
   }
@@ -1481,11 +1488,11 @@ abstract class _AppleAllOfDisc extends AppleAllOfDisc {
   const factory _AppleAllOfDisc(
           {@JsonKey(name: r'seeds') required final int seeds,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_AppleAllOfDisc;
+      _$AppleAllOfDiscImpl;
   const _AppleAllOfDisc._() : super._();
 
   factory _AppleAllOfDisc.fromJson(Map<String, dynamic> json) =
-      _$_AppleAllOfDisc.fromJson;
+      _$AppleAllOfDiscImpl.fromJson;
 
   @override
   @JsonKey(name: r'seeds')
@@ -1495,7 +1502,7 @@ abstract class _AppleAllOfDisc extends AppleAllOfDisc {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_AppleAllOfDiscCopyWith<_$_AppleAllOfDisc> get copyWith =>
+  _$$AppleAllOfDiscImplCopyWith<_$AppleAllOfDiscImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -1558,11 +1565,11 @@ class _$AppleGrandparentDiscCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_AppleGrandparentDiscCopyWith<$Res>
+abstract class _$$AppleGrandparentDiscImplCopyWith<$Res>
     implements $AppleGrandparentDiscCopyWith<$Res> {
-  factory _$$_AppleGrandparentDiscCopyWith(_$_AppleGrandparentDisc value,
-          $Res Function(_$_AppleGrandparentDisc) then) =
-      __$$_AppleGrandparentDiscCopyWithImpl<$Res>;
+  factory _$$AppleGrandparentDiscImplCopyWith(_$AppleGrandparentDiscImpl value,
+          $Res Function(_$AppleGrandparentDiscImpl) then) =
+      __$$AppleGrandparentDiscImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -1571,11 +1578,11 @@ abstract class _$$_AppleGrandparentDiscCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_AppleGrandparentDiscCopyWithImpl<$Res>
-    extends _$AppleGrandparentDiscCopyWithImpl<$Res, _$_AppleGrandparentDisc>
-    implements _$$_AppleGrandparentDiscCopyWith<$Res> {
-  __$$_AppleGrandparentDiscCopyWithImpl(_$_AppleGrandparentDisc _value,
-      $Res Function(_$_AppleGrandparentDisc) _then)
+class __$$AppleGrandparentDiscImplCopyWithImpl<$Res>
+    extends _$AppleGrandparentDiscCopyWithImpl<$Res, _$AppleGrandparentDiscImpl>
+    implements _$$AppleGrandparentDiscImplCopyWith<$Res> {
+  __$$AppleGrandparentDiscImplCopyWithImpl(_$AppleGrandparentDiscImpl _value,
+      $Res Function(_$AppleGrandparentDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1584,7 +1591,7 @@ class __$$_AppleGrandparentDiscCopyWithImpl<$Res>
     Object? seeds = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_AppleGrandparentDisc(
+    return _then(_$AppleGrandparentDiscImpl(
       seeds: null == seeds
           ? _value.seeds
           : seeds // ignore: cast_nullable_to_non_nullable
@@ -1599,14 +1606,14 @@ class __$$_AppleGrandparentDiscCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AppleGrandparentDisc extends _AppleGrandparentDisc {
-  const _$_AppleGrandparentDisc(
+class _$AppleGrandparentDiscImpl extends _AppleGrandparentDisc {
+  const _$AppleGrandparentDiscImpl(
       {@JsonKey(name: r'seeds') required this.seeds,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_AppleGrandparentDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_AppleGrandparentDiscFromJson(json);
+  factory _$AppleGrandparentDiscImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AppleGrandparentDiscImplFromJson(json);
 
   @override
   @JsonKey(name: r'seeds')
@@ -1621,10 +1628,10 @@ class _$_AppleGrandparentDisc extends _AppleGrandparentDisc {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AppleGrandparentDisc &&
+            other is _$AppleGrandparentDiscImpl &&
             (identical(other.seeds, seeds) || other.seeds == seeds) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -1637,13 +1644,14 @@ class _$_AppleGrandparentDisc extends _AppleGrandparentDisc {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AppleGrandparentDiscCopyWith<_$_AppleGrandparentDisc> get copyWith =>
-      __$$_AppleGrandparentDiscCopyWithImpl<_$_AppleGrandparentDisc>(
-          this, _$identity);
+  _$$AppleGrandparentDiscImplCopyWith<_$AppleGrandparentDiscImpl>
+      get copyWith =>
+          __$$AppleGrandparentDiscImplCopyWithImpl<_$AppleGrandparentDiscImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AppleGrandparentDiscToJson(
+    return _$$AppleGrandparentDiscImplToJson(
       this,
     );
   }
@@ -1653,11 +1661,11 @@ abstract class _AppleGrandparentDisc extends AppleGrandparentDisc {
   const factory _AppleGrandparentDisc(
           {@JsonKey(name: r'seeds') required final int seeds,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_AppleGrandparentDisc;
+      _$AppleGrandparentDiscImpl;
   const _AppleGrandparentDisc._() : super._();
 
   factory _AppleGrandparentDisc.fromJson(Map<String, dynamic> json) =
-      _$_AppleGrandparentDisc.fromJson;
+      _$AppleGrandparentDiscImpl.fromJson;
 
   @override
   @JsonKey(name: r'seeds')
@@ -1667,8 +1675,8 @@ abstract class _AppleGrandparentDisc extends AppleGrandparentDisc {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_AppleGrandparentDiscCopyWith<_$_AppleGrandparentDisc> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AppleGrandparentDiscImplCopyWith<_$AppleGrandparentDiscImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 AppleReqDisc _$AppleReqDiscFromJson(Map<String, dynamic> json) {
@@ -1729,11 +1737,11 @@ class _$AppleReqDiscCopyWithImpl<$Res, $Val extends AppleReqDisc>
 }
 
 /// @nodoc
-abstract class _$$_AppleReqDiscCopyWith<$Res>
+abstract class _$$AppleReqDiscImplCopyWith<$Res>
     implements $AppleReqDiscCopyWith<$Res> {
-  factory _$$_AppleReqDiscCopyWith(
-          _$_AppleReqDisc value, $Res Function(_$_AppleReqDisc) then) =
-      __$$_AppleReqDiscCopyWithImpl<$Res>;
+  factory _$$AppleReqDiscImplCopyWith(
+          _$AppleReqDiscImpl value, $Res Function(_$AppleReqDiscImpl) then) =
+      __$$AppleReqDiscImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -1742,11 +1750,11 @@ abstract class _$$_AppleReqDiscCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_AppleReqDiscCopyWithImpl<$Res>
-    extends _$AppleReqDiscCopyWithImpl<$Res, _$_AppleReqDisc>
-    implements _$$_AppleReqDiscCopyWith<$Res> {
-  __$$_AppleReqDiscCopyWithImpl(
-      _$_AppleReqDisc _value, $Res Function(_$_AppleReqDisc) _then)
+class __$$AppleReqDiscImplCopyWithImpl<$Res>
+    extends _$AppleReqDiscCopyWithImpl<$Res, _$AppleReqDiscImpl>
+    implements _$$AppleReqDiscImplCopyWith<$Res> {
+  __$$AppleReqDiscImplCopyWithImpl(
+      _$AppleReqDiscImpl _value, $Res Function(_$AppleReqDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1755,7 +1763,7 @@ class __$$_AppleReqDiscCopyWithImpl<$Res>
     Object? seeds = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_AppleReqDisc(
+    return _then(_$AppleReqDiscImpl(
       seeds: null == seeds
           ? _value.seeds
           : seeds // ignore: cast_nullable_to_non_nullable
@@ -1770,14 +1778,14 @@ class __$$_AppleReqDiscCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AppleReqDisc extends _AppleReqDisc {
-  const _$_AppleReqDisc(
+class _$AppleReqDiscImpl extends _AppleReqDisc {
+  const _$AppleReqDiscImpl(
       {@JsonKey(name: r'seeds') required this.seeds,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_AppleReqDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_AppleReqDiscFromJson(json);
+  factory _$AppleReqDiscImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AppleReqDiscImplFromJson(json);
 
   @override
   @JsonKey(name: r'seeds')
@@ -1792,10 +1800,10 @@ class _$_AppleReqDisc extends _AppleReqDisc {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AppleReqDisc &&
+            other is _$AppleReqDiscImpl &&
             (identical(other.seeds, seeds) || other.seeds == seeds) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -1808,12 +1816,12 @@ class _$_AppleReqDisc extends _AppleReqDisc {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AppleReqDiscCopyWith<_$_AppleReqDisc> get copyWith =>
-      __$$_AppleReqDiscCopyWithImpl<_$_AppleReqDisc>(this, _$identity);
+  _$$AppleReqDiscImplCopyWith<_$AppleReqDiscImpl> get copyWith =>
+      __$$AppleReqDiscImplCopyWithImpl<_$AppleReqDiscImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AppleReqDiscToJson(
+    return _$$AppleReqDiscImplToJson(
       this,
     );
   }
@@ -1823,11 +1831,11 @@ abstract class _AppleReqDisc extends AppleReqDisc {
   const factory _AppleReqDisc(
           {@JsonKey(name: r'seeds') required final int seeds,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_AppleReqDisc;
+      _$AppleReqDiscImpl;
   const _AppleReqDisc._() : super._();
 
   factory _AppleReqDisc.fromJson(Map<String, dynamic> json) =
-      _$_AppleReqDisc.fromJson;
+      _$AppleReqDiscImpl.fromJson;
 
   @override
   @JsonKey(name: r'seeds')
@@ -1837,7 +1845,7 @@ abstract class _AppleReqDisc extends AppleReqDisc {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_AppleReqDiscCopyWith<_$_AppleReqDisc> get copyWith =>
+  _$$AppleReqDiscImplCopyWith<_$AppleReqDiscImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -1899,11 +1907,11 @@ class _$BananaAllOfDiscCopyWithImpl<$Res, $Val extends BananaAllOfDisc>
 }
 
 /// @nodoc
-abstract class _$$_BananaAllOfDiscCopyWith<$Res>
+abstract class _$$BananaAllOfDiscImplCopyWith<$Res>
     implements $BananaAllOfDiscCopyWith<$Res> {
-  factory _$$_BananaAllOfDiscCopyWith(
-          _$_BananaAllOfDisc value, $Res Function(_$_BananaAllOfDisc) then) =
-      __$$_BananaAllOfDiscCopyWithImpl<$Res>;
+  factory _$$BananaAllOfDiscImplCopyWith(_$BananaAllOfDiscImpl value,
+          $Res Function(_$BananaAllOfDiscImpl) then) =
+      __$$BananaAllOfDiscImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -1912,11 +1920,11 @@ abstract class _$$_BananaAllOfDiscCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_BananaAllOfDiscCopyWithImpl<$Res>
-    extends _$BananaAllOfDiscCopyWithImpl<$Res, _$_BananaAllOfDisc>
-    implements _$$_BananaAllOfDiscCopyWith<$Res> {
-  __$$_BananaAllOfDiscCopyWithImpl(
-      _$_BananaAllOfDisc _value, $Res Function(_$_BananaAllOfDisc) _then)
+class __$$BananaAllOfDiscImplCopyWithImpl<$Res>
+    extends _$BananaAllOfDiscCopyWithImpl<$Res, _$BananaAllOfDiscImpl>
+    implements _$$BananaAllOfDiscImplCopyWith<$Res> {
+  __$$BananaAllOfDiscImplCopyWithImpl(
+      _$BananaAllOfDiscImpl _value, $Res Function(_$BananaAllOfDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1925,7 +1933,7 @@ class __$$_BananaAllOfDiscCopyWithImpl<$Res>
     Object? length = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_BananaAllOfDisc(
+    return _then(_$BananaAllOfDiscImpl(
       length: null == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -1940,14 +1948,14 @@ class __$$_BananaAllOfDiscCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_BananaAllOfDisc extends _BananaAllOfDisc {
-  const _$_BananaAllOfDisc(
+class _$BananaAllOfDiscImpl extends _BananaAllOfDisc {
+  const _$BananaAllOfDiscImpl(
       {@JsonKey(name: r'length') required this.length,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_BananaAllOfDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_BananaAllOfDiscFromJson(json);
+  factory _$BananaAllOfDiscImpl.fromJson(Map<String, dynamic> json) =>
+      _$$BananaAllOfDiscImplFromJson(json);
 
   @override
   @JsonKey(name: r'length')
@@ -1962,10 +1970,10 @@ class _$_BananaAllOfDisc extends _BananaAllOfDisc {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_BananaAllOfDisc &&
+            other is _$BananaAllOfDiscImpl &&
             (identical(other.length, length) || other.length == length) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -1978,12 +1986,13 @@ class _$_BananaAllOfDisc extends _BananaAllOfDisc {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_BananaAllOfDiscCopyWith<_$_BananaAllOfDisc> get copyWith =>
-      __$$_BananaAllOfDiscCopyWithImpl<_$_BananaAllOfDisc>(this, _$identity);
+  _$$BananaAllOfDiscImplCopyWith<_$BananaAllOfDiscImpl> get copyWith =>
+      __$$BananaAllOfDiscImplCopyWithImpl<_$BananaAllOfDiscImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BananaAllOfDiscToJson(
+    return _$$BananaAllOfDiscImplToJson(
       this,
     );
   }
@@ -1993,11 +2002,11 @@ abstract class _BananaAllOfDisc extends BananaAllOfDisc {
   const factory _BananaAllOfDisc(
           {@JsonKey(name: r'length') required final int length,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_BananaAllOfDisc;
+      _$BananaAllOfDiscImpl;
   const _BananaAllOfDisc._() : super._();
 
   factory _BananaAllOfDisc.fromJson(Map<String, dynamic> json) =
-      _$_BananaAllOfDisc.fromJson;
+      _$BananaAllOfDiscImpl.fromJson;
 
   @override
   @JsonKey(name: r'length')
@@ -2007,7 +2016,7 @@ abstract class _BananaAllOfDisc extends BananaAllOfDisc {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_BananaAllOfDiscCopyWith<_$_BananaAllOfDisc> get copyWith =>
+  _$$BananaAllOfDiscImplCopyWith<_$BananaAllOfDiscImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -2071,11 +2080,12 @@ class _$BananaGrandparentDiscCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_BananaGrandparentDiscCopyWith<$Res>
+abstract class _$$BananaGrandparentDiscImplCopyWith<$Res>
     implements $BananaGrandparentDiscCopyWith<$Res> {
-  factory _$$_BananaGrandparentDiscCopyWith(_$_BananaGrandparentDisc value,
-          $Res Function(_$_BananaGrandparentDisc) then) =
-      __$$_BananaGrandparentDiscCopyWithImpl<$Res>;
+  factory _$$BananaGrandparentDiscImplCopyWith(
+          _$BananaGrandparentDiscImpl value,
+          $Res Function(_$BananaGrandparentDiscImpl) then) =
+      __$$BananaGrandparentDiscImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -2084,11 +2094,12 @@ abstract class _$$_BananaGrandparentDiscCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_BananaGrandparentDiscCopyWithImpl<$Res>
-    extends _$BananaGrandparentDiscCopyWithImpl<$Res, _$_BananaGrandparentDisc>
-    implements _$$_BananaGrandparentDiscCopyWith<$Res> {
-  __$$_BananaGrandparentDiscCopyWithImpl(_$_BananaGrandparentDisc _value,
-      $Res Function(_$_BananaGrandparentDisc) _then)
+class __$$BananaGrandparentDiscImplCopyWithImpl<$Res>
+    extends _$BananaGrandparentDiscCopyWithImpl<$Res,
+        _$BananaGrandparentDiscImpl>
+    implements _$$BananaGrandparentDiscImplCopyWith<$Res> {
+  __$$BananaGrandparentDiscImplCopyWithImpl(_$BananaGrandparentDiscImpl _value,
+      $Res Function(_$BananaGrandparentDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2097,7 +2108,7 @@ class __$$_BananaGrandparentDiscCopyWithImpl<$Res>
     Object? length = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_BananaGrandparentDisc(
+    return _then(_$BananaGrandparentDiscImpl(
       length: null == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -2112,14 +2123,14 @@ class __$$_BananaGrandparentDiscCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_BananaGrandparentDisc extends _BananaGrandparentDisc {
-  const _$_BananaGrandparentDisc(
+class _$BananaGrandparentDiscImpl extends _BananaGrandparentDisc {
+  const _$BananaGrandparentDiscImpl(
       {@JsonKey(name: r'length') required this.length,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_BananaGrandparentDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_BananaGrandparentDiscFromJson(json);
+  factory _$BananaGrandparentDiscImpl.fromJson(Map<String, dynamic> json) =>
+      _$$BananaGrandparentDiscImplFromJson(json);
 
   @override
   @JsonKey(name: r'length')
@@ -2134,10 +2145,10 @@ class _$_BananaGrandparentDisc extends _BananaGrandparentDisc {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_BananaGrandparentDisc &&
+            other is _$BananaGrandparentDiscImpl &&
             (identical(other.length, length) || other.length == length) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -2150,13 +2161,13 @@ class _$_BananaGrandparentDisc extends _BananaGrandparentDisc {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_BananaGrandparentDiscCopyWith<_$_BananaGrandparentDisc> get copyWith =>
-      __$$_BananaGrandparentDiscCopyWithImpl<_$_BananaGrandparentDisc>(
-          this, _$identity);
+  _$$BananaGrandparentDiscImplCopyWith<_$BananaGrandparentDiscImpl>
+      get copyWith => __$$BananaGrandparentDiscImplCopyWithImpl<
+          _$BananaGrandparentDiscImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BananaGrandparentDiscToJson(
+    return _$$BananaGrandparentDiscImplToJson(
       this,
     );
   }
@@ -2166,11 +2177,11 @@ abstract class _BananaGrandparentDisc extends BananaGrandparentDisc {
   const factory _BananaGrandparentDisc(
           {@JsonKey(name: r'length') required final int length,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_BananaGrandparentDisc;
+      _$BananaGrandparentDiscImpl;
   const _BananaGrandparentDisc._() : super._();
 
   factory _BananaGrandparentDisc.fromJson(Map<String, dynamic> json) =
-      _$_BananaGrandparentDisc.fromJson;
+      _$BananaGrandparentDiscImpl.fromJson;
 
   @override
   @JsonKey(name: r'length')
@@ -2180,8 +2191,8 @@ abstract class _BananaGrandparentDisc extends BananaGrandparentDisc {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_BananaGrandparentDiscCopyWith<_$_BananaGrandparentDisc> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$BananaGrandparentDiscImplCopyWith<_$BananaGrandparentDiscImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 BananaReqDisc _$BananaReqDiscFromJson(Map<String, dynamic> json) {
@@ -2242,11 +2253,11 @@ class _$BananaReqDiscCopyWithImpl<$Res, $Val extends BananaReqDisc>
 }
 
 /// @nodoc
-abstract class _$$_BananaReqDiscCopyWith<$Res>
+abstract class _$$BananaReqDiscImplCopyWith<$Res>
     implements $BananaReqDiscCopyWith<$Res> {
-  factory _$$_BananaReqDiscCopyWith(
-          _$_BananaReqDisc value, $Res Function(_$_BananaReqDisc) then) =
-      __$$_BananaReqDiscCopyWithImpl<$Res>;
+  factory _$$BananaReqDiscImplCopyWith(
+          _$BananaReqDiscImpl value, $Res Function(_$BananaReqDiscImpl) then) =
+      __$$BananaReqDiscImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -2255,11 +2266,11 @@ abstract class _$$_BananaReqDiscCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_BananaReqDiscCopyWithImpl<$Res>
-    extends _$BananaReqDiscCopyWithImpl<$Res, _$_BananaReqDisc>
-    implements _$$_BananaReqDiscCopyWith<$Res> {
-  __$$_BananaReqDiscCopyWithImpl(
-      _$_BananaReqDisc _value, $Res Function(_$_BananaReqDisc) _then)
+class __$$BananaReqDiscImplCopyWithImpl<$Res>
+    extends _$BananaReqDiscCopyWithImpl<$Res, _$BananaReqDiscImpl>
+    implements _$$BananaReqDiscImplCopyWith<$Res> {
+  __$$BananaReqDiscImplCopyWithImpl(
+      _$BananaReqDiscImpl _value, $Res Function(_$BananaReqDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2268,7 +2279,7 @@ class __$$_BananaReqDiscCopyWithImpl<$Res>
     Object? length = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_BananaReqDisc(
+    return _then(_$BananaReqDiscImpl(
       length: null == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -2283,14 +2294,14 @@ class __$$_BananaReqDiscCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_BananaReqDisc extends _BananaReqDisc {
-  const _$_BananaReqDisc(
+class _$BananaReqDiscImpl extends _BananaReqDisc {
+  const _$BananaReqDiscImpl(
       {@JsonKey(name: r'length') required this.length,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_BananaReqDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_BananaReqDiscFromJson(json);
+  factory _$BananaReqDiscImpl.fromJson(Map<String, dynamic> json) =>
+      _$$BananaReqDiscImplFromJson(json);
 
   @override
   @JsonKey(name: r'length')
@@ -2305,10 +2316,10 @@ class _$_BananaReqDisc extends _BananaReqDisc {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_BananaReqDisc &&
+            other is _$BananaReqDiscImpl &&
             (identical(other.length, length) || other.length == length) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -2321,12 +2332,12 @@ class _$_BananaReqDisc extends _BananaReqDisc {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_BananaReqDiscCopyWith<_$_BananaReqDisc> get copyWith =>
-      __$$_BananaReqDiscCopyWithImpl<_$_BananaReqDisc>(this, _$identity);
+  _$$BananaReqDiscImplCopyWith<_$BananaReqDiscImpl> get copyWith =>
+      __$$BananaReqDiscImplCopyWithImpl<_$BananaReqDiscImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BananaReqDiscToJson(
+    return _$$BananaReqDiscImplToJson(
       this,
     );
   }
@@ -2336,11 +2347,11 @@ abstract class _BananaReqDisc extends BananaReqDisc {
   const factory _BananaReqDisc(
           {@JsonKey(name: r'length') required final int length,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_BananaReqDisc;
+      _$BananaReqDiscImpl;
   const _BananaReqDisc._() : super._();
 
   factory _BananaReqDisc.fromJson(Map<String, dynamic> json) =
-      _$_BananaReqDisc.fromJson;
+      _$BananaReqDiscImpl.fromJson;
 
   @override
   @JsonKey(name: r'length')
@@ -2350,7 +2361,7 @@ abstract class _BananaReqDisc extends BananaReqDisc {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_BananaReqDiscCopyWith<_$_BananaReqDisc> get copyWith =>
+  _$$BananaReqDiscImplCopyWith<_$BananaReqDiscImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -2470,14 +2481,14 @@ class _$ComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWith<
+abstract class _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
     $Res> {
-  factory _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWith(
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect value,
+  factory _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWith(
+          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl value,
           $Res Function(
-                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect)
+                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl)
               then) =
-      __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
+      __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWithImpl<
           $Res>;
   @useResult
   $Res call({DiscOptionalTypeCorrect discOptionalTypeCorrectValue});
@@ -2486,17 +2497,18 @@ abstract class _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectC
 }
 
 /// @nodoc
-class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
+class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWithImpl<
         $Res>
     extends _$ComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect>
+        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl>
     implements
-        _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWith<
+        _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
             $Res> {
-  __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWithImpl(
-      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect _value,
+  __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWithImpl(
+      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl
+          _value,
       $Res Function(
-              _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect)
+              _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl)
           _then)
       : super(_value, _then);
 
@@ -2506,7 +2518,7 @@ class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWithI
     Object? discOptionalTypeCorrectValue = null,
   }) {
     return _then(
-        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect(
+        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl(
       discOptionalTypeCorrectValue: null == discOptionalTypeCorrectValue
           ? _value.discOptionalTypeCorrectValue
           : discOptionalTypeCorrectValue // ignore: cast_nullable_to_non_nullable
@@ -2526,9 +2538,9 @@ class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWithI
 
 /// @nodoc
 
-class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
+class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl
     extends ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect {
-  const _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect(
+  const _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl(
       {required this.discOptionalTypeCorrectValue})
       : super._();
 
@@ -2541,11 +2553,11 @@ class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect &&
+                is _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl &&
             (identical(other.discOptionalTypeCorrectValue,
                     discOptionalTypeCorrectValue) ||
                 other.discOptionalTypeCorrectValue ==
@@ -2558,11 +2570,11 @@ class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect>
+  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
+          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl>
       get copyWith =>
-          __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
-                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect>(
+          __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWithImpl<
+                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl>(
               this, _$identity);
 
   @override
@@ -2685,26 +2697,27 @@ abstract class ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
   const factory ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect(
           {required final DiscOptionalTypeCorrect
               discOptionalTypeCorrectValue}) =
-      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect;
+      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl;
   const ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect._()
       : super._();
 
   DiscOptionalTypeCorrect get discOptionalTypeCorrectValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect>
+  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
+          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWith<
+abstract class _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWith<
     $Res> {
-  factory _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWith(
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect value,
+  factory _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWith(
+          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl
+              value,
           $Res Function(
-                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect)
+                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl)
               then) =
-      __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWithImpl<
+      __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWithImpl<
           $Res>;
   @useResult
   $Res call({DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue});
@@ -2713,17 +2726,18 @@ abstract class _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrec
 }
 
 /// @nodoc
-class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWithImpl<
+class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWithImpl<
         $Res>
     extends _$ComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect>
+        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl>
     implements
-        _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWith<
+        _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWith<
             $Res> {
-  __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWithImpl(
-      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect _value,
+  __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWithImpl(
+      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl
+          _value,
       $Res Function(
-              _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect)
+              _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl)
           _then)
       : super(_value, _then);
 
@@ -2733,7 +2747,7 @@ class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWit
     Object? discOptionalTypeIncorrectValue = null,
   }) {
     return _then(
-        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect(
+        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl(
       discOptionalTypeIncorrectValue: null == discOptionalTypeIncorrectValue
           ? _value.discOptionalTypeIncorrectValue
           : discOptionalTypeIncorrectValue // ignore: cast_nullable_to_non_nullable
@@ -2753,9 +2767,9 @@ class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWit
 
 /// @nodoc
 
-class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
+class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl
     extends ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect {
-  const _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect(
+  const _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl(
       {required this.discOptionalTypeIncorrectValue})
       : super._();
 
@@ -2768,11 +2782,11 @@ class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect &&
+                is _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl &&
             (identical(other.discOptionalTypeIncorrectValue,
                     discOptionalTypeIncorrectValue) ||
                 other.discOptionalTypeIncorrectValue ==
@@ -2785,11 +2799,11 @@ class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect>
+  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWith<
+          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl>
       get copyWith =>
-          __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWithImpl<
-                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect>(
+          __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWithImpl<
+                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl>(
               this, _$identity);
 
   @override
@@ -2912,23 +2926,25 @@ abstract class ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
   const factory ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect(
           {required final DiscOptionalTypeIncorrect
               discOptionalTypeIncorrectValue}) =
-      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect;
+      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl;
   const ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect._()
       : super._();
 
   DiscOptionalTypeIncorrect get discOptionalTypeIncorrectValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect>
+  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWith<
+          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith(
-          _$ComposedDiscOptionalTypeInconsistentUnknown value,
-          $Res Function(_$ComposedDiscOptionalTypeInconsistentUnknown) then) =
-      __$$ComposedDiscOptionalTypeInconsistentUnknownCopyWithImpl<$Res>;
+abstract class _$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWith<
+    $Res> {
+  factory _$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWith(
+          _$ComposedDiscOptionalTypeInconsistentUnknownImpl value,
+          $Res Function(_$ComposedDiscOptionalTypeInconsistentUnknownImpl)
+              then) =
+      __$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -2939,13 +2955,14 @@ abstract class _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$ComposedDiscOptionalTypeInconsistentUnknownCopyWithImpl<$Res>
+class __$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWithImpl<$Res>
     extends _$ComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscOptionalTypeInconsistentUnknown>
-    implements _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith<$Res> {
-  __$$ComposedDiscOptionalTypeInconsistentUnknownCopyWithImpl(
-      _$ComposedDiscOptionalTypeInconsistentUnknown _value,
-      $Res Function(_$ComposedDiscOptionalTypeInconsistentUnknown) _then)
+        _$ComposedDiscOptionalTypeInconsistentUnknownImpl>
+    implements
+        _$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWith<$Res> {
+  __$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWithImpl(
+      _$ComposedDiscOptionalTypeInconsistentUnknownImpl _value,
+      $Res Function(_$ComposedDiscOptionalTypeInconsistentUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2957,7 +2974,7 @@ class __$$ComposedDiscOptionalTypeInconsistentUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$ComposedDiscOptionalTypeInconsistentUnknown(
+    return _then(_$ComposedDiscOptionalTypeInconsistentUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -2984,9 +3001,9 @@ class __$$ComposedDiscOptionalTypeInconsistentUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ComposedDiscOptionalTypeInconsistentUnknown
+class _$ComposedDiscOptionalTypeInconsistentUnknownImpl
     extends ComposedDiscOptionalTypeInconsistentUnknown {
-  const _$ComposedDiscOptionalTypeInconsistentUnknown(
+  const _$ComposedDiscOptionalTypeInconsistentUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -3040,10 +3057,10 @@ class _$ComposedDiscOptionalTypeInconsistentUnknown
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscOptionalTypeInconsistentUnknown &&
+            other is _$ComposedDiscOptionalTypeInconsistentUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -3066,11 +3083,12 @@ class _$ComposedDiscOptionalTypeInconsistentUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentUnknown>
+  _$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWith<
+          _$ComposedDiscOptionalTypeInconsistentUnknownImpl>
       get copyWith =>
-          __$$ComposedDiscOptionalTypeInconsistentUnknownCopyWithImpl<
-              _$ComposedDiscOptionalTypeInconsistentUnknown>(this, _$identity);
+          __$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWithImpl<
+                  _$ComposedDiscOptionalTypeInconsistentUnknownImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3192,12 +3210,13 @@ class _$ComposedDiscOptionalTypeInconsistentUnknown
 abstract class ComposedDiscOptionalTypeInconsistentUnknown
     extends ComposedDiscOptionalTypeInconsistent {
   const factory ComposedDiscOptionalTypeInconsistentUnknown(
-      {final String message,
-      required final Map<String, dynamic> json,
-      final DeserializationErrorType errorType,
-      final List<Type> possibleTypes,
-      final List<ComposedDiscOptionalTypeInconsistent>
-          deserializedModels}) = _$ComposedDiscOptionalTypeInconsistentUnknown;
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<ComposedDiscOptionalTypeInconsistent>
+              deserializedModels}) =
+      _$ComposedDiscOptionalTypeInconsistentUnknownImpl;
   const ComposedDiscOptionalTypeInconsistentUnknown._() : super._();
 
   String get message;
@@ -3206,8 +3225,8 @@ abstract class ComposedDiscOptionalTypeInconsistentUnknown
   List<Type> get possibleTypes;
   List<ComposedDiscOptionalTypeInconsistent> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentUnknown>
+  _$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWith<
+          _$ComposedDiscOptionalTypeInconsistentUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -3313,14 +3332,14 @@ class _$ComposedDiscRequiredInconsistentCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWith<
+abstract class _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
     $Res> {
-  factory _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWith(
-          _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value,
+  factory _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWith(
+          _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl value,
           $Res Function(
-                  _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect)
+                  _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl)
               then) =
-      __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
+      __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWithImpl<
           $Res>;
   @useResult
   $Res call({DiscOptionalTypeCorrect discOptionalTypeCorrectValue});
@@ -3329,16 +3348,17 @@ abstract class _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyW
 }
 
 /// @nodoc
-class __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
+class __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWithImpl<
         $Res>
     extends _$ComposedDiscRequiredInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect>
+        _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl>
     implements
-        _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWith<
+        _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
             $Res> {
-  __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWithImpl(
-      _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect _value,
-      $Res Function(_$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect)
+  __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWithImpl(
+      _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl _value,
+      $Res Function(
+              _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl)
           _then)
       : super(_value, _then);
 
@@ -3347,7 +3367,8 @@ class __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
   $Res call({
     Object? discOptionalTypeCorrectValue = null,
   }) {
-    return _then(_$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect(
+    return _then(
+        _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl(
       discOptionalTypeCorrectValue: null == discOptionalTypeCorrectValue
           ? _value.discOptionalTypeCorrectValue
           : discOptionalTypeCorrectValue // ignore: cast_nullable_to_non_nullable
@@ -3367,9 +3388,9 @@ class __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
 
 /// @nodoc
 
-class _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect
+class _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl
     extends ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect {
-  const _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect(
+  const _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl(
       {required this.discOptionalTypeCorrectValue})
       : super._();
 
@@ -3382,11 +3403,11 @@ class _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect &&
+                is _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl &&
             (identical(other.discOptionalTypeCorrectValue,
                     discOptionalTypeCorrectValue) ||
                 other.discOptionalTypeCorrectValue ==
@@ -3399,11 +3420,11 @@ class _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWith<
-          _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect>
+  _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
+          _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl>
       get copyWith =>
-          __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
-                  _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect>(
+          __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWithImpl<
+                  _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl>(
               this, _$identity);
 
   @override
@@ -3512,23 +3533,25 @@ abstract class ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect
   const factory ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect(
           {required final DiscOptionalTypeCorrect
               discOptionalTypeCorrectValue}) =
-      _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect;
+      _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl;
   const ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect._()
       : super._();
 
   DiscOptionalTypeCorrect get discOptionalTypeCorrectValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWith<
-          _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect>
+  _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
+          _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith<$Res> {
-  factory _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith(
-          _$ComposedDiscRequiredInconsistentAsFruitType value,
-          $Res Function(_$ComposedDiscRequiredInconsistentAsFruitType) then) =
-      __$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWithImpl<$Res>;
+abstract class _$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWith<
+    $Res> {
+  factory _$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWith(
+          _$ComposedDiscRequiredInconsistentAsFruitTypeImpl value,
+          $Res Function(_$ComposedDiscRequiredInconsistentAsFruitTypeImpl)
+              then) =
+      __$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWithImpl<$Res>;
   @useResult
   $Res call({FruitType fruitTypeValue});
 
@@ -3536,13 +3559,14 @@ abstract class _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWithImpl<$Res>
+class __$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWithImpl<$Res>
     extends _$ComposedDiscRequiredInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscRequiredInconsistentAsFruitType>
-    implements _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith<$Res> {
-  __$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWithImpl(
-      _$ComposedDiscRequiredInconsistentAsFruitType _value,
-      $Res Function(_$ComposedDiscRequiredInconsistentAsFruitType) _then)
+        _$ComposedDiscRequiredInconsistentAsFruitTypeImpl>
+    implements
+        _$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWith<$Res> {
+  __$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWithImpl(
+      _$ComposedDiscRequiredInconsistentAsFruitTypeImpl _value,
+      $Res Function(_$ComposedDiscRequiredInconsistentAsFruitTypeImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3550,7 +3574,7 @@ class __$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWithImpl<$Res>
   $Res call({
     Object? fruitTypeValue = null,
   }) {
-    return _then(_$ComposedDiscRequiredInconsistentAsFruitType(
+    return _then(_$ComposedDiscRequiredInconsistentAsFruitTypeImpl(
       fruitTypeValue: null == fruitTypeValue
           ? _value.fruitTypeValue
           : fruitTypeValue // ignore: cast_nullable_to_non_nullable
@@ -3569,9 +3593,9 @@ class __$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ComposedDiscRequiredInconsistentAsFruitType
+class _$ComposedDiscRequiredInconsistentAsFruitTypeImpl
     extends ComposedDiscRequiredInconsistentAsFruitType {
-  const _$ComposedDiscRequiredInconsistentAsFruitType(
+  const _$ComposedDiscRequiredInconsistentAsFruitTypeImpl(
       {required this.fruitTypeValue})
       : super._();
 
@@ -3584,10 +3608,10 @@ class _$ComposedDiscRequiredInconsistentAsFruitType
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscRequiredInconsistentAsFruitType &&
+            other is _$ComposedDiscRequiredInconsistentAsFruitTypeImpl &&
             (identical(other.fruitTypeValue, fruitTypeValue) ||
                 other.fruitTypeValue == fruitTypeValue));
   }
@@ -3598,11 +3622,12 @@ class _$ComposedDiscRequiredInconsistentAsFruitType
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith<
-          _$ComposedDiscRequiredInconsistentAsFruitType>
+  _$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWith<
+          _$ComposedDiscRequiredInconsistentAsFruitTypeImpl>
       get copyWith =>
-          __$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWithImpl<
-              _$ComposedDiscRequiredInconsistentAsFruitType>(this, _$identity);
+          __$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWithImpl<
+                  _$ComposedDiscRequiredInconsistentAsFruitTypeImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3709,22 +3734,22 @@ abstract class ComposedDiscRequiredInconsistentAsFruitType
     extends ComposedDiscRequiredInconsistent {
   const factory ComposedDiscRequiredInconsistentAsFruitType(
           {required final FruitType fruitTypeValue}) =
-      _$ComposedDiscRequiredInconsistentAsFruitType;
+      _$ComposedDiscRequiredInconsistentAsFruitTypeImpl;
   const ComposedDiscRequiredInconsistentAsFruitType._() : super._();
 
   FruitType get fruitTypeValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith<
-          _$ComposedDiscRequiredInconsistentAsFruitType>
+  _$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWith<
+          _$ComposedDiscRequiredInconsistentAsFruitTypeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscRequiredInconsistentUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscRequiredInconsistentUnknownCopyWith(
-          _$ComposedDiscRequiredInconsistentUnknown value,
-          $Res Function(_$ComposedDiscRequiredInconsistentUnknown) then) =
-      __$$ComposedDiscRequiredInconsistentUnknownCopyWithImpl<$Res>;
+abstract class _$$ComposedDiscRequiredInconsistentUnknownImplCopyWith<$Res> {
+  factory _$$ComposedDiscRequiredInconsistentUnknownImplCopyWith(
+          _$ComposedDiscRequiredInconsistentUnknownImpl value,
+          $Res Function(_$ComposedDiscRequiredInconsistentUnknownImpl) then) =
+      __$$ComposedDiscRequiredInconsistentUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -3735,13 +3760,13 @@ abstract class _$$ComposedDiscRequiredInconsistentUnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$ComposedDiscRequiredInconsistentUnknownCopyWithImpl<$Res>
+class __$$ComposedDiscRequiredInconsistentUnknownImplCopyWithImpl<$Res>
     extends _$ComposedDiscRequiredInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscRequiredInconsistentUnknown>
-    implements _$$ComposedDiscRequiredInconsistentUnknownCopyWith<$Res> {
-  __$$ComposedDiscRequiredInconsistentUnknownCopyWithImpl(
-      _$ComposedDiscRequiredInconsistentUnknown _value,
-      $Res Function(_$ComposedDiscRequiredInconsistentUnknown) _then)
+        _$ComposedDiscRequiredInconsistentUnknownImpl>
+    implements _$$ComposedDiscRequiredInconsistentUnknownImplCopyWith<$Res> {
+  __$$ComposedDiscRequiredInconsistentUnknownImplCopyWithImpl(
+      _$ComposedDiscRequiredInconsistentUnknownImpl _value,
+      $Res Function(_$ComposedDiscRequiredInconsistentUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3753,7 +3778,7 @@ class __$$ComposedDiscRequiredInconsistentUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$ComposedDiscRequiredInconsistentUnknown(
+    return _then(_$ComposedDiscRequiredInconsistentUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -3780,9 +3805,9 @@ class __$$ComposedDiscRequiredInconsistentUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ComposedDiscRequiredInconsistentUnknown
+class _$ComposedDiscRequiredInconsistentUnknownImpl
     extends ComposedDiscRequiredInconsistentUnknown {
-  const _$ComposedDiscRequiredInconsistentUnknown(
+  const _$ComposedDiscRequiredInconsistentUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -3836,10 +3861,10 @@ class _$ComposedDiscRequiredInconsistentUnknown
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscRequiredInconsistentUnknown &&
+            other is _$ComposedDiscRequiredInconsistentUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -3862,10 +3887,11 @@ class _$ComposedDiscRequiredInconsistentUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscRequiredInconsistentUnknownCopyWith<
-          _$ComposedDiscRequiredInconsistentUnknown>
-      get copyWith => __$$ComposedDiscRequiredInconsistentUnknownCopyWithImpl<
-          _$ComposedDiscRequiredInconsistentUnknown>(this, _$identity);
+  _$$ComposedDiscRequiredInconsistentUnknownImplCopyWith<
+          _$ComposedDiscRequiredInconsistentUnknownImpl>
+      get copyWith =>
+          __$$ComposedDiscRequiredInconsistentUnknownImplCopyWithImpl<
+              _$ComposedDiscRequiredInconsistentUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3978,7 +4004,7 @@ abstract class ComposedDiscRequiredInconsistentUnknown
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
           final List<ComposedDiscRequiredInconsistent> deserializedModels}) =
-      _$ComposedDiscRequiredInconsistentUnknown;
+      _$ComposedDiscRequiredInconsistentUnknownImpl;
   const ComposedDiscRequiredInconsistentUnknown._() : super._();
 
   String get message;
@@ -3987,8 +4013,8 @@ abstract class ComposedDiscRequiredInconsistentUnknown
   List<Type> get possibleTypes;
   List<ComposedDiscRequiredInconsistent> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$ComposedDiscRequiredInconsistentUnknownCopyWith<
-          _$ComposedDiscRequiredInconsistentUnknown>
+  _$$ComposedDiscRequiredInconsistentUnknownImplCopyWith<
+          _$ComposedDiscRequiredInconsistentUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -4091,13 +4117,13 @@ class _$ComposedDiscTypeInconsistentCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith<
+abstract class _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWith<
     $Res> {
-  factory _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith(
-          _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect value,
-          $Res Function(_$ComposedDiscTypeInconsistentAsDiscTypeIncorrect)
+  factory _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWith(
+          _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl value,
+          $Res Function(_$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl)
               then) =
-      __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWithImpl<$Res>;
+      __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DiscTypeIncorrect discTypeIncorrectValue});
 
@@ -4105,14 +4131,15 @@ abstract class _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith<
 }
 
 /// @nodoc
-class __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWithImpl<$Res>
+class __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWithImpl<$Res>
     extends _$ComposedDiscTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect>
+        _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl>
     implements
-        _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith<$Res> {
-  __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWithImpl(
-      _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect _value,
-      $Res Function(_$ComposedDiscTypeInconsistentAsDiscTypeIncorrect) _then)
+        _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWith<$Res> {
+  __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWithImpl(
+      _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl _value,
+      $Res Function(_$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl)
+          _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4120,7 +4147,7 @@ class __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWithImpl<$Res>
   $Res call({
     Object? discTypeIncorrectValue = null,
   }) {
-    return _then(_$ComposedDiscTypeInconsistentAsDiscTypeIncorrect(
+    return _then(_$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl(
       discTypeIncorrectValue: null == discTypeIncorrectValue
           ? _value.discTypeIncorrectValue
           : discTypeIncorrectValue // ignore: cast_nullable_to_non_nullable
@@ -4140,9 +4167,9 @@ class __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect
+class _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl
     extends ComposedDiscTypeInconsistentAsDiscTypeIncorrect {
-  const _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect(
+  const _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl(
       {required this.discTypeIncorrectValue})
       : super._();
 
@@ -4155,10 +4182,10 @@ class _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect &&
+            other is _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl &&
             (identical(other.discTypeIncorrectValue, discTypeIncorrectValue) ||
                 other.discTypeIncorrectValue == discTypeIncorrectValue));
   }
@@ -4169,11 +4196,11 @@ class _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith<
-          _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect>
+  _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWith<
+          _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl>
       get copyWith =>
-          __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWithImpl<
-                  _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect>(
+          __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWithImpl<
+                  _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl>(
               this, _$identity);
 
   @override
@@ -4278,22 +4305,22 @@ abstract class ComposedDiscTypeInconsistentAsDiscTypeIncorrect
     extends ComposedDiscTypeInconsistent {
   const factory ComposedDiscTypeInconsistentAsDiscTypeIncorrect(
           {required final DiscTypeIncorrect discTypeIncorrectValue}) =
-      _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect;
+      _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl;
   const ComposedDiscTypeInconsistentAsDiscTypeIncorrect._() : super._();
 
   DiscTypeIncorrect get discTypeIncorrectValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith<
-          _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect>
+  _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWith<
+          _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith<$Res> {
-  factory _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith(
-          _$ComposedDiscTypeInconsistentAsFruitType value,
-          $Res Function(_$ComposedDiscTypeInconsistentAsFruitType) then) =
-      __$$ComposedDiscTypeInconsistentAsFruitTypeCopyWithImpl<$Res>;
+abstract class _$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWith<$Res> {
+  factory _$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWith(
+          _$ComposedDiscTypeInconsistentAsFruitTypeImpl value,
+          $Res Function(_$ComposedDiscTypeInconsistentAsFruitTypeImpl) then) =
+      __$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWithImpl<$Res>;
   @useResult
   $Res call({FruitType fruitTypeValue});
 
@@ -4301,13 +4328,13 @@ abstract class _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$ComposedDiscTypeInconsistentAsFruitTypeCopyWithImpl<$Res>
+class __$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWithImpl<$Res>
     extends _$ComposedDiscTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscTypeInconsistentAsFruitType>
-    implements _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith<$Res> {
-  __$$ComposedDiscTypeInconsistentAsFruitTypeCopyWithImpl(
-      _$ComposedDiscTypeInconsistentAsFruitType _value,
-      $Res Function(_$ComposedDiscTypeInconsistentAsFruitType) _then)
+        _$ComposedDiscTypeInconsistentAsFruitTypeImpl>
+    implements _$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWith<$Res> {
+  __$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWithImpl(
+      _$ComposedDiscTypeInconsistentAsFruitTypeImpl _value,
+      $Res Function(_$ComposedDiscTypeInconsistentAsFruitTypeImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4315,7 +4342,7 @@ class __$$ComposedDiscTypeInconsistentAsFruitTypeCopyWithImpl<$Res>
   $Res call({
     Object? fruitTypeValue = null,
   }) {
-    return _then(_$ComposedDiscTypeInconsistentAsFruitType(
+    return _then(_$ComposedDiscTypeInconsistentAsFruitTypeImpl(
       fruitTypeValue: null == fruitTypeValue
           ? _value.fruitTypeValue
           : fruitTypeValue // ignore: cast_nullable_to_non_nullable
@@ -4334,9 +4361,9 @@ class __$$ComposedDiscTypeInconsistentAsFruitTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ComposedDiscTypeInconsistentAsFruitType
+class _$ComposedDiscTypeInconsistentAsFruitTypeImpl
     extends ComposedDiscTypeInconsistentAsFruitType {
-  const _$ComposedDiscTypeInconsistentAsFruitType(
+  const _$ComposedDiscTypeInconsistentAsFruitTypeImpl(
       {required this.fruitTypeValue})
       : super._();
 
@@ -4349,10 +4376,10 @@ class _$ComposedDiscTypeInconsistentAsFruitType
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscTypeInconsistentAsFruitType &&
+            other is _$ComposedDiscTypeInconsistentAsFruitTypeImpl &&
             (identical(other.fruitTypeValue, fruitTypeValue) ||
                 other.fruitTypeValue == fruitTypeValue));
   }
@@ -4363,10 +4390,11 @@ class _$ComposedDiscTypeInconsistentAsFruitType
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith<
-          _$ComposedDiscTypeInconsistentAsFruitType>
-      get copyWith => __$$ComposedDiscTypeInconsistentAsFruitTypeCopyWithImpl<
-          _$ComposedDiscTypeInconsistentAsFruitType>(this, _$identity);
+  _$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWith<
+          _$ComposedDiscTypeInconsistentAsFruitTypeImpl>
+      get copyWith =>
+          __$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWithImpl<
+              _$ComposedDiscTypeInconsistentAsFruitTypeImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4470,22 +4498,22 @@ abstract class ComposedDiscTypeInconsistentAsFruitType
     extends ComposedDiscTypeInconsistent {
   const factory ComposedDiscTypeInconsistentAsFruitType(
           {required final FruitType fruitTypeValue}) =
-      _$ComposedDiscTypeInconsistentAsFruitType;
+      _$ComposedDiscTypeInconsistentAsFruitTypeImpl;
   const ComposedDiscTypeInconsistentAsFruitType._() : super._();
 
   FruitType get fruitTypeValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith<
-          _$ComposedDiscTypeInconsistentAsFruitType>
+  _$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWith<
+          _$ComposedDiscTypeInconsistentAsFruitTypeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscTypeInconsistentUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscTypeInconsistentUnknownCopyWith(
-          _$ComposedDiscTypeInconsistentUnknown value,
-          $Res Function(_$ComposedDiscTypeInconsistentUnknown) then) =
-      __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl<$Res>;
+abstract class _$$ComposedDiscTypeInconsistentUnknownImplCopyWith<$Res> {
+  factory _$$ComposedDiscTypeInconsistentUnknownImplCopyWith(
+          _$ComposedDiscTypeInconsistentUnknownImpl value,
+          $Res Function(_$ComposedDiscTypeInconsistentUnknownImpl) then) =
+      __$$ComposedDiscTypeInconsistentUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -4496,13 +4524,13 @@ abstract class _$$ComposedDiscTypeInconsistentUnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl<$Res>
+class __$$ComposedDiscTypeInconsistentUnknownImplCopyWithImpl<$Res>
     extends _$ComposedDiscTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscTypeInconsistentUnknown>
-    implements _$$ComposedDiscTypeInconsistentUnknownCopyWith<$Res> {
-  __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl(
-      _$ComposedDiscTypeInconsistentUnknown _value,
-      $Res Function(_$ComposedDiscTypeInconsistentUnknown) _then)
+        _$ComposedDiscTypeInconsistentUnknownImpl>
+    implements _$$ComposedDiscTypeInconsistentUnknownImplCopyWith<$Res> {
+  __$$ComposedDiscTypeInconsistentUnknownImplCopyWithImpl(
+      _$ComposedDiscTypeInconsistentUnknownImpl _value,
+      $Res Function(_$ComposedDiscTypeInconsistentUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4514,7 +4542,7 @@ class __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$ComposedDiscTypeInconsistentUnknown(
+    return _then(_$ComposedDiscTypeInconsistentUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -4541,9 +4569,9 @@ class __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ComposedDiscTypeInconsistentUnknown
+class _$ComposedDiscTypeInconsistentUnknownImpl
     extends ComposedDiscTypeInconsistentUnknown {
-  const _$ComposedDiscTypeInconsistentUnknown(
+  const _$ComposedDiscTypeInconsistentUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -4597,10 +4625,10 @@ class _$ComposedDiscTypeInconsistentUnknown
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscTypeInconsistentUnknown &&
+            other is _$ComposedDiscTypeInconsistentUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -4623,10 +4651,10 @@ class _$ComposedDiscTypeInconsistentUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscTypeInconsistentUnknownCopyWith<
-          _$ComposedDiscTypeInconsistentUnknown>
-      get copyWith => __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl<
-          _$ComposedDiscTypeInconsistentUnknown>(this, _$identity);
+  _$$ComposedDiscTypeInconsistentUnknownImplCopyWith<
+          _$ComposedDiscTypeInconsistentUnknownImpl>
+      get copyWith => __$$ComposedDiscTypeInconsistentUnknownImplCopyWithImpl<
+          _$ComposedDiscTypeInconsistentUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4736,7 +4764,7 @@ abstract class ComposedDiscTypeInconsistentUnknown
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
           final List<ComposedDiscTypeInconsistent> deserializedModels}) =
-      _$ComposedDiscTypeInconsistentUnknown;
+      _$ComposedDiscTypeInconsistentUnknownImpl;
   const ComposedDiscTypeInconsistentUnknown._() : super._();
 
   String get message;
@@ -4745,8 +4773,8 @@ abstract class ComposedDiscTypeInconsistentUnknown
   List<Type> get possibleTypes;
   List<ComposedDiscTypeInconsistent> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$ComposedDiscTypeInconsistentUnknownCopyWith<
-          _$ComposedDiscTypeInconsistentUnknown>
+  _$$ComposedDiscTypeInconsistentUnknownImplCopyWith<
+          _$ComposedDiscTypeInconsistentUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -4801,25 +4829,25 @@ class _$DiscMissingFromPropertiesCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_DiscMissingFromPropertiesCopyWith<$Res>
+abstract class _$$DiscMissingFromPropertiesImplCopyWith<$Res>
     implements $DiscMissingFromPropertiesCopyWith<$Res> {
-  factory _$$_DiscMissingFromPropertiesCopyWith(
-          _$_DiscMissingFromProperties value,
-          $Res Function(_$_DiscMissingFromProperties) then) =
-      __$$_DiscMissingFromPropertiesCopyWithImpl<$Res>;
+  factory _$$DiscMissingFromPropertiesImplCopyWith(
+          _$DiscMissingFromPropertiesImpl value,
+          $Res Function(_$DiscMissingFromPropertiesImpl) then) =
+      __$$DiscMissingFromPropertiesImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'length') int? length});
 }
 
 /// @nodoc
-class __$$_DiscMissingFromPropertiesCopyWithImpl<$Res>
+class __$$DiscMissingFromPropertiesImplCopyWithImpl<$Res>
     extends _$DiscMissingFromPropertiesCopyWithImpl<$Res,
-        _$_DiscMissingFromProperties>
-    implements _$$_DiscMissingFromPropertiesCopyWith<$Res> {
-  __$$_DiscMissingFromPropertiesCopyWithImpl(
-      _$_DiscMissingFromProperties _value,
-      $Res Function(_$_DiscMissingFromProperties) _then)
+        _$DiscMissingFromPropertiesImpl>
+    implements _$$DiscMissingFromPropertiesImplCopyWith<$Res> {
+  __$$DiscMissingFromPropertiesImplCopyWithImpl(
+      _$DiscMissingFromPropertiesImpl _value,
+      $Res Function(_$DiscMissingFromPropertiesImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4827,7 +4855,7 @@ class __$$_DiscMissingFromPropertiesCopyWithImpl<$Res>
   $Res call({
     Object? length = freezed,
   }) {
-    return _then(_$_DiscMissingFromProperties(
+    return _then(_$DiscMissingFromPropertiesImpl(
       length: freezed == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -4838,12 +4866,12 @@ class __$$_DiscMissingFromPropertiesCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DiscMissingFromProperties extends _DiscMissingFromProperties {
-  const _$_DiscMissingFromProperties({@JsonKey(name: r'length') this.length})
+class _$DiscMissingFromPropertiesImpl extends _DiscMissingFromProperties {
+  const _$DiscMissingFromPropertiesImpl({@JsonKey(name: r'length') this.length})
       : super._();
 
-  factory _$_DiscMissingFromProperties.fromJson(Map<String, dynamic> json) =>
-      _$$_DiscMissingFromPropertiesFromJson(json);
+  factory _$DiscMissingFromPropertiesImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DiscMissingFromPropertiesImplFromJson(json);
 
   @override
   @JsonKey(name: r'length')
@@ -4855,10 +4883,10 @@ class _$_DiscMissingFromProperties extends _DiscMissingFromProperties {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DiscMissingFromProperties &&
+            other is _$DiscMissingFromPropertiesImpl &&
             (identical(other.length, length) || other.length == length));
   }
 
@@ -4869,13 +4897,13 @@ class _$_DiscMissingFromProperties extends _DiscMissingFromProperties {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DiscMissingFromPropertiesCopyWith<_$_DiscMissingFromProperties>
-      get copyWith => __$$_DiscMissingFromPropertiesCopyWithImpl<
-          _$_DiscMissingFromProperties>(this, _$identity);
+  _$$DiscMissingFromPropertiesImplCopyWith<_$DiscMissingFromPropertiesImpl>
+      get copyWith => __$$DiscMissingFromPropertiesImplCopyWithImpl<
+          _$DiscMissingFromPropertiesImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DiscMissingFromPropertiesToJson(
+    return _$$DiscMissingFromPropertiesImplToJson(
       this,
     );
   }
@@ -4884,18 +4912,18 @@ class _$_DiscMissingFromProperties extends _DiscMissingFromProperties {
 abstract class _DiscMissingFromProperties extends DiscMissingFromProperties {
   const factory _DiscMissingFromProperties(
           {@JsonKey(name: r'length') final int? length}) =
-      _$_DiscMissingFromProperties;
+      _$DiscMissingFromPropertiesImpl;
   const _DiscMissingFromProperties._() : super._();
 
   factory _DiscMissingFromProperties.fromJson(Map<String, dynamic> json) =
-      _$_DiscMissingFromProperties.fromJson;
+      _$DiscMissingFromPropertiesImpl.fromJson;
 
   @override
   @JsonKey(name: r'length')
   int? get length;
   @override
   @JsonKey(ignore: true)
-  _$$_DiscMissingFromPropertiesCopyWith<_$_DiscMissingFromProperties>
+  _$$DiscMissingFromPropertiesImplCopyWith<_$DiscMissingFromPropertiesImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -4950,23 +4978,25 @@ class _$DiscOptionalTypeCorrectCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_DiscOptionalTypeCorrectCopyWith<$Res>
+abstract class _$$DiscOptionalTypeCorrectImplCopyWith<$Res>
     implements $DiscOptionalTypeCorrectCopyWith<$Res> {
-  factory _$$_DiscOptionalTypeCorrectCopyWith(_$_DiscOptionalTypeCorrect value,
-          $Res Function(_$_DiscOptionalTypeCorrect) then) =
-      __$$_DiscOptionalTypeCorrectCopyWithImpl<$Res>;
+  factory _$$DiscOptionalTypeCorrectImplCopyWith(
+          _$DiscOptionalTypeCorrectImpl value,
+          $Res Function(_$DiscOptionalTypeCorrectImpl) then) =
+      __$$DiscOptionalTypeCorrectImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String? fruitType});
 }
 
 /// @nodoc
-class __$$_DiscOptionalTypeCorrectCopyWithImpl<$Res>
+class __$$DiscOptionalTypeCorrectImplCopyWithImpl<$Res>
     extends _$DiscOptionalTypeCorrectCopyWithImpl<$Res,
-        _$_DiscOptionalTypeCorrect>
-    implements _$$_DiscOptionalTypeCorrectCopyWith<$Res> {
-  __$$_DiscOptionalTypeCorrectCopyWithImpl(_$_DiscOptionalTypeCorrect _value,
-      $Res Function(_$_DiscOptionalTypeCorrect) _then)
+        _$DiscOptionalTypeCorrectImpl>
+    implements _$$DiscOptionalTypeCorrectImplCopyWith<$Res> {
+  __$$DiscOptionalTypeCorrectImplCopyWithImpl(
+      _$DiscOptionalTypeCorrectImpl _value,
+      $Res Function(_$DiscOptionalTypeCorrectImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4974,7 +5004,7 @@ class __$$_DiscOptionalTypeCorrectCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = freezed,
   }) {
-    return _then(_$_DiscOptionalTypeCorrect(
+    return _then(_$DiscOptionalTypeCorrectImpl(
       fruitType: freezed == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -4985,13 +5015,13 @@ class __$$_DiscOptionalTypeCorrectCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DiscOptionalTypeCorrect extends _DiscOptionalTypeCorrect {
-  const _$_DiscOptionalTypeCorrect(
+class _$DiscOptionalTypeCorrectImpl extends _DiscOptionalTypeCorrect {
+  const _$DiscOptionalTypeCorrectImpl(
       {@JsonKey(name: r'fruitType') this.fruitType})
       : super._();
 
-  factory _$_DiscOptionalTypeCorrect.fromJson(Map<String, dynamic> json) =>
-      _$$_DiscOptionalTypeCorrectFromJson(json);
+  factory _$DiscOptionalTypeCorrectImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DiscOptionalTypeCorrectImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -5003,10 +5033,10 @@ class _$_DiscOptionalTypeCorrect extends _DiscOptionalTypeCorrect {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DiscOptionalTypeCorrect &&
+            other is _$DiscOptionalTypeCorrectImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -5018,14 +5048,13 @@ class _$_DiscOptionalTypeCorrect extends _DiscOptionalTypeCorrect {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DiscOptionalTypeCorrectCopyWith<_$_DiscOptionalTypeCorrect>
-      get copyWith =>
-          __$$_DiscOptionalTypeCorrectCopyWithImpl<_$_DiscOptionalTypeCorrect>(
-              this, _$identity);
+  _$$DiscOptionalTypeCorrectImplCopyWith<_$DiscOptionalTypeCorrectImpl>
+      get copyWith => __$$DiscOptionalTypeCorrectImplCopyWithImpl<
+          _$DiscOptionalTypeCorrectImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DiscOptionalTypeCorrectToJson(
+    return _$$DiscOptionalTypeCorrectImplToJson(
       this,
     );
   }
@@ -5034,18 +5063,18 @@ class _$_DiscOptionalTypeCorrect extends _DiscOptionalTypeCorrect {
 abstract class _DiscOptionalTypeCorrect extends DiscOptionalTypeCorrect {
   const factory _DiscOptionalTypeCorrect(
           {@JsonKey(name: r'fruitType') final String? fruitType}) =
-      _$_DiscOptionalTypeCorrect;
+      _$DiscOptionalTypeCorrectImpl;
   const _DiscOptionalTypeCorrect._() : super._();
 
   factory _DiscOptionalTypeCorrect.fromJson(Map<String, dynamic> json) =
-      _$_DiscOptionalTypeCorrect.fromJson;
+      _$DiscOptionalTypeCorrectImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   String? get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_DiscOptionalTypeCorrectCopyWith<_$_DiscOptionalTypeCorrect>
+  _$$DiscOptionalTypeCorrectImplCopyWith<_$DiscOptionalTypeCorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -5100,25 +5129,25 @@ class _$DiscOptionalTypeIncorrectCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_DiscOptionalTypeIncorrectCopyWith<$Res>
+abstract class _$$DiscOptionalTypeIncorrectImplCopyWith<$Res>
     implements $DiscOptionalTypeIncorrectCopyWith<$Res> {
-  factory _$$_DiscOptionalTypeIncorrectCopyWith(
-          _$_DiscOptionalTypeIncorrect value,
-          $Res Function(_$_DiscOptionalTypeIncorrect) then) =
-      __$$_DiscOptionalTypeIncorrectCopyWithImpl<$Res>;
+  factory _$$DiscOptionalTypeIncorrectImplCopyWith(
+          _$DiscOptionalTypeIncorrectImpl value,
+          $Res Function(_$DiscOptionalTypeIncorrectImpl) then) =
+      __$$DiscOptionalTypeIncorrectImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') int? fruitType});
 }
 
 /// @nodoc
-class __$$_DiscOptionalTypeIncorrectCopyWithImpl<$Res>
+class __$$DiscOptionalTypeIncorrectImplCopyWithImpl<$Res>
     extends _$DiscOptionalTypeIncorrectCopyWithImpl<$Res,
-        _$_DiscOptionalTypeIncorrect>
-    implements _$$_DiscOptionalTypeIncorrectCopyWith<$Res> {
-  __$$_DiscOptionalTypeIncorrectCopyWithImpl(
-      _$_DiscOptionalTypeIncorrect _value,
-      $Res Function(_$_DiscOptionalTypeIncorrect) _then)
+        _$DiscOptionalTypeIncorrectImpl>
+    implements _$$DiscOptionalTypeIncorrectImplCopyWith<$Res> {
+  __$$DiscOptionalTypeIncorrectImplCopyWithImpl(
+      _$DiscOptionalTypeIncorrectImpl _value,
+      $Res Function(_$DiscOptionalTypeIncorrectImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5126,7 +5155,7 @@ class __$$_DiscOptionalTypeIncorrectCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = freezed,
   }) {
-    return _then(_$_DiscOptionalTypeIncorrect(
+    return _then(_$DiscOptionalTypeIncorrectImpl(
       fruitType: freezed == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -5137,13 +5166,13 @@ class __$$_DiscOptionalTypeIncorrectCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DiscOptionalTypeIncorrect extends _DiscOptionalTypeIncorrect {
-  const _$_DiscOptionalTypeIncorrect(
+class _$DiscOptionalTypeIncorrectImpl extends _DiscOptionalTypeIncorrect {
+  const _$DiscOptionalTypeIncorrectImpl(
       {@JsonKey(name: r'fruitType') this.fruitType})
       : super._();
 
-  factory _$_DiscOptionalTypeIncorrect.fromJson(Map<String, dynamic> json) =>
-      _$$_DiscOptionalTypeIncorrectFromJson(json);
+  factory _$DiscOptionalTypeIncorrectImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DiscOptionalTypeIncorrectImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -5155,10 +5184,10 @@ class _$_DiscOptionalTypeIncorrect extends _DiscOptionalTypeIncorrect {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DiscOptionalTypeIncorrect &&
+            other is _$DiscOptionalTypeIncorrectImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -5170,13 +5199,13 @@ class _$_DiscOptionalTypeIncorrect extends _DiscOptionalTypeIncorrect {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DiscOptionalTypeIncorrectCopyWith<_$_DiscOptionalTypeIncorrect>
-      get copyWith => __$$_DiscOptionalTypeIncorrectCopyWithImpl<
-          _$_DiscOptionalTypeIncorrect>(this, _$identity);
+  _$$DiscOptionalTypeIncorrectImplCopyWith<_$DiscOptionalTypeIncorrectImpl>
+      get copyWith => __$$DiscOptionalTypeIncorrectImplCopyWithImpl<
+          _$DiscOptionalTypeIncorrectImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DiscOptionalTypeIncorrectToJson(
+    return _$$DiscOptionalTypeIncorrectImplToJson(
       this,
     );
   }
@@ -5185,18 +5214,18 @@ class _$_DiscOptionalTypeIncorrect extends _DiscOptionalTypeIncorrect {
 abstract class _DiscOptionalTypeIncorrect extends DiscOptionalTypeIncorrect {
   const factory _DiscOptionalTypeIncorrect(
           {@JsonKey(name: r'fruitType') final int? fruitType}) =
-      _$_DiscOptionalTypeIncorrect;
+      _$DiscOptionalTypeIncorrectImpl;
   const _DiscOptionalTypeIncorrect._() : super._();
 
   factory _DiscOptionalTypeIncorrect.fromJson(Map<String, dynamic> json) =
-      _$_DiscOptionalTypeIncorrect.fromJson;
+      _$DiscOptionalTypeIncorrectImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   int? get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_DiscOptionalTypeIncorrectCopyWith<_$_DiscOptionalTypeIncorrect>
+  _$$DiscOptionalTypeIncorrectImplCopyWith<_$DiscOptionalTypeIncorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -5249,22 +5278,22 @@ class _$DiscTypeIncorrectCopyWithImpl<$Res, $Val extends DiscTypeIncorrect>
 }
 
 /// @nodoc
-abstract class _$$_DiscTypeIncorrectCopyWith<$Res>
+abstract class _$$DiscTypeIncorrectImplCopyWith<$Res>
     implements $DiscTypeIncorrectCopyWith<$Res> {
-  factory _$$_DiscTypeIncorrectCopyWith(_$_DiscTypeIncorrect value,
-          $Res Function(_$_DiscTypeIncorrect) then) =
-      __$$_DiscTypeIncorrectCopyWithImpl<$Res>;
+  factory _$$DiscTypeIncorrectImplCopyWith(_$DiscTypeIncorrectImpl value,
+          $Res Function(_$DiscTypeIncorrectImpl) then) =
+      __$$DiscTypeIncorrectImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') int fruitType});
 }
 
 /// @nodoc
-class __$$_DiscTypeIncorrectCopyWithImpl<$Res>
-    extends _$DiscTypeIncorrectCopyWithImpl<$Res, _$_DiscTypeIncorrect>
-    implements _$$_DiscTypeIncorrectCopyWith<$Res> {
-  __$$_DiscTypeIncorrectCopyWithImpl(
-      _$_DiscTypeIncorrect _value, $Res Function(_$_DiscTypeIncorrect) _then)
+class __$$DiscTypeIncorrectImplCopyWithImpl<$Res>
+    extends _$DiscTypeIncorrectCopyWithImpl<$Res, _$DiscTypeIncorrectImpl>
+    implements _$$DiscTypeIncorrectImplCopyWith<$Res> {
+  __$$DiscTypeIncorrectImplCopyWithImpl(_$DiscTypeIncorrectImpl _value,
+      $Res Function(_$DiscTypeIncorrectImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5272,7 +5301,7 @@ class __$$_DiscTypeIncorrectCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = null,
   }) {
-    return _then(_$_DiscTypeIncorrect(
+    return _then(_$DiscTypeIncorrectImpl(
       fruitType: null == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -5283,13 +5312,13 @@ class __$$_DiscTypeIncorrectCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DiscTypeIncorrect extends _DiscTypeIncorrect {
-  const _$_DiscTypeIncorrect(
+class _$DiscTypeIncorrectImpl extends _DiscTypeIncorrect {
+  const _$DiscTypeIncorrectImpl(
       {@JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_DiscTypeIncorrect.fromJson(Map<String, dynamic> json) =>
-      _$$_DiscTypeIncorrectFromJson(json);
+  factory _$DiscTypeIncorrectImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DiscTypeIncorrectImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -5301,10 +5330,10 @@ class _$_DiscTypeIncorrect extends _DiscTypeIncorrect {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DiscTypeIncorrect &&
+            other is _$DiscTypeIncorrectImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -5316,13 +5345,13 @@ class _$_DiscTypeIncorrect extends _DiscTypeIncorrect {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DiscTypeIncorrectCopyWith<_$_DiscTypeIncorrect> get copyWith =>
-      __$$_DiscTypeIncorrectCopyWithImpl<_$_DiscTypeIncorrect>(
+  _$$DiscTypeIncorrectImplCopyWith<_$DiscTypeIncorrectImpl> get copyWith =>
+      __$$DiscTypeIncorrectImplCopyWithImpl<_$DiscTypeIncorrectImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DiscTypeIncorrectToJson(
+    return _$$DiscTypeIncorrectImplToJson(
       this,
     );
   }
@@ -5331,18 +5360,18 @@ class _$_DiscTypeIncorrect extends _DiscTypeIncorrect {
 abstract class _DiscTypeIncorrect extends DiscTypeIncorrect {
   const factory _DiscTypeIncorrect(
           {@JsonKey(name: r'fruitType') required final int fruitType}) =
-      _$_DiscTypeIncorrect;
+      _$DiscTypeIncorrectImpl;
   const _DiscTypeIncorrect._() : super._();
 
   factory _DiscTypeIncorrect.fromJson(Map<String, dynamic> json) =
-      _$_DiscTypeIncorrect.fromJson;
+      _$DiscTypeIncorrectImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   int get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_DiscTypeIncorrectCopyWith<_$_DiscTypeIncorrect> get copyWith =>
+  _$$DiscTypeIncorrectImplCopyWith<_$DiscTypeIncorrectImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -5435,11 +5464,11 @@ class _$FruitAllOfDiscCopyWithImpl<$Res, $Val extends FruitAllOfDisc>
 }
 
 /// @nodoc
-abstract class _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith<$Res> {
-  factory _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith(
-          _$FruitAllOfDiscAsAppleAllOfDisc value,
-          $Res Function(_$FruitAllOfDiscAsAppleAllOfDisc) then) =
-      __$$FruitAllOfDiscAsAppleAllOfDiscCopyWithImpl<$Res>;
+abstract class _$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWith<$Res> {
+  factory _$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWith(
+          _$FruitAllOfDiscAsAppleAllOfDiscImpl value,
+          $Res Function(_$FruitAllOfDiscAsAppleAllOfDiscImpl) then) =
+      __$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWithImpl<$Res>;
   @useResult
   $Res call({AppleAllOfDisc appleAllOfDiscValue});
 
@@ -5447,12 +5476,13 @@ abstract class _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitAllOfDiscAsAppleAllOfDiscCopyWithImpl<$Res>
-    extends _$FruitAllOfDiscCopyWithImpl<$Res, _$FruitAllOfDiscAsAppleAllOfDisc>
-    implements _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith<$Res> {
-  __$$FruitAllOfDiscAsAppleAllOfDiscCopyWithImpl(
-      _$FruitAllOfDiscAsAppleAllOfDisc _value,
-      $Res Function(_$FruitAllOfDiscAsAppleAllOfDisc) _then)
+class __$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWithImpl<$Res>
+    extends _$FruitAllOfDiscCopyWithImpl<$Res,
+        _$FruitAllOfDiscAsAppleAllOfDiscImpl>
+    implements _$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWith<$Res> {
+  __$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWithImpl(
+      _$FruitAllOfDiscAsAppleAllOfDiscImpl _value,
+      $Res Function(_$FruitAllOfDiscAsAppleAllOfDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5460,7 +5490,7 @@ class __$$FruitAllOfDiscAsAppleAllOfDiscCopyWithImpl<$Res>
   $Res call({
     Object? appleAllOfDiscValue = null,
   }) {
-    return _then(_$FruitAllOfDiscAsAppleAllOfDisc(
+    return _then(_$FruitAllOfDiscAsAppleAllOfDiscImpl(
       appleAllOfDiscValue: null == appleAllOfDiscValue
           ? _value.appleAllOfDiscValue
           : appleAllOfDiscValue // ignore: cast_nullable_to_non_nullable
@@ -5479,8 +5509,10 @@ class __$$FruitAllOfDiscAsAppleAllOfDiscCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitAllOfDiscAsAppleAllOfDisc extends FruitAllOfDiscAsAppleAllOfDisc {
-  const _$FruitAllOfDiscAsAppleAllOfDisc({required this.appleAllOfDiscValue})
+class _$FruitAllOfDiscAsAppleAllOfDiscImpl
+    extends FruitAllOfDiscAsAppleAllOfDisc {
+  const _$FruitAllOfDiscAsAppleAllOfDiscImpl(
+      {required this.appleAllOfDiscValue})
       : super._();
 
   @override
@@ -5492,10 +5524,10 @@ class _$FruitAllOfDiscAsAppleAllOfDisc extends FruitAllOfDiscAsAppleAllOfDisc {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitAllOfDiscAsAppleAllOfDisc &&
+            other is _$FruitAllOfDiscAsAppleAllOfDiscImpl &&
             (identical(other.appleAllOfDiscValue, appleAllOfDiscValue) ||
                 other.appleAllOfDiscValue == appleAllOfDiscValue));
   }
@@ -5506,9 +5538,10 @@ class _$FruitAllOfDiscAsAppleAllOfDisc extends FruitAllOfDiscAsAppleAllOfDisc {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith<_$FruitAllOfDiscAsAppleAllOfDisc>
-      get copyWith => __$$FruitAllOfDiscAsAppleAllOfDiscCopyWithImpl<
-          _$FruitAllOfDiscAsAppleAllOfDisc>(this, _$identity);
+  _$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWith<
+          _$FruitAllOfDiscAsAppleAllOfDiscImpl>
+      get copyWith => __$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWithImpl<
+          _$FruitAllOfDiscAsAppleAllOfDiscImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5604,21 +5637,22 @@ class _$FruitAllOfDiscAsAppleAllOfDisc extends FruitAllOfDiscAsAppleAllOfDisc {
 abstract class FruitAllOfDiscAsAppleAllOfDisc extends FruitAllOfDisc {
   const factory FruitAllOfDiscAsAppleAllOfDisc(
           {required final AppleAllOfDisc appleAllOfDiscValue}) =
-      _$FruitAllOfDiscAsAppleAllOfDisc;
+      _$FruitAllOfDiscAsAppleAllOfDiscImpl;
   const FruitAllOfDiscAsAppleAllOfDisc._() : super._();
 
   AppleAllOfDisc get appleAllOfDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith<_$FruitAllOfDiscAsAppleAllOfDisc>
+  _$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWith<
+          _$FruitAllOfDiscAsAppleAllOfDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith<$Res> {
-  factory _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith(
-          _$FruitAllOfDiscAsBananaAllOfDisc value,
-          $Res Function(_$FruitAllOfDiscAsBananaAllOfDisc) then) =
-      __$$FruitAllOfDiscAsBananaAllOfDiscCopyWithImpl<$Res>;
+abstract class _$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWith<$Res> {
+  factory _$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWith(
+          _$FruitAllOfDiscAsBananaAllOfDiscImpl value,
+          $Res Function(_$FruitAllOfDiscAsBananaAllOfDiscImpl) then) =
+      __$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWithImpl<$Res>;
   @useResult
   $Res call({BananaAllOfDisc bananaAllOfDiscValue});
 
@@ -5626,13 +5660,13 @@ abstract class _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitAllOfDiscAsBananaAllOfDiscCopyWithImpl<$Res>
+class __$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWithImpl<$Res>
     extends _$FruitAllOfDiscCopyWithImpl<$Res,
-        _$FruitAllOfDiscAsBananaAllOfDisc>
-    implements _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith<$Res> {
-  __$$FruitAllOfDiscAsBananaAllOfDiscCopyWithImpl(
-      _$FruitAllOfDiscAsBananaAllOfDisc _value,
-      $Res Function(_$FruitAllOfDiscAsBananaAllOfDisc) _then)
+        _$FruitAllOfDiscAsBananaAllOfDiscImpl>
+    implements _$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWith<$Res> {
+  __$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWithImpl(
+      _$FruitAllOfDiscAsBananaAllOfDiscImpl _value,
+      $Res Function(_$FruitAllOfDiscAsBananaAllOfDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5640,7 +5674,7 @@ class __$$FruitAllOfDiscAsBananaAllOfDiscCopyWithImpl<$Res>
   $Res call({
     Object? bananaAllOfDiscValue = null,
   }) {
-    return _then(_$FruitAllOfDiscAsBananaAllOfDisc(
+    return _then(_$FruitAllOfDiscAsBananaAllOfDiscImpl(
       bananaAllOfDiscValue: null == bananaAllOfDiscValue
           ? _value.bananaAllOfDiscValue
           : bananaAllOfDiscValue // ignore: cast_nullable_to_non_nullable
@@ -5659,9 +5693,10 @@ class __$$FruitAllOfDiscAsBananaAllOfDiscCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitAllOfDiscAsBananaAllOfDisc
+class _$FruitAllOfDiscAsBananaAllOfDiscImpl
     extends FruitAllOfDiscAsBananaAllOfDisc {
-  const _$FruitAllOfDiscAsBananaAllOfDisc({required this.bananaAllOfDiscValue})
+  const _$FruitAllOfDiscAsBananaAllOfDiscImpl(
+      {required this.bananaAllOfDiscValue})
       : super._();
 
   @override
@@ -5673,10 +5708,10 @@ class _$FruitAllOfDiscAsBananaAllOfDisc
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitAllOfDiscAsBananaAllOfDisc &&
+            other is _$FruitAllOfDiscAsBananaAllOfDiscImpl &&
             (identical(other.bananaAllOfDiscValue, bananaAllOfDiscValue) ||
                 other.bananaAllOfDiscValue == bananaAllOfDiscValue));
   }
@@ -5687,9 +5722,10 @@ class _$FruitAllOfDiscAsBananaAllOfDisc
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith<_$FruitAllOfDiscAsBananaAllOfDisc>
-      get copyWith => __$$FruitAllOfDiscAsBananaAllOfDiscCopyWithImpl<
-          _$FruitAllOfDiscAsBananaAllOfDisc>(this, _$identity);
+  _$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWith<
+          _$FruitAllOfDiscAsBananaAllOfDiscImpl>
+      get copyWith => __$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWithImpl<
+          _$FruitAllOfDiscAsBananaAllOfDiscImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5785,20 +5821,22 @@ class _$FruitAllOfDiscAsBananaAllOfDisc
 abstract class FruitAllOfDiscAsBananaAllOfDisc extends FruitAllOfDisc {
   const factory FruitAllOfDiscAsBananaAllOfDisc(
           {required final BananaAllOfDisc bananaAllOfDiscValue}) =
-      _$FruitAllOfDiscAsBananaAllOfDisc;
+      _$FruitAllOfDiscAsBananaAllOfDiscImpl;
   const FruitAllOfDiscAsBananaAllOfDisc._() : super._();
 
   BananaAllOfDisc get bananaAllOfDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith<_$FruitAllOfDiscAsBananaAllOfDisc>
+  _$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWith<
+          _$FruitAllOfDiscAsBananaAllOfDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitAllOfDiscUnknownCopyWith<$Res> {
-  factory _$$FruitAllOfDiscUnknownCopyWith(_$FruitAllOfDiscUnknown value,
-          $Res Function(_$FruitAllOfDiscUnknown) then) =
-      __$$FruitAllOfDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$FruitAllOfDiscUnknownImplCopyWith<$Res> {
+  factory _$$FruitAllOfDiscUnknownImplCopyWith(
+          _$FruitAllOfDiscUnknownImpl value,
+          $Res Function(_$FruitAllOfDiscUnknownImpl) then) =
+      __$$FruitAllOfDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -5809,11 +5847,11 @@ abstract class _$$FruitAllOfDiscUnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitAllOfDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitAllOfDiscCopyWithImpl<$Res, _$FruitAllOfDiscUnknown>
-    implements _$$FruitAllOfDiscUnknownCopyWith<$Res> {
-  __$$FruitAllOfDiscUnknownCopyWithImpl(_$FruitAllOfDiscUnknown _value,
-      $Res Function(_$FruitAllOfDiscUnknown) _then)
+class __$$FruitAllOfDiscUnknownImplCopyWithImpl<$Res>
+    extends _$FruitAllOfDiscCopyWithImpl<$Res, _$FruitAllOfDiscUnknownImpl>
+    implements _$$FruitAllOfDiscUnknownImplCopyWith<$Res> {
+  __$$FruitAllOfDiscUnknownImplCopyWithImpl(_$FruitAllOfDiscUnknownImpl _value,
+      $Res Function(_$FruitAllOfDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5825,7 +5863,7 @@ class __$$FruitAllOfDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitAllOfDiscUnknown(
+    return _then(_$FruitAllOfDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -5852,8 +5890,8 @@ class __$$FruitAllOfDiscUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
-  const _$FruitAllOfDiscUnknown(
+class _$FruitAllOfDiscUnknownImpl extends FruitAllOfDiscUnknown {
+  const _$FruitAllOfDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -5906,10 +5944,10 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitAllOfDiscUnknown &&
+            other is _$FruitAllOfDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -5932,9 +5970,9 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitAllOfDiscUnknownCopyWith<_$FruitAllOfDiscUnknown> get copyWith =>
-      __$$FruitAllOfDiscUnknownCopyWithImpl<_$FruitAllOfDiscUnknown>(
-          this, _$identity);
+  _$$FruitAllOfDiscUnknownImplCopyWith<_$FruitAllOfDiscUnknownImpl>
+      get copyWith => __$$FruitAllOfDiscUnknownImplCopyWithImpl<
+          _$FruitAllOfDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6031,11 +6069,12 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
 
 abstract class FruitAllOfDiscUnknown extends FruitAllOfDisc {
   const factory FruitAllOfDiscUnknown(
-      {final String message,
-      required final Map<String, dynamic> json,
-      final DeserializationErrorType errorType,
-      final List<Type> possibleTypes,
-      final List<FruitAllOfDisc> deserializedModels}) = _$FruitAllOfDiscUnknown;
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<FruitAllOfDisc> deserializedModels}) =
+      _$FruitAllOfDiscUnknownImpl;
   const FruitAllOfDiscUnknown._() : super._();
 
   String get message;
@@ -6044,8 +6083,8 @@ abstract class FruitAllOfDiscUnknown extends FruitAllOfDisc {
   List<Type> get possibleTypes;
   List<FruitAllOfDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitAllOfDiscUnknownCopyWith<_$FruitAllOfDiscUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FruitAllOfDiscUnknownImplCopyWith<_$FruitAllOfDiscUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -6127,11 +6166,11 @@ class _$FruitAnyOfDiscCopyWithImpl<$Res, $Val extends FruitAnyOfDisc>
 }
 
 /// @nodoc
-abstract class _$$FruitAnyOfDiscAsFruitTypeCopyWith<$Res> {
-  factory _$$FruitAnyOfDiscAsFruitTypeCopyWith(
-          _$FruitAnyOfDiscAsFruitType value,
-          $Res Function(_$FruitAnyOfDiscAsFruitType) then) =
-      __$$FruitAnyOfDiscAsFruitTypeCopyWithImpl<$Res>;
+abstract class _$$FruitAnyOfDiscAsFruitTypeImplCopyWith<$Res> {
+  factory _$$FruitAnyOfDiscAsFruitTypeImplCopyWith(
+          _$FruitAnyOfDiscAsFruitTypeImpl value,
+          $Res Function(_$FruitAnyOfDiscAsFruitTypeImpl) then) =
+      __$$FruitAnyOfDiscAsFruitTypeImplCopyWithImpl<$Res>;
   @useResult
   $Res call({FruitType fruitTypeValue});
 
@@ -6139,11 +6178,12 @@ abstract class _$$FruitAnyOfDiscAsFruitTypeCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitAnyOfDiscAsFruitTypeCopyWithImpl<$Res>
-    extends _$FruitAnyOfDiscCopyWithImpl<$Res, _$FruitAnyOfDiscAsFruitType>
-    implements _$$FruitAnyOfDiscAsFruitTypeCopyWith<$Res> {
-  __$$FruitAnyOfDiscAsFruitTypeCopyWithImpl(_$FruitAnyOfDiscAsFruitType _value,
-      $Res Function(_$FruitAnyOfDiscAsFruitType) _then)
+class __$$FruitAnyOfDiscAsFruitTypeImplCopyWithImpl<$Res>
+    extends _$FruitAnyOfDiscCopyWithImpl<$Res, _$FruitAnyOfDiscAsFruitTypeImpl>
+    implements _$$FruitAnyOfDiscAsFruitTypeImplCopyWith<$Res> {
+  __$$FruitAnyOfDiscAsFruitTypeImplCopyWithImpl(
+      _$FruitAnyOfDiscAsFruitTypeImpl _value,
+      $Res Function(_$FruitAnyOfDiscAsFruitTypeImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -6151,7 +6191,7 @@ class __$$FruitAnyOfDiscAsFruitTypeCopyWithImpl<$Res>
   $Res call({
     Object? fruitTypeValue = null,
   }) {
-    return _then(_$FruitAnyOfDiscAsFruitType(
+    return _then(_$FruitAnyOfDiscAsFruitTypeImpl(
       fruitTypeValue: null == fruitTypeValue
           ? _value.fruitTypeValue
           : fruitTypeValue // ignore: cast_nullable_to_non_nullable
@@ -6170,8 +6210,9 @@ class __$$FruitAnyOfDiscAsFruitTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitAnyOfDiscAsFruitType extends FruitAnyOfDiscAsFruitType {
-  const _$FruitAnyOfDiscAsFruitType({required this.fruitTypeValue}) : super._();
+class _$FruitAnyOfDiscAsFruitTypeImpl extends FruitAnyOfDiscAsFruitType {
+  const _$FruitAnyOfDiscAsFruitTypeImpl({required this.fruitTypeValue})
+      : super._();
 
   @override
   final FruitType fruitTypeValue;
@@ -6182,10 +6223,10 @@ class _$FruitAnyOfDiscAsFruitType extends FruitAnyOfDiscAsFruitType {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitAnyOfDiscAsFruitType &&
+            other is _$FruitAnyOfDiscAsFruitTypeImpl &&
             (identical(other.fruitTypeValue, fruitTypeValue) ||
                 other.fruitTypeValue == fruitTypeValue));
   }
@@ -6196,9 +6237,9 @@ class _$FruitAnyOfDiscAsFruitType extends FruitAnyOfDiscAsFruitType {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitAnyOfDiscAsFruitTypeCopyWith<_$FruitAnyOfDiscAsFruitType>
-      get copyWith => __$$FruitAnyOfDiscAsFruitTypeCopyWithImpl<
-          _$FruitAnyOfDiscAsFruitType>(this, _$identity);
+  _$$FruitAnyOfDiscAsFruitTypeImplCopyWith<_$FruitAnyOfDiscAsFruitTypeImpl>
+      get copyWith => __$$FruitAnyOfDiscAsFruitTypeImplCopyWithImpl<
+          _$FruitAnyOfDiscAsFruitTypeImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6283,20 +6324,22 @@ class _$FruitAnyOfDiscAsFruitType extends FruitAnyOfDiscAsFruitType {
 
 abstract class FruitAnyOfDiscAsFruitType extends FruitAnyOfDisc {
   const factory FruitAnyOfDiscAsFruitType(
-      {required final FruitType fruitTypeValue}) = _$FruitAnyOfDiscAsFruitType;
+          {required final FruitType fruitTypeValue}) =
+      _$FruitAnyOfDiscAsFruitTypeImpl;
   const FruitAnyOfDiscAsFruitType._() : super._();
 
   FruitType get fruitTypeValue;
   @JsonKey(ignore: true)
-  _$$FruitAnyOfDiscAsFruitTypeCopyWith<_$FruitAnyOfDiscAsFruitType>
+  _$$FruitAnyOfDiscAsFruitTypeImplCopyWith<_$FruitAnyOfDiscAsFruitTypeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitAnyOfDiscUnknownCopyWith<$Res> {
-  factory _$$FruitAnyOfDiscUnknownCopyWith(_$FruitAnyOfDiscUnknown value,
-          $Res Function(_$FruitAnyOfDiscUnknown) then) =
-      __$$FruitAnyOfDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$FruitAnyOfDiscUnknownImplCopyWith<$Res> {
+  factory _$$FruitAnyOfDiscUnknownImplCopyWith(
+          _$FruitAnyOfDiscUnknownImpl value,
+          $Res Function(_$FruitAnyOfDiscUnknownImpl) then) =
+      __$$FruitAnyOfDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -6307,11 +6350,11 @@ abstract class _$$FruitAnyOfDiscUnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitAnyOfDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitAnyOfDiscCopyWithImpl<$Res, _$FruitAnyOfDiscUnknown>
-    implements _$$FruitAnyOfDiscUnknownCopyWith<$Res> {
-  __$$FruitAnyOfDiscUnknownCopyWithImpl(_$FruitAnyOfDiscUnknown _value,
-      $Res Function(_$FruitAnyOfDiscUnknown) _then)
+class __$$FruitAnyOfDiscUnknownImplCopyWithImpl<$Res>
+    extends _$FruitAnyOfDiscCopyWithImpl<$Res, _$FruitAnyOfDiscUnknownImpl>
+    implements _$$FruitAnyOfDiscUnknownImplCopyWith<$Res> {
+  __$$FruitAnyOfDiscUnknownImplCopyWithImpl(_$FruitAnyOfDiscUnknownImpl _value,
+      $Res Function(_$FruitAnyOfDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -6323,7 +6366,7 @@ class __$$FruitAnyOfDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitAnyOfDiscUnknown(
+    return _then(_$FruitAnyOfDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -6350,8 +6393,8 @@ class __$$FruitAnyOfDiscUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitAnyOfDiscUnknown extends FruitAnyOfDiscUnknown {
-  const _$FruitAnyOfDiscUnknown(
+class _$FruitAnyOfDiscUnknownImpl extends FruitAnyOfDiscUnknown {
+  const _$FruitAnyOfDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -6401,10 +6444,10 @@ class _$FruitAnyOfDiscUnknown extends FruitAnyOfDiscUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitAnyOfDiscUnknown &&
+            other is _$FruitAnyOfDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -6427,9 +6470,9 @@ class _$FruitAnyOfDiscUnknown extends FruitAnyOfDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitAnyOfDiscUnknownCopyWith<_$FruitAnyOfDiscUnknown> get copyWith =>
-      __$$FruitAnyOfDiscUnknownCopyWithImpl<_$FruitAnyOfDiscUnknown>(
-          this, _$identity);
+  _$$FruitAnyOfDiscUnknownImplCopyWith<_$FruitAnyOfDiscUnknownImpl>
+      get copyWith => __$$FruitAnyOfDiscUnknownImplCopyWithImpl<
+          _$FruitAnyOfDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6516,11 +6559,12 @@ class _$FruitAnyOfDiscUnknown extends FruitAnyOfDiscUnknown {
 
 abstract class FruitAnyOfDiscUnknown extends FruitAnyOfDisc {
   const factory FruitAnyOfDiscUnknown(
-      {final String message,
-      required final Map<String, dynamic> json,
-      final DeserializationErrorType errorType,
-      final List<Type> possibleTypes,
-      final List<FruitAnyOfDisc> deserializedModels}) = _$FruitAnyOfDiscUnknown;
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<FruitAnyOfDisc> deserializedModels}) =
+      _$FruitAnyOfDiscUnknownImpl;
   const FruitAnyOfDiscUnknown._() : super._();
 
   String get message;
@@ -6529,8 +6573,8 @@ abstract class FruitAnyOfDiscUnknown extends FruitAnyOfDisc {
   List<Type> get possibleTypes;
   List<FruitAnyOfDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitAnyOfDiscUnknownCopyWith<_$FruitAnyOfDiscUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FruitAnyOfDiscUnknownImplCopyWith<_$FruitAnyOfDiscUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -6631,11 +6675,12 @@ class _$FruitGrandparentDiscCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith<$Res> {
-  factory _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith(
-          _$FruitGrandparentDiscAsAppleGrandparentDisc value,
-          $Res Function(_$FruitGrandparentDiscAsAppleGrandparentDisc) then) =
-      __$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWithImpl<$Res>;
+abstract class _$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWith<$Res> {
+  factory _$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWith(
+          _$FruitGrandparentDiscAsAppleGrandparentDiscImpl value,
+          $Res Function(_$FruitGrandparentDiscAsAppleGrandparentDiscImpl)
+              then) =
+      __$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWithImpl<$Res>;
   @useResult
   $Res call({AppleGrandparentDisc appleGrandparentDiscValue});
 
@@ -6643,13 +6688,13 @@ abstract class _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWithImpl<$Res>
+class __$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWithImpl<$Res>
     extends _$FruitGrandparentDiscCopyWithImpl<$Res,
-        _$FruitGrandparentDiscAsAppleGrandparentDisc>
-    implements _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith<$Res> {
-  __$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWithImpl(
-      _$FruitGrandparentDiscAsAppleGrandparentDisc _value,
-      $Res Function(_$FruitGrandparentDiscAsAppleGrandparentDisc) _then)
+        _$FruitGrandparentDiscAsAppleGrandparentDiscImpl>
+    implements _$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWith<$Res> {
+  __$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWithImpl(
+      _$FruitGrandparentDiscAsAppleGrandparentDiscImpl _value,
+      $Res Function(_$FruitGrandparentDiscAsAppleGrandparentDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -6657,7 +6702,7 @@ class __$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWithImpl<$Res>
   $Res call({
     Object? appleGrandparentDiscValue = null,
   }) {
-    return _then(_$FruitGrandparentDiscAsAppleGrandparentDisc(
+    return _then(_$FruitGrandparentDiscAsAppleGrandparentDiscImpl(
       appleGrandparentDiscValue: null == appleGrandparentDiscValue
           ? _value.appleGrandparentDiscValue
           : appleGrandparentDiscValue // ignore: cast_nullable_to_non_nullable
@@ -6677,9 +6722,9 @@ class __$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitGrandparentDiscAsAppleGrandparentDisc
+class _$FruitGrandparentDiscAsAppleGrandparentDiscImpl
     extends FruitGrandparentDiscAsAppleGrandparentDisc {
-  const _$FruitGrandparentDiscAsAppleGrandparentDisc(
+  const _$FruitGrandparentDiscAsAppleGrandparentDiscImpl(
       {required this.appleGrandparentDiscValue})
       : super._();
 
@@ -6692,10 +6737,10 @@ class _$FruitGrandparentDiscAsAppleGrandparentDisc
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitGrandparentDiscAsAppleGrandparentDisc &&
+            other is _$FruitGrandparentDiscAsAppleGrandparentDiscImpl &&
             (identical(other.appleGrandparentDiscValue,
                     appleGrandparentDiscValue) ||
                 other.appleGrandparentDiscValue == appleGrandparentDiscValue));
@@ -6707,11 +6752,12 @@ class _$FruitGrandparentDiscAsAppleGrandparentDisc
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith<
-          _$FruitGrandparentDiscAsAppleGrandparentDisc>
+  _$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWith<
+          _$FruitGrandparentDiscAsAppleGrandparentDiscImpl>
       get copyWith =>
-          __$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWithImpl<
-              _$FruitGrandparentDiscAsAppleGrandparentDisc>(this, _$identity);
+          __$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWithImpl<
+                  _$FruitGrandparentDiscAsAppleGrandparentDiscImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6816,22 +6862,24 @@ abstract class FruitGrandparentDiscAsAppleGrandparentDisc
     extends FruitGrandparentDisc {
   const factory FruitGrandparentDiscAsAppleGrandparentDisc(
           {required final AppleGrandparentDisc appleGrandparentDiscValue}) =
-      _$FruitGrandparentDiscAsAppleGrandparentDisc;
+      _$FruitGrandparentDiscAsAppleGrandparentDiscImpl;
   const FruitGrandparentDiscAsAppleGrandparentDisc._() : super._();
 
   AppleGrandparentDisc get appleGrandparentDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith<
-          _$FruitGrandparentDiscAsAppleGrandparentDisc>
+  _$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWith<
+          _$FruitGrandparentDiscAsAppleGrandparentDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith<$Res> {
-  factory _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith(
-          _$FruitGrandparentDiscAsBananaGrandparentDisc value,
-          $Res Function(_$FruitGrandparentDiscAsBananaGrandparentDisc) then) =
-      __$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWithImpl<$Res>;
+abstract class _$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWith<
+    $Res> {
+  factory _$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWith(
+          _$FruitGrandparentDiscAsBananaGrandparentDiscImpl value,
+          $Res Function(_$FruitGrandparentDiscAsBananaGrandparentDiscImpl)
+              then) =
+      __$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWithImpl<$Res>;
   @useResult
   $Res call({BananaGrandparentDisc bananaGrandparentDiscValue});
 
@@ -6839,13 +6887,14 @@ abstract class _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWithImpl<$Res>
+class __$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWithImpl<$Res>
     extends _$FruitGrandparentDiscCopyWithImpl<$Res,
-        _$FruitGrandparentDiscAsBananaGrandparentDisc>
-    implements _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith<$Res> {
-  __$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWithImpl(
-      _$FruitGrandparentDiscAsBananaGrandparentDisc _value,
-      $Res Function(_$FruitGrandparentDiscAsBananaGrandparentDisc) _then)
+        _$FruitGrandparentDiscAsBananaGrandparentDiscImpl>
+    implements
+        _$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWith<$Res> {
+  __$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWithImpl(
+      _$FruitGrandparentDiscAsBananaGrandparentDiscImpl _value,
+      $Res Function(_$FruitGrandparentDiscAsBananaGrandparentDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -6853,7 +6902,7 @@ class __$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWithImpl<$Res>
   $Res call({
     Object? bananaGrandparentDiscValue = null,
   }) {
-    return _then(_$FruitGrandparentDiscAsBananaGrandparentDisc(
+    return _then(_$FruitGrandparentDiscAsBananaGrandparentDiscImpl(
       bananaGrandparentDiscValue: null == bananaGrandparentDiscValue
           ? _value.bananaGrandparentDiscValue
           : bananaGrandparentDiscValue // ignore: cast_nullable_to_non_nullable
@@ -6873,9 +6922,9 @@ class __$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitGrandparentDiscAsBananaGrandparentDisc
+class _$FruitGrandparentDiscAsBananaGrandparentDiscImpl
     extends FruitGrandparentDiscAsBananaGrandparentDisc {
-  const _$FruitGrandparentDiscAsBananaGrandparentDisc(
+  const _$FruitGrandparentDiscAsBananaGrandparentDiscImpl(
       {required this.bananaGrandparentDiscValue})
       : super._();
 
@@ -6888,10 +6937,10 @@ class _$FruitGrandparentDiscAsBananaGrandparentDisc
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitGrandparentDiscAsBananaGrandparentDisc &&
+            other is _$FruitGrandparentDiscAsBananaGrandparentDiscImpl &&
             (identical(other.bananaGrandparentDiscValue,
                     bananaGrandparentDiscValue) ||
                 other.bananaGrandparentDiscValue ==
@@ -6904,11 +6953,12 @@ class _$FruitGrandparentDiscAsBananaGrandparentDisc
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith<
-          _$FruitGrandparentDiscAsBananaGrandparentDisc>
+  _$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWith<
+          _$FruitGrandparentDiscAsBananaGrandparentDiscImpl>
       get copyWith =>
-          __$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWithImpl<
-              _$FruitGrandparentDiscAsBananaGrandparentDisc>(this, _$identity);
+          __$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWithImpl<
+                  _$FruitGrandparentDiscAsBananaGrandparentDiscImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7013,22 +7063,22 @@ abstract class FruitGrandparentDiscAsBananaGrandparentDisc
     extends FruitGrandparentDisc {
   const factory FruitGrandparentDiscAsBananaGrandparentDisc(
           {required final BananaGrandparentDisc bananaGrandparentDiscValue}) =
-      _$FruitGrandparentDiscAsBananaGrandparentDisc;
+      _$FruitGrandparentDiscAsBananaGrandparentDiscImpl;
   const FruitGrandparentDiscAsBananaGrandparentDisc._() : super._();
 
   BananaGrandparentDisc get bananaGrandparentDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith<
-          _$FruitGrandparentDiscAsBananaGrandparentDisc>
+  _$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWith<
+          _$FruitGrandparentDiscAsBananaGrandparentDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitGrandparentDiscUnknownCopyWith<$Res> {
-  factory _$$FruitGrandparentDiscUnknownCopyWith(
-          _$FruitGrandparentDiscUnknown value,
-          $Res Function(_$FruitGrandparentDiscUnknown) then) =
-      __$$FruitGrandparentDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$FruitGrandparentDiscUnknownImplCopyWith<$Res> {
+  factory _$$FruitGrandparentDiscUnknownImplCopyWith(
+          _$FruitGrandparentDiscUnknownImpl value,
+          $Res Function(_$FruitGrandparentDiscUnknownImpl) then) =
+      __$$FruitGrandparentDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -7039,13 +7089,13 @@ abstract class _$$FruitGrandparentDiscUnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitGrandparentDiscUnknownCopyWithImpl<$Res>
+class __$$FruitGrandparentDiscUnknownImplCopyWithImpl<$Res>
     extends _$FruitGrandparentDiscCopyWithImpl<$Res,
-        _$FruitGrandparentDiscUnknown>
-    implements _$$FruitGrandparentDiscUnknownCopyWith<$Res> {
-  __$$FruitGrandparentDiscUnknownCopyWithImpl(
-      _$FruitGrandparentDiscUnknown _value,
-      $Res Function(_$FruitGrandparentDiscUnknown) _then)
+        _$FruitGrandparentDiscUnknownImpl>
+    implements _$$FruitGrandparentDiscUnknownImplCopyWith<$Res> {
+  __$$FruitGrandparentDiscUnknownImplCopyWithImpl(
+      _$FruitGrandparentDiscUnknownImpl _value,
+      $Res Function(_$FruitGrandparentDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7057,7 +7107,7 @@ class __$$FruitGrandparentDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitGrandparentDiscUnknown(
+    return _then(_$FruitGrandparentDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -7084,8 +7134,8 @@ class __$$FruitGrandparentDiscUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitGrandparentDiscUnknown extends FruitGrandparentDiscUnknown {
-  const _$FruitGrandparentDiscUnknown(
+class _$FruitGrandparentDiscUnknownImpl extends FruitGrandparentDiscUnknown {
+  const _$FruitGrandparentDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -7139,10 +7189,10 @@ class _$FruitGrandparentDiscUnknown extends FruitGrandparentDiscUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitGrandparentDiscUnknown &&
+            other is _$FruitGrandparentDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -7165,9 +7215,9 @@ class _$FruitGrandparentDiscUnknown extends FruitGrandparentDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitGrandparentDiscUnknownCopyWith<_$FruitGrandparentDiscUnknown>
-      get copyWith => __$$FruitGrandparentDiscUnknownCopyWithImpl<
-          _$FruitGrandparentDiscUnknown>(this, _$identity);
+  _$$FruitGrandparentDiscUnknownImplCopyWith<_$FruitGrandparentDiscUnknownImpl>
+      get copyWith => __$$FruitGrandparentDiscUnknownImplCopyWithImpl<
+          _$FruitGrandparentDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7277,7 +7327,7 @@ abstract class FruitGrandparentDiscUnknown extends FruitGrandparentDisc {
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
           final List<FruitGrandparentDisc> deserializedModels}) =
-      _$FruitGrandparentDiscUnknown;
+      _$FruitGrandparentDiscUnknownImpl;
   const FruitGrandparentDiscUnknown._() : super._();
 
   String get message;
@@ -7286,7 +7336,7 @@ abstract class FruitGrandparentDiscUnknown extends FruitGrandparentDisc {
   List<Type> get possibleTypes;
   List<FruitGrandparentDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitGrandparentDiscUnknownCopyWith<_$FruitGrandparentDiscUnknown>
+  _$$FruitGrandparentDiscUnknownImplCopyWith<_$FruitGrandparentDiscUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -7387,11 +7437,11 @@ class _$FruitInlineDiscCopyWithImpl<$Res, $Val extends FruitInlineDisc>
 }
 
 /// @nodoc
-abstract class _$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWith<$Res> {
-  factory _$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWith(
-          _$FruitInlineDiscAsFruitInlineDiscAnyOf value,
-          $Res Function(_$FruitInlineDiscAsFruitInlineDiscAnyOf) then) =
-      __$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWithImpl<$Res>;
+abstract class _$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWith<$Res> {
+  factory _$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWith(
+          _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl value,
+          $Res Function(_$FruitInlineDiscAsFruitInlineDiscAnyOfImpl) then) =
+      __$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWithImpl<$Res>;
   @useResult
   $Res call({FruitInlineDiscAnyOf fruitInlineDiscAnyOfValue});
 
@@ -7399,13 +7449,13 @@ abstract class _$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWithImpl<$Res>
+class __$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWithImpl<$Res>
     extends _$FruitInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineDiscAsFruitInlineDiscAnyOf>
-    implements _$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWith<$Res> {
-  __$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWithImpl(
-      _$FruitInlineDiscAsFruitInlineDiscAnyOf _value,
-      $Res Function(_$FruitInlineDiscAsFruitInlineDiscAnyOf) _then)
+        _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl>
+    implements _$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWith<$Res> {
+  __$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWithImpl(
+      _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl _value,
+      $Res Function(_$FruitInlineDiscAsFruitInlineDiscAnyOfImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7413,7 +7463,7 @@ class __$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWithImpl<$Res>
   $Res call({
     Object? fruitInlineDiscAnyOfValue = null,
   }) {
-    return _then(_$FruitInlineDiscAsFruitInlineDiscAnyOf(
+    return _then(_$FruitInlineDiscAsFruitInlineDiscAnyOfImpl(
       fruitInlineDiscAnyOfValue: null == fruitInlineDiscAnyOfValue
           ? _value.fruitInlineDiscAnyOfValue
           : fruitInlineDiscAnyOfValue // ignore: cast_nullable_to_non_nullable
@@ -7433,9 +7483,9 @@ class __$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitInlineDiscAsFruitInlineDiscAnyOf
+class _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl
     extends FruitInlineDiscAsFruitInlineDiscAnyOf {
-  const _$FruitInlineDiscAsFruitInlineDiscAnyOf(
+  const _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl(
       {required this.fruitInlineDiscAnyOfValue})
       : super._();
 
@@ -7448,10 +7498,10 @@ class _$FruitInlineDiscAsFruitInlineDiscAnyOf
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineDiscAsFruitInlineDiscAnyOf &&
+            other is _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl &&
             (identical(other.fruitInlineDiscAnyOfValue,
                     fruitInlineDiscAnyOfValue) ||
                 other.fruitInlineDiscAnyOfValue == fruitInlineDiscAnyOfValue));
@@ -7463,10 +7513,10 @@ class _$FruitInlineDiscAsFruitInlineDiscAnyOf
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWith<
-          _$FruitInlineDiscAsFruitInlineDiscAnyOf>
-      get copyWith => __$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWithImpl<
-          _$FruitInlineDiscAsFruitInlineDiscAnyOf>(this, _$identity);
+  _$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWith<
+          _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl>
+      get copyWith => __$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWithImpl<
+          _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7570,22 +7620,22 @@ class _$FruitInlineDiscAsFruitInlineDiscAnyOf
 abstract class FruitInlineDiscAsFruitInlineDiscAnyOf extends FruitInlineDisc {
   const factory FruitInlineDiscAsFruitInlineDiscAnyOf(
           {required final FruitInlineDiscAnyOf fruitInlineDiscAnyOfValue}) =
-      _$FruitInlineDiscAsFruitInlineDiscAnyOf;
+      _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl;
   const FruitInlineDiscAsFruitInlineDiscAnyOf._() : super._();
 
   FruitInlineDiscAnyOf get fruitInlineDiscAnyOfValue;
   @JsonKey(ignore: true)
-  _$$FruitInlineDiscAsFruitInlineDiscAnyOfCopyWith<
-          _$FruitInlineDiscAsFruitInlineDiscAnyOf>
+  _$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWith<
+          _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWith<$Res> {
-  factory _$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWith(
-          _$FruitInlineDiscAsFruitInlineDiscAnyOf1 value,
-          $Res Function(_$FruitInlineDiscAsFruitInlineDiscAnyOf1) then) =
-      __$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWithImpl<$Res>;
+abstract class _$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWith<$Res> {
+  factory _$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWith(
+          _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl value,
+          $Res Function(_$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl) then) =
+      __$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({FruitInlineDiscAnyOf1 fruitInlineDiscAnyOf1Value});
 
@@ -7593,13 +7643,13 @@ abstract class _$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWithImpl<$Res>
+class __$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWithImpl<$Res>
     extends _$FruitInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineDiscAsFruitInlineDiscAnyOf1>
-    implements _$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWith<$Res> {
-  __$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWithImpl(
-      _$FruitInlineDiscAsFruitInlineDiscAnyOf1 _value,
-      $Res Function(_$FruitInlineDiscAsFruitInlineDiscAnyOf1) _then)
+        _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl>
+    implements _$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWith<$Res> {
+  __$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWithImpl(
+      _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl _value,
+      $Res Function(_$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7607,7 +7657,7 @@ class __$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWithImpl<$Res>
   $Res call({
     Object? fruitInlineDiscAnyOf1Value = null,
   }) {
-    return _then(_$FruitInlineDiscAsFruitInlineDiscAnyOf1(
+    return _then(_$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl(
       fruitInlineDiscAnyOf1Value: null == fruitInlineDiscAnyOf1Value
           ? _value.fruitInlineDiscAnyOf1Value
           : fruitInlineDiscAnyOf1Value // ignore: cast_nullable_to_non_nullable
@@ -7627,9 +7677,9 @@ class __$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitInlineDiscAsFruitInlineDiscAnyOf1
+class _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl
     extends FruitInlineDiscAsFruitInlineDiscAnyOf1 {
-  const _$FruitInlineDiscAsFruitInlineDiscAnyOf1(
+  const _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl(
       {required this.fruitInlineDiscAnyOf1Value})
       : super._();
 
@@ -7642,10 +7692,10 @@ class _$FruitInlineDiscAsFruitInlineDiscAnyOf1
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineDiscAsFruitInlineDiscAnyOf1 &&
+            other is _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl &&
             (identical(other.fruitInlineDiscAnyOf1Value,
                     fruitInlineDiscAnyOf1Value) ||
                 other.fruitInlineDiscAnyOf1Value ==
@@ -7658,10 +7708,11 @@ class _$FruitInlineDiscAsFruitInlineDiscAnyOf1
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWith<
-          _$FruitInlineDiscAsFruitInlineDiscAnyOf1>
-      get copyWith => __$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWithImpl<
-          _$FruitInlineDiscAsFruitInlineDiscAnyOf1>(this, _$identity);
+  _$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWith<
+          _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl>
+      get copyWith =>
+          __$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWithImpl<
+              _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7765,21 +7816,22 @@ class _$FruitInlineDiscAsFruitInlineDiscAnyOf1
 abstract class FruitInlineDiscAsFruitInlineDiscAnyOf1 extends FruitInlineDisc {
   const factory FruitInlineDiscAsFruitInlineDiscAnyOf1(
           {required final FruitInlineDiscAnyOf1 fruitInlineDiscAnyOf1Value}) =
-      _$FruitInlineDiscAsFruitInlineDiscAnyOf1;
+      _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl;
   const FruitInlineDiscAsFruitInlineDiscAnyOf1._() : super._();
 
   FruitInlineDiscAnyOf1 get fruitInlineDiscAnyOf1Value;
   @JsonKey(ignore: true)
-  _$$FruitInlineDiscAsFruitInlineDiscAnyOf1CopyWith<
-          _$FruitInlineDiscAsFruitInlineDiscAnyOf1>
+  _$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWith<
+          _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitInlineDiscUnknownCopyWith<$Res> {
-  factory _$$FruitInlineDiscUnknownCopyWith(_$FruitInlineDiscUnknown value,
-          $Res Function(_$FruitInlineDiscUnknown) then) =
-      __$$FruitInlineDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$FruitInlineDiscUnknownImplCopyWith<$Res> {
+  factory _$$FruitInlineDiscUnknownImplCopyWith(
+          _$FruitInlineDiscUnknownImpl value,
+          $Res Function(_$FruitInlineDiscUnknownImpl) then) =
+      __$$FruitInlineDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -7790,11 +7842,12 @@ abstract class _$$FruitInlineDiscUnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitInlineDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitInlineDiscCopyWithImpl<$Res, _$FruitInlineDiscUnknown>
-    implements _$$FruitInlineDiscUnknownCopyWith<$Res> {
-  __$$FruitInlineDiscUnknownCopyWithImpl(_$FruitInlineDiscUnknown _value,
-      $Res Function(_$FruitInlineDiscUnknown) _then)
+class __$$FruitInlineDiscUnknownImplCopyWithImpl<$Res>
+    extends _$FruitInlineDiscCopyWithImpl<$Res, _$FruitInlineDiscUnknownImpl>
+    implements _$$FruitInlineDiscUnknownImplCopyWith<$Res> {
+  __$$FruitInlineDiscUnknownImplCopyWithImpl(
+      _$FruitInlineDiscUnknownImpl _value,
+      $Res Function(_$FruitInlineDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7806,7 +7859,7 @@ class __$$FruitInlineDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitInlineDiscUnknown(
+    return _then(_$FruitInlineDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -7833,8 +7886,8 @@ class __$$FruitInlineDiscUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
-  const _$FruitInlineDiscUnknown(
+class _$FruitInlineDiscUnknownImpl extends FruitInlineDiscUnknown {
+  const _$FruitInlineDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -7888,10 +7941,10 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineDiscUnknown &&
+            other is _$FruitInlineDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -7914,9 +7967,9 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineDiscUnknownCopyWith<_$FruitInlineDiscUnknown> get copyWith =>
-      __$$FruitInlineDiscUnknownCopyWithImpl<_$FruitInlineDiscUnknown>(
-          this, _$identity);
+  _$$FruitInlineDiscUnknownImplCopyWith<_$FruitInlineDiscUnknownImpl>
+      get copyWith => __$$FruitInlineDiscUnknownImplCopyWithImpl<
+          _$FruitInlineDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -8026,7 +8079,7 @@ abstract class FruitInlineDiscUnknown extends FruitInlineDisc {
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
           final List<FruitInlineDisc> deserializedModels}) =
-      _$FruitInlineDiscUnknown;
+      _$FruitInlineDiscUnknownImpl;
   const FruitInlineDiscUnknown._() : super._();
 
   String get message;
@@ -8035,8 +8088,8 @@ abstract class FruitInlineDiscUnknown extends FruitInlineDisc {
   List<Type> get possibleTypes;
   List<FruitInlineDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitInlineDiscUnknownCopyWith<_$FruitInlineDiscUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FruitInlineDiscUnknownImplCopyWith<_$FruitInlineDiscUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 FruitInlineDiscAnyOf _$FruitInlineDiscAnyOfFromJson(Map<String, dynamic> json) {
@@ -8098,11 +8151,11 @@ class _$FruitInlineDiscAnyOfCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_FruitInlineDiscAnyOfCopyWith<$Res>
+abstract class _$$FruitInlineDiscAnyOfImplCopyWith<$Res>
     implements $FruitInlineDiscAnyOfCopyWith<$Res> {
-  factory _$$_FruitInlineDiscAnyOfCopyWith(_$_FruitInlineDiscAnyOf value,
-          $Res Function(_$_FruitInlineDiscAnyOf) then) =
-      __$$_FruitInlineDiscAnyOfCopyWithImpl<$Res>;
+  factory _$$FruitInlineDiscAnyOfImplCopyWith(_$FruitInlineDiscAnyOfImpl value,
+          $Res Function(_$FruitInlineDiscAnyOfImpl) then) =
+      __$$FruitInlineDiscAnyOfImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -8111,11 +8164,11 @@ abstract class _$$_FruitInlineDiscAnyOfCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_FruitInlineDiscAnyOfCopyWithImpl<$Res>
-    extends _$FruitInlineDiscAnyOfCopyWithImpl<$Res, _$_FruitInlineDiscAnyOf>
-    implements _$$_FruitInlineDiscAnyOfCopyWith<$Res> {
-  __$$_FruitInlineDiscAnyOfCopyWithImpl(_$_FruitInlineDiscAnyOf _value,
-      $Res Function(_$_FruitInlineDiscAnyOf) _then)
+class __$$FruitInlineDiscAnyOfImplCopyWithImpl<$Res>
+    extends _$FruitInlineDiscAnyOfCopyWithImpl<$Res, _$FruitInlineDiscAnyOfImpl>
+    implements _$$FruitInlineDiscAnyOfImplCopyWith<$Res> {
+  __$$FruitInlineDiscAnyOfImplCopyWithImpl(_$FruitInlineDiscAnyOfImpl _value,
+      $Res Function(_$FruitInlineDiscAnyOfImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8124,7 +8177,7 @@ class __$$_FruitInlineDiscAnyOfCopyWithImpl<$Res>
     Object? seeds = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_FruitInlineDiscAnyOf(
+    return _then(_$FruitInlineDiscAnyOfImpl(
       seeds: null == seeds
           ? _value.seeds
           : seeds // ignore: cast_nullable_to_non_nullable
@@ -8139,14 +8192,14 @@ class __$$_FruitInlineDiscAnyOfCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FruitInlineDiscAnyOf extends _FruitInlineDiscAnyOf {
-  const _$_FruitInlineDiscAnyOf(
+class _$FruitInlineDiscAnyOfImpl extends _FruitInlineDiscAnyOf {
+  const _$FruitInlineDiscAnyOfImpl(
       {@JsonKey(name: r'seeds') required this.seeds,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_FruitInlineDiscAnyOf.fromJson(Map<String, dynamic> json) =>
-      _$$_FruitInlineDiscAnyOfFromJson(json);
+  factory _$FruitInlineDiscAnyOfImpl.fromJson(Map<String, dynamic> json) =>
+      _$$FruitInlineDiscAnyOfImplFromJson(json);
 
   @override
   @JsonKey(name: r'seeds')
@@ -8161,10 +8214,10 @@ class _$_FruitInlineDiscAnyOf extends _FruitInlineDiscAnyOf {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FruitInlineDiscAnyOf &&
+            other is _$FruitInlineDiscAnyOfImpl &&
             (identical(other.seeds, seeds) || other.seeds == seeds) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -8177,13 +8230,14 @@ class _$_FruitInlineDiscAnyOf extends _FruitInlineDiscAnyOf {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FruitInlineDiscAnyOfCopyWith<_$_FruitInlineDiscAnyOf> get copyWith =>
-      __$$_FruitInlineDiscAnyOfCopyWithImpl<_$_FruitInlineDiscAnyOf>(
-          this, _$identity);
+  _$$FruitInlineDiscAnyOfImplCopyWith<_$FruitInlineDiscAnyOfImpl>
+      get copyWith =>
+          __$$FruitInlineDiscAnyOfImplCopyWithImpl<_$FruitInlineDiscAnyOfImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FruitInlineDiscAnyOfToJson(
+    return _$$FruitInlineDiscAnyOfImplToJson(
       this,
     );
   }
@@ -8193,11 +8247,11 @@ abstract class _FruitInlineDiscAnyOf extends FruitInlineDiscAnyOf {
   const factory _FruitInlineDiscAnyOf(
           {@JsonKey(name: r'seeds') required final int seeds,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_FruitInlineDiscAnyOf;
+      _$FruitInlineDiscAnyOfImpl;
   const _FruitInlineDiscAnyOf._() : super._();
 
   factory _FruitInlineDiscAnyOf.fromJson(Map<String, dynamic> json) =
-      _$_FruitInlineDiscAnyOf.fromJson;
+      _$FruitInlineDiscAnyOfImpl.fromJson;
 
   @override
   @JsonKey(name: r'seeds')
@@ -8207,8 +8261,8 @@ abstract class _FruitInlineDiscAnyOf extends FruitInlineDiscAnyOf {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_FruitInlineDiscAnyOfCopyWith<_$_FruitInlineDiscAnyOf> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FruitInlineDiscAnyOfImplCopyWith<_$FruitInlineDiscAnyOfImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 FruitInlineDiscAnyOf1 _$FruitInlineDiscAnyOf1FromJson(
@@ -8271,11 +8325,12 @@ class _$FruitInlineDiscAnyOf1CopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_FruitInlineDiscAnyOf1CopyWith<$Res>
+abstract class _$$FruitInlineDiscAnyOf1ImplCopyWith<$Res>
     implements $FruitInlineDiscAnyOf1CopyWith<$Res> {
-  factory _$$_FruitInlineDiscAnyOf1CopyWith(_$_FruitInlineDiscAnyOf1 value,
-          $Res Function(_$_FruitInlineDiscAnyOf1) then) =
-      __$$_FruitInlineDiscAnyOf1CopyWithImpl<$Res>;
+  factory _$$FruitInlineDiscAnyOf1ImplCopyWith(
+          _$FruitInlineDiscAnyOf1Impl value,
+          $Res Function(_$FruitInlineDiscAnyOf1Impl) then) =
+      __$$FruitInlineDiscAnyOf1ImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -8284,11 +8339,12 @@ abstract class _$$_FruitInlineDiscAnyOf1CopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_FruitInlineDiscAnyOf1CopyWithImpl<$Res>
-    extends _$FruitInlineDiscAnyOf1CopyWithImpl<$Res, _$_FruitInlineDiscAnyOf1>
-    implements _$$_FruitInlineDiscAnyOf1CopyWith<$Res> {
-  __$$_FruitInlineDiscAnyOf1CopyWithImpl(_$_FruitInlineDiscAnyOf1 _value,
-      $Res Function(_$_FruitInlineDiscAnyOf1) _then)
+class __$$FruitInlineDiscAnyOf1ImplCopyWithImpl<$Res>
+    extends _$FruitInlineDiscAnyOf1CopyWithImpl<$Res,
+        _$FruitInlineDiscAnyOf1Impl>
+    implements _$$FruitInlineDiscAnyOf1ImplCopyWith<$Res> {
+  __$$FruitInlineDiscAnyOf1ImplCopyWithImpl(_$FruitInlineDiscAnyOf1Impl _value,
+      $Res Function(_$FruitInlineDiscAnyOf1Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8297,7 +8353,7 @@ class __$$_FruitInlineDiscAnyOf1CopyWithImpl<$Res>
     Object? length = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_FruitInlineDiscAnyOf1(
+    return _then(_$FruitInlineDiscAnyOf1Impl(
       length: null == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -8312,14 +8368,14 @@ class __$$_FruitInlineDiscAnyOf1CopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FruitInlineDiscAnyOf1 extends _FruitInlineDiscAnyOf1 {
-  const _$_FruitInlineDiscAnyOf1(
+class _$FruitInlineDiscAnyOf1Impl extends _FruitInlineDiscAnyOf1 {
+  const _$FruitInlineDiscAnyOf1Impl(
       {@JsonKey(name: r'length') required this.length,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_FruitInlineDiscAnyOf1.fromJson(Map<String, dynamic> json) =>
-      _$$_FruitInlineDiscAnyOf1FromJson(json);
+  factory _$FruitInlineDiscAnyOf1Impl.fromJson(Map<String, dynamic> json) =>
+      _$$FruitInlineDiscAnyOf1ImplFromJson(json);
 
   @override
   @JsonKey(name: r'length')
@@ -8334,10 +8390,10 @@ class _$_FruitInlineDiscAnyOf1 extends _FruitInlineDiscAnyOf1 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FruitInlineDiscAnyOf1 &&
+            other is _$FruitInlineDiscAnyOf1Impl &&
             (identical(other.length, length) || other.length == length) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -8350,13 +8406,13 @@ class _$_FruitInlineDiscAnyOf1 extends _FruitInlineDiscAnyOf1 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FruitInlineDiscAnyOf1CopyWith<_$_FruitInlineDiscAnyOf1> get copyWith =>
-      __$$_FruitInlineDiscAnyOf1CopyWithImpl<_$_FruitInlineDiscAnyOf1>(
-          this, _$identity);
+  _$$FruitInlineDiscAnyOf1ImplCopyWith<_$FruitInlineDiscAnyOf1Impl>
+      get copyWith => __$$FruitInlineDiscAnyOf1ImplCopyWithImpl<
+          _$FruitInlineDiscAnyOf1Impl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FruitInlineDiscAnyOf1ToJson(
+    return _$$FruitInlineDiscAnyOf1ImplToJson(
       this,
     );
   }
@@ -8366,11 +8422,11 @@ abstract class _FruitInlineDiscAnyOf1 extends FruitInlineDiscAnyOf1 {
   const factory _FruitInlineDiscAnyOf1(
           {@JsonKey(name: r'length') required final int length,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_FruitInlineDiscAnyOf1;
+      _$FruitInlineDiscAnyOf1Impl;
   const _FruitInlineDiscAnyOf1._() : super._();
 
   factory _FruitInlineDiscAnyOf1.fromJson(Map<String, dynamic> json) =
-      _$_FruitInlineDiscAnyOf1.fromJson;
+      _$FruitInlineDiscAnyOf1Impl.fromJson;
 
   @override
   @JsonKey(name: r'length')
@@ -8380,8 +8436,8 @@ abstract class _FruitInlineDiscAnyOf1 extends FruitInlineDiscAnyOf1 {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_FruitInlineDiscAnyOf1CopyWith<_$_FruitInlineDiscAnyOf1> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FruitInlineDiscAnyOf1ImplCopyWith<_$FruitInlineDiscAnyOf1Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -8490,13 +8546,14 @@ class _$FruitInlineInlineDiscCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWith<
+abstract class _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWith<
     $Res> {
-  factory _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWith(
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value,
-          $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf)
+  factory _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWith(
+          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl value,
+          $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl)
               then) =
-      __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWithImpl<$Res>;
+      __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWithImpl<
+          $Res>;
   @useResult
   $Res call({FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue});
 
@@ -8504,14 +8561,16 @@ abstract class _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWith<
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWithImpl<$Res>
+class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWithImpl<
+        $Res>
     extends _$FruitInlineInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf>
+        _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl>
     implements
-        _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWith<$Res> {
-  __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWithImpl(
-      _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf _value,
-      $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf) _then)
+        _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWith<$Res> {
+  __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWithImpl(
+      _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl _value,
+      $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl)
+          _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8519,7 +8578,7 @@ class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWithImpl<$Res>
   $Res call({
     Object? fruitInlineInlineDiscAnyOfValue = null,
   }) {
-    return _then(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf(
+    return _then(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl(
       fruitInlineInlineDiscAnyOfValue: null == fruitInlineInlineDiscAnyOfValue
           ? _value.fruitInlineInlineDiscAnyOfValue
           : fruitInlineInlineDiscAnyOfValue // ignore: cast_nullable_to_non_nullable
@@ -8540,9 +8599,9 @@ class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf
+class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl
     extends FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf {
-  const _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf(
+  const _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl(
       {required this.fruitInlineInlineDiscAnyOfValue})
       : super._();
 
@@ -8555,10 +8614,10 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf &&
+            other is _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl &&
             (identical(other.fruitInlineInlineDiscAnyOfValue,
                     fruitInlineInlineDiscAnyOfValue) ||
                 other.fruitInlineInlineDiscAnyOfValue ==
@@ -8571,11 +8630,11 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWith<
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf>
+  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWith<
+          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl>
       get copyWith =>
-          __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWithImpl<
-                  _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf>(
+          __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWithImpl<
+                  _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl>(
               this, _$identity);
 
   @override
@@ -8690,24 +8749,26 @@ abstract class FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf
   const factory FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf(
           {required final FruitInlineInlineDiscAnyOf
               fruitInlineInlineDiscAnyOfValue}) =
-      _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf;
+      _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl;
   const FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf._() : super._();
 
   FruitInlineInlineDiscAnyOf get fruitInlineInlineDiscAnyOfValue;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfCopyWith<
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf>
+  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWith<
+          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWith<
+abstract class _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWith<
     $Res> {
-  factory _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWith(
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value,
-          $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1)
+  factory _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWith(
+          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl value,
+          $Res Function(
+                  _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl)
               then) =
-      __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWithImpl<$Res>;
+      __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWithImpl<
+          $Res>;
   @useResult
   $Res call({FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value});
 
@@ -8716,14 +8777,17 @@ abstract class _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWith<
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWithImpl<$Res>
+class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWithImpl<
+        $Res>
     extends _$FruitInlineInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1>
+        _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl>
     implements
-        _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWith<$Res> {
-  __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWithImpl(
-      _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 _value,
-      $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1) _then)
+        _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWith<
+            $Res> {
+  __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWithImpl(
+      _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl _value,
+      $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl)
+          _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8731,7 +8795,7 @@ class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWithImpl<$Res>
   $Res call({
     Object? fruitInlineInlineDiscAnyOf1Value = null,
   }) {
-    return _then(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1(
+    return _then(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl(
       fruitInlineInlineDiscAnyOf1Value: null == fruitInlineInlineDiscAnyOf1Value
           ? _value.fruitInlineInlineDiscAnyOf1Value
           : fruitInlineInlineDiscAnyOf1Value // ignore: cast_nullable_to_non_nullable
@@ -8752,9 +8816,9 @@ class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1
+class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl
     extends FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 {
-  const _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1(
+  const _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl(
       {required this.fruitInlineInlineDiscAnyOf1Value})
       : super._();
 
@@ -8767,10 +8831,10 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 &&
+            other is _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl &&
             (identical(other.fruitInlineInlineDiscAnyOf1Value,
                     fruitInlineInlineDiscAnyOf1Value) ||
                 other.fruitInlineInlineDiscAnyOf1Value ==
@@ -8784,11 +8848,11 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWith<
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1>
+  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWith<
+          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl>
       get copyWith =>
-          __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWithImpl<
-                  _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1>(
+          __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWithImpl<
+                  _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl>(
               this, _$identity);
 
   @override
@@ -8904,22 +8968,22 @@ abstract class FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1
   const factory FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1(
           {required final FruitInlineInlineDiscAnyOf1
               fruitInlineInlineDiscAnyOf1Value}) =
-      _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1;
+      _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl;
   const FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1._() : super._();
 
   FruitInlineInlineDiscAnyOf1 get fruitInlineInlineDiscAnyOf1Value;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1CopyWith<
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1>
+  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWith<
+          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscUnknownCopyWith<$Res> {
-  factory _$$FruitInlineInlineDiscUnknownCopyWith(
-          _$FruitInlineInlineDiscUnknown value,
-          $Res Function(_$FruitInlineInlineDiscUnknown) then) =
-      __$$FruitInlineInlineDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$FruitInlineInlineDiscUnknownImplCopyWith<$Res> {
+  factory _$$FruitInlineInlineDiscUnknownImplCopyWith(
+          _$FruitInlineInlineDiscUnknownImpl value,
+          $Res Function(_$FruitInlineInlineDiscUnknownImpl) then) =
+      __$$FruitInlineInlineDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -8930,13 +8994,13 @@ abstract class _$$FruitInlineInlineDiscUnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscUnknownCopyWithImpl<$Res>
+class __$$FruitInlineInlineDiscUnknownImplCopyWithImpl<$Res>
     extends _$FruitInlineInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscUnknown>
-    implements _$$FruitInlineInlineDiscUnknownCopyWith<$Res> {
-  __$$FruitInlineInlineDiscUnknownCopyWithImpl(
-      _$FruitInlineInlineDiscUnknown _value,
-      $Res Function(_$FruitInlineInlineDiscUnknown) _then)
+        _$FruitInlineInlineDiscUnknownImpl>
+    implements _$$FruitInlineInlineDiscUnknownImplCopyWith<$Res> {
+  __$$FruitInlineInlineDiscUnknownImplCopyWithImpl(
+      _$FruitInlineInlineDiscUnknownImpl _value,
+      $Res Function(_$FruitInlineInlineDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8948,7 +9012,7 @@ class __$$FruitInlineInlineDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitInlineInlineDiscUnknown(
+    return _then(_$FruitInlineInlineDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -8975,8 +9039,8 @@ class __$$FruitInlineInlineDiscUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscUnknown extends FruitInlineInlineDiscUnknown {
-  const _$FruitInlineInlineDiscUnknown(
+class _$FruitInlineInlineDiscUnknownImpl extends FruitInlineInlineDiscUnknown {
+  const _$FruitInlineInlineDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -9030,10 +9094,10 @@ class _$FruitInlineInlineDiscUnknown extends FruitInlineInlineDiscUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscUnknown &&
+            other is _$FruitInlineInlineDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -9056,9 +9120,10 @@ class _$FruitInlineInlineDiscUnknown extends FruitInlineInlineDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscUnknownCopyWith<_$FruitInlineInlineDiscUnknown>
-      get copyWith => __$$FruitInlineInlineDiscUnknownCopyWithImpl<
-          _$FruitInlineInlineDiscUnknown>(this, _$identity);
+  _$$FruitInlineInlineDiscUnknownImplCopyWith<
+          _$FruitInlineInlineDiscUnknownImpl>
+      get copyWith => __$$FruitInlineInlineDiscUnknownImplCopyWithImpl<
+          _$FruitInlineInlineDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -9176,7 +9241,7 @@ abstract class FruitInlineInlineDiscUnknown extends FruitInlineInlineDisc {
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
           final List<FruitInlineInlineDisc> deserializedModels}) =
-      _$FruitInlineInlineDiscUnknown;
+      _$FruitInlineInlineDiscUnknownImpl;
   const FruitInlineInlineDiscUnknown._() : super._();
 
   String get message;
@@ -9185,7 +9250,8 @@ abstract class FruitInlineInlineDiscUnknown extends FruitInlineInlineDisc {
   List<Type> get possibleTypes;
   List<FruitInlineInlineDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscUnknownCopyWith<_$FruitInlineInlineDiscUnknown>
+  _$$FruitInlineInlineDiscUnknownImplCopyWith<
+          _$FruitInlineInlineDiscUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -9285,14 +9351,14 @@ class _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+abstract class _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
     $Res> {
-  factory _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWith(
-          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value,
+  factory _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith(
+          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl value,
           $Res Function(
-                  _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf)
+                  _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl)
               then) =
-      __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+      __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
           $Res>;
   @useResult
   $Res call(
@@ -9303,17 +9369,17 @@ abstract class _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCop
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+class __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
         $Res>
     extends _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf>
+        _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl>
     implements
-        _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+        _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
             $Res> {
-  __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl(
-      _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf _value,
+  __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl(
+      _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl _value,
       $Res Function(
-              _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf)
+              _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl)
           _then)
       : super(_value, _then);
 
@@ -9322,7 +9388,8 @@ class __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWithImp
   $Res call({
     Object? fruitInlineInlineDiscAnyOfAnyOfValue = null,
   }) {
-    return _then(_$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf(
+    return _then(
+        _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl(
       fruitInlineInlineDiscAnyOfAnyOfValue: null ==
               fruitInlineInlineDiscAnyOfAnyOfValue
           ? _value.fruitInlineInlineDiscAnyOfAnyOfValue
@@ -9345,9 +9412,9 @@ class __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWithImp
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf
+class _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl
     extends FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf {
-  const _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf(
+  const _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl(
       {required this.fruitInlineInlineDiscAnyOfAnyOfValue})
       : super._();
 
@@ -9360,11 +9427,11 @@ class _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf &&
+                is _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl &&
             (identical(other.fruitInlineInlineDiscAnyOfAnyOfValue,
                     fruitInlineInlineDiscAnyOfAnyOfValue) ||
                 other.fruitInlineInlineDiscAnyOfAnyOfValue ==
@@ -9378,11 +9445,11 @@ class _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
-          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf>
+  _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
+          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl>
       get copyWith =>
-          __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
-                  _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf>(
+          __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
+                  _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl>(
               this, _$identity);
 
   @override
@@ -9489,23 +9556,23 @@ abstract class FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf
   const factory FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf(
           {required final FruitInlineInlineDiscAnyOfAnyOf
               fruitInlineInlineDiscAnyOfAnyOfValue}) =
-      _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf;
+      _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl;
   const FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf._()
       : super._();
 
   FruitInlineInlineDiscAnyOfAnyOf get fruitInlineInlineDiscAnyOfAnyOfValue;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
-          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf>
+  _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
+          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscAnyOfUnknownCopyWith<$Res> {
-  factory _$$FruitInlineInlineDiscAnyOfUnknownCopyWith(
-          _$FruitInlineInlineDiscAnyOfUnknown value,
-          $Res Function(_$FruitInlineInlineDiscAnyOfUnknown) then) =
-      __$$FruitInlineInlineDiscAnyOfUnknownCopyWithImpl<$Res>;
+abstract class _$$FruitInlineInlineDiscAnyOfUnknownImplCopyWith<$Res> {
+  factory _$$FruitInlineInlineDiscAnyOfUnknownImplCopyWith(
+          _$FruitInlineInlineDiscAnyOfUnknownImpl value,
+          $Res Function(_$FruitInlineInlineDiscAnyOfUnknownImpl) then) =
+      __$$FruitInlineInlineDiscAnyOfUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -9516,13 +9583,13 @@ abstract class _$$FruitInlineInlineDiscAnyOfUnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscAnyOfUnknownCopyWithImpl<$Res>
+class __$$FruitInlineInlineDiscAnyOfUnknownImplCopyWithImpl<$Res>
     extends _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAnyOfUnknown>
-    implements _$$FruitInlineInlineDiscAnyOfUnknownCopyWith<$Res> {
-  __$$FruitInlineInlineDiscAnyOfUnknownCopyWithImpl(
-      _$FruitInlineInlineDiscAnyOfUnknown _value,
-      $Res Function(_$FruitInlineInlineDiscAnyOfUnknown) _then)
+        _$FruitInlineInlineDiscAnyOfUnknownImpl>
+    implements _$$FruitInlineInlineDiscAnyOfUnknownImplCopyWith<$Res> {
+  __$$FruitInlineInlineDiscAnyOfUnknownImplCopyWithImpl(
+      _$FruitInlineInlineDiscAnyOfUnknownImpl _value,
+      $Res Function(_$FruitInlineInlineDiscAnyOfUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -9534,7 +9601,7 @@ class __$$FruitInlineInlineDiscAnyOfUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitInlineInlineDiscAnyOfUnknown(
+    return _then(_$FruitInlineInlineDiscAnyOfUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -9561,9 +9628,9 @@ class __$$FruitInlineInlineDiscAnyOfUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscAnyOfUnknown
+class _$FruitInlineInlineDiscAnyOfUnknownImpl
     extends FruitInlineInlineDiscAnyOfUnknown {
-  const _$FruitInlineInlineDiscAnyOfUnknown(
+  const _$FruitInlineInlineDiscAnyOfUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -9616,10 +9683,10 @@ class _$FruitInlineInlineDiscAnyOfUnknown
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscAnyOfUnknown &&
+            other is _$FruitInlineInlineDiscAnyOfUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -9642,10 +9709,10 @@ class _$FruitInlineInlineDiscAnyOfUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAnyOfUnknownCopyWith<
-          _$FruitInlineInlineDiscAnyOfUnknown>
-      get copyWith => __$$FruitInlineInlineDiscAnyOfUnknownCopyWithImpl<
-          _$FruitInlineInlineDiscAnyOfUnknown>(this, _$identity);
+  _$$FruitInlineInlineDiscAnyOfUnknownImplCopyWith<
+          _$FruitInlineInlineDiscAnyOfUnknownImpl>
+      get copyWith => __$$FruitInlineInlineDiscAnyOfUnknownImplCopyWithImpl<
+          _$FruitInlineInlineDiscAnyOfUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -9753,7 +9820,7 @@ abstract class FruitInlineInlineDiscAnyOfUnknown
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
           final List<FruitInlineInlineDiscAnyOf> deserializedModels}) =
-      _$FruitInlineInlineDiscAnyOfUnknown;
+      _$FruitInlineInlineDiscAnyOfUnknownImpl;
   const FruitInlineInlineDiscAnyOfUnknown._() : super._();
 
   String get message;
@@ -9762,8 +9829,8 @@ abstract class FruitInlineInlineDiscAnyOfUnknown
   List<Type> get possibleTypes;
   List<FruitInlineInlineDiscAnyOf> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAnyOfUnknownCopyWith<
-          _$FruitInlineInlineDiscAnyOfUnknown>
+  _$$FruitInlineInlineDiscAnyOfUnknownImplCopyWith<
+          _$FruitInlineInlineDiscAnyOfUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -9864,14 +9931,14 @@ class _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+abstract class _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
     $Res> {
-  factory _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWith(
-          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value,
+  factory _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith(
+          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl value,
           $Res Function(
-                  _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf)
+                  _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl)
               then) =
-      __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+      __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
           $Res>;
   @useResult
   $Res call(
@@ -9882,17 +9949,17 @@ abstract class _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCo
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
+class __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
         $Res>
     extends _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf>
+        _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl>
     implements
-        _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
+        _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
             $Res> {
-  __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl(
-      _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf _value,
+  __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl(
+      _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl _value,
       $Res Function(
-              _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf)
+              _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl)
           _then)
       : super(_value, _then);
 
@@ -9901,7 +9968,8 @@ class __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWithIm
   $Res call({
     Object? fruitInlineInlineDiscAnyOfAnyOfValue = null,
   }) {
-    return _then(_$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf(
+    return _then(
+        _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl(
       fruitInlineInlineDiscAnyOfAnyOfValue: null ==
               fruitInlineInlineDiscAnyOfAnyOfValue
           ? _value.fruitInlineInlineDiscAnyOfAnyOfValue
@@ -9924,9 +9992,9 @@ class __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWithIm
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf
+class _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl
     extends FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf {
-  const _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf(
+  const _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl(
       {required this.fruitInlineInlineDiscAnyOfAnyOfValue})
       : super._();
 
@@ -9939,11 +10007,11 @@ class _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf &&
+                is _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl &&
             (identical(other.fruitInlineInlineDiscAnyOfAnyOfValue,
                     fruitInlineInlineDiscAnyOfAnyOfValue) ||
                 other.fruitInlineInlineDiscAnyOfAnyOfValue ==
@@ -9957,11 +10025,11 @@ class _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
-          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf>
+  _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
+          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl>
       get copyWith =>
-          __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
-                  _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf>(
+          __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
+                  _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl>(
               this, _$identity);
 
   @override
@@ -10068,23 +10136,23 @@ abstract class FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf
   const factory FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf(
           {required final FruitInlineInlineDiscAnyOfAnyOf
               fruitInlineInlineDiscAnyOfAnyOfValue}) =
-      _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf;
+      _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl;
   const FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf._()
       : super._();
 
   FruitInlineInlineDiscAnyOfAnyOf get fruitInlineInlineDiscAnyOfAnyOfValue;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfCopyWith<
-          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf>
+  _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
+          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith<$Res> {
-  factory _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith(
-          _$FruitInlineInlineDiscAnyOf1Unknown value,
-          $Res Function(_$FruitInlineInlineDiscAnyOf1Unknown) then) =
-      __$$FruitInlineInlineDiscAnyOf1UnknownCopyWithImpl<$Res>;
+abstract class _$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWith<$Res> {
+  factory _$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWith(
+          _$FruitInlineInlineDiscAnyOf1UnknownImpl value,
+          $Res Function(_$FruitInlineInlineDiscAnyOf1UnknownImpl) then) =
+      __$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -10095,13 +10163,13 @@ abstract class _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscAnyOf1UnknownCopyWithImpl<$Res>
+class __$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWithImpl<$Res>
     extends _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAnyOf1Unknown>
-    implements _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith<$Res> {
-  __$$FruitInlineInlineDiscAnyOf1UnknownCopyWithImpl(
-      _$FruitInlineInlineDiscAnyOf1Unknown _value,
-      $Res Function(_$FruitInlineInlineDiscAnyOf1Unknown) _then)
+        _$FruitInlineInlineDiscAnyOf1UnknownImpl>
+    implements _$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWith<$Res> {
+  __$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWithImpl(
+      _$FruitInlineInlineDiscAnyOf1UnknownImpl _value,
+      $Res Function(_$FruitInlineInlineDiscAnyOf1UnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10113,7 +10181,7 @@ class __$$FruitInlineInlineDiscAnyOf1UnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitInlineInlineDiscAnyOf1Unknown(
+    return _then(_$FruitInlineInlineDiscAnyOf1UnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -10140,9 +10208,9 @@ class __$$FruitInlineInlineDiscAnyOf1UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscAnyOf1Unknown
+class _$FruitInlineInlineDiscAnyOf1UnknownImpl
     extends FruitInlineInlineDiscAnyOf1Unknown {
-  const _$FruitInlineInlineDiscAnyOf1Unknown(
+  const _$FruitInlineInlineDiscAnyOf1UnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -10195,10 +10263,10 @@ class _$FruitInlineInlineDiscAnyOf1Unknown
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscAnyOf1Unknown &&
+            other is _$FruitInlineInlineDiscAnyOf1UnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -10221,10 +10289,10 @@ class _$FruitInlineInlineDiscAnyOf1Unknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith<
-          _$FruitInlineInlineDiscAnyOf1Unknown>
-      get copyWith => __$$FruitInlineInlineDiscAnyOf1UnknownCopyWithImpl<
-          _$FruitInlineInlineDiscAnyOf1Unknown>(this, _$identity);
+  _$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWith<
+          _$FruitInlineInlineDiscAnyOf1UnknownImpl>
+      get copyWith => __$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWithImpl<
+          _$FruitInlineInlineDiscAnyOf1UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -10332,7 +10400,7 @@ abstract class FruitInlineInlineDiscAnyOf1Unknown
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
           final List<FruitInlineInlineDiscAnyOf1> deserializedModels}) =
-      _$FruitInlineInlineDiscAnyOf1Unknown;
+      _$FruitInlineInlineDiscAnyOf1UnknownImpl;
   const FruitInlineInlineDiscAnyOf1Unknown._() : super._();
 
   String get message;
@@ -10341,8 +10409,8 @@ abstract class FruitInlineInlineDiscAnyOf1Unknown
   List<Type> get possibleTypes;
   List<FruitInlineInlineDiscAnyOf1> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAnyOf1UnknownCopyWith<
-          _$FruitInlineInlineDiscAnyOf1Unknown>
+  _$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWith<
+          _$FruitInlineInlineDiscAnyOf1UnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -10399,25 +10467,25 @@ class _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>
+abstract class _$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWith<$Res>
     implements $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res> {
-  factory _$$_FruitInlineInlineDiscAnyOfAnyOfCopyWith(
-          _$_FruitInlineInlineDiscAnyOfAnyOf value,
-          $Res Function(_$_FruitInlineInlineDiscAnyOfAnyOf) then) =
-      __$$_FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res>;
+  factory _$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWith(
+          _$FruitInlineInlineDiscAnyOfAnyOfImpl value,
+          $Res Function(_$FruitInlineInlineDiscAnyOfAnyOfImpl) then) =
+      __$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class __$$_FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res>
+class __$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<$Res>
     extends _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res,
-        _$_FruitInlineInlineDiscAnyOfAnyOf>
-    implements _$$_FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res> {
-  __$$_FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl(
-      _$_FruitInlineInlineDiscAnyOfAnyOf _value,
-      $Res Function(_$_FruitInlineInlineDiscAnyOfAnyOf) _then)
+        _$FruitInlineInlineDiscAnyOfAnyOfImpl>
+    implements _$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWith<$Res> {
+  __$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl(
+      _$FruitInlineInlineDiscAnyOfAnyOfImpl _value,
+      $Res Function(_$FruitInlineInlineDiscAnyOfAnyOfImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10425,7 +10493,7 @@ class __$$_FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = null,
   }) {
-    return _then(_$_FruitInlineInlineDiscAnyOfAnyOf(
+    return _then(_$FruitInlineInlineDiscAnyOfAnyOfImpl(
       fruitType: null == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -10436,15 +10504,15 @@ class __$$_FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FruitInlineInlineDiscAnyOfAnyOf
+class _$FruitInlineInlineDiscAnyOfAnyOfImpl
     extends _FruitInlineInlineDiscAnyOfAnyOf {
-  const _$_FruitInlineInlineDiscAnyOfAnyOf(
+  const _$FruitInlineInlineDiscAnyOfAnyOfImpl(
       {@JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_FruitInlineInlineDiscAnyOfAnyOf.fromJson(
+  factory _$FruitInlineInlineDiscAnyOfAnyOfImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_FruitInlineInlineDiscAnyOfAnyOfFromJson(json);
+      _$$FruitInlineInlineDiscAnyOfAnyOfImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -10456,10 +10524,10 @@ class _$_FruitInlineInlineDiscAnyOfAnyOf
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FruitInlineInlineDiscAnyOfAnyOf &&
+            other is _$FruitInlineInlineDiscAnyOfAnyOfImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -10471,14 +10539,14 @@ class _$_FruitInlineInlineDiscAnyOfAnyOf
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FruitInlineInlineDiscAnyOfAnyOfCopyWith<
-          _$_FruitInlineInlineDiscAnyOfAnyOf>
-      get copyWith => __$$_FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<
-          _$_FruitInlineInlineDiscAnyOfAnyOf>(this, _$identity);
+  _$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
+          _$FruitInlineInlineDiscAnyOfAnyOfImpl>
+      get copyWith => __$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
+          _$FruitInlineInlineDiscAnyOfAnyOfImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FruitInlineInlineDiscAnyOfAnyOfToJson(
+    return _$$FruitInlineInlineDiscAnyOfAnyOfImplToJson(
       this,
     );
   }
@@ -10488,19 +10556,19 @@ abstract class _FruitInlineInlineDiscAnyOfAnyOf
     extends FruitInlineInlineDiscAnyOfAnyOf {
   const factory _FruitInlineInlineDiscAnyOfAnyOf(
           {@JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_FruitInlineInlineDiscAnyOfAnyOf;
+      _$FruitInlineInlineDiscAnyOfAnyOfImpl;
   const _FruitInlineInlineDiscAnyOfAnyOf._() : super._();
 
   factory _FruitInlineInlineDiscAnyOfAnyOf.fromJson(Map<String, dynamic> json) =
-      _$_FruitInlineInlineDiscAnyOfAnyOf.fromJson;
+      _$FruitInlineInlineDiscAnyOfAnyOfImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_FruitInlineInlineDiscAnyOfAnyOfCopyWith<
-          _$_FruitInlineInlineDiscAnyOfAnyOf>
+  _$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
+          _$FruitInlineInlineDiscAnyOfAnyOfImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -10590,11 +10658,11 @@ class _$FruitReqDiscCopyWithImpl<$Res, $Val extends FruitReqDisc>
 }
 
 /// @nodoc
-abstract class _$$FruitReqDiscAsAppleReqDiscCopyWith<$Res> {
-  factory _$$FruitReqDiscAsAppleReqDiscCopyWith(
-          _$FruitReqDiscAsAppleReqDisc value,
-          $Res Function(_$FruitReqDiscAsAppleReqDisc) then) =
-      __$$FruitReqDiscAsAppleReqDiscCopyWithImpl<$Res>;
+abstract class _$$FruitReqDiscAsAppleReqDiscImplCopyWith<$Res> {
+  factory _$$FruitReqDiscAsAppleReqDiscImplCopyWith(
+          _$FruitReqDiscAsAppleReqDiscImpl value,
+          $Res Function(_$FruitReqDiscAsAppleReqDiscImpl) then) =
+      __$$FruitReqDiscAsAppleReqDiscImplCopyWithImpl<$Res>;
   @useResult
   $Res call({AppleReqDisc appleReqDiscValue});
 
@@ -10602,12 +10670,12 @@ abstract class _$$FruitReqDiscAsAppleReqDiscCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitReqDiscAsAppleReqDiscCopyWithImpl<$Res>
-    extends _$FruitReqDiscCopyWithImpl<$Res, _$FruitReqDiscAsAppleReqDisc>
-    implements _$$FruitReqDiscAsAppleReqDiscCopyWith<$Res> {
-  __$$FruitReqDiscAsAppleReqDiscCopyWithImpl(
-      _$FruitReqDiscAsAppleReqDisc _value,
-      $Res Function(_$FruitReqDiscAsAppleReqDisc) _then)
+class __$$FruitReqDiscAsAppleReqDiscImplCopyWithImpl<$Res>
+    extends _$FruitReqDiscCopyWithImpl<$Res, _$FruitReqDiscAsAppleReqDiscImpl>
+    implements _$$FruitReqDiscAsAppleReqDiscImplCopyWith<$Res> {
+  __$$FruitReqDiscAsAppleReqDiscImplCopyWithImpl(
+      _$FruitReqDiscAsAppleReqDiscImpl _value,
+      $Res Function(_$FruitReqDiscAsAppleReqDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10615,7 +10683,7 @@ class __$$FruitReqDiscAsAppleReqDiscCopyWithImpl<$Res>
   $Res call({
     Object? appleReqDiscValue = null,
   }) {
-    return _then(_$FruitReqDiscAsAppleReqDisc(
+    return _then(_$FruitReqDiscAsAppleReqDiscImpl(
       appleReqDiscValue: null == appleReqDiscValue
           ? _value.appleReqDiscValue
           : appleReqDiscValue // ignore: cast_nullable_to_non_nullable
@@ -10634,8 +10702,8 @@ class __$$FruitReqDiscAsAppleReqDiscCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitReqDiscAsAppleReqDisc extends FruitReqDiscAsAppleReqDisc {
-  const _$FruitReqDiscAsAppleReqDisc({required this.appleReqDiscValue})
+class _$FruitReqDiscAsAppleReqDiscImpl extends FruitReqDiscAsAppleReqDisc {
+  const _$FruitReqDiscAsAppleReqDiscImpl({required this.appleReqDiscValue})
       : super._();
 
   @override
@@ -10647,10 +10715,10 @@ class _$FruitReqDiscAsAppleReqDisc extends FruitReqDiscAsAppleReqDisc {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitReqDiscAsAppleReqDisc &&
+            other is _$FruitReqDiscAsAppleReqDiscImpl &&
             (identical(other.appleReqDiscValue, appleReqDiscValue) ||
                 other.appleReqDiscValue == appleReqDiscValue));
   }
@@ -10661,9 +10729,9 @@ class _$FruitReqDiscAsAppleReqDisc extends FruitReqDiscAsAppleReqDisc {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitReqDiscAsAppleReqDiscCopyWith<_$FruitReqDiscAsAppleReqDisc>
-      get copyWith => __$$FruitReqDiscAsAppleReqDiscCopyWithImpl<
-          _$FruitReqDiscAsAppleReqDisc>(this, _$identity);
+  _$$FruitReqDiscAsAppleReqDiscImplCopyWith<_$FruitReqDiscAsAppleReqDiscImpl>
+      get copyWith => __$$FruitReqDiscAsAppleReqDiscImplCopyWithImpl<
+          _$FruitReqDiscAsAppleReqDiscImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -10756,21 +10824,21 @@ class _$FruitReqDiscAsAppleReqDisc extends FruitReqDiscAsAppleReqDisc {
 abstract class FruitReqDiscAsAppleReqDisc extends FruitReqDisc {
   const factory FruitReqDiscAsAppleReqDisc(
           {required final AppleReqDisc appleReqDiscValue}) =
-      _$FruitReqDiscAsAppleReqDisc;
+      _$FruitReqDiscAsAppleReqDiscImpl;
   const FruitReqDiscAsAppleReqDisc._() : super._();
 
   AppleReqDisc get appleReqDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitReqDiscAsAppleReqDiscCopyWith<_$FruitReqDiscAsAppleReqDisc>
+  _$$FruitReqDiscAsAppleReqDiscImplCopyWith<_$FruitReqDiscAsAppleReqDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitReqDiscAsBananaReqDiscCopyWith<$Res> {
-  factory _$$FruitReqDiscAsBananaReqDiscCopyWith(
-          _$FruitReqDiscAsBananaReqDisc value,
-          $Res Function(_$FruitReqDiscAsBananaReqDisc) then) =
-      __$$FruitReqDiscAsBananaReqDiscCopyWithImpl<$Res>;
+abstract class _$$FruitReqDiscAsBananaReqDiscImplCopyWith<$Res> {
+  factory _$$FruitReqDiscAsBananaReqDiscImplCopyWith(
+          _$FruitReqDiscAsBananaReqDiscImpl value,
+          $Res Function(_$FruitReqDiscAsBananaReqDiscImpl) then) =
+      __$$FruitReqDiscAsBananaReqDiscImplCopyWithImpl<$Res>;
   @useResult
   $Res call({BananaReqDisc bananaReqDiscValue});
 
@@ -10778,12 +10846,12 @@ abstract class _$$FruitReqDiscAsBananaReqDiscCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitReqDiscAsBananaReqDiscCopyWithImpl<$Res>
-    extends _$FruitReqDiscCopyWithImpl<$Res, _$FruitReqDiscAsBananaReqDisc>
-    implements _$$FruitReqDiscAsBananaReqDiscCopyWith<$Res> {
-  __$$FruitReqDiscAsBananaReqDiscCopyWithImpl(
-      _$FruitReqDiscAsBananaReqDisc _value,
-      $Res Function(_$FruitReqDiscAsBananaReqDisc) _then)
+class __$$FruitReqDiscAsBananaReqDiscImplCopyWithImpl<$Res>
+    extends _$FruitReqDiscCopyWithImpl<$Res, _$FruitReqDiscAsBananaReqDiscImpl>
+    implements _$$FruitReqDiscAsBananaReqDiscImplCopyWith<$Res> {
+  __$$FruitReqDiscAsBananaReqDiscImplCopyWithImpl(
+      _$FruitReqDiscAsBananaReqDiscImpl _value,
+      $Res Function(_$FruitReqDiscAsBananaReqDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10791,7 +10859,7 @@ class __$$FruitReqDiscAsBananaReqDiscCopyWithImpl<$Res>
   $Res call({
     Object? bananaReqDiscValue = null,
   }) {
-    return _then(_$FruitReqDiscAsBananaReqDisc(
+    return _then(_$FruitReqDiscAsBananaReqDiscImpl(
       bananaReqDiscValue: null == bananaReqDiscValue
           ? _value.bananaReqDiscValue
           : bananaReqDiscValue // ignore: cast_nullable_to_non_nullable
@@ -10810,8 +10878,8 @@ class __$$FruitReqDiscAsBananaReqDiscCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitReqDiscAsBananaReqDisc extends FruitReqDiscAsBananaReqDisc {
-  const _$FruitReqDiscAsBananaReqDisc({required this.bananaReqDiscValue})
+class _$FruitReqDiscAsBananaReqDiscImpl extends FruitReqDiscAsBananaReqDisc {
+  const _$FruitReqDiscAsBananaReqDiscImpl({required this.bananaReqDiscValue})
       : super._();
 
   @override
@@ -10823,10 +10891,10 @@ class _$FruitReqDiscAsBananaReqDisc extends FruitReqDiscAsBananaReqDisc {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitReqDiscAsBananaReqDisc &&
+            other is _$FruitReqDiscAsBananaReqDiscImpl &&
             (identical(other.bananaReqDiscValue, bananaReqDiscValue) ||
                 other.bananaReqDiscValue == bananaReqDiscValue));
   }
@@ -10837,9 +10905,9 @@ class _$FruitReqDiscAsBananaReqDisc extends FruitReqDiscAsBananaReqDisc {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitReqDiscAsBananaReqDiscCopyWith<_$FruitReqDiscAsBananaReqDisc>
-      get copyWith => __$$FruitReqDiscAsBananaReqDiscCopyWithImpl<
-          _$FruitReqDiscAsBananaReqDisc>(this, _$identity);
+  _$$FruitReqDiscAsBananaReqDiscImplCopyWith<_$FruitReqDiscAsBananaReqDiscImpl>
+      get copyWith => __$$FruitReqDiscAsBananaReqDiscImplCopyWithImpl<
+          _$FruitReqDiscAsBananaReqDiscImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -10932,20 +11000,20 @@ class _$FruitReqDiscAsBananaReqDisc extends FruitReqDiscAsBananaReqDisc {
 abstract class FruitReqDiscAsBananaReqDisc extends FruitReqDisc {
   const factory FruitReqDiscAsBananaReqDisc(
           {required final BananaReqDisc bananaReqDiscValue}) =
-      _$FruitReqDiscAsBananaReqDisc;
+      _$FruitReqDiscAsBananaReqDiscImpl;
   const FruitReqDiscAsBananaReqDisc._() : super._();
 
   BananaReqDisc get bananaReqDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitReqDiscAsBananaReqDiscCopyWith<_$FruitReqDiscAsBananaReqDisc>
+  _$$FruitReqDiscAsBananaReqDiscImplCopyWith<_$FruitReqDiscAsBananaReqDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitReqDiscUnknownCopyWith<$Res> {
-  factory _$$FruitReqDiscUnknownCopyWith(_$FruitReqDiscUnknown value,
-          $Res Function(_$FruitReqDiscUnknown) then) =
-      __$$FruitReqDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$FruitReqDiscUnknownImplCopyWith<$Res> {
+  factory _$$FruitReqDiscUnknownImplCopyWith(_$FruitReqDiscUnknownImpl value,
+          $Res Function(_$FruitReqDiscUnknownImpl) then) =
+      __$$FruitReqDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
@@ -10956,11 +11024,11 @@ abstract class _$$FruitReqDiscUnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FruitReqDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitReqDiscCopyWithImpl<$Res, _$FruitReqDiscUnknown>
-    implements _$$FruitReqDiscUnknownCopyWith<$Res> {
-  __$$FruitReqDiscUnknownCopyWithImpl(
-      _$FruitReqDiscUnknown _value, $Res Function(_$FruitReqDiscUnknown) _then)
+class __$$FruitReqDiscUnknownImplCopyWithImpl<$Res>
+    extends _$FruitReqDiscCopyWithImpl<$Res, _$FruitReqDiscUnknownImpl>
+    implements _$$FruitReqDiscUnknownImplCopyWith<$Res> {
+  __$$FruitReqDiscUnknownImplCopyWithImpl(_$FruitReqDiscUnknownImpl _value,
+      $Res Function(_$FruitReqDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10972,7 +11040,7 @@ class __$$FruitReqDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitReqDiscUnknown(
+    return _then(_$FruitReqDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -10999,8 +11067,8 @@ class __$$FruitReqDiscUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
-  const _$FruitReqDiscUnknown(
+class _$FruitReqDiscUnknownImpl extends FruitReqDiscUnknown {
+  const _$FruitReqDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
@@ -11053,10 +11121,10 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitReqDiscUnknown &&
+            other is _$FruitReqDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -11079,8 +11147,8 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitReqDiscUnknownCopyWith<_$FruitReqDiscUnknown> get copyWith =>
-      __$$FruitReqDiscUnknownCopyWithImpl<_$FruitReqDiscUnknown>(
+  _$$FruitReqDiscUnknownImplCopyWith<_$FruitReqDiscUnknownImpl> get copyWith =>
+      __$$FruitReqDiscUnknownImplCopyWithImpl<_$FruitReqDiscUnknownImpl>(
           this, _$identity);
 
   @override
@@ -11179,7 +11247,7 @@ abstract class FruitReqDiscUnknown extends FruitReqDisc {
       required final Map<String, dynamic> json,
       final DeserializationErrorType errorType,
       final List<Type> possibleTypes,
-      final List<FruitReqDisc> deserializedModels}) = _$FruitReqDiscUnknown;
+      final List<FruitReqDisc> deserializedModels}) = _$FruitReqDiscUnknownImpl;
   const FruitReqDiscUnknown._() : super._();
 
   String get message;
@@ -11188,7 +11256,7 @@ abstract class FruitReqDiscUnknown extends FruitReqDisc {
   List<Type> get possibleTypes;
   List<FruitReqDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitReqDiscUnknownCopyWith<_$FruitReqDiscUnknown> get copyWith =>
+  _$$FruitReqDiscUnknownImplCopyWith<_$FruitReqDiscUnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -11240,21 +11308,22 @@ class _$FruitTypeCopyWithImpl<$Res, $Val extends FruitType>
 }
 
 /// @nodoc
-abstract class _$$_FruitTypeCopyWith<$Res> implements $FruitTypeCopyWith<$Res> {
-  factory _$$_FruitTypeCopyWith(
-          _$_FruitType value, $Res Function(_$_FruitType) then) =
-      __$$_FruitTypeCopyWithImpl<$Res>;
+abstract class _$$FruitTypeImplCopyWith<$Res>
+    implements $FruitTypeCopyWith<$Res> {
+  factory _$$FruitTypeImplCopyWith(
+          _$FruitTypeImpl value, $Res Function(_$FruitTypeImpl) then) =
+      __$$FruitTypeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class __$$_FruitTypeCopyWithImpl<$Res>
-    extends _$FruitTypeCopyWithImpl<$Res, _$_FruitType>
-    implements _$$_FruitTypeCopyWith<$Res> {
-  __$$_FruitTypeCopyWithImpl(
-      _$_FruitType _value, $Res Function(_$_FruitType) _then)
+class __$$FruitTypeImplCopyWithImpl<$Res>
+    extends _$FruitTypeCopyWithImpl<$Res, _$FruitTypeImpl>
+    implements _$$FruitTypeImplCopyWith<$Res> {
+  __$$FruitTypeImplCopyWithImpl(
+      _$FruitTypeImpl _value, $Res Function(_$FruitTypeImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11262,7 +11331,7 @@ class __$$_FruitTypeCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = null,
   }) {
-    return _then(_$_FruitType(
+    return _then(_$FruitTypeImpl(
       fruitType: null == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -11273,12 +11342,12 @@ class __$$_FruitTypeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FruitType extends _FruitType {
-  const _$_FruitType({@JsonKey(name: r'fruitType') required this.fruitType})
+class _$FruitTypeImpl extends _FruitType {
+  const _$FruitTypeImpl({@JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_FruitType.fromJson(Map<String, dynamic> json) =>
-      _$$_FruitTypeFromJson(json);
+  factory _$FruitTypeImpl.fromJson(Map<String, dynamic> json) =>
+      _$$FruitTypeImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -11290,10 +11359,10 @@ class _$_FruitType extends _FruitType {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FruitType &&
+            other is _$FruitTypeImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -11305,12 +11374,12 @@ class _$_FruitType extends _FruitType {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FruitTypeCopyWith<_$_FruitType> get copyWith =>
-      __$$_FruitTypeCopyWithImpl<_$_FruitType>(this, _$identity);
+  _$$FruitTypeImplCopyWith<_$FruitTypeImpl> get copyWith =>
+      __$$FruitTypeImplCopyWithImpl<_$FruitTypeImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FruitTypeToJson(
+    return _$$FruitTypeImplToJson(
       this,
     );
   }
@@ -11319,18 +11388,18 @@ class _$_FruitType extends _FruitType {
 abstract class _FruitType extends FruitType {
   const factory _FruitType(
           {@JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_FruitType;
+      _$FruitTypeImpl;
   const _FruitType._() : super._();
 
   factory _FruitType.fromJson(Map<String, dynamic> json) =
-      _$_FruitType.fromJson;
+      _$FruitTypeImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_FruitTypeCopyWith<_$_FruitType> get copyWith =>
+  _$$FruitTypeImplCopyWith<_$FruitTypeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -11381,19 +11450,21 @@ class _$ParentCopyWithImpl<$Res, $Val extends Parent>
 }
 
 /// @nodoc
-abstract class _$$_ParentCopyWith<$Res> implements $ParentCopyWith<$Res> {
-  factory _$$_ParentCopyWith(_$_Parent value, $Res Function(_$_Parent) then) =
-      __$$_ParentCopyWithImpl<$Res>;
+abstract class _$$ParentImplCopyWith<$Res> implements $ParentCopyWith<$Res> {
+  factory _$$ParentImplCopyWith(
+          _$ParentImpl value, $Res Function(_$ParentImpl) then) =
+      __$$ParentImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class __$$_ParentCopyWithImpl<$Res>
-    extends _$ParentCopyWithImpl<$Res, _$_Parent>
-    implements _$$_ParentCopyWith<$Res> {
-  __$$_ParentCopyWithImpl(_$_Parent _value, $Res Function(_$_Parent) _then)
+class __$$ParentImplCopyWithImpl<$Res>
+    extends _$ParentCopyWithImpl<$Res, _$ParentImpl>
+    implements _$$ParentImplCopyWith<$Res> {
+  __$$ParentImplCopyWithImpl(
+      _$ParentImpl _value, $Res Function(_$ParentImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11401,7 +11472,7 @@ class __$$_ParentCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = null,
   }) {
-    return _then(_$_Parent(
+    return _then(_$ParentImpl(
       fruitType: null == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -11412,12 +11483,12 @@ class __$$_ParentCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Parent extends _Parent {
-  const _$_Parent({@JsonKey(name: r'fruitType') required this.fruitType})
+class _$ParentImpl extends _Parent {
+  const _$ParentImpl({@JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_Parent.fromJson(Map<String, dynamic> json) =>
-      _$$_ParentFromJson(json);
+  factory _$ParentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ParentImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -11429,10 +11500,10 @@ class _$_Parent extends _Parent {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Parent &&
+            other is _$ParentImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -11444,12 +11515,12 @@ class _$_Parent extends _Parent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ParentCopyWith<_$_Parent> get copyWith =>
-      __$$_ParentCopyWithImpl<_$_Parent>(this, _$identity);
+  _$$ParentImplCopyWith<_$ParentImpl> get copyWith =>
+      __$$ParentImplCopyWithImpl<_$ParentImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ParentToJson(
+    return _$$ParentImplToJson(
       this,
     );
   }
@@ -11458,16 +11529,16 @@ class _$_Parent extends _Parent {
 abstract class _Parent extends Parent {
   const factory _Parent(
           {@JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_Parent;
+      _$ParentImpl;
   const _Parent._() : super._();
 
-  factory _Parent.fromJson(Map<String, dynamic> json) = _$_Parent.fromJson;
+  factory _Parent.fromJson(Map<String, dynamic> json) = _$ParentImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_ParentCopyWith<_$_Parent> get copyWith =>
+  _$$ParentImplCopyWith<_$ParentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

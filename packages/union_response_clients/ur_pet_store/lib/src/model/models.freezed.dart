@@ -12,7 +12,7 @@ part of 'models.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 IntInUnion _$IntInUnionFromJson(Map<String, dynamic> json) {
   return _IntInUnion.fromJson(json);
@@ -62,22 +62,22 @@ class _$IntInUnionCopyWithImpl<$Res, $Val extends IntInUnion>
 }
 
 /// @nodoc
-abstract class _$$_IntInUnionCopyWith<$Res>
+abstract class _$$IntInUnionImplCopyWith<$Res>
     implements $IntInUnionCopyWith<$Res> {
-  factory _$$_IntInUnionCopyWith(
-          _$_IntInUnion value, $Res Function(_$_IntInUnion) then) =
-      __$$_IntInUnionCopyWithImpl<$Res>;
+  factory _$$IntInUnionImplCopyWith(
+          _$IntInUnionImpl value, $Res Function(_$IntInUnionImpl) then) =
+      __$$IntInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$$_IntInUnionCopyWithImpl<$Res>
-    extends _$IntInUnionCopyWithImpl<$Res, _$_IntInUnion>
-    implements _$$_IntInUnionCopyWith<$Res> {
-  __$$_IntInUnionCopyWithImpl(
-      _$_IntInUnion _value, $Res Function(_$_IntInUnion) _then)
+class __$$IntInUnionImplCopyWithImpl<$Res>
+    extends _$IntInUnionCopyWithImpl<$Res, _$IntInUnionImpl>
+    implements _$$IntInUnionImplCopyWith<$Res> {
+  __$$IntInUnionImplCopyWithImpl(
+      _$IntInUnionImpl _value, $Res Function(_$IntInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -85,7 +85,7 @@ class __$$_IntInUnionCopyWithImpl<$Res>
   $Res call({
     Object? intValue = null,
   }) {
-    return _then(_$_IntInUnion(
+    return _then(_$IntInUnionImpl(
       intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
@@ -96,11 +96,11 @@ class __$$_IntInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_IntInUnion implements _IntInUnion {
-  const _$_IntInUnion({required this.intValue});
+class _$IntInUnionImpl implements _IntInUnion {
+  const _$IntInUnionImpl({required this.intValue});
 
-  factory _$_IntInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_IntInUnionFromJson(json);
+  factory _$IntInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$IntInUnionImplFromJson(json);
 
   @override
   final int intValue;
@@ -111,10 +111,10 @@ class _$_IntInUnion implements _IntInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_IntInUnion &&
+            other is _$IntInUnionImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -126,28 +126,28 @@ class _$_IntInUnion implements _IntInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_IntInUnionCopyWith<_$_IntInUnion> get copyWith =>
-      __$$_IntInUnionCopyWithImpl<_$_IntInUnion>(this, _$identity);
+  _$$IntInUnionImplCopyWith<_$IntInUnionImpl> get copyWith =>
+      __$$IntInUnionImplCopyWithImpl<_$IntInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_IntInUnionToJson(
+    return _$$IntInUnionImplToJson(
       this,
     );
   }
 }
 
 abstract class _IntInUnion implements IntInUnion {
-  const factory _IntInUnion({required final int intValue}) = _$_IntInUnion;
+  const factory _IntInUnion({required final int intValue}) = _$IntInUnionImpl;
 
   factory _IntInUnion.fromJson(Map<String, dynamic> json) =
-      _$_IntInUnion.fromJson;
+      _$IntInUnionImpl.fromJson;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$$_IntInUnionCopyWith<_$_IntInUnion> get copyWith =>
+  _$$IntInUnionImplCopyWith<_$IntInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -199,22 +199,22 @@ class _$StringInUnionCopyWithImpl<$Res, $Val extends StringInUnion>
 }
 
 /// @nodoc
-abstract class _$$_StringInUnionCopyWith<$Res>
+abstract class _$$StringInUnionImplCopyWith<$Res>
     implements $StringInUnionCopyWith<$Res> {
-  factory _$$_StringInUnionCopyWith(
-          _$_StringInUnion value, $Res Function(_$_StringInUnion) then) =
-      __$$_StringInUnionCopyWithImpl<$Res>;
+  factory _$$StringInUnionImplCopyWith(
+          _$StringInUnionImpl value, $Res Function(_$StringInUnionImpl) then) =
+      __$$StringInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$$_StringInUnionCopyWithImpl<$Res>
-    extends _$StringInUnionCopyWithImpl<$Res, _$_StringInUnion>
-    implements _$$_StringInUnionCopyWith<$Res> {
-  __$$_StringInUnionCopyWithImpl(
-      _$_StringInUnion _value, $Res Function(_$_StringInUnion) _then)
+class __$$StringInUnionImplCopyWithImpl<$Res>
+    extends _$StringInUnionCopyWithImpl<$Res, _$StringInUnionImpl>
+    implements _$$StringInUnionImplCopyWith<$Res> {
+  __$$StringInUnionImplCopyWithImpl(
+      _$StringInUnionImpl _value, $Res Function(_$StringInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -222,7 +222,7 @@ class __$$_StringInUnionCopyWithImpl<$Res>
   $Res call({
     Object? stringValue = null,
   }) {
-    return _then(_$_StringInUnion(
+    return _then(_$StringInUnionImpl(
       stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
@@ -233,11 +233,11 @@ class __$$_StringInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_StringInUnion implements _StringInUnion {
-  const _$_StringInUnion({required this.stringValue});
+class _$StringInUnionImpl implements _StringInUnion {
+  const _$StringInUnionImpl({required this.stringValue});
 
-  factory _$_StringInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_StringInUnionFromJson(json);
+  factory _$StringInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$StringInUnionImplFromJson(json);
 
   @override
   final String stringValue;
@@ -248,10 +248,10 @@ class _$_StringInUnion implements _StringInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_StringInUnion &&
+            other is _$StringInUnionImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -263,12 +263,12 @@ class _$_StringInUnion implements _StringInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_StringInUnionCopyWith<_$_StringInUnion> get copyWith =>
-      __$$_StringInUnionCopyWithImpl<_$_StringInUnion>(this, _$identity);
+  _$$StringInUnionImplCopyWith<_$StringInUnionImpl> get copyWith =>
+      __$$StringInUnionImplCopyWithImpl<_$StringInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_StringInUnionToJson(
+    return _$$StringInUnionImplToJson(
       this,
     );
   }
@@ -276,16 +276,16 @@ class _$_StringInUnion implements _StringInUnion {
 
 abstract class _StringInUnion implements StringInUnion {
   const factory _StringInUnion({required final String stringValue}) =
-      _$_StringInUnion;
+      _$StringInUnionImpl;
 
   factory _StringInUnion.fromJson(Map<String, dynamic> json) =
-      _$_StringInUnion.fromJson;
+      _$StringInUnionImpl.fromJson;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$$_StringInUnionCopyWith<_$_StringInUnion> get copyWith =>
+  _$$StringInUnionImplCopyWith<_$StringInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -337,22 +337,22 @@ class _$BoolInUnionCopyWithImpl<$Res, $Val extends BoolInUnion>
 }
 
 /// @nodoc
-abstract class _$$_BoolInUnionCopyWith<$Res>
+abstract class _$$BoolInUnionImplCopyWith<$Res>
     implements $BoolInUnionCopyWith<$Res> {
-  factory _$$_BoolInUnionCopyWith(
-          _$_BoolInUnion value, $Res Function(_$_BoolInUnion) then) =
-      __$$_BoolInUnionCopyWithImpl<$Res>;
+  factory _$$BoolInUnionImplCopyWith(
+          _$BoolInUnionImpl value, $Res Function(_$BoolInUnionImpl) then) =
+      __$$BoolInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool boolValue});
 }
 
 /// @nodoc
-class __$$_BoolInUnionCopyWithImpl<$Res>
-    extends _$BoolInUnionCopyWithImpl<$Res, _$_BoolInUnion>
-    implements _$$_BoolInUnionCopyWith<$Res> {
-  __$$_BoolInUnionCopyWithImpl(
-      _$_BoolInUnion _value, $Res Function(_$_BoolInUnion) _then)
+class __$$BoolInUnionImplCopyWithImpl<$Res>
+    extends _$BoolInUnionCopyWithImpl<$Res, _$BoolInUnionImpl>
+    implements _$$BoolInUnionImplCopyWith<$Res> {
+  __$$BoolInUnionImplCopyWithImpl(
+      _$BoolInUnionImpl _value, $Res Function(_$BoolInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -360,7 +360,7 @@ class __$$_BoolInUnionCopyWithImpl<$Res>
   $Res call({
     Object? boolValue = null,
   }) {
-    return _then(_$_BoolInUnion(
+    return _then(_$BoolInUnionImpl(
       boolValue: null == boolValue
           ? _value.boolValue
           : boolValue // ignore: cast_nullable_to_non_nullable
@@ -371,11 +371,11 @@ class __$$_BoolInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_BoolInUnion implements _BoolInUnion {
-  const _$_BoolInUnion({required this.boolValue});
+class _$BoolInUnionImpl implements _BoolInUnion {
+  const _$BoolInUnionImpl({required this.boolValue});
 
-  factory _$_BoolInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_BoolInUnionFromJson(json);
+  factory _$BoolInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$BoolInUnionImplFromJson(json);
 
   @override
   final bool boolValue;
@@ -386,10 +386,10 @@ class _$_BoolInUnion implements _BoolInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_BoolInUnion &&
+            other is _$BoolInUnionImpl &&
             (identical(other.boolValue, boolValue) ||
                 other.boolValue == boolValue));
   }
@@ -401,28 +401,29 @@ class _$_BoolInUnion implements _BoolInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_BoolInUnionCopyWith<_$_BoolInUnion> get copyWith =>
-      __$$_BoolInUnionCopyWithImpl<_$_BoolInUnion>(this, _$identity);
+  _$$BoolInUnionImplCopyWith<_$BoolInUnionImpl> get copyWith =>
+      __$$BoolInUnionImplCopyWithImpl<_$BoolInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BoolInUnionToJson(
+    return _$$BoolInUnionImplToJson(
       this,
     );
   }
 }
 
 abstract class _BoolInUnion implements BoolInUnion {
-  const factory _BoolInUnion({required final bool boolValue}) = _$_BoolInUnion;
+  const factory _BoolInUnion({required final bool boolValue}) =
+      _$BoolInUnionImpl;
 
   factory _BoolInUnion.fromJson(Map<String, dynamic> json) =
-      _$_BoolInUnion.fromJson;
+      _$BoolInUnionImpl.fromJson;
 
   @override
   bool get boolValue;
   @override
   @JsonKey(ignore: true)
-  _$$_BoolInUnionCopyWith<_$_BoolInUnion> get copyWith =>
+  _$$BoolInUnionImplCopyWith<_$BoolInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -474,22 +475,22 @@ class _$DoubleInUnionCopyWithImpl<$Res, $Val extends DoubleInUnion>
 }
 
 /// @nodoc
-abstract class _$$_DoubleInUnionCopyWith<$Res>
+abstract class _$$DoubleInUnionImplCopyWith<$Res>
     implements $DoubleInUnionCopyWith<$Res> {
-  factory _$$_DoubleInUnionCopyWith(
-          _$_DoubleInUnion value, $Res Function(_$_DoubleInUnion) then) =
-      __$$_DoubleInUnionCopyWithImpl<$Res>;
+  factory _$$DoubleInUnionImplCopyWith(
+          _$DoubleInUnionImpl value, $Res Function(_$DoubleInUnionImpl) then) =
+      __$$DoubleInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({double doubleValue});
 }
 
 /// @nodoc
-class __$$_DoubleInUnionCopyWithImpl<$Res>
-    extends _$DoubleInUnionCopyWithImpl<$Res, _$_DoubleInUnion>
-    implements _$$_DoubleInUnionCopyWith<$Res> {
-  __$$_DoubleInUnionCopyWithImpl(
-      _$_DoubleInUnion _value, $Res Function(_$_DoubleInUnion) _then)
+class __$$DoubleInUnionImplCopyWithImpl<$Res>
+    extends _$DoubleInUnionCopyWithImpl<$Res, _$DoubleInUnionImpl>
+    implements _$$DoubleInUnionImplCopyWith<$Res> {
+  __$$DoubleInUnionImplCopyWithImpl(
+      _$DoubleInUnionImpl _value, $Res Function(_$DoubleInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -497,7 +498,7 @@ class __$$_DoubleInUnionCopyWithImpl<$Res>
   $Res call({
     Object? doubleValue = null,
   }) {
-    return _then(_$_DoubleInUnion(
+    return _then(_$DoubleInUnionImpl(
       doubleValue: null == doubleValue
           ? _value.doubleValue
           : doubleValue // ignore: cast_nullable_to_non_nullable
@@ -508,11 +509,11 @@ class __$$_DoubleInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DoubleInUnion implements _DoubleInUnion {
-  const _$_DoubleInUnion({required this.doubleValue});
+class _$DoubleInUnionImpl implements _DoubleInUnion {
+  const _$DoubleInUnionImpl({required this.doubleValue});
 
-  factory _$_DoubleInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_DoubleInUnionFromJson(json);
+  factory _$DoubleInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DoubleInUnionImplFromJson(json);
 
   @override
   final double doubleValue;
@@ -523,10 +524,10 @@ class _$_DoubleInUnion implements _DoubleInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DoubleInUnion &&
+            other is _$DoubleInUnionImpl &&
             (identical(other.doubleValue, doubleValue) ||
                 other.doubleValue == doubleValue));
   }
@@ -538,12 +539,12 @@ class _$_DoubleInUnion implements _DoubleInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DoubleInUnionCopyWith<_$_DoubleInUnion> get copyWith =>
-      __$$_DoubleInUnionCopyWithImpl<_$_DoubleInUnion>(this, _$identity);
+  _$$DoubleInUnionImplCopyWith<_$DoubleInUnionImpl> get copyWith =>
+      __$$DoubleInUnionImplCopyWithImpl<_$DoubleInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DoubleInUnionToJson(
+    return _$$DoubleInUnionImplToJson(
       this,
     );
   }
@@ -551,16 +552,16 @@ class _$_DoubleInUnion implements _DoubleInUnion {
 
 abstract class _DoubleInUnion implements DoubleInUnion {
   const factory _DoubleInUnion({required final double doubleValue}) =
-      _$_DoubleInUnion;
+      _$DoubleInUnionImpl;
 
   factory _DoubleInUnion.fromJson(Map<String, dynamic> json) =
-      _$_DoubleInUnion.fromJson;
+      _$DoubleInUnionImpl.fromJson;
 
   @override
   double get doubleValue;
   @override
   @JsonKey(ignore: true)
-  _$$_DoubleInUnionCopyWith<_$_DoubleInUnion> get copyWith =>
+  _$$DoubleInUnionImplCopyWith<_$DoubleInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -609,22 +610,22 @@ class _$ObjectInUnionCopyWithImpl<$Res, $Val extends ObjectInUnion>
 }
 
 /// @nodoc
-abstract class _$$_ObjectInUnionCopyWith<$Res>
+abstract class _$$ObjectInUnionImplCopyWith<$Res>
     implements $ObjectInUnionCopyWith<$Res> {
-  factory _$$_ObjectInUnionCopyWith(
-          _$_ObjectInUnion value, $Res Function(_$_ObjectInUnion) then) =
-      __$$_ObjectInUnionCopyWithImpl<$Res>;
+  factory _$$ObjectInUnionImplCopyWith(
+          _$ObjectInUnionImpl value, $Res Function(_$ObjectInUnionImpl) then) =
+      __$$ObjectInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object objectValue});
 }
 
 /// @nodoc
-class __$$_ObjectInUnionCopyWithImpl<$Res>
-    extends _$ObjectInUnionCopyWithImpl<$Res, _$_ObjectInUnion>
-    implements _$$_ObjectInUnionCopyWith<$Res> {
-  __$$_ObjectInUnionCopyWithImpl(
-      _$_ObjectInUnion _value, $Res Function(_$_ObjectInUnion) _then)
+class __$$ObjectInUnionImplCopyWithImpl<$Res>
+    extends _$ObjectInUnionCopyWithImpl<$Res, _$ObjectInUnionImpl>
+    implements _$$ObjectInUnionImplCopyWith<$Res> {
+  __$$ObjectInUnionImplCopyWithImpl(
+      _$ObjectInUnionImpl _value, $Res Function(_$ObjectInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -632,7 +633,7 @@ class __$$_ObjectInUnionCopyWithImpl<$Res>
   $Res call({
     Object? objectValue = null,
   }) {
-    return _then(_$_ObjectInUnion(
+    return _then(_$ObjectInUnionImpl(
       objectValue: null == objectValue ? _value.objectValue : objectValue,
     ));
   }
@@ -640,11 +641,11 @@ class __$$_ObjectInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ObjectInUnion implements _ObjectInUnion {
-  const _$_ObjectInUnion({required this.objectValue});
+class _$ObjectInUnionImpl implements _ObjectInUnion {
+  const _$ObjectInUnionImpl({required this.objectValue});
 
-  factory _$_ObjectInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_ObjectInUnionFromJson(json);
+  factory _$ObjectInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ObjectInUnionImplFromJson(json);
 
   @override
   final Object objectValue;
@@ -655,10 +656,10 @@ class _$_ObjectInUnion implements _ObjectInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ObjectInUnion &&
+            other is _$ObjectInUnionImpl &&
             const DeepCollectionEquality()
                 .equals(other.objectValue, objectValue));
   }
@@ -671,12 +672,12 @@ class _$_ObjectInUnion implements _ObjectInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ObjectInUnionCopyWith<_$_ObjectInUnion> get copyWith =>
-      __$$_ObjectInUnionCopyWithImpl<_$_ObjectInUnion>(this, _$identity);
+  _$$ObjectInUnionImplCopyWith<_$ObjectInUnionImpl> get copyWith =>
+      __$$ObjectInUnionImplCopyWithImpl<_$ObjectInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ObjectInUnionToJson(
+    return _$$ObjectInUnionImplToJson(
       this,
     );
   }
@@ -684,16 +685,16 @@ class _$_ObjectInUnion implements _ObjectInUnion {
 
 abstract class _ObjectInUnion implements ObjectInUnion {
   const factory _ObjectInUnion({required final Object objectValue}) =
-      _$_ObjectInUnion;
+      _$ObjectInUnionImpl;
 
   factory _ObjectInUnion.fromJson(Map<String, dynamic> json) =
-      _$_ObjectInUnion.fromJson;
+      _$ObjectInUnionImpl.fromJson;
 
   @override
   Object get objectValue;
   @override
   @JsonKey(ignore: true)
-  _$$_ObjectInUnionCopyWith<_$_ObjectInUnion> get copyWith =>
+  _$$ObjectInUnionImplCopyWith<_$ObjectInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -745,22 +746,22 @@ class _$NumInUnionCopyWithImpl<$Res, $Val extends NumInUnion>
 }
 
 /// @nodoc
-abstract class _$$_NumInUnionCopyWith<$Res>
+abstract class _$$NumInUnionImplCopyWith<$Res>
     implements $NumInUnionCopyWith<$Res> {
-  factory _$$_NumInUnionCopyWith(
-          _$_NumInUnion value, $Res Function(_$_NumInUnion) then) =
-      __$$_NumInUnionCopyWithImpl<$Res>;
+  factory _$$NumInUnionImplCopyWith(
+          _$NumInUnionImpl value, $Res Function(_$NumInUnionImpl) then) =
+      __$$NumInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({num numValue});
 }
 
 /// @nodoc
-class __$$_NumInUnionCopyWithImpl<$Res>
-    extends _$NumInUnionCopyWithImpl<$Res, _$_NumInUnion>
-    implements _$$_NumInUnionCopyWith<$Res> {
-  __$$_NumInUnionCopyWithImpl(
-      _$_NumInUnion _value, $Res Function(_$_NumInUnion) _then)
+class __$$NumInUnionImplCopyWithImpl<$Res>
+    extends _$NumInUnionCopyWithImpl<$Res, _$NumInUnionImpl>
+    implements _$$NumInUnionImplCopyWith<$Res> {
+  __$$NumInUnionImplCopyWithImpl(
+      _$NumInUnionImpl _value, $Res Function(_$NumInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -768,7 +769,7 @@ class __$$_NumInUnionCopyWithImpl<$Res>
   $Res call({
     Object? numValue = null,
   }) {
-    return _then(_$_NumInUnion(
+    return _then(_$NumInUnionImpl(
       numValue: null == numValue
           ? _value.numValue
           : numValue // ignore: cast_nullable_to_non_nullable
@@ -779,11 +780,11 @@ class __$$_NumInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_NumInUnion implements _NumInUnion {
-  const _$_NumInUnion({required this.numValue});
+class _$NumInUnionImpl implements _NumInUnion {
+  const _$NumInUnionImpl({required this.numValue});
 
-  factory _$_NumInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_NumInUnionFromJson(json);
+  factory _$NumInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$NumInUnionImplFromJson(json);
 
   @override
   final num numValue;
@@ -794,10 +795,10 @@ class _$_NumInUnion implements _NumInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_NumInUnion &&
+            other is _$NumInUnionImpl &&
             (identical(other.numValue, numValue) ||
                 other.numValue == numValue));
   }
@@ -809,28 +810,28 @@ class _$_NumInUnion implements _NumInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_NumInUnionCopyWith<_$_NumInUnion> get copyWith =>
-      __$$_NumInUnionCopyWithImpl<_$_NumInUnion>(this, _$identity);
+  _$$NumInUnionImplCopyWith<_$NumInUnionImpl> get copyWith =>
+      __$$NumInUnionImplCopyWithImpl<_$NumInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NumInUnionToJson(
+    return _$$NumInUnionImplToJson(
       this,
     );
   }
 }
 
 abstract class _NumInUnion implements NumInUnion {
-  const factory _NumInUnion({required final num numValue}) = _$_NumInUnion;
+  const factory _NumInUnion({required final num numValue}) = _$NumInUnionImpl;
 
   factory _NumInUnion.fromJson(Map<String, dynamic> json) =
-      _$_NumInUnion.fromJson;
+      _$NumInUnionImpl.fromJson;
 
   @override
   num get numValue;
   @override
   @JsonKey(ignore: true)
-  _$$_NumInUnionCopyWith<_$_NumInUnion> get copyWith =>
+  _$$NumInUnionImplCopyWith<_$NumInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -882,22 +883,22 @@ class _$DateTimeInUnionCopyWithImpl<$Res, $Val extends DateTimeInUnion>
 }
 
 /// @nodoc
-abstract class _$$_DateTimeInUnionCopyWith<$Res>
+abstract class _$$DateTimeInUnionImplCopyWith<$Res>
     implements $DateTimeInUnionCopyWith<$Res> {
-  factory _$$_DateTimeInUnionCopyWith(
-          _$_DateTimeInUnion value, $Res Function(_$_DateTimeInUnion) then) =
-      __$$_DateTimeInUnionCopyWithImpl<$Res>;
+  factory _$$DateTimeInUnionImplCopyWith(_$DateTimeInUnionImpl value,
+          $Res Function(_$DateTimeInUnionImpl) then) =
+      __$$DateTimeInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({DateTime dateTimeValue});
 }
 
 /// @nodoc
-class __$$_DateTimeInUnionCopyWithImpl<$Res>
-    extends _$DateTimeInUnionCopyWithImpl<$Res, _$_DateTimeInUnion>
-    implements _$$_DateTimeInUnionCopyWith<$Res> {
-  __$$_DateTimeInUnionCopyWithImpl(
-      _$_DateTimeInUnion _value, $Res Function(_$_DateTimeInUnion) _then)
+class __$$DateTimeInUnionImplCopyWithImpl<$Res>
+    extends _$DateTimeInUnionCopyWithImpl<$Res, _$DateTimeInUnionImpl>
+    implements _$$DateTimeInUnionImplCopyWith<$Res> {
+  __$$DateTimeInUnionImplCopyWithImpl(
+      _$DateTimeInUnionImpl _value, $Res Function(_$DateTimeInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -905,7 +906,7 @@ class __$$_DateTimeInUnionCopyWithImpl<$Res>
   $Res call({
     Object? dateTimeValue = null,
   }) {
-    return _then(_$_DateTimeInUnion(
+    return _then(_$DateTimeInUnionImpl(
       dateTimeValue: null == dateTimeValue
           ? _value.dateTimeValue
           : dateTimeValue // ignore: cast_nullable_to_non_nullable
@@ -916,11 +917,11 @@ class __$$_DateTimeInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DateTimeInUnion implements _DateTimeInUnion {
-  const _$_DateTimeInUnion({required this.dateTimeValue});
+class _$DateTimeInUnionImpl implements _DateTimeInUnion {
+  const _$DateTimeInUnionImpl({required this.dateTimeValue});
 
-  factory _$_DateTimeInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_DateTimeInUnionFromJson(json);
+  factory _$DateTimeInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DateTimeInUnionImplFromJson(json);
 
   @override
   final DateTime dateTimeValue;
@@ -931,10 +932,10 @@ class _$_DateTimeInUnion implements _DateTimeInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DateTimeInUnion &&
+            other is _$DateTimeInUnionImpl &&
             (identical(other.dateTimeValue, dateTimeValue) ||
                 other.dateTimeValue == dateTimeValue));
   }
@@ -946,12 +947,13 @@ class _$_DateTimeInUnion implements _DateTimeInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DateTimeInUnionCopyWith<_$_DateTimeInUnion> get copyWith =>
-      __$$_DateTimeInUnionCopyWithImpl<_$_DateTimeInUnion>(this, _$identity);
+  _$$DateTimeInUnionImplCopyWith<_$DateTimeInUnionImpl> get copyWith =>
+      __$$DateTimeInUnionImplCopyWithImpl<_$DateTimeInUnionImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DateTimeInUnionToJson(
+    return _$$DateTimeInUnionImplToJson(
       this,
     );
   }
@@ -959,16 +961,16 @@ class _$_DateTimeInUnion implements _DateTimeInUnion {
 
 abstract class _DateTimeInUnion implements DateTimeInUnion {
   const factory _DateTimeInUnion({required final DateTime dateTimeValue}) =
-      _$_DateTimeInUnion;
+      _$DateTimeInUnionImpl;
 
   factory _DateTimeInUnion.fromJson(Map<String, dynamic> json) =
-      _$_DateTimeInUnion.fromJson;
+      _$DateTimeInUnionImpl.fromJson;
 
   @override
   DateTime get dateTimeValue;
   @override
   @JsonKey(ignore: true)
-  _$$_DateTimeInUnionCopyWith<_$_DateTimeInUnion> get copyWith =>
+  _$$DateTimeInUnionImplCopyWith<_$DateTimeInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -1040,10 +1042,10 @@ class _$AddPetDataCopyWithImpl<$Res, $Val extends AddPetData>
 }
 
 /// @nodoc
-abstract class _$$AddPetDataAs200CopyWith<$Res> {
-  factory _$$AddPetDataAs200CopyWith(
-          _$AddPetDataAs200 value, $Res Function(_$AddPetDataAs200) then) =
-      __$$AddPetDataAs200CopyWithImpl<$Res>;
+abstract class _$$AddPetDataAs200ImplCopyWith<$Res> {
+  factory _$$AddPetDataAs200ImplCopyWith(_$AddPetDataAs200Impl value,
+          $Res Function(_$AddPetDataAs200Impl) then) =
+      __$$AddPetDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Pet responseData});
 
@@ -1051,11 +1053,11 @@ abstract class _$$AddPetDataAs200CopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$AddPetDataAs200CopyWithImpl<$Res>
-    extends _$AddPetDataCopyWithImpl<$Res, _$AddPetDataAs200>
-    implements _$$AddPetDataAs200CopyWith<$Res> {
-  __$$AddPetDataAs200CopyWithImpl(
-      _$AddPetDataAs200 _value, $Res Function(_$AddPetDataAs200) _then)
+class __$$AddPetDataAs200ImplCopyWithImpl<$Res>
+    extends _$AddPetDataCopyWithImpl<$Res, _$AddPetDataAs200Impl>
+    implements _$$AddPetDataAs200ImplCopyWith<$Res> {
+  __$$AddPetDataAs200ImplCopyWithImpl(
+      _$AddPetDataAs200Impl _value, $Res Function(_$AddPetDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1063,7 +1065,7 @@ class __$$AddPetDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$AddPetDataAs200(
+    return _then(_$AddPetDataAs200Impl(
       responseData: null == responseData
           ? _value.responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -1082,8 +1084,8 @@ class __$$AddPetDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$AddPetDataAs200 extends AddPetDataAs200 {
-  const _$AddPetDataAs200({required this.responseData}) : super._();
+class _$AddPetDataAs200Impl extends AddPetDataAs200 {
+  const _$AddPetDataAs200Impl({required this.responseData}) : super._();
 
   @override
   final Pet responseData;
@@ -1094,10 +1096,10 @@ class _$AddPetDataAs200 extends AddPetDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AddPetDataAs200 &&
+            other is _$AddPetDataAs200Impl &&
             (identical(other.responseData, responseData) ||
                 other.responseData == responseData));
   }
@@ -1108,8 +1110,9 @@ class _$AddPetDataAs200 extends AddPetDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AddPetDataAs200CopyWith<_$AddPetDataAs200> get copyWith =>
-      __$$AddPetDataAs200CopyWithImpl<_$AddPetDataAs200>(this, _$identity);
+  _$$AddPetDataAs200ImplCopyWith<_$AddPetDataAs200Impl> get copyWith =>
+      __$$AddPetDataAs200ImplCopyWithImpl<_$AddPetDataAs200Impl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1182,31 +1185,31 @@ class _$AddPetDataAs200 extends AddPetDataAs200 {
 
 abstract class AddPetDataAs200 extends AddPetData {
   const factory AddPetDataAs200({required final Pet responseData}) =
-      _$AddPetDataAs200;
+      _$AddPetDataAs200Impl;
   const AddPetDataAs200._() : super._();
 
   @override
   Pet get responseData;
   @JsonKey(ignore: true)
-  _$$AddPetDataAs200CopyWith<_$AddPetDataAs200> get copyWith =>
+  _$$AddPetDataAs200ImplCopyWith<_$AddPetDataAs200Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AddPetDataAs405CopyWith<$Res> {
-  factory _$$AddPetDataAs405CopyWith(
-          _$AddPetDataAs405 value, $Res Function(_$AddPetDataAs405) then) =
-      __$$AddPetDataAs405CopyWithImpl<$Res>;
+abstract class _$$AddPetDataAs405ImplCopyWith<$Res> {
+  factory _$$AddPetDataAs405ImplCopyWith(_$AddPetDataAs405Impl value,
+          $Res Function(_$AddPetDataAs405Impl) then) =
+      __$$AddPetDataAs405ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$AddPetDataAs405CopyWithImpl<$Res>
-    extends _$AddPetDataCopyWithImpl<$Res, _$AddPetDataAs405>
-    implements _$$AddPetDataAs405CopyWith<$Res> {
-  __$$AddPetDataAs405CopyWithImpl(
-      _$AddPetDataAs405 _value, $Res Function(_$AddPetDataAs405) _then)
+class __$$AddPetDataAs405ImplCopyWithImpl<$Res>
+    extends _$AddPetDataCopyWithImpl<$Res, _$AddPetDataAs405Impl>
+    implements _$$AddPetDataAs405ImplCopyWith<$Res> {
+  __$$AddPetDataAs405ImplCopyWithImpl(
+      _$AddPetDataAs405Impl _value, $Res Function(_$AddPetDataAs405Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1214,7 +1217,7 @@ class __$$AddPetDataAs405CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$AddPetDataAs405(
+    return _then(_$AddPetDataAs405Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -1223,8 +1226,8 @@ class __$$AddPetDataAs405CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$AddPetDataAs405 extends AddPetDataAs405 {
-  const _$AddPetDataAs405({required this.responseData}) : super._();
+class _$AddPetDataAs405Impl extends AddPetDataAs405 {
+  const _$AddPetDataAs405Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -1235,10 +1238,10 @@ class _$AddPetDataAs405 extends AddPetDataAs405 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AddPetDataAs405 &&
+            other is _$AddPetDataAs405Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -1250,8 +1253,9 @@ class _$AddPetDataAs405 extends AddPetDataAs405 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AddPetDataAs405CopyWith<_$AddPetDataAs405> get copyWith =>
-      __$$AddPetDataAs405CopyWithImpl<_$AddPetDataAs405>(this, _$identity);
+  _$$AddPetDataAs405ImplCopyWith<_$AddPetDataAs405Impl> get copyWith =>
+      __$$AddPetDataAs405ImplCopyWithImpl<_$AddPetDataAs405Impl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1324,31 +1328,32 @@ class _$AddPetDataAs405 extends AddPetDataAs405 {
 
 abstract class AddPetDataAs405 extends AddPetData {
   const factory AddPetDataAs405({required final Object? responseData}) =
-      _$AddPetDataAs405;
+      _$AddPetDataAs405Impl;
   const AddPetDataAs405._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$AddPetDataAs405CopyWith<_$AddPetDataAs405> get copyWith =>
+  _$$AddPetDataAs405ImplCopyWith<_$AddPetDataAs405Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AddPetResponseUnknownCopyWith<$Res> {
-  factory _$$AddPetResponseUnknownCopyWith(_$AddPetResponseUnknown value,
-          $Res Function(_$AddPetResponseUnknown) then) =
-      __$$AddPetResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$AddPetResponseUnknownImplCopyWith<$Res> {
+  factory _$$AddPetResponseUnknownImplCopyWith(
+          _$AddPetResponseUnknownImpl value,
+          $Res Function(_$AddPetResponseUnknownImpl) then) =
+      __$$AddPetResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$AddPetResponseUnknownCopyWithImpl<$Res>
-    extends _$AddPetDataCopyWithImpl<$Res, _$AddPetResponseUnknown>
-    implements _$$AddPetResponseUnknownCopyWith<$Res> {
-  __$$AddPetResponseUnknownCopyWithImpl(_$AddPetResponseUnknown _value,
-      $Res Function(_$AddPetResponseUnknown) _then)
+class __$$AddPetResponseUnknownImplCopyWithImpl<$Res>
+    extends _$AddPetDataCopyWithImpl<$Res, _$AddPetResponseUnknownImpl>
+    implements _$$AddPetResponseUnknownImplCopyWith<$Res> {
+  __$$AddPetResponseUnknownImplCopyWithImpl(_$AddPetResponseUnknownImpl _value,
+      $Res Function(_$AddPetResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1357,7 +1362,7 @@ class __$$AddPetResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$AddPetResponseUnknown(
+    return _then(_$AddPetResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -1370,8 +1375,9 @@ class __$$AddPetResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$AddPetResponseUnknown extends AddPetResponseUnknown {
-  const _$AddPetResponseUnknown({this.statusCode, required this.responseData})
+class _$AddPetResponseUnknownImpl extends AddPetResponseUnknown {
+  const _$AddPetResponseUnknownImpl(
+      {this.statusCode, required this.responseData})
       : super._();
 
   @override
@@ -1385,10 +1391,10 @@ class _$AddPetResponseUnknown extends AddPetResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AddPetResponseUnknown &&
+            other is _$AddPetResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -1402,9 +1408,9 @@ class _$AddPetResponseUnknown extends AddPetResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AddPetResponseUnknownCopyWith<_$AddPetResponseUnknown> get copyWith =>
-      __$$AddPetResponseUnknownCopyWithImpl<_$AddPetResponseUnknown>(
-          this, _$identity);
+  _$$AddPetResponseUnknownImplCopyWith<_$AddPetResponseUnknownImpl>
+      get copyWith => __$$AddPetResponseUnknownImplCopyWithImpl<
+          _$AddPetResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1478,15 +1484,15 @@ class _$AddPetResponseUnknown extends AddPetResponseUnknown {
 abstract class AddPetResponseUnknown extends AddPetData {
   const factory AddPetResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$AddPetResponseUnknown;
+      required final Object? responseData}) = _$AddPetResponseUnknownImpl;
   const AddPetResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$AddPetResponseUnknownCopyWith<_$AddPetResponseUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AddPetResponseUnknownImplCopyWith<_$AddPetResponseUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -1568,22 +1574,24 @@ class _$DeletePetDataCopyWithImpl<$Res, $Val extends DeletePetData>
 }
 
 /// @nodoc
-abstract class _$$DeletePetDataAs400VoidCopyWith<$Res>
+abstract class _$$DeletePetDataAs400VoidImplCopyWith<$Res>
     implements $DeletePetDataCopyWith<$Res> {
-  factory _$$DeletePetDataAs400VoidCopyWith(_$DeletePetDataAs400Void value,
-          $Res Function(_$DeletePetDataAs400Void) then) =
-      __$$DeletePetDataAs400VoidCopyWithImpl<$Res>;
+  factory _$$DeletePetDataAs400VoidImplCopyWith(
+          _$DeletePetDataAs400VoidImpl value,
+          $Res Function(_$DeletePetDataAs400VoidImpl) then) =
+      __$$DeletePetDataAs400VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$DeletePetDataAs400VoidCopyWithImpl<$Res>
-    extends _$DeletePetDataCopyWithImpl<$Res, _$DeletePetDataAs400Void>
-    implements _$$DeletePetDataAs400VoidCopyWith<$Res> {
-  __$$DeletePetDataAs400VoidCopyWithImpl(_$DeletePetDataAs400Void _value,
-      $Res Function(_$DeletePetDataAs400Void) _then)
+class __$$DeletePetDataAs400VoidImplCopyWithImpl<$Res>
+    extends _$DeletePetDataCopyWithImpl<$Res, _$DeletePetDataAs400VoidImpl>
+    implements _$$DeletePetDataAs400VoidImplCopyWith<$Res> {
+  __$$DeletePetDataAs400VoidImplCopyWithImpl(
+      _$DeletePetDataAs400VoidImpl _value,
+      $Res Function(_$DeletePetDataAs400VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1591,7 +1599,7 @@ class __$$DeletePetDataAs400VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$DeletePetDataAs400Void(
+    return _then(_$DeletePetDataAs400VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -1600,8 +1608,8 @@ class __$$DeletePetDataAs400VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$DeletePetDataAs400Void extends DeletePetDataAs400Void {
-  const _$DeletePetDataAs400Void({required this.responseData}) : super._();
+class _$DeletePetDataAs400VoidImpl extends DeletePetDataAs400Void {
+  const _$DeletePetDataAs400VoidImpl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -1612,10 +1620,10 @@ class _$DeletePetDataAs400Void extends DeletePetDataAs400Void {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DeletePetDataAs400Void &&
+            other is _$DeletePetDataAs400VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -1627,9 +1635,9 @@ class _$DeletePetDataAs400Void extends DeletePetDataAs400Void {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$DeletePetDataAs400VoidCopyWith<_$DeletePetDataAs400Void> get copyWith =>
-      __$$DeletePetDataAs400VoidCopyWithImpl<_$DeletePetDataAs400Void>(
-          this, _$identity);
+  _$$DeletePetDataAs400VoidImplCopyWith<_$DeletePetDataAs400VoidImpl>
+      get copyWith => __$$DeletePetDataAs400VoidImplCopyWithImpl<
+          _$DeletePetDataAs400VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1696,34 +1704,36 @@ class _$DeletePetDataAs400Void extends DeletePetDataAs400Void {
 
 abstract class DeletePetDataAs400Void extends DeletePetData {
   const factory DeletePetDataAs400Void({required final Object? responseData}) =
-      _$DeletePetDataAs400Void;
+      _$DeletePetDataAs400VoidImpl;
   const DeletePetDataAs400Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$DeletePetDataAs400VoidCopyWith<_$DeletePetDataAs400Void> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DeletePetDataAs400VoidImplCopyWith<_$DeletePetDataAs400VoidImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$DeletePetResponseUnknownCopyWith<$Res>
+abstract class _$$DeletePetResponseUnknownImplCopyWith<$Res>
     implements $DeletePetDataCopyWith<$Res> {
-  factory _$$DeletePetResponseUnknownCopyWith(_$DeletePetResponseUnknown value,
-          $Res Function(_$DeletePetResponseUnknown) then) =
-      __$$DeletePetResponseUnknownCopyWithImpl<$Res>;
+  factory _$$DeletePetResponseUnknownImplCopyWith(
+          _$DeletePetResponseUnknownImpl value,
+          $Res Function(_$DeletePetResponseUnknownImpl) then) =
+      __$$DeletePetResponseUnknownImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$DeletePetResponseUnknownCopyWithImpl<$Res>
-    extends _$DeletePetDataCopyWithImpl<$Res, _$DeletePetResponseUnknown>
-    implements _$$DeletePetResponseUnknownCopyWith<$Res> {
-  __$$DeletePetResponseUnknownCopyWithImpl(_$DeletePetResponseUnknown _value,
-      $Res Function(_$DeletePetResponseUnknown) _then)
+class __$$DeletePetResponseUnknownImplCopyWithImpl<$Res>
+    extends _$DeletePetDataCopyWithImpl<$Res, _$DeletePetResponseUnknownImpl>
+    implements _$$DeletePetResponseUnknownImplCopyWith<$Res> {
+  __$$DeletePetResponseUnknownImplCopyWithImpl(
+      _$DeletePetResponseUnknownImpl _value,
+      $Res Function(_$DeletePetResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1732,7 +1742,7 @@ class __$$DeletePetResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$DeletePetResponseUnknown(
+    return _then(_$DeletePetResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -1745,8 +1755,8 @@ class __$$DeletePetResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$DeletePetResponseUnknown extends DeletePetResponseUnknown {
-  const _$DeletePetResponseUnknown(
+class _$DeletePetResponseUnknownImpl extends DeletePetResponseUnknown {
+  const _$DeletePetResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -1761,10 +1771,10 @@ class _$DeletePetResponseUnknown extends DeletePetResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DeletePetResponseUnknown &&
+            other is _$DeletePetResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -1778,10 +1788,9 @@ class _$DeletePetResponseUnknown extends DeletePetResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$DeletePetResponseUnknownCopyWith<_$DeletePetResponseUnknown>
-      get copyWith =>
-          __$$DeletePetResponseUnknownCopyWithImpl<_$DeletePetResponseUnknown>(
-              this, _$identity);
+  _$$DeletePetResponseUnknownImplCopyWith<_$DeletePetResponseUnknownImpl>
+      get copyWith => __$$DeletePetResponseUnknownImplCopyWithImpl<
+          _$DeletePetResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1849,7 +1858,7 @@ class _$DeletePetResponseUnknown extends DeletePetResponseUnknown {
 abstract class DeletePetResponseUnknown extends DeletePetData {
   const factory DeletePetResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$DeletePetResponseUnknown;
+      required final Object? responseData}) = _$DeletePetResponseUnknownImpl;
   const DeletePetResponseUnknown._() : super._();
 
   int? get statusCode;
@@ -1857,7 +1866,7 @@ abstract class DeletePetResponseUnknown extends DeletePetData {
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$DeletePetResponseUnknownCopyWith<_$DeletePetResponseUnknown>
+  _$$DeletePetResponseUnknownImplCopyWith<_$DeletePetResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -1930,22 +1939,23 @@ class _$FindPetsByStatusDataCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$FindPetsByStatusDataAs200CopyWith<$Res> {
-  factory _$$FindPetsByStatusDataAs200CopyWith(
-          _$FindPetsByStatusDataAs200 value,
-          $Res Function(_$FindPetsByStatusDataAs200) then) =
-      __$$FindPetsByStatusDataAs200CopyWithImpl<$Res>;
+abstract class _$$FindPetsByStatusDataAs200ImplCopyWith<$Res> {
+  factory _$$FindPetsByStatusDataAs200ImplCopyWith(
+          _$FindPetsByStatusDataAs200Impl value,
+          $Res Function(_$FindPetsByStatusDataAs200Impl) then) =
+      __$$FindPetsByStatusDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<Pet> responseData});
 }
 
 /// @nodoc
-class __$$FindPetsByStatusDataAs200CopyWithImpl<$Res>
+class __$$FindPetsByStatusDataAs200ImplCopyWithImpl<$Res>
     extends _$FindPetsByStatusDataCopyWithImpl<$Res,
-        _$FindPetsByStatusDataAs200>
-    implements _$$FindPetsByStatusDataAs200CopyWith<$Res> {
-  __$$FindPetsByStatusDataAs200CopyWithImpl(_$FindPetsByStatusDataAs200 _value,
-      $Res Function(_$FindPetsByStatusDataAs200) _then)
+        _$FindPetsByStatusDataAs200Impl>
+    implements _$$FindPetsByStatusDataAs200ImplCopyWith<$Res> {
+  __$$FindPetsByStatusDataAs200ImplCopyWithImpl(
+      _$FindPetsByStatusDataAs200Impl _value,
+      $Res Function(_$FindPetsByStatusDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1953,7 +1963,7 @@ class __$$FindPetsByStatusDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$FindPetsByStatusDataAs200(
+    return _then(_$FindPetsByStatusDataAs200Impl(
       responseData: null == responseData
           ? _value._responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -1964,8 +1974,8 @@ class __$$FindPetsByStatusDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FindPetsByStatusDataAs200 extends FindPetsByStatusDataAs200 {
-  const _$FindPetsByStatusDataAs200({required final List<Pet> responseData})
+class _$FindPetsByStatusDataAs200Impl extends FindPetsByStatusDataAs200 {
+  const _$FindPetsByStatusDataAs200Impl({required final List<Pet> responseData})
       : _responseData = responseData,
         super._();
 
@@ -1983,10 +1993,10 @@ class _$FindPetsByStatusDataAs200 extends FindPetsByStatusDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FindPetsByStatusDataAs200 &&
+            other is _$FindPetsByStatusDataAs200Impl &&
             const DeepCollectionEquality()
                 .equals(other._responseData, _responseData));
   }
@@ -1998,9 +2008,9 @@ class _$FindPetsByStatusDataAs200 extends FindPetsByStatusDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FindPetsByStatusDataAs200CopyWith<_$FindPetsByStatusDataAs200>
-      get copyWith => __$$FindPetsByStatusDataAs200CopyWithImpl<
-          _$FindPetsByStatusDataAs200>(this, _$identity);
+  _$$FindPetsByStatusDataAs200ImplCopyWith<_$FindPetsByStatusDataAs200Impl>
+      get copyWith => __$$FindPetsByStatusDataAs200ImplCopyWithImpl<
+          _$FindPetsByStatusDataAs200Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2073,33 +2083,35 @@ class _$FindPetsByStatusDataAs200 extends FindPetsByStatusDataAs200 {
 
 abstract class FindPetsByStatusDataAs200 extends FindPetsByStatusData {
   const factory FindPetsByStatusDataAs200(
-      {required final List<Pet> responseData}) = _$FindPetsByStatusDataAs200;
+          {required final List<Pet> responseData}) =
+      _$FindPetsByStatusDataAs200Impl;
   const FindPetsByStatusDataAs200._() : super._();
 
   @override
   List<Pet> get responseData;
   @JsonKey(ignore: true)
-  _$$FindPetsByStatusDataAs200CopyWith<_$FindPetsByStatusDataAs200>
+  _$$FindPetsByStatusDataAs200ImplCopyWith<_$FindPetsByStatusDataAs200Impl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FindPetsByStatusDataAs400CopyWith<$Res> {
-  factory _$$FindPetsByStatusDataAs400CopyWith(
-          _$FindPetsByStatusDataAs400 value,
-          $Res Function(_$FindPetsByStatusDataAs400) then) =
-      __$$FindPetsByStatusDataAs400CopyWithImpl<$Res>;
+abstract class _$$FindPetsByStatusDataAs400ImplCopyWith<$Res> {
+  factory _$$FindPetsByStatusDataAs400ImplCopyWith(
+          _$FindPetsByStatusDataAs400Impl value,
+          $Res Function(_$FindPetsByStatusDataAs400Impl) then) =
+      __$$FindPetsByStatusDataAs400ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$FindPetsByStatusDataAs400CopyWithImpl<$Res>
+class __$$FindPetsByStatusDataAs400ImplCopyWithImpl<$Res>
     extends _$FindPetsByStatusDataCopyWithImpl<$Res,
-        _$FindPetsByStatusDataAs400>
-    implements _$$FindPetsByStatusDataAs400CopyWith<$Res> {
-  __$$FindPetsByStatusDataAs400CopyWithImpl(_$FindPetsByStatusDataAs400 _value,
-      $Res Function(_$FindPetsByStatusDataAs400) _then)
+        _$FindPetsByStatusDataAs400Impl>
+    implements _$$FindPetsByStatusDataAs400ImplCopyWith<$Res> {
+  __$$FindPetsByStatusDataAs400ImplCopyWithImpl(
+      _$FindPetsByStatusDataAs400Impl _value,
+      $Res Function(_$FindPetsByStatusDataAs400Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2107,7 +2119,7 @@ class __$$FindPetsByStatusDataAs400CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$FindPetsByStatusDataAs400(
+    return _then(_$FindPetsByStatusDataAs400Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -2116,8 +2128,9 @@ class __$$FindPetsByStatusDataAs400CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FindPetsByStatusDataAs400 extends FindPetsByStatusDataAs400 {
-  const _$FindPetsByStatusDataAs400({required this.responseData}) : super._();
+class _$FindPetsByStatusDataAs400Impl extends FindPetsByStatusDataAs400 {
+  const _$FindPetsByStatusDataAs400Impl({required this.responseData})
+      : super._();
 
   @override
   final Object? responseData;
@@ -2128,10 +2141,10 @@ class _$FindPetsByStatusDataAs400 extends FindPetsByStatusDataAs400 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FindPetsByStatusDataAs400 &&
+            other is _$FindPetsByStatusDataAs400Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -2143,9 +2156,9 @@ class _$FindPetsByStatusDataAs400 extends FindPetsByStatusDataAs400 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FindPetsByStatusDataAs400CopyWith<_$FindPetsByStatusDataAs400>
-      get copyWith => __$$FindPetsByStatusDataAs400CopyWithImpl<
-          _$FindPetsByStatusDataAs400>(this, _$identity);
+  _$$FindPetsByStatusDataAs400ImplCopyWith<_$FindPetsByStatusDataAs400Impl>
+      get copyWith => __$$FindPetsByStatusDataAs400ImplCopyWithImpl<
+          _$FindPetsByStatusDataAs400Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2218,34 +2231,34 @@ class _$FindPetsByStatusDataAs400 extends FindPetsByStatusDataAs400 {
 
 abstract class FindPetsByStatusDataAs400 extends FindPetsByStatusData {
   const factory FindPetsByStatusDataAs400(
-      {required final Object? responseData}) = _$FindPetsByStatusDataAs400;
+      {required final Object? responseData}) = _$FindPetsByStatusDataAs400Impl;
   const FindPetsByStatusDataAs400._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$FindPetsByStatusDataAs400CopyWith<_$FindPetsByStatusDataAs400>
+  _$$FindPetsByStatusDataAs400ImplCopyWith<_$FindPetsByStatusDataAs400Impl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FindPetsByStatusResponseUnknownCopyWith<$Res> {
-  factory _$$FindPetsByStatusResponseUnknownCopyWith(
-          _$FindPetsByStatusResponseUnknown value,
-          $Res Function(_$FindPetsByStatusResponseUnknown) then) =
-      __$$FindPetsByStatusResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$FindPetsByStatusResponseUnknownImplCopyWith<$Res> {
+  factory _$$FindPetsByStatusResponseUnknownImplCopyWith(
+          _$FindPetsByStatusResponseUnknownImpl value,
+          $Res Function(_$FindPetsByStatusResponseUnknownImpl) then) =
+      __$$FindPetsByStatusResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$FindPetsByStatusResponseUnknownCopyWithImpl<$Res>
+class __$$FindPetsByStatusResponseUnknownImplCopyWithImpl<$Res>
     extends _$FindPetsByStatusDataCopyWithImpl<$Res,
-        _$FindPetsByStatusResponseUnknown>
-    implements _$$FindPetsByStatusResponseUnknownCopyWith<$Res> {
-  __$$FindPetsByStatusResponseUnknownCopyWithImpl(
-      _$FindPetsByStatusResponseUnknown _value,
-      $Res Function(_$FindPetsByStatusResponseUnknown) _then)
+        _$FindPetsByStatusResponseUnknownImpl>
+    implements _$$FindPetsByStatusResponseUnknownImplCopyWith<$Res> {
+  __$$FindPetsByStatusResponseUnknownImplCopyWithImpl(
+      _$FindPetsByStatusResponseUnknownImpl _value,
+      $Res Function(_$FindPetsByStatusResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2254,7 +2267,7 @@ class __$$FindPetsByStatusResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$FindPetsByStatusResponseUnknown(
+    return _then(_$FindPetsByStatusResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -2267,9 +2280,9 @@ class __$$FindPetsByStatusResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FindPetsByStatusResponseUnknown
+class _$FindPetsByStatusResponseUnknownImpl
     extends FindPetsByStatusResponseUnknown {
-  const _$FindPetsByStatusResponseUnknown(
+  const _$FindPetsByStatusResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -2284,10 +2297,10 @@ class _$FindPetsByStatusResponseUnknown
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FindPetsByStatusResponseUnknown &&
+            other is _$FindPetsByStatusResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -2301,9 +2314,10 @@ class _$FindPetsByStatusResponseUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FindPetsByStatusResponseUnknownCopyWith<_$FindPetsByStatusResponseUnknown>
-      get copyWith => __$$FindPetsByStatusResponseUnknownCopyWithImpl<
-          _$FindPetsByStatusResponseUnknown>(this, _$identity);
+  _$$FindPetsByStatusResponseUnknownImplCopyWith<
+          _$FindPetsByStatusResponseUnknownImpl>
+      get copyWith => __$$FindPetsByStatusResponseUnknownImplCopyWithImpl<
+          _$FindPetsByStatusResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2376,15 +2390,16 @@ class _$FindPetsByStatusResponseUnknown
 
 abstract class FindPetsByStatusResponseUnknown extends FindPetsByStatusData {
   const factory FindPetsByStatusResponseUnknown(
-      {final int? statusCode,
-      required final Object? responseData}) = _$FindPetsByStatusResponseUnknown;
+          {final int? statusCode, required final Object? responseData}) =
+      _$FindPetsByStatusResponseUnknownImpl;
   const FindPetsByStatusResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$FindPetsByStatusResponseUnknownCopyWith<_$FindPetsByStatusResponseUnknown>
+  _$$FindPetsByStatusResponseUnknownImplCopyWith<
+          _$FindPetsByStatusResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -2456,20 +2471,23 @@ class _$FindPetsByTagsDataCopyWithImpl<$Res, $Val extends FindPetsByTagsData>
 }
 
 /// @nodoc
-abstract class _$$FindPetsByTagsDataAs200CopyWith<$Res> {
-  factory _$$FindPetsByTagsDataAs200CopyWith(_$FindPetsByTagsDataAs200 value,
-          $Res Function(_$FindPetsByTagsDataAs200) then) =
-      __$$FindPetsByTagsDataAs200CopyWithImpl<$Res>;
+abstract class _$$FindPetsByTagsDataAs200ImplCopyWith<$Res> {
+  factory _$$FindPetsByTagsDataAs200ImplCopyWith(
+          _$FindPetsByTagsDataAs200Impl value,
+          $Res Function(_$FindPetsByTagsDataAs200Impl) then) =
+      __$$FindPetsByTagsDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<Pet> responseData});
 }
 
 /// @nodoc
-class __$$FindPetsByTagsDataAs200CopyWithImpl<$Res>
-    extends _$FindPetsByTagsDataCopyWithImpl<$Res, _$FindPetsByTagsDataAs200>
-    implements _$$FindPetsByTagsDataAs200CopyWith<$Res> {
-  __$$FindPetsByTagsDataAs200CopyWithImpl(_$FindPetsByTagsDataAs200 _value,
-      $Res Function(_$FindPetsByTagsDataAs200) _then)
+class __$$FindPetsByTagsDataAs200ImplCopyWithImpl<$Res>
+    extends _$FindPetsByTagsDataCopyWithImpl<$Res,
+        _$FindPetsByTagsDataAs200Impl>
+    implements _$$FindPetsByTagsDataAs200ImplCopyWith<$Res> {
+  __$$FindPetsByTagsDataAs200ImplCopyWithImpl(
+      _$FindPetsByTagsDataAs200Impl _value,
+      $Res Function(_$FindPetsByTagsDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2477,7 +2495,7 @@ class __$$FindPetsByTagsDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$FindPetsByTagsDataAs200(
+    return _then(_$FindPetsByTagsDataAs200Impl(
       responseData: null == responseData
           ? _value._responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -2488,8 +2506,8 @@ class __$$FindPetsByTagsDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FindPetsByTagsDataAs200 extends FindPetsByTagsDataAs200 {
-  const _$FindPetsByTagsDataAs200({required final List<Pet> responseData})
+class _$FindPetsByTagsDataAs200Impl extends FindPetsByTagsDataAs200 {
+  const _$FindPetsByTagsDataAs200Impl({required final List<Pet> responseData})
       : _responseData = responseData,
         super._();
 
@@ -2507,10 +2525,10 @@ class _$FindPetsByTagsDataAs200 extends FindPetsByTagsDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FindPetsByTagsDataAs200 &&
+            other is _$FindPetsByTagsDataAs200Impl &&
             const DeepCollectionEquality()
                 .equals(other._responseData, _responseData));
   }
@@ -2522,9 +2540,9 @@ class _$FindPetsByTagsDataAs200 extends FindPetsByTagsDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FindPetsByTagsDataAs200CopyWith<_$FindPetsByTagsDataAs200> get copyWith =>
-      __$$FindPetsByTagsDataAs200CopyWithImpl<_$FindPetsByTagsDataAs200>(
-          this, _$identity);
+  _$$FindPetsByTagsDataAs200ImplCopyWith<_$FindPetsByTagsDataAs200Impl>
+      get copyWith => __$$FindPetsByTagsDataAs200ImplCopyWithImpl<
+          _$FindPetsByTagsDataAs200Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2597,31 +2615,34 @@ class _$FindPetsByTagsDataAs200 extends FindPetsByTagsDataAs200 {
 
 abstract class FindPetsByTagsDataAs200 extends FindPetsByTagsData {
   const factory FindPetsByTagsDataAs200(
-      {required final List<Pet> responseData}) = _$FindPetsByTagsDataAs200;
+      {required final List<Pet> responseData}) = _$FindPetsByTagsDataAs200Impl;
   const FindPetsByTagsDataAs200._() : super._();
 
   @override
   List<Pet> get responseData;
   @JsonKey(ignore: true)
-  _$$FindPetsByTagsDataAs200CopyWith<_$FindPetsByTagsDataAs200> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FindPetsByTagsDataAs200ImplCopyWith<_$FindPetsByTagsDataAs200Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FindPetsByTagsDataAs400CopyWith<$Res> {
-  factory _$$FindPetsByTagsDataAs400CopyWith(_$FindPetsByTagsDataAs400 value,
-          $Res Function(_$FindPetsByTagsDataAs400) then) =
-      __$$FindPetsByTagsDataAs400CopyWithImpl<$Res>;
+abstract class _$$FindPetsByTagsDataAs400ImplCopyWith<$Res> {
+  factory _$$FindPetsByTagsDataAs400ImplCopyWith(
+          _$FindPetsByTagsDataAs400Impl value,
+          $Res Function(_$FindPetsByTagsDataAs400Impl) then) =
+      __$$FindPetsByTagsDataAs400ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$FindPetsByTagsDataAs400CopyWithImpl<$Res>
-    extends _$FindPetsByTagsDataCopyWithImpl<$Res, _$FindPetsByTagsDataAs400>
-    implements _$$FindPetsByTagsDataAs400CopyWith<$Res> {
-  __$$FindPetsByTagsDataAs400CopyWithImpl(_$FindPetsByTagsDataAs400 _value,
-      $Res Function(_$FindPetsByTagsDataAs400) _then)
+class __$$FindPetsByTagsDataAs400ImplCopyWithImpl<$Res>
+    extends _$FindPetsByTagsDataCopyWithImpl<$Res,
+        _$FindPetsByTagsDataAs400Impl>
+    implements _$$FindPetsByTagsDataAs400ImplCopyWith<$Res> {
+  __$$FindPetsByTagsDataAs400ImplCopyWithImpl(
+      _$FindPetsByTagsDataAs400Impl _value,
+      $Res Function(_$FindPetsByTagsDataAs400Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2629,7 +2650,7 @@ class __$$FindPetsByTagsDataAs400CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$FindPetsByTagsDataAs400(
+    return _then(_$FindPetsByTagsDataAs400Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -2638,8 +2659,8 @@ class __$$FindPetsByTagsDataAs400CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FindPetsByTagsDataAs400 extends FindPetsByTagsDataAs400 {
-  const _$FindPetsByTagsDataAs400({required this.responseData}) : super._();
+class _$FindPetsByTagsDataAs400Impl extends FindPetsByTagsDataAs400 {
+  const _$FindPetsByTagsDataAs400Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -2650,10 +2671,10 @@ class _$FindPetsByTagsDataAs400 extends FindPetsByTagsDataAs400 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FindPetsByTagsDataAs400 &&
+            other is _$FindPetsByTagsDataAs400Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -2665,9 +2686,9 @@ class _$FindPetsByTagsDataAs400 extends FindPetsByTagsDataAs400 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FindPetsByTagsDataAs400CopyWith<_$FindPetsByTagsDataAs400> get copyWith =>
-      __$$FindPetsByTagsDataAs400CopyWithImpl<_$FindPetsByTagsDataAs400>(
-          this, _$identity);
+  _$$FindPetsByTagsDataAs400ImplCopyWith<_$FindPetsByTagsDataAs400Impl>
+      get copyWith => __$$FindPetsByTagsDataAs400ImplCopyWithImpl<
+          _$FindPetsByTagsDataAs400Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2740,34 +2761,34 @@ class _$FindPetsByTagsDataAs400 extends FindPetsByTagsDataAs400 {
 
 abstract class FindPetsByTagsDataAs400 extends FindPetsByTagsData {
   const factory FindPetsByTagsDataAs400({required final Object? responseData}) =
-      _$FindPetsByTagsDataAs400;
+      _$FindPetsByTagsDataAs400Impl;
   const FindPetsByTagsDataAs400._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$FindPetsByTagsDataAs400CopyWith<_$FindPetsByTagsDataAs400> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FindPetsByTagsDataAs400ImplCopyWith<_$FindPetsByTagsDataAs400Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FindPetsByTagsResponseUnknownCopyWith<$Res> {
-  factory _$$FindPetsByTagsResponseUnknownCopyWith(
-          _$FindPetsByTagsResponseUnknown value,
-          $Res Function(_$FindPetsByTagsResponseUnknown) then) =
-      __$$FindPetsByTagsResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$FindPetsByTagsResponseUnknownImplCopyWith<$Res> {
+  factory _$$FindPetsByTagsResponseUnknownImplCopyWith(
+          _$FindPetsByTagsResponseUnknownImpl value,
+          $Res Function(_$FindPetsByTagsResponseUnknownImpl) then) =
+      __$$FindPetsByTagsResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$FindPetsByTagsResponseUnknownCopyWithImpl<$Res>
+class __$$FindPetsByTagsResponseUnknownImplCopyWithImpl<$Res>
     extends _$FindPetsByTagsDataCopyWithImpl<$Res,
-        _$FindPetsByTagsResponseUnknown>
-    implements _$$FindPetsByTagsResponseUnknownCopyWith<$Res> {
-  __$$FindPetsByTagsResponseUnknownCopyWithImpl(
-      _$FindPetsByTagsResponseUnknown _value,
-      $Res Function(_$FindPetsByTagsResponseUnknown) _then)
+        _$FindPetsByTagsResponseUnknownImpl>
+    implements _$$FindPetsByTagsResponseUnknownImplCopyWith<$Res> {
+  __$$FindPetsByTagsResponseUnknownImplCopyWithImpl(
+      _$FindPetsByTagsResponseUnknownImpl _value,
+      $Res Function(_$FindPetsByTagsResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2776,7 +2797,7 @@ class __$$FindPetsByTagsResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$FindPetsByTagsResponseUnknown(
+    return _then(_$FindPetsByTagsResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -2789,8 +2810,9 @@ class __$$FindPetsByTagsResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FindPetsByTagsResponseUnknown extends FindPetsByTagsResponseUnknown {
-  const _$FindPetsByTagsResponseUnknown(
+class _$FindPetsByTagsResponseUnknownImpl
+    extends FindPetsByTagsResponseUnknown {
+  const _$FindPetsByTagsResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -2805,10 +2827,10 @@ class _$FindPetsByTagsResponseUnknown extends FindPetsByTagsResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FindPetsByTagsResponseUnknown &&
+            other is _$FindPetsByTagsResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -2822,9 +2844,10 @@ class _$FindPetsByTagsResponseUnknown extends FindPetsByTagsResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FindPetsByTagsResponseUnknownCopyWith<_$FindPetsByTagsResponseUnknown>
-      get copyWith => __$$FindPetsByTagsResponseUnknownCopyWithImpl<
-          _$FindPetsByTagsResponseUnknown>(this, _$identity);
+  _$$FindPetsByTagsResponseUnknownImplCopyWith<
+          _$FindPetsByTagsResponseUnknownImpl>
+      get copyWith => __$$FindPetsByTagsResponseUnknownImplCopyWithImpl<
+          _$FindPetsByTagsResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2897,15 +2920,16 @@ class _$FindPetsByTagsResponseUnknown extends FindPetsByTagsResponseUnknown {
 
 abstract class FindPetsByTagsResponseUnknown extends FindPetsByTagsData {
   const factory FindPetsByTagsResponseUnknown(
-      {final int? statusCode,
-      required final Object? responseData}) = _$FindPetsByTagsResponseUnknown;
+          {final int? statusCode, required final Object? responseData}) =
+      _$FindPetsByTagsResponseUnknownImpl;
   const FindPetsByTagsResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$FindPetsByTagsResponseUnknownCopyWith<_$FindPetsByTagsResponseUnknown>
+  _$$FindPetsByTagsResponseUnknownImplCopyWith<
+          _$FindPetsByTagsResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -2983,10 +3007,10 @@ class _$GetPetByIdDataCopyWithImpl<$Res, $Val extends GetPetByIdData>
 }
 
 /// @nodoc
-abstract class _$$GetPetByIdDataAs200CopyWith<$Res> {
-  factory _$$GetPetByIdDataAs200CopyWith(_$GetPetByIdDataAs200 value,
-          $Res Function(_$GetPetByIdDataAs200) then) =
-      __$$GetPetByIdDataAs200CopyWithImpl<$Res>;
+abstract class _$$GetPetByIdDataAs200ImplCopyWith<$Res> {
+  factory _$$GetPetByIdDataAs200ImplCopyWith(_$GetPetByIdDataAs200Impl value,
+          $Res Function(_$GetPetByIdDataAs200Impl) then) =
+      __$$GetPetByIdDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Pet responseData});
 
@@ -2994,11 +3018,11 @@ abstract class _$$GetPetByIdDataAs200CopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$GetPetByIdDataAs200CopyWithImpl<$Res>
-    extends _$GetPetByIdDataCopyWithImpl<$Res, _$GetPetByIdDataAs200>
-    implements _$$GetPetByIdDataAs200CopyWith<$Res> {
-  __$$GetPetByIdDataAs200CopyWithImpl(
-      _$GetPetByIdDataAs200 _value, $Res Function(_$GetPetByIdDataAs200) _then)
+class __$$GetPetByIdDataAs200ImplCopyWithImpl<$Res>
+    extends _$GetPetByIdDataCopyWithImpl<$Res, _$GetPetByIdDataAs200Impl>
+    implements _$$GetPetByIdDataAs200ImplCopyWith<$Res> {
+  __$$GetPetByIdDataAs200ImplCopyWithImpl(_$GetPetByIdDataAs200Impl _value,
+      $Res Function(_$GetPetByIdDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3006,7 +3030,7 @@ class __$$GetPetByIdDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$GetPetByIdDataAs200(
+    return _then(_$GetPetByIdDataAs200Impl(
       responseData: null == responseData
           ? _value.responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -3025,8 +3049,8 @@ class __$$GetPetByIdDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetPetByIdDataAs200 extends GetPetByIdDataAs200 {
-  const _$GetPetByIdDataAs200({required this.responseData}) : super._();
+class _$GetPetByIdDataAs200Impl extends GetPetByIdDataAs200 {
+  const _$GetPetByIdDataAs200Impl({required this.responseData}) : super._();
 
   @override
   final Pet responseData;
@@ -3037,10 +3061,10 @@ class _$GetPetByIdDataAs200 extends GetPetByIdDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetPetByIdDataAs200 &&
+            other is _$GetPetByIdDataAs200Impl &&
             (identical(other.responseData, responseData) ||
                 other.responseData == responseData));
   }
@@ -3051,8 +3075,8 @@ class _$GetPetByIdDataAs200 extends GetPetByIdDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetPetByIdDataAs200CopyWith<_$GetPetByIdDataAs200> get copyWith =>
-      __$$GetPetByIdDataAs200CopyWithImpl<_$GetPetByIdDataAs200>(
+  _$$GetPetByIdDataAs200ImplCopyWith<_$GetPetByIdDataAs200Impl> get copyWith =>
+      __$$GetPetByIdDataAs200ImplCopyWithImpl<_$GetPetByIdDataAs200Impl>(
           this, _$identity);
 
   @override
@@ -3132,31 +3156,31 @@ class _$GetPetByIdDataAs200 extends GetPetByIdDataAs200 {
 
 abstract class GetPetByIdDataAs200 extends GetPetByIdData {
   const factory GetPetByIdDataAs200({required final Pet responseData}) =
-      _$GetPetByIdDataAs200;
+      _$GetPetByIdDataAs200Impl;
   const GetPetByIdDataAs200._() : super._();
 
   @override
   Pet get responseData;
   @JsonKey(ignore: true)
-  _$$GetPetByIdDataAs200CopyWith<_$GetPetByIdDataAs200> get copyWith =>
+  _$$GetPetByIdDataAs200ImplCopyWith<_$GetPetByIdDataAs200Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetPetByIdDataAs400CopyWith<$Res> {
-  factory _$$GetPetByIdDataAs400CopyWith(_$GetPetByIdDataAs400 value,
-          $Res Function(_$GetPetByIdDataAs400) then) =
-      __$$GetPetByIdDataAs400CopyWithImpl<$Res>;
+abstract class _$$GetPetByIdDataAs400ImplCopyWith<$Res> {
+  factory _$$GetPetByIdDataAs400ImplCopyWith(_$GetPetByIdDataAs400Impl value,
+          $Res Function(_$GetPetByIdDataAs400Impl) then) =
+      __$$GetPetByIdDataAs400ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$GetPetByIdDataAs400CopyWithImpl<$Res>
-    extends _$GetPetByIdDataCopyWithImpl<$Res, _$GetPetByIdDataAs400>
-    implements _$$GetPetByIdDataAs400CopyWith<$Res> {
-  __$$GetPetByIdDataAs400CopyWithImpl(
-      _$GetPetByIdDataAs400 _value, $Res Function(_$GetPetByIdDataAs400) _then)
+class __$$GetPetByIdDataAs400ImplCopyWithImpl<$Res>
+    extends _$GetPetByIdDataCopyWithImpl<$Res, _$GetPetByIdDataAs400Impl>
+    implements _$$GetPetByIdDataAs400ImplCopyWith<$Res> {
+  __$$GetPetByIdDataAs400ImplCopyWithImpl(_$GetPetByIdDataAs400Impl _value,
+      $Res Function(_$GetPetByIdDataAs400Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3164,7 +3188,7 @@ class __$$GetPetByIdDataAs400CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$GetPetByIdDataAs400(
+    return _then(_$GetPetByIdDataAs400Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -3173,8 +3197,8 @@ class __$$GetPetByIdDataAs400CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetPetByIdDataAs400 extends GetPetByIdDataAs400 {
-  const _$GetPetByIdDataAs400({required this.responseData}) : super._();
+class _$GetPetByIdDataAs400Impl extends GetPetByIdDataAs400 {
+  const _$GetPetByIdDataAs400Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -3185,10 +3209,10 @@ class _$GetPetByIdDataAs400 extends GetPetByIdDataAs400 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetPetByIdDataAs400 &&
+            other is _$GetPetByIdDataAs400Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -3200,8 +3224,8 @@ class _$GetPetByIdDataAs400 extends GetPetByIdDataAs400 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetPetByIdDataAs400CopyWith<_$GetPetByIdDataAs400> get copyWith =>
-      __$$GetPetByIdDataAs400CopyWithImpl<_$GetPetByIdDataAs400>(
+  _$$GetPetByIdDataAs400ImplCopyWith<_$GetPetByIdDataAs400Impl> get copyWith =>
+      __$$GetPetByIdDataAs400ImplCopyWithImpl<_$GetPetByIdDataAs400Impl>(
           this, _$identity);
 
   @override
@@ -3281,31 +3305,31 @@ class _$GetPetByIdDataAs400 extends GetPetByIdDataAs400 {
 
 abstract class GetPetByIdDataAs400 extends GetPetByIdData {
   const factory GetPetByIdDataAs400({required final Object? responseData}) =
-      _$GetPetByIdDataAs400;
+      _$GetPetByIdDataAs400Impl;
   const GetPetByIdDataAs400._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$GetPetByIdDataAs400CopyWith<_$GetPetByIdDataAs400> get copyWith =>
+  _$$GetPetByIdDataAs400ImplCopyWith<_$GetPetByIdDataAs400Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetPetByIdDataAs404CopyWith<$Res> {
-  factory _$$GetPetByIdDataAs404CopyWith(_$GetPetByIdDataAs404 value,
-          $Res Function(_$GetPetByIdDataAs404) then) =
-      __$$GetPetByIdDataAs404CopyWithImpl<$Res>;
+abstract class _$$GetPetByIdDataAs404ImplCopyWith<$Res> {
+  factory _$$GetPetByIdDataAs404ImplCopyWith(_$GetPetByIdDataAs404Impl value,
+          $Res Function(_$GetPetByIdDataAs404Impl) then) =
+      __$$GetPetByIdDataAs404ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$GetPetByIdDataAs404CopyWithImpl<$Res>
-    extends _$GetPetByIdDataCopyWithImpl<$Res, _$GetPetByIdDataAs404>
-    implements _$$GetPetByIdDataAs404CopyWith<$Res> {
-  __$$GetPetByIdDataAs404CopyWithImpl(
-      _$GetPetByIdDataAs404 _value, $Res Function(_$GetPetByIdDataAs404) _then)
+class __$$GetPetByIdDataAs404ImplCopyWithImpl<$Res>
+    extends _$GetPetByIdDataCopyWithImpl<$Res, _$GetPetByIdDataAs404Impl>
+    implements _$$GetPetByIdDataAs404ImplCopyWith<$Res> {
+  __$$GetPetByIdDataAs404ImplCopyWithImpl(_$GetPetByIdDataAs404Impl _value,
+      $Res Function(_$GetPetByIdDataAs404Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3313,7 +3337,7 @@ class __$$GetPetByIdDataAs404CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$GetPetByIdDataAs404(
+    return _then(_$GetPetByIdDataAs404Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -3322,8 +3346,8 @@ class __$$GetPetByIdDataAs404CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetPetByIdDataAs404 extends GetPetByIdDataAs404 {
-  const _$GetPetByIdDataAs404({required this.responseData}) : super._();
+class _$GetPetByIdDataAs404Impl extends GetPetByIdDataAs404 {
+  const _$GetPetByIdDataAs404Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -3334,10 +3358,10 @@ class _$GetPetByIdDataAs404 extends GetPetByIdDataAs404 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetPetByIdDataAs404 &&
+            other is _$GetPetByIdDataAs404Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -3349,8 +3373,8 @@ class _$GetPetByIdDataAs404 extends GetPetByIdDataAs404 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetPetByIdDataAs404CopyWith<_$GetPetByIdDataAs404> get copyWith =>
-      __$$GetPetByIdDataAs404CopyWithImpl<_$GetPetByIdDataAs404>(
+  _$$GetPetByIdDataAs404ImplCopyWith<_$GetPetByIdDataAs404Impl> get copyWith =>
+      __$$GetPetByIdDataAs404ImplCopyWithImpl<_$GetPetByIdDataAs404Impl>(
           this, _$identity);
 
   @override
@@ -3430,32 +3454,33 @@ class _$GetPetByIdDataAs404 extends GetPetByIdDataAs404 {
 
 abstract class GetPetByIdDataAs404 extends GetPetByIdData {
   const factory GetPetByIdDataAs404({required final Object? responseData}) =
-      _$GetPetByIdDataAs404;
+      _$GetPetByIdDataAs404Impl;
   const GetPetByIdDataAs404._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$GetPetByIdDataAs404CopyWith<_$GetPetByIdDataAs404> get copyWith =>
+  _$$GetPetByIdDataAs404ImplCopyWith<_$GetPetByIdDataAs404Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetPetByIdResponseUnknownCopyWith<$Res> {
-  factory _$$GetPetByIdResponseUnknownCopyWith(
-          _$GetPetByIdResponseUnknown value,
-          $Res Function(_$GetPetByIdResponseUnknown) then) =
-      __$$GetPetByIdResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$GetPetByIdResponseUnknownImplCopyWith<$Res> {
+  factory _$$GetPetByIdResponseUnknownImplCopyWith(
+          _$GetPetByIdResponseUnknownImpl value,
+          $Res Function(_$GetPetByIdResponseUnknownImpl) then) =
+      __$$GetPetByIdResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$GetPetByIdResponseUnknownCopyWithImpl<$Res>
-    extends _$GetPetByIdDataCopyWithImpl<$Res, _$GetPetByIdResponseUnknown>
-    implements _$$GetPetByIdResponseUnknownCopyWith<$Res> {
-  __$$GetPetByIdResponseUnknownCopyWithImpl(_$GetPetByIdResponseUnknown _value,
-      $Res Function(_$GetPetByIdResponseUnknown) _then)
+class __$$GetPetByIdResponseUnknownImplCopyWithImpl<$Res>
+    extends _$GetPetByIdDataCopyWithImpl<$Res, _$GetPetByIdResponseUnknownImpl>
+    implements _$$GetPetByIdResponseUnknownImplCopyWith<$Res> {
+  __$$GetPetByIdResponseUnknownImplCopyWithImpl(
+      _$GetPetByIdResponseUnknownImpl _value,
+      $Res Function(_$GetPetByIdResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3464,7 +3489,7 @@ class __$$GetPetByIdResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$GetPetByIdResponseUnknown(
+    return _then(_$GetPetByIdResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -3477,8 +3502,8 @@ class __$$GetPetByIdResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetPetByIdResponseUnknown extends GetPetByIdResponseUnknown {
-  const _$GetPetByIdResponseUnknown(
+class _$GetPetByIdResponseUnknownImpl extends GetPetByIdResponseUnknown {
+  const _$GetPetByIdResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -3493,10 +3518,10 @@ class _$GetPetByIdResponseUnknown extends GetPetByIdResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetPetByIdResponseUnknown &&
+            other is _$GetPetByIdResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -3510,9 +3535,9 @@ class _$GetPetByIdResponseUnknown extends GetPetByIdResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetPetByIdResponseUnknownCopyWith<_$GetPetByIdResponseUnknown>
-      get copyWith => __$$GetPetByIdResponseUnknownCopyWithImpl<
-          _$GetPetByIdResponseUnknown>(this, _$identity);
+  _$$GetPetByIdResponseUnknownImplCopyWith<_$GetPetByIdResponseUnknownImpl>
+      get copyWith => __$$GetPetByIdResponseUnknownImplCopyWithImpl<
+          _$GetPetByIdResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3592,14 +3617,14 @@ class _$GetPetByIdResponseUnknown extends GetPetByIdResponseUnknown {
 abstract class GetPetByIdResponseUnknown extends GetPetByIdData {
   const factory GetPetByIdResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$GetPetByIdResponseUnknown;
+      required final Object? responseData}) = _$GetPetByIdResponseUnknownImpl;
   const GetPetByIdResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$GetPetByIdResponseUnknownCopyWith<_$GetPetByIdResponseUnknown>
+  _$$GetPetByIdResponseUnknownImplCopyWith<_$GetPetByIdResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -3683,10 +3708,10 @@ class _$UpdatePetDataCopyWithImpl<$Res, $Val extends UpdatePetData>
 }
 
 /// @nodoc
-abstract class _$$UpdatePetDataAs200CopyWith<$Res> {
-  factory _$$UpdatePetDataAs200CopyWith(_$UpdatePetDataAs200 value,
-          $Res Function(_$UpdatePetDataAs200) then) =
-      __$$UpdatePetDataAs200CopyWithImpl<$Res>;
+abstract class _$$UpdatePetDataAs200ImplCopyWith<$Res> {
+  factory _$$UpdatePetDataAs200ImplCopyWith(_$UpdatePetDataAs200Impl value,
+          $Res Function(_$UpdatePetDataAs200Impl) then) =
+      __$$UpdatePetDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Pet responseData});
 
@@ -3694,11 +3719,11 @@ abstract class _$$UpdatePetDataAs200CopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$UpdatePetDataAs200CopyWithImpl<$Res>
-    extends _$UpdatePetDataCopyWithImpl<$Res, _$UpdatePetDataAs200>
-    implements _$$UpdatePetDataAs200CopyWith<$Res> {
-  __$$UpdatePetDataAs200CopyWithImpl(
-      _$UpdatePetDataAs200 _value, $Res Function(_$UpdatePetDataAs200) _then)
+class __$$UpdatePetDataAs200ImplCopyWithImpl<$Res>
+    extends _$UpdatePetDataCopyWithImpl<$Res, _$UpdatePetDataAs200Impl>
+    implements _$$UpdatePetDataAs200ImplCopyWith<$Res> {
+  __$$UpdatePetDataAs200ImplCopyWithImpl(_$UpdatePetDataAs200Impl _value,
+      $Res Function(_$UpdatePetDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3706,7 +3731,7 @@ class __$$UpdatePetDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$UpdatePetDataAs200(
+    return _then(_$UpdatePetDataAs200Impl(
       responseData: null == responseData
           ? _value.responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -3725,8 +3750,8 @@ class __$$UpdatePetDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UpdatePetDataAs200 extends UpdatePetDataAs200 {
-  const _$UpdatePetDataAs200({required this.responseData}) : super._();
+class _$UpdatePetDataAs200Impl extends UpdatePetDataAs200 {
+  const _$UpdatePetDataAs200Impl({required this.responseData}) : super._();
 
   @override
   final Pet responseData;
@@ -3737,10 +3762,10 @@ class _$UpdatePetDataAs200 extends UpdatePetDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UpdatePetDataAs200 &&
+            other is _$UpdatePetDataAs200Impl &&
             (identical(other.responseData, responseData) ||
                 other.responseData == responseData));
   }
@@ -3751,8 +3776,8 @@ class _$UpdatePetDataAs200 extends UpdatePetDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UpdatePetDataAs200CopyWith<_$UpdatePetDataAs200> get copyWith =>
-      __$$UpdatePetDataAs200CopyWithImpl<_$UpdatePetDataAs200>(
+  _$$UpdatePetDataAs200ImplCopyWith<_$UpdatePetDataAs200Impl> get copyWith =>
+      __$$UpdatePetDataAs200ImplCopyWithImpl<_$UpdatePetDataAs200Impl>(
           this, _$identity);
 
   @override
@@ -3838,31 +3863,31 @@ class _$UpdatePetDataAs200 extends UpdatePetDataAs200 {
 
 abstract class UpdatePetDataAs200 extends UpdatePetData {
   const factory UpdatePetDataAs200({required final Pet responseData}) =
-      _$UpdatePetDataAs200;
+      _$UpdatePetDataAs200Impl;
   const UpdatePetDataAs200._() : super._();
 
   @override
   Pet get responseData;
   @JsonKey(ignore: true)
-  _$$UpdatePetDataAs200CopyWith<_$UpdatePetDataAs200> get copyWith =>
+  _$$UpdatePetDataAs200ImplCopyWith<_$UpdatePetDataAs200Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$UpdatePetDataAs400CopyWith<$Res> {
-  factory _$$UpdatePetDataAs400CopyWith(_$UpdatePetDataAs400 value,
-          $Res Function(_$UpdatePetDataAs400) then) =
-      __$$UpdatePetDataAs400CopyWithImpl<$Res>;
+abstract class _$$UpdatePetDataAs400ImplCopyWith<$Res> {
+  factory _$$UpdatePetDataAs400ImplCopyWith(_$UpdatePetDataAs400Impl value,
+          $Res Function(_$UpdatePetDataAs400Impl) then) =
+      __$$UpdatePetDataAs400ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$UpdatePetDataAs400CopyWithImpl<$Res>
-    extends _$UpdatePetDataCopyWithImpl<$Res, _$UpdatePetDataAs400>
-    implements _$$UpdatePetDataAs400CopyWith<$Res> {
-  __$$UpdatePetDataAs400CopyWithImpl(
-      _$UpdatePetDataAs400 _value, $Res Function(_$UpdatePetDataAs400) _then)
+class __$$UpdatePetDataAs400ImplCopyWithImpl<$Res>
+    extends _$UpdatePetDataCopyWithImpl<$Res, _$UpdatePetDataAs400Impl>
+    implements _$$UpdatePetDataAs400ImplCopyWith<$Res> {
+  __$$UpdatePetDataAs400ImplCopyWithImpl(_$UpdatePetDataAs400Impl _value,
+      $Res Function(_$UpdatePetDataAs400Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3870,7 +3895,7 @@ class __$$UpdatePetDataAs400CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$UpdatePetDataAs400(
+    return _then(_$UpdatePetDataAs400Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -3879,8 +3904,8 @@ class __$$UpdatePetDataAs400CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UpdatePetDataAs400 extends UpdatePetDataAs400 {
-  const _$UpdatePetDataAs400({required this.responseData}) : super._();
+class _$UpdatePetDataAs400Impl extends UpdatePetDataAs400 {
+  const _$UpdatePetDataAs400Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -3891,10 +3916,10 @@ class _$UpdatePetDataAs400 extends UpdatePetDataAs400 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UpdatePetDataAs400 &&
+            other is _$UpdatePetDataAs400Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -3906,8 +3931,8 @@ class _$UpdatePetDataAs400 extends UpdatePetDataAs400 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UpdatePetDataAs400CopyWith<_$UpdatePetDataAs400> get copyWith =>
-      __$$UpdatePetDataAs400CopyWithImpl<_$UpdatePetDataAs400>(
+  _$$UpdatePetDataAs400ImplCopyWith<_$UpdatePetDataAs400Impl> get copyWith =>
+      __$$UpdatePetDataAs400ImplCopyWithImpl<_$UpdatePetDataAs400Impl>(
           this, _$identity);
 
   @override
@@ -3993,31 +4018,31 @@ class _$UpdatePetDataAs400 extends UpdatePetDataAs400 {
 
 abstract class UpdatePetDataAs400 extends UpdatePetData {
   const factory UpdatePetDataAs400({required final Object? responseData}) =
-      _$UpdatePetDataAs400;
+      _$UpdatePetDataAs400Impl;
   const UpdatePetDataAs400._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$UpdatePetDataAs400CopyWith<_$UpdatePetDataAs400> get copyWith =>
+  _$$UpdatePetDataAs400ImplCopyWith<_$UpdatePetDataAs400Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$UpdatePetDataAs404CopyWith<$Res> {
-  factory _$$UpdatePetDataAs404CopyWith(_$UpdatePetDataAs404 value,
-          $Res Function(_$UpdatePetDataAs404) then) =
-      __$$UpdatePetDataAs404CopyWithImpl<$Res>;
+abstract class _$$UpdatePetDataAs404ImplCopyWith<$Res> {
+  factory _$$UpdatePetDataAs404ImplCopyWith(_$UpdatePetDataAs404Impl value,
+          $Res Function(_$UpdatePetDataAs404Impl) then) =
+      __$$UpdatePetDataAs404ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$UpdatePetDataAs404CopyWithImpl<$Res>
-    extends _$UpdatePetDataCopyWithImpl<$Res, _$UpdatePetDataAs404>
-    implements _$$UpdatePetDataAs404CopyWith<$Res> {
-  __$$UpdatePetDataAs404CopyWithImpl(
-      _$UpdatePetDataAs404 _value, $Res Function(_$UpdatePetDataAs404) _then)
+class __$$UpdatePetDataAs404ImplCopyWithImpl<$Res>
+    extends _$UpdatePetDataCopyWithImpl<$Res, _$UpdatePetDataAs404Impl>
+    implements _$$UpdatePetDataAs404ImplCopyWith<$Res> {
+  __$$UpdatePetDataAs404ImplCopyWithImpl(_$UpdatePetDataAs404Impl _value,
+      $Res Function(_$UpdatePetDataAs404Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4025,7 +4050,7 @@ class __$$UpdatePetDataAs404CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$UpdatePetDataAs404(
+    return _then(_$UpdatePetDataAs404Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -4034,8 +4059,8 @@ class __$$UpdatePetDataAs404CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UpdatePetDataAs404 extends UpdatePetDataAs404 {
-  const _$UpdatePetDataAs404({required this.responseData}) : super._();
+class _$UpdatePetDataAs404Impl extends UpdatePetDataAs404 {
+  const _$UpdatePetDataAs404Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -4046,10 +4071,10 @@ class _$UpdatePetDataAs404 extends UpdatePetDataAs404 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UpdatePetDataAs404 &&
+            other is _$UpdatePetDataAs404Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -4061,8 +4086,8 @@ class _$UpdatePetDataAs404 extends UpdatePetDataAs404 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UpdatePetDataAs404CopyWith<_$UpdatePetDataAs404> get copyWith =>
-      __$$UpdatePetDataAs404CopyWithImpl<_$UpdatePetDataAs404>(
+  _$$UpdatePetDataAs404ImplCopyWith<_$UpdatePetDataAs404Impl> get copyWith =>
+      __$$UpdatePetDataAs404ImplCopyWithImpl<_$UpdatePetDataAs404Impl>(
           this, _$identity);
 
   @override
@@ -4148,31 +4173,31 @@ class _$UpdatePetDataAs404 extends UpdatePetDataAs404 {
 
 abstract class UpdatePetDataAs404 extends UpdatePetData {
   const factory UpdatePetDataAs404({required final Object? responseData}) =
-      _$UpdatePetDataAs404;
+      _$UpdatePetDataAs404Impl;
   const UpdatePetDataAs404._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$UpdatePetDataAs404CopyWith<_$UpdatePetDataAs404> get copyWith =>
+  _$$UpdatePetDataAs404ImplCopyWith<_$UpdatePetDataAs404Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$UpdatePetDataAs405CopyWith<$Res> {
-  factory _$$UpdatePetDataAs405CopyWith(_$UpdatePetDataAs405 value,
-          $Res Function(_$UpdatePetDataAs405) then) =
-      __$$UpdatePetDataAs405CopyWithImpl<$Res>;
+abstract class _$$UpdatePetDataAs405ImplCopyWith<$Res> {
+  factory _$$UpdatePetDataAs405ImplCopyWith(_$UpdatePetDataAs405Impl value,
+          $Res Function(_$UpdatePetDataAs405Impl) then) =
+      __$$UpdatePetDataAs405ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$UpdatePetDataAs405CopyWithImpl<$Res>
-    extends _$UpdatePetDataCopyWithImpl<$Res, _$UpdatePetDataAs405>
-    implements _$$UpdatePetDataAs405CopyWith<$Res> {
-  __$$UpdatePetDataAs405CopyWithImpl(
-      _$UpdatePetDataAs405 _value, $Res Function(_$UpdatePetDataAs405) _then)
+class __$$UpdatePetDataAs405ImplCopyWithImpl<$Res>
+    extends _$UpdatePetDataCopyWithImpl<$Res, _$UpdatePetDataAs405Impl>
+    implements _$$UpdatePetDataAs405ImplCopyWith<$Res> {
+  __$$UpdatePetDataAs405ImplCopyWithImpl(_$UpdatePetDataAs405Impl _value,
+      $Res Function(_$UpdatePetDataAs405Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4180,7 +4205,7 @@ class __$$UpdatePetDataAs405CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$UpdatePetDataAs405(
+    return _then(_$UpdatePetDataAs405Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -4189,8 +4214,8 @@ class __$$UpdatePetDataAs405CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UpdatePetDataAs405 extends UpdatePetDataAs405 {
-  const _$UpdatePetDataAs405({required this.responseData}) : super._();
+class _$UpdatePetDataAs405Impl extends UpdatePetDataAs405 {
+  const _$UpdatePetDataAs405Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -4201,10 +4226,10 @@ class _$UpdatePetDataAs405 extends UpdatePetDataAs405 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UpdatePetDataAs405 &&
+            other is _$UpdatePetDataAs405Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -4216,8 +4241,8 @@ class _$UpdatePetDataAs405 extends UpdatePetDataAs405 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UpdatePetDataAs405CopyWith<_$UpdatePetDataAs405> get copyWith =>
-      __$$UpdatePetDataAs405CopyWithImpl<_$UpdatePetDataAs405>(
+  _$$UpdatePetDataAs405ImplCopyWith<_$UpdatePetDataAs405Impl> get copyWith =>
+      __$$UpdatePetDataAs405ImplCopyWithImpl<_$UpdatePetDataAs405Impl>(
           this, _$identity);
 
   @override
@@ -4303,31 +4328,33 @@ class _$UpdatePetDataAs405 extends UpdatePetDataAs405 {
 
 abstract class UpdatePetDataAs405 extends UpdatePetData {
   const factory UpdatePetDataAs405({required final Object? responseData}) =
-      _$UpdatePetDataAs405;
+      _$UpdatePetDataAs405Impl;
   const UpdatePetDataAs405._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$UpdatePetDataAs405CopyWith<_$UpdatePetDataAs405> get copyWith =>
+  _$$UpdatePetDataAs405ImplCopyWith<_$UpdatePetDataAs405Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$UpdatePetResponseUnknownCopyWith<$Res> {
-  factory _$$UpdatePetResponseUnknownCopyWith(_$UpdatePetResponseUnknown value,
-          $Res Function(_$UpdatePetResponseUnknown) then) =
-      __$$UpdatePetResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$UpdatePetResponseUnknownImplCopyWith<$Res> {
+  factory _$$UpdatePetResponseUnknownImplCopyWith(
+          _$UpdatePetResponseUnknownImpl value,
+          $Res Function(_$UpdatePetResponseUnknownImpl) then) =
+      __$$UpdatePetResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$UpdatePetResponseUnknownCopyWithImpl<$Res>
-    extends _$UpdatePetDataCopyWithImpl<$Res, _$UpdatePetResponseUnknown>
-    implements _$$UpdatePetResponseUnknownCopyWith<$Res> {
-  __$$UpdatePetResponseUnknownCopyWithImpl(_$UpdatePetResponseUnknown _value,
-      $Res Function(_$UpdatePetResponseUnknown) _then)
+class __$$UpdatePetResponseUnknownImplCopyWithImpl<$Res>
+    extends _$UpdatePetDataCopyWithImpl<$Res, _$UpdatePetResponseUnknownImpl>
+    implements _$$UpdatePetResponseUnknownImplCopyWith<$Res> {
+  __$$UpdatePetResponseUnknownImplCopyWithImpl(
+      _$UpdatePetResponseUnknownImpl _value,
+      $Res Function(_$UpdatePetResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4336,7 +4363,7 @@ class __$$UpdatePetResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$UpdatePetResponseUnknown(
+    return _then(_$UpdatePetResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -4349,8 +4376,8 @@ class __$$UpdatePetResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UpdatePetResponseUnknown extends UpdatePetResponseUnknown {
-  const _$UpdatePetResponseUnknown(
+class _$UpdatePetResponseUnknownImpl extends UpdatePetResponseUnknown {
+  const _$UpdatePetResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -4365,10 +4392,10 @@ class _$UpdatePetResponseUnknown extends UpdatePetResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UpdatePetResponseUnknown &&
+            other is _$UpdatePetResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -4382,10 +4409,9 @@ class _$UpdatePetResponseUnknown extends UpdatePetResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UpdatePetResponseUnknownCopyWith<_$UpdatePetResponseUnknown>
-      get copyWith =>
-          __$$UpdatePetResponseUnknownCopyWithImpl<_$UpdatePetResponseUnknown>(
-              this, _$identity);
+  _$$UpdatePetResponseUnknownImplCopyWith<_$UpdatePetResponseUnknownImpl>
+      get copyWith => __$$UpdatePetResponseUnknownImplCopyWithImpl<
+          _$UpdatePetResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4471,14 +4497,14 @@ class _$UpdatePetResponseUnknown extends UpdatePetResponseUnknown {
 abstract class UpdatePetResponseUnknown extends UpdatePetData {
   const factory UpdatePetResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$UpdatePetResponseUnknown;
+      required final Object? responseData}) = _$UpdatePetResponseUnknownImpl;
   const UpdatePetResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$UpdatePetResponseUnknownCopyWith<_$UpdatePetResponseUnknown>
+  _$$UpdatePetResponseUnknownImplCopyWith<_$UpdatePetResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -4562,25 +4588,25 @@ class _$UpdatePetWithFormDataCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$UpdatePetWithFormDataAs405VoidCopyWith<$Res>
+abstract class _$$UpdatePetWithFormDataAs405VoidImplCopyWith<$Res>
     implements $UpdatePetWithFormDataCopyWith<$Res> {
-  factory _$$UpdatePetWithFormDataAs405VoidCopyWith(
-          _$UpdatePetWithFormDataAs405Void value,
-          $Res Function(_$UpdatePetWithFormDataAs405Void) then) =
-      __$$UpdatePetWithFormDataAs405VoidCopyWithImpl<$Res>;
+  factory _$$UpdatePetWithFormDataAs405VoidImplCopyWith(
+          _$UpdatePetWithFormDataAs405VoidImpl value,
+          $Res Function(_$UpdatePetWithFormDataAs405VoidImpl) then) =
+      __$$UpdatePetWithFormDataAs405VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$UpdatePetWithFormDataAs405VoidCopyWithImpl<$Res>
+class __$$UpdatePetWithFormDataAs405VoidImplCopyWithImpl<$Res>
     extends _$UpdatePetWithFormDataCopyWithImpl<$Res,
-        _$UpdatePetWithFormDataAs405Void>
-    implements _$$UpdatePetWithFormDataAs405VoidCopyWith<$Res> {
-  __$$UpdatePetWithFormDataAs405VoidCopyWithImpl(
-      _$UpdatePetWithFormDataAs405Void _value,
-      $Res Function(_$UpdatePetWithFormDataAs405Void) _then)
+        _$UpdatePetWithFormDataAs405VoidImpl>
+    implements _$$UpdatePetWithFormDataAs405VoidImplCopyWith<$Res> {
+  __$$UpdatePetWithFormDataAs405VoidImplCopyWithImpl(
+      _$UpdatePetWithFormDataAs405VoidImpl _value,
+      $Res Function(_$UpdatePetWithFormDataAs405VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4588,7 +4614,7 @@ class __$$UpdatePetWithFormDataAs405VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$UpdatePetWithFormDataAs405Void(
+    return _then(_$UpdatePetWithFormDataAs405VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -4597,8 +4623,9 @@ class __$$UpdatePetWithFormDataAs405VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UpdatePetWithFormDataAs405Void extends UpdatePetWithFormDataAs405Void {
-  const _$UpdatePetWithFormDataAs405Void({required this.responseData})
+class _$UpdatePetWithFormDataAs405VoidImpl
+    extends UpdatePetWithFormDataAs405Void {
+  const _$UpdatePetWithFormDataAs405VoidImpl({required this.responseData})
       : super._();
 
   @override
@@ -4610,10 +4637,10 @@ class _$UpdatePetWithFormDataAs405Void extends UpdatePetWithFormDataAs405Void {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UpdatePetWithFormDataAs405Void &&
+            other is _$UpdatePetWithFormDataAs405VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -4625,9 +4652,10 @@ class _$UpdatePetWithFormDataAs405Void extends UpdatePetWithFormDataAs405Void {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UpdatePetWithFormDataAs405VoidCopyWith<_$UpdatePetWithFormDataAs405Void>
-      get copyWith => __$$UpdatePetWithFormDataAs405VoidCopyWithImpl<
-          _$UpdatePetWithFormDataAs405Void>(this, _$identity);
+  _$$UpdatePetWithFormDataAs405VoidImplCopyWith<
+          _$UpdatePetWithFormDataAs405VoidImpl>
+      get copyWith => __$$UpdatePetWithFormDataAs405VoidImplCopyWithImpl<
+          _$UpdatePetWithFormDataAs405VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4694,37 +4722,39 @@ class _$UpdatePetWithFormDataAs405Void extends UpdatePetWithFormDataAs405Void {
 
 abstract class UpdatePetWithFormDataAs405Void extends UpdatePetWithFormData {
   const factory UpdatePetWithFormDataAs405Void(
-      {required final Object? responseData}) = _$UpdatePetWithFormDataAs405Void;
+          {required final Object? responseData}) =
+      _$UpdatePetWithFormDataAs405VoidImpl;
   const UpdatePetWithFormDataAs405Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$UpdatePetWithFormDataAs405VoidCopyWith<_$UpdatePetWithFormDataAs405Void>
+  _$$UpdatePetWithFormDataAs405VoidImplCopyWith<
+          _$UpdatePetWithFormDataAs405VoidImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$UpdatePetWithFormResponseUnknownCopyWith<$Res>
+abstract class _$$UpdatePetWithFormResponseUnknownImplCopyWith<$Res>
     implements $UpdatePetWithFormDataCopyWith<$Res> {
-  factory _$$UpdatePetWithFormResponseUnknownCopyWith(
-          _$UpdatePetWithFormResponseUnknown value,
-          $Res Function(_$UpdatePetWithFormResponseUnknown) then) =
-      __$$UpdatePetWithFormResponseUnknownCopyWithImpl<$Res>;
+  factory _$$UpdatePetWithFormResponseUnknownImplCopyWith(
+          _$UpdatePetWithFormResponseUnknownImpl value,
+          $Res Function(_$UpdatePetWithFormResponseUnknownImpl) then) =
+      __$$UpdatePetWithFormResponseUnknownImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$UpdatePetWithFormResponseUnknownCopyWithImpl<$Res>
+class __$$UpdatePetWithFormResponseUnknownImplCopyWithImpl<$Res>
     extends _$UpdatePetWithFormDataCopyWithImpl<$Res,
-        _$UpdatePetWithFormResponseUnknown>
-    implements _$$UpdatePetWithFormResponseUnknownCopyWith<$Res> {
-  __$$UpdatePetWithFormResponseUnknownCopyWithImpl(
-      _$UpdatePetWithFormResponseUnknown _value,
-      $Res Function(_$UpdatePetWithFormResponseUnknown) _then)
+        _$UpdatePetWithFormResponseUnknownImpl>
+    implements _$$UpdatePetWithFormResponseUnknownImplCopyWith<$Res> {
+  __$$UpdatePetWithFormResponseUnknownImplCopyWithImpl(
+      _$UpdatePetWithFormResponseUnknownImpl _value,
+      $Res Function(_$UpdatePetWithFormResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4733,7 +4763,7 @@ class __$$UpdatePetWithFormResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$UpdatePetWithFormResponseUnknown(
+    return _then(_$UpdatePetWithFormResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -4746,9 +4776,9 @@ class __$$UpdatePetWithFormResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UpdatePetWithFormResponseUnknown
+class _$UpdatePetWithFormResponseUnknownImpl
     extends UpdatePetWithFormResponseUnknown {
-  const _$UpdatePetWithFormResponseUnknown(
+  const _$UpdatePetWithFormResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -4763,10 +4793,10 @@ class _$UpdatePetWithFormResponseUnknown
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UpdatePetWithFormResponseUnknown &&
+            other is _$UpdatePetWithFormResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -4780,10 +4810,10 @@ class _$UpdatePetWithFormResponseUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UpdatePetWithFormResponseUnknownCopyWith<
-          _$UpdatePetWithFormResponseUnknown>
-      get copyWith => __$$UpdatePetWithFormResponseUnknownCopyWithImpl<
-          _$UpdatePetWithFormResponseUnknown>(this, _$identity);
+  _$$UpdatePetWithFormResponseUnknownImplCopyWith<
+          _$UpdatePetWithFormResponseUnknownImpl>
+      get copyWith => __$$UpdatePetWithFormResponseUnknownImplCopyWithImpl<
+          _$UpdatePetWithFormResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4851,7 +4881,7 @@ class _$UpdatePetWithFormResponseUnknown
 abstract class UpdatePetWithFormResponseUnknown extends UpdatePetWithFormData {
   const factory UpdatePetWithFormResponseUnknown(
           {final int? statusCode, required final Object? responseData}) =
-      _$UpdatePetWithFormResponseUnknown;
+      _$UpdatePetWithFormResponseUnknownImpl;
   const UpdatePetWithFormResponseUnknown._() : super._();
 
   int? get statusCode;
@@ -4859,8 +4889,8 @@ abstract class UpdatePetWithFormResponseUnknown extends UpdatePetWithFormData {
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$UpdatePetWithFormResponseUnknownCopyWith<
-          _$UpdatePetWithFormResponseUnknown>
+  _$$UpdatePetWithFormResponseUnknownImplCopyWith<
+          _$UpdatePetWithFormResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -4926,10 +4956,10 @@ class _$UploadFileDataCopyWithImpl<$Res, $Val extends UploadFileData>
 }
 
 /// @nodoc
-abstract class _$$UploadFileDataAs200CopyWith<$Res> {
-  factory _$$UploadFileDataAs200CopyWith(_$UploadFileDataAs200 value,
-          $Res Function(_$UploadFileDataAs200) then) =
-      __$$UploadFileDataAs200CopyWithImpl<$Res>;
+abstract class _$$UploadFileDataAs200ImplCopyWith<$Res> {
+  factory _$$UploadFileDataAs200ImplCopyWith(_$UploadFileDataAs200Impl value,
+          $Res Function(_$UploadFileDataAs200Impl) then) =
+      __$$UploadFileDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({ApiResponse responseData});
 
@@ -4937,11 +4967,11 @@ abstract class _$$UploadFileDataAs200CopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$UploadFileDataAs200CopyWithImpl<$Res>
-    extends _$UploadFileDataCopyWithImpl<$Res, _$UploadFileDataAs200>
-    implements _$$UploadFileDataAs200CopyWith<$Res> {
-  __$$UploadFileDataAs200CopyWithImpl(
-      _$UploadFileDataAs200 _value, $Res Function(_$UploadFileDataAs200) _then)
+class __$$UploadFileDataAs200ImplCopyWithImpl<$Res>
+    extends _$UploadFileDataCopyWithImpl<$Res, _$UploadFileDataAs200Impl>
+    implements _$$UploadFileDataAs200ImplCopyWith<$Res> {
+  __$$UploadFileDataAs200ImplCopyWithImpl(_$UploadFileDataAs200Impl _value,
+      $Res Function(_$UploadFileDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4949,7 +4979,7 @@ class __$$UploadFileDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$UploadFileDataAs200(
+    return _then(_$UploadFileDataAs200Impl(
       responseData: null == responseData
           ? _value.responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -4968,8 +4998,8 @@ class __$$UploadFileDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UploadFileDataAs200 extends UploadFileDataAs200 {
-  const _$UploadFileDataAs200({required this.responseData}) : super._();
+class _$UploadFileDataAs200Impl extends UploadFileDataAs200 {
+  const _$UploadFileDataAs200Impl({required this.responseData}) : super._();
 
   @override
   final ApiResponse responseData;
@@ -4980,10 +5010,10 @@ class _$UploadFileDataAs200 extends UploadFileDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UploadFileDataAs200 &&
+            other is _$UploadFileDataAs200Impl &&
             (identical(other.responseData, responseData) ||
                 other.responseData == responseData));
   }
@@ -4994,8 +5024,8 @@ class _$UploadFileDataAs200 extends UploadFileDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UploadFileDataAs200CopyWith<_$UploadFileDataAs200> get copyWith =>
-      __$$UploadFileDataAs200CopyWithImpl<_$UploadFileDataAs200>(
+  _$$UploadFileDataAs200ImplCopyWith<_$UploadFileDataAs200Impl> get copyWith =>
+      __$$UploadFileDataAs200ImplCopyWithImpl<_$UploadFileDataAs200Impl>(
           this, _$identity);
 
   @override
@@ -5063,32 +5093,33 @@ class _$UploadFileDataAs200 extends UploadFileDataAs200 {
 
 abstract class UploadFileDataAs200 extends UploadFileData {
   const factory UploadFileDataAs200({required final ApiResponse responseData}) =
-      _$UploadFileDataAs200;
+      _$UploadFileDataAs200Impl;
   const UploadFileDataAs200._() : super._();
 
   @override
   ApiResponse get responseData;
   @JsonKey(ignore: true)
-  _$$UploadFileDataAs200CopyWith<_$UploadFileDataAs200> get copyWith =>
+  _$$UploadFileDataAs200ImplCopyWith<_$UploadFileDataAs200Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$UploadFileResponseUnknownCopyWith<$Res> {
-  factory _$$UploadFileResponseUnknownCopyWith(
-          _$UploadFileResponseUnknown value,
-          $Res Function(_$UploadFileResponseUnknown) then) =
-      __$$UploadFileResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$UploadFileResponseUnknownImplCopyWith<$Res> {
+  factory _$$UploadFileResponseUnknownImplCopyWith(
+          _$UploadFileResponseUnknownImpl value,
+          $Res Function(_$UploadFileResponseUnknownImpl) then) =
+      __$$UploadFileResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$UploadFileResponseUnknownCopyWithImpl<$Res>
-    extends _$UploadFileDataCopyWithImpl<$Res, _$UploadFileResponseUnknown>
-    implements _$$UploadFileResponseUnknownCopyWith<$Res> {
-  __$$UploadFileResponseUnknownCopyWithImpl(_$UploadFileResponseUnknown _value,
-      $Res Function(_$UploadFileResponseUnknown) _then)
+class __$$UploadFileResponseUnknownImplCopyWithImpl<$Res>
+    extends _$UploadFileDataCopyWithImpl<$Res, _$UploadFileResponseUnknownImpl>
+    implements _$$UploadFileResponseUnknownImplCopyWith<$Res> {
+  __$$UploadFileResponseUnknownImplCopyWithImpl(
+      _$UploadFileResponseUnknownImpl _value,
+      $Res Function(_$UploadFileResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5097,7 +5128,7 @@ class __$$UploadFileResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$UploadFileResponseUnknown(
+    return _then(_$UploadFileResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -5110,8 +5141,8 @@ class __$$UploadFileResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UploadFileResponseUnknown extends UploadFileResponseUnknown {
-  const _$UploadFileResponseUnknown(
+class _$UploadFileResponseUnknownImpl extends UploadFileResponseUnknown {
+  const _$UploadFileResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -5126,10 +5157,10 @@ class _$UploadFileResponseUnknown extends UploadFileResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UploadFileResponseUnknown &&
+            other is _$UploadFileResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -5143,9 +5174,9 @@ class _$UploadFileResponseUnknown extends UploadFileResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UploadFileResponseUnknownCopyWith<_$UploadFileResponseUnknown>
-      get copyWith => __$$UploadFileResponseUnknownCopyWithImpl<
-          _$UploadFileResponseUnknown>(this, _$identity);
+  _$$UploadFileResponseUnknownImplCopyWith<_$UploadFileResponseUnknownImpl>
+      get copyWith => __$$UploadFileResponseUnknownImplCopyWithImpl<
+          _$UploadFileResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5213,14 +5244,14 @@ class _$UploadFileResponseUnknown extends UploadFileResponseUnknown {
 abstract class UploadFileResponseUnknown extends UploadFileData {
   const factory UploadFileResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$UploadFileResponseUnknown;
+      required final Object? responseData}) = _$UploadFileResponseUnknownImpl;
   const UploadFileResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$UploadFileResponseUnknownCopyWith<_$UploadFileResponseUnknown>
+  _$$UploadFileResponseUnknownImplCopyWith<_$UploadFileResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -5309,22 +5340,24 @@ class _$DeleteOrderDataCopyWithImpl<$Res, $Val extends DeleteOrderData>
 }
 
 /// @nodoc
-abstract class _$$DeleteOrderDataAs400VoidCopyWith<$Res>
+abstract class _$$DeleteOrderDataAs400VoidImplCopyWith<$Res>
     implements $DeleteOrderDataCopyWith<$Res> {
-  factory _$$DeleteOrderDataAs400VoidCopyWith(_$DeleteOrderDataAs400Void value,
-          $Res Function(_$DeleteOrderDataAs400Void) then) =
-      __$$DeleteOrderDataAs400VoidCopyWithImpl<$Res>;
+  factory _$$DeleteOrderDataAs400VoidImplCopyWith(
+          _$DeleteOrderDataAs400VoidImpl value,
+          $Res Function(_$DeleteOrderDataAs400VoidImpl) then) =
+      __$$DeleteOrderDataAs400VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$DeleteOrderDataAs400VoidCopyWithImpl<$Res>
-    extends _$DeleteOrderDataCopyWithImpl<$Res, _$DeleteOrderDataAs400Void>
-    implements _$$DeleteOrderDataAs400VoidCopyWith<$Res> {
-  __$$DeleteOrderDataAs400VoidCopyWithImpl(_$DeleteOrderDataAs400Void _value,
-      $Res Function(_$DeleteOrderDataAs400Void) _then)
+class __$$DeleteOrderDataAs400VoidImplCopyWithImpl<$Res>
+    extends _$DeleteOrderDataCopyWithImpl<$Res, _$DeleteOrderDataAs400VoidImpl>
+    implements _$$DeleteOrderDataAs400VoidImplCopyWith<$Res> {
+  __$$DeleteOrderDataAs400VoidImplCopyWithImpl(
+      _$DeleteOrderDataAs400VoidImpl _value,
+      $Res Function(_$DeleteOrderDataAs400VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5332,7 +5365,7 @@ class __$$DeleteOrderDataAs400VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$DeleteOrderDataAs400Void(
+    return _then(_$DeleteOrderDataAs400VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -5341,8 +5374,9 @@ class __$$DeleteOrderDataAs400VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$DeleteOrderDataAs400Void extends DeleteOrderDataAs400Void {
-  const _$DeleteOrderDataAs400Void({required this.responseData}) : super._();
+class _$DeleteOrderDataAs400VoidImpl extends DeleteOrderDataAs400Void {
+  const _$DeleteOrderDataAs400VoidImpl({required this.responseData})
+      : super._();
 
   @override
   final Object? responseData;
@@ -5353,10 +5387,10 @@ class _$DeleteOrderDataAs400Void extends DeleteOrderDataAs400Void {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DeleteOrderDataAs400Void &&
+            other is _$DeleteOrderDataAs400VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -5368,10 +5402,9 @@ class _$DeleteOrderDataAs400Void extends DeleteOrderDataAs400Void {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$DeleteOrderDataAs400VoidCopyWith<_$DeleteOrderDataAs400Void>
-      get copyWith =>
-          __$$DeleteOrderDataAs400VoidCopyWithImpl<_$DeleteOrderDataAs400Void>(
-              this, _$identity);
+  _$$DeleteOrderDataAs400VoidImplCopyWith<_$DeleteOrderDataAs400VoidImpl>
+      get copyWith => __$$DeleteOrderDataAs400VoidImplCopyWithImpl<
+          _$DeleteOrderDataAs400VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5444,34 +5477,36 @@ class _$DeleteOrderDataAs400Void extends DeleteOrderDataAs400Void {
 
 abstract class DeleteOrderDataAs400Void extends DeleteOrderData {
   const factory DeleteOrderDataAs400Void(
-      {required final Object? responseData}) = _$DeleteOrderDataAs400Void;
+      {required final Object? responseData}) = _$DeleteOrderDataAs400VoidImpl;
   const DeleteOrderDataAs400Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$DeleteOrderDataAs400VoidCopyWith<_$DeleteOrderDataAs400Void>
+  _$$DeleteOrderDataAs400VoidImplCopyWith<_$DeleteOrderDataAs400VoidImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$DeleteOrderDataAs404VoidCopyWith<$Res>
+abstract class _$$DeleteOrderDataAs404VoidImplCopyWith<$Res>
     implements $DeleteOrderDataCopyWith<$Res> {
-  factory _$$DeleteOrderDataAs404VoidCopyWith(_$DeleteOrderDataAs404Void value,
-          $Res Function(_$DeleteOrderDataAs404Void) then) =
-      __$$DeleteOrderDataAs404VoidCopyWithImpl<$Res>;
+  factory _$$DeleteOrderDataAs404VoidImplCopyWith(
+          _$DeleteOrderDataAs404VoidImpl value,
+          $Res Function(_$DeleteOrderDataAs404VoidImpl) then) =
+      __$$DeleteOrderDataAs404VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$DeleteOrderDataAs404VoidCopyWithImpl<$Res>
-    extends _$DeleteOrderDataCopyWithImpl<$Res, _$DeleteOrderDataAs404Void>
-    implements _$$DeleteOrderDataAs404VoidCopyWith<$Res> {
-  __$$DeleteOrderDataAs404VoidCopyWithImpl(_$DeleteOrderDataAs404Void _value,
-      $Res Function(_$DeleteOrderDataAs404Void) _then)
+class __$$DeleteOrderDataAs404VoidImplCopyWithImpl<$Res>
+    extends _$DeleteOrderDataCopyWithImpl<$Res, _$DeleteOrderDataAs404VoidImpl>
+    implements _$$DeleteOrderDataAs404VoidImplCopyWith<$Res> {
+  __$$DeleteOrderDataAs404VoidImplCopyWithImpl(
+      _$DeleteOrderDataAs404VoidImpl _value,
+      $Res Function(_$DeleteOrderDataAs404VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5479,7 +5514,7 @@ class __$$DeleteOrderDataAs404VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$DeleteOrderDataAs404Void(
+    return _then(_$DeleteOrderDataAs404VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -5488,8 +5523,9 @@ class __$$DeleteOrderDataAs404VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$DeleteOrderDataAs404Void extends DeleteOrderDataAs404Void {
-  const _$DeleteOrderDataAs404Void({required this.responseData}) : super._();
+class _$DeleteOrderDataAs404VoidImpl extends DeleteOrderDataAs404Void {
+  const _$DeleteOrderDataAs404VoidImpl({required this.responseData})
+      : super._();
 
   @override
   final Object? responseData;
@@ -5500,10 +5536,10 @@ class _$DeleteOrderDataAs404Void extends DeleteOrderDataAs404Void {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DeleteOrderDataAs404Void &&
+            other is _$DeleteOrderDataAs404VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -5515,10 +5551,9 @@ class _$DeleteOrderDataAs404Void extends DeleteOrderDataAs404Void {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$DeleteOrderDataAs404VoidCopyWith<_$DeleteOrderDataAs404Void>
-      get copyWith =>
-          __$$DeleteOrderDataAs404VoidCopyWithImpl<_$DeleteOrderDataAs404Void>(
-              this, _$identity);
+  _$$DeleteOrderDataAs404VoidImplCopyWith<_$DeleteOrderDataAs404VoidImpl>
+      get copyWith => __$$DeleteOrderDataAs404VoidImplCopyWithImpl<
+          _$DeleteOrderDataAs404VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5591,36 +5626,37 @@ class _$DeleteOrderDataAs404Void extends DeleteOrderDataAs404Void {
 
 abstract class DeleteOrderDataAs404Void extends DeleteOrderData {
   const factory DeleteOrderDataAs404Void(
-      {required final Object? responseData}) = _$DeleteOrderDataAs404Void;
+      {required final Object? responseData}) = _$DeleteOrderDataAs404VoidImpl;
   const DeleteOrderDataAs404Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$DeleteOrderDataAs404VoidCopyWith<_$DeleteOrderDataAs404Void>
+  _$$DeleteOrderDataAs404VoidImplCopyWith<_$DeleteOrderDataAs404VoidImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$DeleteOrderResponseUnknownCopyWith<$Res>
+abstract class _$$DeleteOrderResponseUnknownImplCopyWith<$Res>
     implements $DeleteOrderDataCopyWith<$Res> {
-  factory _$$DeleteOrderResponseUnknownCopyWith(
-          _$DeleteOrderResponseUnknown value,
-          $Res Function(_$DeleteOrderResponseUnknown) then) =
-      __$$DeleteOrderResponseUnknownCopyWithImpl<$Res>;
+  factory _$$DeleteOrderResponseUnknownImplCopyWith(
+          _$DeleteOrderResponseUnknownImpl value,
+          $Res Function(_$DeleteOrderResponseUnknownImpl) then) =
+      __$$DeleteOrderResponseUnknownImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$DeleteOrderResponseUnknownCopyWithImpl<$Res>
-    extends _$DeleteOrderDataCopyWithImpl<$Res, _$DeleteOrderResponseUnknown>
-    implements _$$DeleteOrderResponseUnknownCopyWith<$Res> {
-  __$$DeleteOrderResponseUnknownCopyWithImpl(
-      _$DeleteOrderResponseUnknown _value,
-      $Res Function(_$DeleteOrderResponseUnknown) _then)
+class __$$DeleteOrderResponseUnknownImplCopyWithImpl<$Res>
+    extends _$DeleteOrderDataCopyWithImpl<$Res,
+        _$DeleteOrderResponseUnknownImpl>
+    implements _$$DeleteOrderResponseUnknownImplCopyWith<$Res> {
+  __$$DeleteOrderResponseUnknownImplCopyWithImpl(
+      _$DeleteOrderResponseUnknownImpl _value,
+      $Res Function(_$DeleteOrderResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5629,7 +5665,7 @@ class __$$DeleteOrderResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$DeleteOrderResponseUnknown(
+    return _then(_$DeleteOrderResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -5642,8 +5678,8 @@ class __$$DeleteOrderResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$DeleteOrderResponseUnknown extends DeleteOrderResponseUnknown {
-  const _$DeleteOrderResponseUnknown(
+class _$DeleteOrderResponseUnknownImpl extends DeleteOrderResponseUnknown {
+  const _$DeleteOrderResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -5658,10 +5694,10 @@ class _$DeleteOrderResponseUnknown extends DeleteOrderResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DeleteOrderResponseUnknown &&
+            other is _$DeleteOrderResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -5675,9 +5711,9 @@ class _$DeleteOrderResponseUnknown extends DeleteOrderResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$DeleteOrderResponseUnknownCopyWith<_$DeleteOrderResponseUnknown>
-      get copyWith => __$$DeleteOrderResponseUnknownCopyWithImpl<
-          _$DeleteOrderResponseUnknown>(this, _$identity);
+  _$$DeleteOrderResponseUnknownImplCopyWith<_$DeleteOrderResponseUnknownImpl>
+      get copyWith => __$$DeleteOrderResponseUnknownImplCopyWithImpl<
+          _$DeleteOrderResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5751,7 +5787,7 @@ class _$DeleteOrderResponseUnknown extends DeleteOrderResponseUnknown {
 abstract class DeleteOrderResponseUnknown extends DeleteOrderData {
   const factory DeleteOrderResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$DeleteOrderResponseUnknown;
+      required final Object? responseData}) = _$DeleteOrderResponseUnknownImpl;
   const DeleteOrderResponseUnknown._() : super._();
 
   int? get statusCode;
@@ -5759,7 +5795,7 @@ abstract class DeleteOrderResponseUnknown extends DeleteOrderData {
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$DeleteOrderResponseUnknownCopyWith<_$DeleteOrderResponseUnknown>
+  _$$DeleteOrderResponseUnknownImplCopyWith<_$DeleteOrderResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -5825,20 +5861,21 @@ class _$GetInventoryDataCopyWithImpl<$Res, $Val extends GetInventoryData>
 }
 
 /// @nodoc
-abstract class _$$GetInventoryDataAs200CopyWith<$Res> {
-  factory _$$GetInventoryDataAs200CopyWith(_$GetInventoryDataAs200 value,
-          $Res Function(_$GetInventoryDataAs200) then) =
-      __$$GetInventoryDataAs200CopyWithImpl<$Res>;
+abstract class _$$GetInventoryDataAs200ImplCopyWith<$Res> {
+  factory _$$GetInventoryDataAs200ImplCopyWith(
+          _$GetInventoryDataAs200Impl value,
+          $Res Function(_$GetInventoryDataAs200Impl) then) =
+      __$$GetInventoryDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Map<String, int> responseData});
 }
 
 /// @nodoc
-class __$$GetInventoryDataAs200CopyWithImpl<$Res>
-    extends _$GetInventoryDataCopyWithImpl<$Res, _$GetInventoryDataAs200>
-    implements _$$GetInventoryDataAs200CopyWith<$Res> {
-  __$$GetInventoryDataAs200CopyWithImpl(_$GetInventoryDataAs200 _value,
-      $Res Function(_$GetInventoryDataAs200) _then)
+class __$$GetInventoryDataAs200ImplCopyWithImpl<$Res>
+    extends _$GetInventoryDataCopyWithImpl<$Res, _$GetInventoryDataAs200Impl>
+    implements _$$GetInventoryDataAs200ImplCopyWith<$Res> {
+  __$$GetInventoryDataAs200ImplCopyWithImpl(_$GetInventoryDataAs200Impl _value,
+      $Res Function(_$GetInventoryDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5846,7 +5883,7 @@ class __$$GetInventoryDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$GetInventoryDataAs200(
+    return _then(_$GetInventoryDataAs200Impl(
       responseData: null == responseData
           ? _value._responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -5857,8 +5894,9 @@ class __$$GetInventoryDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetInventoryDataAs200 extends GetInventoryDataAs200 {
-  const _$GetInventoryDataAs200({required final Map<String, int> responseData})
+class _$GetInventoryDataAs200Impl extends GetInventoryDataAs200 {
+  const _$GetInventoryDataAs200Impl(
+      {required final Map<String, int> responseData})
       : _responseData = responseData,
         super._();
 
@@ -5876,10 +5914,10 @@ class _$GetInventoryDataAs200 extends GetInventoryDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetInventoryDataAs200 &&
+            other is _$GetInventoryDataAs200Impl &&
             const DeepCollectionEquality()
                 .equals(other._responseData, _responseData));
   }
@@ -5891,9 +5929,9 @@ class _$GetInventoryDataAs200 extends GetInventoryDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetInventoryDataAs200CopyWith<_$GetInventoryDataAs200> get copyWith =>
-      __$$GetInventoryDataAs200CopyWithImpl<_$GetInventoryDataAs200>(
-          this, _$identity);
+  _$$GetInventoryDataAs200ImplCopyWith<_$GetInventoryDataAs200Impl>
+      get copyWith => __$$GetInventoryDataAs200ImplCopyWithImpl<
+          _$GetInventoryDataAs200Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5960,33 +5998,35 @@ class _$GetInventoryDataAs200 extends GetInventoryDataAs200 {
 
 abstract class GetInventoryDataAs200 extends GetInventoryData {
   const factory GetInventoryDataAs200(
-      {required final Map<String, int> responseData}) = _$GetInventoryDataAs200;
+          {required final Map<String, int> responseData}) =
+      _$GetInventoryDataAs200Impl;
   const GetInventoryDataAs200._() : super._();
 
   @override
   Map<String, int> get responseData;
   @JsonKey(ignore: true)
-  _$$GetInventoryDataAs200CopyWith<_$GetInventoryDataAs200> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetInventoryDataAs200ImplCopyWith<_$GetInventoryDataAs200Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetInventoryResponseUnknownCopyWith<$Res> {
-  factory _$$GetInventoryResponseUnknownCopyWith(
-          _$GetInventoryResponseUnknown value,
-          $Res Function(_$GetInventoryResponseUnknown) then) =
-      __$$GetInventoryResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$GetInventoryResponseUnknownImplCopyWith<$Res> {
+  factory _$$GetInventoryResponseUnknownImplCopyWith(
+          _$GetInventoryResponseUnknownImpl value,
+          $Res Function(_$GetInventoryResponseUnknownImpl) then) =
+      __$$GetInventoryResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$GetInventoryResponseUnknownCopyWithImpl<$Res>
-    extends _$GetInventoryDataCopyWithImpl<$Res, _$GetInventoryResponseUnknown>
-    implements _$$GetInventoryResponseUnknownCopyWith<$Res> {
-  __$$GetInventoryResponseUnknownCopyWithImpl(
-      _$GetInventoryResponseUnknown _value,
-      $Res Function(_$GetInventoryResponseUnknown) _then)
+class __$$GetInventoryResponseUnknownImplCopyWithImpl<$Res>
+    extends _$GetInventoryDataCopyWithImpl<$Res,
+        _$GetInventoryResponseUnknownImpl>
+    implements _$$GetInventoryResponseUnknownImplCopyWith<$Res> {
+  __$$GetInventoryResponseUnknownImplCopyWithImpl(
+      _$GetInventoryResponseUnknownImpl _value,
+      $Res Function(_$GetInventoryResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5995,7 +6035,7 @@ class __$$GetInventoryResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$GetInventoryResponseUnknown(
+    return _then(_$GetInventoryResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -6008,8 +6048,8 @@ class __$$GetInventoryResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetInventoryResponseUnknown extends GetInventoryResponseUnknown {
-  const _$GetInventoryResponseUnknown(
+class _$GetInventoryResponseUnknownImpl extends GetInventoryResponseUnknown {
+  const _$GetInventoryResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -6024,10 +6064,10 @@ class _$GetInventoryResponseUnknown extends GetInventoryResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetInventoryResponseUnknown &&
+            other is _$GetInventoryResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -6041,9 +6081,9 @@ class _$GetInventoryResponseUnknown extends GetInventoryResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetInventoryResponseUnknownCopyWith<_$GetInventoryResponseUnknown>
-      get copyWith => __$$GetInventoryResponseUnknownCopyWithImpl<
-          _$GetInventoryResponseUnknown>(this, _$identity);
+  _$$GetInventoryResponseUnknownImplCopyWith<_$GetInventoryResponseUnknownImpl>
+      get copyWith => __$$GetInventoryResponseUnknownImplCopyWithImpl<
+          _$GetInventoryResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6111,14 +6151,14 @@ class _$GetInventoryResponseUnknown extends GetInventoryResponseUnknown {
 abstract class GetInventoryResponseUnknown extends GetInventoryData {
   const factory GetInventoryResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$GetInventoryResponseUnknown;
+      required final Object? responseData}) = _$GetInventoryResponseUnknownImpl;
   const GetInventoryResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$GetInventoryResponseUnknownCopyWith<_$GetInventoryResponseUnknown>
+  _$$GetInventoryResponseUnknownImplCopyWith<_$GetInventoryResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -6196,10 +6236,11 @@ class _$GetOrderByIdDataCopyWithImpl<$Res, $Val extends GetOrderByIdData>
 }
 
 /// @nodoc
-abstract class _$$GetOrderByIdDataAs200CopyWith<$Res> {
-  factory _$$GetOrderByIdDataAs200CopyWith(_$GetOrderByIdDataAs200 value,
-          $Res Function(_$GetOrderByIdDataAs200) then) =
-      __$$GetOrderByIdDataAs200CopyWithImpl<$Res>;
+abstract class _$$GetOrderByIdDataAs200ImplCopyWith<$Res> {
+  factory _$$GetOrderByIdDataAs200ImplCopyWith(
+          _$GetOrderByIdDataAs200Impl value,
+          $Res Function(_$GetOrderByIdDataAs200Impl) then) =
+      __$$GetOrderByIdDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Order responseData});
 
@@ -6207,11 +6248,11 @@ abstract class _$$GetOrderByIdDataAs200CopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$GetOrderByIdDataAs200CopyWithImpl<$Res>
-    extends _$GetOrderByIdDataCopyWithImpl<$Res, _$GetOrderByIdDataAs200>
-    implements _$$GetOrderByIdDataAs200CopyWith<$Res> {
-  __$$GetOrderByIdDataAs200CopyWithImpl(_$GetOrderByIdDataAs200 _value,
-      $Res Function(_$GetOrderByIdDataAs200) _then)
+class __$$GetOrderByIdDataAs200ImplCopyWithImpl<$Res>
+    extends _$GetOrderByIdDataCopyWithImpl<$Res, _$GetOrderByIdDataAs200Impl>
+    implements _$$GetOrderByIdDataAs200ImplCopyWith<$Res> {
+  __$$GetOrderByIdDataAs200ImplCopyWithImpl(_$GetOrderByIdDataAs200Impl _value,
+      $Res Function(_$GetOrderByIdDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -6219,7 +6260,7 @@ class __$$GetOrderByIdDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$GetOrderByIdDataAs200(
+    return _then(_$GetOrderByIdDataAs200Impl(
       responseData: null == responseData
           ? _value.responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -6238,8 +6279,8 @@ class __$$GetOrderByIdDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetOrderByIdDataAs200 extends GetOrderByIdDataAs200 {
-  const _$GetOrderByIdDataAs200({required this.responseData}) : super._();
+class _$GetOrderByIdDataAs200Impl extends GetOrderByIdDataAs200 {
+  const _$GetOrderByIdDataAs200Impl({required this.responseData}) : super._();
 
   @override
   final Order responseData;
@@ -6250,10 +6291,10 @@ class _$GetOrderByIdDataAs200 extends GetOrderByIdDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetOrderByIdDataAs200 &&
+            other is _$GetOrderByIdDataAs200Impl &&
             (identical(other.responseData, responseData) ||
                 other.responseData == responseData));
   }
@@ -6264,9 +6305,9 @@ class _$GetOrderByIdDataAs200 extends GetOrderByIdDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetOrderByIdDataAs200CopyWith<_$GetOrderByIdDataAs200> get copyWith =>
-      __$$GetOrderByIdDataAs200CopyWithImpl<_$GetOrderByIdDataAs200>(
-          this, _$identity);
+  _$$GetOrderByIdDataAs200ImplCopyWith<_$GetOrderByIdDataAs200Impl>
+      get copyWith => __$$GetOrderByIdDataAs200ImplCopyWithImpl<
+          _$GetOrderByIdDataAs200Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6345,31 +6386,32 @@ class _$GetOrderByIdDataAs200 extends GetOrderByIdDataAs200 {
 
 abstract class GetOrderByIdDataAs200 extends GetOrderByIdData {
   const factory GetOrderByIdDataAs200({required final Order responseData}) =
-      _$GetOrderByIdDataAs200;
+      _$GetOrderByIdDataAs200Impl;
   const GetOrderByIdDataAs200._() : super._();
 
   @override
   Order get responseData;
   @JsonKey(ignore: true)
-  _$$GetOrderByIdDataAs200CopyWith<_$GetOrderByIdDataAs200> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetOrderByIdDataAs200ImplCopyWith<_$GetOrderByIdDataAs200Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetOrderByIdDataAs400CopyWith<$Res> {
-  factory _$$GetOrderByIdDataAs400CopyWith(_$GetOrderByIdDataAs400 value,
-          $Res Function(_$GetOrderByIdDataAs400) then) =
-      __$$GetOrderByIdDataAs400CopyWithImpl<$Res>;
+abstract class _$$GetOrderByIdDataAs400ImplCopyWith<$Res> {
+  factory _$$GetOrderByIdDataAs400ImplCopyWith(
+          _$GetOrderByIdDataAs400Impl value,
+          $Res Function(_$GetOrderByIdDataAs400Impl) then) =
+      __$$GetOrderByIdDataAs400ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$GetOrderByIdDataAs400CopyWithImpl<$Res>
-    extends _$GetOrderByIdDataCopyWithImpl<$Res, _$GetOrderByIdDataAs400>
-    implements _$$GetOrderByIdDataAs400CopyWith<$Res> {
-  __$$GetOrderByIdDataAs400CopyWithImpl(_$GetOrderByIdDataAs400 _value,
-      $Res Function(_$GetOrderByIdDataAs400) _then)
+class __$$GetOrderByIdDataAs400ImplCopyWithImpl<$Res>
+    extends _$GetOrderByIdDataCopyWithImpl<$Res, _$GetOrderByIdDataAs400Impl>
+    implements _$$GetOrderByIdDataAs400ImplCopyWith<$Res> {
+  __$$GetOrderByIdDataAs400ImplCopyWithImpl(_$GetOrderByIdDataAs400Impl _value,
+      $Res Function(_$GetOrderByIdDataAs400Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -6377,7 +6419,7 @@ class __$$GetOrderByIdDataAs400CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$GetOrderByIdDataAs400(
+    return _then(_$GetOrderByIdDataAs400Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -6386,8 +6428,8 @@ class __$$GetOrderByIdDataAs400CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetOrderByIdDataAs400 extends GetOrderByIdDataAs400 {
-  const _$GetOrderByIdDataAs400({required this.responseData}) : super._();
+class _$GetOrderByIdDataAs400Impl extends GetOrderByIdDataAs400 {
+  const _$GetOrderByIdDataAs400Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -6398,10 +6440,10 @@ class _$GetOrderByIdDataAs400 extends GetOrderByIdDataAs400 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetOrderByIdDataAs400 &&
+            other is _$GetOrderByIdDataAs400Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -6413,9 +6455,9 @@ class _$GetOrderByIdDataAs400 extends GetOrderByIdDataAs400 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetOrderByIdDataAs400CopyWith<_$GetOrderByIdDataAs400> get copyWith =>
-      __$$GetOrderByIdDataAs400CopyWithImpl<_$GetOrderByIdDataAs400>(
-          this, _$identity);
+  _$$GetOrderByIdDataAs400ImplCopyWith<_$GetOrderByIdDataAs400Impl>
+      get copyWith => __$$GetOrderByIdDataAs400ImplCopyWithImpl<
+          _$GetOrderByIdDataAs400Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6494,31 +6536,32 @@ class _$GetOrderByIdDataAs400 extends GetOrderByIdDataAs400 {
 
 abstract class GetOrderByIdDataAs400 extends GetOrderByIdData {
   const factory GetOrderByIdDataAs400({required final Object? responseData}) =
-      _$GetOrderByIdDataAs400;
+      _$GetOrderByIdDataAs400Impl;
   const GetOrderByIdDataAs400._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$GetOrderByIdDataAs400CopyWith<_$GetOrderByIdDataAs400> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetOrderByIdDataAs400ImplCopyWith<_$GetOrderByIdDataAs400Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetOrderByIdDataAs404CopyWith<$Res> {
-  factory _$$GetOrderByIdDataAs404CopyWith(_$GetOrderByIdDataAs404 value,
-          $Res Function(_$GetOrderByIdDataAs404) then) =
-      __$$GetOrderByIdDataAs404CopyWithImpl<$Res>;
+abstract class _$$GetOrderByIdDataAs404ImplCopyWith<$Res> {
+  factory _$$GetOrderByIdDataAs404ImplCopyWith(
+          _$GetOrderByIdDataAs404Impl value,
+          $Res Function(_$GetOrderByIdDataAs404Impl) then) =
+      __$$GetOrderByIdDataAs404ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$GetOrderByIdDataAs404CopyWithImpl<$Res>
-    extends _$GetOrderByIdDataCopyWithImpl<$Res, _$GetOrderByIdDataAs404>
-    implements _$$GetOrderByIdDataAs404CopyWith<$Res> {
-  __$$GetOrderByIdDataAs404CopyWithImpl(_$GetOrderByIdDataAs404 _value,
-      $Res Function(_$GetOrderByIdDataAs404) _then)
+class __$$GetOrderByIdDataAs404ImplCopyWithImpl<$Res>
+    extends _$GetOrderByIdDataCopyWithImpl<$Res, _$GetOrderByIdDataAs404Impl>
+    implements _$$GetOrderByIdDataAs404ImplCopyWith<$Res> {
+  __$$GetOrderByIdDataAs404ImplCopyWithImpl(_$GetOrderByIdDataAs404Impl _value,
+      $Res Function(_$GetOrderByIdDataAs404Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -6526,7 +6569,7 @@ class __$$GetOrderByIdDataAs404CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$GetOrderByIdDataAs404(
+    return _then(_$GetOrderByIdDataAs404Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -6535,8 +6578,8 @@ class __$$GetOrderByIdDataAs404CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetOrderByIdDataAs404 extends GetOrderByIdDataAs404 {
-  const _$GetOrderByIdDataAs404({required this.responseData}) : super._();
+class _$GetOrderByIdDataAs404Impl extends GetOrderByIdDataAs404 {
+  const _$GetOrderByIdDataAs404Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -6547,10 +6590,10 @@ class _$GetOrderByIdDataAs404 extends GetOrderByIdDataAs404 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetOrderByIdDataAs404 &&
+            other is _$GetOrderByIdDataAs404Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -6562,9 +6605,9 @@ class _$GetOrderByIdDataAs404 extends GetOrderByIdDataAs404 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetOrderByIdDataAs404CopyWith<_$GetOrderByIdDataAs404> get copyWith =>
-      __$$GetOrderByIdDataAs404CopyWithImpl<_$GetOrderByIdDataAs404>(
-          this, _$identity);
+  _$$GetOrderByIdDataAs404ImplCopyWith<_$GetOrderByIdDataAs404Impl>
+      get copyWith => __$$GetOrderByIdDataAs404ImplCopyWithImpl<
+          _$GetOrderByIdDataAs404Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6643,33 +6686,34 @@ class _$GetOrderByIdDataAs404 extends GetOrderByIdDataAs404 {
 
 abstract class GetOrderByIdDataAs404 extends GetOrderByIdData {
   const factory GetOrderByIdDataAs404({required final Object? responseData}) =
-      _$GetOrderByIdDataAs404;
+      _$GetOrderByIdDataAs404Impl;
   const GetOrderByIdDataAs404._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$GetOrderByIdDataAs404CopyWith<_$GetOrderByIdDataAs404> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetOrderByIdDataAs404ImplCopyWith<_$GetOrderByIdDataAs404Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetOrderByIdResponseUnknownCopyWith<$Res> {
-  factory _$$GetOrderByIdResponseUnknownCopyWith(
-          _$GetOrderByIdResponseUnknown value,
-          $Res Function(_$GetOrderByIdResponseUnknown) then) =
-      __$$GetOrderByIdResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$GetOrderByIdResponseUnknownImplCopyWith<$Res> {
+  factory _$$GetOrderByIdResponseUnknownImplCopyWith(
+          _$GetOrderByIdResponseUnknownImpl value,
+          $Res Function(_$GetOrderByIdResponseUnknownImpl) then) =
+      __$$GetOrderByIdResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$GetOrderByIdResponseUnknownCopyWithImpl<$Res>
-    extends _$GetOrderByIdDataCopyWithImpl<$Res, _$GetOrderByIdResponseUnknown>
-    implements _$$GetOrderByIdResponseUnknownCopyWith<$Res> {
-  __$$GetOrderByIdResponseUnknownCopyWithImpl(
-      _$GetOrderByIdResponseUnknown _value,
-      $Res Function(_$GetOrderByIdResponseUnknown) _then)
+class __$$GetOrderByIdResponseUnknownImplCopyWithImpl<$Res>
+    extends _$GetOrderByIdDataCopyWithImpl<$Res,
+        _$GetOrderByIdResponseUnknownImpl>
+    implements _$$GetOrderByIdResponseUnknownImplCopyWith<$Res> {
+  __$$GetOrderByIdResponseUnknownImplCopyWithImpl(
+      _$GetOrderByIdResponseUnknownImpl _value,
+      $Res Function(_$GetOrderByIdResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -6678,7 +6722,7 @@ class __$$GetOrderByIdResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$GetOrderByIdResponseUnknown(
+    return _then(_$GetOrderByIdResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -6691,8 +6735,8 @@ class __$$GetOrderByIdResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetOrderByIdResponseUnknown extends GetOrderByIdResponseUnknown {
-  const _$GetOrderByIdResponseUnknown(
+class _$GetOrderByIdResponseUnknownImpl extends GetOrderByIdResponseUnknown {
+  const _$GetOrderByIdResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -6707,10 +6751,10 @@ class _$GetOrderByIdResponseUnknown extends GetOrderByIdResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetOrderByIdResponseUnknown &&
+            other is _$GetOrderByIdResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -6724,9 +6768,9 @@ class _$GetOrderByIdResponseUnknown extends GetOrderByIdResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetOrderByIdResponseUnknownCopyWith<_$GetOrderByIdResponseUnknown>
-      get copyWith => __$$GetOrderByIdResponseUnknownCopyWithImpl<
-          _$GetOrderByIdResponseUnknown>(this, _$identity);
+  _$$GetOrderByIdResponseUnknownImplCopyWith<_$GetOrderByIdResponseUnknownImpl>
+      get copyWith => __$$GetOrderByIdResponseUnknownImplCopyWithImpl<
+          _$GetOrderByIdResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6806,14 +6850,14 @@ class _$GetOrderByIdResponseUnknown extends GetOrderByIdResponseUnknown {
 abstract class GetOrderByIdResponseUnknown extends GetOrderByIdData {
   const factory GetOrderByIdResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$GetOrderByIdResponseUnknown;
+      required final Object? responseData}) = _$GetOrderByIdResponseUnknownImpl;
   const GetOrderByIdResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$GetOrderByIdResponseUnknownCopyWith<_$GetOrderByIdResponseUnknown>
+  _$$GetOrderByIdResponseUnknownImplCopyWith<_$GetOrderByIdResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -6885,10 +6929,10 @@ class _$PlaceOrderDataCopyWithImpl<$Res, $Val extends PlaceOrderData>
 }
 
 /// @nodoc
-abstract class _$$PlaceOrderDataAs200CopyWith<$Res> {
-  factory _$$PlaceOrderDataAs200CopyWith(_$PlaceOrderDataAs200 value,
-          $Res Function(_$PlaceOrderDataAs200) then) =
-      __$$PlaceOrderDataAs200CopyWithImpl<$Res>;
+abstract class _$$PlaceOrderDataAs200ImplCopyWith<$Res> {
+  factory _$$PlaceOrderDataAs200ImplCopyWith(_$PlaceOrderDataAs200Impl value,
+          $Res Function(_$PlaceOrderDataAs200Impl) then) =
+      __$$PlaceOrderDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Order responseData});
 
@@ -6896,11 +6940,11 @@ abstract class _$$PlaceOrderDataAs200CopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$PlaceOrderDataAs200CopyWithImpl<$Res>
-    extends _$PlaceOrderDataCopyWithImpl<$Res, _$PlaceOrderDataAs200>
-    implements _$$PlaceOrderDataAs200CopyWith<$Res> {
-  __$$PlaceOrderDataAs200CopyWithImpl(
-      _$PlaceOrderDataAs200 _value, $Res Function(_$PlaceOrderDataAs200) _then)
+class __$$PlaceOrderDataAs200ImplCopyWithImpl<$Res>
+    extends _$PlaceOrderDataCopyWithImpl<$Res, _$PlaceOrderDataAs200Impl>
+    implements _$$PlaceOrderDataAs200ImplCopyWith<$Res> {
+  __$$PlaceOrderDataAs200ImplCopyWithImpl(_$PlaceOrderDataAs200Impl _value,
+      $Res Function(_$PlaceOrderDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -6908,7 +6952,7 @@ class __$$PlaceOrderDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$PlaceOrderDataAs200(
+    return _then(_$PlaceOrderDataAs200Impl(
       responseData: null == responseData
           ? _value.responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -6927,8 +6971,8 @@ class __$$PlaceOrderDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$PlaceOrderDataAs200 extends PlaceOrderDataAs200 {
-  const _$PlaceOrderDataAs200({required this.responseData}) : super._();
+class _$PlaceOrderDataAs200Impl extends PlaceOrderDataAs200 {
+  const _$PlaceOrderDataAs200Impl({required this.responseData}) : super._();
 
   @override
   final Order responseData;
@@ -6939,10 +6983,10 @@ class _$PlaceOrderDataAs200 extends PlaceOrderDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$PlaceOrderDataAs200 &&
+            other is _$PlaceOrderDataAs200Impl &&
             (identical(other.responseData, responseData) ||
                 other.responseData == responseData));
   }
@@ -6953,8 +6997,8 @@ class _$PlaceOrderDataAs200 extends PlaceOrderDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$PlaceOrderDataAs200CopyWith<_$PlaceOrderDataAs200> get copyWith =>
-      __$$PlaceOrderDataAs200CopyWithImpl<_$PlaceOrderDataAs200>(
+  _$$PlaceOrderDataAs200ImplCopyWith<_$PlaceOrderDataAs200Impl> get copyWith =>
+      __$$PlaceOrderDataAs200ImplCopyWithImpl<_$PlaceOrderDataAs200Impl>(
           this, _$identity);
 
   @override
@@ -7028,31 +7072,31 @@ class _$PlaceOrderDataAs200 extends PlaceOrderDataAs200 {
 
 abstract class PlaceOrderDataAs200 extends PlaceOrderData {
   const factory PlaceOrderDataAs200({required final Order responseData}) =
-      _$PlaceOrderDataAs200;
+      _$PlaceOrderDataAs200Impl;
   const PlaceOrderDataAs200._() : super._();
 
   @override
   Order get responseData;
   @JsonKey(ignore: true)
-  _$$PlaceOrderDataAs200CopyWith<_$PlaceOrderDataAs200> get copyWith =>
+  _$$PlaceOrderDataAs200ImplCopyWith<_$PlaceOrderDataAs200Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$PlaceOrderDataAs400CopyWith<$Res> {
-  factory _$$PlaceOrderDataAs400CopyWith(_$PlaceOrderDataAs400 value,
-          $Res Function(_$PlaceOrderDataAs400) then) =
-      __$$PlaceOrderDataAs400CopyWithImpl<$Res>;
+abstract class _$$PlaceOrderDataAs400ImplCopyWith<$Res> {
+  factory _$$PlaceOrderDataAs400ImplCopyWith(_$PlaceOrderDataAs400Impl value,
+          $Res Function(_$PlaceOrderDataAs400Impl) then) =
+      __$$PlaceOrderDataAs400ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$PlaceOrderDataAs400CopyWithImpl<$Res>
-    extends _$PlaceOrderDataCopyWithImpl<$Res, _$PlaceOrderDataAs400>
-    implements _$$PlaceOrderDataAs400CopyWith<$Res> {
-  __$$PlaceOrderDataAs400CopyWithImpl(
-      _$PlaceOrderDataAs400 _value, $Res Function(_$PlaceOrderDataAs400) _then)
+class __$$PlaceOrderDataAs400ImplCopyWithImpl<$Res>
+    extends _$PlaceOrderDataCopyWithImpl<$Res, _$PlaceOrderDataAs400Impl>
+    implements _$$PlaceOrderDataAs400ImplCopyWith<$Res> {
+  __$$PlaceOrderDataAs400ImplCopyWithImpl(_$PlaceOrderDataAs400Impl _value,
+      $Res Function(_$PlaceOrderDataAs400Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7060,7 +7104,7 @@ class __$$PlaceOrderDataAs400CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$PlaceOrderDataAs400(
+    return _then(_$PlaceOrderDataAs400Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -7069,8 +7113,8 @@ class __$$PlaceOrderDataAs400CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$PlaceOrderDataAs400 extends PlaceOrderDataAs400 {
-  const _$PlaceOrderDataAs400({required this.responseData}) : super._();
+class _$PlaceOrderDataAs400Impl extends PlaceOrderDataAs400 {
+  const _$PlaceOrderDataAs400Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -7081,10 +7125,10 @@ class _$PlaceOrderDataAs400 extends PlaceOrderDataAs400 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$PlaceOrderDataAs400 &&
+            other is _$PlaceOrderDataAs400Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -7096,8 +7140,8 @@ class _$PlaceOrderDataAs400 extends PlaceOrderDataAs400 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$PlaceOrderDataAs400CopyWith<_$PlaceOrderDataAs400> get copyWith =>
-      __$$PlaceOrderDataAs400CopyWithImpl<_$PlaceOrderDataAs400>(
+  _$$PlaceOrderDataAs400ImplCopyWith<_$PlaceOrderDataAs400Impl> get copyWith =>
+      __$$PlaceOrderDataAs400ImplCopyWithImpl<_$PlaceOrderDataAs400Impl>(
           this, _$identity);
 
   @override
@@ -7171,32 +7215,33 @@ class _$PlaceOrderDataAs400 extends PlaceOrderDataAs400 {
 
 abstract class PlaceOrderDataAs400 extends PlaceOrderData {
   const factory PlaceOrderDataAs400({required final Object? responseData}) =
-      _$PlaceOrderDataAs400;
+      _$PlaceOrderDataAs400Impl;
   const PlaceOrderDataAs400._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$PlaceOrderDataAs400CopyWith<_$PlaceOrderDataAs400> get copyWith =>
+  _$$PlaceOrderDataAs400ImplCopyWith<_$PlaceOrderDataAs400Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$PlaceOrderResponseUnknownCopyWith<$Res> {
-  factory _$$PlaceOrderResponseUnknownCopyWith(
-          _$PlaceOrderResponseUnknown value,
-          $Res Function(_$PlaceOrderResponseUnknown) then) =
-      __$$PlaceOrderResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$PlaceOrderResponseUnknownImplCopyWith<$Res> {
+  factory _$$PlaceOrderResponseUnknownImplCopyWith(
+          _$PlaceOrderResponseUnknownImpl value,
+          $Res Function(_$PlaceOrderResponseUnknownImpl) then) =
+      __$$PlaceOrderResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$PlaceOrderResponseUnknownCopyWithImpl<$Res>
-    extends _$PlaceOrderDataCopyWithImpl<$Res, _$PlaceOrderResponseUnknown>
-    implements _$$PlaceOrderResponseUnknownCopyWith<$Res> {
-  __$$PlaceOrderResponseUnknownCopyWithImpl(_$PlaceOrderResponseUnknown _value,
-      $Res Function(_$PlaceOrderResponseUnknown) _then)
+class __$$PlaceOrderResponseUnknownImplCopyWithImpl<$Res>
+    extends _$PlaceOrderDataCopyWithImpl<$Res, _$PlaceOrderResponseUnknownImpl>
+    implements _$$PlaceOrderResponseUnknownImplCopyWith<$Res> {
+  __$$PlaceOrderResponseUnknownImplCopyWithImpl(
+      _$PlaceOrderResponseUnknownImpl _value,
+      $Res Function(_$PlaceOrderResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7205,7 +7250,7 @@ class __$$PlaceOrderResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$PlaceOrderResponseUnknown(
+    return _then(_$PlaceOrderResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -7218,8 +7263,8 @@ class __$$PlaceOrderResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$PlaceOrderResponseUnknown extends PlaceOrderResponseUnknown {
-  const _$PlaceOrderResponseUnknown(
+class _$PlaceOrderResponseUnknownImpl extends PlaceOrderResponseUnknown {
+  const _$PlaceOrderResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -7234,10 +7279,10 @@ class _$PlaceOrderResponseUnknown extends PlaceOrderResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$PlaceOrderResponseUnknown &&
+            other is _$PlaceOrderResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -7251,9 +7296,9 @@ class _$PlaceOrderResponseUnknown extends PlaceOrderResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$PlaceOrderResponseUnknownCopyWith<_$PlaceOrderResponseUnknown>
-      get copyWith => __$$PlaceOrderResponseUnknownCopyWithImpl<
-          _$PlaceOrderResponseUnknown>(this, _$identity);
+  _$$PlaceOrderResponseUnknownImplCopyWith<_$PlaceOrderResponseUnknownImpl>
+      get copyWith => __$$PlaceOrderResponseUnknownImplCopyWithImpl<
+          _$PlaceOrderResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7327,14 +7372,14 @@ class _$PlaceOrderResponseUnknown extends PlaceOrderResponseUnknown {
 abstract class PlaceOrderResponseUnknown extends PlaceOrderData {
   const factory PlaceOrderResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$PlaceOrderResponseUnknown;
+      required final Object? responseData}) = _$PlaceOrderResponseUnknownImpl;
   const PlaceOrderResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$PlaceOrderResponseUnknownCopyWith<_$PlaceOrderResponseUnknown>
+  _$$PlaceOrderResponseUnknownImplCopyWith<_$PlaceOrderResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -7417,22 +7462,23 @@ class _$CreateUserDataCopyWithImpl<$Res, $Val extends CreateUserData>
 }
 
 /// @nodoc
-abstract class _$$CreateUserDataAs0VoidCopyWith<$Res>
+abstract class _$$CreateUserDataAs0VoidImplCopyWith<$Res>
     implements $CreateUserDataCopyWith<$Res> {
-  factory _$$CreateUserDataAs0VoidCopyWith(_$CreateUserDataAs0Void value,
-          $Res Function(_$CreateUserDataAs0Void) then) =
-      __$$CreateUserDataAs0VoidCopyWithImpl<$Res>;
+  factory _$$CreateUserDataAs0VoidImplCopyWith(
+          _$CreateUserDataAs0VoidImpl value,
+          $Res Function(_$CreateUserDataAs0VoidImpl) then) =
+      __$$CreateUserDataAs0VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$CreateUserDataAs0VoidCopyWithImpl<$Res>
-    extends _$CreateUserDataCopyWithImpl<$Res, _$CreateUserDataAs0Void>
-    implements _$$CreateUserDataAs0VoidCopyWith<$Res> {
-  __$$CreateUserDataAs0VoidCopyWithImpl(_$CreateUserDataAs0Void _value,
-      $Res Function(_$CreateUserDataAs0Void) _then)
+class __$$CreateUserDataAs0VoidImplCopyWithImpl<$Res>
+    extends _$CreateUserDataCopyWithImpl<$Res, _$CreateUserDataAs0VoidImpl>
+    implements _$$CreateUserDataAs0VoidImplCopyWith<$Res> {
+  __$$CreateUserDataAs0VoidImplCopyWithImpl(_$CreateUserDataAs0VoidImpl _value,
+      $Res Function(_$CreateUserDataAs0VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7440,7 +7486,7 @@ class __$$CreateUserDataAs0VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$CreateUserDataAs0Void(
+    return _then(_$CreateUserDataAs0VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -7449,8 +7495,8 @@ class __$$CreateUserDataAs0VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$CreateUserDataAs0Void extends CreateUserDataAs0Void {
-  const _$CreateUserDataAs0Void({required this.responseData}) : super._();
+class _$CreateUserDataAs0VoidImpl extends CreateUserDataAs0Void {
+  const _$CreateUserDataAs0VoidImpl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -7461,10 +7507,10 @@ class _$CreateUserDataAs0Void extends CreateUserDataAs0Void {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CreateUserDataAs0Void &&
+            other is _$CreateUserDataAs0VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -7476,9 +7522,9 @@ class _$CreateUserDataAs0Void extends CreateUserDataAs0Void {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$CreateUserDataAs0VoidCopyWith<_$CreateUserDataAs0Void> get copyWith =>
-      __$$CreateUserDataAs0VoidCopyWithImpl<_$CreateUserDataAs0Void>(
-          this, _$identity);
+  _$$CreateUserDataAs0VoidImplCopyWith<_$CreateUserDataAs0VoidImpl>
+      get copyWith => __$$CreateUserDataAs0VoidImplCopyWithImpl<
+          _$CreateUserDataAs0VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7545,35 +7591,36 @@ class _$CreateUserDataAs0Void extends CreateUserDataAs0Void {
 
 abstract class CreateUserDataAs0Void extends CreateUserData {
   const factory CreateUserDataAs0Void({required final Object? responseData}) =
-      _$CreateUserDataAs0Void;
+      _$CreateUserDataAs0VoidImpl;
   const CreateUserDataAs0Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$CreateUserDataAs0VoidCopyWith<_$CreateUserDataAs0Void> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$CreateUserDataAs0VoidImplCopyWith<_$CreateUserDataAs0VoidImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$CreateUserResponseUnknownCopyWith<$Res>
+abstract class _$$CreateUserResponseUnknownImplCopyWith<$Res>
     implements $CreateUserDataCopyWith<$Res> {
-  factory _$$CreateUserResponseUnknownCopyWith(
-          _$CreateUserResponseUnknown value,
-          $Res Function(_$CreateUserResponseUnknown) then) =
-      __$$CreateUserResponseUnknownCopyWithImpl<$Res>;
+  factory _$$CreateUserResponseUnknownImplCopyWith(
+          _$CreateUserResponseUnknownImpl value,
+          $Res Function(_$CreateUserResponseUnknownImpl) then) =
+      __$$CreateUserResponseUnknownImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$CreateUserResponseUnknownCopyWithImpl<$Res>
-    extends _$CreateUserDataCopyWithImpl<$Res, _$CreateUserResponseUnknown>
-    implements _$$CreateUserResponseUnknownCopyWith<$Res> {
-  __$$CreateUserResponseUnknownCopyWithImpl(_$CreateUserResponseUnknown _value,
-      $Res Function(_$CreateUserResponseUnknown) _then)
+class __$$CreateUserResponseUnknownImplCopyWithImpl<$Res>
+    extends _$CreateUserDataCopyWithImpl<$Res, _$CreateUserResponseUnknownImpl>
+    implements _$$CreateUserResponseUnknownImplCopyWith<$Res> {
+  __$$CreateUserResponseUnknownImplCopyWithImpl(
+      _$CreateUserResponseUnknownImpl _value,
+      $Res Function(_$CreateUserResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7582,7 +7629,7 @@ class __$$CreateUserResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$CreateUserResponseUnknown(
+    return _then(_$CreateUserResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -7595,8 +7642,8 @@ class __$$CreateUserResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$CreateUserResponseUnknown extends CreateUserResponseUnknown {
-  const _$CreateUserResponseUnknown(
+class _$CreateUserResponseUnknownImpl extends CreateUserResponseUnknown {
+  const _$CreateUserResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -7611,10 +7658,10 @@ class _$CreateUserResponseUnknown extends CreateUserResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CreateUserResponseUnknown &&
+            other is _$CreateUserResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -7628,9 +7675,9 @@ class _$CreateUserResponseUnknown extends CreateUserResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$CreateUserResponseUnknownCopyWith<_$CreateUserResponseUnknown>
-      get copyWith => __$$CreateUserResponseUnknownCopyWithImpl<
-          _$CreateUserResponseUnknown>(this, _$identity);
+  _$$CreateUserResponseUnknownImplCopyWith<_$CreateUserResponseUnknownImpl>
+      get copyWith => __$$CreateUserResponseUnknownImplCopyWithImpl<
+          _$CreateUserResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7698,7 +7745,7 @@ class _$CreateUserResponseUnknown extends CreateUserResponseUnknown {
 abstract class CreateUserResponseUnknown extends CreateUserData {
   const factory CreateUserResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$CreateUserResponseUnknown;
+      required final Object? responseData}) = _$CreateUserResponseUnknownImpl;
   const CreateUserResponseUnknown._() : super._();
 
   int? get statusCode;
@@ -7706,7 +7753,7 @@ abstract class CreateUserResponseUnknown extends CreateUserData {
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$CreateUserResponseUnknownCopyWith<_$CreateUserResponseUnknown>
+  _$$CreateUserResponseUnknownImplCopyWith<_$CreateUserResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -7794,25 +7841,25 @@ class _$CreateUsersWithArrayInputDataCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$CreateUsersWithArrayInputDataAs0VoidCopyWith<$Res>
+abstract class _$$CreateUsersWithArrayInputDataAs0VoidImplCopyWith<$Res>
     implements $CreateUsersWithArrayInputDataCopyWith<$Res> {
-  factory _$$CreateUsersWithArrayInputDataAs0VoidCopyWith(
-          _$CreateUsersWithArrayInputDataAs0Void value,
-          $Res Function(_$CreateUsersWithArrayInputDataAs0Void) then) =
-      __$$CreateUsersWithArrayInputDataAs0VoidCopyWithImpl<$Res>;
+  factory _$$CreateUsersWithArrayInputDataAs0VoidImplCopyWith(
+          _$CreateUsersWithArrayInputDataAs0VoidImpl value,
+          $Res Function(_$CreateUsersWithArrayInputDataAs0VoidImpl) then) =
+      __$$CreateUsersWithArrayInputDataAs0VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$CreateUsersWithArrayInputDataAs0VoidCopyWithImpl<$Res>
+class __$$CreateUsersWithArrayInputDataAs0VoidImplCopyWithImpl<$Res>
     extends _$CreateUsersWithArrayInputDataCopyWithImpl<$Res,
-        _$CreateUsersWithArrayInputDataAs0Void>
-    implements _$$CreateUsersWithArrayInputDataAs0VoidCopyWith<$Res> {
-  __$$CreateUsersWithArrayInputDataAs0VoidCopyWithImpl(
-      _$CreateUsersWithArrayInputDataAs0Void _value,
-      $Res Function(_$CreateUsersWithArrayInputDataAs0Void) _then)
+        _$CreateUsersWithArrayInputDataAs0VoidImpl>
+    implements _$$CreateUsersWithArrayInputDataAs0VoidImplCopyWith<$Res> {
+  __$$CreateUsersWithArrayInputDataAs0VoidImplCopyWithImpl(
+      _$CreateUsersWithArrayInputDataAs0VoidImpl _value,
+      $Res Function(_$CreateUsersWithArrayInputDataAs0VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7820,7 +7867,7 @@ class __$$CreateUsersWithArrayInputDataAs0VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$CreateUsersWithArrayInputDataAs0Void(
+    return _then(_$CreateUsersWithArrayInputDataAs0VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -7829,9 +7876,9 @@ class __$$CreateUsersWithArrayInputDataAs0VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$CreateUsersWithArrayInputDataAs0Void
+class _$CreateUsersWithArrayInputDataAs0VoidImpl
     extends CreateUsersWithArrayInputDataAs0Void {
-  const _$CreateUsersWithArrayInputDataAs0Void({required this.responseData})
+  const _$CreateUsersWithArrayInputDataAs0VoidImpl({required this.responseData})
       : super._();
 
   @override
@@ -7843,10 +7890,10 @@ class _$CreateUsersWithArrayInputDataAs0Void
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CreateUsersWithArrayInputDataAs0Void &&
+            other is _$CreateUsersWithArrayInputDataAs0VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -7858,10 +7905,10 @@ class _$CreateUsersWithArrayInputDataAs0Void
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$CreateUsersWithArrayInputDataAs0VoidCopyWith<
-          _$CreateUsersWithArrayInputDataAs0Void>
-      get copyWith => __$$CreateUsersWithArrayInputDataAs0VoidCopyWithImpl<
-          _$CreateUsersWithArrayInputDataAs0Void>(this, _$identity);
+  _$$CreateUsersWithArrayInputDataAs0VoidImplCopyWith<
+          _$CreateUsersWithArrayInputDataAs0VoidImpl>
+      get copyWith => __$$CreateUsersWithArrayInputDataAs0VoidImplCopyWithImpl<
+          _$CreateUsersWithArrayInputDataAs0VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7932,38 +7979,38 @@ abstract class CreateUsersWithArrayInputDataAs0Void
     extends CreateUsersWithArrayInputData {
   const factory CreateUsersWithArrayInputDataAs0Void(
           {required final Object? responseData}) =
-      _$CreateUsersWithArrayInputDataAs0Void;
+      _$CreateUsersWithArrayInputDataAs0VoidImpl;
   const CreateUsersWithArrayInputDataAs0Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$CreateUsersWithArrayInputDataAs0VoidCopyWith<
-          _$CreateUsersWithArrayInputDataAs0Void>
+  _$$CreateUsersWithArrayInputDataAs0VoidImplCopyWith<
+          _$CreateUsersWithArrayInputDataAs0VoidImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$CreateUsersWithArrayInputResponseUnknownCopyWith<$Res>
+abstract class _$$CreateUsersWithArrayInputResponseUnknownImplCopyWith<$Res>
     implements $CreateUsersWithArrayInputDataCopyWith<$Res> {
-  factory _$$CreateUsersWithArrayInputResponseUnknownCopyWith(
-          _$CreateUsersWithArrayInputResponseUnknown value,
-          $Res Function(_$CreateUsersWithArrayInputResponseUnknown) then) =
-      __$$CreateUsersWithArrayInputResponseUnknownCopyWithImpl<$Res>;
+  factory _$$CreateUsersWithArrayInputResponseUnknownImplCopyWith(
+          _$CreateUsersWithArrayInputResponseUnknownImpl value,
+          $Res Function(_$CreateUsersWithArrayInputResponseUnknownImpl) then) =
+      __$$CreateUsersWithArrayInputResponseUnknownImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$CreateUsersWithArrayInputResponseUnknownCopyWithImpl<$Res>
+class __$$CreateUsersWithArrayInputResponseUnknownImplCopyWithImpl<$Res>
     extends _$CreateUsersWithArrayInputDataCopyWithImpl<$Res,
-        _$CreateUsersWithArrayInputResponseUnknown>
-    implements _$$CreateUsersWithArrayInputResponseUnknownCopyWith<$Res> {
-  __$$CreateUsersWithArrayInputResponseUnknownCopyWithImpl(
-      _$CreateUsersWithArrayInputResponseUnknown _value,
-      $Res Function(_$CreateUsersWithArrayInputResponseUnknown) _then)
+        _$CreateUsersWithArrayInputResponseUnknownImpl>
+    implements _$$CreateUsersWithArrayInputResponseUnknownImplCopyWith<$Res> {
+  __$$CreateUsersWithArrayInputResponseUnknownImplCopyWithImpl(
+      _$CreateUsersWithArrayInputResponseUnknownImpl _value,
+      $Res Function(_$CreateUsersWithArrayInputResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7972,7 +8019,7 @@ class __$$CreateUsersWithArrayInputResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$CreateUsersWithArrayInputResponseUnknown(
+    return _then(_$CreateUsersWithArrayInputResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -7985,9 +8032,9 @@ class __$$CreateUsersWithArrayInputResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$CreateUsersWithArrayInputResponseUnknown
+class _$CreateUsersWithArrayInputResponseUnknownImpl
     extends CreateUsersWithArrayInputResponseUnknown {
-  const _$CreateUsersWithArrayInputResponseUnknown(
+  const _$CreateUsersWithArrayInputResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -8002,10 +8049,10 @@ class _$CreateUsersWithArrayInputResponseUnknown
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CreateUsersWithArrayInputResponseUnknown &&
+            other is _$CreateUsersWithArrayInputResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -8019,10 +8066,11 @@ class _$CreateUsersWithArrayInputResponseUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$CreateUsersWithArrayInputResponseUnknownCopyWith<
-          _$CreateUsersWithArrayInputResponseUnknown>
-      get copyWith => __$$CreateUsersWithArrayInputResponseUnknownCopyWithImpl<
-          _$CreateUsersWithArrayInputResponseUnknown>(this, _$identity);
+  _$$CreateUsersWithArrayInputResponseUnknownImplCopyWith<
+          _$CreateUsersWithArrayInputResponseUnknownImpl>
+      get copyWith =>
+          __$$CreateUsersWithArrayInputResponseUnknownImplCopyWithImpl<
+              _$CreateUsersWithArrayInputResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -8093,7 +8141,7 @@ abstract class CreateUsersWithArrayInputResponseUnknown
     extends CreateUsersWithArrayInputData {
   const factory CreateUsersWithArrayInputResponseUnknown(
           {final int? statusCode, required final Object? responseData}) =
-      _$CreateUsersWithArrayInputResponseUnknown;
+      _$CreateUsersWithArrayInputResponseUnknownImpl;
   const CreateUsersWithArrayInputResponseUnknown._() : super._();
 
   int? get statusCode;
@@ -8101,8 +8149,8 @@ abstract class CreateUsersWithArrayInputResponseUnknown
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$CreateUsersWithArrayInputResponseUnknownCopyWith<
-          _$CreateUsersWithArrayInputResponseUnknown>
+  _$$CreateUsersWithArrayInputResponseUnknownImplCopyWith<
+          _$CreateUsersWithArrayInputResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -8190,25 +8238,25 @@ class _$CreateUsersWithListInputDataCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$CreateUsersWithListInputDataAs0VoidCopyWith<$Res>
+abstract class _$$CreateUsersWithListInputDataAs0VoidImplCopyWith<$Res>
     implements $CreateUsersWithListInputDataCopyWith<$Res> {
-  factory _$$CreateUsersWithListInputDataAs0VoidCopyWith(
-          _$CreateUsersWithListInputDataAs0Void value,
-          $Res Function(_$CreateUsersWithListInputDataAs0Void) then) =
-      __$$CreateUsersWithListInputDataAs0VoidCopyWithImpl<$Res>;
+  factory _$$CreateUsersWithListInputDataAs0VoidImplCopyWith(
+          _$CreateUsersWithListInputDataAs0VoidImpl value,
+          $Res Function(_$CreateUsersWithListInputDataAs0VoidImpl) then) =
+      __$$CreateUsersWithListInputDataAs0VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$CreateUsersWithListInputDataAs0VoidCopyWithImpl<$Res>
+class __$$CreateUsersWithListInputDataAs0VoidImplCopyWithImpl<$Res>
     extends _$CreateUsersWithListInputDataCopyWithImpl<$Res,
-        _$CreateUsersWithListInputDataAs0Void>
-    implements _$$CreateUsersWithListInputDataAs0VoidCopyWith<$Res> {
-  __$$CreateUsersWithListInputDataAs0VoidCopyWithImpl(
-      _$CreateUsersWithListInputDataAs0Void _value,
-      $Res Function(_$CreateUsersWithListInputDataAs0Void) _then)
+        _$CreateUsersWithListInputDataAs0VoidImpl>
+    implements _$$CreateUsersWithListInputDataAs0VoidImplCopyWith<$Res> {
+  __$$CreateUsersWithListInputDataAs0VoidImplCopyWithImpl(
+      _$CreateUsersWithListInputDataAs0VoidImpl _value,
+      $Res Function(_$CreateUsersWithListInputDataAs0VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8216,7 +8264,7 @@ class __$$CreateUsersWithListInputDataAs0VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$CreateUsersWithListInputDataAs0Void(
+    return _then(_$CreateUsersWithListInputDataAs0VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -8225,9 +8273,9 @@ class __$$CreateUsersWithListInputDataAs0VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$CreateUsersWithListInputDataAs0Void
+class _$CreateUsersWithListInputDataAs0VoidImpl
     extends CreateUsersWithListInputDataAs0Void {
-  const _$CreateUsersWithListInputDataAs0Void({required this.responseData})
+  const _$CreateUsersWithListInputDataAs0VoidImpl({required this.responseData})
       : super._();
 
   @override
@@ -8239,10 +8287,10 @@ class _$CreateUsersWithListInputDataAs0Void
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CreateUsersWithListInputDataAs0Void &&
+            other is _$CreateUsersWithListInputDataAs0VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -8254,10 +8302,10 @@ class _$CreateUsersWithListInputDataAs0Void
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$CreateUsersWithListInputDataAs0VoidCopyWith<
-          _$CreateUsersWithListInputDataAs0Void>
-      get copyWith => __$$CreateUsersWithListInputDataAs0VoidCopyWithImpl<
-          _$CreateUsersWithListInputDataAs0Void>(this, _$identity);
+  _$$CreateUsersWithListInputDataAs0VoidImplCopyWith<
+          _$CreateUsersWithListInputDataAs0VoidImpl>
+      get copyWith => __$$CreateUsersWithListInputDataAs0VoidImplCopyWithImpl<
+          _$CreateUsersWithListInputDataAs0VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -8328,38 +8376,38 @@ abstract class CreateUsersWithListInputDataAs0Void
     extends CreateUsersWithListInputData {
   const factory CreateUsersWithListInputDataAs0Void(
           {required final Object? responseData}) =
-      _$CreateUsersWithListInputDataAs0Void;
+      _$CreateUsersWithListInputDataAs0VoidImpl;
   const CreateUsersWithListInputDataAs0Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$CreateUsersWithListInputDataAs0VoidCopyWith<
-          _$CreateUsersWithListInputDataAs0Void>
+  _$$CreateUsersWithListInputDataAs0VoidImplCopyWith<
+          _$CreateUsersWithListInputDataAs0VoidImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$CreateUsersWithListInputResponseUnknownCopyWith<$Res>
+abstract class _$$CreateUsersWithListInputResponseUnknownImplCopyWith<$Res>
     implements $CreateUsersWithListInputDataCopyWith<$Res> {
-  factory _$$CreateUsersWithListInputResponseUnknownCopyWith(
-          _$CreateUsersWithListInputResponseUnknown value,
-          $Res Function(_$CreateUsersWithListInputResponseUnknown) then) =
-      __$$CreateUsersWithListInputResponseUnknownCopyWithImpl<$Res>;
+  factory _$$CreateUsersWithListInputResponseUnknownImplCopyWith(
+          _$CreateUsersWithListInputResponseUnknownImpl value,
+          $Res Function(_$CreateUsersWithListInputResponseUnknownImpl) then) =
+      __$$CreateUsersWithListInputResponseUnknownImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$CreateUsersWithListInputResponseUnknownCopyWithImpl<$Res>
+class __$$CreateUsersWithListInputResponseUnknownImplCopyWithImpl<$Res>
     extends _$CreateUsersWithListInputDataCopyWithImpl<$Res,
-        _$CreateUsersWithListInputResponseUnknown>
-    implements _$$CreateUsersWithListInputResponseUnknownCopyWith<$Res> {
-  __$$CreateUsersWithListInputResponseUnknownCopyWithImpl(
-      _$CreateUsersWithListInputResponseUnknown _value,
-      $Res Function(_$CreateUsersWithListInputResponseUnknown) _then)
+        _$CreateUsersWithListInputResponseUnknownImpl>
+    implements _$$CreateUsersWithListInputResponseUnknownImplCopyWith<$Res> {
+  __$$CreateUsersWithListInputResponseUnknownImplCopyWithImpl(
+      _$CreateUsersWithListInputResponseUnknownImpl _value,
+      $Res Function(_$CreateUsersWithListInputResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8368,7 +8416,7 @@ class __$$CreateUsersWithListInputResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$CreateUsersWithListInputResponseUnknown(
+    return _then(_$CreateUsersWithListInputResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -8381,9 +8429,9 @@ class __$$CreateUsersWithListInputResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$CreateUsersWithListInputResponseUnknown
+class _$CreateUsersWithListInputResponseUnknownImpl
     extends CreateUsersWithListInputResponseUnknown {
-  const _$CreateUsersWithListInputResponseUnknown(
+  const _$CreateUsersWithListInputResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -8398,10 +8446,10 @@ class _$CreateUsersWithListInputResponseUnknown
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CreateUsersWithListInputResponseUnknown &&
+            other is _$CreateUsersWithListInputResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -8415,10 +8463,11 @@ class _$CreateUsersWithListInputResponseUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$CreateUsersWithListInputResponseUnknownCopyWith<
-          _$CreateUsersWithListInputResponseUnknown>
-      get copyWith => __$$CreateUsersWithListInputResponseUnknownCopyWithImpl<
-          _$CreateUsersWithListInputResponseUnknown>(this, _$identity);
+  _$$CreateUsersWithListInputResponseUnknownImplCopyWith<
+          _$CreateUsersWithListInputResponseUnknownImpl>
+      get copyWith =>
+          __$$CreateUsersWithListInputResponseUnknownImplCopyWithImpl<
+              _$CreateUsersWithListInputResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -8489,7 +8538,7 @@ abstract class CreateUsersWithListInputResponseUnknown
     extends CreateUsersWithListInputData {
   const factory CreateUsersWithListInputResponseUnknown(
           {final int? statusCode, required final Object? responseData}) =
-      _$CreateUsersWithListInputResponseUnknown;
+      _$CreateUsersWithListInputResponseUnknownImpl;
   const CreateUsersWithListInputResponseUnknown._() : super._();
 
   int? get statusCode;
@@ -8497,8 +8546,8 @@ abstract class CreateUsersWithListInputResponseUnknown
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$CreateUsersWithListInputResponseUnknownCopyWith<
-          _$CreateUsersWithListInputResponseUnknown>
+  _$$CreateUsersWithListInputResponseUnknownImplCopyWith<
+          _$CreateUsersWithListInputResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -8587,22 +8636,24 @@ class _$DeleteUserDataCopyWithImpl<$Res, $Val extends DeleteUserData>
 }
 
 /// @nodoc
-abstract class _$$DeleteUserDataAs400VoidCopyWith<$Res>
+abstract class _$$DeleteUserDataAs400VoidImplCopyWith<$Res>
     implements $DeleteUserDataCopyWith<$Res> {
-  factory _$$DeleteUserDataAs400VoidCopyWith(_$DeleteUserDataAs400Void value,
-          $Res Function(_$DeleteUserDataAs400Void) then) =
-      __$$DeleteUserDataAs400VoidCopyWithImpl<$Res>;
+  factory _$$DeleteUserDataAs400VoidImplCopyWith(
+          _$DeleteUserDataAs400VoidImpl value,
+          $Res Function(_$DeleteUserDataAs400VoidImpl) then) =
+      __$$DeleteUserDataAs400VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$DeleteUserDataAs400VoidCopyWithImpl<$Res>
-    extends _$DeleteUserDataCopyWithImpl<$Res, _$DeleteUserDataAs400Void>
-    implements _$$DeleteUserDataAs400VoidCopyWith<$Res> {
-  __$$DeleteUserDataAs400VoidCopyWithImpl(_$DeleteUserDataAs400Void _value,
-      $Res Function(_$DeleteUserDataAs400Void) _then)
+class __$$DeleteUserDataAs400VoidImplCopyWithImpl<$Res>
+    extends _$DeleteUserDataCopyWithImpl<$Res, _$DeleteUserDataAs400VoidImpl>
+    implements _$$DeleteUserDataAs400VoidImplCopyWith<$Res> {
+  __$$DeleteUserDataAs400VoidImplCopyWithImpl(
+      _$DeleteUserDataAs400VoidImpl _value,
+      $Res Function(_$DeleteUserDataAs400VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8610,7 +8661,7 @@ class __$$DeleteUserDataAs400VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$DeleteUserDataAs400Void(
+    return _then(_$DeleteUserDataAs400VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -8619,8 +8670,8 @@ class __$$DeleteUserDataAs400VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$DeleteUserDataAs400Void extends DeleteUserDataAs400Void {
-  const _$DeleteUserDataAs400Void({required this.responseData}) : super._();
+class _$DeleteUserDataAs400VoidImpl extends DeleteUserDataAs400Void {
+  const _$DeleteUserDataAs400VoidImpl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -8631,10 +8682,10 @@ class _$DeleteUserDataAs400Void extends DeleteUserDataAs400Void {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DeleteUserDataAs400Void &&
+            other is _$DeleteUserDataAs400VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -8646,9 +8697,9 @@ class _$DeleteUserDataAs400Void extends DeleteUserDataAs400Void {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$DeleteUserDataAs400VoidCopyWith<_$DeleteUserDataAs400Void> get copyWith =>
-      __$$DeleteUserDataAs400VoidCopyWithImpl<_$DeleteUserDataAs400Void>(
-          this, _$identity);
+  _$$DeleteUserDataAs400VoidImplCopyWith<_$DeleteUserDataAs400VoidImpl>
+      get copyWith => __$$DeleteUserDataAs400VoidImplCopyWithImpl<
+          _$DeleteUserDataAs400VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -8721,34 +8772,36 @@ class _$DeleteUserDataAs400Void extends DeleteUserDataAs400Void {
 
 abstract class DeleteUserDataAs400Void extends DeleteUserData {
   const factory DeleteUserDataAs400Void({required final Object? responseData}) =
-      _$DeleteUserDataAs400Void;
+      _$DeleteUserDataAs400VoidImpl;
   const DeleteUserDataAs400Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$DeleteUserDataAs400VoidCopyWith<_$DeleteUserDataAs400Void> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DeleteUserDataAs400VoidImplCopyWith<_$DeleteUserDataAs400VoidImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$DeleteUserDataAs404VoidCopyWith<$Res>
+abstract class _$$DeleteUserDataAs404VoidImplCopyWith<$Res>
     implements $DeleteUserDataCopyWith<$Res> {
-  factory _$$DeleteUserDataAs404VoidCopyWith(_$DeleteUserDataAs404Void value,
-          $Res Function(_$DeleteUserDataAs404Void) then) =
-      __$$DeleteUserDataAs404VoidCopyWithImpl<$Res>;
+  factory _$$DeleteUserDataAs404VoidImplCopyWith(
+          _$DeleteUserDataAs404VoidImpl value,
+          $Res Function(_$DeleteUserDataAs404VoidImpl) then) =
+      __$$DeleteUserDataAs404VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$DeleteUserDataAs404VoidCopyWithImpl<$Res>
-    extends _$DeleteUserDataCopyWithImpl<$Res, _$DeleteUserDataAs404Void>
-    implements _$$DeleteUserDataAs404VoidCopyWith<$Res> {
-  __$$DeleteUserDataAs404VoidCopyWithImpl(_$DeleteUserDataAs404Void _value,
-      $Res Function(_$DeleteUserDataAs404Void) _then)
+class __$$DeleteUserDataAs404VoidImplCopyWithImpl<$Res>
+    extends _$DeleteUserDataCopyWithImpl<$Res, _$DeleteUserDataAs404VoidImpl>
+    implements _$$DeleteUserDataAs404VoidImplCopyWith<$Res> {
+  __$$DeleteUserDataAs404VoidImplCopyWithImpl(
+      _$DeleteUserDataAs404VoidImpl _value,
+      $Res Function(_$DeleteUserDataAs404VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8756,7 +8809,7 @@ class __$$DeleteUserDataAs404VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$DeleteUserDataAs404Void(
+    return _then(_$DeleteUserDataAs404VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -8765,8 +8818,8 @@ class __$$DeleteUserDataAs404VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$DeleteUserDataAs404Void extends DeleteUserDataAs404Void {
-  const _$DeleteUserDataAs404Void({required this.responseData}) : super._();
+class _$DeleteUserDataAs404VoidImpl extends DeleteUserDataAs404Void {
+  const _$DeleteUserDataAs404VoidImpl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -8777,10 +8830,10 @@ class _$DeleteUserDataAs404Void extends DeleteUserDataAs404Void {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DeleteUserDataAs404Void &&
+            other is _$DeleteUserDataAs404VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -8792,9 +8845,9 @@ class _$DeleteUserDataAs404Void extends DeleteUserDataAs404Void {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$DeleteUserDataAs404VoidCopyWith<_$DeleteUserDataAs404Void> get copyWith =>
-      __$$DeleteUserDataAs404VoidCopyWithImpl<_$DeleteUserDataAs404Void>(
-          this, _$identity);
+  _$$DeleteUserDataAs404VoidImplCopyWith<_$DeleteUserDataAs404VoidImpl>
+      get copyWith => __$$DeleteUserDataAs404VoidImplCopyWithImpl<
+          _$DeleteUserDataAs404VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -8867,35 +8920,36 @@ class _$DeleteUserDataAs404Void extends DeleteUserDataAs404Void {
 
 abstract class DeleteUserDataAs404Void extends DeleteUserData {
   const factory DeleteUserDataAs404Void({required final Object? responseData}) =
-      _$DeleteUserDataAs404Void;
+      _$DeleteUserDataAs404VoidImpl;
   const DeleteUserDataAs404Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$DeleteUserDataAs404VoidCopyWith<_$DeleteUserDataAs404Void> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DeleteUserDataAs404VoidImplCopyWith<_$DeleteUserDataAs404VoidImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$DeleteUserResponseUnknownCopyWith<$Res>
+abstract class _$$DeleteUserResponseUnknownImplCopyWith<$Res>
     implements $DeleteUserDataCopyWith<$Res> {
-  factory _$$DeleteUserResponseUnknownCopyWith(
-          _$DeleteUserResponseUnknown value,
-          $Res Function(_$DeleteUserResponseUnknown) then) =
-      __$$DeleteUserResponseUnknownCopyWithImpl<$Res>;
+  factory _$$DeleteUserResponseUnknownImplCopyWith(
+          _$DeleteUserResponseUnknownImpl value,
+          $Res Function(_$DeleteUserResponseUnknownImpl) then) =
+      __$$DeleteUserResponseUnknownImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$DeleteUserResponseUnknownCopyWithImpl<$Res>
-    extends _$DeleteUserDataCopyWithImpl<$Res, _$DeleteUserResponseUnknown>
-    implements _$$DeleteUserResponseUnknownCopyWith<$Res> {
-  __$$DeleteUserResponseUnknownCopyWithImpl(_$DeleteUserResponseUnknown _value,
-      $Res Function(_$DeleteUserResponseUnknown) _then)
+class __$$DeleteUserResponseUnknownImplCopyWithImpl<$Res>
+    extends _$DeleteUserDataCopyWithImpl<$Res, _$DeleteUserResponseUnknownImpl>
+    implements _$$DeleteUserResponseUnknownImplCopyWith<$Res> {
+  __$$DeleteUserResponseUnknownImplCopyWithImpl(
+      _$DeleteUserResponseUnknownImpl _value,
+      $Res Function(_$DeleteUserResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8904,7 +8958,7 @@ class __$$DeleteUserResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$DeleteUserResponseUnknown(
+    return _then(_$DeleteUserResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -8917,8 +8971,8 @@ class __$$DeleteUserResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$DeleteUserResponseUnknown extends DeleteUserResponseUnknown {
-  const _$DeleteUserResponseUnknown(
+class _$DeleteUserResponseUnknownImpl extends DeleteUserResponseUnknown {
+  const _$DeleteUserResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -8933,10 +8987,10 @@ class _$DeleteUserResponseUnknown extends DeleteUserResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DeleteUserResponseUnknown &&
+            other is _$DeleteUserResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -8950,9 +9004,9 @@ class _$DeleteUserResponseUnknown extends DeleteUserResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$DeleteUserResponseUnknownCopyWith<_$DeleteUserResponseUnknown>
-      get copyWith => __$$DeleteUserResponseUnknownCopyWithImpl<
-          _$DeleteUserResponseUnknown>(this, _$identity);
+  _$$DeleteUserResponseUnknownImplCopyWith<_$DeleteUserResponseUnknownImpl>
+      get copyWith => __$$DeleteUserResponseUnknownImplCopyWithImpl<
+          _$DeleteUserResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -9026,7 +9080,7 @@ class _$DeleteUserResponseUnknown extends DeleteUserResponseUnknown {
 abstract class DeleteUserResponseUnknown extends DeleteUserData {
   const factory DeleteUserResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$DeleteUserResponseUnknown;
+      required final Object? responseData}) = _$DeleteUserResponseUnknownImpl;
   const DeleteUserResponseUnknown._() : super._();
 
   int? get statusCode;
@@ -9034,7 +9088,7 @@ abstract class DeleteUserResponseUnknown extends DeleteUserData {
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$DeleteUserResponseUnknownCopyWith<_$DeleteUserResponseUnknown>
+  _$$DeleteUserResponseUnknownImplCopyWith<_$DeleteUserResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -9112,10 +9166,11 @@ class _$GetUserByNameDataCopyWithImpl<$Res, $Val extends GetUserByNameData>
 }
 
 /// @nodoc
-abstract class _$$GetUserByNameDataAs200CopyWith<$Res> {
-  factory _$$GetUserByNameDataAs200CopyWith(_$GetUserByNameDataAs200 value,
-          $Res Function(_$GetUserByNameDataAs200) then) =
-      __$$GetUserByNameDataAs200CopyWithImpl<$Res>;
+abstract class _$$GetUserByNameDataAs200ImplCopyWith<$Res> {
+  factory _$$GetUserByNameDataAs200ImplCopyWith(
+          _$GetUserByNameDataAs200Impl value,
+          $Res Function(_$GetUserByNameDataAs200Impl) then) =
+      __$$GetUserByNameDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({User responseData});
 
@@ -9123,11 +9178,12 @@ abstract class _$$GetUserByNameDataAs200CopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$GetUserByNameDataAs200CopyWithImpl<$Res>
-    extends _$GetUserByNameDataCopyWithImpl<$Res, _$GetUserByNameDataAs200>
-    implements _$$GetUserByNameDataAs200CopyWith<$Res> {
-  __$$GetUserByNameDataAs200CopyWithImpl(_$GetUserByNameDataAs200 _value,
-      $Res Function(_$GetUserByNameDataAs200) _then)
+class __$$GetUserByNameDataAs200ImplCopyWithImpl<$Res>
+    extends _$GetUserByNameDataCopyWithImpl<$Res, _$GetUserByNameDataAs200Impl>
+    implements _$$GetUserByNameDataAs200ImplCopyWith<$Res> {
+  __$$GetUserByNameDataAs200ImplCopyWithImpl(
+      _$GetUserByNameDataAs200Impl _value,
+      $Res Function(_$GetUserByNameDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -9135,7 +9191,7 @@ class __$$GetUserByNameDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$GetUserByNameDataAs200(
+    return _then(_$GetUserByNameDataAs200Impl(
       responseData: null == responseData
           ? _value.responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -9154,8 +9210,8 @@ class __$$GetUserByNameDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetUserByNameDataAs200 extends GetUserByNameDataAs200 {
-  const _$GetUserByNameDataAs200({required this.responseData}) : super._();
+class _$GetUserByNameDataAs200Impl extends GetUserByNameDataAs200 {
+  const _$GetUserByNameDataAs200Impl({required this.responseData}) : super._();
 
   @override
   final User responseData;
@@ -9166,10 +9222,10 @@ class _$GetUserByNameDataAs200 extends GetUserByNameDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetUserByNameDataAs200 &&
+            other is _$GetUserByNameDataAs200Impl &&
             (identical(other.responseData, responseData) ||
                 other.responseData == responseData));
   }
@@ -9180,9 +9236,9 @@ class _$GetUserByNameDataAs200 extends GetUserByNameDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetUserByNameDataAs200CopyWith<_$GetUserByNameDataAs200> get copyWith =>
-      __$$GetUserByNameDataAs200CopyWithImpl<_$GetUserByNameDataAs200>(
-          this, _$identity);
+  _$$GetUserByNameDataAs200ImplCopyWith<_$GetUserByNameDataAs200Impl>
+      get copyWith => __$$GetUserByNameDataAs200ImplCopyWithImpl<
+          _$GetUserByNameDataAs200Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -9261,31 +9317,33 @@ class _$GetUserByNameDataAs200 extends GetUserByNameDataAs200 {
 
 abstract class GetUserByNameDataAs200 extends GetUserByNameData {
   const factory GetUserByNameDataAs200({required final User responseData}) =
-      _$GetUserByNameDataAs200;
+      _$GetUserByNameDataAs200Impl;
   const GetUserByNameDataAs200._() : super._();
 
   @override
   User get responseData;
   @JsonKey(ignore: true)
-  _$$GetUserByNameDataAs200CopyWith<_$GetUserByNameDataAs200> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetUserByNameDataAs200ImplCopyWith<_$GetUserByNameDataAs200Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetUserByNameDataAs400CopyWith<$Res> {
-  factory _$$GetUserByNameDataAs400CopyWith(_$GetUserByNameDataAs400 value,
-          $Res Function(_$GetUserByNameDataAs400) then) =
-      __$$GetUserByNameDataAs400CopyWithImpl<$Res>;
+abstract class _$$GetUserByNameDataAs400ImplCopyWith<$Res> {
+  factory _$$GetUserByNameDataAs400ImplCopyWith(
+          _$GetUserByNameDataAs400Impl value,
+          $Res Function(_$GetUserByNameDataAs400Impl) then) =
+      __$$GetUserByNameDataAs400ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$GetUserByNameDataAs400CopyWithImpl<$Res>
-    extends _$GetUserByNameDataCopyWithImpl<$Res, _$GetUserByNameDataAs400>
-    implements _$$GetUserByNameDataAs400CopyWith<$Res> {
-  __$$GetUserByNameDataAs400CopyWithImpl(_$GetUserByNameDataAs400 _value,
-      $Res Function(_$GetUserByNameDataAs400) _then)
+class __$$GetUserByNameDataAs400ImplCopyWithImpl<$Res>
+    extends _$GetUserByNameDataCopyWithImpl<$Res, _$GetUserByNameDataAs400Impl>
+    implements _$$GetUserByNameDataAs400ImplCopyWith<$Res> {
+  __$$GetUserByNameDataAs400ImplCopyWithImpl(
+      _$GetUserByNameDataAs400Impl _value,
+      $Res Function(_$GetUserByNameDataAs400Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -9293,7 +9351,7 @@ class __$$GetUserByNameDataAs400CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$GetUserByNameDataAs400(
+    return _then(_$GetUserByNameDataAs400Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -9302,8 +9360,8 @@ class __$$GetUserByNameDataAs400CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetUserByNameDataAs400 extends GetUserByNameDataAs400 {
-  const _$GetUserByNameDataAs400({required this.responseData}) : super._();
+class _$GetUserByNameDataAs400Impl extends GetUserByNameDataAs400 {
+  const _$GetUserByNameDataAs400Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -9314,10 +9372,10 @@ class _$GetUserByNameDataAs400 extends GetUserByNameDataAs400 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetUserByNameDataAs400 &&
+            other is _$GetUserByNameDataAs400Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -9329,9 +9387,9 @@ class _$GetUserByNameDataAs400 extends GetUserByNameDataAs400 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetUserByNameDataAs400CopyWith<_$GetUserByNameDataAs400> get copyWith =>
-      __$$GetUserByNameDataAs400CopyWithImpl<_$GetUserByNameDataAs400>(
-          this, _$identity);
+  _$$GetUserByNameDataAs400ImplCopyWith<_$GetUserByNameDataAs400Impl>
+      get copyWith => __$$GetUserByNameDataAs400ImplCopyWithImpl<
+          _$GetUserByNameDataAs400Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -9410,31 +9468,33 @@ class _$GetUserByNameDataAs400 extends GetUserByNameDataAs400 {
 
 abstract class GetUserByNameDataAs400 extends GetUserByNameData {
   const factory GetUserByNameDataAs400({required final Object? responseData}) =
-      _$GetUserByNameDataAs400;
+      _$GetUserByNameDataAs400Impl;
   const GetUserByNameDataAs400._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$GetUserByNameDataAs400CopyWith<_$GetUserByNameDataAs400> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetUserByNameDataAs400ImplCopyWith<_$GetUserByNameDataAs400Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetUserByNameDataAs404CopyWith<$Res> {
-  factory _$$GetUserByNameDataAs404CopyWith(_$GetUserByNameDataAs404 value,
-          $Res Function(_$GetUserByNameDataAs404) then) =
-      __$$GetUserByNameDataAs404CopyWithImpl<$Res>;
+abstract class _$$GetUserByNameDataAs404ImplCopyWith<$Res> {
+  factory _$$GetUserByNameDataAs404ImplCopyWith(
+          _$GetUserByNameDataAs404Impl value,
+          $Res Function(_$GetUserByNameDataAs404Impl) then) =
+      __$$GetUserByNameDataAs404ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$GetUserByNameDataAs404CopyWithImpl<$Res>
-    extends _$GetUserByNameDataCopyWithImpl<$Res, _$GetUserByNameDataAs404>
-    implements _$$GetUserByNameDataAs404CopyWith<$Res> {
-  __$$GetUserByNameDataAs404CopyWithImpl(_$GetUserByNameDataAs404 _value,
-      $Res Function(_$GetUserByNameDataAs404) _then)
+class __$$GetUserByNameDataAs404ImplCopyWithImpl<$Res>
+    extends _$GetUserByNameDataCopyWithImpl<$Res, _$GetUserByNameDataAs404Impl>
+    implements _$$GetUserByNameDataAs404ImplCopyWith<$Res> {
+  __$$GetUserByNameDataAs404ImplCopyWithImpl(
+      _$GetUserByNameDataAs404Impl _value,
+      $Res Function(_$GetUserByNameDataAs404Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -9442,7 +9502,7 @@ class __$$GetUserByNameDataAs404CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$GetUserByNameDataAs404(
+    return _then(_$GetUserByNameDataAs404Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -9451,8 +9511,8 @@ class __$$GetUserByNameDataAs404CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetUserByNameDataAs404 extends GetUserByNameDataAs404 {
-  const _$GetUserByNameDataAs404({required this.responseData}) : super._();
+class _$GetUserByNameDataAs404Impl extends GetUserByNameDataAs404 {
+  const _$GetUserByNameDataAs404Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -9463,10 +9523,10 @@ class _$GetUserByNameDataAs404 extends GetUserByNameDataAs404 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetUserByNameDataAs404 &&
+            other is _$GetUserByNameDataAs404Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -9478,9 +9538,9 @@ class _$GetUserByNameDataAs404 extends GetUserByNameDataAs404 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetUserByNameDataAs404CopyWith<_$GetUserByNameDataAs404> get copyWith =>
-      __$$GetUserByNameDataAs404CopyWithImpl<_$GetUserByNameDataAs404>(
-          this, _$identity);
+  _$$GetUserByNameDataAs404ImplCopyWith<_$GetUserByNameDataAs404Impl>
+      get copyWith => __$$GetUserByNameDataAs404ImplCopyWithImpl<
+          _$GetUserByNameDataAs404Impl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -9559,34 +9619,34 @@ class _$GetUserByNameDataAs404 extends GetUserByNameDataAs404 {
 
 abstract class GetUserByNameDataAs404 extends GetUserByNameData {
   const factory GetUserByNameDataAs404({required final Object? responseData}) =
-      _$GetUserByNameDataAs404;
+      _$GetUserByNameDataAs404Impl;
   const GetUserByNameDataAs404._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$GetUserByNameDataAs404CopyWith<_$GetUserByNameDataAs404> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetUserByNameDataAs404ImplCopyWith<_$GetUserByNameDataAs404Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$GetUserByNameResponseUnknownCopyWith<$Res> {
-  factory _$$GetUserByNameResponseUnknownCopyWith(
-          _$GetUserByNameResponseUnknown value,
-          $Res Function(_$GetUserByNameResponseUnknown) then) =
-      __$$GetUserByNameResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$GetUserByNameResponseUnknownImplCopyWith<$Res> {
+  factory _$$GetUserByNameResponseUnknownImplCopyWith(
+          _$GetUserByNameResponseUnknownImpl value,
+          $Res Function(_$GetUserByNameResponseUnknownImpl) then) =
+      __$$GetUserByNameResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$GetUserByNameResponseUnknownCopyWithImpl<$Res>
+class __$$GetUserByNameResponseUnknownImplCopyWithImpl<$Res>
     extends _$GetUserByNameDataCopyWithImpl<$Res,
-        _$GetUserByNameResponseUnknown>
-    implements _$$GetUserByNameResponseUnknownCopyWith<$Res> {
-  __$$GetUserByNameResponseUnknownCopyWithImpl(
-      _$GetUserByNameResponseUnknown _value,
-      $Res Function(_$GetUserByNameResponseUnknown) _then)
+        _$GetUserByNameResponseUnknownImpl>
+    implements _$$GetUserByNameResponseUnknownImplCopyWith<$Res> {
+  __$$GetUserByNameResponseUnknownImplCopyWithImpl(
+      _$GetUserByNameResponseUnknownImpl _value,
+      $Res Function(_$GetUserByNameResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -9595,7 +9655,7 @@ class __$$GetUserByNameResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$GetUserByNameResponseUnknown(
+    return _then(_$GetUserByNameResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -9608,8 +9668,8 @@ class __$$GetUserByNameResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetUserByNameResponseUnknown extends GetUserByNameResponseUnknown {
-  const _$GetUserByNameResponseUnknown(
+class _$GetUserByNameResponseUnknownImpl extends GetUserByNameResponseUnknown {
+  const _$GetUserByNameResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -9624,10 +9684,10 @@ class _$GetUserByNameResponseUnknown extends GetUserByNameResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetUserByNameResponseUnknown &&
+            other is _$GetUserByNameResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -9641,9 +9701,10 @@ class _$GetUserByNameResponseUnknown extends GetUserByNameResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetUserByNameResponseUnknownCopyWith<_$GetUserByNameResponseUnknown>
-      get copyWith => __$$GetUserByNameResponseUnknownCopyWithImpl<
-          _$GetUserByNameResponseUnknown>(this, _$identity);
+  _$$GetUserByNameResponseUnknownImplCopyWith<
+          _$GetUserByNameResponseUnknownImpl>
+      get copyWith => __$$GetUserByNameResponseUnknownImplCopyWithImpl<
+          _$GetUserByNameResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -9722,15 +9783,16 @@ class _$GetUserByNameResponseUnknown extends GetUserByNameResponseUnknown {
 
 abstract class GetUserByNameResponseUnknown extends GetUserByNameData {
   const factory GetUserByNameResponseUnknown(
-      {final int? statusCode,
-      required final Object? responseData}) = _$GetUserByNameResponseUnknown;
+          {final int? statusCode, required final Object? responseData}) =
+      _$GetUserByNameResponseUnknownImpl;
   const GetUserByNameResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$GetUserByNameResponseUnknownCopyWith<_$GetUserByNameResponseUnknown>
+  _$$GetUserByNameResponseUnknownImplCopyWith<
+          _$GetUserByNameResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -9802,20 +9864,20 @@ class _$LoginUserDataCopyWithImpl<$Res, $Val extends LoginUserData>
 }
 
 /// @nodoc
-abstract class _$$LoginUserDataAs200CopyWith<$Res> {
-  factory _$$LoginUserDataAs200CopyWith(_$LoginUserDataAs200 value,
-          $Res Function(_$LoginUserDataAs200) then) =
-      __$$LoginUserDataAs200CopyWithImpl<$Res>;
+abstract class _$$LoginUserDataAs200ImplCopyWith<$Res> {
+  factory _$$LoginUserDataAs200ImplCopyWith(_$LoginUserDataAs200Impl value,
+          $Res Function(_$LoginUserDataAs200Impl) then) =
+      __$$LoginUserDataAs200ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String responseData});
 }
 
 /// @nodoc
-class __$$LoginUserDataAs200CopyWithImpl<$Res>
-    extends _$LoginUserDataCopyWithImpl<$Res, _$LoginUserDataAs200>
-    implements _$$LoginUserDataAs200CopyWith<$Res> {
-  __$$LoginUserDataAs200CopyWithImpl(
-      _$LoginUserDataAs200 _value, $Res Function(_$LoginUserDataAs200) _then)
+class __$$LoginUserDataAs200ImplCopyWithImpl<$Res>
+    extends _$LoginUserDataCopyWithImpl<$Res, _$LoginUserDataAs200Impl>
+    implements _$$LoginUserDataAs200ImplCopyWith<$Res> {
+  __$$LoginUserDataAs200ImplCopyWithImpl(_$LoginUserDataAs200Impl _value,
+      $Res Function(_$LoginUserDataAs200Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -9823,7 +9885,7 @@ class __$$LoginUserDataAs200CopyWithImpl<$Res>
   $Res call({
     Object? responseData = null,
   }) {
-    return _then(_$LoginUserDataAs200(
+    return _then(_$LoginUserDataAs200Impl(
       responseData: null == responseData
           ? _value.responseData
           : responseData // ignore: cast_nullable_to_non_nullable
@@ -9834,8 +9896,8 @@ class __$$LoginUserDataAs200CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LoginUserDataAs200 extends LoginUserDataAs200 {
-  const _$LoginUserDataAs200({required this.responseData}) : super._();
+class _$LoginUserDataAs200Impl extends LoginUserDataAs200 {
+  const _$LoginUserDataAs200Impl({required this.responseData}) : super._();
 
   @override
   final String responseData;
@@ -9846,10 +9908,10 @@ class _$LoginUserDataAs200 extends LoginUserDataAs200 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$LoginUserDataAs200 &&
+            other is _$LoginUserDataAs200Impl &&
             (identical(other.responseData, responseData) ||
                 other.responseData == responseData));
   }
@@ -9860,8 +9922,8 @@ class _$LoginUserDataAs200 extends LoginUserDataAs200 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LoginUserDataAs200CopyWith<_$LoginUserDataAs200> get copyWith =>
-      __$$LoginUserDataAs200CopyWithImpl<_$LoginUserDataAs200>(
+  _$$LoginUserDataAs200ImplCopyWith<_$LoginUserDataAs200Impl> get copyWith =>
+      __$$LoginUserDataAs200ImplCopyWithImpl<_$LoginUserDataAs200Impl>(
           this, _$identity);
 
   @override
@@ -9935,31 +9997,31 @@ class _$LoginUserDataAs200 extends LoginUserDataAs200 {
 
 abstract class LoginUserDataAs200 extends LoginUserData {
   const factory LoginUserDataAs200({required final String responseData}) =
-      _$LoginUserDataAs200;
+      _$LoginUserDataAs200Impl;
   const LoginUserDataAs200._() : super._();
 
   @override
   String get responseData;
   @JsonKey(ignore: true)
-  _$$LoginUserDataAs200CopyWith<_$LoginUserDataAs200> get copyWith =>
+  _$$LoginUserDataAs200ImplCopyWith<_$LoginUserDataAs200Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$LoginUserDataAs400CopyWith<$Res> {
-  factory _$$LoginUserDataAs400CopyWith(_$LoginUserDataAs400 value,
-          $Res Function(_$LoginUserDataAs400) then) =
-      __$$LoginUserDataAs400CopyWithImpl<$Res>;
+abstract class _$$LoginUserDataAs400ImplCopyWith<$Res> {
+  factory _$$LoginUserDataAs400ImplCopyWith(_$LoginUserDataAs400Impl value,
+          $Res Function(_$LoginUserDataAs400Impl) then) =
+      __$$LoginUserDataAs400ImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$LoginUserDataAs400CopyWithImpl<$Res>
-    extends _$LoginUserDataCopyWithImpl<$Res, _$LoginUserDataAs400>
-    implements _$$LoginUserDataAs400CopyWith<$Res> {
-  __$$LoginUserDataAs400CopyWithImpl(
-      _$LoginUserDataAs400 _value, $Res Function(_$LoginUserDataAs400) _then)
+class __$$LoginUserDataAs400ImplCopyWithImpl<$Res>
+    extends _$LoginUserDataCopyWithImpl<$Res, _$LoginUserDataAs400Impl>
+    implements _$$LoginUserDataAs400ImplCopyWith<$Res> {
+  __$$LoginUserDataAs400ImplCopyWithImpl(_$LoginUserDataAs400Impl _value,
+      $Res Function(_$LoginUserDataAs400Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -9967,7 +10029,7 @@ class __$$LoginUserDataAs400CopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$LoginUserDataAs400(
+    return _then(_$LoginUserDataAs400Impl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -9976,8 +10038,8 @@ class __$$LoginUserDataAs400CopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LoginUserDataAs400 extends LoginUserDataAs400 {
-  const _$LoginUserDataAs400({required this.responseData}) : super._();
+class _$LoginUserDataAs400Impl extends LoginUserDataAs400 {
+  const _$LoginUserDataAs400Impl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -9988,10 +10050,10 @@ class _$LoginUserDataAs400 extends LoginUserDataAs400 {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$LoginUserDataAs400 &&
+            other is _$LoginUserDataAs400Impl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -10003,8 +10065,8 @@ class _$LoginUserDataAs400 extends LoginUserDataAs400 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LoginUserDataAs400CopyWith<_$LoginUserDataAs400> get copyWith =>
-      __$$LoginUserDataAs400CopyWithImpl<_$LoginUserDataAs400>(
+  _$$LoginUserDataAs400ImplCopyWith<_$LoginUserDataAs400Impl> get copyWith =>
+      __$$LoginUserDataAs400ImplCopyWithImpl<_$LoginUserDataAs400Impl>(
           this, _$identity);
 
   @override
@@ -10078,31 +10140,33 @@ class _$LoginUserDataAs400 extends LoginUserDataAs400 {
 
 abstract class LoginUserDataAs400 extends LoginUserData {
   const factory LoginUserDataAs400({required final Object? responseData}) =
-      _$LoginUserDataAs400;
+      _$LoginUserDataAs400Impl;
   const LoginUserDataAs400._() : super._();
 
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$LoginUserDataAs400CopyWith<_$LoginUserDataAs400> get copyWith =>
+  _$$LoginUserDataAs400ImplCopyWith<_$LoginUserDataAs400Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$LoginUserResponseUnknownCopyWith<$Res> {
-  factory _$$LoginUserResponseUnknownCopyWith(_$LoginUserResponseUnknown value,
-          $Res Function(_$LoginUserResponseUnknown) then) =
-      __$$LoginUserResponseUnknownCopyWithImpl<$Res>;
+abstract class _$$LoginUserResponseUnknownImplCopyWith<$Res> {
+  factory _$$LoginUserResponseUnknownImplCopyWith(
+          _$LoginUserResponseUnknownImpl value,
+          $Res Function(_$LoginUserResponseUnknownImpl) then) =
+      __$$LoginUserResponseUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$LoginUserResponseUnknownCopyWithImpl<$Res>
-    extends _$LoginUserDataCopyWithImpl<$Res, _$LoginUserResponseUnknown>
-    implements _$$LoginUserResponseUnknownCopyWith<$Res> {
-  __$$LoginUserResponseUnknownCopyWithImpl(_$LoginUserResponseUnknown _value,
-      $Res Function(_$LoginUserResponseUnknown) _then)
+class __$$LoginUserResponseUnknownImplCopyWithImpl<$Res>
+    extends _$LoginUserDataCopyWithImpl<$Res, _$LoginUserResponseUnknownImpl>
+    implements _$$LoginUserResponseUnknownImplCopyWith<$Res> {
+  __$$LoginUserResponseUnknownImplCopyWithImpl(
+      _$LoginUserResponseUnknownImpl _value,
+      $Res Function(_$LoginUserResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10111,7 +10175,7 @@ class __$$LoginUserResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$LoginUserResponseUnknown(
+    return _then(_$LoginUserResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -10124,8 +10188,8 @@ class __$$LoginUserResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LoginUserResponseUnknown extends LoginUserResponseUnknown {
-  const _$LoginUserResponseUnknown(
+class _$LoginUserResponseUnknownImpl extends LoginUserResponseUnknown {
+  const _$LoginUserResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -10140,10 +10204,10 @@ class _$LoginUserResponseUnknown extends LoginUserResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$LoginUserResponseUnknown &&
+            other is _$LoginUserResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -10157,10 +10221,9 @@ class _$LoginUserResponseUnknown extends LoginUserResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LoginUserResponseUnknownCopyWith<_$LoginUserResponseUnknown>
-      get copyWith =>
-          __$$LoginUserResponseUnknownCopyWithImpl<_$LoginUserResponseUnknown>(
-              this, _$identity);
+  _$$LoginUserResponseUnknownImplCopyWith<_$LoginUserResponseUnknownImpl>
+      get copyWith => __$$LoginUserResponseUnknownImplCopyWithImpl<
+          _$LoginUserResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -10234,14 +10297,14 @@ class _$LoginUserResponseUnknown extends LoginUserResponseUnknown {
 abstract class LoginUserResponseUnknown extends LoginUserData {
   const factory LoginUserResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$LoginUserResponseUnknown;
+      required final Object? responseData}) = _$LoginUserResponseUnknownImpl;
   const LoginUserResponseUnknown._() : super._();
 
   int? get statusCode;
   @override
   Object? get responseData;
   @JsonKey(ignore: true)
-  _$$LoginUserResponseUnknownCopyWith<_$LoginUserResponseUnknown>
+  _$$LoginUserResponseUnknownImplCopyWith<_$LoginUserResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -10324,22 +10387,23 @@ class _$LogoutUserDataCopyWithImpl<$Res, $Val extends LogoutUserData>
 }
 
 /// @nodoc
-abstract class _$$LogoutUserDataAs0VoidCopyWith<$Res>
+abstract class _$$LogoutUserDataAs0VoidImplCopyWith<$Res>
     implements $LogoutUserDataCopyWith<$Res> {
-  factory _$$LogoutUserDataAs0VoidCopyWith(_$LogoutUserDataAs0Void value,
-          $Res Function(_$LogoutUserDataAs0Void) then) =
-      __$$LogoutUserDataAs0VoidCopyWithImpl<$Res>;
+  factory _$$LogoutUserDataAs0VoidImplCopyWith(
+          _$LogoutUserDataAs0VoidImpl value,
+          $Res Function(_$LogoutUserDataAs0VoidImpl) then) =
+      __$$LogoutUserDataAs0VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$LogoutUserDataAs0VoidCopyWithImpl<$Res>
-    extends _$LogoutUserDataCopyWithImpl<$Res, _$LogoutUserDataAs0Void>
-    implements _$$LogoutUserDataAs0VoidCopyWith<$Res> {
-  __$$LogoutUserDataAs0VoidCopyWithImpl(_$LogoutUserDataAs0Void _value,
-      $Res Function(_$LogoutUserDataAs0Void) _then)
+class __$$LogoutUserDataAs0VoidImplCopyWithImpl<$Res>
+    extends _$LogoutUserDataCopyWithImpl<$Res, _$LogoutUserDataAs0VoidImpl>
+    implements _$$LogoutUserDataAs0VoidImplCopyWith<$Res> {
+  __$$LogoutUserDataAs0VoidImplCopyWithImpl(_$LogoutUserDataAs0VoidImpl _value,
+      $Res Function(_$LogoutUserDataAs0VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10347,7 +10411,7 @@ class __$$LogoutUserDataAs0VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$LogoutUserDataAs0Void(
+    return _then(_$LogoutUserDataAs0VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -10356,8 +10420,8 @@ class __$$LogoutUserDataAs0VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LogoutUserDataAs0Void extends LogoutUserDataAs0Void {
-  const _$LogoutUserDataAs0Void({required this.responseData}) : super._();
+class _$LogoutUserDataAs0VoidImpl extends LogoutUserDataAs0Void {
+  const _$LogoutUserDataAs0VoidImpl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -10368,10 +10432,10 @@ class _$LogoutUserDataAs0Void extends LogoutUserDataAs0Void {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$LogoutUserDataAs0Void &&
+            other is _$LogoutUserDataAs0VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -10383,9 +10447,9 @@ class _$LogoutUserDataAs0Void extends LogoutUserDataAs0Void {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LogoutUserDataAs0VoidCopyWith<_$LogoutUserDataAs0Void> get copyWith =>
-      __$$LogoutUserDataAs0VoidCopyWithImpl<_$LogoutUserDataAs0Void>(
-          this, _$identity);
+  _$$LogoutUserDataAs0VoidImplCopyWith<_$LogoutUserDataAs0VoidImpl>
+      get copyWith => __$$LogoutUserDataAs0VoidImplCopyWithImpl<
+          _$LogoutUserDataAs0VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -10452,35 +10516,36 @@ class _$LogoutUserDataAs0Void extends LogoutUserDataAs0Void {
 
 abstract class LogoutUserDataAs0Void extends LogoutUserData {
   const factory LogoutUserDataAs0Void({required final Object? responseData}) =
-      _$LogoutUserDataAs0Void;
+      _$LogoutUserDataAs0VoidImpl;
   const LogoutUserDataAs0Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$LogoutUserDataAs0VoidCopyWith<_$LogoutUserDataAs0Void> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$LogoutUserDataAs0VoidImplCopyWith<_$LogoutUserDataAs0VoidImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$LogoutUserResponseUnknownCopyWith<$Res>
+abstract class _$$LogoutUserResponseUnknownImplCopyWith<$Res>
     implements $LogoutUserDataCopyWith<$Res> {
-  factory _$$LogoutUserResponseUnknownCopyWith(
-          _$LogoutUserResponseUnknown value,
-          $Res Function(_$LogoutUserResponseUnknown) then) =
-      __$$LogoutUserResponseUnknownCopyWithImpl<$Res>;
+  factory _$$LogoutUserResponseUnknownImplCopyWith(
+          _$LogoutUserResponseUnknownImpl value,
+          $Res Function(_$LogoutUserResponseUnknownImpl) then) =
+      __$$LogoutUserResponseUnknownImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$LogoutUserResponseUnknownCopyWithImpl<$Res>
-    extends _$LogoutUserDataCopyWithImpl<$Res, _$LogoutUserResponseUnknown>
-    implements _$$LogoutUserResponseUnknownCopyWith<$Res> {
-  __$$LogoutUserResponseUnknownCopyWithImpl(_$LogoutUserResponseUnknown _value,
-      $Res Function(_$LogoutUserResponseUnknown) _then)
+class __$$LogoutUserResponseUnknownImplCopyWithImpl<$Res>
+    extends _$LogoutUserDataCopyWithImpl<$Res, _$LogoutUserResponseUnknownImpl>
+    implements _$$LogoutUserResponseUnknownImplCopyWith<$Res> {
+  __$$LogoutUserResponseUnknownImplCopyWithImpl(
+      _$LogoutUserResponseUnknownImpl _value,
+      $Res Function(_$LogoutUserResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10489,7 +10554,7 @@ class __$$LogoutUserResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$LogoutUserResponseUnknown(
+    return _then(_$LogoutUserResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -10502,8 +10567,8 @@ class __$$LogoutUserResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LogoutUserResponseUnknown extends LogoutUserResponseUnknown {
-  const _$LogoutUserResponseUnknown(
+class _$LogoutUserResponseUnknownImpl extends LogoutUserResponseUnknown {
+  const _$LogoutUserResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -10518,10 +10583,10 @@ class _$LogoutUserResponseUnknown extends LogoutUserResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$LogoutUserResponseUnknown &&
+            other is _$LogoutUserResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -10535,9 +10600,9 @@ class _$LogoutUserResponseUnknown extends LogoutUserResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LogoutUserResponseUnknownCopyWith<_$LogoutUserResponseUnknown>
-      get copyWith => __$$LogoutUserResponseUnknownCopyWithImpl<
-          _$LogoutUserResponseUnknown>(this, _$identity);
+  _$$LogoutUserResponseUnknownImplCopyWith<_$LogoutUserResponseUnknownImpl>
+      get copyWith => __$$LogoutUserResponseUnknownImplCopyWithImpl<
+          _$LogoutUserResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -10605,7 +10670,7 @@ class _$LogoutUserResponseUnknown extends LogoutUserResponseUnknown {
 abstract class LogoutUserResponseUnknown extends LogoutUserData {
   const factory LogoutUserResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$LogoutUserResponseUnknown;
+      required final Object? responseData}) = _$LogoutUserResponseUnknownImpl;
   const LogoutUserResponseUnknown._() : super._();
 
   int? get statusCode;
@@ -10613,7 +10678,7 @@ abstract class LogoutUserResponseUnknown extends LogoutUserData {
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$LogoutUserResponseUnknownCopyWith<_$LogoutUserResponseUnknown>
+  _$$LogoutUserResponseUnknownImplCopyWith<_$LogoutUserResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -10702,22 +10767,24 @@ class _$UpdateUserDataCopyWithImpl<$Res, $Val extends UpdateUserData>
 }
 
 /// @nodoc
-abstract class _$$UpdateUserDataAs400VoidCopyWith<$Res>
+abstract class _$$UpdateUserDataAs400VoidImplCopyWith<$Res>
     implements $UpdateUserDataCopyWith<$Res> {
-  factory _$$UpdateUserDataAs400VoidCopyWith(_$UpdateUserDataAs400Void value,
-          $Res Function(_$UpdateUserDataAs400Void) then) =
-      __$$UpdateUserDataAs400VoidCopyWithImpl<$Res>;
+  factory _$$UpdateUserDataAs400VoidImplCopyWith(
+          _$UpdateUserDataAs400VoidImpl value,
+          $Res Function(_$UpdateUserDataAs400VoidImpl) then) =
+      __$$UpdateUserDataAs400VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$UpdateUserDataAs400VoidCopyWithImpl<$Res>
-    extends _$UpdateUserDataCopyWithImpl<$Res, _$UpdateUserDataAs400Void>
-    implements _$$UpdateUserDataAs400VoidCopyWith<$Res> {
-  __$$UpdateUserDataAs400VoidCopyWithImpl(_$UpdateUserDataAs400Void _value,
-      $Res Function(_$UpdateUserDataAs400Void) _then)
+class __$$UpdateUserDataAs400VoidImplCopyWithImpl<$Res>
+    extends _$UpdateUserDataCopyWithImpl<$Res, _$UpdateUserDataAs400VoidImpl>
+    implements _$$UpdateUserDataAs400VoidImplCopyWith<$Res> {
+  __$$UpdateUserDataAs400VoidImplCopyWithImpl(
+      _$UpdateUserDataAs400VoidImpl _value,
+      $Res Function(_$UpdateUserDataAs400VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10725,7 +10792,7 @@ class __$$UpdateUserDataAs400VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$UpdateUserDataAs400Void(
+    return _then(_$UpdateUserDataAs400VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -10734,8 +10801,8 @@ class __$$UpdateUserDataAs400VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UpdateUserDataAs400Void extends UpdateUserDataAs400Void {
-  const _$UpdateUserDataAs400Void({required this.responseData}) : super._();
+class _$UpdateUserDataAs400VoidImpl extends UpdateUserDataAs400Void {
+  const _$UpdateUserDataAs400VoidImpl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -10746,10 +10813,10 @@ class _$UpdateUserDataAs400Void extends UpdateUserDataAs400Void {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UpdateUserDataAs400Void &&
+            other is _$UpdateUserDataAs400VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -10761,9 +10828,9 @@ class _$UpdateUserDataAs400Void extends UpdateUserDataAs400Void {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UpdateUserDataAs400VoidCopyWith<_$UpdateUserDataAs400Void> get copyWith =>
-      __$$UpdateUserDataAs400VoidCopyWithImpl<_$UpdateUserDataAs400Void>(
-          this, _$identity);
+  _$$UpdateUserDataAs400VoidImplCopyWith<_$UpdateUserDataAs400VoidImpl>
+      get copyWith => __$$UpdateUserDataAs400VoidImplCopyWithImpl<
+          _$UpdateUserDataAs400VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -10836,34 +10903,36 @@ class _$UpdateUserDataAs400Void extends UpdateUserDataAs400Void {
 
 abstract class UpdateUserDataAs400Void extends UpdateUserData {
   const factory UpdateUserDataAs400Void({required final Object? responseData}) =
-      _$UpdateUserDataAs400Void;
+      _$UpdateUserDataAs400VoidImpl;
   const UpdateUserDataAs400Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$UpdateUserDataAs400VoidCopyWith<_$UpdateUserDataAs400Void> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UpdateUserDataAs400VoidImplCopyWith<_$UpdateUserDataAs400VoidImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$UpdateUserDataAs404VoidCopyWith<$Res>
+abstract class _$$UpdateUserDataAs404VoidImplCopyWith<$Res>
     implements $UpdateUserDataCopyWith<$Res> {
-  factory _$$UpdateUserDataAs404VoidCopyWith(_$UpdateUserDataAs404Void value,
-          $Res Function(_$UpdateUserDataAs404Void) then) =
-      __$$UpdateUserDataAs404VoidCopyWithImpl<$Res>;
+  factory _$$UpdateUserDataAs404VoidImplCopyWith(
+          _$UpdateUserDataAs404VoidImpl value,
+          $Res Function(_$UpdateUserDataAs404VoidImpl) then) =
+      __$$UpdateUserDataAs404VoidImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object? responseData});
 }
 
 /// @nodoc
-class __$$UpdateUserDataAs404VoidCopyWithImpl<$Res>
-    extends _$UpdateUserDataCopyWithImpl<$Res, _$UpdateUserDataAs404Void>
-    implements _$$UpdateUserDataAs404VoidCopyWith<$Res> {
-  __$$UpdateUserDataAs404VoidCopyWithImpl(_$UpdateUserDataAs404Void _value,
-      $Res Function(_$UpdateUserDataAs404Void) _then)
+class __$$UpdateUserDataAs404VoidImplCopyWithImpl<$Res>
+    extends _$UpdateUserDataCopyWithImpl<$Res, _$UpdateUserDataAs404VoidImpl>
+    implements _$$UpdateUserDataAs404VoidImplCopyWith<$Res> {
+  __$$UpdateUserDataAs404VoidImplCopyWithImpl(
+      _$UpdateUserDataAs404VoidImpl _value,
+      $Res Function(_$UpdateUserDataAs404VoidImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10871,7 +10940,7 @@ class __$$UpdateUserDataAs404VoidCopyWithImpl<$Res>
   $Res call({
     Object? responseData = freezed,
   }) {
-    return _then(_$UpdateUserDataAs404Void(
+    return _then(_$UpdateUserDataAs404VoidImpl(
       responseData:
           freezed == responseData ? _value.responseData : responseData,
     ));
@@ -10880,8 +10949,8 @@ class __$$UpdateUserDataAs404VoidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UpdateUserDataAs404Void extends UpdateUserDataAs404Void {
-  const _$UpdateUserDataAs404Void({required this.responseData}) : super._();
+class _$UpdateUserDataAs404VoidImpl extends UpdateUserDataAs404Void {
+  const _$UpdateUserDataAs404VoidImpl({required this.responseData}) : super._();
 
   @override
   final Object? responseData;
@@ -10892,10 +10961,10 @@ class _$UpdateUserDataAs404Void extends UpdateUserDataAs404Void {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UpdateUserDataAs404Void &&
+            other is _$UpdateUserDataAs404VoidImpl &&
             const DeepCollectionEquality()
                 .equals(other.responseData, responseData));
   }
@@ -10907,9 +10976,9 @@ class _$UpdateUserDataAs404Void extends UpdateUserDataAs404Void {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UpdateUserDataAs404VoidCopyWith<_$UpdateUserDataAs404Void> get copyWith =>
-      __$$UpdateUserDataAs404VoidCopyWithImpl<_$UpdateUserDataAs404Void>(
-          this, _$identity);
+  _$$UpdateUserDataAs404VoidImplCopyWith<_$UpdateUserDataAs404VoidImpl>
+      get copyWith => __$$UpdateUserDataAs404VoidImplCopyWithImpl<
+          _$UpdateUserDataAs404VoidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -10982,35 +11051,36 @@ class _$UpdateUserDataAs404Void extends UpdateUserDataAs404Void {
 
 abstract class UpdateUserDataAs404Void extends UpdateUserData {
   const factory UpdateUserDataAs404Void({required final Object? responseData}) =
-      _$UpdateUserDataAs404Void;
+      _$UpdateUserDataAs404VoidImpl;
   const UpdateUserDataAs404Void._() : super._();
 
   @override
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$UpdateUserDataAs404VoidCopyWith<_$UpdateUserDataAs404Void> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UpdateUserDataAs404VoidImplCopyWith<_$UpdateUserDataAs404VoidImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$UpdateUserResponseUnknownCopyWith<$Res>
+abstract class _$$UpdateUserResponseUnknownImplCopyWith<$Res>
     implements $UpdateUserDataCopyWith<$Res> {
-  factory _$$UpdateUserResponseUnknownCopyWith(
-          _$UpdateUserResponseUnknown value,
-          $Res Function(_$UpdateUserResponseUnknown) then) =
-      __$$UpdateUserResponseUnknownCopyWithImpl<$Res>;
+  factory _$$UpdateUserResponseUnknownImplCopyWith(
+          _$UpdateUserResponseUnknownImpl value,
+          $Res Function(_$UpdateUserResponseUnknownImpl) then) =
+      __$$UpdateUserResponseUnknownImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? statusCode, Object? responseData});
 }
 
 /// @nodoc
-class __$$UpdateUserResponseUnknownCopyWithImpl<$Res>
-    extends _$UpdateUserDataCopyWithImpl<$Res, _$UpdateUserResponseUnknown>
-    implements _$$UpdateUserResponseUnknownCopyWith<$Res> {
-  __$$UpdateUserResponseUnknownCopyWithImpl(_$UpdateUserResponseUnknown _value,
-      $Res Function(_$UpdateUserResponseUnknown) _then)
+class __$$UpdateUserResponseUnknownImplCopyWithImpl<$Res>
+    extends _$UpdateUserDataCopyWithImpl<$Res, _$UpdateUserResponseUnknownImpl>
+    implements _$$UpdateUserResponseUnknownImplCopyWith<$Res> {
+  __$$UpdateUserResponseUnknownImplCopyWithImpl(
+      _$UpdateUserResponseUnknownImpl _value,
+      $Res Function(_$UpdateUserResponseUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11019,7 +11089,7 @@ class __$$UpdateUserResponseUnknownCopyWithImpl<$Res>
     Object? statusCode = freezed,
     Object? responseData = freezed,
   }) {
-    return _then(_$UpdateUserResponseUnknown(
+    return _then(_$UpdateUserResponseUnknownImpl(
       statusCode: freezed == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
@@ -11032,8 +11102,8 @@ class __$$UpdateUserResponseUnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UpdateUserResponseUnknown extends UpdateUserResponseUnknown {
-  const _$UpdateUserResponseUnknown(
+class _$UpdateUserResponseUnknownImpl extends UpdateUserResponseUnknown {
+  const _$UpdateUserResponseUnknownImpl(
       {this.statusCode, required this.responseData})
       : super._();
 
@@ -11048,10 +11118,10 @@ class _$UpdateUserResponseUnknown extends UpdateUserResponseUnknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UpdateUserResponseUnknown &&
+            other is _$UpdateUserResponseUnknownImpl &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
             const DeepCollectionEquality()
@@ -11065,9 +11135,9 @@ class _$UpdateUserResponseUnknown extends UpdateUserResponseUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$UpdateUserResponseUnknownCopyWith<_$UpdateUserResponseUnknown>
-      get copyWith => __$$UpdateUserResponseUnknownCopyWithImpl<
-          _$UpdateUserResponseUnknown>(this, _$identity);
+  _$$UpdateUserResponseUnknownImplCopyWith<_$UpdateUserResponseUnknownImpl>
+      get copyWith => __$$UpdateUserResponseUnknownImplCopyWithImpl<
+          _$UpdateUserResponseUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -11141,7 +11211,7 @@ class _$UpdateUserResponseUnknown extends UpdateUserResponseUnknown {
 abstract class UpdateUserResponseUnknown extends UpdateUserData {
   const factory UpdateUserResponseUnknown(
       {final int? statusCode,
-      required final Object? responseData}) = _$UpdateUserResponseUnknown;
+      required final Object? responseData}) = _$UpdateUserResponseUnknownImpl;
   const UpdateUserResponseUnknown._() : super._();
 
   int? get statusCode;
@@ -11149,7 +11219,7 @@ abstract class UpdateUserResponseUnknown extends UpdateUserData {
   Object? get responseData;
   @override
   @JsonKey(ignore: true)
-  _$$UpdateUserResponseUnknownCopyWith<_$UpdateUserResponseUnknown>
+  _$$UpdateUserResponseUnknownImplCopyWith<_$UpdateUserResponseUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -11219,11 +11289,11 @@ class _$ApiResponseCopyWithImpl<$Res, $Val extends ApiResponse>
 }
 
 /// @nodoc
-abstract class _$$_ApiResponseCopyWith<$Res>
+abstract class _$$ApiResponseImplCopyWith<$Res>
     implements $ApiResponseCopyWith<$Res> {
-  factory _$$_ApiResponseCopyWith(
-          _$_ApiResponse value, $Res Function(_$_ApiResponse) then) =
-      __$$_ApiResponseCopyWithImpl<$Res>;
+  factory _$$ApiResponseImplCopyWith(
+          _$ApiResponseImpl value, $Res Function(_$ApiResponseImpl) then) =
+      __$$ApiResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -11233,11 +11303,11 @@ abstract class _$$_ApiResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ApiResponseCopyWithImpl<$Res>
-    extends _$ApiResponseCopyWithImpl<$Res, _$_ApiResponse>
-    implements _$$_ApiResponseCopyWith<$Res> {
-  __$$_ApiResponseCopyWithImpl(
-      _$_ApiResponse _value, $Res Function(_$_ApiResponse) _then)
+class __$$ApiResponseImplCopyWithImpl<$Res>
+    extends _$ApiResponseCopyWithImpl<$Res, _$ApiResponseImpl>
+    implements _$$ApiResponseImplCopyWith<$Res> {
+  __$$ApiResponseImplCopyWithImpl(
+      _$ApiResponseImpl _value, $Res Function(_$ApiResponseImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11247,7 +11317,7 @@ class __$$_ApiResponseCopyWithImpl<$Res>
     Object? type = freezed,
     Object? message = freezed,
   }) {
-    return _then(_$_ApiResponse(
+    return _then(_$ApiResponseImpl(
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -11266,15 +11336,15 @@ class __$$_ApiResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ApiResponse extends _ApiResponse {
-  const _$_ApiResponse(
+class _$ApiResponseImpl extends _ApiResponse {
+  const _$ApiResponseImpl(
       {@JsonKey(name: r'code') this.code,
       @JsonKey(name: r'type') this.type,
       @JsonKey(name: r'message') this.message})
       : super._();
 
-  factory _$_ApiResponse.fromJson(Map<String, dynamic> json) =>
-      _$$_ApiResponseFromJson(json);
+  factory _$ApiResponseImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ApiResponseImplFromJson(json);
 
   @override
   @JsonKey(name: r'code')
@@ -11292,10 +11362,10 @@ class _$_ApiResponse extends _ApiResponse {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ApiResponse &&
+            other is _$ApiResponseImpl &&
             (identical(other.code, code) || other.code == code) &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.message, message) || other.message == message));
@@ -11308,12 +11378,12 @@ class _$_ApiResponse extends _ApiResponse {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ApiResponseCopyWith<_$_ApiResponse> get copyWith =>
-      __$$_ApiResponseCopyWithImpl<_$_ApiResponse>(this, _$identity);
+  _$$ApiResponseImplCopyWith<_$ApiResponseImpl> get copyWith =>
+      __$$ApiResponseImplCopyWithImpl<_$ApiResponseImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ApiResponseToJson(
+    return _$$ApiResponseImplToJson(
       this,
     );
   }
@@ -11323,11 +11393,11 @@ abstract class _ApiResponse extends ApiResponse {
   const factory _ApiResponse(
       {@JsonKey(name: r'code') final int? code,
       @JsonKey(name: r'type') final String? type,
-      @JsonKey(name: r'message') final String? message}) = _$_ApiResponse;
+      @JsonKey(name: r'message') final String? message}) = _$ApiResponseImpl;
   const _ApiResponse._() : super._();
 
   factory _ApiResponse.fromJson(Map<String, dynamic> json) =
-      _$_ApiResponse.fromJson;
+      _$ApiResponseImpl.fromJson;
 
   @override
   @JsonKey(name: r'code')
@@ -11340,7 +11410,7 @@ abstract class _ApiResponse extends ApiResponse {
   String? get message;
   @override
   @JsonKey(ignore: true)
-  _$$_ApiResponseCopyWith<_$_ApiResponse> get copyWith =>
+  _$$ApiResponseImplCopyWith<_$ApiResponseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -11400,10 +11470,11 @@ class _$CategoryCopyWithImpl<$Res, $Val extends Category>
 }
 
 /// @nodoc
-abstract class _$$_CategoryCopyWith<$Res> implements $CategoryCopyWith<$Res> {
-  factory _$$_CategoryCopyWith(
-          _$_Category value, $Res Function(_$_Category) then) =
-      __$$_CategoryCopyWithImpl<$Res>;
+abstract class _$$CategoryImplCopyWith<$Res>
+    implements $CategoryCopyWith<$Res> {
+  factory _$$CategoryImplCopyWith(
+          _$CategoryImpl value, $Res Function(_$CategoryImpl) then) =
+      __$$CategoryImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -11411,11 +11482,11 @@ abstract class _$$_CategoryCopyWith<$Res> implements $CategoryCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_CategoryCopyWithImpl<$Res>
-    extends _$CategoryCopyWithImpl<$Res, _$_Category>
-    implements _$$_CategoryCopyWith<$Res> {
-  __$$_CategoryCopyWithImpl(
-      _$_Category _value, $Res Function(_$_Category) _then)
+class __$$CategoryImplCopyWithImpl<$Res>
+    extends _$CategoryCopyWithImpl<$Res, _$CategoryImpl>
+    implements _$$CategoryImplCopyWith<$Res> {
+  __$$CategoryImplCopyWithImpl(
+      _$CategoryImpl _value, $Res Function(_$CategoryImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11424,7 +11495,7 @@ class __$$_CategoryCopyWithImpl<$Res>
     Object? id = freezed,
     Object? name = freezed,
   }) {
-    return _then(_$_Category(
+    return _then(_$CategoryImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -11439,13 +11510,13 @@ class __$$_CategoryCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Category extends _Category {
-  const _$_Category(
+class _$CategoryImpl extends _Category {
+  const _$CategoryImpl(
       {@JsonKey(name: r'id') this.id, @JsonKey(name: r'name') this.name})
       : super._();
 
-  factory _$_Category.fromJson(Map<String, dynamic> json) =>
-      _$$_CategoryFromJson(json);
+  factory _$CategoryImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CategoryImplFromJson(json);
 
   @override
   @JsonKey(name: r'id')
@@ -11460,10 +11531,10 @@ class _$_Category extends _Category {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Category &&
+            other is _$CategoryImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name));
   }
@@ -11475,12 +11546,12 @@ class _$_Category extends _Category {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CategoryCopyWith<_$_Category> get copyWith =>
-      __$$_CategoryCopyWithImpl<_$_Category>(this, _$identity);
+  _$$CategoryImplCopyWith<_$CategoryImpl> get copyWith =>
+      __$$CategoryImplCopyWithImpl<_$CategoryImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CategoryToJson(
+    return _$$CategoryImplToJson(
       this,
     );
   }
@@ -11489,10 +11560,11 @@ class _$_Category extends _Category {
 abstract class _Category extends Category {
   const factory _Category(
       {@JsonKey(name: r'id') final int? id,
-      @JsonKey(name: r'name') final String? name}) = _$_Category;
+      @JsonKey(name: r'name') final String? name}) = _$CategoryImpl;
   const _Category._() : super._();
 
-  factory _Category.fromJson(Map<String, dynamic> json) = _$_Category.fromJson;
+  factory _Category.fromJson(Map<String, dynamic> json) =
+      _$CategoryImpl.fromJson;
 
   @override
   @JsonKey(name: r'id')
@@ -11502,7 +11574,7 @@ abstract class _Category extends Category {
   String? get name;
   @override
   @JsonKey(ignore: true)
-  _$$_CategoryCopyWith<_$_Category> get copyWith =>
+  _$$CategoryImplCopyWith<_$CategoryImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -11596,9 +11668,10 @@ class _$OrderCopyWithImpl<$Res, $Val extends Order>
 }
 
 /// @nodoc
-abstract class _$$_OrderCopyWith<$Res> implements $OrderCopyWith<$Res> {
-  factory _$$_OrderCopyWith(_$_Order value, $Res Function(_$_Order) then) =
-      __$$_OrderCopyWithImpl<$Res>;
+abstract class _$$OrderImplCopyWith<$Res> implements $OrderCopyWith<$Res> {
+  factory _$$OrderImplCopyWith(
+          _$OrderImpl value, $Res Function(_$OrderImpl) then) =
+      __$$OrderImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -11611,9 +11684,11 @@ abstract class _$$_OrderCopyWith<$Res> implements $OrderCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_OrderCopyWithImpl<$Res> extends _$OrderCopyWithImpl<$Res, _$_Order>
-    implements _$$_OrderCopyWith<$Res> {
-  __$$_OrderCopyWithImpl(_$_Order _value, $Res Function(_$_Order) _then)
+class __$$OrderImplCopyWithImpl<$Res>
+    extends _$OrderCopyWithImpl<$Res, _$OrderImpl>
+    implements _$$OrderImplCopyWith<$Res> {
+  __$$OrderImplCopyWithImpl(
+      _$OrderImpl _value, $Res Function(_$OrderImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11626,7 +11701,7 @@ class __$$_OrderCopyWithImpl<$Res> extends _$OrderCopyWithImpl<$Res, _$_Order>
     Object? status = freezed,
     Object? complete = freezed,
   }) {
-    return _then(_$_Order(
+    return _then(_$OrderImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -11657,8 +11732,8 @@ class __$$_OrderCopyWithImpl<$Res> extends _$OrderCopyWithImpl<$Res, _$_Order>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Order extends _Order {
-  const _$_Order(
+class _$OrderImpl extends _Order {
+  const _$OrderImpl(
       {@JsonKey(name: r'id') this.id,
       @JsonKey(name: r'petId') this.petId,
       @JsonKey(name: r'quantity') this.quantity,
@@ -11667,8 +11742,8 @@ class _$_Order extends _Order {
       @JsonKey(name: r'complete') this.complete})
       : super._();
 
-  factory _$_Order.fromJson(Map<String, dynamic> json) =>
-      _$$_OrderFromJson(json);
+  factory _$OrderImpl.fromJson(Map<String, dynamic> json) =>
+      _$$OrderImplFromJson(json);
 
   @override
   @JsonKey(name: r'id')
@@ -11697,10 +11772,10 @@ class _$_Order extends _Order {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Order &&
+            other is _$OrderImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.petId, petId) || other.petId == petId) &&
             (identical(other.quantity, quantity) ||
@@ -11720,12 +11795,12 @@ class _$_Order extends _Order {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_OrderCopyWith<_$_Order> get copyWith =>
-      __$$_OrderCopyWithImpl<_$_Order>(this, _$identity);
+  _$$OrderImplCopyWith<_$OrderImpl> get copyWith =>
+      __$$OrderImplCopyWithImpl<_$OrderImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_OrderToJson(
+    return _$$OrderImplToJson(
       this,
     );
   }
@@ -11738,10 +11813,10 @@ abstract class _Order extends Order {
       @JsonKey(name: r'quantity') final int? quantity,
       @JsonKey(name: r'shipDate') final DateTime? shipDate,
       @JsonKey(name: r'status') final OrderStatusEnum? status,
-      @JsonKey(name: r'complete') final bool? complete}) = _$_Order;
+      @JsonKey(name: r'complete') final bool? complete}) = _$OrderImpl;
   const _Order._() : super._();
 
-  factory _Order.fromJson(Map<String, dynamic> json) = _$_Order.fromJson;
+  factory _Order.fromJson(Map<String, dynamic> json) = _$OrderImpl.fromJson;
 
   @override
   @JsonKey(name: r'id')
@@ -11765,7 +11840,7 @@ abstract class _Order extends Order {
   bool? get complete;
   @override
   @JsonKey(ignore: true)
-  _$$_OrderCopyWith<_$_Order> get copyWith =>
+  _$$OrderImplCopyWith<_$OrderImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -11872,9 +11947,9 @@ class _$PetCopyWithImpl<$Res, $Val extends Pet> implements $PetCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$$_PetCopyWith<$Res> implements $PetCopyWith<$Res> {
-  factory _$$_PetCopyWith(_$_Pet value, $Res Function(_$_Pet) then) =
-      __$$_PetCopyWithImpl<$Res>;
+abstract class _$$PetImplCopyWith<$Res> implements $PetCopyWith<$Res> {
+  factory _$$PetImplCopyWith(_$PetImpl value, $Res Function(_$PetImpl) then) =
+      __$$PetImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -11890,9 +11965,9 @@ abstract class _$$_PetCopyWith<$Res> implements $PetCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_PetCopyWithImpl<$Res> extends _$PetCopyWithImpl<$Res, _$_Pet>
-    implements _$$_PetCopyWith<$Res> {
-  __$$_PetCopyWithImpl(_$_Pet _value, $Res Function(_$_Pet) _then)
+class __$$PetImplCopyWithImpl<$Res> extends _$PetCopyWithImpl<$Res, _$PetImpl>
+    implements _$$PetImplCopyWith<$Res> {
+  __$$PetImplCopyWithImpl(_$PetImpl _value, $Res Function(_$PetImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11905,7 +11980,7 @@ class __$$_PetCopyWithImpl<$Res> extends _$PetCopyWithImpl<$Res, _$_Pet>
     Object? tags = freezed,
     Object? status = freezed,
   }) {
-    return _then(_$_Pet(
+    return _then(_$PetImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -11936,8 +12011,8 @@ class __$$_PetCopyWithImpl<$Res> extends _$PetCopyWithImpl<$Res, _$_Pet>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Pet extends _Pet {
-  const _$_Pet(
+class _$PetImpl extends _Pet {
+  const _$PetImpl(
       {@JsonKey(name: r'id') this.id,
       @JsonKey(name: r'category') this.category,
       @JsonKey(name: r'name') required this.name,
@@ -11948,7 +12023,8 @@ class _$_Pet extends _Pet {
         _tags = tags,
         super._();
 
-  factory _$_Pet.fromJson(Map<String, dynamic> json) => _$$_PetFromJson(json);
+  factory _$PetImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PetImplFromJson(json);
 
   @override
   @JsonKey(name: r'id')
@@ -11990,10 +12066,10 @@ class _$_Pet extends _Pet {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Pet &&
+            other is _$PetImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.category, category) ||
                 other.category == category) &&
@@ -12018,12 +12094,12 @@ class _$_Pet extends _Pet {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PetCopyWith<_$_Pet> get copyWith =>
-      __$$_PetCopyWithImpl<_$_Pet>(this, _$identity);
+  _$$PetImplCopyWith<_$PetImpl> get copyWith =>
+      __$$PetImplCopyWithImpl<_$PetImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PetToJson(
+    return _$$PetImplToJson(
       this,
     );
   }
@@ -12036,10 +12112,10 @@ abstract class _Pet extends Pet {
       @JsonKey(name: r'name') required final String name,
       @JsonKey(name: r'photoUrls') required final List<String?> photoUrls,
       @JsonKey(name: r'tags') final List<Tag?>? tags,
-      @JsonKey(name: r'status') final PetStatusEnum? status}) = _$_Pet;
+      @JsonKey(name: r'status') final PetStatusEnum? status}) = _$PetImpl;
   const _Pet._() : super._();
 
-  factory _Pet.fromJson(Map<String, dynamic> json) = _$_Pet.fromJson;
+  factory _Pet.fromJson(Map<String, dynamic> json) = _$PetImpl.fromJson;
 
   @override
   @JsonKey(name: r'id')
@@ -12063,7 +12139,8 @@ abstract class _Pet extends Pet {
   PetStatusEnum? get status;
   @override
   @JsonKey(ignore: true)
-  _$$_PetCopyWith<_$_Pet> get copyWith => throw _privateConstructorUsedError;
+  _$$PetImplCopyWith<_$PetImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 Tag _$TagFromJson(Map<String, dynamic> json) {
@@ -12120,9 +12197,9 @@ class _$TagCopyWithImpl<$Res, $Val extends Tag> implements $TagCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$$_TagCopyWith<$Res> implements $TagCopyWith<$Res> {
-  factory _$$_TagCopyWith(_$_Tag value, $Res Function(_$_Tag) then) =
-      __$$_TagCopyWithImpl<$Res>;
+abstract class _$$TagImplCopyWith<$Res> implements $TagCopyWith<$Res> {
+  factory _$$TagImplCopyWith(_$TagImpl value, $Res Function(_$TagImpl) then) =
+      __$$TagImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -12130,9 +12207,9 @@ abstract class _$$_TagCopyWith<$Res> implements $TagCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_TagCopyWithImpl<$Res> extends _$TagCopyWithImpl<$Res, _$_Tag>
-    implements _$$_TagCopyWith<$Res> {
-  __$$_TagCopyWithImpl(_$_Tag _value, $Res Function(_$_Tag) _then)
+class __$$TagImplCopyWithImpl<$Res> extends _$TagCopyWithImpl<$Res, _$TagImpl>
+    implements _$$TagImplCopyWith<$Res> {
+  __$$TagImplCopyWithImpl(_$TagImpl _value, $Res Function(_$TagImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -12141,7 +12218,7 @@ class __$$_TagCopyWithImpl<$Res> extends _$TagCopyWithImpl<$Res, _$_Tag>
     Object? id = freezed,
     Object? name = freezed,
   }) {
-    return _then(_$_Tag(
+    return _then(_$TagImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -12156,12 +12233,13 @@ class __$$_TagCopyWithImpl<$Res> extends _$TagCopyWithImpl<$Res, _$_Tag>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Tag extends _Tag {
-  const _$_Tag(
+class _$TagImpl extends _Tag {
+  const _$TagImpl(
       {@JsonKey(name: r'id') this.id, @JsonKey(name: r'name') this.name})
       : super._();
 
-  factory _$_Tag.fromJson(Map<String, dynamic> json) => _$$_TagFromJson(json);
+  factory _$TagImpl.fromJson(Map<String, dynamic> json) =>
+      _$$TagImplFromJson(json);
 
   @override
   @JsonKey(name: r'id')
@@ -12176,10 +12254,10 @@ class _$_Tag extends _Tag {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Tag &&
+            other is _$TagImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name));
   }
@@ -12191,12 +12269,12 @@ class _$_Tag extends _Tag {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_TagCopyWith<_$_Tag> get copyWith =>
-      __$$_TagCopyWithImpl<_$_Tag>(this, _$identity);
+  _$$TagImplCopyWith<_$TagImpl> get copyWith =>
+      __$$TagImplCopyWithImpl<_$TagImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TagToJson(
+    return _$$TagImplToJson(
       this,
     );
   }
@@ -12205,10 +12283,10 @@ class _$_Tag extends _Tag {
 abstract class _Tag extends Tag {
   const factory _Tag(
       {@JsonKey(name: r'id') final int? id,
-      @JsonKey(name: r'name') final String? name}) = _$_Tag;
+      @JsonKey(name: r'name') final String? name}) = _$TagImpl;
   const _Tag._() : super._();
 
-  factory _Tag.fromJson(Map<String, dynamic> json) = _$_Tag.fromJson;
+  factory _Tag.fromJson(Map<String, dynamic> json) = _$TagImpl.fromJson;
 
   @override
   @JsonKey(name: r'id')
@@ -12218,7 +12296,8 @@ abstract class _Tag extends Tag {
   String? get name;
   @override
   @JsonKey(ignore: true)
-  _$$_TagCopyWith<_$_Tag> get copyWith => throw _privateConstructorUsedError;
+  _$$TagImplCopyWith<_$TagImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 User _$UserFromJson(Map<String, dynamic> json) {
@@ -12327,9 +12406,10 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
 }
 
 /// @nodoc
-abstract class _$$_UserCopyWith<$Res> implements $UserCopyWith<$Res> {
-  factory _$$_UserCopyWith(_$_User value, $Res Function(_$_User) then) =
-      __$$_UserCopyWithImpl<$Res>;
+abstract class _$$UserImplCopyWith<$Res> implements $UserCopyWith<$Res> {
+  factory _$$UserImplCopyWith(
+          _$UserImpl value, $Res Function(_$UserImpl) then) =
+      __$$UserImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -12344,9 +12424,10 @@ abstract class _$$_UserCopyWith<$Res> implements $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$_User>
-    implements _$$_UserCopyWith<$Res> {
-  __$$_UserCopyWithImpl(_$_User _value, $Res Function(_$_User) _then)
+class __$$UserImplCopyWithImpl<$Res>
+    extends _$UserCopyWithImpl<$Res, _$UserImpl>
+    implements _$$UserImplCopyWith<$Res> {
+  __$$UserImplCopyWithImpl(_$UserImpl _value, $Res Function(_$UserImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -12361,7 +12442,7 @@ class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$_User>
     Object? phone = freezed,
     Object? userStatus = freezed,
   }) {
-    return _then(_$_User(
+    return _then(_$UserImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -12400,8 +12481,8 @@ class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$_User>
 
 /// @nodoc
 @JsonSerializable()
-class _$_User extends _User {
-  const _$_User(
+class _$UserImpl extends _User {
+  const _$UserImpl(
       {@JsonKey(name: r'id') this.id,
       @JsonKey(name: r'username') this.username,
       @JsonKey(name: r'firstName') this.firstName,
@@ -12412,7 +12493,8 @@ class _$_User extends _User {
       @JsonKey(name: r'userStatus') this.userStatus})
       : super._();
 
-  factory _$_User.fromJson(Map<String, dynamic> json) => _$$_UserFromJson(json);
+  factory _$UserImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UserImplFromJson(json);
 
   @override
   @JsonKey(name: r'id')
@@ -12447,10 +12529,10 @@ class _$_User extends _User {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_User &&
+            other is _$UserImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.username, username) ||
                 other.username == username) &&
@@ -12474,12 +12556,12 @@ class _$_User extends _User {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_UserCopyWith<_$_User> get copyWith =>
-      __$$_UserCopyWithImpl<_$_User>(this, _$identity);
+  _$$UserImplCopyWith<_$UserImpl> get copyWith =>
+      __$$UserImplCopyWithImpl<_$UserImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UserToJson(
+    return _$$UserImplToJson(
       this,
     );
   }
@@ -12494,10 +12576,10 @@ abstract class _User extends User {
       @JsonKey(name: r'email') final String? email,
       @JsonKey(name: r'password') final String? password,
       @JsonKey(name: r'phone') final String? phone,
-      @JsonKey(name: r'userStatus') final int? userStatus}) = _$_User;
+      @JsonKey(name: r'userStatus') final int? userStatus}) = _$UserImpl;
   const _User._() : super._();
 
-  factory _User.fromJson(Map<String, dynamic> json) = _$_User.fromJson;
+  factory _User.fromJson(Map<String, dynamic> json) = _$UserImpl.fromJson;
 
   @override
   @JsonKey(name: r'id')
@@ -12527,5 +12609,6 @@ abstract class _User extends User {
   int? get userStatus;
   @override
   @JsonKey(ignore: true)
-  _$$_UserCopyWith<_$_User> get copyWith => throw _privateConstructorUsedError;
+  _$$UserImplCopyWith<_$UserImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

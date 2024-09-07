@@ -6,105 +6,108 @@ part of 'models.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_IntInUnion _$$_IntInUnionFromJson(Map<String, dynamic> json) =>
-    _$_IntInUnion(
-      intValue: json['intValue'] as int,
+_$IntInUnionImpl _$$IntInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$IntInUnionImpl(
+      intValue: (json['intValue'] as num).toInt(),
     );
 
-Map<String, dynamic> _$$_IntInUnionToJson(_$_IntInUnion instance) =>
+Map<String, dynamic> _$$IntInUnionImplToJson(_$IntInUnionImpl instance) =>
     <String, dynamic>{
       'intValue': instance.intValue,
     };
 
-_$_StringInUnion _$$_StringInUnionFromJson(Map<String, dynamic> json) =>
-    _$_StringInUnion(
+_$StringInUnionImpl _$$StringInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$StringInUnionImpl(
       stringValue: json['stringValue'] as String,
     );
 
-Map<String, dynamic> _$$_StringInUnionToJson(_$_StringInUnion instance) =>
+Map<String, dynamic> _$$StringInUnionImplToJson(_$StringInUnionImpl instance) =>
     <String, dynamic>{
       'stringValue': instance.stringValue,
     };
 
-_$_BoolInUnion _$$_BoolInUnionFromJson(Map<String, dynamic> json) =>
-    _$_BoolInUnion(
+_$BoolInUnionImpl _$$BoolInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$BoolInUnionImpl(
       boolValue: json['boolValue'] as bool,
     );
 
-Map<String, dynamic> _$$_BoolInUnionToJson(_$_BoolInUnion instance) =>
+Map<String, dynamic> _$$BoolInUnionImplToJson(_$BoolInUnionImpl instance) =>
     <String, dynamic>{
       'boolValue': instance.boolValue,
     };
 
-_$_DoubleInUnion _$$_DoubleInUnionFromJson(Map<String, dynamic> json) =>
-    _$_DoubleInUnion(
+_$DoubleInUnionImpl _$$DoubleInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$DoubleInUnionImpl(
       doubleValue: (json['doubleValue'] as num).toDouble(),
     );
 
-Map<String, dynamic> _$$_DoubleInUnionToJson(_$_DoubleInUnion instance) =>
+Map<String, dynamic> _$$DoubleInUnionImplToJson(_$DoubleInUnionImpl instance) =>
     <String, dynamic>{
       'doubleValue': instance.doubleValue,
     };
 
-_$_ObjectInUnion _$$_ObjectInUnionFromJson(Map<String, dynamic> json) =>
-    _$_ObjectInUnion(
+_$ObjectInUnionImpl _$$ObjectInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$ObjectInUnionImpl(
       objectValue: json['objectValue'] as Object,
     );
 
-Map<String, dynamic> _$$_ObjectInUnionToJson(_$_ObjectInUnion instance) =>
+Map<String, dynamic> _$$ObjectInUnionImplToJson(_$ObjectInUnionImpl instance) =>
     <String, dynamic>{
       'objectValue': instance.objectValue,
     };
 
-_$_NumInUnion _$$_NumInUnionFromJson(Map<String, dynamic> json) =>
-    _$_NumInUnion(
+_$NumInUnionImpl _$$NumInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$NumInUnionImpl(
       numValue: json['numValue'] as num,
     );
 
-Map<String, dynamic> _$$_NumInUnionToJson(_$_NumInUnion instance) =>
+Map<String, dynamic> _$$NumInUnionImplToJson(_$NumInUnionImpl instance) =>
     <String, dynamic>{
       'numValue': instance.numValue,
     };
 
-_$_DateTimeInUnion _$$_DateTimeInUnionFromJson(Map<String, dynamic> json) =>
-    _$_DateTimeInUnion(
+_$DateTimeInUnionImpl _$$DateTimeInUnionImplFromJson(
+        Map<String, dynamic> json) =>
+    _$DateTimeInUnionImpl(
       dateTimeValue: DateTime.parse(json['dateTimeValue'] as String),
     );
 
-Map<String, dynamic> _$$_DateTimeInUnionToJson(_$_DateTimeInUnion instance) =>
+Map<String, dynamic> _$$DateTimeInUnionImplToJson(
+        _$DateTimeInUnionImpl instance) =>
     <String, dynamic>{
       'dateTimeValue': instance.dateTimeValue.toIso8601String(),
     };
 
-_$_ApiResponse _$$_ApiResponseFromJson(Map<String, dynamic> json) =>
-    _$_ApiResponse(
-      code: json['code'] as int?,
+_$ApiResponseImpl _$$ApiResponseImplFromJson(Map<String, dynamic> json) =>
+    _$ApiResponseImpl(
+      code: (json['code'] as num?)?.toInt(),
       type: json['type'] as String?,
       message: json['message'] as String?,
     );
 
-Map<String, dynamic> _$$_ApiResponseToJson(_$_ApiResponse instance) =>
+Map<String, dynamic> _$$ApiResponseImplToJson(_$ApiResponseImpl instance) =>
     <String, dynamic>{
       'code': instance.code,
       'type': instance.type,
       'message': instance.message,
     };
 
-_$_Category _$$_CategoryFromJson(Map<String, dynamic> json) => _$_Category(
-      id: json['id'] as int?,
+_$CategoryImpl _$$CategoryImplFromJson(Map<String, dynamic> json) =>
+    _$CategoryImpl(
+      id: (json['id'] as num?)?.toInt(),
       name: json['name'] as String?,
     );
 
-Map<String, dynamic> _$$_CategoryToJson(_$_Category instance) =>
+Map<String, dynamic> _$$CategoryImplToJson(_$CategoryImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
     };
 
-_$_Order _$$_OrderFromJson(Map<String, dynamic> json) => _$_Order(
-      id: json['id'] as int?,
-      petId: json['petId'] as int?,
-      quantity: json['quantity'] as int?,
+_$OrderImpl _$$OrderImplFromJson(Map<String, dynamic> json) => _$OrderImpl(
+      id: (json['id'] as num?)?.toInt(),
+      petId: (json['petId'] as num?)?.toInt(),
+      quantity: (json['quantity'] as num?)?.toInt(),
       shipDate: json['shipDate'] == null
           ? null
           : DateTime.parse(json['shipDate'] as String),
@@ -112,7 +115,8 @@ _$_Order _$$_OrderFromJson(Map<String, dynamic> json) => _$_Order(
       complete: json['complete'] as bool?,
     );
 
-Map<String, dynamic> _$$_OrderToJson(_$_Order instance) => <String, dynamic>{
+Map<String, dynamic> _$$OrderImplToJson(_$OrderImpl instance) =>
+    <String, dynamic>{
       'id': instance.id,
       'petId': instance.petId,
       'quantity': instance.quantity,
@@ -127,8 +131,8 @@ const _$OrderStatusEnumEnumMap = {
   OrderStatusEnum.delivered: 'delivered',
 };
 
-_$_Pet _$$_PetFromJson(Map<String, dynamic> json) => _$_Pet(
-      id: json['id'] as int?,
+_$PetImpl _$$PetImplFromJson(Map<String, dynamic> json) => _$PetImpl(
+      id: (json['id'] as num?)?.toInt(),
       category: json['category'] == null
           ? null
           : Category.fromJson(json['category'] as Map<String, dynamic>),
@@ -143,7 +147,7 @@ _$_Pet _$$_PetFromJson(Map<String, dynamic> json) => _$_Pet(
       status: $enumDecodeNullable(_$PetStatusEnumEnumMap, json['status']),
     );
 
-Map<String, dynamic> _$$_PetToJson(_$_Pet instance) => <String, dynamic>{
+Map<String, dynamic> _$$PetImplToJson(_$PetImpl instance) => <String, dynamic>{
       'id': instance.id,
       'category': instance.category,
       'name': instance.name,
@@ -158,28 +162,29 @@ const _$PetStatusEnumEnumMap = {
   PetStatusEnum.sold: 'sold',
 };
 
-_$_Tag _$$_TagFromJson(Map<String, dynamic> json) => _$_Tag(
-      id: json['id'] as int?,
+_$TagImpl _$$TagImplFromJson(Map<String, dynamic> json) => _$TagImpl(
+      id: (json['id'] as num?)?.toInt(),
       name: json['name'] as String?,
     );
 
-Map<String, dynamic> _$$_TagToJson(_$_Tag instance) => <String, dynamic>{
+Map<String, dynamic> _$$TagImplToJson(_$TagImpl instance) => <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
     };
 
-_$_User _$$_UserFromJson(Map<String, dynamic> json) => _$_User(
-      id: json['id'] as int?,
+_$UserImpl _$$UserImplFromJson(Map<String, dynamic> json) => _$UserImpl(
+      id: (json['id'] as num?)?.toInt(),
       username: json['username'] as String?,
       firstName: json['firstName'] as String?,
       lastName: json['lastName'] as String?,
       email: json['email'] as String?,
       password: json['password'] as String?,
       phone: json['phone'] as String?,
-      userStatus: json['userStatus'] as int?,
+      userStatus: (json['userStatus'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_UserToJson(_$_User instance) => <String, dynamic>{
+Map<String, dynamic> _$$UserImplToJson(_$UserImpl instance) =>
+    <String, dynamic>{
       'id': instance.id,
       'username': instance.username,
       'firstName': instance.firstName,

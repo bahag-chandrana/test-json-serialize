@@ -6,88 +6,92 @@ part of 'models.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_IntInUnion _$$_IntInUnionFromJson(Map<String, dynamic> json) =>
-    _$_IntInUnion(
-      intValue: json['intValue'] as int,
+_$IntInUnionImpl _$$IntInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$IntInUnionImpl(
+      intValue: (json['intValue'] as num).toInt(),
     );
 
-Map<String, dynamic> _$$_IntInUnionToJson(_$_IntInUnion instance) =>
+Map<String, dynamic> _$$IntInUnionImplToJson(_$IntInUnionImpl instance) =>
     <String, dynamic>{
       'intValue': instance.intValue,
     };
 
-_$_StringInUnion _$$_StringInUnionFromJson(Map<String, dynamic> json) =>
-    _$_StringInUnion(
+_$StringInUnionImpl _$$StringInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$StringInUnionImpl(
       stringValue: json['stringValue'] as String,
     );
 
-Map<String, dynamic> _$$_StringInUnionToJson(_$_StringInUnion instance) =>
+Map<String, dynamic> _$$StringInUnionImplToJson(_$StringInUnionImpl instance) =>
     <String, dynamic>{
       'stringValue': instance.stringValue,
     };
 
-_$_BoolInUnion _$$_BoolInUnionFromJson(Map<String, dynamic> json) =>
-    _$_BoolInUnion(
+_$BoolInUnionImpl _$$BoolInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$BoolInUnionImpl(
       boolValue: json['boolValue'] as bool,
     );
 
-Map<String, dynamic> _$$_BoolInUnionToJson(_$_BoolInUnion instance) =>
+Map<String, dynamic> _$$BoolInUnionImplToJson(_$BoolInUnionImpl instance) =>
     <String, dynamic>{
       'boolValue': instance.boolValue,
     };
 
-_$_DoubleInUnion _$$_DoubleInUnionFromJson(Map<String, dynamic> json) =>
-    _$_DoubleInUnion(
+_$DoubleInUnionImpl _$$DoubleInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$DoubleInUnionImpl(
       doubleValue: (json['doubleValue'] as num).toDouble(),
     );
 
-Map<String, dynamic> _$$_DoubleInUnionToJson(_$_DoubleInUnion instance) =>
+Map<String, dynamic> _$$DoubleInUnionImplToJson(_$DoubleInUnionImpl instance) =>
     <String, dynamic>{
       'doubleValue': instance.doubleValue,
     };
 
-_$_ObjectInUnion _$$_ObjectInUnionFromJson(Map<String, dynamic> json) =>
-    _$_ObjectInUnion(
+_$ObjectInUnionImpl _$$ObjectInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$ObjectInUnionImpl(
       objectValue: json['objectValue'] as Object,
     );
 
-Map<String, dynamic> _$$_ObjectInUnionToJson(_$_ObjectInUnion instance) =>
+Map<String, dynamic> _$$ObjectInUnionImplToJson(_$ObjectInUnionImpl instance) =>
     <String, dynamic>{
       'objectValue': instance.objectValue,
     };
 
-_$_NumInUnion _$$_NumInUnionFromJson(Map<String, dynamic> json) =>
-    _$_NumInUnion(
+_$NumInUnionImpl _$$NumInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$NumInUnionImpl(
       numValue: json['numValue'] as num,
     );
 
-Map<String, dynamic> _$$_NumInUnionToJson(_$_NumInUnion instance) =>
+Map<String, dynamic> _$$NumInUnionImplToJson(_$NumInUnionImpl instance) =>
     <String, dynamic>{
       'numValue': instance.numValue,
     };
 
-_$_DateTimeInUnion _$$_DateTimeInUnionFromJson(Map<String, dynamic> json) =>
-    _$_DateTimeInUnion(
+_$DateTimeInUnionImpl _$$DateTimeInUnionImplFromJson(
+        Map<String, dynamic> json) =>
+    _$DateTimeInUnionImpl(
       dateTimeValue: DateTime.parse(json['dateTimeValue'] as String),
     );
 
-Map<String, dynamic> _$$_DateTimeInUnionToJson(_$_DateTimeInUnion instance) =>
+Map<String, dynamic> _$$DateTimeInUnionImplToJson(
+        _$DateTimeInUnionImpl instance) =>
     <String, dynamic>{
       'dateTimeValue': instance.dateTimeValue.toIso8601String(),
     };
 
-_$_Apple _$$_AppleFromJson(Map<String, dynamic> json) => _$_Apple(
+_$AppleImpl _$$AppleImplFromJson(Map<String, dynamic> json) => _$AppleImpl(
       kind: json['kind'] as String?,
     );
 
-Map<String, dynamic> _$$_AppleToJson(_$_Apple instance) => <String, dynamic>{
+Map<String, dynamic> _$$AppleImplToJson(_$AppleImpl instance) =>
+    <String, dynamic>{
       'kind': instance.kind,
     };
 
-_$_Banana _$$_BananaFromJson(Map<String, dynamic> json) => _$_Banana(
+_$BananaImpl _$$BananaImplFromJson(Map<String, dynamic> json) => _$BananaImpl(
       count: json['count'] as num?,
     );
 
-Map<String, dynamic> _$$_BananaToJson(_$_Banana instance) => <String, dynamic>{
+Map<String, dynamic> _$$BananaImplToJson(_$BananaImpl instance) =>
+    <String, dynamic>{
       'count': instance.count,
     };
