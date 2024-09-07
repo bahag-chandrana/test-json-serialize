@@ -2,4 +2,5 @@ pubName: one_of_discriminator
 pubDescription: An
 pubLibrary: "OneOfDiscriminatorApiClient"
 additionalProperties:
+  modelNamePrefix: OpenApi
   serializationLibrary: freezed

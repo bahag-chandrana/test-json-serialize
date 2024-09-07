@@ -35,52 +35,27 @@ class ComposedDiscRequiredInconsistent with _$ComposedDiscRequiredInconsistent {
   }) = ComposedDiscRequiredInconsistentUnknown;
 
   factory ComposedDiscRequiredInconsistent.fromJson(Map<String, dynamic> json) {
-    final fromJsonMethods = <FromJsonMethodType<dynamic>>[
-      DiscOptionalTypeCorrect.fromJson,
-      FruitType.fromJson,
-    ];
-    final deserializedModels = <ComposedDiscRequiredInconsistent>[];
     ComposedDiscRequiredInconsistent? deserializedModel;
-    for (final fromJsonMethod in fromJsonMethods) {
-      try {
-        final dynamic parsedModel = fromJsonMethod.call(json);
-        // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case DiscOptionalTypeCorrect:
-            deserializedModel =
-                ComposedDiscRequiredInconsistent.asDiscOptionalTypeCorrect(
-              discOptionalTypeCorrectValue:
-                  parsedModel as DiscOptionalTypeCorrect,
-            );
-            break;
-          case FruitType:
-            deserializedModel = ComposedDiscRequiredInconsistent.asFruitType(
-              fruitTypeValue: parsedModel as FruitType,
-            );
-            break;
-          default:
-            deserializedModel = ComposedDiscRequiredInconsistent.unknown(
-              json: json,
-            );
-        }
-        deserializedModels.add(deserializedModel);
-      } catch (e) {
-        // We are suppressing the deserialization error when the json could not
-        // be parsed into one of the model. Because we return [ComposedDiscRequiredInconsistent.unknown]
-        // if the deserialization fails.
-      }
+    // A discriminator property is specified but no mapping
+    // is provided in the spec, so we expect the property to
+    // have the value of the name of the model. Model prefix &
+    // suffix are ignored, as this is not known by the api provider
+    switch (json['fruitType']) {
+      case 'DiscOptionalTypeCorrect':
+        deserializedModel =
+            ComposedDiscRequiredInconsistent.asDiscOptionalTypeCorrect(
+          discOptionalTypeCorrectValue: DiscOptionalTypeCorrect.fromJson(json),
+        );
+        break;
+      case 'FruitType':
+        deserializedModel = ComposedDiscRequiredInconsistent.asFruitType(
+          fruitTypeValue: FruitType.fromJson(json),
+        );
+        break;
+      default:
+        break;
     }
-    // Return an unknown type when the incoming json parses into more than one models.
-    // Since we pass deserializedModels, clients can still use the deserialized model.
-    // EvenThough this is valid for AnyOf types, Dart doesn't have polymorphic types.
-    // So we still return this as an unknown type.
-    if (deserializedModels.length > 1) {
-      deserializedModel = ComposedDiscRequiredInconsistent.unknown(
-        json: json,
-        deserializedModels: deserializedModels,
-        errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
-      );
-    }
+
     return deserializedModel ??
         ComposedDiscRequiredInconsistent.unknown(json: json);
   }

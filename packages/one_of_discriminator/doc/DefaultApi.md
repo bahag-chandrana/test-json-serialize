@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **rootGet**
-> FruitAllOfDisc rootGet()
+> OpenApiFruitAllOfDisc rootGet()
 
 
 
@@ -36,7 +36,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**FruitAllOfDisc**](FruitAllOfDisc.md)
+[**OpenApiFruitAllOfDisc**](OpenApiFruitAllOfDisc.md)
 
 ### Authorization
 

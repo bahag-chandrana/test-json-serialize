@@ -9,6 +9,8 @@ part of 'models.dart';
 ///
 /// Properties:
 /// * [foorefPropA]
+/// * [name] - Name of the related entity.
+/// * [atReferredType] - The actual type of the target instance when needed for disambiguation.
 /// * [href] - Hyperlink reference
 /// * [id] - unique identifier
 /// * [atSchemaLocation] - A URI to a JSON-Schema file that defines additional attributes and relationships
@@ -21,6 +23,12 @@ class FooRef with _$FooRef {
 
   const factory FooRef({
     @JsonKey(name: r'foorefPropA') String? foorefPropA,
+
+    /// Name of the related entity.
+    @JsonKey(name: r'name') String? name,
+
+    /// The actual type of the target instance when needed for disambiguation.
+    @JsonKey(name: r'@referredType') String? atReferredType,
 
     /// Hyperlink reference
     @JsonKey(name: r'href') String? href,

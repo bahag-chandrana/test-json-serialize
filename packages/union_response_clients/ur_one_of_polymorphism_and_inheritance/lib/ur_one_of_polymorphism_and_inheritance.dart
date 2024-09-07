@@ -5,6 +5,7 @@
 export 'package:ur_one_of_polymorphism_and_inheritance/src/api.dart';
 export 'package:ur_one_of_polymorphism_and_inheritance/src/auth/api_key_auth.dart';
 export 'package:ur_one_of_polymorphism_and_inheritance/src/auth/basic_auth.dart';
+export 'package:ur_one_of_polymorphism_and_inheritance/src/auth/bearer_auth.dart';
 export 'package:ur_one_of_polymorphism_and_inheritance/src/auth/oauth.dart';
 
 export 'package:ur_one_of_polymorphism_and_inheritance/src/api/bar_api.dart';

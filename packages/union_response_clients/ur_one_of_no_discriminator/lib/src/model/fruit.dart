@@ -32,31 +32,32 @@ class Fruit with _$Fruit {
   }) = FruitUnknown;
 
   factory Fruit.fromJson(Map<String, dynamic> json) {
+    Fruit? deserializedModel;
+    // A discriminator property is not defined in the spec so
+    // we try to parse the json against all the models and try to
+    // return one of the valid model. Note: this approach tries
+    // to return one valid model and if more than one model
+    // is valid it then returns unknown type along with the json so
+    // the consumer can decide which model it is.
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       Apple.fromJson,
       Banana.fromJson,
     ];
     final deserializedModels = <Fruit>[];
-    Fruit? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case Apple:
-            deserializedModel = Fruit.asApple(
-              appleValue: parsedModel as Apple,
-            );
-            break;
-          case Banana:
-            deserializedModel = Fruit.asBanana(
-              bananaValue: parsedModel as Banana,
-            );
-            break;
-          default:
-            deserializedModel = Fruit.unknown(
-              json: json,
-            );
+        if (parsedModel is Apple) {
+          deserializedModel = Fruit.asApple(
+            appleValue: parsedModel,
+          );
+        } else if (parsedModel is Banana) {
+          deserializedModel = Fruit.asBanana(
+            bananaValue: parsedModel,
+          );
+        } else {
+          deserializedModel = Fruit.unknown(json: json);
         }
         deserializedModels.add(deserializedModel);
       } catch (e) {
@@ -76,6 +77,7 @@ class Fruit with _$Fruit {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
+
     return deserializedModel ?? Fruit.unknown(json: json);
   }
 

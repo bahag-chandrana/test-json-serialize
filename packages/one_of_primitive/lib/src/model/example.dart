@@ -31,31 +31,32 @@ class Example with _$Example {
   }) = ExampleUnknown;
 
   factory Example.fromJson(Map<String, dynamic> json) {
+    Example? deserializedModel;
+    // A discriminator property is not defined in the spec so
+    // we try to parse the json against all the models and try to
+    // return one of the valid model. Note: this approach tries
+    // to return one valid model and if more than one model
+    // is valid it then returns unknown type along with the json so
+    // the consumer can decide which model it is.
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       Child.fromJson,
       IntInUnion.fromJson,
     ];
     final deserializedModels = <Example>[];
-    Example? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case Child:
-            deserializedModel = Example.asChild(
-              childValue: parsedModel as Child,
-            );
-            break;
-          case IntInUnion:
-            deserializedModel = Example.asIntInUnion(
-              intValue: parsedModel as IntInUnion,
-            );
-            break;
-          default:
-            deserializedModel = Example.unknown(
-              json: json,
-            );
+        if (parsedModel is Child) {
+          deserializedModel = Example.asChild(
+            childValue: parsedModel,
+          );
+        } else if (parsedModel is IntInUnion) {
+          deserializedModel = Example.asIntInUnion(
+            intValue: parsedModel,
+          );
+        } else {
+          deserializedModel = Example.unknown(json: json);
         }
         deserializedModels.add(deserializedModel);
       } catch (e) {
@@ -75,6 +76,7 @@ class Example with _$Example {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
+
     return deserializedModel ?? Example.unknown(json: json);
   }
 

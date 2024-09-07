@@ -9,6 +9,7 @@ part of 'models.dart';
 ///
 /// Properties:
 /// * [toppings]
+/// * [pizzaSize]
 /// * [href] - Hyperlink reference
 /// * [id] - unique identifier
 /// * [atSchemaLocation] - A URI to a JSON-Schema file that defines additional attributes and relationships
@@ -21,6 +22,7 @@ class PizzaSpeziale with _$PizzaSpeziale {
 
   const factory PizzaSpeziale({
     @JsonKey(name: r'toppings') String? toppings,
+    @JsonKey(name: r'pizzaSize') num? pizzaSize,
 
     /// Hyperlink reference
     @JsonKey(name: r'href') String? href,

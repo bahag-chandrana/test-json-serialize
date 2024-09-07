@@ -187,6 +187,6 @@ scripts:
   build_runner_delete:
     run: |
       melos exec -- flutter pub get &&
-      melos exec -- flutter pub run build_runner build --delete-conflicting-outputs &&
+      melos exec -- dart run build_runner build --d &&
       melos exec -- dart fix --apply
       melos exec -- dart format .

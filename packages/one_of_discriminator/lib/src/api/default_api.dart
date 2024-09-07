@@ -4,6 +4,7 @@
 
 import 'dart:async';
 
+import 'dart:convert';
 import '../model/models.dart';
 import 'package:dio/dio.dart';
 
@@ -23,9 +24,9 @@ class DefaultApi {
   /// * [onSendProgress] - A [ProgressCallback] that can be used to get the send progress
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
-  /// Returns a [Future] containing a [Response] with a [FruitAllOfDisc] as data
+  /// Returns a [Future] containing a [Response] with a [OpenApiFruitAllOfDisc] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<FruitAllOfDisc>> rootGet({
+  Future<Response<OpenApiFruitAllOfDisc>> rootGet({
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -54,11 +55,11 @@ class DefaultApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    FruitAllOfDisc _responseData;
+    OpenApiFruitAllOfDisc _responseData;
 
     try {
-      _responseData =
-          FruitAllOfDisc.fromJson(_response.data as Map<String, dynamic>);
+      _responseData = OpenApiFruitAllOfDisc.fromJson(
+          _response.data as Map<String, dynamic>);
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -69,7 +70,7 @@ class DefaultApi {
       );
     }
 
-    return Response<FruitAllOfDisc>(
+    return Response<OpenApiFruitAllOfDisc>(
       data: _responseData,
       headers: _response.headers,
       isRedirect: _response.isRedirect,

@@ -37,35 +37,35 @@ class ComposedDiscOptionalTypeInconsistent
 
   factory ComposedDiscOptionalTypeInconsistent.fromJson(
       Map<String, dynamic> json) {
+    ComposedDiscOptionalTypeInconsistent? deserializedModel;
+    // A discriminator property is not defined in the spec so
+    // we try to parse the json against all the models and try to
+    // return one of the valid model. Note: this approach tries
+    // to return one valid model and if more than one model
+    // is valid it then returns unknown type along with the json so
+    // the consumer can decide which model it is.
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       DiscOptionalTypeCorrect.fromJson,
       DiscOptionalTypeIncorrect.fromJson,
     ];
     final deserializedModels = <ComposedDiscOptionalTypeInconsistent>[];
-    ComposedDiscOptionalTypeInconsistent? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case DiscOptionalTypeCorrect:
-            deserializedModel =
-                ComposedDiscOptionalTypeInconsistent.asDiscOptionalTypeCorrect(
-              discOptionalTypeCorrectValue:
-                  parsedModel as DiscOptionalTypeCorrect,
-            );
-            break;
-          case DiscOptionalTypeIncorrect:
-            deserializedModel = ComposedDiscOptionalTypeInconsistent
-                .asDiscOptionalTypeIncorrect(
-              discOptionalTypeIncorrectValue:
-                  parsedModel as DiscOptionalTypeIncorrect,
-            );
-            break;
-          default:
-            deserializedModel = ComposedDiscOptionalTypeInconsistent.unknown(
-              json: json,
-            );
+        if (parsedModel is DiscOptionalTypeCorrect) {
+          deserializedModel =
+              ComposedDiscOptionalTypeInconsistent.asDiscOptionalTypeCorrect(
+            discOptionalTypeCorrectValue: parsedModel,
+          );
+        } else if (parsedModel is DiscOptionalTypeIncorrect) {
+          deserializedModel =
+              ComposedDiscOptionalTypeInconsistent.asDiscOptionalTypeIncorrect(
+            discOptionalTypeIncorrectValue: parsedModel,
+          );
+        } else {
+          deserializedModel =
+              ComposedDiscOptionalTypeInconsistent.unknown(json: json);
         }
         deserializedModels.add(deserializedModel);
       } catch (e) {
@@ -85,6 +85,7 @@ class ComposedDiscOptionalTypeInconsistent
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
+
     return deserializedModel ??
         ComposedDiscOptionalTypeInconsistent.unknown(json: json);
   }

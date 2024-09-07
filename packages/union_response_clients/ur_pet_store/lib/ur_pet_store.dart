@@ -5,6 +5,7 @@
 export 'package:ur_pet_store/src/api.dart';
 export 'package:ur_pet_store/src/auth/api_key_auth.dart';
 export 'package:ur_pet_store/src/auth/basic_auth.dart';
+export 'package:ur_pet_store/src/auth/bearer_auth.dart';
 export 'package:ur_pet_store/src/auth/oauth.dart';
 
 export 'package:ur_pet_store/src/api/pet_api.dart';

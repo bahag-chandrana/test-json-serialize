@@ -35,32 +35,32 @@ class ComposedDiscTypeInconsistent with _$ComposedDiscTypeInconsistent {
   }) = ComposedDiscTypeInconsistentUnknown;
 
   factory ComposedDiscTypeInconsistent.fromJson(Map<String, dynamic> json) {
+    ComposedDiscTypeInconsistent? deserializedModel;
+    // A discriminator property is not defined in the spec so
+    // we try to parse the json against all the models and try to
+    // return one of the valid model. Note: this approach tries
+    // to return one valid model and if more than one model
+    // is valid it then returns unknown type along with the json so
+    // the consumer can decide which model it is.
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       DiscTypeIncorrect.fromJson,
       FruitType.fromJson,
     ];
     final deserializedModels = <ComposedDiscTypeInconsistent>[];
-    ComposedDiscTypeInconsistent? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case DiscTypeIncorrect:
-            deserializedModel =
-                ComposedDiscTypeInconsistent.asDiscTypeIncorrect(
-              discTypeIncorrectValue: parsedModel as DiscTypeIncorrect,
-            );
-            break;
-          case FruitType:
-            deserializedModel = ComposedDiscTypeInconsistent.asFruitType(
-              fruitTypeValue: parsedModel as FruitType,
-            );
-            break;
-          default:
-            deserializedModel = ComposedDiscTypeInconsistent.unknown(
-              json: json,
-            );
+        if (parsedModel is DiscTypeIncorrect) {
+          deserializedModel = ComposedDiscTypeInconsistent.asDiscTypeIncorrect(
+            discTypeIncorrectValue: parsedModel,
+          );
+        } else if (parsedModel is FruitType) {
+          deserializedModel = ComposedDiscTypeInconsistent.asFruitType(
+            fruitTypeValue: parsedModel,
+          );
+        } else {
+          deserializedModel = ComposedDiscTypeInconsistent.unknown(json: json);
         }
         deserializedModels.add(deserializedModel);
       } catch (e) {
@@ -80,6 +80,7 @@ class ComposedDiscTypeInconsistent with _$ComposedDiscTypeInconsistent {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
+
     return deserializedModel ??
         ComposedDiscTypeInconsistent.unknown(json: json);
   }

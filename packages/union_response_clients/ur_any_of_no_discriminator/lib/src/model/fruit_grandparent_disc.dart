@@ -8,7 +8,9 @@ part of 'models.dart';
 /// FruitGrandparentDisc
 ///
 /// Properties:
+/// * [seeds]
 /// * [fruitType]
+/// * [length]
 
 @freezed
 class FruitGrandparentDisc with _$FruitGrandparentDisc {
@@ -35,31 +37,32 @@ class FruitGrandparentDisc with _$FruitGrandparentDisc {
   }) = FruitGrandparentDiscUnknown;
 
   factory FruitGrandparentDisc.fromJson(Map<String, dynamic> json) {
+    FruitGrandparentDisc? deserializedModel;
+    // A discriminator property is not defined in the spec so
+    // we try to parse the json against all the models and try to
+    // return one of the valid model. Note: this approach tries
+    // to return one valid model and if more than one model
+    // is valid it then returns unknown type along with the json so
+    // the consumer can decide which model it is.
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       AppleGrandparentDisc.fromJson,
       BananaGrandparentDisc.fromJson,
     ];
     final deserializedModels = <FruitGrandparentDisc>[];
-    FruitGrandparentDisc? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case AppleGrandparentDisc:
-            deserializedModel = FruitGrandparentDisc.asAppleGrandparentDisc(
-              appleGrandparentDiscValue: parsedModel as AppleGrandparentDisc,
-            );
-            break;
-          case BananaGrandparentDisc:
-            deserializedModel = FruitGrandparentDisc.asBananaGrandparentDisc(
-              bananaGrandparentDiscValue: parsedModel as BananaGrandparentDisc,
-            );
-            break;
-          default:
-            deserializedModel = FruitGrandparentDisc.unknown(
-              json: json,
-            );
+        if (parsedModel is AppleGrandparentDisc) {
+          deserializedModel = FruitGrandparentDisc.asAppleGrandparentDisc(
+            appleGrandparentDiscValue: parsedModel,
+          );
+        } else if (parsedModel is BananaGrandparentDisc) {
+          deserializedModel = FruitGrandparentDisc.asBananaGrandparentDisc(
+            bananaGrandparentDiscValue: parsedModel,
+          );
+        } else {
+          deserializedModel = FruitGrandparentDisc.unknown(json: json);
         }
         deserializedModels.add(deserializedModel);
       } catch (e) {
@@ -79,6 +82,7 @@ class FruitGrandparentDisc with _$FruitGrandparentDisc {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
+
     return deserializedModel ?? FruitGrandparentDisc.unknown(json: json);
   }
 

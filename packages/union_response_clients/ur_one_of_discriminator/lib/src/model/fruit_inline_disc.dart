@@ -36,50 +36,26 @@ class FruitInlineDisc with _$FruitInlineDisc {
   }) = FruitInlineDiscUnknown;
 
   factory FruitInlineDisc.fromJson(Map<String, dynamic> json) {
-    final fromJsonMethods = <FromJsonMethodType<dynamic>>[
-      FruitInlineDiscOneOf.fromJson,
-      FruitInlineDiscOneOf1.fromJson,
-    ];
-    final deserializedModels = <FruitInlineDisc>[];
     FruitInlineDisc? deserializedModel;
-    for (final fromJsonMethod in fromJsonMethods) {
-      try {
-        final dynamic parsedModel = fromJsonMethod.call(json);
-        // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case FruitInlineDiscOneOf:
-            deserializedModel = FruitInlineDisc.asFruitInlineDiscOneOf(
-              fruitInlineDiscOneOfValue: parsedModel as FruitInlineDiscOneOf,
-            );
-            break;
-          case FruitInlineDiscOneOf1:
-            deserializedModel = FruitInlineDisc.asFruitInlineDiscOneOf1(
-              fruitInlineDiscOneOf1Value: parsedModel as FruitInlineDiscOneOf1,
-            );
-            break;
-          default:
-            deserializedModel = FruitInlineDisc.unknown(
-              json: json,
-            );
-        }
-        deserializedModels.add(deserializedModel);
-      } catch (e) {
-        // We are suppressing the deserialization error when the json could not
-        // be parsed into one of the model. Because we return [FruitInlineDisc.unknown]
-        // if the deserialization fails.
-      }
+    // A discriminator property is specified but no mapping
+    // is provided in the spec, so we expect the property to
+    // have the value of the name of the model. Model prefix &
+    // suffix are ignored, as this is not known by the api provider
+    switch (json['fruitType']) {
+      case 'FruitInlineDiscOneOf':
+        deserializedModel = FruitInlineDisc.asFruitInlineDiscOneOf(
+          fruitInlineDiscOneOfValue: FruitInlineDiscOneOf.fromJson(json),
+        );
+        break;
+      case 'FruitInlineDiscOneOf1':
+        deserializedModel = FruitInlineDisc.asFruitInlineDiscOneOf1(
+          fruitInlineDiscOneOf1Value: FruitInlineDiscOneOf1.fromJson(json),
+        );
+        break;
+      default:
+        break;
     }
-    // Return an unknown type when the incoming json parses into more than one models.
-    // Since we pass deserializedModels, clients can still use the deserialized model.
-    // EvenThough this is valid for AnyOf types, Dart doesn't have polymorphic types.
-    // So we still return this as an unknown type.
-    if (deserializedModels.length > 1) {
-      deserializedModel = FruitInlineDisc.unknown(
-        json: json,
-        deserializedModels: deserializedModels,
-        errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
-      );
-    }
+
     return deserializedModel ?? FruitInlineDisc.unknown(json: json);
   }
 

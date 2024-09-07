@@ -8,11 +8,16 @@ part of 'models.dart';
 /// BarRefOrValue
 ///
 /// Properties:
-/// * [href] - Hyperlink reference
 /// * [id] - unique identifier
+/// * [barPropA]
+/// * [fooPropB]
+/// * [foo]
+/// * [href] - Hyperlink reference
 /// * [atSchemaLocation] - A URI to a JSON-Schema file that defines additional attributes and relationships
 /// * [atBaseType] - When sub-classing, this defines the super-class
 /// * [atType] - When sub-classing, this defines the sub-class Extensible name
+/// * [name] - Name of the related entity.
+/// * [atReferredType] - The actual type of the target instance when needed for disambiguation.
 
 @freezed
 class BarRefOrValue with _$BarRefOrValue {
@@ -36,31 +41,32 @@ class BarRefOrValue with _$BarRefOrValue {
   }) = BarRefOrValueUnknown;
 
   factory BarRefOrValue.fromJson(Map<String, dynamic> json) {
+    BarRefOrValue? deserializedModel;
+    // A discriminator property is not defined in the spec so
+    // we try to parse the json against all the models and try to
+    // return one of the valid model. Note: this approach tries
+    // to return one valid model and if more than one model
+    // is valid it then returns unknown type along with the json so
+    // the consumer can decide which model it is.
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       Bar.fromJson,
       BarRef.fromJson,
     ];
     final deserializedModels = <BarRefOrValue>[];
-    BarRefOrValue? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case Bar:
-            deserializedModel = BarRefOrValue.asBar(
-              barValue: parsedModel as Bar,
-            );
-            break;
-          case BarRef:
-            deserializedModel = BarRefOrValue.asBarRef(
-              barRefValue: parsedModel as BarRef,
-            );
-            break;
-          default:
-            deserializedModel = BarRefOrValue.unknown(
-              json: json,
-            );
+        if (parsedModel is Bar) {
+          deserializedModel = BarRefOrValue.asBar(
+            barValue: parsedModel,
+          );
+        } else if (parsedModel is BarRef) {
+          deserializedModel = BarRefOrValue.asBarRef(
+            barRefValue: parsedModel,
+          );
+        } else {
+          deserializedModel = BarRefOrValue.unknown(json: json);
         }
         deserializedModels.add(deserializedModel);
       } catch (e) {
@@ -80,6 +86,7 @@ class BarRefOrValue with _$BarRefOrValue {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
+
     return deserializedModel ?? BarRefOrValue.unknown(json: json);
   }
 

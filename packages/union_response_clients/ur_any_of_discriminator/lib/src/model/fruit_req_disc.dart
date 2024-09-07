@@ -35,31 +35,32 @@ class FruitReqDisc with _$FruitReqDisc {
   }) = FruitReqDiscUnknown;
 
   factory FruitReqDisc.fromJson(Map<String, dynamic> json) {
+    FruitReqDisc? deserializedModel;
+    // A discriminator property is not defined in the spec so
+    // we try to parse the json against all the models and try to
+    // return one of the valid model. Note: this approach tries
+    // to return one valid model and if more than one model
+    // is valid it then returns unknown type along with the json so
+    // the consumer can decide which model it is.
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       AppleReqDisc.fromJson,
       BananaReqDisc.fromJson,
     ];
     final deserializedModels = <FruitReqDisc>[];
-    FruitReqDisc? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case AppleReqDisc:
-            deserializedModel = FruitReqDisc.asAppleReqDisc(
-              appleReqDiscValue: parsedModel as AppleReqDisc,
-            );
-            break;
-          case BananaReqDisc:
-            deserializedModel = FruitReqDisc.asBananaReqDisc(
-              bananaReqDiscValue: parsedModel as BananaReqDisc,
-            );
-            break;
-          default:
-            deserializedModel = FruitReqDisc.unknown(
-              json: json,
-            );
+        if (parsedModel is AppleReqDisc) {
+          deserializedModel = FruitReqDisc.asAppleReqDisc(
+            appleReqDiscValue: parsedModel,
+          );
+        } else if (parsedModel is BananaReqDisc) {
+          deserializedModel = FruitReqDisc.asBananaReqDisc(
+            bananaReqDiscValue: parsedModel,
+          );
+        } else {
+          deserializedModel = FruitReqDisc.unknown(json: json);
         }
         deserializedModels.add(deserializedModel);
       } catch (e) {
@@ -79,6 +80,7 @@ class FruitReqDisc with _$FruitReqDisc {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
+
     return deserializedModel ?? FruitReqDisc.unknown(json: json);
   }
 

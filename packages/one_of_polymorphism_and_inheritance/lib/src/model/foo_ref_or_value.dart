@@ -8,11 +8,16 @@ part of 'models.dart';
 /// FooRefOrValue
 ///
 /// Properties:
+/// * [fooPropA]
+/// * [fooPropB]
 /// * [href] - Hyperlink reference
 /// * [id] - unique identifier
 /// * [atSchemaLocation] - A URI to a JSON-Schema file that defines additional attributes and relationships
 /// * [atBaseType] - When sub-classing, this defines the super-class
 /// * [atType] - When sub-classing, this defines the sub-class Extensible name
+/// * [foorefPropA]
+/// * [name] - Name of the related entity.
+/// * [atReferredType] - The actual type of the target instance when needed for disambiguation.
 
 @freezed
 class FooRefOrValue with _$FooRefOrValue {
@@ -36,50 +41,26 @@ class FooRefOrValue with _$FooRefOrValue {
   }) = FooRefOrValueUnknown;
 
   factory FooRefOrValue.fromJson(Map<String, dynamic> json) {
-    final fromJsonMethods = <FromJsonMethodType<dynamic>>[
-      Foo.fromJson,
-      FooRef.fromJson,
-    ];
-    final deserializedModels = <FooRefOrValue>[];
     FooRefOrValue? deserializedModel;
-    for (final fromJsonMethod in fromJsonMethods) {
-      try {
-        final dynamic parsedModel = fromJsonMethod.call(json);
-        // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case Foo:
-            deserializedModel = FooRefOrValue.asFoo(
-              fooValue: parsedModel as Foo,
-            );
-            break;
-          case FooRef:
-            deserializedModel = FooRefOrValue.asFooRef(
-              fooRefValue: parsedModel as FooRef,
-            );
-            break;
-          default:
-            deserializedModel = FooRefOrValue.unknown(
-              json: json,
-            );
-        }
-        deserializedModels.add(deserializedModel);
-      } catch (e) {
-        // We are suppressing the deserialization error when the json could not
-        // be parsed into one of the model. Because we return [FooRefOrValue.unknown]
-        // if the deserialization fails.
-      }
+    // A discriminator property is specified but no mapping
+    // is provided in the spec, so we expect the property to
+    // have the value of the name of the model. Model prefix &
+    // suffix are ignored, as this is not known by the api provider
+    switch (json['@type']) {
+      case 'Foo':
+        deserializedModel = FooRefOrValue.asFoo(
+          fooValue: Foo.fromJson(json),
+        );
+        break;
+      case 'FooRef':
+        deserializedModel = FooRefOrValue.asFooRef(
+          fooRefValue: FooRef.fromJson(json),
+        );
+        break;
+      default:
+        break;
     }
-    // Return an unknown type when the incoming json parses into more than one models.
-    // Since we pass deserializedModels, clients can still use the deserialized model.
-    // EvenThough this is valid for AnyOf types, Dart doesn't have polymorphic types.
-    // So we still return this as an unknown type.
-    if (deserializedModels.length > 1) {
-      deserializedModel = FooRefOrValue.unknown(
-        json: json,
-        deserializedModels: deserializedModels,
-        errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
-      );
-    }
+
     return deserializedModel ?? FooRefOrValue.unknown(json: json);
   }
 

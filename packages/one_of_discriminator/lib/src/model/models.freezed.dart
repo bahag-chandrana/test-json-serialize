@@ -12,7 +12,7 @@ part of 'models.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 IntInUnion _$IntInUnionFromJson(Map<String, dynamic> json) {
   return _IntInUnion.fromJson(json);
@@ -62,22 +62,22 @@ class _$IntInUnionCopyWithImpl<$Res, $Val extends IntInUnion>
 }
 
 /// @nodoc
-abstract class _$$_IntInUnionCopyWith<$Res>
+abstract class _$$IntInUnionImplCopyWith<$Res>
     implements $IntInUnionCopyWith<$Res> {
-  factory _$$_IntInUnionCopyWith(
-          _$_IntInUnion value, $Res Function(_$_IntInUnion) then) =
-      __$$_IntInUnionCopyWithImpl<$Res>;
+  factory _$$IntInUnionImplCopyWith(
+          _$IntInUnionImpl value, $Res Function(_$IntInUnionImpl) then) =
+      __$$IntInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$$_IntInUnionCopyWithImpl<$Res>
-    extends _$IntInUnionCopyWithImpl<$Res, _$_IntInUnion>
-    implements _$$_IntInUnionCopyWith<$Res> {
-  __$$_IntInUnionCopyWithImpl(
-      _$_IntInUnion _value, $Res Function(_$_IntInUnion) _then)
+class __$$IntInUnionImplCopyWithImpl<$Res>
+    extends _$IntInUnionCopyWithImpl<$Res, _$IntInUnionImpl>
+    implements _$$IntInUnionImplCopyWith<$Res> {
+  __$$IntInUnionImplCopyWithImpl(
+      _$IntInUnionImpl _value, $Res Function(_$IntInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -85,7 +85,7 @@ class __$$_IntInUnionCopyWithImpl<$Res>
   $Res call({
     Object? intValue = null,
   }) {
-    return _then(_$_IntInUnion(
+    return _then(_$IntInUnionImpl(
       intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
@@ -96,11 +96,11 @@ class __$$_IntInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_IntInUnion implements _IntInUnion {
-  const _$_IntInUnion({required this.intValue});
+class _$IntInUnionImpl implements _IntInUnion {
+  const _$IntInUnionImpl({required this.intValue});
 
-  factory _$_IntInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_IntInUnionFromJson(json);
+  factory _$IntInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$IntInUnionImplFromJson(json);
 
   @override
   final int intValue;
@@ -111,10 +111,10 @@ class _$_IntInUnion implements _IntInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_IntInUnion &&
+            other is _$IntInUnionImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -126,28 +126,28 @@ class _$_IntInUnion implements _IntInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_IntInUnionCopyWith<_$_IntInUnion> get copyWith =>
-      __$$_IntInUnionCopyWithImpl<_$_IntInUnion>(this, _$identity);
+  _$$IntInUnionImplCopyWith<_$IntInUnionImpl> get copyWith =>
+      __$$IntInUnionImplCopyWithImpl<_$IntInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_IntInUnionToJson(
+    return _$$IntInUnionImplToJson(
       this,
     );
   }
 }
 
 abstract class _IntInUnion implements IntInUnion {
-  const factory _IntInUnion({required final int intValue}) = _$_IntInUnion;
+  const factory _IntInUnion({required final int intValue}) = _$IntInUnionImpl;
 
   factory _IntInUnion.fromJson(Map<String, dynamic> json) =
-      _$_IntInUnion.fromJson;
+      _$IntInUnionImpl.fromJson;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$$_IntInUnionCopyWith<_$_IntInUnion> get copyWith =>
+  _$$IntInUnionImplCopyWith<_$IntInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -199,22 +199,22 @@ class _$StringInUnionCopyWithImpl<$Res, $Val extends StringInUnion>
 }
 
 /// @nodoc
-abstract class _$$_StringInUnionCopyWith<$Res>
+abstract class _$$StringInUnionImplCopyWith<$Res>
     implements $StringInUnionCopyWith<$Res> {
-  factory _$$_StringInUnionCopyWith(
-          _$_StringInUnion value, $Res Function(_$_StringInUnion) then) =
-      __$$_StringInUnionCopyWithImpl<$Res>;
+  factory _$$StringInUnionImplCopyWith(
+          _$StringInUnionImpl value, $Res Function(_$StringInUnionImpl) then) =
+      __$$StringInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$$_StringInUnionCopyWithImpl<$Res>
-    extends _$StringInUnionCopyWithImpl<$Res, _$_StringInUnion>
-    implements _$$_StringInUnionCopyWith<$Res> {
-  __$$_StringInUnionCopyWithImpl(
-      _$_StringInUnion _value, $Res Function(_$_StringInUnion) _then)
+class __$$StringInUnionImplCopyWithImpl<$Res>
+    extends _$StringInUnionCopyWithImpl<$Res, _$StringInUnionImpl>
+    implements _$$StringInUnionImplCopyWith<$Res> {
+  __$$StringInUnionImplCopyWithImpl(
+      _$StringInUnionImpl _value, $Res Function(_$StringInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -222,7 +222,7 @@ class __$$_StringInUnionCopyWithImpl<$Res>
   $Res call({
     Object? stringValue = null,
   }) {
-    return _then(_$_StringInUnion(
+    return _then(_$StringInUnionImpl(
       stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
@@ -233,11 +233,11 @@ class __$$_StringInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_StringInUnion implements _StringInUnion {
-  const _$_StringInUnion({required this.stringValue});
+class _$StringInUnionImpl implements _StringInUnion {
+  const _$StringInUnionImpl({required this.stringValue});
 
-  factory _$_StringInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_StringInUnionFromJson(json);
+  factory _$StringInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$StringInUnionImplFromJson(json);
 
   @override
   final String stringValue;
@@ -248,10 +248,10 @@ class _$_StringInUnion implements _StringInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_StringInUnion &&
+            other is _$StringInUnionImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -263,12 +263,12 @@ class _$_StringInUnion implements _StringInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_StringInUnionCopyWith<_$_StringInUnion> get copyWith =>
-      __$$_StringInUnionCopyWithImpl<_$_StringInUnion>(this, _$identity);
+  _$$StringInUnionImplCopyWith<_$StringInUnionImpl> get copyWith =>
+      __$$StringInUnionImplCopyWithImpl<_$StringInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_StringInUnionToJson(
+    return _$$StringInUnionImplToJson(
       this,
     );
   }
@@ -276,16 +276,16 @@ class _$_StringInUnion implements _StringInUnion {
 
 abstract class _StringInUnion implements StringInUnion {
   const factory _StringInUnion({required final String stringValue}) =
-      _$_StringInUnion;
+      _$StringInUnionImpl;
 
   factory _StringInUnion.fromJson(Map<String, dynamic> json) =
-      _$_StringInUnion.fromJson;
+      _$StringInUnionImpl.fromJson;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$$_StringInUnionCopyWith<_$_StringInUnion> get copyWith =>
+  _$$StringInUnionImplCopyWith<_$StringInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -337,22 +337,22 @@ class _$BoolInUnionCopyWithImpl<$Res, $Val extends BoolInUnion>
 }
 
 /// @nodoc
-abstract class _$$_BoolInUnionCopyWith<$Res>
+abstract class _$$BoolInUnionImplCopyWith<$Res>
     implements $BoolInUnionCopyWith<$Res> {
-  factory _$$_BoolInUnionCopyWith(
-          _$_BoolInUnion value, $Res Function(_$_BoolInUnion) then) =
-      __$$_BoolInUnionCopyWithImpl<$Res>;
+  factory _$$BoolInUnionImplCopyWith(
+          _$BoolInUnionImpl value, $Res Function(_$BoolInUnionImpl) then) =
+      __$$BoolInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool boolValue});
 }
 
 /// @nodoc
-class __$$_BoolInUnionCopyWithImpl<$Res>
-    extends _$BoolInUnionCopyWithImpl<$Res, _$_BoolInUnion>
-    implements _$$_BoolInUnionCopyWith<$Res> {
-  __$$_BoolInUnionCopyWithImpl(
-      _$_BoolInUnion _value, $Res Function(_$_BoolInUnion) _then)
+class __$$BoolInUnionImplCopyWithImpl<$Res>
+    extends _$BoolInUnionCopyWithImpl<$Res, _$BoolInUnionImpl>
+    implements _$$BoolInUnionImplCopyWith<$Res> {
+  __$$BoolInUnionImplCopyWithImpl(
+      _$BoolInUnionImpl _value, $Res Function(_$BoolInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -360,7 +360,7 @@ class __$$_BoolInUnionCopyWithImpl<$Res>
   $Res call({
     Object? boolValue = null,
   }) {
-    return _then(_$_BoolInUnion(
+    return _then(_$BoolInUnionImpl(
       boolValue: null == boolValue
           ? _value.boolValue
           : boolValue // ignore: cast_nullable_to_non_nullable
@@ -371,11 +371,11 @@ class __$$_BoolInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_BoolInUnion implements _BoolInUnion {
-  const _$_BoolInUnion({required this.boolValue});
+class _$BoolInUnionImpl implements _BoolInUnion {
+  const _$BoolInUnionImpl({required this.boolValue});
 
-  factory _$_BoolInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_BoolInUnionFromJson(json);
+  factory _$BoolInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$BoolInUnionImplFromJson(json);
 
   @override
   final bool boolValue;
@@ -386,10 +386,10 @@ class _$_BoolInUnion implements _BoolInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_BoolInUnion &&
+            other is _$BoolInUnionImpl &&
             (identical(other.boolValue, boolValue) ||
                 other.boolValue == boolValue));
   }
@@ -401,28 +401,29 @@ class _$_BoolInUnion implements _BoolInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_BoolInUnionCopyWith<_$_BoolInUnion> get copyWith =>
-      __$$_BoolInUnionCopyWithImpl<_$_BoolInUnion>(this, _$identity);
+  _$$BoolInUnionImplCopyWith<_$BoolInUnionImpl> get copyWith =>
+      __$$BoolInUnionImplCopyWithImpl<_$BoolInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BoolInUnionToJson(
+    return _$$BoolInUnionImplToJson(
       this,
     );
   }
 }
 
 abstract class _BoolInUnion implements BoolInUnion {
-  const factory _BoolInUnion({required final bool boolValue}) = _$_BoolInUnion;
+  const factory _BoolInUnion({required final bool boolValue}) =
+      _$BoolInUnionImpl;
 
   factory _BoolInUnion.fromJson(Map<String, dynamic> json) =
-      _$_BoolInUnion.fromJson;
+      _$BoolInUnionImpl.fromJson;
 
   @override
   bool get boolValue;
   @override
   @JsonKey(ignore: true)
-  _$$_BoolInUnionCopyWith<_$_BoolInUnion> get copyWith =>
+  _$$BoolInUnionImplCopyWith<_$BoolInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -474,22 +475,22 @@ class _$DoubleInUnionCopyWithImpl<$Res, $Val extends DoubleInUnion>
 }
 
 /// @nodoc
-abstract class _$$_DoubleInUnionCopyWith<$Res>
+abstract class _$$DoubleInUnionImplCopyWith<$Res>
     implements $DoubleInUnionCopyWith<$Res> {
-  factory _$$_DoubleInUnionCopyWith(
-          _$_DoubleInUnion value, $Res Function(_$_DoubleInUnion) then) =
-      __$$_DoubleInUnionCopyWithImpl<$Res>;
+  factory _$$DoubleInUnionImplCopyWith(
+          _$DoubleInUnionImpl value, $Res Function(_$DoubleInUnionImpl) then) =
+      __$$DoubleInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({double doubleValue});
 }
 
 /// @nodoc
-class __$$_DoubleInUnionCopyWithImpl<$Res>
-    extends _$DoubleInUnionCopyWithImpl<$Res, _$_DoubleInUnion>
-    implements _$$_DoubleInUnionCopyWith<$Res> {
-  __$$_DoubleInUnionCopyWithImpl(
-      _$_DoubleInUnion _value, $Res Function(_$_DoubleInUnion) _then)
+class __$$DoubleInUnionImplCopyWithImpl<$Res>
+    extends _$DoubleInUnionCopyWithImpl<$Res, _$DoubleInUnionImpl>
+    implements _$$DoubleInUnionImplCopyWith<$Res> {
+  __$$DoubleInUnionImplCopyWithImpl(
+      _$DoubleInUnionImpl _value, $Res Function(_$DoubleInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -497,7 +498,7 @@ class __$$_DoubleInUnionCopyWithImpl<$Res>
   $Res call({
     Object? doubleValue = null,
   }) {
-    return _then(_$_DoubleInUnion(
+    return _then(_$DoubleInUnionImpl(
       doubleValue: null == doubleValue
           ? _value.doubleValue
           : doubleValue // ignore: cast_nullable_to_non_nullable
@@ -508,11 +509,11 @@ class __$$_DoubleInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DoubleInUnion implements _DoubleInUnion {
-  const _$_DoubleInUnion({required this.doubleValue});
+class _$DoubleInUnionImpl implements _DoubleInUnion {
+  const _$DoubleInUnionImpl({required this.doubleValue});
 
-  factory _$_DoubleInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_DoubleInUnionFromJson(json);
+  factory _$DoubleInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DoubleInUnionImplFromJson(json);
 
   @override
   final double doubleValue;
@@ -523,10 +524,10 @@ class _$_DoubleInUnion implements _DoubleInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DoubleInUnion &&
+            other is _$DoubleInUnionImpl &&
             (identical(other.doubleValue, doubleValue) ||
                 other.doubleValue == doubleValue));
   }
@@ -538,12 +539,12 @@ class _$_DoubleInUnion implements _DoubleInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DoubleInUnionCopyWith<_$_DoubleInUnion> get copyWith =>
-      __$$_DoubleInUnionCopyWithImpl<_$_DoubleInUnion>(this, _$identity);
+  _$$DoubleInUnionImplCopyWith<_$DoubleInUnionImpl> get copyWith =>
+      __$$DoubleInUnionImplCopyWithImpl<_$DoubleInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DoubleInUnionToJson(
+    return _$$DoubleInUnionImplToJson(
       this,
     );
   }
@@ -551,16 +552,16 @@ class _$_DoubleInUnion implements _DoubleInUnion {
 
 abstract class _DoubleInUnion implements DoubleInUnion {
   const factory _DoubleInUnion({required final double doubleValue}) =
-      _$_DoubleInUnion;
+      _$DoubleInUnionImpl;
 
   factory _DoubleInUnion.fromJson(Map<String, dynamic> json) =
-      _$_DoubleInUnion.fromJson;
+      _$DoubleInUnionImpl.fromJson;
 
   @override
   double get doubleValue;
   @override
   @JsonKey(ignore: true)
-  _$$_DoubleInUnionCopyWith<_$_DoubleInUnion> get copyWith =>
+  _$$DoubleInUnionImplCopyWith<_$DoubleInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -609,22 +610,22 @@ class _$ObjectInUnionCopyWithImpl<$Res, $Val extends ObjectInUnion>
 }
 
 /// @nodoc
-abstract class _$$_ObjectInUnionCopyWith<$Res>
+abstract class _$$ObjectInUnionImplCopyWith<$Res>
     implements $ObjectInUnionCopyWith<$Res> {
-  factory _$$_ObjectInUnionCopyWith(
-          _$_ObjectInUnion value, $Res Function(_$_ObjectInUnion) then) =
-      __$$_ObjectInUnionCopyWithImpl<$Res>;
+  factory _$$ObjectInUnionImplCopyWith(
+          _$ObjectInUnionImpl value, $Res Function(_$ObjectInUnionImpl) then) =
+      __$$ObjectInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Object objectValue});
 }
 
 /// @nodoc
-class __$$_ObjectInUnionCopyWithImpl<$Res>
-    extends _$ObjectInUnionCopyWithImpl<$Res, _$_ObjectInUnion>
-    implements _$$_ObjectInUnionCopyWith<$Res> {
-  __$$_ObjectInUnionCopyWithImpl(
-      _$_ObjectInUnion _value, $Res Function(_$_ObjectInUnion) _then)
+class __$$ObjectInUnionImplCopyWithImpl<$Res>
+    extends _$ObjectInUnionCopyWithImpl<$Res, _$ObjectInUnionImpl>
+    implements _$$ObjectInUnionImplCopyWith<$Res> {
+  __$$ObjectInUnionImplCopyWithImpl(
+      _$ObjectInUnionImpl _value, $Res Function(_$ObjectInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -632,7 +633,7 @@ class __$$_ObjectInUnionCopyWithImpl<$Res>
   $Res call({
     Object? objectValue = null,
   }) {
-    return _then(_$_ObjectInUnion(
+    return _then(_$ObjectInUnionImpl(
       objectValue: null == objectValue ? _value.objectValue : objectValue,
     ));
   }
@@ -640,11 +641,11 @@ class __$$_ObjectInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ObjectInUnion implements _ObjectInUnion {
-  const _$_ObjectInUnion({required this.objectValue});
+class _$ObjectInUnionImpl implements _ObjectInUnion {
+  const _$ObjectInUnionImpl({required this.objectValue});
 
-  factory _$_ObjectInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_ObjectInUnionFromJson(json);
+  factory _$ObjectInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ObjectInUnionImplFromJson(json);
 
   @override
   final Object objectValue;
@@ -655,10 +656,10 @@ class _$_ObjectInUnion implements _ObjectInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ObjectInUnion &&
+            other is _$ObjectInUnionImpl &&
             const DeepCollectionEquality()
                 .equals(other.objectValue, objectValue));
   }
@@ -671,12 +672,12 @@ class _$_ObjectInUnion implements _ObjectInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ObjectInUnionCopyWith<_$_ObjectInUnion> get copyWith =>
-      __$$_ObjectInUnionCopyWithImpl<_$_ObjectInUnion>(this, _$identity);
+  _$$ObjectInUnionImplCopyWith<_$ObjectInUnionImpl> get copyWith =>
+      __$$ObjectInUnionImplCopyWithImpl<_$ObjectInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ObjectInUnionToJson(
+    return _$$ObjectInUnionImplToJson(
       this,
     );
   }
@@ -684,16 +685,16 @@ class _$_ObjectInUnion implements _ObjectInUnion {
 
 abstract class _ObjectInUnion implements ObjectInUnion {
   const factory _ObjectInUnion({required final Object objectValue}) =
-      _$_ObjectInUnion;
+      _$ObjectInUnionImpl;
 
   factory _ObjectInUnion.fromJson(Map<String, dynamic> json) =
-      _$_ObjectInUnion.fromJson;
+      _$ObjectInUnionImpl.fromJson;
 
   @override
   Object get objectValue;
   @override
   @JsonKey(ignore: true)
-  _$$_ObjectInUnionCopyWith<_$_ObjectInUnion> get copyWith =>
+  _$$ObjectInUnionImplCopyWith<_$ObjectInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -745,22 +746,22 @@ class _$NumInUnionCopyWithImpl<$Res, $Val extends NumInUnion>
 }
 
 /// @nodoc
-abstract class _$$_NumInUnionCopyWith<$Res>
+abstract class _$$NumInUnionImplCopyWith<$Res>
     implements $NumInUnionCopyWith<$Res> {
-  factory _$$_NumInUnionCopyWith(
-          _$_NumInUnion value, $Res Function(_$_NumInUnion) then) =
-      __$$_NumInUnionCopyWithImpl<$Res>;
+  factory _$$NumInUnionImplCopyWith(
+          _$NumInUnionImpl value, $Res Function(_$NumInUnionImpl) then) =
+      __$$NumInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({num numValue});
 }
 
 /// @nodoc
-class __$$_NumInUnionCopyWithImpl<$Res>
-    extends _$NumInUnionCopyWithImpl<$Res, _$_NumInUnion>
-    implements _$$_NumInUnionCopyWith<$Res> {
-  __$$_NumInUnionCopyWithImpl(
-      _$_NumInUnion _value, $Res Function(_$_NumInUnion) _then)
+class __$$NumInUnionImplCopyWithImpl<$Res>
+    extends _$NumInUnionCopyWithImpl<$Res, _$NumInUnionImpl>
+    implements _$$NumInUnionImplCopyWith<$Res> {
+  __$$NumInUnionImplCopyWithImpl(
+      _$NumInUnionImpl _value, $Res Function(_$NumInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -768,7 +769,7 @@ class __$$_NumInUnionCopyWithImpl<$Res>
   $Res call({
     Object? numValue = null,
   }) {
-    return _then(_$_NumInUnion(
+    return _then(_$NumInUnionImpl(
       numValue: null == numValue
           ? _value.numValue
           : numValue // ignore: cast_nullable_to_non_nullable
@@ -779,11 +780,11 @@ class __$$_NumInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_NumInUnion implements _NumInUnion {
-  const _$_NumInUnion({required this.numValue});
+class _$NumInUnionImpl implements _NumInUnion {
+  const _$NumInUnionImpl({required this.numValue});
 
-  factory _$_NumInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_NumInUnionFromJson(json);
+  factory _$NumInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$NumInUnionImplFromJson(json);
 
   @override
   final num numValue;
@@ -794,10 +795,10 @@ class _$_NumInUnion implements _NumInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_NumInUnion &&
+            other is _$NumInUnionImpl &&
             (identical(other.numValue, numValue) ||
                 other.numValue == numValue));
   }
@@ -809,28 +810,28 @@ class _$_NumInUnion implements _NumInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_NumInUnionCopyWith<_$_NumInUnion> get copyWith =>
-      __$$_NumInUnionCopyWithImpl<_$_NumInUnion>(this, _$identity);
+  _$$NumInUnionImplCopyWith<_$NumInUnionImpl> get copyWith =>
+      __$$NumInUnionImplCopyWithImpl<_$NumInUnionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NumInUnionToJson(
+    return _$$NumInUnionImplToJson(
       this,
     );
   }
 }
 
 abstract class _NumInUnion implements NumInUnion {
-  const factory _NumInUnion({required final num numValue}) = _$_NumInUnion;
+  const factory _NumInUnion({required final num numValue}) = _$NumInUnionImpl;
 
   factory _NumInUnion.fromJson(Map<String, dynamic> json) =
-      _$_NumInUnion.fromJson;
+      _$NumInUnionImpl.fromJson;
 
   @override
   num get numValue;
   @override
   @JsonKey(ignore: true)
-  _$$_NumInUnionCopyWith<_$_NumInUnion> get copyWith =>
+  _$$NumInUnionImplCopyWith<_$NumInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -882,22 +883,22 @@ class _$DateTimeInUnionCopyWithImpl<$Res, $Val extends DateTimeInUnion>
 }
 
 /// @nodoc
-abstract class _$$_DateTimeInUnionCopyWith<$Res>
+abstract class _$$DateTimeInUnionImplCopyWith<$Res>
     implements $DateTimeInUnionCopyWith<$Res> {
-  factory _$$_DateTimeInUnionCopyWith(
-          _$_DateTimeInUnion value, $Res Function(_$_DateTimeInUnion) then) =
-      __$$_DateTimeInUnionCopyWithImpl<$Res>;
+  factory _$$DateTimeInUnionImplCopyWith(_$DateTimeInUnionImpl value,
+          $Res Function(_$DateTimeInUnionImpl) then) =
+      __$$DateTimeInUnionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({DateTime dateTimeValue});
 }
 
 /// @nodoc
-class __$$_DateTimeInUnionCopyWithImpl<$Res>
-    extends _$DateTimeInUnionCopyWithImpl<$Res, _$_DateTimeInUnion>
-    implements _$$_DateTimeInUnionCopyWith<$Res> {
-  __$$_DateTimeInUnionCopyWithImpl(
-      _$_DateTimeInUnion _value, $Res Function(_$_DateTimeInUnion) _then)
+class __$$DateTimeInUnionImplCopyWithImpl<$Res>
+    extends _$DateTimeInUnionCopyWithImpl<$Res, _$DateTimeInUnionImpl>
+    implements _$$DateTimeInUnionImplCopyWith<$Res> {
+  __$$DateTimeInUnionImplCopyWithImpl(
+      _$DateTimeInUnionImpl _value, $Res Function(_$DateTimeInUnionImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -905,7 +906,7 @@ class __$$_DateTimeInUnionCopyWithImpl<$Res>
   $Res call({
     Object? dateTimeValue = null,
   }) {
-    return _then(_$_DateTimeInUnion(
+    return _then(_$DateTimeInUnionImpl(
       dateTimeValue: null == dateTimeValue
           ? _value.dateTimeValue
           : dateTimeValue // ignore: cast_nullable_to_non_nullable
@@ -916,11 +917,11 @@ class __$$_DateTimeInUnionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DateTimeInUnion implements _DateTimeInUnion {
-  const _$_DateTimeInUnion({required this.dateTimeValue});
+class _$DateTimeInUnionImpl implements _DateTimeInUnion {
+  const _$DateTimeInUnionImpl({required this.dateTimeValue});
 
-  factory _$_DateTimeInUnion.fromJson(Map<String, dynamic> json) =>
-      _$$_DateTimeInUnionFromJson(json);
+  factory _$DateTimeInUnionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DateTimeInUnionImplFromJson(json);
 
   @override
   final DateTime dateTimeValue;
@@ -931,10 +932,10 @@ class _$_DateTimeInUnion implements _DateTimeInUnion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DateTimeInUnion &&
+            other is _$DateTimeInUnionImpl &&
             (identical(other.dateTimeValue, dateTimeValue) ||
                 other.dateTimeValue == dateTimeValue));
   }
@@ -946,12 +947,13 @@ class _$_DateTimeInUnion implements _DateTimeInUnion {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DateTimeInUnionCopyWith<_$_DateTimeInUnion> get copyWith =>
-      __$$_DateTimeInUnionCopyWithImpl<_$_DateTimeInUnion>(this, _$identity);
+  _$$DateTimeInUnionImplCopyWith<_$DateTimeInUnionImpl> get copyWith =>
+      __$$DateTimeInUnionImplCopyWithImpl<_$DateTimeInUnionImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DateTimeInUnionToJson(
+    return _$$DateTimeInUnionImplToJson(
       this,
     );
   }
@@ -959,1220 +961,53 @@ class _$_DateTimeInUnion implements _DateTimeInUnion {
 
 abstract class _DateTimeInUnion implements DateTimeInUnion {
   const factory _DateTimeInUnion({required final DateTime dateTimeValue}) =
-      _$_DateTimeInUnion;
+      _$DateTimeInUnionImpl;
 
   factory _DateTimeInUnion.fromJson(Map<String, dynamic> json) =
-      _$_DateTimeInUnion.fromJson;
+      _$DateTimeInUnionImpl.fromJson;
 
   @override
   DateTime get dateTimeValue;
   @override
   @JsonKey(ignore: true)
-  _$$_DateTimeInUnionCopyWith<_$_DateTimeInUnion> get copyWith =>
+  _$$DateTimeInUnionImplCopyWith<_$DateTimeInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
-AppleAllOfDisc _$AppleAllOfDiscFromJson(Map<String, dynamic> json) {
-  return _AppleAllOfDisc.fromJson(json);
-}
-
-/// @nodoc
-mixin _$AppleAllOfDisc {
-  @JsonKey(name: r'seeds')
-  int get seeds => throw _privateConstructorUsedError;
-  @JsonKey(name: r'fruitType')
-  String get fruitType => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $AppleAllOfDiscCopyWith<AppleAllOfDisc> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $AppleAllOfDiscCopyWith<$Res> {
-  factory $AppleAllOfDiscCopyWith(
-          AppleAllOfDisc value, $Res Function(AppleAllOfDisc) then) =
-      _$AppleAllOfDiscCopyWithImpl<$Res, AppleAllOfDisc>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: r'seeds') int seeds,
-      @JsonKey(name: r'fruitType') String fruitType});
-}
-
-/// @nodoc
-class _$AppleAllOfDiscCopyWithImpl<$Res, $Val extends AppleAllOfDisc>
-    implements $AppleAllOfDiscCopyWith<$Res> {
-  _$AppleAllOfDiscCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? seeds = null,
-    Object? fruitType = null,
-  }) {
-    return _then(_value.copyWith(
-      seeds: null == seeds
-          ? _value.seeds
-          : seeds // ignore: cast_nullable_to_non_nullable
-              as int,
-      fruitType: null == fruitType
-          ? _value.fruitType
-          : fruitType // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_AppleAllOfDiscCopyWith<$Res>
-    implements $AppleAllOfDiscCopyWith<$Res> {
-  factory _$$_AppleAllOfDiscCopyWith(
-          _$_AppleAllOfDisc value, $Res Function(_$_AppleAllOfDisc) then) =
-      __$$_AppleAllOfDiscCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {@JsonKey(name: r'seeds') int seeds,
-      @JsonKey(name: r'fruitType') String fruitType});
-}
-
-/// @nodoc
-class __$$_AppleAllOfDiscCopyWithImpl<$Res>
-    extends _$AppleAllOfDiscCopyWithImpl<$Res, _$_AppleAllOfDisc>
-    implements _$$_AppleAllOfDiscCopyWith<$Res> {
-  __$$_AppleAllOfDiscCopyWithImpl(
-      _$_AppleAllOfDisc _value, $Res Function(_$_AppleAllOfDisc) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? seeds = null,
-    Object? fruitType = null,
-  }) {
-    return _then(_$_AppleAllOfDisc(
-      seeds: null == seeds
-          ? _value.seeds
-          : seeds // ignore: cast_nullable_to_non_nullable
-              as int,
-      fruitType: null == fruitType
-          ? _value.fruitType
-          : fruitType // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_AppleAllOfDisc extends _AppleAllOfDisc {
-  const _$_AppleAllOfDisc(
-      {@JsonKey(name: r'seeds') required this.seeds,
-      @JsonKey(name: r'fruitType') required this.fruitType})
-      : super._();
-
-  factory _$_AppleAllOfDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_AppleAllOfDiscFromJson(json);
-
-  @override
-  @JsonKey(name: r'seeds')
-  final int seeds;
-  @override
-  @JsonKey(name: r'fruitType')
-  final String fruitType;
-
-  @override
-  String toString() {
-    return 'AppleAllOfDisc(seeds: $seeds, fruitType: $fruitType)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_AppleAllOfDisc &&
-            (identical(other.seeds, seeds) || other.seeds == seeds) &&
-            (identical(other.fruitType, fruitType) ||
-                other.fruitType == fruitType));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, seeds, fruitType);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_AppleAllOfDiscCopyWith<_$_AppleAllOfDisc> get copyWith =>
-      __$$_AppleAllOfDiscCopyWithImpl<_$_AppleAllOfDisc>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_AppleAllOfDiscToJson(
-      this,
-    );
-  }
-}
-
-abstract class _AppleAllOfDisc extends AppleAllOfDisc {
-  const factory _AppleAllOfDisc(
-          {@JsonKey(name: r'seeds') required final int seeds,
-          @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_AppleAllOfDisc;
-  const _AppleAllOfDisc._() : super._();
-
-  factory _AppleAllOfDisc.fromJson(Map<String, dynamic> json) =
-      _$_AppleAllOfDisc.fromJson;
-
-  @override
-  @JsonKey(name: r'seeds')
-  int get seeds;
-  @override
-  @JsonKey(name: r'fruitType')
-  String get fruitType;
-  @override
-  @JsonKey(ignore: true)
-  _$$_AppleAllOfDiscCopyWith<_$_AppleAllOfDisc> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-AppleGrandparentDisc _$AppleGrandparentDiscFromJson(Map<String, dynamic> json) {
-  return _AppleGrandparentDisc.fromJson(json);
-}
-
-/// @nodoc
-mixin _$AppleGrandparentDisc {
-  @JsonKey(name: r'seeds')
-  int get seeds => throw _privateConstructorUsedError;
-  @JsonKey(name: r'fruitType')
-  String get fruitType => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $AppleGrandparentDiscCopyWith<AppleGrandparentDisc> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $AppleGrandparentDiscCopyWith<$Res> {
-  factory $AppleGrandparentDiscCopyWith(AppleGrandparentDisc value,
-          $Res Function(AppleGrandparentDisc) then) =
-      _$AppleGrandparentDiscCopyWithImpl<$Res, AppleGrandparentDisc>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: r'seeds') int seeds,
-      @JsonKey(name: r'fruitType') String fruitType});
-}
-
-/// @nodoc
-class _$AppleGrandparentDiscCopyWithImpl<$Res,
-        $Val extends AppleGrandparentDisc>
-    implements $AppleGrandparentDiscCopyWith<$Res> {
-  _$AppleGrandparentDiscCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? seeds = null,
-    Object? fruitType = null,
-  }) {
-    return _then(_value.copyWith(
-      seeds: null == seeds
-          ? _value.seeds
-          : seeds // ignore: cast_nullable_to_non_nullable
-              as int,
-      fruitType: null == fruitType
-          ? _value.fruitType
-          : fruitType // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_AppleGrandparentDiscCopyWith<$Res>
-    implements $AppleGrandparentDiscCopyWith<$Res> {
-  factory _$$_AppleGrandparentDiscCopyWith(_$_AppleGrandparentDisc value,
-          $Res Function(_$_AppleGrandparentDisc) then) =
-      __$$_AppleGrandparentDiscCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {@JsonKey(name: r'seeds') int seeds,
-      @JsonKey(name: r'fruitType') String fruitType});
-}
-
-/// @nodoc
-class __$$_AppleGrandparentDiscCopyWithImpl<$Res>
-    extends _$AppleGrandparentDiscCopyWithImpl<$Res, _$_AppleGrandparentDisc>
-    implements _$$_AppleGrandparentDiscCopyWith<$Res> {
-  __$$_AppleGrandparentDiscCopyWithImpl(_$_AppleGrandparentDisc _value,
-      $Res Function(_$_AppleGrandparentDisc) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? seeds = null,
-    Object? fruitType = null,
-  }) {
-    return _then(_$_AppleGrandparentDisc(
-      seeds: null == seeds
-          ? _value.seeds
-          : seeds // ignore: cast_nullable_to_non_nullable
-              as int,
-      fruitType: null == fruitType
-          ? _value.fruitType
-          : fruitType // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_AppleGrandparentDisc extends _AppleGrandparentDisc {
-  const _$_AppleGrandparentDisc(
-      {@JsonKey(name: r'seeds') required this.seeds,
-      @JsonKey(name: r'fruitType') required this.fruitType})
-      : super._();
-
-  factory _$_AppleGrandparentDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_AppleGrandparentDiscFromJson(json);
-
-  @override
-  @JsonKey(name: r'seeds')
-  final int seeds;
-  @override
-  @JsonKey(name: r'fruitType')
-  final String fruitType;
-
-  @override
-  String toString() {
-    return 'AppleGrandparentDisc(seeds: $seeds, fruitType: $fruitType)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_AppleGrandparentDisc &&
-            (identical(other.seeds, seeds) || other.seeds == seeds) &&
-            (identical(other.fruitType, fruitType) ||
-                other.fruitType == fruitType));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, seeds, fruitType);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_AppleGrandparentDiscCopyWith<_$_AppleGrandparentDisc> get copyWith =>
-      __$$_AppleGrandparentDiscCopyWithImpl<_$_AppleGrandparentDisc>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_AppleGrandparentDiscToJson(
-      this,
-    );
-  }
-}
-
-abstract class _AppleGrandparentDisc extends AppleGrandparentDisc {
-  const factory _AppleGrandparentDisc(
-          {@JsonKey(name: r'seeds') required final int seeds,
-          @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_AppleGrandparentDisc;
-  const _AppleGrandparentDisc._() : super._();
-
-  factory _AppleGrandparentDisc.fromJson(Map<String, dynamic> json) =
-      _$_AppleGrandparentDisc.fromJson;
-
-  @override
-  @JsonKey(name: r'seeds')
-  int get seeds;
-  @override
-  @JsonKey(name: r'fruitType')
-  String get fruitType;
-  @override
-  @JsonKey(ignore: true)
-  _$$_AppleGrandparentDiscCopyWith<_$_AppleGrandparentDisc> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-mixin _$AppleOneOfDisc {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<AppleOneOfDisc> deserializedModels)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<AppleOneOfDisc> deserializedModels)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<AppleOneOfDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(AppleOneOfDiscAsFruitType value) asFruitType,
-    required TResult Function(AppleOneOfDiscUnknown value) unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(AppleOneOfDiscAsFruitType value)? asFruitType,
-    TResult? Function(AppleOneOfDiscUnknown value)? unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(AppleOneOfDiscAsFruitType value)? asFruitType,
-    TResult Function(AppleOneOfDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $AppleOneOfDiscCopyWith<$Res> {
-  factory $AppleOneOfDiscCopyWith(
-          AppleOneOfDisc value, $Res Function(AppleOneOfDisc) then) =
-      _$AppleOneOfDiscCopyWithImpl<$Res, AppleOneOfDisc>;
-}
-
-/// @nodoc
-class _$AppleOneOfDiscCopyWithImpl<$Res, $Val extends AppleOneOfDisc>
-    implements $AppleOneOfDiscCopyWith<$Res> {
-  _$AppleOneOfDiscCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$AppleOneOfDiscAsFruitTypeCopyWith<$Res> {
-  factory _$$AppleOneOfDiscAsFruitTypeCopyWith(
-          _$AppleOneOfDiscAsFruitType value,
-          $Res Function(_$AppleOneOfDiscAsFruitType) then) =
-      __$$AppleOneOfDiscAsFruitTypeCopyWithImpl<$Res>;
-  @useResult
-  $Res call({FruitType fruitTypeValue});
-
-  $FruitTypeCopyWith<$Res> get fruitTypeValue;
-}
-
-/// @nodoc
-class __$$AppleOneOfDiscAsFruitTypeCopyWithImpl<$Res>
-    extends _$AppleOneOfDiscCopyWithImpl<$Res, _$AppleOneOfDiscAsFruitType>
-    implements _$$AppleOneOfDiscAsFruitTypeCopyWith<$Res> {
-  __$$AppleOneOfDiscAsFruitTypeCopyWithImpl(_$AppleOneOfDiscAsFruitType _value,
-      $Res Function(_$AppleOneOfDiscAsFruitType) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? fruitTypeValue = null,
-  }) {
-    return _then(_$AppleOneOfDiscAsFruitType(
-      fruitTypeValue: null == fruitTypeValue
-          ? _value.fruitTypeValue
-          : fruitTypeValue // ignore: cast_nullable_to_non_nullable
-              as FruitType,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $FruitTypeCopyWith<$Res> get fruitTypeValue {
-    return $FruitTypeCopyWith<$Res>(_value.fruitTypeValue, (value) {
-      return _then(_value.copyWith(fruitTypeValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$AppleOneOfDiscAsFruitType extends AppleOneOfDiscAsFruitType {
-  const _$AppleOneOfDiscAsFruitType({required this.fruitTypeValue}) : super._();
-
-  @override
-  final FruitType fruitTypeValue;
-
-  @override
-  String toString() {
-    return 'AppleOneOfDisc.asFruitType(fruitTypeValue: $fruitTypeValue)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$AppleOneOfDiscAsFruitType &&
-            (identical(other.fruitTypeValue, fruitTypeValue) ||
-                other.fruitTypeValue == fruitTypeValue));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, fruitTypeValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$AppleOneOfDiscAsFruitTypeCopyWith<_$AppleOneOfDiscAsFruitType>
-      get copyWith => __$$AppleOneOfDiscAsFruitTypeCopyWithImpl<
-          _$AppleOneOfDiscAsFruitType>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<AppleOneOfDisc> deserializedModels)
-        unknown,
-  }) {
-    return asFruitType(fruitTypeValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<AppleOneOfDisc> deserializedModels)?
-        unknown,
-  }) {
-    return asFruitType?.call(fruitTypeValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<AppleOneOfDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitType != null) {
-      return asFruitType(fruitTypeValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(AppleOneOfDiscAsFruitType value) asFruitType,
-    required TResult Function(AppleOneOfDiscUnknown value) unknown,
-  }) {
-    return asFruitType(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(AppleOneOfDiscAsFruitType value)? asFruitType,
-    TResult? Function(AppleOneOfDiscUnknown value)? unknown,
-  }) {
-    return asFruitType?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(AppleOneOfDiscAsFruitType value)? asFruitType,
-    TResult Function(AppleOneOfDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitType != null) {
-      return asFruitType(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class AppleOneOfDiscAsFruitType extends AppleOneOfDisc {
-  const factory AppleOneOfDiscAsFruitType(
-      {required final FruitType fruitTypeValue}) = _$AppleOneOfDiscAsFruitType;
-  const AppleOneOfDiscAsFruitType._() : super._();
-
-  FruitType get fruitTypeValue;
-  @JsonKey(ignore: true)
-  _$$AppleOneOfDiscAsFruitTypeCopyWith<_$AppleOneOfDiscAsFruitType>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$AppleOneOfDiscUnknownCopyWith<$Res> {
-  factory _$$AppleOneOfDiscUnknownCopyWith(_$AppleOneOfDiscUnknown value,
-          $Res Function(_$AppleOneOfDiscUnknown) then) =
-      __$$AppleOneOfDiscUnknownCopyWithImpl<$Res>;
-  @useResult
-  $Res call(
-      {String message,
-      Map<String, dynamic> json,
-      DeserializationErrorType errorType,
-      List<Type> possibleTypes,
-      List<AppleOneOfDisc> deserializedModels});
-}
-
-/// @nodoc
-class __$$AppleOneOfDiscUnknownCopyWithImpl<$Res>
-    extends _$AppleOneOfDiscCopyWithImpl<$Res, _$AppleOneOfDiscUnknown>
-    implements _$$AppleOneOfDiscUnknownCopyWith<$Res> {
-  __$$AppleOneOfDiscUnknownCopyWithImpl(_$AppleOneOfDiscUnknown _value,
-      $Res Function(_$AppleOneOfDiscUnknown) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-    Object? json = null,
-    Object? errorType = null,
-    Object? possibleTypes = null,
-    Object? deserializedModels = null,
-  }) {
-    return _then(_$AppleOneOfDiscUnknown(
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      json: null == json
-          ? _value._json
-          : json // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      errorType: null == errorType
-          ? _value.errorType
-          : errorType // ignore: cast_nullable_to_non_nullable
-              as DeserializationErrorType,
-      possibleTypes: null == possibleTypes
-          ? _value._possibleTypes
-          : possibleTypes // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
-      deserializedModels: null == deserializedModels
-          ? _value._deserializedModels
-          : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<AppleOneOfDisc>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$AppleOneOfDiscUnknown extends AppleOneOfDiscUnknown {
-  const _$AppleOneOfDiscUnknown(
-      {this.message = 'Json does not satisfy any available types',
-      required final Map<String, dynamic> json,
-      this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[FruitType],
-      final List<AppleOneOfDisc> deserializedModels = const <AppleOneOfDisc>[]})
-      : _json = json,
-        _possibleTypes = possibleTypes,
-        _deserializedModels = deserializedModels,
-        super._();
-
-  @override
-  @JsonKey()
-  final String message;
-  final Map<String, dynamic> _json;
-  @override
-  Map<String, dynamic> get json {
-    if (_json is EqualUnmodifiableMapView) return _json;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_json);
-  }
-
-  @override
-  @JsonKey()
-  final DeserializationErrorType errorType;
-  final List<Type> _possibleTypes;
-  @override
-  @JsonKey()
-  List<Type> get possibleTypes {
-    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_possibleTypes);
-  }
-
-  final List<AppleOneOfDisc> _deserializedModels;
-  @override
-  @JsonKey()
-  List<AppleOneOfDisc> get deserializedModels {
-    if (_deserializedModels is EqualUnmodifiableListView)
-      return _deserializedModels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_deserializedModels);
-  }
-
-  @override
-  String toString() {
-    return 'AppleOneOfDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$AppleOneOfDiscUnknown &&
-            (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other._json, _json) &&
-            (identical(other.errorType, errorType) ||
-                other.errorType == errorType) &&
-            const DeepCollectionEquality()
-                .equals(other._possibleTypes, _possibleTypes) &&
-            const DeepCollectionEquality()
-                .equals(other._deserializedModels, _deserializedModels));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      message,
-      const DeepCollectionEquality().hash(_json),
-      errorType,
-      const DeepCollectionEquality().hash(_possibleTypes),
-      const DeepCollectionEquality().hash(_deserializedModels));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$AppleOneOfDiscUnknownCopyWith<_$AppleOneOfDiscUnknown> get copyWith =>
-      __$$AppleOneOfDiscUnknownCopyWithImpl<_$AppleOneOfDiscUnknown>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<AppleOneOfDisc> deserializedModels)
-        unknown,
-  }) {
-    return unknown(message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<AppleOneOfDisc> deserializedModels)?
-        unknown,
-  }) {
-    return unknown?.call(
-        message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<AppleOneOfDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(
-          message, json, errorType, possibleTypes, deserializedModels);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(AppleOneOfDiscAsFruitType value) asFruitType,
-    required TResult Function(AppleOneOfDiscUnknown value) unknown,
-  }) {
-    return unknown(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(AppleOneOfDiscAsFruitType value)? asFruitType,
-    TResult? Function(AppleOneOfDiscUnknown value)? unknown,
-  }) {
-    return unknown?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(AppleOneOfDiscAsFruitType value)? asFruitType,
-    TResult Function(AppleOneOfDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class AppleOneOfDiscUnknown extends AppleOneOfDisc {
-  const factory AppleOneOfDiscUnknown(
-      {final String message,
-      required final Map<String, dynamic> json,
-      final DeserializationErrorType errorType,
-      final List<Type> possibleTypes,
-      final List<AppleOneOfDisc> deserializedModels}) = _$AppleOneOfDiscUnknown;
-  const AppleOneOfDiscUnknown._() : super._();
-
-  String get message;
-  Map<String, dynamic> get json;
-  DeserializationErrorType get errorType;
-  List<Type> get possibleTypes;
-  List<AppleOneOfDisc> get deserializedModels;
-  @JsonKey(ignore: true)
-  _$$AppleOneOfDiscUnknownCopyWith<_$AppleOneOfDiscUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-AppleReqDisc _$AppleReqDiscFromJson(Map<String, dynamic> json) {
-  return _AppleReqDisc.fromJson(json);
-}
-
-/// @nodoc
-mixin _$AppleReqDisc {
-  @JsonKey(name: r'seeds')
-  int get seeds => throw _privateConstructorUsedError;
-  @JsonKey(name: r'fruitType')
-  String get fruitType => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $AppleReqDiscCopyWith<AppleReqDisc> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $AppleReqDiscCopyWith<$Res> {
-  factory $AppleReqDiscCopyWith(
-          AppleReqDisc value, $Res Function(AppleReqDisc) then) =
-      _$AppleReqDiscCopyWithImpl<$Res, AppleReqDisc>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: r'seeds') int seeds,
-      @JsonKey(name: r'fruitType') String fruitType});
-}
-
-/// @nodoc
-class _$AppleReqDiscCopyWithImpl<$Res, $Val extends AppleReqDisc>
-    implements $AppleReqDiscCopyWith<$Res> {
-  _$AppleReqDiscCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? seeds = null,
-    Object? fruitType = null,
-  }) {
-    return _then(_value.copyWith(
-      seeds: null == seeds
-          ? _value.seeds
-          : seeds // ignore: cast_nullable_to_non_nullable
-              as int,
-      fruitType: null == fruitType
-          ? _value.fruitType
-          : fruitType // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_AppleReqDiscCopyWith<$Res>
-    implements $AppleReqDiscCopyWith<$Res> {
-  factory _$$_AppleReqDiscCopyWith(
-          _$_AppleReqDisc value, $Res Function(_$_AppleReqDisc) then) =
-      __$$_AppleReqDiscCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {@JsonKey(name: r'seeds') int seeds,
-      @JsonKey(name: r'fruitType') String fruitType});
-}
-
-/// @nodoc
-class __$$_AppleReqDiscCopyWithImpl<$Res>
-    extends _$AppleReqDiscCopyWithImpl<$Res, _$_AppleReqDisc>
-    implements _$$_AppleReqDiscCopyWith<$Res> {
-  __$$_AppleReqDiscCopyWithImpl(
-      _$_AppleReqDisc _value, $Res Function(_$_AppleReqDisc) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? seeds = null,
-    Object? fruitType = null,
-  }) {
-    return _then(_$_AppleReqDisc(
-      seeds: null == seeds
-          ? _value.seeds
-          : seeds // ignore: cast_nullable_to_non_nullable
-              as int,
-      fruitType: null == fruitType
-          ? _value.fruitType
-          : fruitType // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_AppleReqDisc extends _AppleReqDisc {
-  const _$_AppleReqDisc(
-      {@JsonKey(name: r'seeds') required this.seeds,
-      @JsonKey(name: r'fruitType') required this.fruitType})
-      : super._();
-
-  factory _$_AppleReqDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_AppleReqDiscFromJson(json);
-
-  @override
-  @JsonKey(name: r'seeds')
-  final int seeds;
-  @override
-  @JsonKey(name: r'fruitType')
-  final String fruitType;
-
-  @override
-  String toString() {
-    return 'AppleReqDisc(seeds: $seeds, fruitType: $fruitType)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_AppleReqDisc &&
-            (identical(other.seeds, seeds) || other.seeds == seeds) &&
-            (identical(other.fruitType, fruitType) ||
-                other.fruitType == fruitType));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, seeds, fruitType);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_AppleReqDiscCopyWith<_$_AppleReqDisc> get copyWith =>
-      __$$_AppleReqDiscCopyWithImpl<_$_AppleReqDisc>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_AppleReqDiscToJson(
-      this,
-    );
-  }
-}
-
-abstract class _AppleReqDisc extends AppleReqDisc {
-  const factory _AppleReqDisc(
-          {@JsonKey(name: r'seeds') required final int seeds,
-          @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_AppleReqDisc;
-  const _AppleReqDisc._() : super._();
-
-  factory _AppleReqDisc.fromJson(Map<String, dynamic> json) =
-      _$_AppleReqDisc.fromJson;
-
-  @override
-  @JsonKey(name: r'seeds')
-  int get seeds;
-  @override
-  @JsonKey(name: r'fruitType')
-  String get fruitType;
-  @override
-  @JsonKey(ignore: true)
-  _$$_AppleReqDiscCopyWith<_$_AppleReqDisc> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-BananaAllOfDisc _$BananaAllOfDiscFromJson(Map<String, dynamic> json) {
-  return _BananaAllOfDisc.fromJson(json);
-}
-
-/// @nodoc
-mixin _$BananaAllOfDisc {
-  @JsonKey(name: r'length')
-  int get length => throw _privateConstructorUsedError;
-  @JsonKey(name: r'fruitType')
-  String get fruitType => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $BananaAllOfDiscCopyWith<BananaAllOfDisc> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $BananaAllOfDiscCopyWith<$Res> {
-  factory $BananaAllOfDiscCopyWith(
-          BananaAllOfDisc value, $Res Function(BananaAllOfDisc) then) =
-      _$BananaAllOfDiscCopyWithImpl<$Res, BananaAllOfDisc>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: r'length') int length,
-      @JsonKey(name: r'fruitType') String fruitType});
-}
-
-/// @nodoc
-class _$BananaAllOfDiscCopyWithImpl<$Res, $Val extends BananaAllOfDisc>
-    implements $BananaAllOfDiscCopyWith<$Res> {
-  _$BananaAllOfDiscCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? length = null,
-    Object? fruitType = null,
-  }) {
-    return _then(_value.copyWith(
-      length: null == length
-          ? _value.length
-          : length // ignore: cast_nullable_to_non_nullable
-              as int,
-      fruitType: null == fruitType
-          ? _value.fruitType
-          : fruitType // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_BananaAllOfDiscCopyWith<$Res>
-    implements $BananaAllOfDiscCopyWith<$Res> {
-  factory _$$_BananaAllOfDiscCopyWith(
-          _$_BananaAllOfDisc value, $Res Function(_$_BananaAllOfDisc) then) =
-      __$$_BananaAllOfDiscCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {@JsonKey(name: r'length') int length,
-      @JsonKey(name: r'fruitType') String fruitType});
-}
-
-/// @nodoc
-class __$$_BananaAllOfDiscCopyWithImpl<$Res>
-    extends _$BananaAllOfDiscCopyWithImpl<$Res, _$_BananaAllOfDisc>
-    implements _$$_BananaAllOfDiscCopyWith<$Res> {
-  __$$_BananaAllOfDiscCopyWithImpl(
-      _$_BananaAllOfDisc _value, $Res Function(_$_BananaAllOfDisc) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? length = null,
-    Object? fruitType = null,
-  }) {
-    return _then(_$_BananaAllOfDisc(
-      length: null == length
-          ? _value.length
-          : length // ignore: cast_nullable_to_non_nullable
-              as int,
-      fruitType: null == fruitType
-          ? _value.fruitType
-          : fruitType // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_BananaAllOfDisc extends _BananaAllOfDisc {
-  const _$_BananaAllOfDisc(
-      {@JsonKey(name: r'length') required this.length,
-      @JsonKey(name: r'fruitType') required this.fruitType})
-      : super._();
-
-  factory _$_BananaAllOfDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_BananaAllOfDiscFromJson(json);
-
-  @override
-  @JsonKey(name: r'length')
-  final int length;
-  @override
-  @JsonKey(name: r'fruitType')
-  final String fruitType;
-
-  @override
-  String toString() {
-    return 'BananaAllOfDisc(length: $length, fruitType: $fruitType)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_BananaAllOfDisc &&
-            (identical(other.length, length) || other.length == length) &&
-            (identical(other.fruitType, fruitType) ||
-                other.fruitType == fruitType));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, length, fruitType);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_BananaAllOfDiscCopyWith<_$_BananaAllOfDisc> get copyWith =>
-      __$$_BananaAllOfDiscCopyWithImpl<_$_BananaAllOfDisc>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_BananaAllOfDiscToJson(
-      this,
-    );
-  }
-}
-
-abstract class _BananaAllOfDisc extends BananaAllOfDisc {
-  const factory _BananaAllOfDisc(
-          {@JsonKey(name: r'length') required final int length,
-          @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_BananaAllOfDisc;
-  const _BananaAllOfDisc._() : super._();
-
-  factory _BananaAllOfDisc.fromJson(Map<String, dynamic> json) =
-      _$_BananaAllOfDisc.fromJson;
-
-  @override
-  @JsonKey(name: r'length')
-  int get length;
-  @override
-  @JsonKey(name: r'fruitType')
-  String get fruitType;
-  @override
-  @JsonKey(ignore: true)
-  _$$_BananaAllOfDiscCopyWith<_$_BananaAllOfDisc> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-BananaGrandparentDisc _$BananaGrandparentDiscFromJson(
+OpenApiAppleAllOfDisc _$OpenApiAppleAllOfDiscFromJson(
     Map<String, dynamic> json) {
-  return _BananaGrandparentDisc.fromJson(json);
+  return _OpenApiAppleAllOfDisc.fromJson(json);
 }
 
 /// @nodoc
-mixin _$BananaGrandparentDisc {
-  @JsonKey(name: r'length')
-  int get length => throw _privateConstructorUsedError;
+mixin _$OpenApiAppleAllOfDisc {
+  @JsonKey(name: r'seeds')
+  int get seeds => throw _privateConstructorUsedError;
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $BananaGrandparentDiscCopyWith<BananaGrandparentDisc> get copyWith =>
+  $OpenApiAppleAllOfDiscCopyWith<OpenApiAppleAllOfDisc> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $BananaGrandparentDiscCopyWith<$Res> {
-  factory $BananaGrandparentDiscCopyWith(BananaGrandparentDisc value,
-          $Res Function(BananaGrandparentDisc) then) =
-      _$BananaGrandparentDiscCopyWithImpl<$Res, BananaGrandparentDisc>;
+abstract class $OpenApiAppleAllOfDiscCopyWith<$Res> {
+  factory $OpenApiAppleAllOfDiscCopyWith(OpenApiAppleAllOfDisc value,
+          $Res Function(OpenApiAppleAllOfDisc) then) =
+      _$OpenApiAppleAllOfDiscCopyWithImpl<$Res, OpenApiAppleAllOfDisc>;
   @useResult
   $Res call(
-      {@JsonKey(name: r'length') int length,
+      {@JsonKey(name: r'seeds') int seeds,
       @JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class _$BananaGrandparentDiscCopyWithImpl<$Res,
-        $Val extends BananaGrandparentDisc>
-    implements $BananaGrandparentDiscCopyWith<$Res> {
-  _$BananaGrandparentDiscCopyWithImpl(this._value, this._then);
+class _$OpenApiAppleAllOfDiscCopyWithImpl<$Res,
+        $Val extends OpenApiAppleAllOfDisc>
+    implements $OpenApiAppleAllOfDiscCopyWith<$Res> {
+  _$OpenApiAppleAllOfDiscCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -2182,13 +1017,13 @@ class _$BananaGrandparentDiscCopyWithImpl<$Res,
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? length = null,
+    Object? seeds = null,
     Object? fruitType = null,
   }) {
     return _then(_value.copyWith(
-      length: null == length
-          ? _value.length
-          : length // ignore: cast_nullable_to_non_nullable
+      seeds: null == seeds
+          ? _value.seeds
+          : seeds // ignore: cast_nullable_to_non_nullable
               as int,
       fruitType: null == fruitType
           ? _value.fruitType
@@ -2199,36 +1034,38 @@ class _$BananaGrandparentDiscCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_BananaGrandparentDiscCopyWith<$Res>
-    implements $BananaGrandparentDiscCopyWith<$Res> {
-  factory _$$_BananaGrandparentDiscCopyWith(_$_BananaGrandparentDisc value,
-          $Res Function(_$_BananaGrandparentDisc) then) =
-      __$$_BananaGrandparentDiscCopyWithImpl<$Res>;
+abstract class _$$OpenApiAppleAllOfDiscImplCopyWith<$Res>
+    implements $OpenApiAppleAllOfDiscCopyWith<$Res> {
+  factory _$$OpenApiAppleAllOfDiscImplCopyWith(
+          _$OpenApiAppleAllOfDiscImpl value,
+          $Res Function(_$OpenApiAppleAllOfDiscImpl) then) =
+      __$$OpenApiAppleAllOfDiscImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: r'length') int length,
+      {@JsonKey(name: r'seeds') int seeds,
       @JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class __$$_BananaGrandparentDiscCopyWithImpl<$Res>
-    extends _$BananaGrandparentDiscCopyWithImpl<$Res, _$_BananaGrandparentDisc>
-    implements _$$_BananaGrandparentDiscCopyWith<$Res> {
-  __$$_BananaGrandparentDiscCopyWithImpl(_$_BananaGrandparentDisc _value,
-      $Res Function(_$_BananaGrandparentDisc) _then)
+class __$$OpenApiAppleAllOfDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiAppleAllOfDiscCopyWithImpl<$Res,
+        _$OpenApiAppleAllOfDiscImpl>
+    implements _$$OpenApiAppleAllOfDiscImplCopyWith<$Res> {
+  __$$OpenApiAppleAllOfDiscImplCopyWithImpl(_$OpenApiAppleAllOfDiscImpl _value,
+      $Res Function(_$OpenApiAppleAllOfDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? length = null,
+    Object? seeds = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_BananaGrandparentDisc(
-      length: null == length
-          ? _value.length
-          : length // ignore: cast_nullable_to_non_nullable
+    return _then(_$OpenApiAppleAllOfDiscImpl(
+      seeds: null == seeds
+          ? _value.seeds
+          : seeds // ignore: cast_nullable_to_non_nullable
               as int,
       fruitType: null == fruitType
           ? _value.fruitType
@@ -2240,149 +1077,336 @@ class __$$_BananaGrandparentDiscCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_BananaGrandparentDisc extends _BananaGrandparentDisc {
-  const _$_BananaGrandparentDisc(
-      {@JsonKey(name: r'length') required this.length,
+class _$OpenApiAppleAllOfDiscImpl extends _OpenApiAppleAllOfDisc {
+  const _$OpenApiAppleAllOfDiscImpl(
+      {@JsonKey(name: r'seeds') required this.seeds,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_BananaGrandparentDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_BananaGrandparentDiscFromJson(json);
+  factory _$OpenApiAppleAllOfDiscImpl.fromJson(Map<String, dynamic> json) =>
+      _$$OpenApiAppleAllOfDiscImplFromJson(json);
 
   @override
-  @JsonKey(name: r'length')
-  final int length;
+  @JsonKey(name: r'seeds')
+  final int seeds;
   @override
   @JsonKey(name: r'fruitType')
   final String fruitType;
 
   @override
   String toString() {
-    return 'BananaGrandparentDisc(length: $length, fruitType: $fruitType)';
+    return 'OpenApiAppleAllOfDisc(seeds: $seeds, fruitType: $fruitType)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_BananaGrandparentDisc &&
-            (identical(other.length, length) || other.length == length) &&
+            other is _$OpenApiAppleAllOfDiscImpl &&
+            (identical(other.seeds, seeds) || other.seeds == seeds) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, length, fruitType);
+  int get hashCode => Object.hash(runtimeType, seeds, fruitType);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_BananaGrandparentDiscCopyWith<_$_BananaGrandparentDisc> get copyWith =>
-      __$$_BananaGrandparentDiscCopyWithImpl<_$_BananaGrandparentDisc>(
-          this, _$identity);
+  _$$OpenApiAppleAllOfDiscImplCopyWith<_$OpenApiAppleAllOfDiscImpl>
+      get copyWith => __$$OpenApiAppleAllOfDiscImplCopyWithImpl<
+          _$OpenApiAppleAllOfDiscImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BananaGrandparentDiscToJson(
+    return _$$OpenApiAppleAllOfDiscImplToJson(
       this,
     );
   }
 }
 
-abstract class _BananaGrandparentDisc extends BananaGrandparentDisc {
-  const factory _BananaGrandparentDisc(
-          {@JsonKey(name: r'length') required final int length,
+abstract class _OpenApiAppleAllOfDisc extends OpenApiAppleAllOfDisc {
+  const factory _OpenApiAppleAllOfDisc(
+          {@JsonKey(name: r'seeds') required final int seeds,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_BananaGrandparentDisc;
-  const _BananaGrandparentDisc._() : super._();
+      _$OpenApiAppleAllOfDiscImpl;
+  const _OpenApiAppleAllOfDisc._() : super._();
 
-  factory _BananaGrandparentDisc.fromJson(Map<String, dynamic> json) =
-      _$_BananaGrandparentDisc.fromJson;
+  factory _OpenApiAppleAllOfDisc.fromJson(Map<String, dynamic> json) =
+      _$OpenApiAppleAllOfDiscImpl.fromJson;
 
   @override
-  @JsonKey(name: r'length')
-  int get length;
+  @JsonKey(name: r'seeds')
+  int get seeds;
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_BananaGrandparentDiscCopyWith<_$_BananaGrandparentDisc> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OpenApiAppleAllOfDiscImplCopyWith<_$OpenApiAppleAllOfDiscImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+OpenApiAppleGrandparentDisc _$OpenApiAppleGrandparentDiscFromJson(
+    Map<String, dynamic> json) {
+  return _OpenApiAppleGrandparentDisc.fromJson(json);
 }
 
 /// @nodoc
-mixin _$BananaOneOfDisc {
+mixin _$OpenApiAppleGrandparentDisc {
+  @JsonKey(name: r'seeds')
+  int get seeds => throw _privateConstructorUsedError;
+  @JsonKey(name: r'fruitType')
+  String get fruitType => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $OpenApiAppleGrandparentDiscCopyWith<OpenApiAppleGrandparentDisc>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiAppleGrandparentDiscCopyWith<$Res> {
+  factory $OpenApiAppleGrandparentDiscCopyWith(
+          OpenApiAppleGrandparentDisc value,
+          $Res Function(OpenApiAppleGrandparentDisc) then) =
+      _$OpenApiAppleGrandparentDiscCopyWithImpl<$Res,
+          OpenApiAppleGrandparentDisc>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: r'seeds') int seeds,
+      @JsonKey(name: r'fruitType') String fruitType});
+}
+
+/// @nodoc
+class _$OpenApiAppleGrandparentDiscCopyWithImpl<$Res,
+        $Val extends OpenApiAppleGrandparentDisc>
+    implements $OpenApiAppleGrandparentDiscCopyWith<$Res> {
+  _$OpenApiAppleGrandparentDiscCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? seeds = null,
+    Object? fruitType = null,
+  }) {
+    return _then(_value.copyWith(
+      seeds: null == seeds
+          ? _value.seeds
+          : seeds // ignore: cast_nullable_to_non_nullable
+              as int,
+      fruitType: null == fruitType
+          ? _value.fruitType
+          : fruitType // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$OpenApiAppleGrandparentDiscImplCopyWith<$Res>
+    implements $OpenApiAppleGrandparentDiscCopyWith<$Res> {
+  factory _$$OpenApiAppleGrandparentDiscImplCopyWith(
+          _$OpenApiAppleGrandparentDiscImpl value,
+          $Res Function(_$OpenApiAppleGrandparentDiscImpl) then) =
+      __$$OpenApiAppleGrandparentDiscImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {@JsonKey(name: r'seeds') int seeds,
+      @JsonKey(name: r'fruitType') String fruitType});
+}
+
+/// @nodoc
+class __$$OpenApiAppleGrandparentDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiAppleGrandparentDiscCopyWithImpl<$Res,
+        _$OpenApiAppleGrandparentDiscImpl>
+    implements _$$OpenApiAppleGrandparentDiscImplCopyWith<$Res> {
+  __$$OpenApiAppleGrandparentDiscImplCopyWithImpl(
+      _$OpenApiAppleGrandparentDiscImpl _value,
+      $Res Function(_$OpenApiAppleGrandparentDiscImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? seeds = null,
+    Object? fruitType = null,
+  }) {
+    return _then(_$OpenApiAppleGrandparentDiscImpl(
+      seeds: null == seeds
+          ? _value.seeds
+          : seeds // ignore: cast_nullable_to_non_nullable
+              as int,
+      fruitType: null == fruitType
+          ? _value.fruitType
+          : fruitType // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$OpenApiAppleGrandparentDiscImpl extends _OpenApiAppleGrandparentDisc {
+  const _$OpenApiAppleGrandparentDiscImpl(
+      {@JsonKey(name: r'seeds') required this.seeds,
+      @JsonKey(name: r'fruitType') required this.fruitType})
+      : super._();
+
+  factory _$OpenApiAppleGrandparentDiscImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$OpenApiAppleGrandparentDiscImplFromJson(json);
+
+  @override
+  @JsonKey(name: r'seeds')
+  final int seeds;
+  @override
+  @JsonKey(name: r'fruitType')
+  final String fruitType;
+
+  @override
+  String toString() {
+    return 'OpenApiAppleGrandparentDisc(seeds: $seeds, fruitType: $fruitType)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiAppleGrandparentDiscImpl &&
+            (identical(other.seeds, seeds) || other.seeds == seeds) &&
+            (identical(other.fruitType, fruitType) ||
+                other.fruitType == fruitType));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, seeds, fruitType);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiAppleGrandparentDiscImplCopyWith<_$OpenApiAppleGrandparentDiscImpl>
+      get copyWith => __$$OpenApiAppleGrandparentDiscImplCopyWithImpl<
+          _$OpenApiAppleGrandparentDiscImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$OpenApiAppleGrandparentDiscImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _OpenApiAppleGrandparentDisc
+    extends OpenApiAppleGrandparentDisc {
+  const factory _OpenApiAppleGrandparentDisc(
+          {@JsonKey(name: r'seeds') required final int seeds,
+          @JsonKey(name: r'fruitType') required final String fruitType}) =
+      _$OpenApiAppleGrandparentDiscImpl;
+  const _OpenApiAppleGrandparentDisc._() : super._();
+
+  factory _OpenApiAppleGrandparentDisc.fromJson(Map<String, dynamic> json) =
+      _$OpenApiAppleGrandparentDiscImpl.fromJson;
+
+  @override
+  @JsonKey(name: r'seeds')
+  int get seeds;
+  @override
+  @JsonKey(name: r'fruitType')
+  String get fruitType;
+  @override
+  @JsonKey(ignore: true)
+  _$$OpenApiAppleGrandparentDiscImplCopyWith<_$OpenApiAppleGrandparentDiscImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+mixin _$OpenApiAppleOneOfDisc {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<BananaOneOfDisc> deserializedModels)
+            List<OpenApiAppleOneOfDisc> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<BananaOneOfDisc> deserializedModels)?
+            List<OpenApiAppleOneOfDisc> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<BananaOneOfDisc> deserializedModels)?
+            List<OpenApiAppleOneOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(BananaOneOfDiscAsFruitType value) asFruitType,
-    required TResult Function(BananaOneOfDiscUnknown value) unknown,
+    required TResult Function(OpenApiAppleOneOfDiscAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiAppleOneOfDiscUnknown value) unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(BananaOneOfDiscAsFruitType value)? asFruitType,
-    TResult? Function(BananaOneOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiAppleOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiAppleOneOfDiscUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(BananaOneOfDiscAsFruitType value)? asFruitType,
-    TResult Function(BananaOneOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiAppleOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiAppleOneOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $BananaOneOfDiscCopyWith<$Res> {
-  factory $BananaOneOfDiscCopyWith(
-          BananaOneOfDisc value, $Res Function(BananaOneOfDisc) then) =
-      _$BananaOneOfDiscCopyWithImpl<$Res, BananaOneOfDisc>;
+abstract class $OpenApiAppleOneOfDiscCopyWith<$Res> {
+  factory $OpenApiAppleOneOfDiscCopyWith(OpenApiAppleOneOfDisc value,
+          $Res Function(OpenApiAppleOneOfDisc) then) =
+      _$OpenApiAppleOneOfDiscCopyWithImpl<$Res, OpenApiAppleOneOfDisc>;
 }
 
 /// @nodoc
-class _$BananaOneOfDiscCopyWithImpl<$Res, $Val extends BananaOneOfDisc>
-    implements $BananaOneOfDiscCopyWith<$Res> {
-  _$BananaOneOfDiscCopyWithImpl(this._value, this._then);
+class _$OpenApiAppleOneOfDiscCopyWithImpl<$Res,
+        $Val extends OpenApiAppleOneOfDisc>
+    implements $OpenApiAppleOneOfDiscCopyWith<$Res> {
+  _$OpenApiAppleOneOfDiscCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -2391,126 +1415,135 @@ class _$BananaOneOfDiscCopyWithImpl<$Res, $Val extends BananaOneOfDisc>
 }
 
 /// @nodoc
-abstract class _$$BananaOneOfDiscAsFruitTypeCopyWith<$Res> {
-  factory _$$BananaOneOfDiscAsFruitTypeCopyWith(
-          _$BananaOneOfDiscAsFruitType value,
-          $Res Function(_$BananaOneOfDiscAsFruitType) then) =
-      __$$BananaOneOfDiscAsFruitTypeCopyWithImpl<$Res>;
+abstract class _$$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImplCopyWith<$Res> {
+  factory _$$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImplCopyWith(
+          _$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl value,
+          $Res Function(_$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl) then) =
+      __$$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({FruitType fruitTypeValue});
+  $Res call({OpenApiFruitType openApiFruitTypeValue});
 
-  $FruitTypeCopyWith<$Res> get fruitTypeValue;
+  $OpenApiFruitTypeCopyWith<$Res> get openApiFruitTypeValue;
 }
 
 /// @nodoc
-class __$$BananaOneOfDiscAsFruitTypeCopyWithImpl<$Res>
-    extends _$BananaOneOfDiscCopyWithImpl<$Res, _$BananaOneOfDiscAsFruitType>
-    implements _$$BananaOneOfDiscAsFruitTypeCopyWith<$Res> {
-  __$$BananaOneOfDiscAsFruitTypeCopyWithImpl(
-      _$BananaOneOfDiscAsFruitType _value,
-      $Res Function(_$BananaOneOfDiscAsFruitType) _then)
+class __$$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImplCopyWithImpl<$Res>
+    extends _$OpenApiAppleOneOfDiscCopyWithImpl<$Res,
+        _$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl>
+    implements _$$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImplCopyWith<$Res> {
+  __$$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImplCopyWithImpl(
+      _$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl _value,
+      $Res Function(_$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? fruitTypeValue = null,
+    Object? openApiFruitTypeValue = null,
   }) {
-    return _then(_$BananaOneOfDiscAsFruitType(
-      fruitTypeValue: null == fruitTypeValue
-          ? _value.fruitTypeValue
-          : fruitTypeValue // ignore: cast_nullable_to_non_nullable
-              as FruitType,
+    return _then(_$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl(
+      openApiFruitTypeValue: null == openApiFruitTypeValue
+          ? _value.openApiFruitTypeValue
+          : openApiFruitTypeValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitType,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $FruitTypeCopyWith<$Res> get fruitTypeValue {
-    return $FruitTypeCopyWith<$Res>(_value.fruitTypeValue, (value) {
-      return _then(_value.copyWith(fruitTypeValue: value));
+  $OpenApiFruitTypeCopyWith<$Res> get openApiFruitTypeValue {
+    return $OpenApiFruitTypeCopyWith<$Res>(_value.openApiFruitTypeValue,
+        (value) {
+      return _then(_value.copyWith(openApiFruitTypeValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$BananaOneOfDiscAsFruitType extends BananaOneOfDiscAsFruitType {
-  const _$BananaOneOfDiscAsFruitType({required this.fruitTypeValue})
+class _$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl
+    extends OpenApiAppleOneOfDiscAsOpenApiFruitType {
+  const _$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl(
+      {required this.openApiFruitTypeValue})
       : super._();
 
   @override
-  final FruitType fruitTypeValue;
+  final OpenApiFruitType openApiFruitTypeValue;
 
   @override
   String toString() {
-    return 'BananaOneOfDisc.asFruitType(fruitTypeValue: $fruitTypeValue)';
+    return 'OpenApiAppleOneOfDisc.asOpenApiFruitType(openApiFruitTypeValue: $openApiFruitTypeValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$BananaOneOfDiscAsFruitType &&
-            (identical(other.fruitTypeValue, fruitTypeValue) ||
-                other.fruitTypeValue == fruitTypeValue));
+            other is _$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl &&
+            (identical(other.openApiFruitTypeValue, openApiFruitTypeValue) ||
+                other.openApiFruitTypeValue == openApiFruitTypeValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, fruitTypeValue);
+  int get hashCode => Object.hash(runtimeType, openApiFruitTypeValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$BananaOneOfDiscAsFruitTypeCopyWith<_$BananaOneOfDiscAsFruitType>
-      get copyWith => __$$BananaOneOfDiscAsFruitTypeCopyWithImpl<
-          _$BananaOneOfDiscAsFruitType>(this, _$identity);
+  _$$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImplCopyWith<
+          _$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl>
+      get copyWith =>
+          __$$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImplCopyWithImpl<
+              _$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<BananaOneOfDisc> deserializedModels)
+            List<OpenApiAppleOneOfDisc> deserializedModels)
         unknown,
   }) {
-    return asFruitType(fruitTypeValue);
+    return asOpenApiFruitType(openApiFruitTypeValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<BananaOneOfDisc> deserializedModels)?
+            List<OpenApiAppleOneOfDisc> deserializedModels)?
         unknown,
   }) {
-    return asFruitType?.call(fruitTypeValue);
+    return asOpenApiFruitType?.call(openApiFruitTypeValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<BananaOneOfDisc> deserializedModels)?
+            List<OpenApiAppleOneOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asFruitType != null) {
-      return asFruitType(fruitTypeValue);
+    if (asOpenApiFruitType != null) {
+      return asOpenApiFruitType(openApiFruitTypeValue);
     }
     return orElse();
   }
@@ -2518,66 +1551,75 @@ class _$BananaOneOfDiscAsFruitType extends BananaOneOfDiscAsFruitType {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(BananaOneOfDiscAsFruitType value) asFruitType,
-    required TResult Function(BananaOneOfDiscUnknown value) unknown,
+    required TResult Function(OpenApiAppleOneOfDiscAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiAppleOneOfDiscUnknown value) unknown,
   }) {
-    return asFruitType(this);
+    return asOpenApiFruitType(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(BananaOneOfDiscAsFruitType value)? asFruitType,
-    TResult? Function(BananaOneOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiAppleOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiAppleOneOfDiscUnknown value)? unknown,
   }) {
-    return asFruitType?.call(this);
+    return asOpenApiFruitType?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(BananaOneOfDiscAsFruitType value)? asFruitType,
-    TResult Function(BananaOneOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiAppleOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiAppleOneOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (asFruitType != null) {
-      return asFruitType(this);
+    if (asOpenApiFruitType != null) {
+      return asOpenApiFruitType(this);
     }
     return orElse();
   }
 }
 
-abstract class BananaOneOfDiscAsFruitType extends BananaOneOfDisc {
-  const factory BananaOneOfDiscAsFruitType(
-      {required final FruitType fruitTypeValue}) = _$BananaOneOfDiscAsFruitType;
-  const BananaOneOfDiscAsFruitType._() : super._();
+abstract class OpenApiAppleOneOfDiscAsOpenApiFruitType
+    extends OpenApiAppleOneOfDisc {
+  const factory OpenApiAppleOneOfDiscAsOpenApiFruitType(
+          {required final OpenApiFruitType openApiFruitTypeValue}) =
+      _$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl;
+  const OpenApiAppleOneOfDiscAsOpenApiFruitType._() : super._();
 
-  FruitType get fruitTypeValue;
+  OpenApiFruitType get openApiFruitTypeValue;
   @JsonKey(ignore: true)
-  _$$BananaOneOfDiscAsFruitTypeCopyWith<_$BananaOneOfDiscAsFruitType>
+  _$$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImplCopyWith<
+          _$OpenApiAppleOneOfDiscAsOpenApiFruitTypeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$BananaOneOfDiscUnknownCopyWith<$Res> {
-  factory _$$BananaOneOfDiscUnknownCopyWith(_$BananaOneOfDiscUnknown value,
-          $Res Function(_$BananaOneOfDiscUnknown) then) =
-      __$$BananaOneOfDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$OpenApiAppleOneOfDiscUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiAppleOneOfDiscUnknownImplCopyWith(
+          _$OpenApiAppleOneOfDiscUnknownImpl value,
+          $Res Function(_$OpenApiAppleOneOfDiscUnknownImpl) then) =
+      __$$OpenApiAppleOneOfDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<BananaOneOfDisc> deserializedModels});
+      List<OpenApiAppleOneOfDisc> deserializedModels});
 }
 
 /// @nodoc
-class __$$BananaOneOfDiscUnknownCopyWithImpl<$Res>
-    extends _$BananaOneOfDiscCopyWithImpl<$Res, _$BananaOneOfDiscUnknown>
-    implements _$$BananaOneOfDiscUnknownCopyWith<$Res> {
-  __$$BananaOneOfDiscUnknownCopyWithImpl(_$BananaOneOfDiscUnknown _value,
-      $Res Function(_$BananaOneOfDiscUnknown) _then)
+class __$$OpenApiAppleOneOfDiscUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiAppleOneOfDiscCopyWithImpl<$Res,
+        _$OpenApiAppleOneOfDiscUnknownImpl>
+    implements _$$OpenApiAppleOneOfDiscUnknownImplCopyWith<$Res> {
+  __$$OpenApiAppleOneOfDiscUnknownImplCopyWithImpl(
+      _$OpenApiAppleOneOfDiscUnknownImpl _value,
+      $Res Function(_$OpenApiAppleOneOfDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2589,7 +1631,7 @@ class __$$BananaOneOfDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$BananaOneOfDiscUnknown(
+    return _then(_$OpenApiAppleOneOfDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -2609,21 +1651,21 @@ class __$$BananaOneOfDiscUnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<BananaOneOfDisc>,
+              as List<OpenApiAppleOneOfDisc>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$BananaOneOfDiscUnknown extends BananaOneOfDiscUnknown {
-  const _$BananaOneOfDiscUnknown(
+class _$OpenApiAppleOneOfDiscUnknownImpl extends OpenApiAppleOneOfDiscUnknown {
+  const _$OpenApiAppleOneOfDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[FruitType],
-      final List<BananaOneOfDisc> deserializedModels =
-          const <BananaOneOfDisc>[]})
+      final List<Type> possibleTypes = const <Type>[OpenApiFruitType],
+      final List<OpenApiAppleOneOfDisc> deserializedModels =
+          const <OpenApiAppleOneOfDisc>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -2652,10 +1694,10 @@ class _$BananaOneOfDiscUnknown extends BananaOneOfDiscUnknown {
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<BananaOneOfDisc> _deserializedModels;
+  final List<OpenApiAppleOneOfDisc> _deserializedModels;
   @override
   @JsonKey()
-  List<BananaOneOfDisc> get deserializedModels {
+  List<OpenApiAppleOneOfDisc> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -2664,14 +1706,14 @@ class _$BananaOneOfDiscUnknown extends BananaOneOfDiscUnknown {
 
   @override
   String toString() {
-    return 'BananaOneOfDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiAppleOneOfDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$BananaOneOfDiscUnknown &&
+            other is _$OpenApiAppleOneOfDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -2694,20 +1736,22 @@ class _$BananaOneOfDiscUnknown extends BananaOneOfDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$BananaOneOfDiscUnknownCopyWith<_$BananaOneOfDiscUnknown> get copyWith =>
-      __$$BananaOneOfDiscUnknownCopyWithImpl<_$BananaOneOfDiscUnknown>(
-          this, _$identity);
+  _$$OpenApiAppleOneOfDiscUnknownImplCopyWith<
+          _$OpenApiAppleOneOfDiscUnknownImpl>
+      get copyWith => __$$OpenApiAppleOneOfDiscUnknownImplCopyWithImpl<
+          _$OpenApiAppleOneOfDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<BananaOneOfDisc> deserializedModels)
+            List<OpenApiAppleOneOfDisc> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -2716,13 +1760,14 @@ class _$BananaOneOfDiscUnknown extends BananaOneOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<BananaOneOfDisc> deserializedModels)?
+            List<OpenApiAppleOneOfDisc> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -2732,13 +1777,14 @@ class _$BananaOneOfDiscUnknown extends BananaOneOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<BananaOneOfDisc> deserializedModels)?
+            List<OpenApiAppleOneOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -2752,8 +1798,9 @@ class _$BananaOneOfDiscUnknown extends BananaOneOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(BananaOneOfDiscAsFruitType value) asFruitType,
-    required TResult Function(BananaOneOfDiscUnknown value) unknown,
+    required TResult Function(OpenApiAppleOneOfDiscAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiAppleOneOfDiscUnknown value) unknown,
   }) {
     return unknown(this);
   }
@@ -2761,8 +1808,9 @@ class _$BananaOneOfDiscUnknown extends BananaOneOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(BananaOneOfDiscAsFruitType value)? asFruitType,
-    TResult? Function(BananaOneOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiAppleOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiAppleOneOfDiscUnknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -2770,8 +1818,9 @@ class _$BananaOneOfDiscUnknown extends BananaOneOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(BananaOneOfDiscAsFruitType value)? asFruitType,
-    TResult Function(BananaOneOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiAppleOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiAppleOneOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -2781,32 +1830,205 @@ class _$BananaOneOfDiscUnknown extends BananaOneOfDiscUnknown {
   }
 }
 
-abstract class BananaOneOfDiscUnknown extends BananaOneOfDisc {
-  const factory BananaOneOfDiscUnknown(
+abstract class OpenApiAppleOneOfDiscUnknown extends OpenApiAppleOneOfDisc {
+  const factory OpenApiAppleOneOfDiscUnknown(
           {final String message,
           required final Map<String, dynamic> json,
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
-          final List<BananaOneOfDisc> deserializedModels}) =
-      _$BananaOneOfDiscUnknown;
-  const BananaOneOfDiscUnknown._() : super._();
+          final List<OpenApiAppleOneOfDisc> deserializedModels}) =
+      _$OpenApiAppleOneOfDiscUnknownImpl;
+  const OpenApiAppleOneOfDiscUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<BananaOneOfDisc> get deserializedModels;
+  List<OpenApiAppleOneOfDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$BananaOneOfDiscUnknownCopyWith<_$BananaOneOfDiscUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OpenApiAppleOneOfDiscUnknownImplCopyWith<
+          _$OpenApiAppleOneOfDiscUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
-BananaReqDisc _$BananaReqDiscFromJson(Map<String, dynamic> json) {
-  return _BananaReqDisc.fromJson(json);
+OpenApiAppleReqDisc _$OpenApiAppleReqDiscFromJson(Map<String, dynamic> json) {
+  return _OpenApiAppleReqDisc.fromJson(json);
 }
 
 /// @nodoc
-mixin _$BananaReqDisc {
+mixin _$OpenApiAppleReqDisc {
+  @JsonKey(name: r'seeds')
+  int get seeds => throw _privateConstructorUsedError;
+  @JsonKey(name: r'fruitType')
+  String get fruitType => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $OpenApiAppleReqDiscCopyWith<OpenApiAppleReqDisc> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiAppleReqDiscCopyWith<$Res> {
+  factory $OpenApiAppleReqDiscCopyWith(
+          OpenApiAppleReqDisc value, $Res Function(OpenApiAppleReqDisc) then) =
+      _$OpenApiAppleReqDiscCopyWithImpl<$Res, OpenApiAppleReqDisc>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: r'seeds') int seeds,
+      @JsonKey(name: r'fruitType') String fruitType});
+}
+
+/// @nodoc
+class _$OpenApiAppleReqDiscCopyWithImpl<$Res, $Val extends OpenApiAppleReqDisc>
+    implements $OpenApiAppleReqDiscCopyWith<$Res> {
+  _$OpenApiAppleReqDiscCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? seeds = null,
+    Object? fruitType = null,
+  }) {
+    return _then(_value.copyWith(
+      seeds: null == seeds
+          ? _value.seeds
+          : seeds // ignore: cast_nullable_to_non_nullable
+              as int,
+      fruitType: null == fruitType
+          ? _value.fruitType
+          : fruitType // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$OpenApiAppleReqDiscImplCopyWith<$Res>
+    implements $OpenApiAppleReqDiscCopyWith<$Res> {
+  factory _$$OpenApiAppleReqDiscImplCopyWith(_$OpenApiAppleReqDiscImpl value,
+          $Res Function(_$OpenApiAppleReqDiscImpl) then) =
+      __$$OpenApiAppleReqDiscImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {@JsonKey(name: r'seeds') int seeds,
+      @JsonKey(name: r'fruitType') String fruitType});
+}
+
+/// @nodoc
+class __$$OpenApiAppleReqDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiAppleReqDiscCopyWithImpl<$Res, _$OpenApiAppleReqDiscImpl>
+    implements _$$OpenApiAppleReqDiscImplCopyWith<$Res> {
+  __$$OpenApiAppleReqDiscImplCopyWithImpl(_$OpenApiAppleReqDiscImpl _value,
+      $Res Function(_$OpenApiAppleReqDiscImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? seeds = null,
+    Object? fruitType = null,
+  }) {
+    return _then(_$OpenApiAppleReqDiscImpl(
+      seeds: null == seeds
+          ? _value.seeds
+          : seeds // ignore: cast_nullable_to_non_nullable
+              as int,
+      fruitType: null == fruitType
+          ? _value.fruitType
+          : fruitType // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$OpenApiAppleReqDiscImpl extends _OpenApiAppleReqDisc {
+  const _$OpenApiAppleReqDiscImpl(
+      {@JsonKey(name: r'seeds') required this.seeds,
+      @JsonKey(name: r'fruitType') required this.fruitType})
+      : super._();
+
+  factory _$OpenApiAppleReqDiscImpl.fromJson(Map<String, dynamic> json) =>
+      _$$OpenApiAppleReqDiscImplFromJson(json);
+
+  @override
+  @JsonKey(name: r'seeds')
+  final int seeds;
+  @override
+  @JsonKey(name: r'fruitType')
+  final String fruitType;
+
+  @override
+  String toString() {
+    return 'OpenApiAppleReqDisc(seeds: $seeds, fruitType: $fruitType)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiAppleReqDiscImpl &&
+            (identical(other.seeds, seeds) || other.seeds == seeds) &&
+            (identical(other.fruitType, fruitType) ||
+                other.fruitType == fruitType));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, seeds, fruitType);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiAppleReqDiscImplCopyWith<_$OpenApiAppleReqDiscImpl> get copyWith =>
+      __$$OpenApiAppleReqDiscImplCopyWithImpl<_$OpenApiAppleReqDiscImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$OpenApiAppleReqDiscImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _OpenApiAppleReqDisc extends OpenApiAppleReqDisc {
+  const factory _OpenApiAppleReqDisc(
+          {@JsonKey(name: r'seeds') required final int seeds,
+          @JsonKey(name: r'fruitType') required final String fruitType}) =
+      _$OpenApiAppleReqDiscImpl;
+  const _OpenApiAppleReqDisc._() : super._();
+
+  factory _OpenApiAppleReqDisc.fromJson(Map<String, dynamic> json) =
+      _$OpenApiAppleReqDiscImpl.fromJson;
+
+  @override
+  @JsonKey(name: r'seeds')
+  int get seeds;
+  @override
+  @JsonKey(name: r'fruitType')
+  String get fruitType;
+  @override
+  @JsonKey(ignore: true)
+  _$$OpenApiAppleReqDiscImplCopyWith<_$OpenApiAppleReqDiscImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+OpenApiBananaAllOfDisc _$OpenApiBananaAllOfDiscFromJson(
+    Map<String, dynamic> json) {
+  return _OpenApiBananaAllOfDisc.fromJson(json);
+}
+
+/// @nodoc
+mixin _$OpenApiBananaAllOfDisc {
   @JsonKey(name: r'length')
   int get length => throw _privateConstructorUsedError;
   @JsonKey(name: r'fruitType')
@@ -2814,15 +2036,15 @@ mixin _$BananaReqDisc {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $BananaReqDiscCopyWith<BananaReqDisc> get copyWith =>
+  $OpenApiBananaAllOfDiscCopyWith<OpenApiBananaAllOfDisc> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $BananaReqDiscCopyWith<$Res> {
-  factory $BananaReqDiscCopyWith(
-          BananaReqDisc value, $Res Function(BananaReqDisc) then) =
-      _$BananaReqDiscCopyWithImpl<$Res, BananaReqDisc>;
+abstract class $OpenApiBananaAllOfDiscCopyWith<$Res> {
+  factory $OpenApiBananaAllOfDiscCopyWith(OpenApiBananaAllOfDisc value,
+          $Res Function(OpenApiBananaAllOfDisc) then) =
+      _$OpenApiBananaAllOfDiscCopyWithImpl<$Res, OpenApiBananaAllOfDisc>;
   @useResult
   $Res call(
       {@JsonKey(name: r'length') int length,
@@ -2830,9 +2052,10 @@ abstract class $BananaReqDiscCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BananaReqDiscCopyWithImpl<$Res, $Val extends BananaReqDisc>
-    implements $BananaReqDiscCopyWith<$Res> {
-  _$BananaReqDiscCopyWithImpl(this._value, this._then);
+class _$OpenApiBananaAllOfDiscCopyWithImpl<$Res,
+        $Val extends OpenApiBananaAllOfDisc>
+    implements $OpenApiBananaAllOfDiscCopyWith<$Res> {
+  _$OpenApiBananaAllOfDiscCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -2859,11 +2082,12 @@ class _$BananaReqDiscCopyWithImpl<$Res, $Val extends BananaReqDisc>
 }
 
 /// @nodoc
-abstract class _$$_BananaReqDiscCopyWith<$Res>
-    implements $BananaReqDiscCopyWith<$Res> {
-  factory _$$_BananaReqDiscCopyWith(
-          _$_BananaReqDisc value, $Res Function(_$_BananaReqDisc) then) =
-      __$$_BananaReqDiscCopyWithImpl<$Res>;
+abstract class _$$OpenApiBananaAllOfDiscImplCopyWith<$Res>
+    implements $OpenApiBananaAllOfDiscCopyWith<$Res> {
+  factory _$$OpenApiBananaAllOfDiscImplCopyWith(
+          _$OpenApiBananaAllOfDiscImpl value,
+          $Res Function(_$OpenApiBananaAllOfDiscImpl) then) =
+      __$$OpenApiBananaAllOfDiscImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -2872,11 +2096,13 @@ abstract class _$$_BananaReqDiscCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_BananaReqDiscCopyWithImpl<$Res>
-    extends _$BananaReqDiscCopyWithImpl<$Res, _$_BananaReqDisc>
-    implements _$$_BananaReqDiscCopyWith<$Res> {
-  __$$_BananaReqDiscCopyWithImpl(
-      _$_BananaReqDisc _value, $Res Function(_$_BananaReqDisc) _then)
+class __$$OpenApiBananaAllOfDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiBananaAllOfDiscCopyWithImpl<$Res,
+        _$OpenApiBananaAllOfDiscImpl>
+    implements _$$OpenApiBananaAllOfDiscImplCopyWith<$Res> {
+  __$$OpenApiBananaAllOfDiscImplCopyWithImpl(
+      _$OpenApiBananaAllOfDiscImpl _value,
+      $Res Function(_$OpenApiBananaAllOfDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2885,7 +2111,7 @@ class __$$_BananaReqDiscCopyWithImpl<$Res>
     Object? length = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_BananaReqDisc(
+    return _then(_$OpenApiBananaAllOfDiscImpl(
       length: null == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -2900,14 +2126,14 @@ class __$$_BananaReqDiscCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_BananaReqDisc extends _BananaReqDisc {
-  const _$_BananaReqDisc(
+class _$OpenApiBananaAllOfDiscImpl extends _OpenApiBananaAllOfDisc {
+  const _$OpenApiBananaAllOfDiscImpl(
       {@JsonKey(name: r'length') required this.length,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_BananaReqDisc.fromJson(Map<String, dynamic> json) =>
-      _$$_BananaReqDiscFromJson(json);
+  factory _$OpenApiBananaAllOfDiscImpl.fromJson(Map<String, dynamic> json) =>
+      _$$OpenApiBananaAllOfDiscImplFromJson(json);
 
   @override
   @JsonKey(name: r'length')
@@ -2918,14 +2144,14 @@ class _$_BananaReqDisc extends _BananaReqDisc {
 
   @override
   String toString() {
-    return 'BananaReqDisc(length: $length, fruitType: $fruitType)';
+    return 'OpenApiBananaAllOfDisc(length: $length, fruitType: $fruitType)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_BananaReqDisc &&
+            other is _$OpenApiBananaAllOfDiscImpl &&
             (identical(other.length, length) || other.length == length) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -2938,26 +2164,27 @@ class _$_BananaReqDisc extends _BananaReqDisc {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_BananaReqDiscCopyWith<_$_BananaReqDisc> get copyWith =>
-      __$$_BananaReqDiscCopyWithImpl<_$_BananaReqDisc>(this, _$identity);
+  _$$OpenApiBananaAllOfDiscImplCopyWith<_$OpenApiBananaAllOfDiscImpl>
+      get copyWith => __$$OpenApiBananaAllOfDiscImplCopyWithImpl<
+          _$OpenApiBananaAllOfDiscImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BananaReqDiscToJson(
+    return _$$OpenApiBananaAllOfDiscImplToJson(
       this,
     );
   }
 }
 
-abstract class _BananaReqDisc extends BananaReqDisc {
-  const factory _BananaReqDisc(
+abstract class _OpenApiBananaAllOfDisc extends OpenApiBananaAllOfDisc {
+  const factory _OpenApiBananaAllOfDisc(
           {@JsonKey(name: r'length') required final int length,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_BananaReqDisc;
-  const _BananaReqDisc._() : super._();
+      _$OpenApiBananaAllOfDiscImpl;
+  const _OpenApiBananaAllOfDisc._() : super._();
 
-  factory _BananaReqDisc.fromJson(Map<String, dynamic> json) =
-      _$_BananaReqDisc.fromJson;
+  factory _OpenApiBananaAllOfDisc.fromJson(Map<String, dynamic> json) =
+      _$OpenApiBananaAllOfDiscImpl.fromJson;
 
   @override
   @JsonKey(name: r'length')
@@ -2967,95 +2194,270 @@ abstract class _BananaReqDisc extends BananaReqDisc {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_BananaReqDiscCopyWith<_$_BananaReqDisc> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OpenApiBananaAllOfDiscImplCopyWith<_$OpenApiBananaAllOfDiscImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+OpenApiBananaGrandparentDisc _$OpenApiBananaGrandparentDiscFromJson(
+    Map<String, dynamic> json) {
+  return _OpenApiBananaGrandparentDisc.fromJson(json);
 }
 
 /// @nodoc
-mixin _$ComposedDiscMissingFromProperties {
+mixin _$OpenApiBananaGrandparentDisc {
+  @JsonKey(name: r'length')
+  int get length => throw _privateConstructorUsedError;
+  @JsonKey(name: r'fruitType')
+  String get fruitType => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $OpenApiBananaGrandparentDiscCopyWith<OpenApiBananaGrandparentDisc>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiBananaGrandparentDiscCopyWith<$Res> {
+  factory $OpenApiBananaGrandparentDiscCopyWith(
+          OpenApiBananaGrandparentDisc value,
+          $Res Function(OpenApiBananaGrandparentDisc) then) =
+      _$OpenApiBananaGrandparentDiscCopyWithImpl<$Res,
+          OpenApiBananaGrandparentDisc>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: r'length') int length,
+      @JsonKey(name: r'fruitType') String fruitType});
+}
+
+/// @nodoc
+class _$OpenApiBananaGrandparentDiscCopyWithImpl<$Res,
+        $Val extends OpenApiBananaGrandparentDisc>
+    implements $OpenApiBananaGrandparentDiscCopyWith<$Res> {
+  _$OpenApiBananaGrandparentDiscCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? length = null,
+    Object? fruitType = null,
+  }) {
+    return _then(_value.copyWith(
+      length: null == length
+          ? _value.length
+          : length // ignore: cast_nullable_to_non_nullable
+              as int,
+      fruitType: null == fruitType
+          ? _value.fruitType
+          : fruitType // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$OpenApiBananaGrandparentDiscImplCopyWith<$Res>
+    implements $OpenApiBananaGrandparentDiscCopyWith<$Res> {
+  factory _$$OpenApiBananaGrandparentDiscImplCopyWith(
+          _$OpenApiBananaGrandparentDiscImpl value,
+          $Res Function(_$OpenApiBananaGrandparentDiscImpl) then) =
+      __$$OpenApiBananaGrandparentDiscImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {@JsonKey(name: r'length') int length,
+      @JsonKey(name: r'fruitType') String fruitType});
+}
+
+/// @nodoc
+class __$$OpenApiBananaGrandparentDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiBananaGrandparentDiscCopyWithImpl<$Res,
+        _$OpenApiBananaGrandparentDiscImpl>
+    implements _$$OpenApiBananaGrandparentDiscImplCopyWith<$Res> {
+  __$$OpenApiBananaGrandparentDiscImplCopyWithImpl(
+      _$OpenApiBananaGrandparentDiscImpl _value,
+      $Res Function(_$OpenApiBananaGrandparentDiscImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? length = null,
+    Object? fruitType = null,
+  }) {
+    return _then(_$OpenApiBananaGrandparentDiscImpl(
+      length: null == length
+          ? _value.length
+          : length // ignore: cast_nullable_to_non_nullable
+              as int,
+      fruitType: null == fruitType
+          ? _value.fruitType
+          : fruitType // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$OpenApiBananaGrandparentDiscImpl extends _OpenApiBananaGrandparentDisc {
+  const _$OpenApiBananaGrandparentDiscImpl(
+      {@JsonKey(name: r'length') required this.length,
+      @JsonKey(name: r'fruitType') required this.fruitType})
+      : super._();
+
+  factory _$OpenApiBananaGrandparentDiscImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$OpenApiBananaGrandparentDiscImplFromJson(json);
+
+  @override
+  @JsonKey(name: r'length')
+  final int length;
+  @override
+  @JsonKey(name: r'fruitType')
+  final String fruitType;
+
+  @override
+  String toString() {
+    return 'OpenApiBananaGrandparentDisc(length: $length, fruitType: $fruitType)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiBananaGrandparentDiscImpl &&
+            (identical(other.length, length) || other.length == length) &&
+            (identical(other.fruitType, fruitType) ||
+                other.fruitType == fruitType));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, length, fruitType);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiBananaGrandparentDiscImplCopyWith<
+          _$OpenApiBananaGrandparentDiscImpl>
+      get copyWith => __$$OpenApiBananaGrandparentDiscImplCopyWithImpl<
+          _$OpenApiBananaGrandparentDiscImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$OpenApiBananaGrandparentDiscImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _OpenApiBananaGrandparentDisc
+    extends OpenApiBananaGrandparentDisc {
+  const factory _OpenApiBananaGrandparentDisc(
+          {@JsonKey(name: r'length') required final int length,
+          @JsonKey(name: r'fruitType') required final String fruitType}) =
+      _$OpenApiBananaGrandparentDiscImpl;
+  const _OpenApiBananaGrandparentDisc._() : super._();
+
+  factory _OpenApiBananaGrandparentDisc.fromJson(Map<String, dynamic> json) =
+      _$OpenApiBananaGrandparentDiscImpl.fromJson;
+
+  @override
+  @JsonKey(name: r'length')
+  int get length;
+  @override
+  @JsonKey(name: r'fruitType')
+  String get fruitType;
+  @override
+  @JsonKey(ignore: true)
+  _$$OpenApiBananaGrandparentDiscImplCopyWith<
+          _$OpenApiBananaGrandparentDiscImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+mixin _$OpenApiBananaOneOfDisc {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(
-            DiscMissingFromProperties discMissingFromPropertiesValue)
-        asDiscMissingFromProperties,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingFromProperties> deserializedModels)
+            List<OpenApiBananaOneOfDisc> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscMissingFromProperties discMissingFromPropertiesValue)?
-        asDiscMissingFromProperties,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingFromProperties> deserializedModels)?
+            List<OpenApiBananaOneOfDisc> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscMissingFromProperties discMissingFromPropertiesValue)?
-        asDiscMissingFromProperties,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingFromProperties> deserializedModels)?
+            List<OpenApiBananaOneOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties value)
-        asDiscMissingFromProperties,
-    required TResult Function(ComposedDiscMissingFromPropertiesUnknown value)
-        unknown,
+    required TResult Function(OpenApiBananaOneOfDiscAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiBananaOneOfDiscUnknown value) unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties value)?
-        asDiscMissingFromProperties,
-    TResult? Function(ComposedDiscMissingFromPropertiesUnknown value)? unknown,
+    TResult? Function(OpenApiBananaOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiBananaOneOfDiscUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties value)?
-        asDiscMissingFromProperties,
-    TResult Function(ComposedDiscMissingFromPropertiesUnknown value)? unknown,
+    TResult Function(OpenApiBananaOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiBananaOneOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ComposedDiscMissingFromPropertiesCopyWith<$Res> {
-  factory $ComposedDiscMissingFromPropertiesCopyWith(
-          ComposedDiscMissingFromProperties value,
-          $Res Function(ComposedDiscMissingFromProperties) then) =
-      _$ComposedDiscMissingFromPropertiesCopyWithImpl<$Res,
-          ComposedDiscMissingFromProperties>;
+abstract class $OpenApiBananaOneOfDiscCopyWith<$Res> {
+  factory $OpenApiBananaOneOfDiscCopyWith(OpenApiBananaOneOfDisc value,
+          $Res Function(OpenApiBananaOneOfDisc) then) =
+      _$OpenApiBananaOneOfDiscCopyWithImpl<$Res, OpenApiBananaOneOfDisc>;
 }
 
 /// @nodoc
-class _$ComposedDiscMissingFromPropertiesCopyWithImpl<$Res,
-        $Val extends ComposedDiscMissingFromProperties>
-    implements $ComposedDiscMissingFromPropertiesCopyWith<$Res> {
-  _$ComposedDiscMissingFromPropertiesCopyWithImpl(this._value, this._then);
+class _$OpenApiBananaOneOfDiscCopyWithImpl<$Res,
+        $Val extends OpenApiBananaOneOfDisc>
+    implements $OpenApiBananaOneOfDiscCopyWith<$Res> {
+  _$OpenApiBananaOneOfDiscCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -3064,149 +2466,881 @@ class _$ComposedDiscMissingFromPropertiesCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscMissingFromPropertiesAsDiscMissingFromPropertiesCopyWith<
-    $Res> {
-  factory _$$ComposedDiscMissingFromPropertiesAsDiscMissingFromPropertiesCopyWith(
-          _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties value,
-          $Res Function(
-                  _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties)
-              then) =
-      __$$ComposedDiscMissingFromPropertiesAsDiscMissingFromPropertiesCopyWithImpl<
-          $Res>;
+abstract class _$$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImplCopyWith<$Res> {
+  factory _$$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImplCopyWith(
+          _$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl value,
+          $Res Function(_$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl) then) =
+      __$$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DiscMissingFromProperties discMissingFromPropertiesValue});
+  $Res call({OpenApiFruitType openApiFruitTypeValue});
 
-  $DiscMissingFromPropertiesCopyWith<$Res> get discMissingFromPropertiesValue;
+  $OpenApiFruitTypeCopyWith<$Res> get openApiFruitTypeValue;
 }
 
 /// @nodoc
-class __$$ComposedDiscMissingFromPropertiesAsDiscMissingFromPropertiesCopyWithImpl<
+class __$$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImplCopyWithImpl<$Res>
+    extends _$OpenApiBananaOneOfDiscCopyWithImpl<$Res,
+        _$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl>
+    implements _$$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImplCopyWith<$Res> {
+  __$$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImplCopyWithImpl(
+      _$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl _value,
+      $Res Function(_$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiFruitTypeValue = null,
+  }) {
+    return _then(_$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl(
+      openApiFruitTypeValue: null == openApiFruitTypeValue
+          ? _value.openApiFruitTypeValue
+          : openApiFruitTypeValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitType,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiFruitTypeCopyWith<$Res> get openApiFruitTypeValue {
+    return $OpenApiFruitTypeCopyWith<$Res>(_value.openApiFruitTypeValue,
+        (value) {
+      return _then(_value.copyWith(openApiFruitTypeValue: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl
+    extends OpenApiBananaOneOfDiscAsOpenApiFruitType {
+  const _$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl(
+      {required this.openApiFruitTypeValue})
+      : super._();
+
+  @override
+  final OpenApiFruitType openApiFruitTypeValue;
+
+  @override
+  String toString() {
+    return 'OpenApiBananaOneOfDisc.asOpenApiFruitType(openApiFruitTypeValue: $openApiFruitTypeValue)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl &&
+            (identical(other.openApiFruitTypeValue, openApiFruitTypeValue) ||
+                other.openApiFruitTypeValue == openApiFruitTypeValue));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, openApiFruitTypeValue);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImplCopyWith<
+          _$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl>
+      get copyWith =>
+          __$$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImplCopyWithImpl<
+              _$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiBananaOneOfDisc> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiFruitType(openApiFruitTypeValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiBananaOneOfDisc> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiFruitType?.call(openApiFruitTypeValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiBananaOneOfDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitType != null) {
+      return asOpenApiFruitType(openApiFruitTypeValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(OpenApiBananaOneOfDiscAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiBananaOneOfDiscUnknown value) unknown,
+  }) {
+    return asOpenApiFruitType(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiBananaOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiBananaOneOfDiscUnknown value)? unknown,
+  }) {
+    return asOpenApiFruitType?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(OpenApiBananaOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiBananaOneOfDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitType != null) {
+      return asOpenApiFruitType(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiBananaOneOfDiscAsOpenApiFruitType
+    extends OpenApiBananaOneOfDisc {
+  const factory OpenApiBananaOneOfDiscAsOpenApiFruitType(
+          {required final OpenApiFruitType openApiFruitTypeValue}) =
+      _$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl;
+  const OpenApiBananaOneOfDiscAsOpenApiFruitType._() : super._();
+
+  OpenApiFruitType get openApiFruitTypeValue;
+  @JsonKey(ignore: true)
+  _$$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImplCopyWith<
+          _$OpenApiBananaOneOfDiscAsOpenApiFruitTypeImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiBananaOneOfDiscUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiBananaOneOfDiscUnknownImplCopyWith(
+          _$OpenApiBananaOneOfDiscUnknownImpl value,
+          $Res Function(_$OpenApiBananaOneOfDiscUnknownImpl) then) =
+      __$$OpenApiBananaOneOfDiscUnknownImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call(
+      {String message,
+      Map<String, dynamic> json,
+      DeserializationErrorType errorType,
+      List<Type> possibleTypes,
+      List<OpenApiBananaOneOfDisc> deserializedModels});
+}
+
+/// @nodoc
+class __$$OpenApiBananaOneOfDiscUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiBananaOneOfDiscCopyWithImpl<$Res,
+        _$OpenApiBananaOneOfDiscUnknownImpl>
+    implements _$$OpenApiBananaOneOfDiscUnknownImplCopyWith<$Res> {
+  __$$OpenApiBananaOneOfDiscUnknownImplCopyWithImpl(
+      _$OpenApiBananaOneOfDiscUnknownImpl _value,
+      $Res Function(_$OpenApiBananaOneOfDiscUnknownImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+    Object? json = null,
+    Object? errorType = null,
+    Object? possibleTypes = null,
+    Object? deserializedModels = null,
+  }) {
+    return _then(_$OpenApiBananaOneOfDiscUnknownImpl(
+      message: null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      json: null == json
+          ? _value._json
+          : json // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      errorType: null == errorType
+          ? _value.errorType
+          : errorType // ignore: cast_nullable_to_non_nullable
+              as DeserializationErrorType,
+      possibleTypes: null == possibleTypes
+          ? _value._possibleTypes
+          : possibleTypes // ignore: cast_nullable_to_non_nullable
+              as List<Type>,
+      deserializedModels: null == deserializedModels
+          ? _value._deserializedModels
+          : deserializedModels // ignore: cast_nullable_to_non_nullable
+              as List<OpenApiBananaOneOfDisc>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiBananaOneOfDiscUnknownImpl
+    extends OpenApiBananaOneOfDiscUnknown {
+  const _$OpenApiBananaOneOfDiscUnknownImpl(
+      {this.message = 'Json does not satisfy any available types',
+      required final Map<String, dynamic> json,
+      this.errorType = DeserializationErrorType.UnKnownType,
+      final List<Type> possibleTypes = const <Type>[OpenApiFruitType],
+      final List<OpenApiBananaOneOfDisc> deserializedModels =
+          const <OpenApiBananaOneOfDisc>[]})
+      : _json = json,
+        _possibleTypes = possibleTypes,
+        _deserializedModels = deserializedModels,
+        super._();
+
+  @override
+  @JsonKey()
+  final String message;
+  final Map<String, dynamic> _json;
+  @override
+  Map<String, dynamic> get json {
+    if (_json is EqualUnmodifiableMapView) return _json;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_json);
+  }
+
+  @override
+  @JsonKey()
+  final DeserializationErrorType errorType;
+  final List<Type> _possibleTypes;
+  @override
+  @JsonKey()
+  List<Type> get possibleTypes {
+    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_possibleTypes);
+  }
+
+  final List<OpenApiBananaOneOfDisc> _deserializedModels;
+  @override
+  @JsonKey()
+  List<OpenApiBananaOneOfDisc> get deserializedModels {
+    if (_deserializedModels is EqualUnmodifiableListView)
+      return _deserializedModels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_deserializedModels);
+  }
+
+  @override
+  String toString() {
+    return 'OpenApiBananaOneOfDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiBananaOneOfDiscUnknownImpl &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality().equals(other._json, _json) &&
+            (identical(other.errorType, errorType) ||
+                other.errorType == errorType) &&
+            const DeepCollectionEquality()
+                .equals(other._possibleTypes, _possibleTypes) &&
+            const DeepCollectionEquality()
+                .equals(other._deserializedModels, _deserializedModels));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      message,
+      const DeepCollectionEquality().hash(_json),
+      errorType,
+      const DeepCollectionEquality().hash(_possibleTypes),
+      const DeepCollectionEquality().hash(_deserializedModels));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiBananaOneOfDiscUnknownImplCopyWith<
+          _$OpenApiBananaOneOfDiscUnknownImpl>
+      get copyWith => __$$OpenApiBananaOneOfDiscUnknownImplCopyWithImpl<
+          _$OpenApiBananaOneOfDiscUnknownImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiBananaOneOfDisc> deserializedModels)
+        unknown,
+  }) {
+    return unknown(message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiBananaOneOfDisc> deserializedModels)?
+        unknown,
+  }) {
+    return unknown?.call(
+        message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiBananaOneOfDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(
+          message, json, errorType, possibleTypes, deserializedModels);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(OpenApiBananaOneOfDiscAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiBananaOneOfDiscUnknown value) unknown,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiBananaOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiBananaOneOfDiscUnknown value)? unknown,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(OpenApiBananaOneOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiBananaOneOfDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiBananaOneOfDiscUnknown extends OpenApiBananaOneOfDisc {
+  const factory OpenApiBananaOneOfDiscUnknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<OpenApiBananaOneOfDisc> deserializedModels}) =
+      _$OpenApiBananaOneOfDiscUnknownImpl;
+  const OpenApiBananaOneOfDiscUnknown._() : super._();
+
+  String get message;
+  Map<String, dynamic> get json;
+  DeserializationErrorType get errorType;
+  List<Type> get possibleTypes;
+  List<OpenApiBananaOneOfDisc> get deserializedModels;
+  @JsonKey(ignore: true)
+  _$$OpenApiBananaOneOfDiscUnknownImplCopyWith<
+          _$OpenApiBananaOneOfDiscUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+OpenApiBananaReqDisc _$OpenApiBananaReqDiscFromJson(Map<String, dynamic> json) {
+  return _OpenApiBananaReqDisc.fromJson(json);
+}
+
+/// @nodoc
+mixin _$OpenApiBananaReqDisc {
+  @JsonKey(name: r'length')
+  int get length => throw _privateConstructorUsedError;
+  @JsonKey(name: r'fruitType')
+  String get fruitType => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $OpenApiBananaReqDiscCopyWith<OpenApiBananaReqDisc> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiBananaReqDiscCopyWith<$Res> {
+  factory $OpenApiBananaReqDiscCopyWith(OpenApiBananaReqDisc value,
+          $Res Function(OpenApiBananaReqDisc) then) =
+      _$OpenApiBananaReqDiscCopyWithImpl<$Res, OpenApiBananaReqDisc>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: r'length') int length,
+      @JsonKey(name: r'fruitType') String fruitType});
+}
+
+/// @nodoc
+class _$OpenApiBananaReqDiscCopyWithImpl<$Res,
+        $Val extends OpenApiBananaReqDisc>
+    implements $OpenApiBananaReqDiscCopyWith<$Res> {
+  _$OpenApiBananaReqDiscCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? length = null,
+    Object? fruitType = null,
+  }) {
+    return _then(_value.copyWith(
+      length: null == length
+          ? _value.length
+          : length // ignore: cast_nullable_to_non_nullable
+              as int,
+      fruitType: null == fruitType
+          ? _value.fruitType
+          : fruitType // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$OpenApiBananaReqDiscImplCopyWith<$Res>
+    implements $OpenApiBananaReqDiscCopyWith<$Res> {
+  factory _$$OpenApiBananaReqDiscImplCopyWith(_$OpenApiBananaReqDiscImpl value,
+          $Res Function(_$OpenApiBananaReqDiscImpl) then) =
+      __$$OpenApiBananaReqDiscImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {@JsonKey(name: r'length') int length,
+      @JsonKey(name: r'fruitType') String fruitType});
+}
+
+/// @nodoc
+class __$$OpenApiBananaReqDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiBananaReqDiscCopyWithImpl<$Res, _$OpenApiBananaReqDiscImpl>
+    implements _$$OpenApiBananaReqDiscImplCopyWith<$Res> {
+  __$$OpenApiBananaReqDiscImplCopyWithImpl(_$OpenApiBananaReqDiscImpl _value,
+      $Res Function(_$OpenApiBananaReqDiscImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? length = null,
+    Object? fruitType = null,
+  }) {
+    return _then(_$OpenApiBananaReqDiscImpl(
+      length: null == length
+          ? _value.length
+          : length // ignore: cast_nullable_to_non_nullable
+              as int,
+      fruitType: null == fruitType
+          ? _value.fruitType
+          : fruitType // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$OpenApiBananaReqDiscImpl extends _OpenApiBananaReqDisc {
+  const _$OpenApiBananaReqDiscImpl(
+      {@JsonKey(name: r'length') required this.length,
+      @JsonKey(name: r'fruitType') required this.fruitType})
+      : super._();
+
+  factory _$OpenApiBananaReqDiscImpl.fromJson(Map<String, dynamic> json) =>
+      _$$OpenApiBananaReqDiscImplFromJson(json);
+
+  @override
+  @JsonKey(name: r'length')
+  final int length;
+  @override
+  @JsonKey(name: r'fruitType')
+  final String fruitType;
+
+  @override
+  String toString() {
+    return 'OpenApiBananaReqDisc(length: $length, fruitType: $fruitType)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiBananaReqDiscImpl &&
+            (identical(other.length, length) || other.length == length) &&
+            (identical(other.fruitType, fruitType) ||
+                other.fruitType == fruitType));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, length, fruitType);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiBananaReqDiscImplCopyWith<_$OpenApiBananaReqDiscImpl>
+      get copyWith =>
+          __$$OpenApiBananaReqDiscImplCopyWithImpl<_$OpenApiBananaReqDiscImpl>(
+              this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$OpenApiBananaReqDiscImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _OpenApiBananaReqDisc extends OpenApiBananaReqDisc {
+  const factory _OpenApiBananaReqDisc(
+          {@JsonKey(name: r'length') required final int length,
+          @JsonKey(name: r'fruitType') required final String fruitType}) =
+      _$OpenApiBananaReqDiscImpl;
+  const _OpenApiBananaReqDisc._() : super._();
+
+  factory _OpenApiBananaReqDisc.fromJson(Map<String, dynamic> json) =
+      _$OpenApiBananaReqDiscImpl.fromJson;
+
+  @override
+  @JsonKey(name: r'length')
+  int get length;
+  @override
+  @JsonKey(name: r'fruitType')
+  String get fruitType;
+  @override
+  @JsonKey(ignore: true)
+  _$$OpenApiBananaReqDiscImplCopyWith<_$OpenApiBananaReqDiscImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+mixin _$OpenApiComposedDiscMissingFromProperties {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscMissingFromProperties
+                openApiDiscMissingFromPropertiesValue)
+        asOpenApiDiscMissingFromProperties,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscMissingFromProperties> deserializedModels)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiDiscMissingFromProperties
+                openApiDiscMissingFromPropertiesValue)?
+        asOpenApiDiscMissingFromProperties,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscMissingFromProperties> deserializedModels)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiDiscMissingFromProperties
+                openApiDiscMissingFromPropertiesValue)?
+        asOpenApiDiscMissingFromProperties,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscMissingFromProperties> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties
+                value)
+        asOpenApiDiscMissingFromProperties,
+    required TResult Function(
+            OpenApiComposedDiscMissingFromPropertiesUnknown value)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties
+                value)?
+        asOpenApiDiscMissingFromProperties,
+    TResult? Function(OpenApiComposedDiscMissingFromPropertiesUnknown value)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties
+                value)?
+        asOpenApiDiscMissingFromProperties,
+    TResult Function(OpenApiComposedDiscMissingFromPropertiesUnknown value)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiComposedDiscMissingFromPropertiesCopyWith<$Res> {
+  factory $OpenApiComposedDiscMissingFromPropertiesCopyWith(
+          OpenApiComposedDiscMissingFromProperties value,
+          $Res Function(OpenApiComposedDiscMissingFromProperties) then) =
+      _$OpenApiComposedDiscMissingFromPropertiesCopyWithImpl<$Res,
+          OpenApiComposedDiscMissingFromProperties>;
+}
+
+/// @nodoc
+class _$OpenApiComposedDiscMissingFromPropertiesCopyWithImpl<$Res,
+        $Val extends OpenApiComposedDiscMissingFromProperties>
+    implements $OpenApiComposedDiscMissingFromPropertiesCopyWith<$Res> {
+  _$OpenApiComposedDiscMissingFromPropertiesCopyWithImpl(
+      this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImplCopyWith(
+          _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl
+              value,
+          $Res Function(
+                  _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl)
+              then) =
+      __$$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call(
+      {OpenApiDiscMissingFromProperties openApiDiscMissingFromPropertiesValue});
+
+  $OpenApiDiscMissingFromPropertiesCopyWith<$Res>
+      get openApiDiscMissingFromPropertiesValue;
+}
+
+/// @nodoc
+class __$$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImplCopyWithImpl<
         $Res>
-    extends _$ComposedDiscMissingFromPropertiesCopyWithImpl<$Res,
-        _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties>
+    extends _$OpenApiComposedDiscMissingFromPropertiesCopyWithImpl<$Res,
+        _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl>
     implements
-        _$$ComposedDiscMissingFromPropertiesAsDiscMissingFromPropertiesCopyWith<
+        _$$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImplCopyWith<
             $Res> {
-  __$$ComposedDiscMissingFromPropertiesAsDiscMissingFromPropertiesCopyWithImpl(
-      _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties _value,
+  __$$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImplCopyWithImpl(
+      _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl
+          _value,
       $Res Function(
-              _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties)
+              _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl)
           _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? discMissingFromPropertiesValue = null,
+    Object? openApiDiscMissingFromPropertiesValue = null,
   }) {
-    return _then(_$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties(
-      discMissingFromPropertiesValue: null == discMissingFromPropertiesValue
-          ? _value.discMissingFromPropertiesValue
-          : discMissingFromPropertiesValue // ignore: cast_nullable_to_non_nullable
-              as DiscMissingFromProperties,
+    return _then(
+        _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl(
+      openApiDiscMissingFromPropertiesValue: null ==
+              openApiDiscMissingFromPropertiesValue
+          ? _value.openApiDiscMissingFromPropertiesValue
+          : openApiDiscMissingFromPropertiesValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiDiscMissingFromProperties,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $DiscMissingFromPropertiesCopyWith<$Res> get discMissingFromPropertiesValue {
-    return $DiscMissingFromPropertiesCopyWith<$Res>(
-        _value.discMissingFromPropertiesValue, (value) {
-      return _then(_value.copyWith(discMissingFromPropertiesValue: value));
+  $OpenApiDiscMissingFromPropertiesCopyWith<$Res>
+      get openApiDiscMissingFromPropertiesValue {
+    return $OpenApiDiscMissingFromPropertiesCopyWith<$Res>(
+        _value.openApiDiscMissingFromPropertiesValue, (value) {
+      return _then(
+          _value.copyWith(openApiDiscMissingFromPropertiesValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties
-    extends ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties {
-  const _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties(
-      {required this.discMissingFromPropertiesValue})
+class _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl
+    extends OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties {
+  const _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl(
+      {required this.openApiDiscMissingFromPropertiesValue})
       : super._();
 
   @override
-  final DiscMissingFromProperties discMissingFromPropertiesValue;
+  final OpenApiDiscMissingFromProperties openApiDiscMissingFromPropertiesValue;
 
   @override
   String toString() {
-    return 'ComposedDiscMissingFromProperties.asDiscMissingFromProperties(discMissingFromPropertiesValue: $discMissingFromPropertiesValue)';
+    return 'OpenApiComposedDiscMissingFromProperties.asOpenApiDiscMissingFromProperties(openApiDiscMissingFromPropertiesValue: $openApiDiscMissingFromPropertiesValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties &&
-            (identical(other.discMissingFromPropertiesValue,
-                    discMissingFromPropertiesValue) ||
-                other.discMissingFromPropertiesValue ==
-                    discMissingFromPropertiesValue));
+                is _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl &&
+            (identical(other.openApiDiscMissingFromPropertiesValue,
+                    openApiDiscMissingFromPropertiesValue) ||
+                other.openApiDiscMissingFromPropertiesValue ==
+                    openApiDiscMissingFromPropertiesValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, discMissingFromPropertiesValue);
+  int get hashCode =>
+      Object.hash(runtimeType, openApiDiscMissingFromPropertiesValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscMissingFromPropertiesAsDiscMissingFromPropertiesCopyWith<
-          _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties>
+  _$$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImplCopyWith<
+          _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl>
       get copyWith =>
-          __$$ComposedDiscMissingFromPropertiesAsDiscMissingFromPropertiesCopyWithImpl<
-                  _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties>(
+          __$$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImplCopyWithImpl<
+                  _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl>(
               this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            DiscMissingFromProperties discMissingFromPropertiesValue)
-        asDiscMissingFromProperties,
+            OpenApiDiscMissingFromProperties
+                openApiDiscMissingFromPropertiesValue)
+        asOpenApiDiscMissingFromProperties,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingFromProperties> deserializedModels)
+            List<OpenApiComposedDiscMissingFromProperties> deserializedModels)
         unknown,
   }) {
-    return asDiscMissingFromProperties(discMissingFromPropertiesValue);
+    return asOpenApiDiscMissingFromProperties(
+        openApiDiscMissingFromPropertiesValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscMissingFromProperties discMissingFromPropertiesValue)?
-        asDiscMissingFromProperties,
+    TResult? Function(
+            OpenApiDiscMissingFromProperties
+                openApiDiscMissingFromPropertiesValue)?
+        asOpenApiDiscMissingFromProperties,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingFromProperties> deserializedModels)?
+            List<OpenApiComposedDiscMissingFromProperties> deserializedModels)?
         unknown,
   }) {
-    return asDiscMissingFromProperties?.call(discMissingFromPropertiesValue);
+    return asOpenApiDiscMissingFromProperties
+        ?.call(openApiDiscMissingFromPropertiesValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscMissingFromProperties discMissingFromPropertiesValue)?
-        asDiscMissingFromProperties,
+    TResult Function(
+            OpenApiDiscMissingFromProperties
+                openApiDiscMissingFromPropertiesValue)?
+        asOpenApiDiscMissingFromProperties,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingFromProperties> deserializedModels)?
+            List<OpenApiComposedDiscMissingFromProperties> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asDiscMissingFromProperties != null) {
-      return asDiscMissingFromProperties(discMissingFromPropertiesValue);
+    if (asOpenApiDiscMissingFromProperties != null) {
+      return asOpenApiDiscMissingFromProperties(
+          openApiDiscMissingFromPropertiesValue);
     }
     return orElse();
   }
@@ -3215,80 +3349,90 @@ class _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties value)
-        asDiscMissingFromProperties,
-    required TResult Function(ComposedDiscMissingFromPropertiesUnknown value)
+            OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties
+                value)
+        asOpenApiDiscMissingFromProperties,
+    required TResult Function(
+            OpenApiComposedDiscMissingFromPropertiesUnknown value)
         unknown,
   }) {
-    return asDiscMissingFromProperties(this);
+    return asOpenApiDiscMissingFromProperties(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties value)?
-        asDiscMissingFromProperties,
-    TResult? Function(ComposedDiscMissingFromPropertiesUnknown value)? unknown,
+            OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties
+                value)?
+        asOpenApiDiscMissingFromProperties,
+    TResult? Function(OpenApiComposedDiscMissingFromPropertiesUnknown value)?
+        unknown,
   }) {
-    return asDiscMissingFromProperties?.call(this);
+    return asOpenApiDiscMissingFromProperties?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties value)?
-        asDiscMissingFromProperties,
-    TResult Function(ComposedDiscMissingFromPropertiesUnknown value)? unknown,
+            OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties
+                value)?
+        asOpenApiDiscMissingFromProperties,
+    TResult Function(OpenApiComposedDiscMissingFromPropertiesUnknown value)?
+        unknown,
     required TResult orElse(),
   }) {
-    if (asDiscMissingFromProperties != null) {
-      return asDiscMissingFromProperties(this);
+    if (asOpenApiDiscMissingFromProperties != null) {
+      return asOpenApiDiscMissingFromProperties(this);
     }
     return orElse();
   }
 }
 
-abstract class ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties
-    extends ComposedDiscMissingFromProperties {
-  const factory ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties(
-          {required final DiscMissingFromProperties
-              discMissingFromPropertiesValue}) =
-      _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties;
-  const ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties._()
+abstract class OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties
+    extends OpenApiComposedDiscMissingFromProperties {
+  const factory OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties(
+          {required final OpenApiDiscMissingFromProperties
+              openApiDiscMissingFromPropertiesValue}) =
+      _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl;
+  const OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties._()
       : super._();
 
-  DiscMissingFromProperties get discMissingFromPropertiesValue;
+  OpenApiDiscMissingFromProperties get openApiDiscMissingFromPropertiesValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscMissingFromPropertiesAsDiscMissingFromPropertiesCopyWith<
-          _$ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties>
+  _$$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImplCopyWith<
+          _$OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromPropertiesImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscMissingFromPropertiesUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscMissingFromPropertiesUnknownCopyWith(
-          _$ComposedDiscMissingFromPropertiesUnknown value,
-          $Res Function(_$ComposedDiscMissingFromPropertiesUnknown) then) =
-      __$$ComposedDiscMissingFromPropertiesUnknownCopyWithImpl<$Res>;
+abstract class _$$OpenApiComposedDiscMissingFromPropertiesUnknownImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscMissingFromPropertiesUnknownImplCopyWith(
+          _$OpenApiComposedDiscMissingFromPropertiesUnknownImpl value,
+          $Res Function(_$OpenApiComposedDiscMissingFromPropertiesUnknownImpl)
+              then) =
+      __$$OpenApiComposedDiscMissingFromPropertiesUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<ComposedDiscMissingFromProperties> deserializedModels});
+      List<OpenApiComposedDiscMissingFromProperties> deserializedModels});
 }
 
 /// @nodoc
-class __$$ComposedDiscMissingFromPropertiesUnknownCopyWithImpl<$Res>
-    extends _$ComposedDiscMissingFromPropertiesCopyWithImpl<$Res,
-        _$ComposedDiscMissingFromPropertiesUnknown>
-    implements _$$ComposedDiscMissingFromPropertiesUnknownCopyWith<$Res> {
-  __$$ComposedDiscMissingFromPropertiesUnknownCopyWithImpl(
-      _$ComposedDiscMissingFromPropertiesUnknown _value,
-      $Res Function(_$ComposedDiscMissingFromPropertiesUnknown) _then)
+class __$$OpenApiComposedDiscMissingFromPropertiesUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiComposedDiscMissingFromPropertiesCopyWithImpl<$Res,
+        _$OpenApiComposedDiscMissingFromPropertiesUnknownImpl>
+    implements
+        _$$OpenApiComposedDiscMissingFromPropertiesUnknownImplCopyWith<$Res> {
+  __$$OpenApiComposedDiscMissingFromPropertiesUnknownImplCopyWithImpl(
+      _$OpenApiComposedDiscMissingFromPropertiesUnknownImpl _value,
+      $Res Function(_$OpenApiComposedDiscMissingFromPropertiesUnknownImpl)
+          _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3300,7 +3444,7 @@ class __$$ComposedDiscMissingFromPropertiesUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$ComposedDiscMissingFromPropertiesUnknown(
+    return _then(_$OpenApiComposedDiscMissingFromPropertiesUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -3320,22 +3464,24 @@ class __$$ComposedDiscMissingFromPropertiesUnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<ComposedDiscMissingFromProperties>,
+              as List<OpenApiComposedDiscMissingFromProperties>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$ComposedDiscMissingFromPropertiesUnknown
-    extends ComposedDiscMissingFromPropertiesUnknown {
-  const _$ComposedDiscMissingFromPropertiesUnknown(
+class _$OpenApiComposedDiscMissingFromPropertiesUnknownImpl
+    extends OpenApiComposedDiscMissingFromPropertiesUnknown {
+  const _$OpenApiComposedDiscMissingFromPropertiesUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[DiscMissingFromProperties],
-      final List<ComposedDiscMissingFromProperties> deserializedModels =
-          const <ComposedDiscMissingFromProperties>[]})
+      final List<Type> possibleTypes = const <Type>[
+        OpenApiDiscMissingFromProperties
+      ],
+      final List<OpenApiComposedDiscMissingFromProperties> deserializedModels =
+          const <OpenApiComposedDiscMissingFromProperties>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -3364,10 +3510,10 @@ class _$ComposedDiscMissingFromPropertiesUnknown
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<ComposedDiscMissingFromProperties> _deserializedModels;
+  final List<OpenApiComposedDiscMissingFromProperties> _deserializedModels;
   @override
   @JsonKey()
-  List<ComposedDiscMissingFromProperties> get deserializedModels {
+  List<OpenApiComposedDiscMissingFromProperties> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -3376,14 +3522,14 @@ class _$ComposedDiscMissingFromPropertiesUnknown
 
   @override
   String toString() {
-    return 'ComposedDiscMissingFromProperties.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiComposedDiscMissingFromProperties.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscMissingFromPropertiesUnknown &&
+            other is _$OpenApiComposedDiscMissingFromPropertiesUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -3406,23 +3552,26 @@ class _$ComposedDiscMissingFromPropertiesUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscMissingFromPropertiesUnknownCopyWith<
-          _$ComposedDiscMissingFromPropertiesUnknown>
-      get copyWith => __$$ComposedDiscMissingFromPropertiesUnknownCopyWithImpl<
-          _$ComposedDiscMissingFromPropertiesUnknown>(this, _$identity);
+  _$$OpenApiComposedDiscMissingFromPropertiesUnknownImplCopyWith<
+          _$OpenApiComposedDiscMissingFromPropertiesUnknownImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscMissingFromPropertiesUnknownImplCopyWithImpl<
+                  _$OpenApiComposedDiscMissingFromPropertiesUnknownImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            DiscMissingFromProperties discMissingFromPropertiesValue)
-        asDiscMissingFromProperties,
+            OpenApiDiscMissingFromProperties
+                openApiDiscMissingFromPropertiesValue)
+        asOpenApiDiscMissingFromProperties,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingFromProperties> deserializedModels)
+            List<OpenApiComposedDiscMissingFromProperties> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -3431,14 +3580,16 @@ class _$ComposedDiscMissingFromPropertiesUnknown
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscMissingFromProperties discMissingFromPropertiesValue)?
-        asDiscMissingFromProperties,
+    TResult? Function(
+            OpenApiDiscMissingFromProperties
+                openApiDiscMissingFromPropertiesValue)?
+        asOpenApiDiscMissingFromProperties,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingFromProperties> deserializedModels)?
+            List<OpenApiComposedDiscMissingFromProperties> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -3448,14 +3599,16 @@ class _$ComposedDiscMissingFromPropertiesUnknown
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscMissingFromProperties discMissingFromPropertiesValue)?
-        asDiscMissingFromProperties,
+    TResult Function(
+            OpenApiDiscMissingFromProperties
+                openApiDiscMissingFromPropertiesValue)?
+        asOpenApiDiscMissingFromProperties,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingFromProperties> deserializedModels)?
+            List<OpenApiComposedDiscMissingFromProperties> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -3470,9 +3623,11 @@ class _$ComposedDiscMissingFromPropertiesUnknown
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties value)
-        asDiscMissingFromProperties,
-    required TResult Function(ComposedDiscMissingFromPropertiesUnknown value)
+            OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties
+                value)
+        asOpenApiDiscMissingFromProperties,
+    required TResult Function(
+            OpenApiComposedDiscMissingFromPropertiesUnknown value)
         unknown,
   }) {
     return unknown(this);
@@ -3482,9 +3637,11 @@ class _$ComposedDiscMissingFromPropertiesUnknown
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties value)?
-        asDiscMissingFromProperties,
-    TResult? Function(ComposedDiscMissingFromPropertiesUnknown value)? unknown,
+            OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties
+                value)?
+        asOpenApiDiscMissingFromProperties,
+    TResult? Function(OpenApiComposedDiscMissingFromPropertiesUnknown value)?
+        unknown,
   }) {
     return unknown?.call(this);
   }
@@ -3493,9 +3650,11 @@ class _$ComposedDiscMissingFromPropertiesUnknown
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            ComposedDiscMissingFromPropertiesAsDiscMissingFromProperties value)?
-        asDiscMissingFromProperties,
-    TResult Function(ComposedDiscMissingFromPropertiesUnknown value)? unknown,
+            OpenApiComposedDiscMissingFromPropertiesAsOpenApiDiscMissingFromProperties
+                value)?
+        asOpenApiDiscMissingFromProperties,
+    TResult Function(OpenApiComposedDiscMissingFromPropertiesUnknown value)?
+        unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -3505,30 +3664,31 @@ class _$ComposedDiscMissingFromPropertiesUnknown
   }
 }
 
-abstract class ComposedDiscMissingFromPropertiesUnknown
-    extends ComposedDiscMissingFromProperties {
-  const factory ComposedDiscMissingFromPropertiesUnknown(
+abstract class OpenApiComposedDiscMissingFromPropertiesUnknown
+    extends OpenApiComposedDiscMissingFromProperties {
+  const factory OpenApiComposedDiscMissingFromPropertiesUnknown(
           {final String message,
           required final Map<String, dynamic> json,
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
-          final List<ComposedDiscMissingFromProperties> deserializedModels}) =
-      _$ComposedDiscMissingFromPropertiesUnknown;
-  const ComposedDiscMissingFromPropertiesUnknown._() : super._();
+          final List<OpenApiComposedDiscMissingFromProperties>
+              deserializedModels}) =
+      _$OpenApiComposedDiscMissingFromPropertiesUnknownImpl;
+  const OpenApiComposedDiscMissingFromPropertiesUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<ComposedDiscMissingFromProperties> get deserializedModels;
+  List<OpenApiComposedDiscMissingFromProperties> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$ComposedDiscMissingFromPropertiesUnknownCopyWith<
-          _$ComposedDiscMissingFromPropertiesUnknown>
+  _$$OpenApiComposedDiscMissingFromPropertiesUnknownImplCopyWith<
+          _$OpenApiComposedDiscMissingFromPropertiesUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$ComposedDiscMissingNoProperties {
+mixin _$OpenApiComposedDiscMissingNoProperties {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(ObjectInUnion objectValue) asObject,
@@ -3537,7 +3697,7 @@ mixin _$ComposedDiscMissingNoProperties {
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingNoProperties> deserializedModels)
+            List<OpenApiComposedDiscMissingNoProperties> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
@@ -3549,7 +3709,7 @@ mixin _$ComposedDiscMissingNoProperties {
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingNoProperties> deserializedModels)?
+            List<OpenApiComposedDiscMissingNoProperties> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
@@ -3561,48 +3721,54 @@ mixin _$ComposedDiscMissingNoProperties {
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingNoProperties> deserializedModels)?
+            List<OpenApiComposedDiscMissingNoProperties> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(ComposedDiscMissingNoPropertiesAsObject value)
+    required TResult Function(
+            OpenApiComposedDiscMissingNoPropertiesAsObject value)
         asObject,
-    required TResult Function(ComposedDiscMissingNoPropertiesUnknown value)
+    required TResult Function(
+            OpenApiComposedDiscMissingNoPropertiesUnknown value)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ComposedDiscMissingNoPropertiesAsObject value)? asObject,
-    TResult? Function(ComposedDiscMissingNoPropertiesUnknown value)? unknown,
+    TResult? Function(OpenApiComposedDiscMissingNoPropertiesAsObject value)?
+        asObject,
+    TResult? Function(OpenApiComposedDiscMissingNoPropertiesUnknown value)?
+        unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ComposedDiscMissingNoPropertiesAsObject value)? asObject,
-    TResult Function(ComposedDiscMissingNoPropertiesUnknown value)? unknown,
+    TResult Function(OpenApiComposedDiscMissingNoPropertiesAsObject value)?
+        asObject,
+    TResult Function(OpenApiComposedDiscMissingNoPropertiesUnknown value)?
+        unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ComposedDiscMissingNoPropertiesCopyWith<$Res> {
-  factory $ComposedDiscMissingNoPropertiesCopyWith(
-          ComposedDiscMissingNoProperties value,
-          $Res Function(ComposedDiscMissingNoProperties) then) =
-      _$ComposedDiscMissingNoPropertiesCopyWithImpl<$Res,
-          ComposedDiscMissingNoProperties>;
+abstract class $OpenApiComposedDiscMissingNoPropertiesCopyWith<$Res> {
+  factory $OpenApiComposedDiscMissingNoPropertiesCopyWith(
+          OpenApiComposedDiscMissingNoProperties value,
+          $Res Function(OpenApiComposedDiscMissingNoProperties) then) =
+      _$OpenApiComposedDiscMissingNoPropertiesCopyWithImpl<$Res,
+          OpenApiComposedDiscMissingNoProperties>;
 }
 
 /// @nodoc
-class _$ComposedDiscMissingNoPropertiesCopyWithImpl<$Res,
-        $Val extends ComposedDiscMissingNoProperties>
-    implements $ComposedDiscMissingNoPropertiesCopyWith<$Res> {
-  _$ComposedDiscMissingNoPropertiesCopyWithImpl(this._value, this._then);
+class _$OpenApiComposedDiscMissingNoPropertiesCopyWithImpl<$Res,
+        $Val extends OpenApiComposedDiscMissingNoProperties>
+    implements $OpenApiComposedDiscMissingNoPropertiesCopyWith<$Res> {
+  _$OpenApiComposedDiscMissingNoPropertiesCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -3611,11 +3777,13 @@ class _$ComposedDiscMissingNoPropertiesCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscMissingNoPropertiesAsObjectCopyWith<$Res> {
-  factory _$$ComposedDiscMissingNoPropertiesAsObjectCopyWith(
-          _$ComposedDiscMissingNoPropertiesAsObject value,
-          $Res Function(_$ComposedDiscMissingNoPropertiesAsObject) then) =
-      __$$ComposedDiscMissingNoPropertiesAsObjectCopyWithImpl<$Res>;
+abstract class _$$OpenApiComposedDiscMissingNoPropertiesAsObjectImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscMissingNoPropertiesAsObjectImplCopyWith(
+          _$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl value,
+          $Res Function(_$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl)
+              then) =
+      __$$OpenApiComposedDiscMissingNoPropertiesAsObjectImplCopyWithImpl<$Res>;
   @useResult
   $Res call({ObjectInUnion objectValue});
 
@@ -3623,13 +3791,14 @@ abstract class _$$ComposedDiscMissingNoPropertiesAsObjectCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$ComposedDiscMissingNoPropertiesAsObjectCopyWithImpl<$Res>
-    extends _$ComposedDiscMissingNoPropertiesCopyWithImpl<$Res,
-        _$ComposedDiscMissingNoPropertiesAsObject>
-    implements _$$ComposedDiscMissingNoPropertiesAsObjectCopyWith<$Res> {
-  __$$ComposedDiscMissingNoPropertiesAsObjectCopyWithImpl(
-      _$ComposedDiscMissingNoPropertiesAsObject _value,
-      $Res Function(_$ComposedDiscMissingNoPropertiesAsObject) _then)
+class __$$OpenApiComposedDiscMissingNoPropertiesAsObjectImplCopyWithImpl<$Res>
+    extends _$OpenApiComposedDiscMissingNoPropertiesCopyWithImpl<$Res,
+        _$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl>
+    implements
+        _$$OpenApiComposedDiscMissingNoPropertiesAsObjectImplCopyWith<$Res> {
+  __$$OpenApiComposedDiscMissingNoPropertiesAsObjectImplCopyWithImpl(
+      _$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl _value,
+      $Res Function(_$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3637,7 +3806,7 @@ class __$$ComposedDiscMissingNoPropertiesAsObjectCopyWithImpl<$Res>
   $Res call({
     Object? objectValue = null,
   }) {
-    return _then(_$ComposedDiscMissingNoPropertiesAsObject(
+    return _then(_$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl(
       objectValue: null == objectValue
           ? _value.objectValue
           : objectValue // ignore: cast_nullable_to_non_nullable
@@ -3656,9 +3825,10 @@ class __$$ComposedDiscMissingNoPropertiesAsObjectCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ComposedDiscMissingNoPropertiesAsObject
-    extends ComposedDiscMissingNoPropertiesAsObject {
-  const _$ComposedDiscMissingNoPropertiesAsObject({required this.objectValue})
+class _$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl
+    extends OpenApiComposedDiscMissingNoPropertiesAsObject {
+  const _$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl(
+      {required this.objectValue})
       : super._();
 
   @override
@@ -3666,14 +3836,14 @@ class _$ComposedDiscMissingNoPropertiesAsObject
 
   @override
   String toString() {
-    return 'ComposedDiscMissingNoProperties.asObject(objectValue: $objectValue)';
+    return 'OpenApiComposedDiscMissingNoProperties.asObject(objectValue: $objectValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscMissingNoPropertiesAsObject &&
+            other is _$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl &&
             (identical(other.objectValue, objectValue) ||
                 other.objectValue == objectValue));
   }
@@ -3684,10 +3854,12 @@ class _$ComposedDiscMissingNoPropertiesAsObject
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscMissingNoPropertiesAsObjectCopyWith<
-          _$ComposedDiscMissingNoPropertiesAsObject>
-      get copyWith => __$$ComposedDiscMissingNoPropertiesAsObjectCopyWithImpl<
-          _$ComposedDiscMissingNoPropertiesAsObject>(this, _$identity);
+  _$$OpenApiComposedDiscMissingNoPropertiesAsObjectImplCopyWith<
+          _$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscMissingNoPropertiesAsObjectImplCopyWithImpl<
+                  _$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3698,7 +3870,7 @@ class _$ComposedDiscMissingNoPropertiesAsObject
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingNoProperties> deserializedModels)
+            List<OpenApiComposedDiscMissingNoProperties> deserializedModels)
         unknown,
   }) {
     return asObject(objectValue);
@@ -3713,7 +3885,7 @@ class _$ComposedDiscMissingNoPropertiesAsObject
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingNoProperties> deserializedModels)?
+            List<OpenApiComposedDiscMissingNoProperties> deserializedModels)?
         unknown,
   }) {
     return asObject?.call(objectValue);
@@ -3728,7 +3900,7 @@ class _$ComposedDiscMissingNoPropertiesAsObject
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingNoProperties> deserializedModels)?
+            List<OpenApiComposedDiscMissingNoProperties> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -3741,9 +3913,11 @@ class _$ComposedDiscMissingNoPropertiesAsObject
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(ComposedDiscMissingNoPropertiesAsObject value)
+    required TResult Function(
+            OpenApiComposedDiscMissingNoPropertiesAsObject value)
         asObject,
-    required TResult Function(ComposedDiscMissingNoPropertiesUnknown value)
+    required TResult Function(
+            OpenApiComposedDiscMissingNoPropertiesUnknown value)
         unknown,
   }) {
     return asObject(this);
@@ -3752,8 +3926,10 @@ class _$ComposedDiscMissingNoPropertiesAsObject
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ComposedDiscMissingNoPropertiesAsObject value)? asObject,
-    TResult? Function(ComposedDiscMissingNoPropertiesUnknown value)? unknown,
+    TResult? Function(OpenApiComposedDiscMissingNoPropertiesAsObject value)?
+        asObject,
+    TResult? Function(OpenApiComposedDiscMissingNoPropertiesUnknown value)?
+        unknown,
   }) {
     return asObject?.call(this);
   }
@@ -3761,8 +3937,10 @@ class _$ComposedDiscMissingNoPropertiesAsObject
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ComposedDiscMissingNoPropertiesAsObject value)? asObject,
-    TResult Function(ComposedDiscMissingNoPropertiesUnknown value)? unknown,
+    TResult Function(OpenApiComposedDiscMissingNoPropertiesAsObject value)?
+        asObject,
+    TResult Function(OpenApiComposedDiscMissingNoPropertiesUnknown value)?
+        unknown,
     required TResult orElse(),
   }) {
     if (asObject != null) {
@@ -3772,43 +3950,46 @@ class _$ComposedDiscMissingNoPropertiesAsObject
   }
 }
 
-abstract class ComposedDiscMissingNoPropertiesAsObject
-    extends ComposedDiscMissingNoProperties {
-  const factory ComposedDiscMissingNoPropertiesAsObject(
+abstract class OpenApiComposedDiscMissingNoPropertiesAsObject
+    extends OpenApiComposedDiscMissingNoProperties {
+  const factory OpenApiComposedDiscMissingNoPropertiesAsObject(
           {required final ObjectInUnion objectValue}) =
-      _$ComposedDiscMissingNoPropertiesAsObject;
-  const ComposedDiscMissingNoPropertiesAsObject._() : super._();
+      _$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl;
+  const OpenApiComposedDiscMissingNoPropertiesAsObject._() : super._();
 
   ObjectInUnion get objectValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscMissingNoPropertiesAsObjectCopyWith<
-          _$ComposedDiscMissingNoPropertiesAsObject>
+  _$$OpenApiComposedDiscMissingNoPropertiesAsObjectImplCopyWith<
+          _$OpenApiComposedDiscMissingNoPropertiesAsObjectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscMissingNoPropertiesUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscMissingNoPropertiesUnknownCopyWith(
-          _$ComposedDiscMissingNoPropertiesUnknown value,
-          $Res Function(_$ComposedDiscMissingNoPropertiesUnknown) then) =
-      __$$ComposedDiscMissingNoPropertiesUnknownCopyWithImpl<$Res>;
+abstract class _$$OpenApiComposedDiscMissingNoPropertiesUnknownImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscMissingNoPropertiesUnknownImplCopyWith(
+          _$OpenApiComposedDiscMissingNoPropertiesUnknownImpl value,
+          $Res Function(_$OpenApiComposedDiscMissingNoPropertiesUnknownImpl)
+              then) =
+      __$$OpenApiComposedDiscMissingNoPropertiesUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<ComposedDiscMissingNoProperties> deserializedModels});
+      List<OpenApiComposedDiscMissingNoProperties> deserializedModels});
 }
 
 /// @nodoc
-class __$$ComposedDiscMissingNoPropertiesUnknownCopyWithImpl<$Res>
-    extends _$ComposedDiscMissingNoPropertiesCopyWithImpl<$Res,
-        _$ComposedDiscMissingNoPropertiesUnknown>
-    implements _$$ComposedDiscMissingNoPropertiesUnknownCopyWith<$Res> {
-  __$$ComposedDiscMissingNoPropertiesUnknownCopyWithImpl(
-      _$ComposedDiscMissingNoPropertiesUnknown _value,
-      $Res Function(_$ComposedDiscMissingNoPropertiesUnknown) _then)
+class __$$OpenApiComposedDiscMissingNoPropertiesUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiComposedDiscMissingNoPropertiesCopyWithImpl<$Res,
+        _$OpenApiComposedDiscMissingNoPropertiesUnknownImpl>
+    implements
+        _$$OpenApiComposedDiscMissingNoPropertiesUnknownImplCopyWith<$Res> {
+  __$$OpenApiComposedDiscMissingNoPropertiesUnknownImplCopyWithImpl(
+      _$OpenApiComposedDiscMissingNoPropertiesUnknownImpl _value,
+      $Res Function(_$OpenApiComposedDiscMissingNoPropertiesUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3820,7 +4001,7 @@ class __$$ComposedDiscMissingNoPropertiesUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$ComposedDiscMissingNoPropertiesUnknown(
+    return _then(_$OpenApiComposedDiscMissingNoPropertiesUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -3840,22 +4021,22 @@ class __$$ComposedDiscMissingNoPropertiesUnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<ComposedDiscMissingNoProperties>,
+              as List<OpenApiComposedDiscMissingNoProperties>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$ComposedDiscMissingNoPropertiesUnknown
-    extends ComposedDiscMissingNoPropertiesUnknown {
-  const _$ComposedDiscMissingNoPropertiesUnknown(
+class _$OpenApiComposedDiscMissingNoPropertiesUnknownImpl
+    extends OpenApiComposedDiscMissingNoPropertiesUnknown {
+  const _$OpenApiComposedDiscMissingNoPropertiesUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
       final List<Type> possibleTypes = const <Type>[Object],
-      final List<ComposedDiscMissingNoProperties> deserializedModels =
-          const <ComposedDiscMissingNoProperties>[]})
+      final List<OpenApiComposedDiscMissingNoProperties> deserializedModels =
+          const <OpenApiComposedDiscMissingNoProperties>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -3884,10 +4065,10 @@ class _$ComposedDiscMissingNoPropertiesUnknown
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<ComposedDiscMissingNoProperties> _deserializedModels;
+  final List<OpenApiComposedDiscMissingNoProperties> _deserializedModels;
   @override
   @JsonKey()
-  List<ComposedDiscMissingNoProperties> get deserializedModels {
+  List<OpenApiComposedDiscMissingNoProperties> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -3896,14 +4077,14 @@ class _$ComposedDiscMissingNoPropertiesUnknown
 
   @override
   String toString() {
-    return 'ComposedDiscMissingNoProperties.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiComposedDiscMissingNoProperties.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscMissingNoPropertiesUnknown &&
+            other is _$OpenApiComposedDiscMissingNoPropertiesUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -3926,10 +4107,12 @@ class _$ComposedDiscMissingNoPropertiesUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscMissingNoPropertiesUnknownCopyWith<
-          _$ComposedDiscMissingNoPropertiesUnknown>
-      get copyWith => __$$ComposedDiscMissingNoPropertiesUnknownCopyWithImpl<
-          _$ComposedDiscMissingNoPropertiesUnknown>(this, _$identity);
+  _$$OpenApiComposedDiscMissingNoPropertiesUnknownImplCopyWith<
+          _$OpenApiComposedDiscMissingNoPropertiesUnknownImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscMissingNoPropertiesUnknownImplCopyWithImpl<
+                  _$OpenApiComposedDiscMissingNoPropertiesUnknownImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3940,7 +4123,7 @@ class _$ComposedDiscMissingNoPropertiesUnknown
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingNoProperties> deserializedModels)
+            List<OpenApiComposedDiscMissingNoProperties> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -3955,7 +4138,7 @@ class _$ComposedDiscMissingNoPropertiesUnknown
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingNoProperties> deserializedModels)?
+            List<OpenApiComposedDiscMissingNoProperties> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -3971,7 +4154,7 @@ class _$ComposedDiscMissingNoPropertiesUnknown
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscMissingNoProperties> deserializedModels)?
+            List<OpenApiComposedDiscMissingNoProperties> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -3985,9 +4168,11 @@ class _$ComposedDiscMissingNoPropertiesUnknown
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(ComposedDiscMissingNoPropertiesAsObject value)
+    required TResult Function(
+            OpenApiComposedDiscMissingNoPropertiesAsObject value)
         asObject,
-    required TResult Function(ComposedDiscMissingNoPropertiesUnknown value)
+    required TResult Function(
+            OpenApiComposedDiscMissingNoPropertiesUnknown value)
         unknown,
   }) {
     return unknown(this);
@@ -3996,8 +4181,10 @@ class _$ComposedDiscMissingNoPropertiesUnknown
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ComposedDiscMissingNoPropertiesAsObject value)? asObject,
-    TResult? Function(ComposedDiscMissingNoPropertiesUnknown value)? unknown,
+    TResult? Function(OpenApiComposedDiscMissingNoPropertiesAsObject value)?
+        asObject,
+    TResult? Function(OpenApiComposedDiscMissingNoPropertiesUnknown value)?
+        unknown,
   }) {
     return unknown?.call(this);
   }
@@ -4005,8 +4192,10 @@ class _$ComposedDiscMissingNoPropertiesUnknown
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ComposedDiscMissingNoPropertiesAsObject value)? asObject,
-    TResult Function(ComposedDiscMissingNoPropertiesUnknown value)? unknown,
+    TResult Function(OpenApiComposedDiscMissingNoPropertiesAsObject value)?
+        asObject,
+    TResult Function(OpenApiComposedDiscMissingNoPropertiesUnknown value)?
+        unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -4016,67 +4205,70 @@ class _$ComposedDiscMissingNoPropertiesUnknown
   }
 }
 
-abstract class ComposedDiscMissingNoPropertiesUnknown
-    extends ComposedDiscMissingNoProperties {
-  const factory ComposedDiscMissingNoPropertiesUnknown(
+abstract class OpenApiComposedDiscMissingNoPropertiesUnknown
+    extends OpenApiComposedDiscMissingNoProperties {
+  const factory OpenApiComposedDiscMissingNoPropertiesUnknown(
           {final String message,
           required final Map<String, dynamic> json,
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
-          final List<ComposedDiscMissingNoProperties> deserializedModels}) =
-      _$ComposedDiscMissingNoPropertiesUnknown;
-  const ComposedDiscMissingNoPropertiesUnknown._() : super._();
+          final List<OpenApiComposedDiscMissingNoProperties>
+              deserializedModels}) =
+      _$OpenApiComposedDiscMissingNoPropertiesUnknownImpl;
+  const OpenApiComposedDiscMissingNoPropertiesUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<ComposedDiscMissingNoProperties> get deserializedModels;
+  List<OpenApiComposedDiscMissingNoProperties> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$ComposedDiscMissingNoPropertiesUnknownCopyWith<
-          _$ComposedDiscMissingNoPropertiesUnknown>
+  _$$OpenApiComposedDiscMissingNoPropertiesUnknownImplCopyWith<
+          _$OpenApiComposedDiscMissingNoPropertiesUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$ComposedDiscOptionalTypeCorrect {
+mixin _$OpenApiComposedDiscOptionalTypeCorrect {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeCorrect> deserializedModels)
+            List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeCorrect> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeCorrect> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
@@ -4084,45 +4276,51 @@ mixin _$ComposedDiscOptionalTypeCorrect {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(ComposedDiscOptionalTypeCorrectUnknown value)
+            OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect
+                value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeCorrectUnknown value)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(ComposedDiscOptionalTypeCorrectUnknown value)? unknown,
+            OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(OpenApiComposedDiscOptionalTypeCorrectUnknown value)?
+        unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(ComposedDiscOptionalTypeCorrectUnknown value)? unknown,
+            OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(OpenApiComposedDiscOptionalTypeCorrectUnknown value)?
+        unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ComposedDiscOptionalTypeCorrectCopyWith<$Res> {
-  factory $ComposedDiscOptionalTypeCorrectCopyWith(
-          ComposedDiscOptionalTypeCorrect value,
-          $Res Function(ComposedDiscOptionalTypeCorrect) then) =
-      _$ComposedDiscOptionalTypeCorrectCopyWithImpl<$Res,
-          ComposedDiscOptionalTypeCorrect>;
+abstract class $OpenApiComposedDiscOptionalTypeCorrectCopyWith<$Res> {
+  factory $OpenApiComposedDiscOptionalTypeCorrectCopyWith(
+          OpenApiComposedDiscOptionalTypeCorrect value,
+          $Res Function(OpenApiComposedDiscOptionalTypeCorrect) then) =
+      _$OpenApiComposedDiscOptionalTypeCorrectCopyWithImpl<$Res,
+          OpenApiComposedDiscOptionalTypeCorrect>;
 }
 
 /// @nodoc
-class _$ComposedDiscOptionalTypeCorrectCopyWithImpl<$Res,
-        $Val extends ComposedDiscOptionalTypeCorrect>
-    implements $ComposedDiscOptionalTypeCorrectCopyWith<$Res> {
-  _$ComposedDiscOptionalTypeCorrectCopyWithImpl(this._value, this._then);
+class _$OpenApiComposedDiscOptionalTypeCorrectCopyWithImpl<$Res,
+        $Val extends OpenApiComposedDiscOptionalTypeCorrect>
+    implements $OpenApiComposedDiscOptionalTypeCorrectCopyWith<$Res> {
+  _$OpenApiComposedDiscOptionalTypeCorrectCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -4131,735 +4329,162 @@ class _$ComposedDiscOptionalTypeCorrectCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrectCopyWith<
+abstract class _$$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
     $Res> {
-  factory _$$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrectCopyWith(
-          _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect value,
+  factory _$$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImplCopyWith(
+          _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl
+              value,
           $Res Function(
-                  _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect)
+                  _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl)
               then) =
-      __$$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrectCopyWithImpl<
+      __$$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl<
           $Res>;
-  @useResult
-  $Res call({DiscOptionalTypeCorrect discOptionalTypeCorrectValue});
-
-  $DiscOptionalTypeCorrectCopyWith<$Res> get discOptionalTypeCorrectValue;
-}
-
-/// @nodoc
-class __$$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrectCopyWithImpl<
-        $Res>
-    extends _$ComposedDiscOptionalTypeCorrectCopyWithImpl<$Res,
-        _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect>
-    implements
-        _$$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrectCopyWith<
-            $Res> {
-  __$$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrectCopyWithImpl(
-      _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect _value,
-      $Res Function(_$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect)
-          _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? discOptionalTypeCorrectValue = null,
-  }) {
-    return _then(_$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect(
-      discOptionalTypeCorrectValue: null == discOptionalTypeCorrectValue
-          ? _value.discOptionalTypeCorrectValue
-          : discOptionalTypeCorrectValue // ignore: cast_nullable_to_non_nullable
-              as DiscOptionalTypeCorrect,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $DiscOptionalTypeCorrectCopyWith<$Res> get discOptionalTypeCorrectValue {
-    return $DiscOptionalTypeCorrectCopyWith<$Res>(
-        _value.discOptionalTypeCorrectValue, (value) {
-      return _then(_value.copyWith(discOptionalTypeCorrectValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect
-    extends ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect {
-  const _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect(
-      {required this.discOptionalTypeCorrectValue})
-      : super._();
-
-  @override
-  final DiscOptionalTypeCorrect discOptionalTypeCorrectValue;
-
-  @override
-  String toString() {
-    return 'ComposedDiscOptionalTypeCorrect.asDiscOptionalTypeCorrect(discOptionalTypeCorrectValue: $discOptionalTypeCorrectValue)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other
-                is _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect &&
-            (identical(other.discOptionalTypeCorrectValue,
-                    discOptionalTypeCorrectValue) ||
-                other.discOptionalTypeCorrectValue ==
-                    discOptionalTypeCorrectValue));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, discOptionalTypeCorrectValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrectCopyWith<
-          _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect>
-      get copyWith =>
-          __$$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrectCopyWithImpl<
-                  _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeCorrect> deserializedModels)
-        unknown,
-  }) {
-    return asDiscOptionalTypeCorrect(discOptionalTypeCorrectValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeCorrect> deserializedModels)?
-        unknown,
-  }) {
-    return asDiscOptionalTypeCorrect?.call(discOptionalTypeCorrectValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeCorrect> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asDiscOptionalTypeCorrect != null) {
-      return asDiscOptionalTypeCorrect(discOptionalTypeCorrectValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(ComposedDiscOptionalTypeCorrectUnknown value)
-        unknown,
-  }) {
-    return asDiscOptionalTypeCorrect(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(ComposedDiscOptionalTypeCorrectUnknown value)? unknown,
-  }) {
-    return asDiscOptionalTypeCorrect?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(ComposedDiscOptionalTypeCorrectUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asDiscOptionalTypeCorrect != null) {
-      return asDiscOptionalTypeCorrect(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect
-    extends ComposedDiscOptionalTypeCorrect {
-  const factory ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect(
-          {required final DiscOptionalTypeCorrect
-              discOptionalTypeCorrectValue}) =
-      _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect;
-  const ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect._()
-      : super._();
-
-  DiscOptionalTypeCorrect get discOptionalTypeCorrectValue;
-  @JsonKey(ignore: true)
-  _$$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrectCopyWith<
-          _$ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$ComposedDiscOptionalTypeCorrectUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscOptionalTypeCorrectUnknownCopyWith(
-          _$ComposedDiscOptionalTypeCorrectUnknown value,
-          $Res Function(_$ComposedDiscOptionalTypeCorrectUnknown) then) =
-      __$$ComposedDiscOptionalTypeCorrectUnknownCopyWithImpl<$Res>;
   @useResult
   $Res call(
-      {String message,
-      Map<String, dynamic> json,
-      DeserializationErrorType errorType,
-      List<Type> possibleTypes,
-      List<ComposedDiscOptionalTypeCorrect> deserializedModels});
+      {OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue});
+
+  $OpenApiDiscOptionalTypeCorrectCopyWith<$Res>
+      get openApiDiscOptionalTypeCorrectValue;
 }
 
 /// @nodoc
-class __$$ComposedDiscOptionalTypeCorrectUnknownCopyWithImpl<$Res>
-    extends _$ComposedDiscOptionalTypeCorrectCopyWithImpl<$Res,
-        _$ComposedDiscOptionalTypeCorrectUnknown>
-    implements _$$ComposedDiscOptionalTypeCorrectUnknownCopyWith<$Res> {
-  __$$ComposedDiscOptionalTypeCorrectUnknownCopyWithImpl(
-      _$ComposedDiscOptionalTypeCorrectUnknown _value,
-      $Res Function(_$ComposedDiscOptionalTypeCorrectUnknown) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-    Object? json = null,
-    Object? errorType = null,
-    Object? possibleTypes = null,
-    Object? deserializedModels = null,
-  }) {
-    return _then(_$ComposedDiscOptionalTypeCorrectUnknown(
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      json: null == json
-          ? _value._json
-          : json // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      errorType: null == errorType
-          ? _value.errorType
-          : errorType // ignore: cast_nullable_to_non_nullable
-              as DeserializationErrorType,
-      possibleTypes: null == possibleTypes
-          ? _value._possibleTypes
-          : possibleTypes // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
-      deserializedModels: null == deserializedModels
-          ? _value._deserializedModels
-          : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<ComposedDiscOptionalTypeCorrect>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ComposedDiscOptionalTypeCorrectUnknown
-    extends ComposedDiscOptionalTypeCorrectUnknown {
-  const _$ComposedDiscOptionalTypeCorrectUnknown(
-      {this.message = 'Json does not satisfy any available types',
-      required final Map<String, dynamic> json,
-      this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[DiscOptionalTypeCorrect],
-      final List<ComposedDiscOptionalTypeCorrect> deserializedModels =
-          const <ComposedDiscOptionalTypeCorrect>[]})
-      : _json = json,
-        _possibleTypes = possibleTypes,
-        _deserializedModels = deserializedModels,
-        super._();
-
-  @override
-  @JsonKey()
-  final String message;
-  final Map<String, dynamic> _json;
-  @override
-  Map<String, dynamic> get json {
-    if (_json is EqualUnmodifiableMapView) return _json;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_json);
-  }
-
-  @override
-  @JsonKey()
-  final DeserializationErrorType errorType;
-  final List<Type> _possibleTypes;
-  @override
-  @JsonKey()
-  List<Type> get possibleTypes {
-    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_possibleTypes);
-  }
-
-  final List<ComposedDiscOptionalTypeCorrect> _deserializedModels;
-  @override
-  @JsonKey()
-  List<ComposedDiscOptionalTypeCorrect> get deserializedModels {
-    if (_deserializedModels is EqualUnmodifiableListView)
-      return _deserializedModels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_deserializedModels);
-  }
-
-  @override
-  String toString() {
-    return 'ComposedDiscOptionalTypeCorrect.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscOptionalTypeCorrectUnknown &&
-            (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other._json, _json) &&
-            (identical(other.errorType, errorType) ||
-                other.errorType == errorType) &&
-            const DeepCollectionEquality()
-                .equals(other._possibleTypes, _possibleTypes) &&
-            const DeepCollectionEquality()
-                .equals(other._deserializedModels, _deserializedModels));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      message,
-      const DeepCollectionEquality().hash(_json),
-      errorType,
-      const DeepCollectionEquality().hash(_possibleTypes),
-      const DeepCollectionEquality().hash(_deserializedModels));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ComposedDiscOptionalTypeCorrectUnknownCopyWith<
-          _$ComposedDiscOptionalTypeCorrectUnknown>
-      get copyWith => __$$ComposedDiscOptionalTypeCorrectUnknownCopyWithImpl<
-          _$ComposedDiscOptionalTypeCorrectUnknown>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeCorrect> deserializedModels)
-        unknown,
-  }) {
-    return unknown(message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeCorrect> deserializedModels)?
-        unknown,
-  }) {
-    return unknown?.call(
-        message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeCorrect> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(
-          message, json, errorType, possibleTypes, deserializedModels);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(ComposedDiscOptionalTypeCorrectUnknown value)
-        unknown,
-  }) {
-    return unknown(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(ComposedDiscOptionalTypeCorrectUnknown value)? unknown,
-  }) {
-    return unknown?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            ComposedDiscOptionalTypeCorrectAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(ComposedDiscOptionalTypeCorrectUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class ComposedDiscOptionalTypeCorrectUnknown
-    extends ComposedDiscOptionalTypeCorrect {
-  const factory ComposedDiscOptionalTypeCorrectUnknown(
-          {final String message,
-          required final Map<String, dynamic> json,
-          final DeserializationErrorType errorType,
-          final List<Type> possibleTypes,
-          final List<ComposedDiscOptionalTypeCorrect> deserializedModels}) =
-      _$ComposedDiscOptionalTypeCorrectUnknown;
-  const ComposedDiscOptionalTypeCorrectUnknown._() : super._();
-
-  String get message;
-  Map<String, dynamic> get json;
-  DeserializationErrorType get errorType;
-  List<Type> get possibleTypes;
-  List<ComposedDiscOptionalTypeCorrect> get deserializedModels;
-  @JsonKey(ignore: true)
-  _$$ComposedDiscOptionalTypeCorrectUnknownCopyWith<
-          _$ComposedDiscOptionalTypeCorrectUnknown>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-mixin _$ComposedDiscOptionalTypeInconsistent {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(
-            DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
-                value)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(ComposedDiscOptionalTypeInconsistentUnknown value)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
-                value)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
-                value)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(ComposedDiscOptionalTypeInconsistentUnknown value)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
-                value)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
-                value)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(ComposedDiscOptionalTypeInconsistentUnknown value)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ComposedDiscOptionalTypeInconsistentCopyWith<$Res> {
-  factory $ComposedDiscOptionalTypeInconsistentCopyWith(
-          ComposedDiscOptionalTypeInconsistent value,
-          $Res Function(ComposedDiscOptionalTypeInconsistent) then) =
-      _$ComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
-          ComposedDiscOptionalTypeInconsistent>;
-}
-
-/// @nodoc
-class _$ComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
-        $Val extends ComposedDiscOptionalTypeInconsistent>
-    implements $ComposedDiscOptionalTypeInconsistentCopyWith<$Res> {
-  _$ComposedDiscOptionalTypeInconsistentCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWith<
-    $Res> {
-  factory _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWith(
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect value,
-          $Res Function(
-                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect)
-              then) =
-      __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
-          $Res>;
-  @useResult
-  $Res call({DiscOptionalTypeCorrect discOptionalTypeCorrectValue});
-
-  $DiscOptionalTypeCorrectCopyWith<$Res> get discOptionalTypeCorrectValue;
-}
-
-/// @nodoc
-class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
+class __$$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl<
         $Res>
-    extends _$ComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect>
+    extends _$OpenApiComposedDiscOptionalTypeCorrectCopyWithImpl<$Res,
+        _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl>
     implements
-        _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWith<
+        _$$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
             $Res> {
-  __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWithImpl(
-      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect _value,
+  __$$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl(
+      _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl
+          _value,
       $Res Function(
-              _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect)
+              _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl)
           _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? discOptionalTypeCorrectValue = null,
+    Object? openApiDiscOptionalTypeCorrectValue = null,
   }) {
     return _then(
-        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect(
-      discOptionalTypeCorrectValue: null == discOptionalTypeCorrectValue
-          ? _value.discOptionalTypeCorrectValue
-          : discOptionalTypeCorrectValue // ignore: cast_nullable_to_non_nullable
-              as DiscOptionalTypeCorrect,
+        _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl(
+      openApiDiscOptionalTypeCorrectValue: null ==
+              openApiDiscOptionalTypeCorrectValue
+          ? _value.openApiDiscOptionalTypeCorrectValue
+          : openApiDiscOptionalTypeCorrectValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiDiscOptionalTypeCorrect,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $DiscOptionalTypeCorrectCopyWith<$Res> get discOptionalTypeCorrectValue {
-    return $DiscOptionalTypeCorrectCopyWith<$Res>(
-        _value.discOptionalTypeCorrectValue, (value) {
-      return _then(_value.copyWith(discOptionalTypeCorrectValue: value));
+  $OpenApiDiscOptionalTypeCorrectCopyWith<$Res>
+      get openApiDiscOptionalTypeCorrectValue {
+    return $OpenApiDiscOptionalTypeCorrectCopyWith<$Res>(
+        _value.openApiDiscOptionalTypeCorrectValue, (value) {
+      return _then(_value.copyWith(openApiDiscOptionalTypeCorrectValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
-    extends ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect {
-  const _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect(
-      {required this.discOptionalTypeCorrectValue})
+class _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl
+    extends OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect {
+  const _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl(
+      {required this.openApiDiscOptionalTypeCorrectValue})
       : super._();
 
   @override
-  final DiscOptionalTypeCorrect discOptionalTypeCorrectValue;
+  final OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue;
 
   @override
   String toString() {
-    return 'ComposedDiscOptionalTypeInconsistent.asDiscOptionalTypeCorrect(discOptionalTypeCorrectValue: $discOptionalTypeCorrectValue)';
+    return 'OpenApiComposedDiscOptionalTypeCorrect.asOpenApiDiscOptionalTypeCorrect(openApiDiscOptionalTypeCorrectValue: $openApiDiscOptionalTypeCorrectValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect &&
-            (identical(other.discOptionalTypeCorrectValue,
-                    discOptionalTypeCorrectValue) ||
-                other.discOptionalTypeCorrectValue ==
-                    discOptionalTypeCorrectValue));
+                is _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl &&
+            (identical(other.openApiDiscOptionalTypeCorrectValue,
+                    openApiDiscOptionalTypeCorrectValue) ||
+                other.openApiDiscOptionalTypeCorrectValue ==
+                    openApiDiscOptionalTypeCorrectValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, discOptionalTypeCorrectValue);
+  int get hashCode =>
+      Object.hash(runtimeType, openApiDiscOptionalTypeCorrectValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect>
+  _$$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl>
       get copyWith =>
-          __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
-                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect>(
+          __$$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl<
+                  _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl>(
               this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(
-            DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)
-        asDiscOptionalTypeIncorrect,
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)
+            List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels)
         unknown,
   }) {
-    return asDiscOptionalTypeCorrect(discOptionalTypeCorrectValue);
+    return asOpenApiDiscOptionalTypeCorrect(
+        openApiDiscOptionalTypeCorrectValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels)?
         unknown,
   }) {
-    return asDiscOptionalTypeCorrect?.call(discOptionalTypeCorrectValue);
+    return asOpenApiDiscOptionalTypeCorrect
+        ?.call(openApiDiscOptionalTypeCorrectValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asDiscOptionalTypeCorrect != null) {
-      return asDiscOptionalTypeCorrect(discOptionalTypeCorrectValue);
+    if (asOpenApiDiscOptionalTypeCorrect != null) {
+      return asOpenApiDiscOptionalTypeCorrect(
+          openApiDiscOptionalTypeCorrectValue);
     }
     return orElse();
   }
@@ -4868,225 +4493,640 @@ class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
+            OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect
                 value)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(ComposedDiscOptionalTypeInconsistentUnknown value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeCorrectUnknown value)
         unknown,
   }) {
-    return asDiscOptionalTypeCorrect(this);
+    return asOpenApiDiscOptionalTypeCorrect(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
+            OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect
                 value)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
-                value)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(ComposedDiscOptionalTypeInconsistentUnknown value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(OpenApiComposedDiscOptionalTypeCorrectUnknown value)?
         unknown,
   }) {
-    return asDiscOptionalTypeCorrect?.call(this);
+    return asOpenApiDiscOptionalTypeCorrect?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
+            OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect
                 value)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
-                value)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(ComposedDiscOptionalTypeInconsistentUnknown value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(OpenApiComposedDiscOptionalTypeCorrectUnknown value)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asDiscOptionalTypeCorrect != null) {
-      return asDiscOptionalTypeCorrect(this);
+    if (asOpenApiDiscOptionalTypeCorrect != null) {
+      return asOpenApiDiscOptionalTypeCorrect(this);
     }
     return orElse();
   }
 }
 
-abstract class ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
-    extends ComposedDiscOptionalTypeInconsistent {
-  const factory ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect(
-          {required final DiscOptionalTypeCorrect
-              discOptionalTypeCorrectValue}) =
-      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect;
-  const ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect._()
+abstract class OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect
+    extends OpenApiComposedDiscOptionalTypeCorrect {
+  const factory OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect(
+          {required final OpenApiDiscOptionalTypeCorrect
+              openApiDiscOptionalTypeCorrectValue}) =
+      _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl;
+  const OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect._()
       : super._();
 
-  DiscOptionalTypeCorrect get discOptionalTypeCorrectValue;
+  OpenApiDiscOptionalTypeCorrect get openApiDiscOptionalTypeCorrectValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect>
+  _$$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWith<
+abstract class _$$OpenApiComposedDiscOptionalTypeCorrectUnknownImplCopyWith<
     $Res> {
-  factory _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWith(
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect value,
-          $Res Function(
-                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect)
+  factory _$$OpenApiComposedDiscOptionalTypeCorrectUnknownImplCopyWith(
+          _$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl value,
+          $Res Function(_$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl)
               then) =
-      __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWithImpl<
-          $Res>;
+      __$$OpenApiComposedDiscOptionalTypeCorrectUnknownImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue});
-
-  $DiscOptionalTypeIncorrectCopyWith<$Res> get discOptionalTypeIncorrectValue;
+  $Res call(
+      {String message,
+      Map<String, dynamic> json,
+      DeserializationErrorType errorType,
+      List<Type> possibleTypes,
+      List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels});
 }
 
 /// @nodoc
-class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWithImpl<
-        $Res>
-    extends _$ComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect>
+class __$$OpenApiComposedDiscOptionalTypeCorrectUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiComposedDiscOptionalTypeCorrectCopyWithImpl<$Res,
+        _$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl>
     implements
-        _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWith<
+        _$$OpenApiComposedDiscOptionalTypeCorrectUnknownImplCopyWith<$Res> {
+  __$$OpenApiComposedDiscOptionalTypeCorrectUnknownImplCopyWithImpl(
+      _$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl _value,
+      $Res Function(_$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+    Object? json = null,
+    Object? errorType = null,
+    Object? possibleTypes = null,
+    Object? deserializedModels = null,
+  }) {
+    return _then(_$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl(
+      message: null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      json: null == json
+          ? _value._json
+          : json // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      errorType: null == errorType
+          ? _value.errorType
+          : errorType // ignore: cast_nullable_to_non_nullable
+              as DeserializationErrorType,
+      possibleTypes: null == possibleTypes
+          ? _value._possibleTypes
+          : possibleTypes // ignore: cast_nullable_to_non_nullable
+              as List<Type>,
+      deserializedModels: null == deserializedModels
+          ? _value._deserializedModels
+          : deserializedModels // ignore: cast_nullable_to_non_nullable
+              as List<OpenApiComposedDiscOptionalTypeCorrect>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl
+    extends OpenApiComposedDiscOptionalTypeCorrectUnknown {
+  const _$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl(
+      {this.message = 'Json does not satisfy any available types',
+      required final Map<String, dynamic> json,
+      this.errorType = DeserializationErrorType.UnKnownType,
+      final List<Type> possibleTypes = const <Type>[
+        OpenApiDiscOptionalTypeCorrect
+      ],
+      final List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels =
+          const <OpenApiComposedDiscOptionalTypeCorrect>[]})
+      : _json = json,
+        _possibleTypes = possibleTypes,
+        _deserializedModels = deserializedModels,
+        super._();
+
+  @override
+  @JsonKey()
+  final String message;
+  final Map<String, dynamic> _json;
+  @override
+  Map<String, dynamic> get json {
+    if (_json is EqualUnmodifiableMapView) return _json;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_json);
+  }
+
+  @override
+  @JsonKey()
+  final DeserializationErrorType errorType;
+  final List<Type> _possibleTypes;
+  @override
+  @JsonKey()
+  List<Type> get possibleTypes {
+    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_possibleTypes);
+  }
+
+  final List<OpenApiComposedDiscOptionalTypeCorrect> _deserializedModels;
+  @override
+  @JsonKey()
+  List<OpenApiComposedDiscOptionalTypeCorrect> get deserializedModels {
+    if (_deserializedModels is EqualUnmodifiableListView)
+      return _deserializedModels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_deserializedModels);
+  }
+
+  @override
+  String toString() {
+    return 'OpenApiComposedDiscOptionalTypeCorrect.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality().equals(other._json, _json) &&
+            (identical(other.errorType, errorType) ||
+                other.errorType == errorType) &&
+            const DeepCollectionEquality()
+                .equals(other._possibleTypes, _possibleTypes) &&
+            const DeepCollectionEquality()
+                .equals(other._deserializedModels, _deserializedModels));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      message,
+      const DeepCollectionEquality().hash(_json),
+      errorType,
+      const DeepCollectionEquality().hash(_possibleTypes),
+      const DeepCollectionEquality().hash(_deserializedModels));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiComposedDiscOptionalTypeCorrectUnknownImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscOptionalTypeCorrectUnknownImplCopyWithImpl<
+                  _$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels)
+        unknown,
+  }) {
+    return unknown(message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels)?
+        unknown,
+  }) {
+    return unknown?.call(
+        message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeCorrect> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(
+          message, json, errorType, possibleTypes, deserializedModels);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect
+                value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeCorrectUnknown value)
+        unknown,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(OpenApiComposedDiscOptionalTypeCorrectUnknown value)?
+        unknown,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscOptionalTypeCorrectAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(OpenApiComposedDiscOptionalTypeCorrectUnknown value)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiComposedDiscOptionalTypeCorrectUnknown
+    extends OpenApiComposedDiscOptionalTypeCorrect {
+  const factory OpenApiComposedDiscOptionalTypeCorrectUnknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<OpenApiComposedDiscOptionalTypeCorrect>
+              deserializedModels}) =
+      _$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl;
+  const OpenApiComposedDiscOptionalTypeCorrectUnknown._() : super._();
+
+  String get message;
+  Map<String, dynamic> get json;
+  DeserializationErrorType get errorType;
+  List<Type> get possibleTypes;
+  List<OpenApiComposedDiscOptionalTypeCorrect> get deserializedModels;
+  @JsonKey(ignore: true)
+  _$$OpenApiComposedDiscOptionalTypeCorrectUnknownImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeCorrectUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+mixin _$OpenApiComposedDiscOptionalTypeInconsistent {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)
+        asOpenApiDiscOptionalTypeIncorrect,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+                value)
+        asOpenApiDiscOptionalTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentUnknown value)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult? Function(OpenApiComposedDiscOptionalTypeInconsistentUnknown value)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult Function(OpenApiComposedDiscOptionalTypeInconsistentUnknown value)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiComposedDiscOptionalTypeInconsistentCopyWith<$Res> {
+  factory $OpenApiComposedDiscOptionalTypeInconsistentCopyWith(
+          OpenApiComposedDiscOptionalTypeInconsistent value,
+          $Res Function(OpenApiComposedDiscOptionalTypeInconsistent) then) =
+      _$OpenApiComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
+          OpenApiComposedDiscOptionalTypeInconsistent>;
+}
+
+/// @nodoc
+class _$OpenApiComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
+        $Val extends OpenApiComposedDiscOptionalTypeInconsistent>
+    implements $OpenApiComposedDiscOptionalTypeInconsistentCopyWith<$Res> {
+  _$OpenApiComposedDiscOptionalTypeInconsistentCopyWithImpl(
+      this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWith(
+          _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl
+              value,
+          $Res Function(
+                  _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl)
+              then) =
+      __$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call(
+      {OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue});
+
+  $OpenApiDiscOptionalTypeCorrectCopyWith<$Res>
+      get openApiDiscOptionalTypeCorrectValue;
+}
+
+/// @nodoc
+class __$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
+        _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl>
+    implements
+        _$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
             $Res> {
-  __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWithImpl(
-      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect _value,
+  __$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl(
+      _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl
+          _value,
       $Res Function(
-              _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect)
+              _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl)
           _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? discOptionalTypeIncorrectValue = null,
+    Object? openApiDiscOptionalTypeCorrectValue = null,
   }) {
     return _then(
-        _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect(
-      discOptionalTypeIncorrectValue: null == discOptionalTypeIncorrectValue
-          ? _value.discOptionalTypeIncorrectValue
-          : discOptionalTypeIncorrectValue // ignore: cast_nullable_to_non_nullable
-              as DiscOptionalTypeIncorrect,
+        _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl(
+      openApiDiscOptionalTypeCorrectValue: null ==
+              openApiDiscOptionalTypeCorrectValue
+          ? _value.openApiDiscOptionalTypeCorrectValue
+          : openApiDiscOptionalTypeCorrectValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiDiscOptionalTypeCorrect,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $DiscOptionalTypeIncorrectCopyWith<$Res> get discOptionalTypeIncorrectValue {
-    return $DiscOptionalTypeIncorrectCopyWith<$Res>(
-        _value.discOptionalTypeIncorrectValue, (value) {
-      return _then(_value.copyWith(discOptionalTypeIncorrectValue: value));
+  $OpenApiDiscOptionalTypeCorrectCopyWith<$Res>
+      get openApiDiscOptionalTypeCorrectValue {
+    return $OpenApiDiscOptionalTypeCorrectCopyWith<$Res>(
+        _value.openApiDiscOptionalTypeCorrectValue, (value) {
+      return _then(_value.copyWith(openApiDiscOptionalTypeCorrectValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
-    extends ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect {
-  const _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect(
-      {required this.discOptionalTypeIncorrectValue})
+class _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl
+    extends OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect {
+  const _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl(
+      {required this.openApiDiscOptionalTypeCorrectValue})
       : super._();
 
   @override
-  final DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue;
+  final OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue;
 
   @override
   String toString() {
-    return 'ComposedDiscOptionalTypeInconsistent.asDiscOptionalTypeIncorrect(discOptionalTypeIncorrectValue: $discOptionalTypeIncorrectValue)';
+    return 'OpenApiComposedDiscOptionalTypeInconsistent.asOpenApiDiscOptionalTypeCorrect(openApiDiscOptionalTypeCorrectValue: $openApiDiscOptionalTypeCorrectValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect &&
-            (identical(other.discOptionalTypeIncorrectValue,
-                    discOptionalTypeIncorrectValue) ||
-                other.discOptionalTypeIncorrectValue ==
-                    discOptionalTypeIncorrectValue));
+                is _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl &&
+            (identical(other.openApiDiscOptionalTypeCorrectValue,
+                    openApiDiscOptionalTypeCorrectValue) ||
+                other.openApiDiscOptionalTypeCorrectValue ==
+                    openApiDiscOptionalTypeCorrectValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, discOptionalTypeIncorrectValue);
+  int get hashCode =>
+      Object.hash(runtimeType, openApiDiscOptionalTypeCorrectValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect>
+  _$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl>
       get copyWith =>
-          __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWithImpl<
-                  _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect>(
+          __$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl<
+                  _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl>(
               this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
     required TResult Function(
-            DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)
-        asDiscOptionalTypeIncorrect,
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)
+        asOpenApiDiscOptionalTypeIncorrect,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)
         unknown,
   }) {
-    return asDiscOptionalTypeIncorrect(discOptionalTypeIncorrectValue);
+    return asOpenApiDiscOptionalTypeCorrect(
+        openApiDiscOptionalTypeCorrectValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)?
         unknown,
   }) {
-    return asDiscOptionalTypeIncorrect?.call(discOptionalTypeIncorrectValue);
+    return asOpenApiDiscOptionalTypeCorrect
+        ?.call(openApiDiscOptionalTypeCorrectValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asDiscOptionalTypeIncorrect != null) {
-      return asDiscOptionalTypeIncorrect(discOptionalTypeIncorrectValue);
+    if (asOpenApiDiscOptionalTypeCorrect != null) {
+      return asOpenApiDiscOptionalTypeCorrect(
+          openApiDiscOptionalTypeCorrectValue);
     }
     return orElse();
   }
@@ -5095,597 +5135,248 @@ class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
                 value)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(ComposedDiscOptionalTypeInconsistentUnknown value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+                value)
+        asOpenApiDiscOptionalTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentUnknown value)
         unknown,
   }) {
-    return asDiscOptionalTypeIncorrect(this);
+    return asOpenApiDiscOptionalTypeCorrect(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
                 value)?
-        asDiscOptionalTypeCorrect,
+        asOpenApiDiscOptionalTypeCorrect,
     TResult? Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
                 value)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(ComposedDiscOptionalTypeInconsistentUnknown value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult? Function(OpenApiComposedDiscOptionalTypeInconsistentUnknown value)?
         unknown,
   }) {
-    return asDiscOptionalTypeIncorrect?.call(this);
+    return asOpenApiDiscOptionalTypeCorrect?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
                 value)?
-        asDiscOptionalTypeCorrect,
+        asOpenApiDiscOptionalTypeCorrect,
     TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
                 value)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(ComposedDiscOptionalTypeInconsistentUnknown value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult Function(OpenApiComposedDiscOptionalTypeInconsistentUnknown value)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asDiscOptionalTypeIncorrect != null) {
-      return asDiscOptionalTypeIncorrect(this);
+    if (asOpenApiDiscOptionalTypeCorrect != null) {
+      return asOpenApiDiscOptionalTypeCorrect(this);
     }
     return orElse();
   }
 }
 
-abstract class ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
-    extends ComposedDiscOptionalTypeInconsistent {
-  const factory ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect(
-          {required final DiscOptionalTypeIncorrect
-              discOptionalTypeIncorrectValue}) =
-      _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect;
-  const ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect._()
+abstract class OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
+    extends OpenApiComposedDiscOptionalTypeInconsistent {
+  const factory OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect(
+          {required final OpenApiDiscOptionalTypeCorrect
+              openApiDiscOptionalTypeCorrectValue}) =
+      _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl;
+  const OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect._()
       : super._();
 
-  DiscOptionalTypeIncorrect get discOptionalTypeIncorrectValue;
+  OpenApiDiscOptionalTypeCorrect get openApiDiscOptionalTypeCorrectValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect>
+  _$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith(
-          _$ComposedDiscOptionalTypeInconsistentUnknown value,
-          $Res Function(_$ComposedDiscOptionalTypeInconsistentUnknown) then) =
-      __$$ComposedDiscOptionalTypeInconsistentUnknownCopyWithImpl<$Res>;
-  @useResult
-  $Res call(
-      {String message,
-      Map<String, dynamic> json,
-      DeserializationErrorType errorType,
-      List<Type> possibleTypes,
-      List<ComposedDiscOptionalTypeInconsistent> deserializedModels});
-}
-
-/// @nodoc
-class __$$ComposedDiscOptionalTypeInconsistentUnknownCopyWithImpl<$Res>
-    extends _$ComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscOptionalTypeInconsistentUnknown>
-    implements _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith<$Res> {
-  __$$ComposedDiscOptionalTypeInconsistentUnknownCopyWithImpl(
-      _$ComposedDiscOptionalTypeInconsistentUnknown _value,
-      $Res Function(_$ComposedDiscOptionalTypeInconsistentUnknown) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-    Object? json = null,
-    Object? errorType = null,
-    Object? possibleTypes = null,
-    Object? deserializedModels = null,
-  }) {
-    return _then(_$ComposedDiscOptionalTypeInconsistentUnknown(
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      json: null == json
-          ? _value._json
-          : json // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      errorType: null == errorType
-          ? _value.errorType
-          : errorType // ignore: cast_nullable_to_non_nullable
-              as DeserializationErrorType,
-      possibleTypes: null == possibleTypes
-          ? _value._possibleTypes
-          : possibleTypes // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
-      deserializedModels: null == deserializedModels
-          ? _value._deserializedModels
-          : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<ComposedDiscOptionalTypeInconsistent>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ComposedDiscOptionalTypeInconsistentUnknown
-    extends ComposedDiscOptionalTypeInconsistentUnknown {
-  const _$ComposedDiscOptionalTypeInconsistentUnknown(
-      {this.message = 'Json does not satisfy any available types',
-      required final Map<String, dynamic> json,
-      this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[
-        DiscOptionalTypeCorrect,
-        DiscOptionalTypeIncorrect
-      ],
-      final List<ComposedDiscOptionalTypeInconsistent> deserializedModels =
-          const <ComposedDiscOptionalTypeInconsistent>[]})
-      : _json = json,
-        _possibleTypes = possibleTypes,
-        _deserializedModels = deserializedModels,
-        super._();
-
-  @override
-  @JsonKey()
-  final String message;
-  final Map<String, dynamic> _json;
-  @override
-  Map<String, dynamic> get json {
-    if (_json is EqualUnmodifiableMapView) return _json;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_json);
-  }
-
-  @override
-  @JsonKey()
-  final DeserializationErrorType errorType;
-  final List<Type> _possibleTypes;
-  @override
-  @JsonKey()
-  List<Type> get possibleTypes {
-    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_possibleTypes);
-  }
-
-  final List<ComposedDiscOptionalTypeInconsistent> _deserializedModels;
-  @override
-  @JsonKey()
-  List<ComposedDiscOptionalTypeInconsistent> get deserializedModels {
-    if (_deserializedModels is EqualUnmodifiableListView)
-      return _deserializedModels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_deserializedModels);
-  }
-
-  @override
-  String toString() {
-    return 'ComposedDiscOptionalTypeInconsistent.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscOptionalTypeInconsistentUnknown &&
-            (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other._json, _json) &&
-            (identical(other.errorType, errorType) ||
-                other.errorType == errorType) &&
-            const DeepCollectionEquality()
-                .equals(other._possibleTypes, _possibleTypes) &&
-            const DeepCollectionEquality()
-                .equals(other._deserializedModels, _deserializedModels));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      message,
-      const DeepCollectionEquality().hash(_json),
-      errorType,
-      const DeepCollectionEquality().hash(_possibleTypes),
-      const DeepCollectionEquality().hash(_deserializedModels));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentUnknown>
-      get copyWith =>
-          __$$ComposedDiscOptionalTypeInconsistentUnknownCopyWithImpl<
-              _$ComposedDiscOptionalTypeInconsistentUnknown>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(
-            DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)
-        unknown,
-  }) {
-    return unknown(message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)?
-        unknown,
-  }) {
-    return unknown?.call(
-        message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeInconsistent> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(
-          message, json, errorType, possibleTypes, deserializedModels);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
-                value)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(ComposedDiscOptionalTypeInconsistentUnknown value)
-        unknown,
-  }) {
-    return unknown(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
-                value)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
-                value)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(ComposedDiscOptionalTypeInconsistentUnknown value)?
-        unknown,
-  }) {
-    return unknown?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
-                value)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(
-            ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
-                value)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(ComposedDiscOptionalTypeInconsistentUnknown value)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class ComposedDiscOptionalTypeInconsistentUnknown
-    extends ComposedDiscOptionalTypeInconsistent {
-  const factory ComposedDiscOptionalTypeInconsistentUnknown(
-      {final String message,
-      required final Map<String, dynamic> json,
-      final DeserializationErrorType errorType,
-      final List<Type> possibleTypes,
-      final List<ComposedDiscOptionalTypeInconsistent>
-          deserializedModels}) = _$ComposedDiscOptionalTypeInconsistentUnknown;
-  const ComposedDiscOptionalTypeInconsistentUnknown._() : super._();
-
-  String get message;
-  Map<String, dynamic> get json;
-  DeserializationErrorType get errorType;
-  List<Type> get possibleTypes;
-  List<ComposedDiscOptionalTypeInconsistent> get deserializedModels;
-  @JsonKey(ignore: true)
-  _$$ComposedDiscOptionalTypeInconsistentUnknownCopyWith<
-          _$ComposedDiscOptionalTypeInconsistentUnknown>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-mixin _$ComposedDiscOptionalTypeIncorrect {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeIncorrect> deserializedModels)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeIncorrect> deserializedModels)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeIncorrect> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect value)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(ComposedDiscOptionalTypeIncorrectUnknown value)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect value)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(ComposedDiscOptionalTypeIncorrectUnknown value)? unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect value)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(ComposedDiscOptionalTypeIncorrectUnknown value)? unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ComposedDiscOptionalTypeIncorrectCopyWith<$Res> {
-  factory $ComposedDiscOptionalTypeIncorrectCopyWith(
-          ComposedDiscOptionalTypeIncorrect value,
-          $Res Function(ComposedDiscOptionalTypeIncorrect) then) =
-      _$ComposedDiscOptionalTypeIncorrectCopyWithImpl<$Res,
-          ComposedDiscOptionalTypeIncorrect>;
-}
-
-/// @nodoc
-class _$ComposedDiscOptionalTypeIncorrectCopyWithImpl<$Res,
-        $Val extends ComposedDiscOptionalTypeIncorrect>
-    implements $ComposedDiscOptionalTypeIncorrectCopyWith<$Res> {
-  _$ComposedDiscOptionalTypeIncorrectCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrectCopyWith<
+abstract class _$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImplCopyWith<
     $Res> {
-  factory _$$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrectCopyWith(
-          _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect value,
+  factory _$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImplCopyWith(
+          _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl
+              value,
           $Res Function(
-                  _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect)
+                  _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl)
               then) =
-      __$$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrectCopyWithImpl<
+      __$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImplCopyWithImpl<
           $Res>;
   @useResult
-  $Res call({DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue});
+  $Res call(
+      {OpenApiDiscOptionalTypeIncorrect openApiDiscOptionalTypeIncorrectValue});
 
-  $DiscOptionalTypeIncorrectCopyWith<$Res> get discOptionalTypeIncorrectValue;
+  $OpenApiDiscOptionalTypeIncorrectCopyWith<$Res>
+      get openApiDiscOptionalTypeIncorrectValue;
 }
 
 /// @nodoc
-class __$$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrectCopyWithImpl<
+class __$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImplCopyWithImpl<
         $Res>
-    extends _$ComposedDiscOptionalTypeIncorrectCopyWithImpl<$Res,
-        _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect>
+    extends _$OpenApiComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
+        _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl>
     implements
-        _$$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrectCopyWith<
+        _$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImplCopyWith<
             $Res> {
-  __$$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrectCopyWithImpl(
-      _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect _value,
+  __$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImplCopyWithImpl(
+      _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl
+          _value,
       $Res Function(
-              _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect)
+              _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl)
           _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? discOptionalTypeIncorrectValue = null,
+    Object? openApiDiscOptionalTypeIncorrectValue = null,
   }) {
-    return _then(_$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect(
-      discOptionalTypeIncorrectValue: null == discOptionalTypeIncorrectValue
-          ? _value.discOptionalTypeIncorrectValue
-          : discOptionalTypeIncorrectValue // ignore: cast_nullable_to_non_nullable
-              as DiscOptionalTypeIncorrect,
+    return _then(
+        _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl(
+      openApiDiscOptionalTypeIncorrectValue: null ==
+              openApiDiscOptionalTypeIncorrectValue
+          ? _value.openApiDiscOptionalTypeIncorrectValue
+          : openApiDiscOptionalTypeIncorrectValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiDiscOptionalTypeIncorrect,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $DiscOptionalTypeIncorrectCopyWith<$Res> get discOptionalTypeIncorrectValue {
-    return $DiscOptionalTypeIncorrectCopyWith<$Res>(
-        _value.discOptionalTypeIncorrectValue, (value) {
-      return _then(_value.copyWith(discOptionalTypeIncorrectValue: value));
+  $OpenApiDiscOptionalTypeIncorrectCopyWith<$Res>
+      get openApiDiscOptionalTypeIncorrectValue {
+    return $OpenApiDiscOptionalTypeIncorrectCopyWith<$Res>(
+        _value.openApiDiscOptionalTypeIncorrectValue, (value) {
+      return _then(
+          _value.copyWith(openApiDiscOptionalTypeIncorrectValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect
-    extends ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect {
-  const _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect(
-      {required this.discOptionalTypeIncorrectValue})
+class _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl
+    extends OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect {
+  const _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl(
+      {required this.openApiDiscOptionalTypeIncorrectValue})
       : super._();
 
   @override
-  final DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue;
+  final OpenApiDiscOptionalTypeIncorrect openApiDiscOptionalTypeIncorrectValue;
 
   @override
   String toString() {
-    return 'ComposedDiscOptionalTypeIncorrect.asDiscOptionalTypeIncorrect(discOptionalTypeIncorrectValue: $discOptionalTypeIncorrectValue)';
+    return 'OpenApiComposedDiscOptionalTypeInconsistent.asOpenApiDiscOptionalTypeIncorrect(openApiDiscOptionalTypeIncorrectValue: $openApiDiscOptionalTypeIncorrectValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect &&
-            (identical(other.discOptionalTypeIncorrectValue,
-                    discOptionalTypeIncorrectValue) ||
-                other.discOptionalTypeIncorrectValue ==
-                    discOptionalTypeIncorrectValue));
+                is _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl &&
+            (identical(other.openApiDiscOptionalTypeIncorrectValue,
+                    openApiDiscOptionalTypeIncorrectValue) ||
+                other.openApiDiscOptionalTypeIncorrectValue ==
+                    openApiDiscOptionalTypeIncorrectValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, discOptionalTypeIncorrectValue);
+  int get hashCode =>
+      Object.hash(runtimeType, openApiDiscOptionalTypeIncorrectValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrectCopyWith<
-          _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect>
+  _$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl>
       get copyWith =>
-          __$$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrectCopyWithImpl<
-                  _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect>(
+          __$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImplCopyWithImpl<
+                  _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl>(
               this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)
-        asDiscOptionalTypeIncorrect,
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)
+        asOpenApiDiscOptionalTypeIncorrect,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeIncorrect> deserializedModels)
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)
         unknown,
   }) {
-    return asDiscOptionalTypeIncorrect(discOptionalTypeIncorrectValue);
+    return asOpenApiDiscOptionalTypeIncorrect(
+        openApiDiscOptionalTypeIncorrectValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeIncorrect> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)?
         unknown,
   }) {
-    return asDiscOptionalTypeIncorrect?.call(discOptionalTypeIncorrectValue);
+    return asOpenApiDiscOptionalTypeIncorrect
+        ?.call(openApiDiscOptionalTypeIncorrectValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeIncorrect> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asDiscOptionalTypeIncorrect != null) {
-      return asDiscOptionalTypeIncorrect(discOptionalTypeIncorrectValue);
+    if (asOpenApiDiscOptionalTypeIncorrect != null) {
+      return asOpenApiDiscOptionalTypeIncorrect(
+          openApiDiscOptionalTypeIncorrectValue);
     }
     return orElse();
   }
@@ -5694,565 +5385,650 @@ class _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect value)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(ComposedDiscOptionalTypeIncorrectUnknown value)
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+                value)
+        asOpenApiDiscOptionalTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentUnknown value)
         unknown,
   }) {
-    return asDiscOptionalTypeIncorrect(this);
+    return asOpenApiDiscOptionalTypeIncorrect(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect value)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(ComposedDiscOptionalTypeIncorrectUnknown value)? unknown,
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult? Function(OpenApiComposedDiscOptionalTypeInconsistentUnknown value)?
+        unknown,
   }) {
-    return asDiscOptionalTypeIncorrect?.call(this);
+    return asOpenApiDiscOptionalTypeIncorrect?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect value)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(ComposedDiscOptionalTypeIncorrectUnknown value)? unknown,
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult Function(OpenApiComposedDiscOptionalTypeInconsistentUnknown value)?
+        unknown,
     required TResult orElse(),
   }) {
-    if (asDiscOptionalTypeIncorrect != null) {
-      return asDiscOptionalTypeIncorrect(this);
+    if (asOpenApiDiscOptionalTypeIncorrect != null) {
+      return asOpenApiDiscOptionalTypeIncorrect(this);
     }
     return orElse();
   }
 }
 
-abstract class ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect
-    extends ComposedDiscOptionalTypeIncorrect {
-  const factory ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect(
-          {required final DiscOptionalTypeIncorrect
-              discOptionalTypeIncorrectValue}) =
-      _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect;
-  const ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect._()
+abstract class OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+    extends OpenApiComposedDiscOptionalTypeInconsistent {
+  const factory OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect(
+          {required final OpenApiDiscOptionalTypeIncorrect
+              openApiDiscOptionalTypeIncorrectValue}) =
+      _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl;
+  const OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect._()
       : super._();
 
-  DiscOptionalTypeIncorrect get discOptionalTypeIncorrectValue;
+  OpenApiDiscOptionalTypeIncorrect get openApiDiscOptionalTypeIncorrectValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrectCopyWith<
-          _$ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect>
+  _$$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscOptionalTypeIncorrectUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscOptionalTypeIncorrectUnknownCopyWith(
-          _$ComposedDiscOptionalTypeIncorrectUnknown value,
-          $Res Function(_$ComposedDiscOptionalTypeIncorrectUnknown) then) =
-      __$$ComposedDiscOptionalTypeIncorrectUnknownCopyWithImpl<$Res>;
-  @useResult
-  $Res call(
-      {String message,
-      Map<String, dynamic> json,
-      DeserializationErrorType errorType,
-      List<Type> possibleTypes,
-      List<ComposedDiscOptionalTypeIncorrect> deserializedModels});
-}
-
-/// @nodoc
-class __$$ComposedDiscOptionalTypeIncorrectUnknownCopyWithImpl<$Res>
-    extends _$ComposedDiscOptionalTypeIncorrectCopyWithImpl<$Res,
-        _$ComposedDiscOptionalTypeIncorrectUnknown>
-    implements _$$ComposedDiscOptionalTypeIncorrectUnknownCopyWith<$Res> {
-  __$$ComposedDiscOptionalTypeIncorrectUnknownCopyWithImpl(
-      _$ComposedDiscOptionalTypeIncorrectUnknown _value,
-      $Res Function(_$ComposedDiscOptionalTypeIncorrectUnknown) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-    Object? json = null,
-    Object? errorType = null,
-    Object? possibleTypes = null,
-    Object? deserializedModels = null,
-  }) {
-    return _then(_$ComposedDiscOptionalTypeIncorrectUnknown(
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      json: null == json
-          ? _value._json
-          : json // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      errorType: null == errorType
-          ? _value.errorType
-          : errorType // ignore: cast_nullable_to_non_nullable
-              as DeserializationErrorType,
-      possibleTypes: null == possibleTypes
-          ? _value._possibleTypes
-          : possibleTypes // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
-      deserializedModels: null == deserializedModels
-          ? _value._deserializedModels
-          : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<ComposedDiscOptionalTypeIncorrect>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ComposedDiscOptionalTypeIncorrectUnknown
-    extends ComposedDiscOptionalTypeIncorrectUnknown {
-  const _$ComposedDiscOptionalTypeIncorrectUnknown(
-      {this.message = 'Json does not satisfy any available types',
-      required final Map<String, dynamic> json,
-      this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[DiscOptionalTypeIncorrect],
-      final List<ComposedDiscOptionalTypeIncorrect> deserializedModels =
-          const <ComposedDiscOptionalTypeIncorrect>[]})
-      : _json = json,
-        _possibleTypes = possibleTypes,
-        _deserializedModels = deserializedModels,
-        super._();
-
-  @override
-  @JsonKey()
-  final String message;
-  final Map<String, dynamic> _json;
-  @override
-  Map<String, dynamic> get json {
-    if (_json is EqualUnmodifiableMapView) return _json;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_json);
-  }
-
-  @override
-  @JsonKey()
-  final DeserializationErrorType errorType;
-  final List<Type> _possibleTypes;
-  @override
-  @JsonKey()
-  List<Type> get possibleTypes {
-    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_possibleTypes);
-  }
-
-  final List<ComposedDiscOptionalTypeIncorrect> _deserializedModels;
-  @override
-  @JsonKey()
-  List<ComposedDiscOptionalTypeIncorrect> get deserializedModels {
-    if (_deserializedModels is EqualUnmodifiableListView)
-      return _deserializedModels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_deserializedModels);
-  }
-
-  @override
-  String toString() {
-    return 'ComposedDiscOptionalTypeIncorrect.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscOptionalTypeIncorrectUnknown &&
-            (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other._json, _json) &&
-            (identical(other.errorType, errorType) ||
-                other.errorType == errorType) &&
-            const DeepCollectionEquality()
-                .equals(other._possibleTypes, _possibleTypes) &&
-            const DeepCollectionEquality()
-                .equals(other._deserializedModels, _deserializedModels));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      message,
-      const DeepCollectionEquality().hash(_json),
-      errorType,
-      const DeepCollectionEquality().hash(_possibleTypes),
-      const DeepCollectionEquality().hash(_deserializedModels));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ComposedDiscOptionalTypeIncorrectUnknownCopyWith<
-          _$ComposedDiscOptionalTypeIncorrectUnknown>
-      get copyWith => __$$ComposedDiscOptionalTypeIncorrectUnknownCopyWithImpl<
-          _$ComposedDiscOptionalTypeIncorrectUnknown>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeIncorrect> deserializedModels)
-        unknown,
-  }) {
-    return unknown(message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeIncorrect> deserializedModels)?
-        unknown,
-  }) {
-    return unknown?.call(
-        message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeIncorrect discOptionalTypeIncorrectValue)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscOptionalTypeIncorrect> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(
-          message, json, errorType, possibleTypes, deserializedModels);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect value)
-        asDiscOptionalTypeIncorrect,
-    required TResult Function(ComposedDiscOptionalTypeIncorrectUnknown value)
-        unknown,
-  }) {
-    return unknown(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect value)?
-        asDiscOptionalTypeIncorrect,
-    TResult? Function(ComposedDiscOptionalTypeIncorrectUnknown value)? unknown,
-  }) {
-    return unknown?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            ComposedDiscOptionalTypeIncorrectAsDiscOptionalTypeIncorrect value)?
-        asDiscOptionalTypeIncorrect,
-    TResult Function(ComposedDiscOptionalTypeIncorrectUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class ComposedDiscOptionalTypeIncorrectUnknown
-    extends ComposedDiscOptionalTypeIncorrect {
-  const factory ComposedDiscOptionalTypeIncorrectUnknown(
-          {final String message,
-          required final Map<String, dynamic> json,
-          final DeserializationErrorType errorType,
-          final List<Type> possibleTypes,
-          final List<ComposedDiscOptionalTypeIncorrect> deserializedModels}) =
-      _$ComposedDiscOptionalTypeIncorrectUnknown;
-  const ComposedDiscOptionalTypeIncorrectUnknown._() : super._();
-
-  String get message;
-  Map<String, dynamic> get json;
-  DeserializationErrorType get errorType;
-  List<Type> get possibleTypes;
-  List<ComposedDiscOptionalTypeIncorrect> get deserializedModels;
-  @JsonKey(ignore: true)
-  _$$ComposedDiscOptionalTypeIncorrectUnknownCopyWith<
-          _$ComposedDiscOptionalTypeIncorrectUnknown>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-mixin _$ComposedDiscRequiredInconsistent {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(ComposedDiscRequiredInconsistentAsFruitType value)
-        asFruitType,
-    required TResult Function(ComposedDiscRequiredInconsistentUnknown value)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(ComposedDiscRequiredInconsistentAsFruitType value)?
-        asFruitType,
-    TResult? Function(ComposedDiscRequiredInconsistentUnknown value)? unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(ComposedDiscRequiredInconsistentAsFruitType value)?
-        asFruitType,
-    TResult Function(ComposedDiscRequiredInconsistentUnknown value)? unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ComposedDiscRequiredInconsistentCopyWith<$Res> {
-  factory $ComposedDiscRequiredInconsistentCopyWith(
-          ComposedDiscRequiredInconsistent value,
-          $Res Function(ComposedDiscRequiredInconsistent) then) =
-      _$ComposedDiscRequiredInconsistentCopyWithImpl<$Res,
-          ComposedDiscRequiredInconsistent>;
-}
-
-/// @nodoc
-class _$ComposedDiscRequiredInconsistentCopyWithImpl<$Res,
-        $Val extends ComposedDiscRequiredInconsistent>
-    implements $ComposedDiscRequiredInconsistentCopyWith<$Res> {
-  _$ComposedDiscRequiredInconsistentCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWith<
+abstract class _$$OpenApiComposedDiscOptionalTypeInconsistentUnknownImplCopyWith<
     $Res> {
-  factory _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWith(
-          _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value,
+  factory _$$OpenApiComposedDiscOptionalTypeInconsistentUnknownImplCopyWith(
+          _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl value,
           $Res Function(
-                  _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect)
+                  _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl)
               then) =
-      __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
+      __$$OpenApiComposedDiscOptionalTypeInconsistentUnknownImplCopyWithImpl<
           $Res>;
   @useResult
-  $Res call({DiscOptionalTypeCorrect discOptionalTypeCorrectValue});
-
-  $DiscOptionalTypeCorrectCopyWith<$Res> get discOptionalTypeCorrectValue;
+  $Res call(
+      {String message,
+      Map<String, dynamic> json,
+      DeserializationErrorType errorType,
+      List<Type> possibleTypes,
+      List<OpenApiComposedDiscOptionalTypeInconsistent> deserializedModels});
 }
 
 /// @nodoc
-class __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
+class __$$OpenApiComposedDiscOptionalTypeInconsistentUnknownImplCopyWithImpl<
         $Res>
-    extends _$ComposedDiscRequiredInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect>
+    extends _$OpenApiComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
+        _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl>
     implements
-        _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWith<
+        _$$OpenApiComposedDiscOptionalTypeInconsistentUnknownImplCopyWith<
             $Res> {
-  __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWithImpl(
-      _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect _value,
-      $Res Function(_$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect)
+  __$$OpenApiComposedDiscOptionalTypeInconsistentUnknownImplCopyWithImpl(
+      _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl _value,
+      $Res Function(_$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl)
           _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? discOptionalTypeCorrectValue = null,
+    Object? message = null,
+    Object? json = null,
+    Object? errorType = null,
+    Object? possibleTypes = null,
+    Object? deserializedModels = null,
   }) {
-    return _then(_$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect(
-      discOptionalTypeCorrectValue: null == discOptionalTypeCorrectValue
-          ? _value.discOptionalTypeCorrectValue
-          : discOptionalTypeCorrectValue // ignore: cast_nullable_to_non_nullable
-              as DiscOptionalTypeCorrect,
+    return _then(_$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl(
+      message: null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      json: null == json
+          ? _value._json
+          : json // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      errorType: null == errorType
+          ? _value.errorType
+          : errorType // ignore: cast_nullable_to_non_nullable
+              as DeserializationErrorType,
+      possibleTypes: null == possibleTypes
+          ? _value._possibleTypes
+          : possibleTypes // ignore: cast_nullable_to_non_nullable
+              as List<Type>,
+      deserializedModels: null == deserializedModels
+          ? _value._deserializedModels
+          : deserializedModels // ignore: cast_nullable_to_non_nullable
+              as List<OpenApiComposedDiscOptionalTypeInconsistent>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl
+    extends OpenApiComposedDiscOptionalTypeInconsistentUnknown {
+  const _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl(
+      {this.message = 'Json does not satisfy any available types',
+      required final Map<String, dynamic> json,
+      this.errorType = DeserializationErrorType.UnKnownType,
+      final List<Type> possibleTypes = const <Type>[
+        OpenApiDiscOptionalTypeCorrect,
+        OpenApiDiscOptionalTypeIncorrect
+      ],
+      final List<OpenApiComposedDiscOptionalTypeInconsistent> deserializedModels =
+          const <OpenApiComposedDiscOptionalTypeInconsistent>[]})
+      : _json = json,
+        _possibleTypes = possibleTypes,
+        _deserializedModels = deserializedModels,
+        super._();
+
+  @override
+  @JsonKey()
+  final String message;
+  final Map<String, dynamic> _json;
+  @override
+  Map<String, dynamic> get json {
+    if (_json is EqualUnmodifiableMapView) return _json;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_json);
+  }
+
+  @override
+  @JsonKey()
+  final DeserializationErrorType errorType;
+  final List<Type> _possibleTypes;
+  @override
+  @JsonKey()
+  List<Type> get possibleTypes {
+    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_possibleTypes);
+  }
+
+  final List<OpenApiComposedDiscOptionalTypeInconsistent> _deserializedModels;
+  @override
+  @JsonKey()
+  List<OpenApiComposedDiscOptionalTypeInconsistent> get deserializedModels {
+    if (_deserializedModels is EqualUnmodifiableListView)
+      return _deserializedModels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_deserializedModels);
+  }
+
+  @override
+  String toString() {
+    return 'OpenApiComposedDiscOptionalTypeInconsistent.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality().equals(other._json, _json) &&
+            (identical(other.errorType, errorType) ||
+                other.errorType == errorType) &&
+            const DeepCollectionEquality()
+                .equals(other._possibleTypes, _possibleTypes) &&
+            const DeepCollectionEquality()
+                .equals(other._deserializedModels, _deserializedModels));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      message,
+      const DeepCollectionEquality().hash(_json),
+      errorType,
+      const DeepCollectionEquality().hash(_possibleTypes),
+      const DeepCollectionEquality().hash(_deserializedModels));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiComposedDiscOptionalTypeInconsistentUnknownImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscOptionalTypeInconsistentUnknownImplCopyWithImpl<
+                  _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)
+        asOpenApiDiscOptionalTypeIncorrect,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)
+        unknown,
+  }) {
+    return unknown(message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)?
+        unknown,
+  }) {
+    return unknown?.call(
+        message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeInconsistent>
+                deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(
+          message, json, errorType, possibleTypes, deserializedModels);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+                value)
+        asOpenApiDiscOptionalTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentUnknown value)
+        unknown,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult? Function(OpenApiComposedDiscOptionalTypeInconsistentUnknown value)?
+        unknown,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiComposedDiscOptionalTypeInconsistentAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult Function(OpenApiComposedDiscOptionalTypeInconsistentUnknown value)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiComposedDiscOptionalTypeInconsistentUnknown
+    extends OpenApiComposedDiscOptionalTypeInconsistent {
+  const factory OpenApiComposedDiscOptionalTypeInconsistentUnknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<OpenApiComposedDiscOptionalTypeInconsistent>
+              deserializedModels}) =
+      _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl;
+  const OpenApiComposedDiscOptionalTypeInconsistentUnknown._() : super._();
+
+  String get message;
+  Map<String, dynamic> get json;
+  DeserializationErrorType get errorType;
+  List<Type> get possibleTypes;
+  List<OpenApiComposedDiscOptionalTypeInconsistent> get deserializedModels;
+  @JsonKey(ignore: true)
+  _$$OpenApiComposedDiscOptionalTypeInconsistentUnknownImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeInconsistentUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+mixin _$OpenApiComposedDiscOptionalTypeIncorrect {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)
+        asOpenApiDiscOptionalTypeIncorrect,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect
+                value)
+        asOpenApiDiscOptionalTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeIncorrectUnknown value)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult? Function(OpenApiComposedDiscOptionalTypeIncorrectUnknown value)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult Function(OpenApiComposedDiscOptionalTypeIncorrectUnknown value)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiComposedDiscOptionalTypeIncorrectCopyWith<$Res> {
+  factory $OpenApiComposedDiscOptionalTypeIncorrectCopyWith(
+          OpenApiComposedDiscOptionalTypeIncorrect value,
+          $Res Function(OpenApiComposedDiscOptionalTypeIncorrect) then) =
+      _$OpenApiComposedDiscOptionalTypeIncorrectCopyWithImpl<$Res,
+          OpenApiComposedDiscOptionalTypeIncorrect>;
+}
+
+/// @nodoc
+class _$OpenApiComposedDiscOptionalTypeIncorrectCopyWithImpl<$Res,
+        $Val extends OpenApiComposedDiscOptionalTypeIncorrect>
+    implements $OpenApiComposedDiscOptionalTypeIncorrectCopyWith<$Res> {
+  _$OpenApiComposedDiscOptionalTypeIncorrectCopyWithImpl(
+      this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImplCopyWith(
+          _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl
+              value,
+          $Res Function(
+                  _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl)
+              then) =
+      __$$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call(
+      {OpenApiDiscOptionalTypeIncorrect openApiDiscOptionalTypeIncorrectValue});
+
+  $OpenApiDiscOptionalTypeIncorrectCopyWith<$Res>
+      get openApiDiscOptionalTypeIncorrectValue;
+}
+
+/// @nodoc
+class __$$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiComposedDiscOptionalTypeIncorrectCopyWithImpl<$Res,
+        _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl>
+    implements
+        _$$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImplCopyWith<
+            $Res> {
+  __$$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImplCopyWithImpl(
+      _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl
+          _value,
+      $Res Function(
+              _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiDiscOptionalTypeIncorrectValue = null,
+  }) {
+    return _then(
+        _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl(
+      openApiDiscOptionalTypeIncorrectValue: null ==
+              openApiDiscOptionalTypeIncorrectValue
+          ? _value.openApiDiscOptionalTypeIncorrectValue
+          : openApiDiscOptionalTypeIncorrectValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiDiscOptionalTypeIncorrect,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $DiscOptionalTypeCorrectCopyWith<$Res> get discOptionalTypeCorrectValue {
-    return $DiscOptionalTypeCorrectCopyWith<$Res>(
-        _value.discOptionalTypeCorrectValue, (value) {
-      return _then(_value.copyWith(discOptionalTypeCorrectValue: value));
+  $OpenApiDiscOptionalTypeIncorrectCopyWith<$Res>
+      get openApiDiscOptionalTypeIncorrectValue {
+    return $OpenApiDiscOptionalTypeIncorrectCopyWith<$Res>(
+        _value.openApiDiscOptionalTypeIncorrectValue, (value) {
+      return _then(
+          _value.copyWith(openApiDiscOptionalTypeIncorrectValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect
-    extends ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect {
-  const _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect(
-      {required this.discOptionalTypeCorrectValue})
+class _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl
+    extends OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect {
+  const _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl(
+      {required this.openApiDiscOptionalTypeIncorrectValue})
       : super._();
 
   @override
-  final DiscOptionalTypeCorrect discOptionalTypeCorrectValue;
+  final OpenApiDiscOptionalTypeIncorrect openApiDiscOptionalTypeIncorrectValue;
 
   @override
   String toString() {
-    return 'ComposedDiscRequiredInconsistent.asDiscOptionalTypeCorrect(discOptionalTypeCorrectValue: $discOptionalTypeCorrectValue)';
+    return 'OpenApiComposedDiscOptionalTypeIncorrect.asOpenApiDiscOptionalTypeIncorrect(openApiDiscOptionalTypeIncorrectValue: $openApiDiscOptionalTypeIncorrectValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect &&
-            (identical(other.discOptionalTypeCorrectValue,
-                    discOptionalTypeCorrectValue) ||
-                other.discOptionalTypeCorrectValue ==
-                    discOptionalTypeCorrectValue));
+                is _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl &&
+            (identical(other.openApiDiscOptionalTypeIncorrectValue,
+                    openApiDiscOptionalTypeIncorrectValue) ||
+                other.openApiDiscOptionalTypeIncorrectValue ==
+                    openApiDiscOptionalTypeIncorrectValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, discOptionalTypeCorrectValue);
+  int get hashCode =>
+      Object.hash(runtimeType, openApiDiscOptionalTypeIncorrectValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWith<
-          _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect>
+  _$$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl>
       get copyWith =>
-          __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWithImpl<
-                  _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect>(
+          __$$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImplCopyWithImpl<
+                  _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl>(
               this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)
+        asOpenApiDiscOptionalTypeIncorrect,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)
+            List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels)
         unknown,
   }) {
-    return asDiscOptionalTypeCorrect(discOptionalTypeCorrectValue);
+    return asOpenApiDiscOptionalTypeIncorrect(
+        openApiDiscOptionalTypeIncorrectValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
+    TResult? Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels)?
         unknown,
   }) {
-    return asDiscOptionalTypeCorrect?.call(discOptionalTypeCorrectValue);
+    return asOpenApiDiscOptionalTypeIncorrect
+        ?.call(openApiDiscOptionalTypeIncorrectValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
+    TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asDiscOptionalTypeCorrect != null) {
-      return asDiscOptionalTypeCorrect(discOptionalTypeCorrectValue);
+    if (asOpenApiDiscOptionalTypeIncorrect != null) {
+      return asOpenApiDiscOptionalTypeIncorrect(
+          openApiDiscOptionalTypeIncorrectValue);
     }
     return orElse();
   }
@@ -6261,1043 +6037,90 @@ class _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(ComposedDiscRequiredInconsistentAsFruitType value)
-        asFruitType,
-    required TResult Function(ComposedDiscRequiredInconsistentUnknown value)
+            OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect
+                value)
+        asOpenApiDiscOptionalTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeIncorrectUnknown value)
         unknown,
   }) {
-    return asDiscOptionalTypeCorrect(this);
+    return asOpenApiDiscOptionalTypeIncorrect(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(ComposedDiscRequiredInconsistentAsFruitType value)?
-        asFruitType,
-    TResult? Function(ComposedDiscRequiredInconsistentUnknown value)? unknown,
+            OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult? Function(OpenApiComposedDiscOptionalTypeIncorrectUnknown value)?
+        unknown,
   }) {
-    return asDiscOptionalTypeCorrect?.call(this);
+    return asOpenApiDiscOptionalTypeIncorrect?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(ComposedDiscRequiredInconsistentAsFruitType value)?
-        asFruitType,
-    TResult Function(ComposedDiscRequiredInconsistentUnknown value)? unknown,
+            OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult Function(OpenApiComposedDiscOptionalTypeIncorrectUnknown value)?
+        unknown,
     required TResult orElse(),
   }) {
-    if (asDiscOptionalTypeCorrect != null) {
-      return asDiscOptionalTypeCorrect(this);
+    if (asOpenApiDiscOptionalTypeIncorrect != null) {
+      return asOpenApiDiscOptionalTypeIncorrect(this);
     }
     return orElse();
   }
 }
 
-abstract class ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect
-    extends ComposedDiscRequiredInconsistent {
-  const factory ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect(
-          {required final DiscOptionalTypeCorrect
-              discOptionalTypeCorrectValue}) =
-      _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect;
-  const ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect._()
+abstract class OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect
+    extends OpenApiComposedDiscOptionalTypeIncorrect {
+  const factory OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect(
+          {required final OpenApiDiscOptionalTypeIncorrect
+              openApiDiscOptionalTypeIncorrectValue}) =
+      _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl;
+  const OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect._()
       : super._();
 
-  DiscOptionalTypeCorrect get discOptionalTypeCorrectValue;
+  OpenApiDiscOptionalTypeIncorrect get openApiDiscOptionalTypeIncorrectValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectCopyWith<
-          _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect>
+  _$$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith<$Res> {
-  factory _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith(
-          _$ComposedDiscRequiredInconsistentAsFruitType value,
-          $Res Function(_$ComposedDiscRequiredInconsistentAsFruitType) then) =
-      __$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWithImpl<$Res>;
-  @useResult
-  $Res call({FruitType fruitTypeValue});
-
-  $FruitTypeCopyWith<$Res> get fruitTypeValue;
-}
-
-/// @nodoc
-class __$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWithImpl<$Res>
-    extends _$ComposedDiscRequiredInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscRequiredInconsistentAsFruitType>
-    implements _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith<$Res> {
-  __$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWithImpl(
-      _$ComposedDiscRequiredInconsistentAsFruitType _value,
-      $Res Function(_$ComposedDiscRequiredInconsistentAsFruitType) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? fruitTypeValue = null,
-  }) {
-    return _then(_$ComposedDiscRequiredInconsistentAsFruitType(
-      fruitTypeValue: null == fruitTypeValue
-          ? _value.fruitTypeValue
-          : fruitTypeValue // ignore: cast_nullable_to_non_nullable
-              as FruitType,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $FruitTypeCopyWith<$Res> get fruitTypeValue {
-    return $FruitTypeCopyWith<$Res>(_value.fruitTypeValue, (value) {
-      return _then(_value.copyWith(fruitTypeValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$ComposedDiscRequiredInconsistentAsFruitType
-    extends ComposedDiscRequiredInconsistentAsFruitType {
-  const _$ComposedDiscRequiredInconsistentAsFruitType(
-      {required this.fruitTypeValue})
-      : super._();
-
-  @override
-  final FruitType fruitTypeValue;
-
-  @override
-  String toString() {
-    return 'ComposedDiscRequiredInconsistent.asFruitType(fruitTypeValue: $fruitTypeValue)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscRequiredInconsistentAsFruitType &&
-            (identical(other.fruitTypeValue, fruitTypeValue) ||
-                other.fruitTypeValue == fruitTypeValue));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, fruitTypeValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith<
-          _$ComposedDiscRequiredInconsistentAsFruitType>
-      get copyWith =>
-          __$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWithImpl<
-              _$ComposedDiscRequiredInconsistentAsFruitType>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)
-        unknown,
-  }) {
-    return asFruitType(fruitTypeValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)?
-        unknown,
-  }) {
-    return asFruitType?.call(fruitTypeValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitType != null) {
-      return asFruitType(fruitTypeValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(ComposedDiscRequiredInconsistentAsFruitType value)
-        asFruitType,
-    required TResult Function(ComposedDiscRequiredInconsistentUnknown value)
-        unknown,
-  }) {
-    return asFruitType(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(ComposedDiscRequiredInconsistentAsFruitType value)?
-        asFruitType,
-    TResult? Function(ComposedDiscRequiredInconsistentUnknown value)? unknown,
-  }) {
-    return asFruitType?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(ComposedDiscRequiredInconsistentAsFruitType value)?
-        asFruitType,
-    TResult Function(ComposedDiscRequiredInconsistentUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitType != null) {
-      return asFruitType(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class ComposedDiscRequiredInconsistentAsFruitType
-    extends ComposedDiscRequiredInconsistent {
-  const factory ComposedDiscRequiredInconsistentAsFruitType(
-          {required final FruitType fruitTypeValue}) =
-      _$ComposedDiscRequiredInconsistentAsFruitType;
-  const ComposedDiscRequiredInconsistentAsFruitType._() : super._();
-
-  FruitType get fruitTypeValue;
-  @JsonKey(ignore: true)
-  _$$ComposedDiscRequiredInconsistentAsFruitTypeCopyWith<
-          _$ComposedDiscRequiredInconsistentAsFruitType>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$ComposedDiscRequiredInconsistentUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscRequiredInconsistentUnknownCopyWith(
-          _$ComposedDiscRequiredInconsistentUnknown value,
-          $Res Function(_$ComposedDiscRequiredInconsistentUnknown) then) =
-      __$$ComposedDiscRequiredInconsistentUnknownCopyWithImpl<$Res>;
-  @useResult
-  $Res call(
-      {String message,
-      Map<String, dynamic> json,
-      DeserializationErrorType errorType,
-      List<Type> possibleTypes,
-      List<ComposedDiscRequiredInconsistent> deserializedModels});
-}
-
-/// @nodoc
-class __$$ComposedDiscRequiredInconsistentUnknownCopyWithImpl<$Res>
-    extends _$ComposedDiscRequiredInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscRequiredInconsistentUnknown>
-    implements _$$ComposedDiscRequiredInconsistentUnknownCopyWith<$Res> {
-  __$$ComposedDiscRequiredInconsistentUnknownCopyWithImpl(
-      _$ComposedDiscRequiredInconsistentUnknown _value,
-      $Res Function(_$ComposedDiscRequiredInconsistentUnknown) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-    Object? json = null,
-    Object? errorType = null,
-    Object? possibleTypes = null,
-    Object? deserializedModels = null,
-  }) {
-    return _then(_$ComposedDiscRequiredInconsistentUnknown(
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      json: null == json
-          ? _value._json
-          : json // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      errorType: null == errorType
-          ? _value.errorType
-          : errorType // ignore: cast_nullable_to_non_nullable
-              as DeserializationErrorType,
-      possibleTypes: null == possibleTypes
-          ? _value._possibleTypes
-          : possibleTypes // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
-      deserializedModels: null == deserializedModels
-          ? _value._deserializedModels
-          : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<ComposedDiscRequiredInconsistent>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ComposedDiscRequiredInconsistentUnknown
-    extends ComposedDiscRequiredInconsistentUnknown {
-  const _$ComposedDiscRequiredInconsistentUnknown(
-      {this.message = 'Json does not satisfy any available types',
-      required final Map<String, dynamic> json,
-      this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[
-        DiscOptionalTypeCorrect,
-        FruitType
-      ],
-      final List<ComposedDiscRequiredInconsistent> deserializedModels =
-          const <ComposedDiscRequiredInconsistent>[]})
-      : _json = json,
-        _possibleTypes = possibleTypes,
-        _deserializedModels = deserializedModels,
-        super._();
-
-  @override
-  @JsonKey()
-  final String message;
-  final Map<String, dynamic> _json;
-  @override
-  Map<String, dynamic> get json {
-    if (_json is EqualUnmodifiableMapView) return _json;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_json);
-  }
-
-  @override
-  @JsonKey()
-  final DeserializationErrorType errorType;
-  final List<Type> _possibleTypes;
-  @override
-  @JsonKey()
-  List<Type> get possibleTypes {
-    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_possibleTypes);
-  }
-
-  final List<ComposedDiscRequiredInconsistent> _deserializedModels;
-  @override
-  @JsonKey()
-  List<ComposedDiscRequiredInconsistent> get deserializedModels {
-    if (_deserializedModels is EqualUnmodifiableListView)
-      return _deserializedModels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_deserializedModels);
-  }
-
-  @override
-  String toString() {
-    return 'ComposedDiscRequiredInconsistent.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscRequiredInconsistentUnknown &&
-            (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other._json, _json) &&
-            (identical(other.errorType, errorType) ||
-                other.errorType == errorType) &&
-            const DeepCollectionEquality()
-                .equals(other._possibleTypes, _possibleTypes) &&
-            const DeepCollectionEquality()
-                .equals(other._deserializedModels, _deserializedModels));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      message,
-      const DeepCollectionEquality().hash(_json),
-      errorType,
-      const DeepCollectionEquality().hash(_possibleTypes),
-      const DeepCollectionEquality().hash(_deserializedModels));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ComposedDiscRequiredInconsistentUnknownCopyWith<
-          _$ComposedDiscRequiredInconsistentUnknown>
-      get copyWith => __$$ComposedDiscRequiredInconsistentUnknownCopyWithImpl<
-          _$ComposedDiscRequiredInconsistentUnknown>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            DiscOptionalTypeCorrect discOptionalTypeCorrectValue)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)
-        unknown,
-  }) {
-    return unknown(message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)?
-        unknown,
-  }) {
-    return unknown?.call(
-        message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscOptionalTypeCorrect discOptionalTypeCorrectValue)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscRequiredInconsistent> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(
-          message, json, errorType, possibleTypes, deserializedModels);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)
-        asDiscOptionalTypeCorrect,
-    required TResult Function(ComposedDiscRequiredInconsistentAsFruitType value)
-        asFruitType,
-    required TResult Function(ComposedDiscRequiredInconsistentUnknown value)
-        unknown,
-  }) {
-    return unknown(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult? Function(ComposedDiscRequiredInconsistentAsFruitType value)?
-        asFruitType,
-    TResult? Function(ComposedDiscRequiredInconsistentUnknown value)? unknown,
-  }) {
-    return unknown?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect value)?
-        asDiscOptionalTypeCorrect,
-    TResult Function(ComposedDiscRequiredInconsistentAsFruitType value)?
-        asFruitType,
-    TResult Function(ComposedDiscRequiredInconsistentUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class ComposedDiscRequiredInconsistentUnknown
-    extends ComposedDiscRequiredInconsistent {
-  const factory ComposedDiscRequiredInconsistentUnknown(
-          {final String message,
-          required final Map<String, dynamic> json,
-          final DeserializationErrorType errorType,
-          final List<Type> possibleTypes,
-          final List<ComposedDiscRequiredInconsistent> deserializedModels}) =
-      _$ComposedDiscRequiredInconsistentUnknown;
-  const ComposedDiscRequiredInconsistentUnknown._() : super._();
-
-  String get message;
-  Map<String, dynamic> get json;
-  DeserializationErrorType get errorType;
-  List<Type> get possibleTypes;
-  List<ComposedDiscRequiredInconsistent> get deserializedModels;
-  @JsonKey(ignore: true)
-  _$$ComposedDiscRequiredInconsistentUnknownCopyWith<
-          _$ComposedDiscRequiredInconsistentUnknown>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-mixin _$ComposedDiscTypeInconsistent {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(DiscTypeIncorrect discTypeIncorrectValue)
-        asDiscTypeIncorrect,
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)
-        asDiscTypeIncorrect,
-    required TResult Function(ComposedDiscTypeInconsistentAsFruitType value)
-        asFruitType,
-    required TResult Function(ComposedDiscTypeInconsistentUnknown value)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult? Function(ComposedDiscTypeInconsistentAsFruitType value)?
-        asFruitType,
-    TResult? Function(ComposedDiscTypeInconsistentUnknown value)? unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult Function(ComposedDiscTypeInconsistentAsFruitType value)?
-        asFruitType,
-    TResult Function(ComposedDiscTypeInconsistentUnknown value)? unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ComposedDiscTypeInconsistentCopyWith<$Res> {
-  factory $ComposedDiscTypeInconsistentCopyWith(
-          ComposedDiscTypeInconsistent value,
-          $Res Function(ComposedDiscTypeInconsistent) then) =
-      _$ComposedDiscTypeInconsistentCopyWithImpl<$Res,
-          ComposedDiscTypeInconsistent>;
-}
-
-/// @nodoc
-class _$ComposedDiscTypeInconsistentCopyWithImpl<$Res,
-        $Val extends ComposedDiscTypeInconsistent>
-    implements $ComposedDiscTypeInconsistentCopyWith<$Res> {
-  _$ComposedDiscTypeInconsistentCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith<
+abstract class _$$OpenApiComposedDiscOptionalTypeIncorrectUnknownImplCopyWith<
     $Res> {
-  factory _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith(
-          _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect value,
-          $Res Function(_$ComposedDiscTypeInconsistentAsDiscTypeIncorrect)
+  factory _$$OpenApiComposedDiscOptionalTypeIncorrectUnknownImplCopyWith(
+          _$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl value,
+          $Res Function(_$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl)
               then) =
-      __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWithImpl<$Res>;
-  @useResult
-  $Res call({DiscTypeIncorrect discTypeIncorrectValue});
-
-  $DiscTypeIncorrectCopyWith<$Res> get discTypeIncorrectValue;
-}
-
-/// @nodoc
-class __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWithImpl<$Res>
-    extends _$ComposedDiscTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect>
-    implements
-        _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith<$Res> {
-  __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWithImpl(
-      _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect _value,
-      $Res Function(_$ComposedDiscTypeInconsistentAsDiscTypeIncorrect) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? discTypeIncorrectValue = null,
-  }) {
-    return _then(_$ComposedDiscTypeInconsistentAsDiscTypeIncorrect(
-      discTypeIncorrectValue: null == discTypeIncorrectValue
-          ? _value.discTypeIncorrectValue
-          : discTypeIncorrectValue // ignore: cast_nullable_to_non_nullable
-              as DiscTypeIncorrect,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $DiscTypeIncorrectCopyWith<$Res> get discTypeIncorrectValue {
-    return $DiscTypeIncorrectCopyWith<$Res>(_value.discTypeIncorrectValue,
-        (value) {
-      return _then(_value.copyWith(discTypeIncorrectValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect
-    extends ComposedDiscTypeInconsistentAsDiscTypeIncorrect {
-  const _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect(
-      {required this.discTypeIncorrectValue})
-      : super._();
-
-  @override
-  final DiscTypeIncorrect discTypeIncorrectValue;
-
-  @override
-  String toString() {
-    return 'ComposedDiscTypeInconsistent.asDiscTypeIncorrect(discTypeIncorrectValue: $discTypeIncorrectValue)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect &&
-            (identical(other.discTypeIncorrectValue, discTypeIncorrectValue) ||
-                other.discTypeIncorrectValue == discTypeIncorrectValue));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, discTypeIncorrectValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith<
-          _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect>
-      get copyWith =>
-          __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWithImpl<
-                  _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(DiscTypeIncorrect discTypeIncorrectValue)
-        asDiscTypeIncorrect,
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)
-        unknown,
-  }) {
-    return asDiscTypeIncorrect(discTypeIncorrectValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)?
-        unknown,
-  }) {
-    return asDiscTypeIncorrect?.call(discTypeIncorrectValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asDiscTypeIncorrect != null) {
-      return asDiscTypeIncorrect(discTypeIncorrectValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)
-        asDiscTypeIncorrect,
-    required TResult Function(ComposedDiscTypeInconsistentAsFruitType value)
-        asFruitType,
-    required TResult Function(ComposedDiscTypeInconsistentUnknown value)
-        unknown,
-  }) {
-    return asDiscTypeIncorrect(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult? Function(ComposedDiscTypeInconsistentAsFruitType value)?
-        asFruitType,
-    TResult? Function(ComposedDiscTypeInconsistentUnknown value)? unknown,
-  }) {
-    return asDiscTypeIncorrect?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult Function(ComposedDiscTypeInconsistentAsFruitType value)?
-        asFruitType,
-    TResult Function(ComposedDiscTypeInconsistentUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asDiscTypeIncorrect != null) {
-      return asDiscTypeIncorrect(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class ComposedDiscTypeInconsistentAsDiscTypeIncorrect
-    extends ComposedDiscTypeInconsistent {
-  const factory ComposedDiscTypeInconsistentAsDiscTypeIncorrect(
-          {required final DiscTypeIncorrect discTypeIncorrectValue}) =
-      _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect;
-  const ComposedDiscTypeInconsistentAsDiscTypeIncorrect._() : super._();
-
-  DiscTypeIncorrect get discTypeIncorrectValue;
-  @JsonKey(ignore: true)
-  _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectCopyWith<
-          _$ComposedDiscTypeInconsistentAsDiscTypeIncorrect>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith<$Res> {
-  factory _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith(
-          _$ComposedDiscTypeInconsistentAsFruitType value,
-          $Res Function(_$ComposedDiscTypeInconsistentAsFruitType) then) =
-      __$$ComposedDiscTypeInconsistentAsFruitTypeCopyWithImpl<$Res>;
-  @useResult
-  $Res call({FruitType fruitTypeValue});
-
-  $FruitTypeCopyWith<$Res> get fruitTypeValue;
-}
-
-/// @nodoc
-class __$$ComposedDiscTypeInconsistentAsFruitTypeCopyWithImpl<$Res>
-    extends _$ComposedDiscTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscTypeInconsistentAsFruitType>
-    implements _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith<$Res> {
-  __$$ComposedDiscTypeInconsistentAsFruitTypeCopyWithImpl(
-      _$ComposedDiscTypeInconsistentAsFruitType _value,
-      $Res Function(_$ComposedDiscTypeInconsistentAsFruitType) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? fruitTypeValue = null,
-  }) {
-    return _then(_$ComposedDiscTypeInconsistentAsFruitType(
-      fruitTypeValue: null == fruitTypeValue
-          ? _value.fruitTypeValue
-          : fruitTypeValue // ignore: cast_nullable_to_non_nullable
-              as FruitType,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $FruitTypeCopyWith<$Res> get fruitTypeValue {
-    return $FruitTypeCopyWith<$Res>(_value.fruitTypeValue, (value) {
-      return _then(_value.copyWith(fruitTypeValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$ComposedDiscTypeInconsistentAsFruitType
-    extends ComposedDiscTypeInconsistentAsFruitType {
-  const _$ComposedDiscTypeInconsistentAsFruitType(
-      {required this.fruitTypeValue})
-      : super._();
-
-  @override
-  final FruitType fruitTypeValue;
-
-  @override
-  String toString() {
-    return 'ComposedDiscTypeInconsistent.asFruitType(fruitTypeValue: $fruitTypeValue)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscTypeInconsistentAsFruitType &&
-            (identical(other.fruitTypeValue, fruitTypeValue) ||
-                other.fruitTypeValue == fruitTypeValue));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, fruitTypeValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith<
-          _$ComposedDiscTypeInconsistentAsFruitType>
-      get copyWith => __$$ComposedDiscTypeInconsistentAsFruitTypeCopyWithImpl<
-          _$ComposedDiscTypeInconsistentAsFruitType>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(DiscTypeIncorrect discTypeIncorrectValue)
-        asDiscTypeIncorrect,
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)
-        unknown,
-  }) {
-    return asFruitType(fruitTypeValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)?
-        unknown,
-  }) {
-    return asFruitType?.call(fruitTypeValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitType != null) {
-      return asFruitType(fruitTypeValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)
-        asDiscTypeIncorrect,
-    required TResult Function(ComposedDiscTypeInconsistentAsFruitType value)
-        asFruitType,
-    required TResult Function(ComposedDiscTypeInconsistentUnknown value)
-        unknown,
-  }) {
-    return asFruitType(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult? Function(ComposedDiscTypeInconsistentAsFruitType value)?
-        asFruitType,
-    TResult? Function(ComposedDiscTypeInconsistentUnknown value)? unknown,
-  }) {
-    return asFruitType?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult Function(ComposedDiscTypeInconsistentAsFruitType value)?
-        asFruitType,
-    TResult Function(ComposedDiscTypeInconsistentUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitType != null) {
-      return asFruitType(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class ComposedDiscTypeInconsistentAsFruitType
-    extends ComposedDiscTypeInconsistent {
-  const factory ComposedDiscTypeInconsistentAsFruitType(
-          {required final FruitType fruitTypeValue}) =
-      _$ComposedDiscTypeInconsistentAsFruitType;
-  const ComposedDiscTypeInconsistentAsFruitType._() : super._();
-
-  FruitType get fruitTypeValue;
-  @JsonKey(ignore: true)
-  _$$ComposedDiscTypeInconsistentAsFruitTypeCopyWith<
-          _$ComposedDiscTypeInconsistentAsFruitType>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$ComposedDiscTypeInconsistentUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscTypeInconsistentUnknownCopyWith(
-          _$ComposedDiscTypeInconsistentUnknown value,
-          $Res Function(_$ComposedDiscTypeInconsistentUnknown) then) =
-      __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl<$Res>;
+      __$$OpenApiComposedDiscOptionalTypeIncorrectUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<ComposedDiscTypeInconsistent> deserializedModels});
+      List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels});
 }
 
 /// @nodoc
-class __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl<$Res>
-    extends _$ComposedDiscTypeInconsistentCopyWithImpl<$Res,
-        _$ComposedDiscTypeInconsistentUnknown>
-    implements _$$ComposedDiscTypeInconsistentUnknownCopyWith<$Res> {
-  __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl(
-      _$ComposedDiscTypeInconsistentUnknown _value,
-      $Res Function(_$ComposedDiscTypeInconsistentUnknown) _then)
+class __$$OpenApiComposedDiscOptionalTypeIncorrectUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiComposedDiscOptionalTypeIncorrectCopyWithImpl<$Res,
+        _$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl>
+    implements
+        _$$OpenApiComposedDiscOptionalTypeIncorrectUnknownImplCopyWith<$Res> {
+  __$$OpenApiComposedDiscOptionalTypeIncorrectUnknownImplCopyWithImpl(
+      _$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl _value,
+      $Res Function(_$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl)
+          _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7309,7 +6132,7 @@ class __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$ComposedDiscTypeInconsistentUnknown(
+    return _then(_$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -7329,25 +6152,24 @@ class __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<ComposedDiscTypeInconsistent>,
+              as List<OpenApiComposedDiscOptionalTypeIncorrect>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$ComposedDiscTypeInconsistentUnknown
-    extends ComposedDiscTypeInconsistentUnknown {
-  const _$ComposedDiscTypeInconsistentUnknown(
+class _$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl
+    extends OpenApiComposedDiscOptionalTypeIncorrectUnknown {
+  const _$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
       final List<Type> possibleTypes = const <Type>[
-        DiscTypeIncorrect,
-        FruitType
+        OpenApiDiscOptionalTypeIncorrect
       ],
-      final List<ComposedDiscTypeInconsistent> deserializedModels =
-          const <ComposedDiscTypeInconsistent>[]})
+      final List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels =
+          const <OpenApiComposedDiscOptionalTypeIncorrect>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -7376,10 +6198,10 @@ class _$ComposedDiscTypeInconsistentUnknown
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<ComposedDiscTypeInconsistent> _deserializedModels;
+  final List<OpenApiComposedDiscOptionalTypeIncorrect> _deserializedModels;
   @override
   @JsonKey()
-  List<ComposedDiscTypeInconsistent> get deserializedModels {
+  List<OpenApiComposedDiscOptionalTypeIncorrect> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -7388,14 +6210,14 @@ class _$ComposedDiscTypeInconsistentUnknown
 
   @override
   String toString() {
-    return 'ComposedDiscTypeInconsistent.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiComposedDiscOptionalTypeIncorrect.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscTypeInconsistentUnknown &&
+            other is _$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -7418,23 +6240,26 @@ class _$ComposedDiscTypeInconsistentUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscTypeInconsistentUnknownCopyWith<
-          _$ComposedDiscTypeInconsistentUnknown>
-      get copyWith => __$$ComposedDiscTypeInconsistentUnknownCopyWithImpl<
-          _$ComposedDiscTypeInconsistentUnknown>(this, _$identity);
+  _$$OpenApiComposedDiscOptionalTypeIncorrectUnknownImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscOptionalTypeIncorrectUnknownImplCopyWithImpl<
+                  _$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(DiscTypeIncorrect discTypeIncorrectValue)
-        asDiscTypeIncorrect,
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
+    required TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)
+        asOpenApiDiscOptionalTypeIncorrect,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)
+            List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -7443,15 +6268,16 @@ class _$ComposedDiscTypeInconsistentUnknown
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
+    TResult? Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -7461,15 +6287,16 @@ class _$ComposedDiscTypeInconsistentUnknown
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
+    TResult Function(
+            OpenApiDiscOptionalTypeIncorrect
+                openApiDiscOptionalTypeIncorrectValue)?
+        asOpenApiDiscOptionalTypeIncorrect,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeInconsistent> deserializedModels)?
+            List<OpenApiComposedDiscOptionalTypeIncorrect> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -7484,11 +6311,11 @@ class _$ComposedDiscTypeInconsistentUnknown
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)
-        asDiscTypeIncorrect,
-    required TResult Function(ComposedDiscTypeInconsistentAsFruitType value)
-        asFruitType,
-    required TResult Function(ComposedDiscTypeInconsistentUnknown value)
+            OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect
+                value)
+        asOpenApiDiscOptionalTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscOptionalTypeIncorrectUnknown value)
         unknown,
   }) {
     return unknown(this);
@@ -7497,11 +6324,12 @@ class _$ComposedDiscTypeInconsistentUnknown
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult? Function(ComposedDiscTypeInconsistentAsFruitType value)?
-        asFruitType,
-    TResult? Function(ComposedDiscTypeInconsistentUnknown value)? unknown,
+    TResult? Function(
+            OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult? Function(OpenApiComposedDiscOptionalTypeIncorrectUnknown value)?
+        unknown,
   }) {
     return unknown?.call(this);
   }
@@ -7509,11 +6337,12 @@ class _$ComposedDiscTypeInconsistentUnknown
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ComposedDiscTypeInconsistentAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult Function(ComposedDiscTypeInconsistentAsFruitType value)?
-        asFruitType,
-    TResult Function(ComposedDiscTypeInconsistentUnknown value)? unknown,
+    TResult Function(
+            OpenApiComposedDiscOptionalTypeIncorrectAsOpenApiDiscOptionalTypeIncorrect
+                value)?
+        asOpenApiDiscOptionalTypeIncorrect,
+    TResult Function(OpenApiComposedDiscOptionalTypeIncorrectUnknown value)?
+        unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -7523,66 +6352,76 @@ class _$ComposedDiscTypeInconsistentUnknown
   }
 }
 
-abstract class ComposedDiscTypeInconsistentUnknown
-    extends ComposedDiscTypeInconsistent {
-  const factory ComposedDiscTypeInconsistentUnknown(
+abstract class OpenApiComposedDiscOptionalTypeIncorrectUnknown
+    extends OpenApiComposedDiscOptionalTypeIncorrect {
+  const factory OpenApiComposedDiscOptionalTypeIncorrectUnknown(
           {final String message,
           required final Map<String, dynamic> json,
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
-          final List<ComposedDiscTypeInconsistent> deserializedModels}) =
-      _$ComposedDiscTypeInconsistentUnknown;
-  const ComposedDiscTypeInconsistentUnknown._() : super._();
+          final List<OpenApiComposedDiscOptionalTypeIncorrect>
+              deserializedModels}) =
+      _$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl;
+  const OpenApiComposedDiscOptionalTypeIncorrectUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<ComposedDiscTypeInconsistent> get deserializedModels;
+  List<OpenApiComposedDiscOptionalTypeIncorrect> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$ComposedDiscTypeInconsistentUnknownCopyWith<
-          _$ComposedDiscTypeInconsistentUnknown>
+  _$$OpenApiComposedDiscOptionalTypeIncorrectUnknownImplCopyWith<
+          _$OpenApiComposedDiscOptionalTypeIncorrectUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$ComposedDiscTypeIncorrect {
+mixin _$OpenApiComposedDiscRequiredInconsistent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(DiscTypeIncorrect discTypeIncorrectValue)
-        asDiscTypeIncorrect,
+    required TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeIncorrect> deserializedModels)
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeIncorrect> deserializedModels)?
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeIncorrect> deserializedModels)?
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
@@ -7590,40 +6429,61 @@ mixin _$ComposedDiscTypeIncorrect {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscTypeIncorrectAsDiscTypeIncorrect value)
-        asDiscTypeIncorrect,
-    required TResult Function(ComposedDiscTypeIncorrectUnknown value) unknown,
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(
+            OpenApiComposedDiscRequiredInconsistentUnknown value)
+        unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ComposedDiscTypeIncorrectAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult? Function(ComposedDiscTypeIncorrectUnknown value)? unknown,
+    TResult? Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiComposedDiscRequiredInconsistentUnknown value)?
+        unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ComposedDiscTypeIncorrectAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult Function(ComposedDiscTypeIncorrectUnknown value)? unknown,
+    TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiComposedDiscRequiredInconsistentUnknown value)?
+        unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ComposedDiscTypeIncorrectCopyWith<$Res> {
-  factory $ComposedDiscTypeIncorrectCopyWith(ComposedDiscTypeIncorrect value,
-          $Res Function(ComposedDiscTypeIncorrect) then) =
-      _$ComposedDiscTypeIncorrectCopyWithImpl<$Res, ComposedDiscTypeIncorrect>;
+abstract class $OpenApiComposedDiscRequiredInconsistentCopyWith<$Res> {
+  factory $OpenApiComposedDiscRequiredInconsistentCopyWith(
+          OpenApiComposedDiscRequiredInconsistent value,
+          $Res Function(OpenApiComposedDiscRequiredInconsistent) then) =
+      _$OpenApiComposedDiscRequiredInconsistentCopyWithImpl<$Res,
+          OpenApiComposedDiscRequiredInconsistent>;
 }
 
 /// @nodoc
-class _$ComposedDiscTypeIncorrectCopyWithImpl<$Res,
-        $Val extends ComposedDiscTypeIncorrect>
-    implements $ComposedDiscTypeIncorrectCopyWith<$Res> {
-  _$ComposedDiscTypeIncorrectCopyWithImpl(this._value, this._then);
+class _$OpenApiComposedDiscRequiredInconsistentCopyWithImpl<$Res,
+        $Val extends OpenApiComposedDiscRequiredInconsistent>
+    implements $OpenApiComposedDiscRequiredInconsistentCopyWith<$Res> {
+  _$OpenApiComposedDiscRequiredInconsistentCopyWithImpl(
+      this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -7632,135 +6492,168 @@ class _$ComposedDiscTypeIncorrectCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscTypeIncorrectAsDiscTypeIncorrectCopyWith<$Res> {
-  factory _$$ComposedDiscTypeIncorrectAsDiscTypeIncorrectCopyWith(
-          _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect value,
-          $Res Function(_$ComposedDiscTypeIncorrectAsDiscTypeIncorrect) then) =
-      __$$ComposedDiscTypeIncorrectAsDiscTypeIncorrectCopyWithImpl<$Res>;
+abstract class _$$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWith(
+          _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl
+              value,
+          $Res Function(
+                  _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl)
+              then) =
+      __$$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl<
+          $Res>;
   @useResult
-  $Res call({DiscTypeIncorrect discTypeIncorrectValue});
+  $Res call(
+      {OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue});
 
-  $DiscTypeIncorrectCopyWith<$Res> get discTypeIncorrectValue;
+  $OpenApiDiscOptionalTypeCorrectCopyWith<$Res>
+      get openApiDiscOptionalTypeCorrectValue;
 }
 
 /// @nodoc
-class __$$ComposedDiscTypeIncorrectAsDiscTypeIncorrectCopyWithImpl<$Res>
-    extends _$ComposedDiscTypeIncorrectCopyWithImpl<$Res,
-        _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect>
-    implements _$$ComposedDiscTypeIncorrectAsDiscTypeIncorrectCopyWith<$Res> {
-  __$$ComposedDiscTypeIncorrectAsDiscTypeIncorrectCopyWithImpl(
-      _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect _value,
-      $Res Function(_$ComposedDiscTypeIncorrectAsDiscTypeIncorrect) _then)
+class __$$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiComposedDiscRequiredInconsistentCopyWithImpl<$Res,
+        _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl>
+    implements
+        _$$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
+            $Res> {
+  __$$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl(
+      _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl
+          _value,
+      $Res Function(
+              _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl)
+          _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? discTypeIncorrectValue = null,
+    Object? openApiDiscOptionalTypeCorrectValue = null,
   }) {
-    return _then(_$ComposedDiscTypeIncorrectAsDiscTypeIncorrect(
-      discTypeIncorrectValue: null == discTypeIncorrectValue
-          ? _value.discTypeIncorrectValue
-          : discTypeIncorrectValue // ignore: cast_nullable_to_non_nullable
-              as DiscTypeIncorrect,
+    return _then(
+        _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl(
+      openApiDiscOptionalTypeCorrectValue: null ==
+              openApiDiscOptionalTypeCorrectValue
+          ? _value.openApiDiscOptionalTypeCorrectValue
+          : openApiDiscOptionalTypeCorrectValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiDiscOptionalTypeCorrect,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $DiscTypeIncorrectCopyWith<$Res> get discTypeIncorrectValue {
-    return $DiscTypeIncorrectCopyWith<$Res>(_value.discTypeIncorrectValue,
-        (value) {
-      return _then(_value.copyWith(discTypeIncorrectValue: value));
+  $OpenApiDiscOptionalTypeCorrectCopyWith<$Res>
+      get openApiDiscOptionalTypeCorrectValue {
+    return $OpenApiDiscOptionalTypeCorrectCopyWith<$Res>(
+        _value.openApiDiscOptionalTypeCorrectValue, (value) {
+      return _then(_value.copyWith(openApiDiscOptionalTypeCorrectValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect
-    extends ComposedDiscTypeIncorrectAsDiscTypeIncorrect {
-  const _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect(
-      {required this.discTypeIncorrectValue})
+class _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl
+    extends OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect {
+  const _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl(
+      {required this.openApiDiscOptionalTypeCorrectValue})
       : super._();
 
   @override
-  final DiscTypeIncorrect discTypeIncorrectValue;
+  final OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue;
 
   @override
   String toString() {
-    return 'ComposedDiscTypeIncorrect.asDiscTypeIncorrect(discTypeIncorrectValue: $discTypeIncorrectValue)';
+    return 'OpenApiComposedDiscRequiredInconsistent.asOpenApiDiscOptionalTypeCorrect(openApiDiscOptionalTypeCorrectValue: $openApiDiscOptionalTypeCorrectValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect &&
-            (identical(other.discTypeIncorrectValue, discTypeIncorrectValue) ||
-                other.discTypeIncorrectValue == discTypeIncorrectValue));
+            other
+                is _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl &&
+            (identical(other.openApiDiscOptionalTypeCorrectValue,
+                    openApiDiscOptionalTypeCorrectValue) ||
+                other.openApiDiscOptionalTypeCorrectValue ==
+                    openApiDiscOptionalTypeCorrectValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, discTypeIncorrectValue);
+  int get hashCode =>
+      Object.hash(runtimeType, openApiDiscOptionalTypeCorrectValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscTypeIncorrectAsDiscTypeIncorrectCopyWith<
-          _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect>
+  _$$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
+          _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl>
       get copyWith =>
-          __$$ComposedDiscTypeIncorrectAsDiscTypeIncorrectCopyWithImpl<
-              _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect>(this, _$identity);
+          __$$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWithImpl<
+                  _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(DiscTypeIncorrect discTypeIncorrectValue)
-        asDiscTypeIncorrect,
+    required TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeIncorrect> deserializedModels)
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)
         unknown,
   }) {
-    return asDiscTypeIncorrect(discTypeIncorrectValue);
+    return asOpenApiDiscOptionalTypeCorrect(
+        openApiDiscOptionalTypeCorrectValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeIncorrect> deserializedModels)?
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)?
         unknown,
   }) {
-    return asDiscTypeIncorrect?.call(discTypeIncorrectValue);
+    return asOpenApiDiscOptionalTypeCorrect
+        ?.call(openApiDiscOptionalTypeCorrectValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeIncorrect> deserializedModels)?
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asDiscTypeIncorrect != null) {
-      return asDiscTypeIncorrect(discTypeIncorrectValue);
+    if (asOpenApiDiscOptionalTypeCorrect != null) {
+      return asOpenApiDiscOptionalTypeCorrect(
+          openApiDiscOptionalTypeCorrectValue);
     }
     return orElse();
   }
@@ -7769,75 +6662,322 @@ class _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscTypeIncorrectAsDiscTypeIncorrect value)
-        asDiscTypeIncorrect,
-    required TResult Function(ComposedDiscTypeIncorrectUnknown value) unknown,
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(
+            OpenApiComposedDiscRequiredInconsistentUnknown value)
+        unknown,
   }) {
-    return asDiscTypeIncorrect(this);
+    return asOpenApiDiscOptionalTypeCorrect(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ComposedDiscTypeIncorrectAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult? Function(ComposedDiscTypeIncorrectUnknown value)? unknown,
+    TResult? Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiComposedDiscRequiredInconsistentUnknown value)?
+        unknown,
   }) {
-    return asDiscTypeIncorrect?.call(this);
+    return asOpenApiDiscOptionalTypeCorrect?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ComposedDiscTypeIncorrectAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult Function(ComposedDiscTypeIncorrectUnknown value)? unknown,
+    TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiComposedDiscRequiredInconsistentUnknown value)?
+        unknown,
     required TResult orElse(),
   }) {
-    if (asDiscTypeIncorrect != null) {
-      return asDiscTypeIncorrect(this);
+    if (asOpenApiDiscOptionalTypeCorrect != null) {
+      return asOpenApiDiscOptionalTypeCorrect(this);
     }
     return orElse();
   }
 }
 
-abstract class ComposedDiscTypeIncorrectAsDiscTypeIncorrect
-    extends ComposedDiscTypeIncorrect {
-  const factory ComposedDiscTypeIncorrectAsDiscTypeIncorrect(
-          {required final DiscTypeIncorrect discTypeIncorrectValue}) =
-      _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect;
-  const ComposedDiscTypeIncorrectAsDiscTypeIncorrect._() : super._();
+abstract class OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+    extends OpenApiComposedDiscRequiredInconsistent {
+  const factory OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect(
+          {required final OpenApiDiscOptionalTypeCorrect
+              openApiDiscOptionalTypeCorrectValue}) =
+      _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl;
+  const OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect._()
+      : super._();
 
-  DiscTypeIncorrect get discTypeIncorrectValue;
+  OpenApiDiscOptionalTypeCorrect get openApiDiscOptionalTypeCorrectValue;
   @JsonKey(ignore: true)
-  _$$ComposedDiscTypeIncorrectAsDiscTypeIncorrectCopyWith<
-          _$ComposedDiscTypeIncorrectAsDiscTypeIncorrect>
+  _$$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImplCopyWith<
+          _$OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ComposedDiscTypeIncorrectUnknownCopyWith<$Res> {
-  factory _$$ComposedDiscTypeIncorrectUnknownCopyWith(
-          _$ComposedDiscTypeIncorrectUnknown value,
-          $Res Function(_$ComposedDiscTypeIncorrectUnknown) then) =
-      __$$ComposedDiscTypeIncorrectUnknownCopyWithImpl<$Res>;
+abstract class _$$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImplCopyWith(
+          _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl value,
+          $Res Function(
+                  _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl)
+              then) =
+      __$$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call({OpenApiFruitType openApiFruitTypeValue});
+
+  $OpenApiFruitTypeCopyWith<$Res> get openApiFruitTypeValue;
+}
+
+/// @nodoc
+class __$$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiComposedDiscRequiredInconsistentCopyWithImpl<$Res,
+        _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl>
+    implements
+        _$$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImplCopyWith<
+            $Res> {
+  __$$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImplCopyWithImpl(
+      _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl _value,
+      $Res Function(
+              _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiFruitTypeValue = null,
+  }) {
+    return _then(
+        _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl(
+      openApiFruitTypeValue: null == openApiFruitTypeValue
+          ? _value.openApiFruitTypeValue
+          : openApiFruitTypeValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitType,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiFruitTypeCopyWith<$Res> get openApiFruitTypeValue {
+    return $OpenApiFruitTypeCopyWith<$Res>(_value.openApiFruitTypeValue,
+        (value) {
+      return _then(_value.copyWith(openApiFruitTypeValue: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl
+    extends OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType {
+  const _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl(
+      {required this.openApiFruitTypeValue})
+      : super._();
+
+  @override
+  final OpenApiFruitType openApiFruitTypeValue;
+
+  @override
+  String toString() {
+    return 'OpenApiComposedDiscRequiredInconsistent.asOpenApiFruitType(openApiFruitTypeValue: $openApiFruitTypeValue)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other
+                is _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl &&
+            (identical(other.openApiFruitTypeValue, openApiFruitTypeValue) ||
+                other.openApiFruitTypeValue == openApiFruitTypeValue));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, openApiFruitTypeValue);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImplCopyWith<
+          _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImplCopyWithImpl<
+                  _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiFruitType(openApiFruitTypeValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiFruitType?.call(openApiFruitTypeValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitType != null) {
+      return asOpenApiFruitType(openApiFruitTypeValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(
+            OpenApiComposedDiscRequiredInconsistentUnknown value)
+        unknown,
+  }) {
+    return asOpenApiFruitType(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiComposedDiscRequiredInconsistentUnknown value)?
+        unknown,
+  }) {
+    return asOpenApiFruitType?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiComposedDiscRequiredInconsistentUnknown value)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitType != null) {
+      return asOpenApiFruitType(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType
+    extends OpenApiComposedDiscRequiredInconsistent {
+  const factory OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType(
+          {required final OpenApiFruitType openApiFruitTypeValue}) =
+      _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl;
+  const OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType._()
+      : super._();
+
+  OpenApiFruitType get openApiFruitTypeValue;
+  @JsonKey(ignore: true)
+  _$$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImplCopyWith<
+          _$OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitTypeImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiComposedDiscRequiredInconsistentUnknownImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscRequiredInconsistentUnknownImplCopyWith(
+          _$OpenApiComposedDiscRequiredInconsistentUnknownImpl value,
+          $Res Function(_$OpenApiComposedDiscRequiredInconsistentUnknownImpl)
+              then) =
+      __$$OpenApiComposedDiscRequiredInconsistentUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<ComposedDiscTypeIncorrect> deserializedModels});
+      List<OpenApiComposedDiscRequiredInconsistent> deserializedModels});
 }
 
 /// @nodoc
-class __$$ComposedDiscTypeIncorrectUnknownCopyWithImpl<$Res>
-    extends _$ComposedDiscTypeIncorrectCopyWithImpl<$Res,
-        _$ComposedDiscTypeIncorrectUnknown>
-    implements _$$ComposedDiscTypeIncorrectUnknownCopyWith<$Res> {
-  __$$ComposedDiscTypeIncorrectUnknownCopyWithImpl(
-      _$ComposedDiscTypeIncorrectUnknown _value,
-      $Res Function(_$ComposedDiscTypeIncorrectUnknown) _then)
+class __$$OpenApiComposedDiscRequiredInconsistentUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiComposedDiscRequiredInconsistentCopyWithImpl<$Res,
+        _$OpenApiComposedDiscRequiredInconsistentUnknownImpl>
+    implements
+        _$$OpenApiComposedDiscRequiredInconsistentUnknownImplCopyWith<$Res> {
+  __$$OpenApiComposedDiscRequiredInconsistentUnknownImplCopyWithImpl(
+      _$OpenApiComposedDiscRequiredInconsistentUnknownImpl _value,
+      $Res Function(_$OpenApiComposedDiscRequiredInconsistentUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7849,7 +6989,7 @@ class __$$ComposedDiscTypeIncorrectUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$ComposedDiscTypeIncorrectUnknown(
+    return _then(_$OpenApiComposedDiscRequiredInconsistentUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -7869,22 +7009,25 @@ class __$$ComposedDiscTypeIncorrectUnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<ComposedDiscTypeIncorrect>,
+              as List<OpenApiComposedDiscRequiredInconsistent>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$ComposedDiscTypeIncorrectUnknown
-    extends ComposedDiscTypeIncorrectUnknown {
-  const _$ComposedDiscTypeIncorrectUnknown(
+class _$OpenApiComposedDiscRequiredInconsistentUnknownImpl
+    extends OpenApiComposedDiscRequiredInconsistentUnknown {
+  const _$OpenApiComposedDiscRequiredInconsistentUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[DiscTypeIncorrect],
-      final List<ComposedDiscTypeIncorrect> deserializedModels =
-          const <ComposedDiscTypeIncorrect>[]})
+      final List<Type> possibleTypes = const <Type>[
+        OpenApiDiscOptionalTypeCorrect,
+        OpenApiFruitType
+      ],
+      final List<OpenApiComposedDiscRequiredInconsistent> deserializedModels =
+          const <OpenApiComposedDiscRequiredInconsistent>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -7913,10 +7056,10 @@ class _$ComposedDiscTypeIncorrectUnknown
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<ComposedDiscTypeIncorrect> _deserializedModels;
+  final List<OpenApiComposedDiscRequiredInconsistent> _deserializedModels;
   @override
   @JsonKey()
-  List<ComposedDiscTypeIncorrect> get deserializedModels {
+  List<OpenApiComposedDiscRequiredInconsistent> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -7925,14 +7068,14 @@ class _$ComposedDiscTypeIncorrectUnknown
 
   @override
   String toString() {
-    return 'ComposedDiscTypeIncorrect.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiComposedDiscRequiredInconsistent.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ComposedDiscTypeIncorrectUnknown &&
+            other is _$OpenApiComposedDiscRequiredInconsistentUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -7955,22 +7098,27 @@ class _$ComposedDiscTypeIncorrectUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ComposedDiscTypeIncorrectUnknownCopyWith<
-          _$ComposedDiscTypeIncorrectUnknown>
-      get copyWith => __$$ComposedDiscTypeIncorrectUnknownCopyWithImpl<
-          _$ComposedDiscTypeIncorrectUnknown>(this, _$identity);
+  _$$OpenApiComposedDiscRequiredInconsistentUnknownImplCopyWith<
+          _$OpenApiComposedDiscRequiredInconsistentUnknownImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscRequiredInconsistentUnknownImplCopyWithImpl<
+                  _$OpenApiComposedDiscRequiredInconsistentUnknownImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(DiscTypeIncorrect discTypeIncorrectValue)
-        asDiscTypeIncorrect,
+    required TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeIncorrect> deserializedModels)
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -7979,14 +7127,17 @@ class _$ComposedDiscTypeIncorrectUnknown
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
+    TResult? Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeIncorrect> deserializedModels)?
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -7996,14 +7147,17 @@ class _$ComposedDiscTypeIncorrectUnknown
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(DiscTypeIncorrect discTypeIncorrectValue)?
-        asDiscTypeIncorrect,
+    TResult Function(
+            OpenApiDiscOptionalTypeCorrect openApiDiscOptionalTypeCorrectValue)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<ComposedDiscTypeIncorrect> deserializedModels)?
+            List<OpenApiComposedDiscRequiredInconsistent> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -8018,9 +7172,15 @@ class _$ComposedDiscTypeIncorrectUnknown
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            ComposedDiscTypeIncorrectAsDiscTypeIncorrect value)
-        asDiscTypeIncorrect,
-    required TResult Function(ComposedDiscTypeIncorrectUnknown value) unknown,
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)
+        asOpenApiDiscOptionalTypeCorrect,
+    required TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(
+            OpenApiComposedDiscRequiredInconsistentUnknown value)
+        unknown,
   }) {
     return unknown(this);
   }
@@ -8028,9 +7188,15 @@ class _$ComposedDiscTypeIncorrectUnknown
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ComposedDiscTypeIncorrectAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult? Function(ComposedDiscTypeIncorrectUnknown value)? unknown,
+    TResult? Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult? Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiComposedDiscRequiredInconsistentUnknown value)?
+        unknown,
   }) {
     return unknown?.call(this);
   }
@@ -8038,9 +7204,15 @@ class _$ComposedDiscTypeIncorrectUnknown
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ComposedDiscTypeIncorrectAsDiscTypeIncorrect value)?
-        asDiscTypeIncorrect,
-    TResult Function(ComposedDiscTypeIncorrectUnknown value)? unknown,
+    TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiDiscOptionalTypeCorrect
+                value)?
+        asOpenApiDiscOptionalTypeCorrect,
+    TResult Function(
+            OpenApiComposedDiscRequiredInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiComposedDiscRequiredInconsistentUnknown value)?
+        unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -8050,58 +7222,1453 @@ class _$ComposedDiscTypeIncorrectUnknown
   }
 }
 
-abstract class ComposedDiscTypeIncorrectUnknown
-    extends ComposedDiscTypeIncorrect {
-  const factory ComposedDiscTypeIncorrectUnknown(
+abstract class OpenApiComposedDiscRequiredInconsistentUnknown
+    extends OpenApiComposedDiscRequiredInconsistent {
+  const factory OpenApiComposedDiscRequiredInconsistentUnknown(
           {final String message,
           required final Map<String, dynamic> json,
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
-          final List<ComposedDiscTypeIncorrect> deserializedModels}) =
-      _$ComposedDiscTypeIncorrectUnknown;
-  const ComposedDiscTypeIncorrectUnknown._() : super._();
+          final List<OpenApiComposedDiscRequiredInconsistent>
+              deserializedModels}) =
+      _$OpenApiComposedDiscRequiredInconsistentUnknownImpl;
+  const OpenApiComposedDiscRequiredInconsistentUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<ComposedDiscTypeIncorrect> get deserializedModels;
+  List<OpenApiComposedDiscRequiredInconsistent> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$ComposedDiscTypeIncorrectUnknownCopyWith<
-          _$ComposedDiscTypeIncorrectUnknown>
+  _$$OpenApiComposedDiscRequiredInconsistentUnknownImplCopyWith<
+          _$OpenApiComposedDiscRequiredInconsistentUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
-DiscMissingFromProperties _$DiscMissingFromPropertiesFromJson(
+/// @nodoc
+mixin _$OpenApiComposedDiscTypeInconsistent {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect value)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiComposedDiscTypeInconsistentUnknown value)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect
+                value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiComposedDiscTypeInconsistentUnknown value)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect
+                value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiComposedDiscTypeInconsistentUnknown value)? unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiComposedDiscTypeInconsistentCopyWith<$Res> {
+  factory $OpenApiComposedDiscTypeInconsistentCopyWith(
+          OpenApiComposedDiscTypeInconsistent value,
+          $Res Function(OpenApiComposedDiscTypeInconsistent) then) =
+      _$OpenApiComposedDiscTypeInconsistentCopyWithImpl<$Res,
+          OpenApiComposedDiscTypeInconsistent>;
+}
+
+/// @nodoc
+class _$OpenApiComposedDiscTypeInconsistentCopyWithImpl<$Res,
+        $Val extends OpenApiComposedDiscTypeInconsistent>
+    implements $OpenApiComposedDiscTypeInconsistentCopyWith<$Res> {
+  _$OpenApiComposedDiscTypeInconsistentCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImplCopyWith(
+          _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl value,
+          $Res Function(
+                  _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl)
+              then) =
+      __$$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call({OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue});
+
+  $OpenApiDiscTypeIncorrectCopyWith<$Res> get openApiDiscTypeIncorrectValue;
+}
+
+/// @nodoc
+class __$$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiComposedDiscTypeInconsistentCopyWithImpl<$Res,
+        _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl>
+    implements
+        _$$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImplCopyWith<
+            $Res> {
+  __$$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImplCopyWithImpl(
+      _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl
+          _value,
+      $Res Function(
+              _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiDiscTypeIncorrectValue = null,
+  }) {
+    return _then(
+        _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl(
+      openApiDiscTypeIncorrectValue: null == openApiDiscTypeIncorrectValue
+          ? _value.openApiDiscTypeIncorrectValue
+          : openApiDiscTypeIncorrectValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiDiscTypeIncorrect,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiDiscTypeIncorrectCopyWith<$Res> get openApiDiscTypeIncorrectValue {
+    return $OpenApiDiscTypeIncorrectCopyWith<$Res>(
+        _value.openApiDiscTypeIncorrectValue, (value) {
+      return _then(_value.copyWith(openApiDiscTypeIncorrectValue: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl
+    extends OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect {
+  const _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl(
+      {required this.openApiDiscTypeIncorrectValue})
+      : super._();
+
+  @override
+  final OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue;
+
+  @override
+  String toString() {
+    return 'OpenApiComposedDiscTypeInconsistent.asOpenApiDiscTypeIncorrect(openApiDiscTypeIncorrectValue: $openApiDiscTypeIncorrectValue)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other
+                is _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl &&
+            (identical(other.openApiDiscTypeIncorrectValue,
+                    openApiDiscTypeIncorrectValue) ||
+                other.openApiDiscTypeIncorrectValue ==
+                    openApiDiscTypeIncorrectValue));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, openApiDiscTypeIncorrectValue);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImplCopyWith<
+          _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImplCopyWithImpl<
+                  _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiDiscTypeIncorrect(openApiDiscTypeIncorrectValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiDiscTypeIncorrect?.call(openApiDiscTypeIncorrectValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiDiscTypeIncorrect != null) {
+      return asOpenApiDiscTypeIncorrect(openApiDiscTypeIncorrectValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect value)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiComposedDiscTypeInconsistentUnknown value)
+        unknown,
+  }) {
+    return asOpenApiDiscTypeIncorrect(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect
+                value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiComposedDiscTypeInconsistentUnknown value)?
+        unknown,
+  }) {
+    return asOpenApiDiscTypeIncorrect?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect
+                value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiComposedDiscTypeInconsistentUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiDiscTypeIncorrect != null) {
+      return asOpenApiDiscTypeIncorrect(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect
+    extends OpenApiComposedDiscTypeInconsistent {
+  const factory OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect(
+          {required final OpenApiDiscTypeIncorrect
+              openApiDiscTypeIncorrectValue}) =
+      _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl;
+  const OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect._()
+      : super._();
+
+  OpenApiDiscTypeIncorrect get openApiDiscTypeIncorrectValue;
+  @JsonKey(ignore: true)
+  _$$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImplCopyWith<
+          _$OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrectImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImplCopyWith(
+          _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl value,
+          $Res Function(
+                  _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl)
+              then) =
+      __$$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call({OpenApiFruitType openApiFruitTypeValue});
+
+  $OpenApiFruitTypeCopyWith<$Res> get openApiFruitTypeValue;
+}
+
+/// @nodoc
+class __$$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiComposedDiscTypeInconsistentCopyWithImpl<$Res,
+        _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl>
+    implements
+        _$$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImplCopyWith<
+            $Res> {
+  __$$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImplCopyWithImpl(
+      _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl _value,
+      $Res Function(_$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiFruitTypeValue = null,
+  }) {
+    return _then(_$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl(
+      openApiFruitTypeValue: null == openApiFruitTypeValue
+          ? _value.openApiFruitTypeValue
+          : openApiFruitTypeValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitType,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiFruitTypeCopyWith<$Res> get openApiFruitTypeValue {
+    return $OpenApiFruitTypeCopyWith<$Res>(_value.openApiFruitTypeValue,
+        (value) {
+      return _then(_value.copyWith(openApiFruitTypeValue: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl
+    extends OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType {
+  const _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl(
+      {required this.openApiFruitTypeValue})
+      : super._();
+
+  @override
+  final OpenApiFruitType openApiFruitTypeValue;
+
+  @override
+  String toString() {
+    return 'OpenApiComposedDiscTypeInconsistent.asOpenApiFruitType(openApiFruitTypeValue: $openApiFruitTypeValue)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other
+                is _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl &&
+            (identical(other.openApiFruitTypeValue, openApiFruitTypeValue) ||
+                other.openApiFruitTypeValue == openApiFruitTypeValue));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, openApiFruitTypeValue);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImplCopyWith<
+          _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImplCopyWithImpl<
+                  _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiFruitType(openApiFruitTypeValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiFruitType?.call(openApiFruitTypeValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitType != null) {
+      return asOpenApiFruitType(openApiFruitTypeValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect value)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiComposedDiscTypeInconsistentUnknown value)
+        unknown,
+  }) {
+    return asOpenApiFruitType(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect
+                value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiComposedDiscTypeInconsistentUnknown value)?
+        unknown,
+  }) {
+    return asOpenApiFruitType?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect
+                value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiComposedDiscTypeInconsistentUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitType != null) {
+      return asOpenApiFruitType(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType
+    extends OpenApiComposedDiscTypeInconsistent {
+  const factory OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType(
+          {required final OpenApiFruitType openApiFruitTypeValue}) =
+      _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl;
+  const OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType._() : super._();
+
+  OpenApiFruitType get openApiFruitTypeValue;
+  @JsonKey(ignore: true)
+  _$$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImplCopyWith<
+          _$OpenApiComposedDiscTypeInconsistentAsOpenApiFruitTypeImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiComposedDiscTypeInconsistentUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiComposedDiscTypeInconsistentUnknownImplCopyWith(
+          _$OpenApiComposedDiscTypeInconsistentUnknownImpl value,
+          $Res Function(_$OpenApiComposedDiscTypeInconsistentUnknownImpl)
+              then) =
+      __$$OpenApiComposedDiscTypeInconsistentUnknownImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call(
+      {String message,
+      Map<String, dynamic> json,
+      DeserializationErrorType errorType,
+      List<Type> possibleTypes,
+      List<OpenApiComposedDiscTypeInconsistent> deserializedModels});
+}
+
+/// @nodoc
+class __$$OpenApiComposedDiscTypeInconsistentUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiComposedDiscTypeInconsistentCopyWithImpl<$Res,
+        _$OpenApiComposedDiscTypeInconsistentUnknownImpl>
+    implements _$$OpenApiComposedDiscTypeInconsistentUnknownImplCopyWith<$Res> {
+  __$$OpenApiComposedDiscTypeInconsistentUnknownImplCopyWithImpl(
+      _$OpenApiComposedDiscTypeInconsistentUnknownImpl _value,
+      $Res Function(_$OpenApiComposedDiscTypeInconsistentUnknownImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+    Object? json = null,
+    Object? errorType = null,
+    Object? possibleTypes = null,
+    Object? deserializedModels = null,
+  }) {
+    return _then(_$OpenApiComposedDiscTypeInconsistentUnknownImpl(
+      message: null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      json: null == json
+          ? _value._json
+          : json // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      errorType: null == errorType
+          ? _value.errorType
+          : errorType // ignore: cast_nullable_to_non_nullable
+              as DeserializationErrorType,
+      possibleTypes: null == possibleTypes
+          ? _value._possibleTypes
+          : possibleTypes // ignore: cast_nullable_to_non_nullable
+              as List<Type>,
+      deserializedModels: null == deserializedModels
+          ? _value._deserializedModels
+          : deserializedModels // ignore: cast_nullable_to_non_nullable
+              as List<OpenApiComposedDiscTypeInconsistent>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiComposedDiscTypeInconsistentUnknownImpl
+    extends OpenApiComposedDiscTypeInconsistentUnknown {
+  const _$OpenApiComposedDiscTypeInconsistentUnknownImpl(
+      {this.message = 'Json does not satisfy any available types',
+      required final Map<String, dynamic> json,
+      this.errorType = DeserializationErrorType.UnKnownType,
+      final List<Type> possibleTypes = const <Type>[
+        OpenApiDiscTypeIncorrect,
+        OpenApiFruitType
+      ],
+      final List<OpenApiComposedDiscTypeInconsistent> deserializedModels =
+          const <OpenApiComposedDiscTypeInconsistent>[]})
+      : _json = json,
+        _possibleTypes = possibleTypes,
+        _deserializedModels = deserializedModels,
+        super._();
+
+  @override
+  @JsonKey()
+  final String message;
+  final Map<String, dynamic> _json;
+  @override
+  Map<String, dynamic> get json {
+    if (_json is EqualUnmodifiableMapView) return _json;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_json);
+  }
+
+  @override
+  @JsonKey()
+  final DeserializationErrorType errorType;
+  final List<Type> _possibleTypes;
+  @override
+  @JsonKey()
+  List<Type> get possibleTypes {
+    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_possibleTypes);
+  }
+
+  final List<OpenApiComposedDiscTypeInconsistent> _deserializedModels;
+  @override
+  @JsonKey()
+  List<OpenApiComposedDiscTypeInconsistent> get deserializedModels {
+    if (_deserializedModels is EqualUnmodifiableListView)
+      return _deserializedModels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_deserializedModels);
+  }
+
+  @override
+  String toString() {
+    return 'OpenApiComposedDiscTypeInconsistent.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiComposedDiscTypeInconsistentUnknownImpl &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality().equals(other._json, _json) &&
+            (identical(other.errorType, errorType) ||
+                other.errorType == errorType) &&
+            const DeepCollectionEquality()
+                .equals(other._possibleTypes, _possibleTypes) &&
+            const DeepCollectionEquality()
+                .equals(other._deserializedModels, _deserializedModels));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      message,
+      const DeepCollectionEquality().hash(_json),
+      errorType,
+      const DeepCollectionEquality().hash(_possibleTypes),
+      const DeepCollectionEquality().hash(_deserializedModels));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiComposedDiscTypeInconsistentUnknownImplCopyWith<
+          _$OpenApiComposedDiscTypeInconsistentUnknownImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscTypeInconsistentUnknownImplCopyWithImpl<
+                  _$OpenApiComposedDiscTypeInconsistentUnknownImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)
+        unknown,
+  }) {
+    return unknown(message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)?
+        unknown,
+  }) {
+    return unknown?.call(
+        message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeInconsistent> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(
+          message, json, errorType, possibleTypes, deserializedModels);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect value)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiComposedDiscTypeInconsistentUnknown value)
+        unknown,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect
+                value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiComposedDiscTypeInconsistentUnknown value)?
+        unknown,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiDiscTypeIncorrect
+                value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(
+            OpenApiComposedDiscTypeInconsistentAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiComposedDiscTypeInconsistentUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiComposedDiscTypeInconsistentUnknown
+    extends OpenApiComposedDiscTypeInconsistent {
+  const factory OpenApiComposedDiscTypeInconsistentUnknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<OpenApiComposedDiscTypeInconsistent> deserializedModels}) =
+      _$OpenApiComposedDiscTypeInconsistentUnknownImpl;
+  const OpenApiComposedDiscTypeInconsistentUnknown._() : super._();
+
+  String get message;
+  Map<String, dynamic> get json;
+  DeserializationErrorType get errorType;
+  List<Type> get possibleTypes;
+  List<OpenApiComposedDiscTypeInconsistent> get deserializedModels;
+  @JsonKey(ignore: true)
+  _$$OpenApiComposedDiscTypeInconsistentUnknownImplCopyWith<
+          _$OpenApiComposedDiscTypeInconsistentUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+mixin _$OpenApiComposedDiscTypeIncorrect {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeIncorrect> deserializedModels)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeIncorrect> deserializedModels)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeIncorrect> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect value)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(OpenApiComposedDiscTypeIncorrectUnknown value)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(OpenApiComposedDiscTypeIncorrectUnknown value)? unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(OpenApiComposedDiscTypeIncorrectUnknown value)? unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiComposedDiscTypeIncorrectCopyWith<$Res> {
+  factory $OpenApiComposedDiscTypeIncorrectCopyWith(
+          OpenApiComposedDiscTypeIncorrect value,
+          $Res Function(OpenApiComposedDiscTypeIncorrect) then) =
+      _$OpenApiComposedDiscTypeIncorrectCopyWithImpl<$Res,
+          OpenApiComposedDiscTypeIncorrect>;
+}
+
+/// @nodoc
+class _$OpenApiComposedDiscTypeIncorrectCopyWithImpl<$Res,
+        $Val extends OpenApiComposedDiscTypeIncorrect>
+    implements $OpenApiComposedDiscTypeIncorrectCopyWith<$Res> {
+  _$OpenApiComposedDiscTypeIncorrectCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImplCopyWith<
+    $Res> {
+  factory _$$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImplCopyWith(
+          _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl value,
+          $Res Function(
+                  _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl)
+              then) =
+      __$$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call({OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue});
+
+  $OpenApiDiscTypeIncorrectCopyWith<$Res> get openApiDiscTypeIncorrectValue;
+}
+
+/// @nodoc
+class __$$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiComposedDiscTypeIncorrectCopyWithImpl<$Res,
+        _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl>
+    implements
+        _$$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImplCopyWith<
+            $Res> {
+  __$$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImplCopyWithImpl(
+      _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl _value,
+      $Res Function(
+              _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiDiscTypeIncorrectValue = null,
+  }) {
+    return _then(
+        _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl(
+      openApiDiscTypeIncorrectValue: null == openApiDiscTypeIncorrectValue
+          ? _value.openApiDiscTypeIncorrectValue
+          : openApiDiscTypeIncorrectValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiDiscTypeIncorrect,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiDiscTypeIncorrectCopyWith<$Res> get openApiDiscTypeIncorrectValue {
+    return $OpenApiDiscTypeIncorrectCopyWith<$Res>(
+        _value.openApiDiscTypeIncorrectValue, (value) {
+      return _then(_value.copyWith(openApiDiscTypeIncorrectValue: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl
+    extends OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect {
+  const _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl(
+      {required this.openApiDiscTypeIncorrectValue})
+      : super._();
+
+  @override
+  final OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue;
+
+  @override
+  String toString() {
+    return 'OpenApiComposedDiscTypeIncorrect.asOpenApiDiscTypeIncorrect(openApiDiscTypeIncorrectValue: $openApiDiscTypeIncorrectValue)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other
+                is _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl &&
+            (identical(other.openApiDiscTypeIncorrectValue,
+                    openApiDiscTypeIncorrectValue) ||
+                other.openApiDiscTypeIncorrectValue ==
+                    openApiDiscTypeIncorrectValue));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, openApiDiscTypeIncorrectValue);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImplCopyWith<
+          _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImplCopyWithImpl<
+                  _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeIncorrect> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiDiscTypeIncorrect(openApiDiscTypeIncorrectValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeIncorrect> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiDiscTypeIncorrect?.call(openApiDiscTypeIncorrectValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeIncorrect> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiDiscTypeIncorrect != null) {
+      return asOpenApiDiscTypeIncorrect(openApiDiscTypeIncorrectValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect value)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(OpenApiComposedDiscTypeIncorrectUnknown value)
+        unknown,
+  }) {
+    return asOpenApiDiscTypeIncorrect(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(OpenApiComposedDiscTypeIncorrectUnknown value)? unknown,
+  }) {
+    return asOpenApiDiscTypeIncorrect?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(OpenApiComposedDiscTypeIncorrectUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiDiscTypeIncorrect != null) {
+      return asOpenApiDiscTypeIncorrect(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect
+    extends OpenApiComposedDiscTypeIncorrect {
+  const factory OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect(
+          {required final OpenApiDiscTypeIncorrect
+              openApiDiscTypeIncorrectValue}) =
+      _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl;
+  const OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect._()
+      : super._();
+
+  OpenApiDiscTypeIncorrect get openApiDiscTypeIncorrectValue;
+  @JsonKey(ignore: true)
+  _$$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImplCopyWith<
+          _$OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrectImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiComposedDiscTypeIncorrectUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiComposedDiscTypeIncorrectUnknownImplCopyWith(
+          _$OpenApiComposedDiscTypeIncorrectUnknownImpl value,
+          $Res Function(_$OpenApiComposedDiscTypeIncorrectUnknownImpl) then) =
+      __$$OpenApiComposedDiscTypeIncorrectUnknownImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call(
+      {String message,
+      Map<String, dynamic> json,
+      DeserializationErrorType errorType,
+      List<Type> possibleTypes,
+      List<OpenApiComposedDiscTypeIncorrect> deserializedModels});
+}
+
+/// @nodoc
+class __$$OpenApiComposedDiscTypeIncorrectUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiComposedDiscTypeIncorrectCopyWithImpl<$Res,
+        _$OpenApiComposedDiscTypeIncorrectUnknownImpl>
+    implements _$$OpenApiComposedDiscTypeIncorrectUnknownImplCopyWith<$Res> {
+  __$$OpenApiComposedDiscTypeIncorrectUnknownImplCopyWithImpl(
+      _$OpenApiComposedDiscTypeIncorrectUnknownImpl _value,
+      $Res Function(_$OpenApiComposedDiscTypeIncorrectUnknownImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+    Object? json = null,
+    Object? errorType = null,
+    Object? possibleTypes = null,
+    Object? deserializedModels = null,
+  }) {
+    return _then(_$OpenApiComposedDiscTypeIncorrectUnknownImpl(
+      message: null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      json: null == json
+          ? _value._json
+          : json // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      errorType: null == errorType
+          ? _value.errorType
+          : errorType // ignore: cast_nullable_to_non_nullable
+              as DeserializationErrorType,
+      possibleTypes: null == possibleTypes
+          ? _value._possibleTypes
+          : possibleTypes // ignore: cast_nullable_to_non_nullable
+              as List<Type>,
+      deserializedModels: null == deserializedModels
+          ? _value._deserializedModels
+          : deserializedModels // ignore: cast_nullable_to_non_nullable
+              as List<OpenApiComposedDiscTypeIncorrect>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiComposedDiscTypeIncorrectUnknownImpl
+    extends OpenApiComposedDiscTypeIncorrectUnknown {
+  const _$OpenApiComposedDiscTypeIncorrectUnknownImpl(
+      {this.message = 'Json does not satisfy any available types',
+      required final Map<String, dynamic> json,
+      this.errorType = DeserializationErrorType.UnKnownType,
+      final List<Type> possibleTypes = const <Type>[OpenApiDiscTypeIncorrect],
+      final List<OpenApiComposedDiscTypeIncorrect> deserializedModels =
+          const <OpenApiComposedDiscTypeIncorrect>[]})
+      : _json = json,
+        _possibleTypes = possibleTypes,
+        _deserializedModels = deserializedModels,
+        super._();
+
+  @override
+  @JsonKey()
+  final String message;
+  final Map<String, dynamic> _json;
+  @override
+  Map<String, dynamic> get json {
+    if (_json is EqualUnmodifiableMapView) return _json;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_json);
+  }
+
+  @override
+  @JsonKey()
+  final DeserializationErrorType errorType;
+  final List<Type> _possibleTypes;
+  @override
+  @JsonKey()
+  List<Type> get possibleTypes {
+    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_possibleTypes);
+  }
+
+  final List<OpenApiComposedDiscTypeIncorrect> _deserializedModels;
+  @override
+  @JsonKey()
+  List<OpenApiComposedDiscTypeIncorrect> get deserializedModels {
+    if (_deserializedModels is EqualUnmodifiableListView)
+      return _deserializedModels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_deserializedModels);
+  }
+
+  @override
+  String toString() {
+    return 'OpenApiComposedDiscTypeIncorrect.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiComposedDiscTypeIncorrectUnknownImpl &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality().equals(other._json, _json) &&
+            (identical(other.errorType, errorType) ||
+                other.errorType == errorType) &&
+            const DeepCollectionEquality()
+                .equals(other._possibleTypes, _possibleTypes) &&
+            const DeepCollectionEquality()
+                .equals(other._deserializedModels, _deserializedModels));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      message,
+      const DeepCollectionEquality().hash(_json),
+      errorType,
+      const DeepCollectionEquality().hash(_possibleTypes),
+      const DeepCollectionEquality().hash(_deserializedModels));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiComposedDiscTypeIncorrectUnknownImplCopyWith<
+          _$OpenApiComposedDiscTypeIncorrectUnknownImpl>
+      get copyWith =>
+          __$$OpenApiComposedDiscTypeIncorrectUnknownImplCopyWithImpl<
+              _$OpenApiComposedDiscTypeIncorrectUnknownImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeIncorrect> deserializedModels)
+        unknown,
+  }) {
+    return unknown(message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeIncorrect> deserializedModels)?
+        unknown,
+  }) {
+    return unknown?.call(
+        message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(OpenApiDiscTypeIncorrect openApiDiscTypeIncorrectValue)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiComposedDiscTypeIncorrect> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(
+          message, json, errorType, possibleTypes, deserializedModels);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect value)
+        asOpenApiDiscTypeIncorrect,
+    required TResult Function(OpenApiComposedDiscTypeIncorrectUnknown value)
+        unknown,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult? Function(OpenApiComposedDiscTypeIncorrectUnknown value)? unknown,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiComposedDiscTypeIncorrectAsOpenApiDiscTypeIncorrect value)?
+        asOpenApiDiscTypeIncorrect,
+    TResult Function(OpenApiComposedDiscTypeIncorrectUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiComposedDiscTypeIncorrectUnknown
+    extends OpenApiComposedDiscTypeIncorrect {
+  const factory OpenApiComposedDiscTypeIncorrectUnknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<OpenApiComposedDiscTypeIncorrect> deserializedModels}) =
+      _$OpenApiComposedDiscTypeIncorrectUnknownImpl;
+  const OpenApiComposedDiscTypeIncorrectUnknown._() : super._();
+
+  String get message;
+  Map<String, dynamic> get json;
+  DeserializationErrorType get errorType;
+  List<Type> get possibleTypes;
+  List<OpenApiComposedDiscTypeIncorrect> get deserializedModels;
+  @JsonKey(ignore: true)
+  _$$OpenApiComposedDiscTypeIncorrectUnknownImplCopyWith<
+          _$OpenApiComposedDiscTypeIncorrectUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+OpenApiDiscMissingFromProperties _$OpenApiDiscMissingFromPropertiesFromJson(
     Map<String, dynamic> json) {
-  return _DiscMissingFromProperties.fromJson(json);
+  return _OpenApiDiscMissingFromProperties.fromJson(json);
 }
 
 /// @nodoc
-mixin _$DiscMissingFromProperties {
+mixin _$OpenApiDiscMissingFromProperties {
   @JsonKey(name: r'length')
   int? get length => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DiscMissingFromPropertiesCopyWith<DiscMissingFromProperties> get copyWith =>
-      throw _privateConstructorUsedError;
+  $OpenApiDiscMissingFromPropertiesCopyWith<OpenApiDiscMissingFromProperties>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DiscMissingFromPropertiesCopyWith<$Res> {
-  factory $DiscMissingFromPropertiesCopyWith(DiscMissingFromProperties value,
-          $Res Function(DiscMissingFromProperties) then) =
-      _$DiscMissingFromPropertiesCopyWithImpl<$Res, DiscMissingFromProperties>;
+abstract class $OpenApiDiscMissingFromPropertiesCopyWith<$Res> {
+  factory $OpenApiDiscMissingFromPropertiesCopyWith(
+          OpenApiDiscMissingFromProperties value,
+          $Res Function(OpenApiDiscMissingFromProperties) then) =
+      _$OpenApiDiscMissingFromPropertiesCopyWithImpl<$Res,
+          OpenApiDiscMissingFromProperties>;
   @useResult
   $Res call({@JsonKey(name: r'length') int? length});
 }
 
 /// @nodoc
-class _$DiscMissingFromPropertiesCopyWithImpl<$Res,
-        $Val extends DiscMissingFromProperties>
-    implements $DiscMissingFromPropertiesCopyWith<$Res> {
-  _$DiscMissingFromPropertiesCopyWithImpl(this._value, this._then);
+class _$OpenApiDiscMissingFromPropertiesCopyWithImpl<$Res,
+        $Val extends OpenApiDiscMissingFromProperties>
+    implements $OpenApiDiscMissingFromPropertiesCopyWith<$Res> {
+  _$OpenApiDiscMissingFromPropertiesCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -8123,25 +8690,25 @@ class _$DiscMissingFromPropertiesCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_DiscMissingFromPropertiesCopyWith<$Res>
-    implements $DiscMissingFromPropertiesCopyWith<$Res> {
-  factory _$$_DiscMissingFromPropertiesCopyWith(
-          _$_DiscMissingFromProperties value,
-          $Res Function(_$_DiscMissingFromProperties) then) =
-      __$$_DiscMissingFromPropertiesCopyWithImpl<$Res>;
+abstract class _$$OpenApiDiscMissingFromPropertiesImplCopyWith<$Res>
+    implements $OpenApiDiscMissingFromPropertiesCopyWith<$Res> {
+  factory _$$OpenApiDiscMissingFromPropertiesImplCopyWith(
+          _$OpenApiDiscMissingFromPropertiesImpl value,
+          $Res Function(_$OpenApiDiscMissingFromPropertiesImpl) then) =
+      __$$OpenApiDiscMissingFromPropertiesImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'length') int? length});
 }
 
 /// @nodoc
-class __$$_DiscMissingFromPropertiesCopyWithImpl<$Res>
-    extends _$DiscMissingFromPropertiesCopyWithImpl<$Res,
-        _$_DiscMissingFromProperties>
-    implements _$$_DiscMissingFromPropertiesCopyWith<$Res> {
-  __$$_DiscMissingFromPropertiesCopyWithImpl(
-      _$_DiscMissingFromProperties _value,
-      $Res Function(_$_DiscMissingFromProperties) _then)
+class __$$OpenApiDiscMissingFromPropertiesImplCopyWithImpl<$Res>
+    extends _$OpenApiDiscMissingFromPropertiesCopyWithImpl<$Res,
+        _$OpenApiDiscMissingFromPropertiesImpl>
+    implements _$$OpenApiDiscMissingFromPropertiesImplCopyWith<$Res> {
+  __$$OpenApiDiscMissingFromPropertiesImplCopyWithImpl(
+      _$OpenApiDiscMissingFromPropertiesImpl _value,
+      $Res Function(_$OpenApiDiscMissingFromPropertiesImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8149,7 +8716,7 @@ class __$$_DiscMissingFromPropertiesCopyWithImpl<$Res>
   $Res call({
     Object? length = freezed,
   }) {
-    return _then(_$_DiscMissingFromProperties(
+    return _then(_$OpenApiDiscMissingFromPropertiesImpl(
       length: freezed == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -8160,12 +8727,15 @@ class __$$_DiscMissingFromPropertiesCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DiscMissingFromProperties extends _DiscMissingFromProperties {
-  const _$_DiscMissingFromProperties({@JsonKey(name: r'length') this.length})
+class _$OpenApiDiscMissingFromPropertiesImpl
+    extends _OpenApiDiscMissingFromProperties {
+  const _$OpenApiDiscMissingFromPropertiesImpl(
+      {@JsonKey(name: r'length') this.length})
       : super._();
 
-  factory _$_DiscMissingFromProperties.fromJson(Map<String, dynamic> json) =>
-      _$$_DiscMissingFromPropertiesFromJson(json);
+  factory _$OpenApiDiscMissingFromPropertiesImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$OpenApiDiscMissingFromPropertiesImplFromJson(json);
 
   @override
   @JsonKey(name: r'length')
@@ -8173,14 +8743,14 @@ class _$_DiscMissingFromProperties extends _DiscMissingFromProperties {
 
   @override
   String toString() {
-    return 'DiscMissingFromProperties(length: $length)';
+    return 'OpenApiDiscMissingFromProperties(length: $length)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DiscMissingFromProperties &&
+            other is _$OpenApiDiscMissingFromPropertiesImpl &&
             (identical(other.length, length) || other.length == length));
   }
 
@@ -8191,66 +8761,72 @@ class _$_DiscMissingFromProperties extends _DiscMissingFromProperties {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DiscMissingFromPropertiesCopyWith<_$_DiscMissingFromProperties>
-      get copyWith => __$$_DiscMissingFromPropertiesCopyWithImpl<
-          _$_DiscMissingFromProperties>(this, _$identity);
+  _$$OpenApiDiscMissingFromPropertiesImplCopyWith<
+          _$OpenApiDiscMissingFromPropertiesImpl>
+      get copyWith => __$$OpenApiDiscMissingFromPropertiesImplCopyWithImpl<
+          _$OpenApiDiscMissingFromPropertiesImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DiscMissingFromPropertiesToJson(
+    return _$$OpenApiDiscMissingFromPropertiesImplToJson(
       this,
     );
   }
 }
 
-abstract class _DiscMissingFromProperties extends DiscMissingFromProperties {
-  const factory _DiscMissingFromProperties(
+abstract class _OpenApiDiscMissingFromProperties
+    extends OpenApiDiscMissingFromProperties {
+  const factory _OpenApiDiscMissingFromProperties(
           {@JsonKey(name: r'length') final int? length}) =
-      _$_DiscMissingFromProperties;
-  const _DiscMissingFromProperties._() : super._();
+      _$OpenApiDiscMissingFromPropertiesImpl;
+  const _OpenApiDiscMissingFromProperties._() : super._();
 
-  factory _DiscMissingFromProperties.fromJson(Map<String, dynamic> json) =
-      _$_DiscMissingFromProperties.fromJson;
+  factory _OpenApiDiscMissingFromProperties.fromJson(
+          Map<String, dynamic> json) =
+      _$OpenApiDiscMissingFromPropertiesImpl.fromJson;
 
   @override
   @JsonKey(name: r'length')
   int? get length;
   @override
   @JsonKey(ignore: true)
-  _$$_DiscMissingFromPropertiesCopyWith<_$_DiscMissingFromProperties>
+  _$$OpenApiDiscMissingFromPropertiesImplCopyWith<
+          _$OpenApiDiscMissingFromPropertiesImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
-DiscOptionalTypeCorrect _$DiscOptionalTypeCorrectFromJson(
+OpenApiDiscOptionalTypeCorrect _$OpenApiDiscOptionalTypeCorrectFromJson(
     Map<String, dynamic> json) {
-  return _DiscOptionalTypeCorrect.fromJson(json);
+  return _OpenApiDiscOptionalTypeCorrect.fromJson(json);
 }
 
 /// @nodoc
-mixin _$DiscOptionalTypeCorrect {
+mixin _$OpenApiDiscOptionalTypeCorrect {
   @JsonKey(name: r'fruitType')
   String? get fruitType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DiscOptionalTypeCorrectCopyWith<DiscOptionalTypeCorrect> get copyWith =>
-      throw _privateConstructorUsedError;
+  $OpenApiDiscOptionalTypeCorrectCopyWith<OpenApiDiscOptionalTypeCorrect>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DiscOptionalTypeCorrectCopyWith<$Res> {
-  factory $DiscOptionalTypeCorrectCopyWith(DiscOptionalTypeCorrect value,
-          $Res Function(DiscOptionalTypeCorrect) then) =
-      _$DiscOptionalTypeCorrectCopyWithImpl<$Res, DiscOptionalTypeCorrect>;
+abstract class $OpenApiDiscOptionalTypeCorrectCopyWith<$Res> {
+  factory $OpenApiDiscOptionalTypeCorrectCopyWith(
+          OpenApiDiscOptionalTypeCorrect value,
+          $Res Function(OpenApiDiscOptionalTypeCorrect) then) =
+      _$OpenApiDiscOptionalTypeCorrectCopyWithImpl<$Res,
+          OpenApiDiscOptionalTypeCorrect>;
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String? fruitType});
 }
 
 /// @nodoc
-class _$DiscOptionalTypeCorrectCopyWithImpl<$Res,
-        $Val extends DiscOptionalTypeCorrect>
-    implements $DiscOptionalTypeCorrectCopyWith<$Res> {
-  _$DiscOptionalTypeCorrectCopyWithImpl(this._value, this._then);
+class _$OpenApiDiscOptionalTypeCorrectCopyWithImpl<$Res,
+        $Val extends OpenApiDiscOptionalTypeCorrect>
+    implements $OpenApiDiscOptionalTypeCorrectCopyWith<$Res> {
+  _$OpenApiDiscOptionalTypeCorrectCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -8272,23 +8848,25 @@ class _$DiscOptionalTypeCorrectCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_DiscOptionalTypeCorrectCopyWith<$Res>
-    implements $DiscOptionalTypeCorrectCopyWith<$Res> {
-  factory _$$_DiscOptionalTypeCorrectCopyWith(_$_DiscOptionalTypeCorrect value,
-          $Res Function(_$_DiscOptionalTypeCorrect) then) =
-      __$$_DiscOptionalTypeCorrectCopyWithImpl<$Res>;
+abstract class _$$OpenApiDiscOptionalTypeCorrectImplCopyWith<$Res>
+    implements $OpenApiDiscOptionalTypeCorrectCopyWith<$Res> {
+  factory _$$OpenApiDiscOptionalTypeCorrectImplCopyWith(
+          _$OpenApiDiscOptionalTypeCorrectImpl value,
+          $Res Function(_$OpenApiDiscOptionalTypeCorrectImpl) then) =
+      __$$OpenApiDiscOptionalTypeCorrectImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String? fruitType});
 }
 
 /// @nodoc
-class __$$_DiscOptionalTypeCorrectCopyWithImpl<$Res>
-    extends _$DiscOptionalTypeCorrectCopyWithImpl<$Res,
-        _$_DiscOptionalTypeCorrect>
-    implements _$$_DiscOptionalTypeCorrectCopyWith<$Res> {
-  __$$_DiscOptionalTypeCorrectCopyWithImpl(_$_DiscOptionalTypeCorrect _value,
-      $Res Function(_$_DiscOptionalTypeCorrect) _then)
+class __$$OpenApiDiscOptionalTypeCorrectImplCopyWithImpl<$Res>
+    extends _$OpenApiDiscOptionalTypeCorrectCopyWithImpl<$Res,
+        _$OpenApiDiscOptionalTypeCorrectImpl>
+    implements _$$OpenApiDiscOptionalTypeCorrectImplCopyWith<$Res> {
+  __$$OpenApiDiscOptionalTypeCorrectImplCopyWithImpl(
+      _$OpenApiDiscOptionalTypeCorrectImpl _value,
+      $Res Function(_$OpenApiDiscOptionalTypeCorrectImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8296,7 +8874,7 @@ class __$$_DiscOptionalTypeCorrectCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = freezed,
   }) {
-    return _then(_$_DiscOptionalTypeCorrect(
+    return _then(_$OpenApiDiscOptionalTypeCorrectImpl(
       fruitType: freezed == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -8307,13 +8885,15 @@ class __$$_DiscOptionalTypeCorrectCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DiscOptionalTypeCorrect extends _DiscOptionalTypeCorrect {
-  const _$_DiscOptionalTypeCorrect(
+class _$OpenApiDiscOptionalTypeCorrectImpl
+    extends _OpenApiDiscOptionalTypeCorrect {
+  const _$OpenApiDiscOptionalTypeCorrectImpl(
       {@JsonKey(name: r'fruitType') this.fruitType})
       : super._();
 
-  factory _$_DiscOptionalTypeCorrect.fromJson(Map<String, dynamic> json) =>
-      _$$_DiscOptionalTypeCorrectFromJson(json);
+  factory _$OpenApiDiscOptionalTypeCorrectImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$OpenApiDiscOptionalTypeCorrectImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -8321,14 +8901,14 @@ class _$_DiscOptionalTypeCorrect extends _DiscOptionalTypeCorrect {
 
   @override
   String toString() {
-    return 'DiscOptionalTypeCorrect(fruitType: $fruitType)';
+    return 'OpenApiDiscOptionalTypeCorrect(fruitType: $fruitType)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DiscOptionalTypeCorrect &&
+            other is _$OpenApiDiscOptionalTypeCorrectImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -8340,67 +8920,71 @@ class _$_DiscOptionalTypeCorrect extends _DiscOptionalTypeCorrect {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DiscOptionalTypeCorrectCopyWith<_$_DiscOptionalTypeCorrect>
-      get copyWith =>
-          __$$_DiscOptionalTypeCorrectCopyWithImpl<_$_DiscOptionalTypeCorrect>(
-              this, _$identity);
+  _$$OpenApiDiscOptionalTypeCorrectImplCopyWith<
+          _$OpenApiDiscOptionalTypeCorrectImpl>
+      get copyWith => __$$OpenApiDiscOptionalTypeCorrectImplCopyWithImpl<
+          _$OpenApiDiscOptionalTypeCorrectImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DiscOptionalTypeCorrectToJson(
+    return _$$OpenApiDiscOptionalTypeCorrectImplToJson(
       this,
     );
   }
 }
 
-abstract class _DiscOptionalTypeCorrect extends DiscOptionalTypeCorrect {
-  const factory _DiscOptionalTypeCorrect(
+abstract class _OpenApiDiscOptionalTypeCorrect
+    extends OpenApiDiscOptionalTypeCorrect {
+  const factory _OpenApiDiscOptionalTypeCorrect(
           {@JsonKey(name: r'fruitType') final String? fruitType}) =
-      _$_DiscOptionalTypeCorrect;
-  const _DiscOptionalTypeCorrect._() : super._();
+      _$OpenApiDiscOptionalTypeCorrectImpl;
+  const _OpenApiDiscOptionalTypeCorrect._() : super._();
 
-  factory _DiscOptionalTypeCorrect.fromJson(Map<String, dynamic> json) =
-      _$_DiscOptionalTypeCorrect.fromJson;
+  factory _OpenApiDiscOptionalTypeCorrect.fromJson(Map<String, dynamic> json) =
+      _$OpenApiDiscOptionalTypeCorrectImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   String? get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_DiscOptionalTypeCorrectCopyWith<_$_DiscOptionalTypeCorrect>
+  _$$OpenApiDiscOptionalTypeCorrectImplCopyWith<
+          _$OpenApiDiscOptionalTypeCorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
-DiscOptionalTypeIncorrect _$DiscOptionalTypeIncorrectFromJson(
+OpenApiDiscOptionalTypeIncorrect _$OpenApiDiscOptionalTypeIncorrectFromJson(
     Map<String, dynamic> json) {
-  return _DiscOptionalTypeIncorrect.fromJson(json);
+  return _OpenApiDiscOptionalTypeIncorrect.fromJson(json);
 }
 
 /// @nodoc
-mixin _$DiscOptionalTypeIncorrect {
+mixin _$OpenApiDiscOptionalTypeIncorrect {
   @JsonKey(name: r'fruitType')
   int? get fruitType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DiscOptionalTypeIncorrectCopyWith<DiscOptionalTypeIncorrect> get copyWith =>
-      throw _privateConstructorUsedError;
+  $OpenApiDiscOptionalTypeIncorrectCopyWith<OpenApiDiscOptionalTypeIncorrect>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DiscOptionalTypeIncorrectCopyWith<$Res> {
-  factory $DiscOptionalTypeIncorrectCopyWith(DiscOptionalTypeIncorrect value,
-          $Res Function(DiscOptionalTypeIncorrect) then) =
-      _$DiscOptionalTypeIncorrectCopyWithImpl<$Res, DiscOptionalTypeIncorrect>;
+abstract class $OpenApiDiscOptionalTypeIncorrectCopyWith<$Res> {
+  factory $OpenApiDiscOptionalTypeIncorrectCopyWith(
+          OpenApiDiscOptionalTypeIncorrect value,
+          $Res Function(OpenApiDiscOptionalTypeIncorrect) then) =
+      _$OpenApiDiscOptionalTypeIncorrectCopyWithImpl<$Res,
+          OpenApiDiscOptionalTypeIncorrect>;
   @useResult
   $Res call({@JsonKey(name: r'fruitType') int? fruitType});
 }
 
 /// @nodoc
-class _$DiscOptionalTypeIncorrectCopyWithImpl<$Res,
-        $Val extends DiscOptionalTypeIncorrect>
-    implements $DiscOptionalTypeIncorrectCopyWith<$Res> {
-  _$DiscOptionalTypeIncorrectCopyWithImpl(this._value, this._then);
+class _$OpenApiDiscOptionalTypeIncorrectCopyWithImpl<$Res,
+        $Val extends OpenApiDiscOptionalTypeIncorrect>
+    implements $OpenApiDiscOptionalTypeIncorrectCopyWith<$Res> {
+  _$OpenApiDiscOptionalTypeIncorrectCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -8422,25 +9006,25 @@ class _$DiscOptionalTypeIncorrectCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_DiscOptionalTypeIncorrectCopyWith<$Res>
-    implements $DiscOptionalTypeIncorrectCopyWith<$Res> {
-  factory _$$_DiscOptionalTypeIncorrectCopyWith(
-          _$_DiscOptionalTypeIncorrect value,
-          $Res Function(_$_DiscOptionalTypeIncorrect) then) =
-      __$$_DiscOptionalTypeIncorrectCopyWithImpl<$Res>;
+abstract class _$$OpenApiDiscOptionalTypeIncorrectImplCopyWith<$Res>
+    implements $OpenApiDiscOptionalTypeIncorrectCopyWith<$Res> {
+  factory _$$OpenApiDiscOptionalTypeIncorrectImplCopyWith(
+          _$OpenApiDiscOptionalTypeIncorrectImpl value,
+          $Res Function(_$OpenApiDiscOptionalTypeIncorrectImpl) then) =
+      __$$OpenApiDiscOptionalTypeIncorrectImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') int? fruitType});
 }
 
 /// @nodoc
-class __$$_DiscOptionalTypeIncorrectCopyWithImpl<$Res>
-    extends _$DiscOptionalTypeIncorrectCopyWithImpl<$Res,
-        _$_DiscOptionalTypeIncorrect>
-    implements _$$_DiscOptionalTypeIncorrectCopyWith<$Res> {
-  __$$_DiscOptionalTypeIncorrectCopyWithImpl(
-      _$_DiscOptionalTypeIncorrect _value,
-      $Res Function(_$_DiscOptionalTypeIncorrect) _then)
+class __$$OpenApiDiscOptionalTypeIncorrectImplCopyWithImpl<$Res>
+    extends _$OpenApiDiscOptionalTypeIncorrectCopyWithImpl<$Res,
+        _$OpenApiDiscOptionalTypeIncorrectImpl>
+    implements _$$OpenApiDiscOptionalTypeIncorrectImplCopyWith<$Res> {
+  __$$OpenApiDiscOptionalTypeIncorrectImplCopyWithImpl(
+      _$OpenApiDiscOptionalTypeIncorrectImpl _value,
+      $Res Function(_$OpenApiDiscOptionalTypeIncorrectImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8448,7 +9032,7 @@ class __$$_DiscOptionalTypeIncorrectCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = freezed,
   }) {
-    return _then(_$_DiscOptionalTypeIncorrect(
+    return _then(_$OpenApiDiscOptionalTypeIncorrectImpl(
       fruitType: freezed == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -8459,13 +9043,15 @@ class __$$_DiscOptionalTypeIncorrectCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DiscOptionalTypeIncorrect extends _DiscOptionalTypeIncorrect {
-  const _$_DiscOptionalTypeIncorrect(
+class _$OpenApiDiscOptionalTypeIncorrectImpl
+    extends _OpenApiDiscOptionalTypeIncorrect {
+  const _$OpenApiDiscOptionalTypeIncorrectImpl(
       {@JsonKey(name: r'fruitType') this.fruitType})
       : super._();
 
-  factory _$_DiscOptionalTypeIncorrect.fromJson(Map<String, dynamic> json) =>
-      _$$_DiscOptionalTypeIncorrectFromJson(json);
+  factory _$OpenApiDiscOptionalTypeIncorrectImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$OpenApiDiscOptionalTypeIncorrectImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -8473,14 +9059,14 @@ class _$_DiscOptionalTypeIncorrect extends _DiscOptionalTypeIncorrect {
 
   @override
   String toString() {
-    return 'DiscOptionalTypeIncorrect(fruitType: $fruitType)';
+    return 'OpenApiDiscOptionalTypeIncorrect(fruitType: $fruitType)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DiscOptionalTypeIncorrect &&
+            other is _$OpenApiDiscOptionalTypeIncorrectImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -8492,64 +9078,70 @@ class _$_DiscOptionalTypeIncorrect extends _DiscOptionalTypeIncorrect {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DiscOptionalTypeIncorrectCopyWith<_$_DiscOptionalTypeIncorrect>
-      get copyWith => __$$_DiscOptionalTypeIncorrectCopyWithImpl<
-          _$_DiscOptionalTypeIncorrect>(this, _$identity);
+  _$$OpenApiDiscOptionalTypeIncorrectImplCopyWith<
+          _$OpenApiDiscOptionalTypeIncorrectImpl>
+      get copyWith => __$$OpenApiDiscOptionalTypeIncorrectImplCopyWithImpl<
+          _$OpenApiDiscOptionalTypeIncorrectImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DiscOptionalTypeIncorrectToJson(
+    return _$$OpenApiDiscOptionalTypeIncorrectImplToJson(
       this,
     );
   }
 }
 
-abstract class _DiscOptionalTypeIncorrect extends DiscOptionalTypeIncorrect {
-  const factory _DiscOptionalTypeIncorrect(
+abstract class _OpenApiDiscOptionalTypeIncorrect
+    extends OpenApiDiscOptionalTypeIncorrect {
+  const factory _OpenApiDiscOptionalTypeIncorrect(
           {@JsonKey(name: r'fruitType') final int? fruitType}) =
-      _$_DiscOptionalTypeIncorrect;
-  const _DiscOptionalTypeIncorrect._() : super._();
+      _$OpenApiDiscOptionalTypeIncorrectImpl;
+  const _OpenApiDiscOptionalTypeIncorrect._() : super._();
 
-  factory _DiscOptionalTypeIncorrect.fromJson(Map<String, dynamic> json) =
-      _$_DiscOptionalTypeIncorrect.fromJson;
+  factory _OpenApiDiscOptionalTypeIncorrect.fromJson(
+          Map<String, dynamic> json) =
+      _$OpenApiDiscOptionalTypeIncorrectImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   int? get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_DiscOptionalTypeIncorrectCopyWith<_$_DiscOptionalTypeIncorrect>
+  _$$OpenApiDiscOptionalTypeIncorrectImplCopyWith<
+          _$OpenApiDiscOptionalTypeIncorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
-DiscTypeIncorrect _$DiscTypeIncorrectFromJson(Map<String, dynamic> json) {
-  return _DiscTypeIncorrect.fromJson(json);
+OpenApiDiscTypeIncorrect _$OpenApiDiscTypeIncorrectFromJson(
+    Map<String, dynamic> json) {
+  return _OpenApiDiscTypeIncorrect.fromJson(json);
 }
 
 /// @nodoc
-mixin _$DiscTypeIncorrect {
+mixin _$OpenApiDiscTypeIncorrect {
   @JsonKey(name: r'fruitType')
   int get fruitType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DiscTypeIncorrectCopyWith<DiscTypeIncorrect> get copyWith =>
+  $OpenApiDiscTypeIncorrectCopyWith<OpenApiDiscTypeIncorrect> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DiscTypeIncorrectCopyWith<$Res> {
-  factory $DiscTypeIncorrectCopyWith(
-          DiscTypeIncorrect value, $Res Function(DiscTypeIncorrect) then) =
-      _$DiscTypeIncorrectCopyWithImpl<$Res, DiscTypeIncorrect>;
+abstract class $OpenApiDiscTypeIncorrectCopyWith<$Res> {
+  factory $OpenApiDiscTypeIncorrectCopyWith(OpenApiDiscTypeIncorrect value,
+          $Res Function(OpenApiDiscTypeIncorrect) then) =
+      _$OpenApiDiscTypeIncorrectCopyWithImpl<$Res, OpenApiDiscTypeIncorrect>;
   @useResult
   $Res call({@JsonKey(name: r'fruitType') int fruitType});
 }
 
 /// @nodoc
-class _$DiscTypeIncorrectCopyWithImpl<$Res, $Val extends DiscTypeIncorrect>
-    implements $DiscTypeIncorrectCopyWith<$Res> {
-  _$DiscTypeIncorrectCopyWithImpl(this._value, this._then);
+class _$OpenApiDiscTypeIncorrectCopyWithImpl<$Res,
+        $Val extends OpenApiDiscTypeIncorrect>
+    implements $OpenApiDiscTypeIncorrectCopyWith<$Res> {
+  _$OpenApiDiscTypeIncorrectCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -8571,22 +9163,25 @@ class _$DiscTypeIncorrectCopyWithImpl<$Res, $Val extends DiscTypeIncorrect>
 }
 
 /// @nodoc
-abstract class _$$_DiscTypeIncorrectCopyWith<$Res>
-    implements $DiscTypeIncorrectCopyWith<$Res> {
-  factory _$$_DiscTypeIncorrectCopyWith(_$_DiscTypeIncorrect value,
-          $Res Function(_$_DiscTypeIncorrect) then) =
-      __$$_DiscTypeIncorrectCopyWithImpl<$Res>;
+abstract class _$$OpenApiDiscTypeIncorrectImplCopyWith<$Res>
+    implements $OpenApiDiscTypeIncorrectCopyWith<$Res> {
+  factory _$$OpenApiDiscTypeIncorrectImplCopyWith(
+          _$OpenApiDiscTypeIncorrectImpl value,
+          $Res Function(_$OpenApiDiscTypeIncorrectImpl) then) =
+      __$$OpenApiDiscTypeIncorrectImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') int fruitType});
 }
 
 /// @nodoc
-class __$$_DiscTypeIncorrectCopyWithImpl<$Res>
-    extends _$DiscTypeIncorrectCopyWithImpl<$Res, _$_DiscTypeIncorrect>
-    implements _$$_DiscTypeIncorrectCopyWith<$Res> {
-  __$$_DiscTypeIncorrectCopyWithImpl(
-      _$_DiscTypeIncorrect _value, $Res Function(_$_DiscTypeIncorrect) _then)
+class __$$OpenApiDiscTypeIncorrectImplCopyWithImpl<$Res>
+    extends _$OpenApiDiscTypeIncorrectCopyWithImpl<$Res,
+        _$OpenApiDiscTypeIncorrectImpl>
+    implements _$$OpenApiDiscTypeIncorrectImplCopyWith<$Res> {
+  __$$OpenApiDiscTypeIncorrectImplCopyWithImpl(
+      _$OpenApiDiscTypeIncorrectImpl _value,
+      $Res Function(_$OpenApiDiscTypeIncorrectImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8594,7 +9189,7 @@ class __$$_DiscTypeIncorrectCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = null,
   }) {
-    return _then(_$_DiscTypeIncorrect(
+    return _then(_$OpenApiDiscTypeIncorrectImpl(
       fruitType: null == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -8605,13 +9200,13 @@ class __$$_DiscTypeIncorrectCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DiscTypeIncorrect extends _DiscTypeIncorrect {
-  const _$_DiscTypeIncorrect(
+class _$OpenApiDiscTypeIncorrectImpl extends _OpenApiDiscTypeIncorrect {
+  const _$OpenApiDiscTypeIncorrectImpl(
       {@JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_DiscTypeIncorrect.fromJson(Map<String, dynamic> json) =>
-      _$$_DiscTypeIncorrectFromJson(json);
+  factory _$OpenApiDiscTypeIncorrectImpl.fromJson(Map<String, dynamic> json) =>
+      _$$OpenApiDiscTypeIncorrectImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -8619,14 +9214,14 @@ class _$_DiscTypeIncorrect extends _DiscTypeIncorrect {
 
   @override
   String toString() {
-    return 'DiscTypeIncorrect(fruitType: $fruitType)';
+    return 'OpenApiDiscTypeIncorrect(fruitType: $fruitType)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DiscTypeIncorrect &&
+            other is _$OpenApiDiscTypeIncorrectImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -8638,117 +9233,129 @@ class _$_DiscTypeIncorrect extends _DiscTypeIncorrect {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DiscTypeIncorrectCopyWith<_$_DiscTypeIncorrect> get copyWith =>
-      __$$_DiscTypeIncorrectCopyWithImpl<_$_DiscTypeIncorrect>(
-          this, _$identity);
+  _$$OpenApiDiscTypeIncorrectImplCopyWith<_$OpenApiDiscTypeIncorrectImpl>
+      get copyWith => __$$OpenApiDiscTypeIncorrectImplCopyWithImpl<
+          _$OpenApiDiscTypeIncorrectImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DiscTypeIncorrectToJson(
+    return _$$OpenApiDiscTypeIncorrectImplToJson(
       this,
     );
   }
 }
 
-abstract class _DiscTypeIncorrect extends DiscTypeIncorrect {
-  const factory _DiscTypeIncorrect(
+abstract class _OpenApiDiscTypeIncorrect extends OpenApiDiscTypeIncorrect {
+  const factory _OpenApiDiscTypeIncorrect(
           {@JsonKey(name: r'fruitType') required final int fruitType}) =
-      _$_DiscTypeIncorrect;
-  const _DiscTypeIncorrect._() : super._();
+      _$OpenApiDiscTypeIncorrectImpl;
+  const _OpenApiDiscTypeIncorrect._() : super._();
 
-  factory _DiscTypeIncorrect.fromJson(Map<String, dynamic> json) =
-      _$_DiscTypeIncorrect.fromJson;
+  factory _OpenApiDiscTypeIncorrect.fromJson(Map<String, dynamic> json) =
+      _$OpenApiDiscTypeIncorrectImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   int get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_DiscTypeIncorrectCopyWith<_$_DiscTypeIncorrect> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OpenApiDiscTypeIncorrectImplCopyWith<_$OpenApiDiscTypeIncorrectImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$FruitAllOfDisc {
+mixin _$OpenApiFruitAllOfDisc {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleAllOfDisc appleAllOfDiscValue)
-        asAppleAllOfDisc,
-    required TResult Function(BananaAllOfDisc bananaAllOfDiscValue)
-        asBananaAllOfDisc,
+    required TResult Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)
+        asOpenApiAppleAllOfDisc,
+    required TResult Function(
+            OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)
+        asOpenApiBananaAllOfDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)
+            List<OpenApiFruitAllOfDisc> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleAllOfDisc appleAllOfDiscValue)? asAppleAllOfDisc,
-    TResult? Function(BananaAllOfDisc bananaAllOfDiscValue)? asBananaAllOfDisc,
+    TResult? Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)?
+        asOpenApiAppleAllOfDisc,
+    TResult? Function(OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)?
+        asOpenApiBananaAllOfDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)?
+            List<OpenApiFruitAllOfDisc> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleAllOfDisc appleAllOfDiscValue)? asAppleAllOfDisc,
-    TResult Function(BananaAllOfDisc bananaAllOfDiscValue)? asBananaAllOfDisc,
+    TResult Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)?
+        asOpenApiAppleAllOfDisc,
+    TResult Function(OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)?
+        asOpenApiBananaAllOfDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)?
+            List<OpenApiFruitAllOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitAllOfDiscAsAppleAllOfDisc value)
-        asAppleAllOfDisc,
-    required TResult Function(FruitAllOfDiscAsBananaAllOfDisc value)
-        asBananaAllOfDisc,
-    required TResult Function(FruitAllOfDiscUnknown value) unknown,
+    required TResult Function(
+            OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)
+        asOpenApiAppleAllOfDisc,
+    required TResult Function(
+            OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)
+        asOpenApiBananaAllOfDisc,
+    required TResult Function(OpenApiFruitAllOfDiscUnknown value) unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitAllOfDiscAsAppleAllOfDisc value)? asAppleAllOfDisc,
-    TResult? Function(FruitAllOfDiscAsBananaAllOfDisc value)? asBananaAllOfDisc,
-    TResult? Function(FruitAllOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)?
+        asOpenApiAppleAllOfDisc,
+    TResult? Function(OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)?
+        asOpenApiBananaAllOfDisc,
+    TResult? Function(OpenApiFruitAllOfDiscUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitAllOfDiscAsAppleAllOfDisc value)? asAppleAllOfDisc,
-    TResult Function(FruitAllOfDiscAsBananaAllOfDisc value)? asBananaAllOfDisc,
-    TResult Function(FruitAllOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)?
+        asOpenApiAppleAllOfDisc,
+    TResult Function(OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)?
+        asOpenApiBananaAllOfDisc,
+    TResult Function(OpenApiFruitAllOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FruitAllOfDiscCopyWith<$Res> {
-  factory $FruitAllOfDiscCopyWith(
-          FruitAllOfDisc value, $Res Function(FruitAllOfDisc) then) =
-      _$FruitAllOfDiscCopyWithImpl<$Res, FruitAllOfDisc>;
+abstract class $OpenApiFruitAllOfDiscCopyWith<$Res> {
+  factory $OpenApiFruitAllOfDiscCopyWith(OpenApiFruitAllOfDisc value,
+          $Res Function(OpenApiFruitAllOfDisc) then) =
+      _$OpenApiFruitAllOfDiscCopyWithImpl<$Res, OpenApiFruitAllOfDisc>;
 }
 
 /// @nodoc
-class _$FruitAllOfDiscCopyWithImpl<$Res, $Val extends FruitAllOfDisc>
-    implements $FruitAllOfDiscCopyWith<$Res> {
-  _$FruitAllOfDiscCopyWithImpl(this._value, this._then);
+class _$OpenApiFruitAllOfDiscCopyWithImpl<$Res,
+        $Val extends OpenApiFruitAllOfDisc>
+    implements $OpenApiFruitAllOfDiscCopyWith<$Res> {
+  _$OpenApiFruitAllOfDiscCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -8757,131 +9364,148 @@ class _$FruitAllOfDiscCopyWithImpl<$Res, $Val extends FruitAllOfDisc>
 }
 
 /// @nodoc
-abstract class _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith<$Res> {
-  factory _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith(
-          _$FruitAllOfDiscAsAppleAllOfDisc value,
-          $Res Function(_$FruitAllOfDiscAsAppleAllOfDisc) then) =
-      __$$FruitAllOfDiscAsAppleAllOfDiscCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImplCopyWith<
+    $Res> {
+  factory _$$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImplCopyWith(
+          _$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl value,
+          $Res Function(_$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl)
+              then) =
+      __$$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({AppleAllOfDisc appleAllOfDiscValue});
+  $Res call({OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue});
 
-  $AppleAllOfDiscCopyWith<$Res> get appleAllOfDiscValue;
+  $OpenApiAppleAllOfDiscCopyWith<$Res> get openApiAppleAllOfDiscValue;
 }
 
 /// @nodoc
-class __$$FruitAllOfDiscAsAppleAllOfDiscCopyWithImpl<$Res>
-    extends _$FruitAllOfDiscCopyWithImpl<$Res, _$FruitAllOfDiscAsAppleAllOfDisc>
-    implements _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith<$Res> {
-  __$$FruitAllOfDiscAsAppleAllOfDiscCopyWithImpl(
-      _$FruitAllOfDiscAsAppleAllOfDisc _value,
-      $Res Function(_$FruitAllOfDiscAsAppleAllOfDisc) _then)
+class __$$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitAllOfDiscCopyWithImpl<$Res,
+        _$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl>
+    implements
+        _$$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImplCopyWith<$Res> {
+  __$$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImplCopyWithImpl(
+      _$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl _value,
+      $Res Function(_$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? appleAllOfDiscValue = null,
+    Object? openApiAppleAllOfDiscValue = null,
   }) {
-    return _then(_$FruitAllOfDiscAsAppleAllOfDisc(
-      appleAllOfDiscValue: null == appleAllOfDiscValue
-          ? _value.appleAllOfDiscValue
-          : appleAllOfDiscValue // ignore: cast_nullable_to_non_nullable
-              as AppleAllOfDisc,
+    return _then(_$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl(
+      openApiAppleAllOfDiscValue: null == openApiAppleAllOfDiscValue
+          ? _value.openApiAppleAllOfDiscValue
+          : openApiAppleAllOfDiscValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiAppleAllOfDisc,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $AppleAllOfDiscCopyWith<$Res> get appleAllOfDiscValue {
-    return $AppleAllOfDiscCopyWith<$Res>(_value.appleAllOfDiscValue, (value) {
-      return _then(_value.copyWith(appleAllOfDiscValue: value));
+  $OpenApiAppleAllOfDiscCopyWith<$Res> get openApiAppleAllOfDiscValue {
+    return $OpenApiAppleAllOfDiscCopyWith<$Res>(
+        _value.openApiAppleAllOfDiscValue, (value) {
+      return _then(_value.copyWith(openApiAppleAllOfDiscValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$FruitAllOfDiscAsAppleAllOfDisc extends FruitAllOfDiscAsAppleAllOfDisc {
-  const _$FruitAllOfDiscAsAppleAllOfDisc({required this.appleAllOfDiscValue})
+class _$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl
+    extends OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc {
+  const _$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl(
+      {required this.openApiAppleAllOfDiscValue})
       : super._();
 
   @override
-  final AppleAllOfDisc appleAllOfDiscValue;
+  final OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue;
 
   @override
   String toString() {
-    return 'FruitAllOfDisc.asAppleAllOfDisc(appleAllOfDiscValue: $appleAllOfDiscValue)';
+    return 'OpenApiFruitAllOfDisc.asOpenApiAppleAllOfDisc(openApiAppleAllOfDiscValue: $openApiAppleAllOfDiscValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitAllOfDiscAsAppleAllOfDisc &&
-            (identical(other.appleAllOfDiscValue, appleAllOfDiscValue) ||
-                other.appleAllOfDiscValue == appleAllOfDiscValue));
+            other is _$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl &&
+            (identical(other.openApiAppleAllOfDiscValue,
+                    openApiAppleAllOfDiscValue) ||
+                other.openApiAppleAllOfDiscValue ==
+                    openApiAppleAllOfDiscValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, appleAllOfDiscValue);
+  int get hashCode => Object.hash(runtimeType, openApiAppleAllOfDiscValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith<_$FruitAllOfDiscAsAppleAllOfDisc>
-      get copyWith => __$$FruitAllOfDiscAsAppleAllOfDiscCopyWithImpl<
-          _$FruitAllOfDiscAsAppleAllOfDisc>(this, _$identity);
+  _$$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImplCopyWith<
+          _$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl>
+      get copyWith =>
+          __$$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImplCopyWithImpl<
+                  _$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleAllOfDisc appleAllOfDiscValue)
-        asAppleAllOfDisc,
-    required TResult Function(BananaAllOfDisc bananaAllOfDiscValue)
-        asBananaAllOfDisc,
+    required TResult Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)
+        asOpenApiAppleAllOfDisc,
+    required TResult Function(
+            OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)
+        asOpenApiBananaAllOfDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)
+            List<OpenApiFruitAllOfDisc> deserializedModels)
         unknown,
   }) {
-    return asAppleAllOfDisc(appleAllOfDiscValue);
+    return asOpenApiAppleAllOfDisc(openApiAppleAllOfDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleAllOfDisc appleAllOfDiscValue)? asAppleAllOfDisc,
-    TResult? Function(BananaAllOfDisc bananaAllOfDiscValue)? asBananaAllOfDisc,
+    TResult? Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)?
+        asOpenApiAppleAllOfDisc,
+    TResult? Function(OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)?
+        asOpenApiBananaAllOfDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)?
+            List<OpenApiFruitAllOfDisc> deserializedModels)?
         unknown,
   }) {
-    return asAppleAllOfDisc?.call(appleAllOfDiscValue);
+    return asOpenApiAppleAllOfDisc?.call(openApiAppleAllOfDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleAllOfDisc appleAllOfDiscValue)? asAppleAllOfDisc,
-    TResult Function(BananaAllOfDisc bananaAllOfDiscValue)? asBananaAllOfDisc,
+    TResult Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)?
+        asOpenApiAppleAllOfDisc,
+    TResult Function(OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)?
+        asOpenApiBananaAllOfDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)?
+            List<OpenApiFruitAllOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asAppleAllOfDisc != null) {
-      return asAppleAllOfDisc(appleAllOfDiscValue);
+    if (asOpenApiAppleAllOfDisc != null) {
+      return asOpenApiAppleAllOfDisc(openApiAppleAllOfDiscValue);
     }
     return orElse();
   }
@@ -8889,180 +9513,203 @@ class _$FruitAllOfDiscAsAppleAllOfDisc extends FruitAllOfDiscAsAppleAllOfDisc {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitAllOfDiscAsAppleAllOfDisc value)
-        asAppleAllOfDisc,
-    required TResult Function(FruitAllOfDiscAsBananaAllOfDisc value)
-        asBananaAllOfDisc,
-    required TResult Function(FruitAllOfDiscUnknown value) unknown,
+    required TResult Function(
+            OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)
+        asOpenApiAppleAllOfDisc,
+    required TResult Function(
+            OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)
+        asOpenApiBananaAllOfDisc,
+    required TResult Function(OpenApiFruitAllOfDiscUnknown value) unknown,
   }) {
-    return asAppleAllOfDisc(this);
+    return asOpenApiAppleAllOfDisc(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitAllOfDiscAsAppleAllOfDisc value)? asAppleAllOfDisc,
-    TResult? Function(FruitAllOfDiscAsBananaAllOfDisc value)? asBananaAllOfDisc,
-    TResult? Function(FruitAllOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)?
+        asOpenApiAppleAllOfDisc,
+    TResult? Function(OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)?
+        asOpenApiBananaAllOfDisc,
+    TResult? Function(OpenApiFruitAllOfDiscUnknown value)? unknown,
   }) {
-    return asAppleAllOfDisc?.call(this);
+    return asOpenApiAppleAllOfDisc?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitAllOfDiscAsAppleAllOfDisc value)? asAppleAllOfDisc,
-    TResult Function(FruitAllOfDiscAsBananaAllOfDisc value)? asBananaAllOfDisc,
-    TResult Function(FruitAllOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)?
+        asOpenApiAppleAllOfDisc,
+    TResult Function(OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)?
+        asOpenApiBananaAllOfDisc,
+    TResult Function(OpenApiFruitAllOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (asAppleAllOfDisc != null) {
-      return asAppleAllOfDisc(this);
+    if (asOpenApiAppleAllOfDisc != null) {
+      return asOpenApiAppleAllOfDisc(this);
     }
     return orElse();
   }
 }
 
-abstract class FruitAllOfDiscAsAppleAllOfDisc extends FruitAllOfDisc {
-  const factory FruitAllOfDiscAsAppleAllOfDisc(
-          {required final AppleAllOfDisc appleAllOfDiscValue}) =
-      _$FruitAllOfDiscAsAppleAllOfDisc;
-  const FruitAllOfDiscAsAppleAllOfDisc._() : super._();
+abstract class OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc
+    extends OpenApiFruitAllOfDisc {
+  const factory OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc(
+          {required final OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue}) =
+      _$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl;
+  const OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc._() : super._();
 
-  AppleAllOfDisc get appleAllOfDiscValue;
+  OpenApiAppleAllOfDisc get openApiAppleAllOfDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitAllOfDiscAsAppleAllOfDiscCopyWith<_$FruitAllOfDiscAsAppleAllOfDisc>
+  _$$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImplCopyWith<
+          _$OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith<$Res> {
-  factory _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith(
-          _$FruitAllOfDiscAsBananaAllOfDisc value,
-          $Res Function(_$FruitAllOfDiscAsBananaAllOfDisc) then) =
-      __$$FruitAllOfDiscAsBananaAllOfDiscCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImplCopyWith<
+    $Res> {
+  factory _$$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImplCopyWith(
+          _$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl value,
+          $Res Function(_$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl)
+              then) =
+      __$$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({BananaAllOfDisc bananaAllOfDiscValue});
+  $Res call({OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue});
 
-  $BananaAllOfDiscCopyWith<$Res> get bananaAllOfDiscValue;
+  $OpenApiBananaAllOfDiscCopyWith<$Res> get openApiBananaAllOfDiscValue;
 }
 
 /// @nodoc
-class __$$FruitAllOfDiscAsBananaAllOfDiscCopyWithImpl<$Res>
-    extends _$FruitAllOfDiscCopyWithImpl<$Res,
-        _$FruitAllOfDiscAsBananaAllOfDisc>
-    implements _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith<$Res> {
-  __$$FruitAllOfDiscAsBananaAllOfDiscCopyWithImpl(
-      _$FruitAllOfDiscAsBananaAllOfDisc _value,
-      $Res Function(_$FruitAllOfDiscAsBananaAllOfDisc) _then)
+class __$$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitAllOfDiscCopyWithImpl<$Res,
+        _$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl>
+    implements
+        _$$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImplCopyWith<$Res> {
+  __$$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImplCopyWithImpl(
+      _$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl _value,
+      $Res Function(_$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? bananaAllOfDiscValue = null,
+    Object? openApiBananaAllOfDiscValue = null,
   }) {
-    return _then(_$FruitAllOfDiscAsBananaAllOfDisc(
-      bananaAllOfDiscValue: null == bananaAllOfDiscValue
-          ? _value.bananaAllOfDiscValue
-          : bananaAllOfDiscValue // ignore: cast_nullable_to_non_nullable
-              as BananaAllOfDisc,
+    return _then(_$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl(
+      openApiBananaAllOfDiscValue: null == openApiBananaAllOfDiscValue
+          ? _value.openApiBananaAllOfDiscValue
+          : openApiBananaAllOfDiscValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiBananaAllOfDisc,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $BananaAllOfDiscCopyWith<$Res> get bananaAllOfDiscValue {
-    return $BananaAllOfDiscCopyWith<$Res>(_value.bananaAllOfDiscValue, (value) {
-      return _then(_value.copyWith(bananaAllOfDiscValue: value));
+  $OpenApiBananaAllOfDiscCopyWith<$Res> get openApiBananaAllOfDiscValue {
+    return $OpenApiBananaAllOfDiscCopyWith<$Res>(
+        _value.openApiBananaAllOfDiscValue, (value) {
+      return _then(_value.copyWith(openApiBananaAllOfDiscValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$FruitAllOfDiscAsBananaAllOfDisc
-    extends FruitAllOfDiscAsBananaAllOfDisc {
-  const _$FruitAllOfDiscAsBananaAllOfDisc({required this.bananaAllOfDiscValue})
+class _$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl
+    extends OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc {
+  const _$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl(
+      {required this.openApiBananaAllOfDiscValue})
       : super._();
 
   @override
-  final BananaAllOfDisc bananaAllOfDiscValue;
+  final OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue;
 
   @override
   String toString() {
-    return 'FruitAllOfDisc.asBananaAllOfDisc(bananaAllOfDiscValue: $bananaAllOfDiscValue)';
+    return 'OpenApiFruitAllOfDisc.asOpenApiBananaAllOfDisc(openApiBananaAllOfDiscValue: $openApiBananaAllOfDiscValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitAllOfDiscAsBananaAllOfDisc &&
-            (identical(other.bananaAllOfDiscValue, bananaAllOfDiscValue) ||
-                other.bananaAllOfDiscValue == bananaAllOfDiscValue));
+            other is _$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl &&
+            (identical(other.openApiBananaAllOfDiscValue,
+                    openApiBananaAllOfDiscValue) ||
+                other.openApiBananaAllOfDiscValue ==
+                    openApiBananaAllOfDiscValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, bananaAllOfDiscValue);
+  int get hashCode => Object.hash(runtimeType, openApiBananaAllOfDiscValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith<_$FruitAllOfDiscAsBananaAllOfDisc>
-      get copyWith => __$$FruitAllOfDiscAsBananaAllOfDiscCopyWithImpl<
-          _$FruitAllOfDiscAsBananaAllOfDisc>(this, _$identity);
+  _$$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImplCopyWith<
+          _$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl>
+      get copyWith =>
+          __$$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImplCopyWithImpl<
+                  _$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleAllOfDisc appleAllOfDiscValue)
-        asAppleAllOfDisc,
-    required TResult Function(BananaAllOfDisc bananaAllOfDiscValue)
-        asBananaAllOfDisc,
+    required TResult Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)
+        asOpenApiAppleAllOfDisc,
+    required TResult Function(
+            OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)
+        asOpenApiBananaAllOfDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)
+            List<OpenApiFruitAllOfDisc> deserializedModels)
         unknown,
   }) {
-    return asBananaAllOfDisc(bananaAllOfDiscValue);
+    return asOpenApiBananaAllOfDisc(openApiBananaAllOfDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleAllOfDisc appleAllOfDiscValue)? asAppleAllOfDisc,
-    TResult? Function(BananaAllOfDisc bananaAllOfDiscValue)? asBananaAllOfDisc,
+    TResult? Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)?
+        asOpenApiAppleAllOfDisc,
+    TResult? Function(OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)?
+        asOpenApiBananaAllOfDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)?
+            List<OpenApiFruitAllOfDisc> deserializedModels)?
         unknown,
   }) {
-    return asBananaAllOfDisc?.call(bananaAllOfDiscValue);
+    return asOpenApiBananaAllOfDisc?.call(openApiBananaAllOfDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleAllOfDisc appleAllOfDiscValue)? asAppleAllOfDisc,
-    TResult Function(BananaAllOfDisc bananaAllOfDiscValue)? asBananaAllOfDisc,
+    TResult Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)?
+        asOpenApiAppleAllOfDisc,
+    TResult Function(OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)?
+        asOpenApiBananaAllOfDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)?
+            List<OpenApiFruitAllOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asBananaAllOfDisc != null) {
-      return asBananaAllOfDisc(bananaAllOfDiscValue);
+    if (asOpenApiBananaAllOfDisc != null) {
+      return asOpenApiBananaAllOfDisc(openApiBananaAllOfDiscValue);
     }
     return orElse();
   }
@@ -9070,72 +9717,83 @@ class _$FruitAllOfDiscAsBananaAllOfDisc
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitAllOfDiscAsAppleAllOfDisc value)
-        asAppleAllOfDisc,
-    required TResult Function(FruitAllOfDiscAsBananaAllOfDisc value)
-        asBananaAllOfDisc,
-    required TResult Function(FruitAllOfDiscUnknown value) unknown,
+    required TResult Function(
+            OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)
+        asOpenApiAppleAllOfDisc,
+    required TResult Function(
+            OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)
+        asOpenApiBananaAllOfDisc,
+    required TResult Function(OpenApiFruitAllOfDiscUnknown value) unknown,
   }) {
-    return asBananaAllOfDisc(this);
+    return asOpenApiBananaAllOfDisc(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitAllOfDiscAsAppleAllOfDisc value)? asAppleAllOfDisc,
-    TResult? Function(FruitAllOfDiscAsBananaAllOfDisc value)? asBananaAllOfDisc,
-    TResult? Function(FruitAllOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)?
+        asOpenApiAppleAllOfDisc,
+    TResult? Function(OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)?
+        asOpenApiBananaAllOfDisc,
+    TResult? Function(OpenApiFruitAllOfDiscUnknown value)? unknown,
   }) {
-    return asBananaAllOfDisc?.call(this);
+    return asOpenApiBananaAllOfDisc?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitAllOfDiscAsAppleAllOfDisc value)? asAppleAllOfDisc,
-    TResult Function(FruitAllOfDiscAsBananaAllOfDisc value)? asBananaAllOfDisc,
-    TResult Function(FruitAllOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)?
+        asOpenApiAppleAllOfDisc,
+    TResult Function(OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)?
+        asOpenApiBananaAllOfDisc,
+    TResult Function(OpenApiFruitAllOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (asBananaAllOfDisc != null) {
-      return asBananaAllOfDisc(this);
+    if (asOpenApiBananaAllOfDisc != null) {
+      return asOpenApiBananaAllOfDisc(this);
     }
     return orElse();
   }
 }
 
-abstract class FruitAllOfDiscAsBananaAllOfDisc extends FruitAllOfDisc {
-  const factory FruitAllOfDiscAsBananaAllOfDisc(
-          {required final BananaAllOfDisc bananaAllOfDiscValue}) =
-      _$FruitAllOfDiscAsBananaAllOfDisc;
-  const FruitAllOfDiscAsBananaAllOfDisc._() : super._();
+abstract class OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc
+    extends OpenApiFruitAllOfDisc {
+  const factory OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc(
+          {required final OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue}) =
+      _$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl;
+  const OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc._() : super._();
 
-  BananaAllOfDisc get bananaAllOfDiscValue;
+  OpenApiBananaAllOfDisc get openApiBananaAllOfDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitAllOfDiscAsBananaAllOfDiscCopyWith<_$FruitAllOfDiscAsBananaAllOfDisc>
+  _$$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImplCopyWith<
+          _$OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitAllOfDiscUnknownCopyWith<$Res> {
-  factory _$$FruitAllOfDiscUnknownCopyWith(_$FruitAllOfDiscUnknown value,
-          $Res Function(_$FruitAllOfDiscUnknown) then) =
-      __$$FruitAllOfDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitAllOfDiscUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiFruitAllOfDiscUnknownImplCopyWith(
+          _$OpenApiFruitAllOfDiscUnknownImpl value,
+          $Res Function(_$OpenApiFruitAllOfDiscUnknownImpl) then) =
+      __$$OpenApiFruitAllOfDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<FruitAllOfDisc> deserializedModels});
+      List<OpenApiFruitAllOfDisc> deserializedModels});
 }
 
 /// @nodoc
-class __$$FruitAllOfDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitAllOfDiscCopyWithImpl<$Res, _$FruitAllOfDiscUnknown>
-    implements _$$FruitAllOfDiscUnknownCopyWith<$Res> {
-  __$$FruitAllOfDiscUnknownCopyWithImpl(_$FruitAllOfDiscUnknown _value,
-      $Res Function(_$FruitAllOfDiscUnknown) _then)
+class __$$OpenApiFruitAllOfDiscUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitAllOfDiscCopyWithImpl<$Res,
+        _$OpenApiFruitAllOfDiscUnknownImpl>
+    implements _$$OpenApiFruitAllOfDiscUnknownImplCopyWith<$Res> {
+  __$$OpenApiFruitAllOfDiscUnknownImplCopyWithImpl(
+      _$OpenApiFruitAllOfDiscUnknownImpl _value,
+      $Res Function(_$OpenApiFruitAllOfDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -9147,7 +9805,7 @@ class __$$FruitAllOfDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitAllOfDiscUnknown(
+    return _then(_$OpenApiFruitAllOfDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -9167,23 +9825,24 @@ class __$$FruitAllOfDiscUnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitAllOfDisc>,
+              as List<OpenApiFruitAllOfDisc>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
-  const _$FruitAllOfDiscUnknown(
+class _$OpenApiFruitAllOfDiscUnknownImpl extends OpenApiFruitAllOfDiscUnknown {
+  const _$OpenApiFruitAllOfDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
       final List<Type> possibleTypes = const <Type>[
-        AppleAllOfDisc,
-        BananaAllOfDisc
+        OpenApiAppleAllOfDisc,
+        OpenApiBananaAllOfDisc
       ],
-      final List<FruitAllOfDisc> deserializedModels = const <FruitAllOfDisc>[]})
+      final List<OpenApiFruitAllOfDisc> deserializedModels =
+          const <OpenApiFruitAllOfDisc>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -9212,10 +9871,10 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<FruitAllOfDisc> _deserializedModels;
+  final List<OpenApiFruitAllOfDisc> _deserializedModels;
   @override
   @JsonKey()
-  List<FruitAllOfDisc> get deserializedModels {
+  List<OpenApiFruitAllOfDisc> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -9224,14 +9883,14 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
 
   @override
   String toString() {
-    return 'FruitAllOfDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiFruitAllOfDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitAllOfDiscUnknown &&
+            other is _$OpenApiFruitAllOfDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -9254,23 +9913,25 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitAllOfDiscUnknownCopyWith<_$FruitAllOfDiscUnknown> get copyWith =>
-      __$$FruitAllOfDiscUnknownCopyWithImpl<_$FruitAllOfDiscUnknown>(
-          this, _$identity);
+  _$$OpenApiFruitAllOfDiscUnknownImplCopyWith<
+          _$OpenApiFruitAllOfDiscUnknownImpl>
+      get copyWith => __$$OpenApiFruitAllOfDiscUnknownImplCopyWithImpl<
+          _$OpenApiFruitAllOfDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleAllOfDisc appleAllOfDiscValue)
-        asAppleAllOfDisc,
-    required TResult Function(BananaAllOfDisc bananaAllOfDiscValue)
-        asBananaAllOfDisc,
+    required TResult Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)
+        asOpenApiAppleAllOfDisc,
+    required TResult Function(
+            OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)
+        asOpenApiBananaAllOfDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)
+            List<OpenApiFruitAllOfDisc> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -9279,14 +9940,16 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleAllOfDisc appleAllOfDiscValue)? asAppleAllOfDisc,
-    TResult? Function(BananaAllOfDisc bananaAllOfDiscValue)? asBananaAllOfDisc,
+    TResult? Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)?
+        asOpenApiAppleAllOfDisc,
+    TResult? Function(OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)?
+        asOpenApiBananaAllOfDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)?
+            List<OpenApiFruitAllOfDisc> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -9296,14 +9959,16 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleAllOfDisc appleAllOfDiscValue)? asAppleAllOfDisc,
-    TResult Function(BananaAllOfDisc bananaAllOfDiscValue)? asBananaAllOfDisc,
+    TResult Function(OpenApiAppleAllOfDisc openApiAppleAllOfDiscValue)?
+        asOpenApiAppleAllOfDisc,
+    TResult Function(OpenApiBananaAllOfDisc openApiBananaAllOfDiscValue)?
+        asOpenApiBananaAllOfDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitAllOfDisc> deserializedModels)?
+            List<OpenApiFruitAllOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -9317,11 +9982,13 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitAllOfDiscAsAppleAllOfDisc value)
-        asAppleAllOfDisc,
-    required TResult Function(FruitAllOfDiscAsBananaAllOfDisc value)
-        asBananaAllOfDisc,
-    required TResult Function(FruitAllOfDiscUnknown value) unknown,
+    required TResult Function(
+            OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)
+        asOpenApiAppleAllOfDisc,
+    required TResult Function(
+            OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)
+        asOpenApiBananaAllOfDisc,
+    required TResult Function(OpenApiFruitAllOfDiscUnknown value) unknown,
   }) {
     return unknown(this);
   }
@@ -9329,9 +9996,11 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitAllOfDiscAsAppleAllOfDisc value)? asAppleAllOfDisc,
-    TResult? Function(FruitAllOfDiscAsBananaAllOfDisc value)? asBananaAllOfDisc,
-    TResult? Function(FruitAllOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)?
+        asOpenApiAppleAllOfDisc,
+    TResult? Function(OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)?
+        asOpenApiBananaAllOfDisc,
+    TResult? Function(OpenApiFruitAllOfDiscUnknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -9339,9 +10008,11 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitAllOfDiscAsAppleAllOfDisc value)? asAppleAllOfDisc,
-    TResult Function(FruitAllOfDiscAsBananaAllOfDisc value)? asBananaAllOfDisc,
-    TResult Function(FruitAllOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitAllOfDiscAsOpenApiAppleAllOfDisc value)?
+        asOpenApiAppleAllOfDisc,
+    TResult Function(OpenApiFruitAllOfDiscAsOpenApiBananaAllOfDisc value)?
+        asOpenApiBananaAllOfDisc,
+    TResult Function(OpenApiFruitAllOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -9351,1356 +10022,105 @@ class _$FruitAllOfDiscUnknown extends FruitAllOfDiscUnknown {
   }
 }
 
-abstract class FruitAllOfDiscUnknown extends FruitAllOfDisc {
-  const factory FruitAllOfDiscUnknown(
-      {final String message,
-      required final Map<String, dynamic> json,
-      final DeserializationErrorType errorType,
-      final List<Type> possibleTypes,
-      final List<FruitAllOfDisc> deserializedModels}) = _$FruitAllOfDiscUnknown;
-  const FruitAllOfDiscUnknown._() : super._();
-
-  String get message;
-  Map<String, dynamic> get json;
-  DeserializationErrorType get errorType;
-  List<Type> get possibleTypes;
-  List<FruitAllOfDisc> get deserializedModels;
-  @JsonKey(ignore: true)
-  _$$FruitAllOfDiscUnknownCopyWith<_$FruitAllOfDiscUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-mixin _$FruitAnyOfDisc {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitAnyOfDisc> deserializedModels)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitAnyOfDisc> deserializedModels)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitAnyOfDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(FruitAnyOfDiscAsFruitType value) asFruitType,
-    required TResult Function(FruitAnyOfDiscUnknown value) unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitAnyOfDiscAsFruitType value)? asFruitType,
-    TResult? Function(FruitAnyOfDiscUnknown value)? unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitAnyOfDiscAsFruitType value)? asFruitType,
-    TResult Function(FruitAnyOfDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $FruitAnyOfDiscCopyWith<$Res> {
-  factory $FruitAnyOfDiscCopyWith(
-          FruitAnyOfDisc value, $Res Function(FruitAnyOfDisc) then) =
-      _$FruitAnyOfDiscCopyWithImpl<$Res, FruitAnyOfDisc>;
-}
-
-/// @nodoc
-class _$FruitAnyOfDiscCopyWithImpl<$Res, $Val extends FruitAnyOfDisc>
-    implements $FruitAnyOfDiscCopyWith<$Res> {
-  _$FruitAnyOfDiscCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$FruitAnyOfDiscAsFruitTypeCopyWith<$Res> {
-  factory _$$FruitAnyOfDiscAsFruitTypeCopyWith(
-          _$FruitAnyOfDiscAsFruitType value,
-          $Res Function(_$FruitAnyOfDiscAsFruitType) then) =
-      __$$FruitAnyOfDiscAsFruitTypeCopyWithImpl<$Res>;
-  @useResult
-  $Res call({FruitType fruitTypeValue});
-
-  $FruitTypeCopyWith<$Res> get fruitTypeValue;
-}
-
-/// @nodoc
-class __$$FruitAnyOfDiscAsFruitTypeCopyWithImpl<$Res>
-    extends _$FruitAnyOfDiscCopyWithImpl<$Res, _$FruitAnyOfDiscAsFruitType>
-    implements _$$FruitAnyOfDiscAsFruitTypeCopyWith<$Res> {
-  __$$FruitAnyOfDiscAsFruitTypeCopyWithImpl(_$FruitAnyOfDiscAsFruitType _value,
-      $Res Function(_$FruitAnyOfDiscAsFruitType) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? fruitTypeValue = null,
-  }) {
-    return _then(_$FruitAnyOfDiscAsFruitType(
-      fruitTypeValue: null == fruitTypeValue
-          ? _value.fruitTypeValue
-          : fruitTypeValue // ignore: cast_nullable_to_non_nullable
-              as FruitType,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $FruitTypeCopyWith<$Res> get fruitTypeValue {
-    return $FruitTypeCopyWith<$Res>(_value.fruitTypeValue, (value) {
-      return _then(_value.copyWith(fruitTypeValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$FruitAnyOfDiscAsFruitType extends FruitAnyOfDiscAsFruitType {
-  const _$FruitAnyOfDiscAsFruitType({required this.fruitTypeValue}) : super._();
-
-  @override
-  final FruitType fruitTypeValue;
-
-  @override
-  String toString() {
-    return 'FruitAnyOfDisc.asFruitType(fruitTypeValue: $fruitTypeValue)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitAnyOfDiscAsFruitType &&
-            (identical(other.fruitTypeValue, fruitTypeValue) ||
-                other.fruitTypeValue == fruitTypeValue));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, fruitTypeValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitAnyOfDiscAsFruitTypeCopyWith<_$FruitAnyOfDiscAsFruitType>
-      get copyWith => __$$FruitAnyOfDiscAsFruitTypeCopyWithImpl<
-          _$FruitAnyOfDiscAsFruitType>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitAnyOfDisc> deserializedModels)
-        unknown,
-  }) {
-    return asFruitType(fruitTypeValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitAnyOfDisc> deserializedModels)?
-        unknown,
-  }) {
-    return asFruitType?.call(fruitTypeValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitAnyOfDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitType != null) {
-      return asFruitType(fruitTypeValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(FruitAnyOfDiscAsFruitType value) asFruitType,
-    required TResult Function(FruitAnyOfDiscUnknown value) unknown,
-  }) {
-    return asFruitType(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitAnyOfDiscAsFruitType value)? asFruitType,
-    TResult? Function(FruitAnyOfDiscUnknown value)? unknown,
-  }) {
-    return asFruitType?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitAnyOfDiscAsFruitType value)? asFruitType,
-    TResult Function(FruitAnyOfDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitType != null) {
-      return asFruitType(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitAnyOfDiscAsFruitType extends FruitAnyOfDisc {
-  const factory FruitAnyOfDiscAsFruitType(
-      {required final FruitType fruitTypeValue}) = _$FruitAnyOfDiscAsFruitType;
-  const FruitAnyOfDiscAsFruitType._() : super._();
-
-  FruitType get fruitTypeValue;
-  @JsonKey(ignore: true)
-  _$$FruitAnyOfDiscAsFruitTypeCopyWith<_$FruitAnyOfDiscAsFruitType>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$FruitAnyOfDiscUnknownCopyWith<$Res> {
-  factory _$$FruitAnyOfDiscUnknownCopyWith(_$FruitAnyOfDiscUnknown value,
-          $Res Function(_$FruitAnyOfDiscUnknown) then) =
-      __$$FruitAnyOfDiscUnknownCopyWithImpl<$Res>;
-  @useResult
-  $Res call(
-      {String message,
-      Map<String, dynamic> json,
-      DeserializationErrorType errorType,
-      List<Type> possibleTypes,
-      List<FruitAnyOfDisc> deserializedModels});
-}
-
-/// @nodoc
-class __$$FruitAnyOfDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitAnyOfDiscCopyWithImpl<$Res, _$FruitAnyOfDiscUnknown>
-    implements _$$FruitAnyOfDiscUnknownCopyWith<$Res> {
-  __$$FruitAnyOfDiscUnknownCopyWithImpl(_$FruitAnyOfDiscUnknown _value,
-      $Res Function(_$FruitAnyOfDiscUnknown) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-    Object? json = null,
-    Object? errorType = null,
-    Object? possibleTypes = null,
-    Object? deserializedModels = null,
-  }) {
-    return _then(_$FruitAnyOfDiscUnknown(
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      json: null == json
-          ? _value._json
-          : json // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      errorType: null == errorType
-          ? _value.errorType
-          : errorType // ignore: cast_nullable_to_non_nullable
-              as DeserializationErrorType,
-      possibleTypes: null == possibleTypes
-          ? _value._possibleTypes
-          : possibleTypes // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
-      deserializedModels: null == deserializedModels
-          ? _value._deserializedModels
-          : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitAnyOfDisc>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$FruitAnyOfDiscUnknown extends FruitAnyOfDiscUnknown {
-  const _$FruitAnyOfDiscUnknown(
-      {this.message = 'Json does not satisfy any available types',
-      required final Map<String, dynamic> json,
-      this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[FruitType],
-      final List<FruitAnyOfDisc> deserializedModels = const <FruitAnyOfDisc>[]})
-      : _json = json,
-        _possibleTypes = possibleTypes,
-        _deserializedModels = deserializedModels,
-        super._();
-
-  @override
-  @JsonKey()
-  final String message;
-  final Map<String, dynamic> _json;
-  @override
-  Map<String, dynamic> get json {
-    if (_json is EqualUnmodifiableMapView) return _json;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_json);
-  }
-
-  @override
-  @JsonKey()
-  final DeserializationErrorType errorType;
-  final List<Type> _possibleTypes;
-  @override
-  @JsonKey()
-  List<Type> get possibleTypes {
-    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_possibleTypes);
-  }
-
-  final List<FruitAnyOfDisc> _deserializedModels;
-  @override
-  @JsonKey()
-  List<FruitAnyOfDisc> get deserializedModels {
-    if (_deserializedModels is EqualUnmodifiableListView)
-      return _deserializedModels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_deserializedModels);
-  }
-
-  @override
-  String toString() {
-    return 'FruitAnyOfDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitAnyOfDiscUnknown &&
-            (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other._json, _json) &&
-            (identical(other.errorType, errorType) ||
-                other.errorType == errorType) &&
-            const DeepCollectionEquality()
-                .equals(other._possibleTypes, _possibleTypes) &&
-            const DeepCollectionEquality()
-                .equals(other._deserializedModels, _deserializedModels));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      message,
-      const DeepCollectionEquality().hash(_json),
-      errorType,
-      const DeepCollectionEquality().hash(_possibleTypes),
-      const DeepCollectionEquality().hash(_deserializedModels));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitAnyOfDiscUnknownCopyWith<_$FruitAnyOfDiscUnknown> get copyWith =>
-      __$$FruitAnyOfDiscUnknownCopyWithImpl<_$FruitAnyOfDiscUnknown>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(FruitType fruitTypeValue) asFruitType,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitAnyOfDisc> deserializedModels)
-        unknown,
-  }) {
-    return unknown(message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitType fruitTypeValue)? asFruitType,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitAnyOfDisc> deserializedModels)?
-        unknown,
-  }) {
-    return unknown?.call(
-        message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitType fruitTypeValue)? asFruitType,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitAnyOfDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(
-          message, json, errorType, possibleTypes, deserializedModels);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(FruitAnyOfDiscAsFruitType value) asFruitType,
-    required TResult Function(FruitAnyOfDiscUnknown value) unknown,
-  }) {
-    return unknown(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitAnyOfDiscAsFruitType value)? asFruitType,
-    TResult? Function(FruitAnyOfDiscUnknown value)? unknown,
-  }) {
-    return unknown?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitAnyOfDiscAsFruitType value)? asFruitType,
-    TResult Function(FruitAnyOfDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitAnyOfDiscUnknown extends FruitAnyOfDisc {
-  const factory FruitAnyOfDiscUnknown(
-      {final String message,
-      required final Map<String, dynamic> json,
-      final DeserializationErrorType errorType,
-      final List<Type> possibleTypes,
-      final List<FruitAnyOfDisc> deserializedModels}) = _$FruitAnyOfDiscUnknown;
-  const FruitAnyOfDiscUnknown._() : super._();
-
-  String get message;
-  Map<String, dynamic> get json;
-  DeserializationErrorType get errorType;
-  List<Type> get possibleTypes;
-  List<FruitAnyOfDisc> get deserializedModels;
-  @JsonKey(ignore: true)
-  _$$FruitAnyOfDiscUnknownCopyWith<_$FruitAnyOfDiscUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-mixin _$FruitGrandparentDisc {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(AppleGrandparentDisc appleGrandparentDiscValue)
-        asAppleGrandparentDisc,
-    required TResult Function(BananaGrandparentDisc bananaGrandparentDiscValue)
-        asBananaGrandparentDisc,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleGrandparentDisc appleGrandparentDiscValue)?
-        asAppleGrandparentDisc,
-    TResult? Function(BananaGrandparentDisc bananaGrandparentDiscValue)?
-        asBananaGrandparentDisc,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleGrandparentDisc appleGrandparentDiscValue)?
-        asAppleGrandparentDisc,
-    TResult Function(BananaGrandparentDisc bananaGrandparentDiscValue)?
-        asBananaGrandparentDisc,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(FruitGrandparentDiscAsAppleGrandparentDisc value)
-        asAppleGrandparentDisc,
-    required TResult Function(FruitGrandparentDiscAsBananaGrandparentDisc value)
-        asBananaGrandparentDisc,
-    required TResult Function(FruitGrandparentDiscUnknown value) unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitGrandparentDiscAsAppleGrandparentDisc value)?
-        asAppleGrandparentDisc,
-    TResult? Function(FruitGrandparentDiscAsBananaGrandparentDisc value)?
-        asBananaGrandparentDisc,
-    TResult? Function(FruitGrandparentDiscUnknown value)? unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitGrandparentDiscAsAppleGrandparentDisc value)?
-        asAppleGrandparentDisc,
-    TResult Function(FruitGrandparentDiscAsBananaGrandparentDisc value)?
-        asBananaGrandparentDisc,
-    TResult Function(FruitGrandparentDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $FruitGrandparentDiscCopyWith<$Res> {
-  factory $FruitGrandparentDiscCopyWith(FruitGrandparentDisc value,
-          $Res Function(FruitGrandparentDisc) then) =
-      _$FruitGrandparentDiscCopyWithImpl<$Res, FruitGrandparentDisc>;
-}
-
-/// @nodoc
-class _$FruitGrandparentDiscCopyWithImpl<$Res,
-        $Val extends FruitGrandparentDisc>
-    implements $FruitGrandparentDiscCopyWith<$Res> {
-  _$FruitGrandparentDiscCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith<$Res> {
-  factory _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith(
-          _$FruitGrandparentDiscAsAppleGrandparentDisc value,
-          $Res Function(_$FruitGrandparentDiscAsAppleGrandparentDisc) then) =
-      __$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWithImpl<$Res>;
-  @useResult
-  $Res call({AppleGrandparentDisc appleGrandparentDiscValue});
-
-  $AppleGrandparentDiscCopyWith<$Res> get appleGrandparentDiscValue;
-}
-
-/// @nodoc
-class __$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWithImpl<$Res>
-    extends _$FruitGrandparentDiscCopyWithImpl<$Res,
-        _$FruitGrandparentDiscAsAppleGrandparentDisc>
-    implements _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith<$Res> {
-  __$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWithImpl(
-      _$FruitGrandparentDiscAsAppleGrandparentDisc _value,
-      $Res Function(_$FruitGrandparentDiscAsAppleGrandparentDisc) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? appleGrandparentDiscValue = null,
-  }) {
-    return _then(_$FruitGrandparentDiscAsAppleGrandparentDisc(
-      appleGrandparentDiscValue: null == appleGrandparentDiscValue
-          ? _value.appleGrandparentDiscValue
-          : appleGrandparentDiscValue // ignore: cast_nullable_to_non_nullable
-              as AppleGrandparentDisc,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $AppleGrandparentDiscCopyWith<$Res> get appleGrandparentDiscValue {
-    return $AppleGrandparentDiscCopyWith<$Res>(_value.appleGrandparentDiscValue,
-        (value) {
-      return _then(_value.copyWith(appleGrandparentDiscValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$FruitGrandparentDiscAsAppleGrandparentDisc
-    extends FruitGrandparentDiscAsAppleGrandparentDisc {
-  const _$FruitGrandparentDiscAsAppleGrandparentDisc(
-      {required this.appleGrandparentDiscValue})
-      : super._();
-
-  @override
-  final AppleGrandparentDisc appleGrandparentDiscValue;
-
-  @override
-  String toString() {
-    return 'FruitGrandparentDisc.asAppleGrandparentDisc(appleGrandparentDiscValue: $appleGrandparentDiscValue)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitGrandparentDiscAsAppleGrandparentDisc &&
-            (identical(other.appleGrandparentDiscValue,
-                    appleGrandparentDiscValue) ||
-                other.appleGrandparentDiscValue == appleGrandparentDiscValue));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, appleGrandparentDiscValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith<
-          _$FruitGrandparentDiscAsAppleGrandparentDisc>
-      get copyWith =>
-          __$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWithImpl<
-              _$FruitGrandparentDiscAsAppleGrandparentDisc>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(AppleGrandparentDisc appleGrandparentDiscValue)
-        asAppleGrandparentDisc,
-    required TResult Function(BananaGrandparentDisc bananaGrandparentDiscValue)
-        asBananaGrandparentDisc,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)
-        unknown,
-  }) {
-    return asAppleGrandparentDisc(appleGrandparentDiscValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleGrandparentDisc appleGrandparentDiscValue)?
-        asAppleGrandparentDisc,
-    TResult? Function(BananaGrandparentDisc bananaGrandparentDiscValue)?
-        asBananaGrandparentDisc,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)?
-        unknown,
-  }) {
-    return asAppleGrandparentDisc?.call(appleGrandparentDiscValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleGrandparentDisc appleGrandparentDiscValue)?
-        asAppleGrandparentDisc,
-    TResult Function(BananaGrandparentDisc bananaGrandparentDiscValue)?
-        asBananaGrandparentDisc,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asAppleGrandparentDisc != null) {
-      return asAppleGrandparentDisc(appleGrandparentDiscValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(FruitGrandparentDiscAsAppleGrandparentDisc value)
-        asAppleGrandparentDisc,
-    required TResult Function(FruitGrandparentDiscAsBananaGrandparentDisc value)
-        asBananaGrandparentDisc,
-    required TResult Function(FruitGrandparentDiscUnknown value) unknown,
-  }) {
-    return asAppleGrandparentDisc(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitGrandparentDiscAsAppleGrandparentDisc value)?
-        asAppleGrandparentDisc,
-    TResult? Function(FruitGrandparentDiscAsBananaGrandparentDisc value)?
-        asBananaGrandparentDisc,
-    TResult? Function(FruitGrandparentDiscUnknown value)? unknown,
-  }) {
-    return asAppleGrandparentDisc?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitGrandparentDiscAsAppleGrandparentDisc value)?
-        asAppleGrandparentDisc,
-    TResult Function(FruitGrandparentDiscAsBananaGrandparentDisc value)?
-        asBananaGrandparentDisc,
-    TResult Function(FruitGrandparentDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asAppleGrandparentDisc != null) {
-      return asAppleGrandparentDisc(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitGrandparentDiscAsAppleGrandparentDisc
-    extends FruitGrandparentDisc {
-  const factory FruitGrandparentDiscAsAppleGrandparentDisc(
-          {required final AppleGrandparentDisc appleGrandparentDiscValue}) =
-      _$FruitGrandparentDiscAsAppleGrandparentDisc;
-  const FruitGrandparentDiscAsAppleGrandparentDisc._() : super._();
-
-  AppleGrandparentDisc get appleGrandparentDiscValue;
-  @JsonKey(ignore: true)
-  _$$FruitGrandparentDiscAsAppleGrandparentDiscCopyWith<
-          _$FruitGrandparentDiscAsAppleGrandparentDisc>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith<$Res> {
-  factory _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith(
-          _$FruitGrandparentDiscAsBananaGrandparentDisc value,
-          $Res Function(_$FruitGrandparentDiscAsBananaGrandparentDisc) then) =
-      __$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWithImpl<$Res>;
-  @useResult
-  $Res call({BananaGrandparentDisc bananaGrandparentDiscValue});
-
-  $BananaGrandparentDiscCopyWith<$Res> get bananaGrandparentDiscValue;
-}
-
-/// @nodoc
-class __$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWithImpl<$Res>
-    extends _$FruitGrandparentDiscCopyWithImpl<$Res,
-        _$FruitGrandparentDiscAsBananaGrandparentDisc>
-    implements _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith<$Res> {
-  __$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWithImpl(
-      _$FruitGrandparentDiscAsBananaGrandparentDisc _value,
-      $Res Function(_$FruitGrandparentDiscAsBananaGrandparentDisc) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? bananaGrandparentDiscValue = null,
-  }) {
-    return _then(_$FruitGrandparentDiscAsBananaGrandparentDisc(
-      bananaGrandparentDiscValue: null == bananaGrandparentDiscValue
-          ? _value.bananaGrandparentDiscValue
-          : bananaGrandparentDiscValue // ignore: cast_nullable_to_non_nullable
-              as BananaGrandparentDisc,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $BananaGrandparentDiscCopyWith<$Res> get bananaGrandparentDiscValue {
-    return $BananaGrandparentDiscCopyWith<$Res>(
-        _value.bananaGrandparentDiscValue, (value) {
-      return _then(_value.copyWith(bananaGrandparentDiscValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$FruitGrandparentDiscAsBananaGrandparentDisc
-    extends FruitGrandparentDiscAsBananaGrandparentDisc {
-  const _$FruitGrandparentDiscAsBananaGrandparentDisc(
-      {required this.bananaGrandparentDiscValue})
-      : super._();
-
-  @override
-  final BananaGrandparentDisc bananaGrandparentDiscValue;
-
-  @override
-  String toString() {
-    return 'FruitGrandparentDisc.asBananaGrandparentDisc(bananaGrandparentDiscValue: $bananaGrandparentDiscValue)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitGrandparentDiscAsBananaGrandparentDisc &&
-            (identical(other.bananaGrandparentDiscValue,
-                    bananaGrandparentDiscValue) ||
-                other.bananaGrandparentDiscValue ==
-                    bananaGrandparentDiscValue));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, bananaGrandparentDiscValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith<
-          _$FruitGrandparentDiscAsBananaGrandparentDisc>
-      get copyWith =>
-          __$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWithImpl<
-              _$FruitGrandparentDiscAsBananaGrandparentDisc>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(AppleGrandparentDisc appleGrandparentDiscValue)
-        asAppleGrandparentDisc,
-    required TResult Function(BananaGrandparentDisc bananaGrandparentDiscValue)
-        asBananaGrandparentDisc,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)
-        unknown,
-  }) {
-    return asBananaGrandparentDisc(bananaGrandparentDiscValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleGrandparentDisc appleGrandparentDiscValue)?
-        asAppleGrandparentDisc,
-    TResult? Function(BananaGrandparentDisc bananaGrandparentDiscValue)?
-        asBananaGrandparentDisc,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)?
-        unknown,
-  }) {
-    return asBananaGrandparentDisc?.call(bananaGrandparentDiscValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleGrandparentDisc appleGrandparentDiscValue)?
-        asAppleGrandparentDisc,
-    TResult Function(BananaGrandparentDisc bananaGrandparentDiscValue)?
-        asBananaGrandparentDisc,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asBananaGrandparentDisc != null) {
-      return asBananaGrandparentDisc(bananaGrandparentDiscValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(FruitGrandparentDiscAsAppleGrandparentDisc value)
-        asAppleGrandparentDisc,
-    required TResult Function(FruitGrandparentDiscAsBananaGrandparentDisc value)
-        asBananaGrandparentDisc,
-    required TResult Function(FruitGrandparentDiscUnknown value) unknown,
-  }) {
-    return asBananaGrandparentDisc(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitGrandparentDiscAsAppleGrandparentDisc value)?
-        asAppleGrandparentDisc,
-    TResult? Function(FruitGrandparentDiscAsBananaGrandparentDisc value)?
-        asBananaGrandparentDisc,
-    TResult? Function(FruitGrandparentDiscUnknown value)? unknown,
-  }) {
-    return asBananaGrandparentDisc?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitGrandparentDiscAsAppleGrandparentDisc value)?
-        asAppleGrandparentDisc,
-    TResult Function(FruitGrandparentDiscAsBananaGrandparentDisc value)?
-        asBananaGrandparentDisc,
-    TResult Function(FruitGrandparentDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asBananaGrandparentDisc != null) {
-      return asBananaGrandparentDisc(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitGrandparentDiscAsBananaGrandparentDisc
-    extends FruitGrandparentDisc {
-  const factory FruitGrandparentDiscAsBananaGrandparentDisc(
-          {required final BananaGrandparentDisc bananaGrandparentDiscValue}) =
-      _$FruitGrandparentDiscAsBananaGrandparentDisc;
-  const FruitGrandparentDiscAsBananaGrandparentDisc._() : super._();
-
-  BananaGrandparentDisc get bananaGrandparentDiscValue;
-  @JsonKey(ignore: true)
-  _$$FruitGrandparentDiscAsBananaGrandparentDiscCopyWith<
-          _$FruitGrandparentDiscAsBananaGrandparentDisc>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$FruitGrandparentDiscUnknownCopyWith<$Res> {
-  factory _$$FruitGrandparentDiscUnknownCopyWith(
-          _$FruitGrandparentDiscUnknown value,
-          $Res Function(_$FruitGrandparentDiscUnknown) then) =
-      __$$FruitGrandparentDiscUnknownCopyWithImpl<$Res>;
-  @useResult
-  $Res call(
-      {String message,
-      Map<String, dynamic> json,
-      DeserializationErrorType errorType,
-      List<Type> possibleTypes,
-      List<FruitGrandparentDisc> deserializedModels});
-}
-
-/// @nodoc
-class __$$FruitGrandparentDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitGrandparentDiscCopyWithImpl<$Res,
-        _$FruitGrandparentDiscUnknown>
-    implements _$$FruitGrandparentDiscUnknownCopyWith<$Res> {
-  __$$FruitGrandparentDiscUnknownCopyWithImpl(
-      _$FruitGrandparentDiscUnknown _value,
-      $Res Function(_$FruitGrandparentDiscUnknown) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-    Object? json = null,
-    Object? errorType = null,
-    Object? possibleTypes = null,
-    Object? deserializedModels = null,
-  }) {
-    return _then(_$FruitGrandparentDiscUnknown(
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      json: null == json
-          ? _value._json
-          : json // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      errorType: null == errorType
-          ? _value.errorType
-          : errorType // ignore: cast_nullable_to_non_nullable
-              as DeserializationErrorType,
-      possibleTypes: null == possibleTypes
-          ? _value._possibleTypes
-          : possibleTypes // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
-      deserializedModels: null == deserializedModels
-          ? _value._deserializedModels
-          : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitGrandparentDisc>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$FruitGrandparentDiscUnknown extends FruitGrandparentDiscUnknown {
-  const _$FruitGrandparentDiscUnknown(
-      {this.message = 'Json does not satisfy any available types',
-      required final Map<String, dynamic> json,
-      this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[
-        AppleGrandparentDisc,
-        BananaGrandparentDisc
-      ],
-      final List<FruitGrandparentDisc> deserializedModels =
-          const <FruitGrandparentDisc>[]})
-      : _json = json,
-        _possibleTypes = possibleTypes,
-        _deserializedModels = deserializedModels,
-        super._();
-
-  @override
-  @JsonKey()
-  final String message;
-  final Map<String, dynamic> _json;
-  @override
-  Map<String, dynamic> get json {
-    if (_json is EqualUnmodifiableMapView) return _json;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_json);
-  }
-
-  @override
-  @JsonKey()
-  final DeserializationErrorType errorType;
-  final List<Type> _possibleTypes;
-  @override
-  @JsonKey()
-  List<Type> get possibleTypes {
-    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_possibleTypes);
-  }
-
-  final List<FruitGrandparentDisc> _deserializedModels;
-  @override
-  @JsonKey()
-  List<FruitGrandparentDisc> get deserializedModels {
-    if (_deserializedModels is EqualUnmodifiableListView)
-      return _deserializedModels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_deserializedModels);
-  }
-
-  @override
-  String toString() {
-    return 'FruitGrandparentDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitGrandparentDiscUnknown &&
-            (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other._json, _json) &&
-            (identical(other.errorType, errorType) ||
-                other.errorType == errorType) &&
-            const DeepCollectionEquality()
-                .equals(other._possibleTypes, _possibleTypes) &&
-            const DeepCollectionEquality()
-                .equals(other._deserializedModels, _deserializedModels));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      message,
-      const DeepCollectionEquality().hash(_json),
-      errorType,
-      const DeepCollectionEquality().hash(_possibleTypes),
-      const DeepCollectionEquality().hash(_deserializedModels));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitGrandparentDiscUnknownCopyWith<_$FruitGrandparentDiscUnknown>
-      get copyWith => __$$FruitGrandparentDiscUnknownCopyWithImpl<
-          _$FruitGrandparentDiscUnknown>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(AppleGrandparentDisc appleGrandparentDiscValue)
-        asAppleGrandparentDisc,
-    required TResult Function(BananaGrandparentDisc bananaGrandparentDiscValue)
-        asBananaGrandparentDisc,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)
-        unknown,
-  }) {
-    return unknown(message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleGrandparentDisc appleGrandparentDiscValue)?
-        asAppleGrandparentDisc,
-    TResult? Function(BananaGrandparentDisc bananaGrandparentDiscValue)?
-        asBananaGrandparentDisc,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)?
-        unknown,
-  }) {
-    return unknown?.call(
-        message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleGrandparentDisc appleGrandparentDiscValue)?
-        asAppleGrandparentDisc,
-    TResult Function(BananaGrandparentDisc bananaGrandparentDiscValue)?
-        asBananaGrandparentDisc,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitGrandparentDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(
-          message, json, errorType, possibleTypes, deserializedModels);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(FruitGrandparentDiscAsAppleGrandparentDisc value)
-        asAppleGrandparentDisc,
-    required TResult Function(FruitGrandparentDiscAsBananaGrandparentDisc value)
-        asBananaGrandparentDisc,
-    required TResult Function(FruitGrandparentDiscUnknown value) unknown,
-  }) {
-    return unknown(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitGrandparentDiscAsAppleGrandparentDisc value)?
-        asAppleGrandparentDisc,
-    TResult? Function(FruitGrandparentDiscAsBananaGrandparentDisc value)?
-        asBananaGrandparentDisc,
-    TResult? Function(FruitGrandparentDiscUnknown value)? unknown,
-  }) {
-    return unknown?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitGrandparentDiscAsAppleGrandparentDisc value)?
-        asAppleGrandparentDisc,
-    TResult Function(FruitGrandparentDiscAsBananaGrandparentDisc value)?
-        asBananaGrandparentDisc,
-    TResult Function(FruitGrandparentDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitGrandparentDiscUnknown extends FruitGrandparentDisc {
-  const factory FruitGrandparentDiscUnknown(
+abstract class OpenApiFruitAllOfDiscUnknown extends OpenApiFruitAllOfDisc {
+  const factory OpenApiFruitAllOfDiscUnknown(
           {final String message,
           required final Map<String, dynamic> json,
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
-          final List<FruitGrandparentDisc> deserializedModels}) =
-      _$FruitGrandparentDiscUnknown;
-  const FruitGrandparentDiscUnknown._() : super._();
+          final List<OpenApiFruitAllOfDisc> deserializedModels}) =
+      _$OpenApiFruitAllOfDiscUnknownImpl;
+  const OpenApiFruitAllOfDiscUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<FruitGrandparentDisc> get deserializedModels;
+  List<OpenApiFruitAllOfDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitGrandparentDiscUnknownCopyWith<_$FruitGrandparentDiscUnknown>
+  _$$OpenApiFruitAllOfDiscUnknownImplCopyWith<
+          _$OpenApiFruitAllOfDiscUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$FruitInlineDisc {
+mixin _$OpenApiFruitAnyOfDisc {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)
-        asFruitInlineDiscOneOf,
-    required TResult Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)
-        asFruitInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)
+            List<OpenApiFruitAnyOfDisc> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)?
-        asFruitInlineDiscOneOf,
-    TResult? Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)?
-        asFruitInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)?
+            List<OpenApiFruitAnyOfDisc> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)?
-        asFruitInlineDiscOneOf,
-    TResult Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)?
-        asFruitInlineDiscOneOf1,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)?
+            List<OpenApiFruitAnyOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf value)
-        asFruitInlineDiscOneOf,
-    required TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)
-        asFruitInlineDiscOneOf1,
-    required TResult Function(FruitInlineDiscUnknown value) unknown,
+    required TResult Function(OpenApiFruitAnyOfDiscAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiFruitAnyOfDiscUnknown value) unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineDiscAsFruitInlineDiscOneOf value)?
-        asFruitInlineDiscOneOf,
-    TResult? Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)?
-        asFruitInlineDiscOneOf1,
-    TResult? Function(FruitInlineDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitAnyOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiFruitAnyOfDiscUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf value)?
-        asFruitInlineDiscOneOf,
-    TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)?
-        asFruitInlineDiscOneOf1,
-    TResult Function(FruitInlineDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitAnyOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiFruitAnyOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FruitInlineDiscCopyWith<$Res> {
-  factory $FruitInlineDiscCopyWith(
-          FruitInlineDisc value, $Res Function(FruitInlineDisc) then) =
-      _$FruitInlineDiscCopyWithImpl<$Res, FruitInlineDisc>;
+abstract class $OpenApiFruitAnyOfDiscCopyWith<$Res> {
+  factory $OpenApiFruitAnyOfDiscCopyWith(OpenApiFruitAnyOfDisc value,
+          $Res Function(OpenApiFruitAnyOfDisc) then) =
+      _$OpenApiFruitAnyOfDiscCopyWithImpl<$Res, OpenApiFruitAnyOfDisc>;
 }
 
 /// @nodoc
-class _$FruitInlineDiscCopyWithImpl<$Res, $Val extends FruitInlineDisc>
-    implements $FruitInlineDiscCopyWith<$Res> {
-  _$FruitInlineDiscCopyWithImpl(this._value, this._then);
+class _$OpenApiFruitAnyOfDiscCopyWithImpl<$Res,
+        $Val extends OpenApiFruitAnyOfDisc>
+    implements $OpenApiFruitAnyOfDiscCopyWith<$Res> {
+  _$OpenApiFruitAnyOfDiscCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -10709,141 +10129,135 @@ class _$FruitInlineDiscCopyWithImpl<$Res, $Val extends FruitInlineDisc>
 }
 
 /// @nodoc
-abstract class _$$FruitInlineDiscAsFruitInlineDiscOneOfCopyWith<$Res> {
-  factory _$$FruitInlineDiscAsFruitInlineDiscOneOfCopyWith(
-          _$FruitInlineDiscAsFruitInlineDiscOneOf value,
-          $Res Function(_$FruitInlineDiscAsFruitInlineDiscOneOf) then) =
-      __$$FruitInlineDiscAsFruitInlineDiscOneOfCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImplCopyWith<$Res> {
+  factory _$$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImplCopyWith(
+          _$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl value,
+          $Res Function(_$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl) then) =
+      __$$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({FruitInlineDiscOneOf fruitInlineDiscOneOfValue});
+  $Res call({OpenApiFruitType openApiFruitTypeValue});
 
-  $FruitInlineDiscOneOfCopyWith<$Res> get fruitInlineDiscOneOfValue;
+  $OpenApiFruitTypeCopyWith<$Res> get openApiFruitTypeValue;
 }
 
 /// @nodoc
-class __$$FruitInlineDiscAsFruitInlineDiscOneOfCopyWithImpl<$Res>
-    extends _$FruitInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineDiscAsFruitInlineDiscOneOf>
-    implements _$$FruitInlineDiscAsFruitInlineDiscOneOfCopyWith<$Res> {
-  __$$FruitInlineDiscAsFruitInlineDiscOneOfCopyWithImpl(
-      _$FruitInlineDiscAsFruitInlineDiscOneOf _value,
-      $Res Function(_$FruitInlineDiscAsFruitInlineDiscOneOf) _then)
+class __$$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitAnyOfDiscCopyWithImpl<$Res,
+        _$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl>
+    implements _$$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImplCopyWith<$Res> {
+  __$$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImplCopyWithImpl(
+      _$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl _value,
+      $Res Function(_$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? fruitInlineDiscOneOfValue = null,
+    Object? openApiFruitTypeValue = null,
   }) {
-    return _then(_$FruitInlineDiscAsFruitInlineDiscOneOf(
-      fruitInlineDiscOneOfValue: null == fruitInlineDiscOneOfValue
-          ? _value.fruitInlineDiscOneOfValue
-          : fruitInlineDiscOneOfValue // ignore: cast_nullable_to_non_nullable
-              as FruitInlineDiscOneOf,
+    return _then(_$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl(
+      openApiFruitTypeValue: null == openApiFruitTypeValue
+          ? _value.openApiFruitTypeValue
+          : openApiFruitTypeValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitType,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $FruitInlineDiscOneOfCopyWith<$Res> get fruitInlineDiscOneOfValue {
-    return $FruitInlineDiscOneOfCopyWith<$Res>(_value.fruitInlineDiscOneOfValue,
+  $OpenApiFruitTypeCopyWith<$Res> get openApiFruitTypeValue {
+    return $OpenApiFruitTypeCopyWith<$Res>(_value.openApiFruitTypeValue,
         (value) {
-      return _then(_value.copyWith(fruitInlineDiscOneOfValue: value));
+      return _then(_value.copyWith(openApiFruitTypeValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$FruitInlineDiscAsFruitInlineDiscOneOf
-    extends FruitInlineDiscAsFruitInlineDiscOneOf {
-  const _$FruitInlineDiscAsFruitInlineDiscOneOf(
-      {required this.fruitInlineDiscOneOfValue})
+class _$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl
+    extends OpenApiFruitAnyOfDiscAsOpenApiFruitType {
+  const _$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl(
+      {required this.openApiFruitTypeValue})
       : super._();
 
   @override
-  final FruitInlineDiscOneOf fruitInlineDiscOneOfValue;
+  final OpenApiFruitType openApiFruitTypeValue;
 
   @override
   String toString() {
-    return 'FruitInlineDisc.asFruitInlineDiscOneOf(fruitInlineDiscOneOfValue: $fruitInlineDiscOneOfValue)';
+    return 'OpenApiFruitAnyOfDisc.asOpenApiFruitType(openApiFruitTypeValue: $openApiFruitTypeValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineDiscAsFruitInlineDiscOneOf &&
-            (identical(other.fruitInlineDiscOneOfValue,
-                    fruitInlineDiscOneOfValue) ||
-                other.fruitInlineDiscOneOfValue == fruitInlineDiscOneOfValue));
+            other is _$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl &&
+            (identical(other.openApiFruitTypeValue, openApiFruitTypeValue) ||
+                other.openApiFruitTypeValue == openApiFruitTypeValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, fruitInlineDiscOneOfValue);
+  int get hashCode => Object.hash(runtimeType, openApiFruitTypeValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineDiscAsFruitInlineDiscOneOfCopyWith<
-          _$FruitInlineDiscAsFruitInlineDiscOneOf>
-      get copyWith => __$$FruitInlineDiscAsFruitInlineDiscOneOfCopyWithImpl<
-          _$FruitInlineDiscAsFruitInlineDiscOneOf>(this, _$identity);
+  _$$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImplCopyWith<
+          _$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl>
+      get copyWith =>
+          __$$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImplCopyWithImpl<
+              _$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)
-        asFruitInlineDiscOneOf,
-    required TResult Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)
-        asFruitInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)
+            List<OpenApiFruitAnyOfDisc> deserializedModels)
         unknown,
   }) {
-    return asFruitInlineDiscOneOf(fruitInlineDiscOneOfValue);
+    return asOpenApiFruitType(openApiFruitTypeValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)?
-        asFruitInlineDiscOneOf,
-    TResult? Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)?
-        asFruitInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)?
+            List<OpenApiFruitAnyOfDisc> deserializedModels)?
         unknown,
   }) {
-    return asFruitInlineDiscOneOf?.call(fruitInlineDiscOneOfValue);
+    return asOpenApiFruitType?.call(openApiFruitTypeValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)?
-        asFruitInlineDiscOneOf,
-    TResult Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)?
-        asFruitInlineDiscOneOf1,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)?
+            List<OpenApiFruitAnyOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asFruitInlineDiscOneOf != null) {
-      return asFruitInlineDiscOneOf(fruitInlineDiscOneOfValue);
+    if (asOpenApiFruitType != null) {
+      return asOpenApiFruitType(openApiFruitTypeValue);
     }
     return orElse();
   }
@@ -10851,272 +10265,75 @@ class _$FruitInlineDiscAsFruitInlineDiscOneOf
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf value)
-        asFruitInlineDiscOneOf,
-    required TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)
-        asFruitInlineDiscOneOf1,
-    required TResult Function(FruitInlineDiscUnknown value) unknown,
+    required TResult Function(OpenApiFruitAnyOfDiscAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiFruitAnyOfDiscUnknown value) unknown,
   }) {
-    return asFruitInlineDiscOneOf(this);
+    return asOpenApiFruitType(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineDiscAsFruitInlineDiscOneOf value)?
-        asFruitInlineDiscOneOf,
-    TResult? Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)?
-        asFruitInlineDiscOneOf1,
-    TResult? Function(FruitInlineDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitAnyOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiFruitAnyOfDiscUnknown value)? unknown,
   }) {
-    return asFruitInlineDiscOneOf?.call(this);
+    return asOpenApiFruitType?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf value)?
-        asFruitInlineDiscOneOf,
-    TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)?
-        asFruitInlineDiscOneOf1,
-    TResult Function(FruitInlineDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitAnyOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiFruitAnyOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (asFruitInlineDiscOneOf != null) {
-      return asFruitInlineDiscOneOf(this);
+    if (asOpenApiFruitType != null) {
+      return asOpenApiFruitType(this);
     }
     return orElse();
   }
 }
 
-abstract class FruitInlineDiscAsFruitInlineDiscOneOf extends FruitInlineDisc {
-  const factory FruitInlineDiscAsFruitInlineDiscOneOf(
-          {required final FruitInlineDiscOneOf fruitInlineDiscOneOfValue}) =
-      _$FruitInlineDiscAsFruitInlineDiscOneOf;
-  const FruitInlineDiscAsFruitInlineDiscOneOf._() : super._();
+abstract class OpenApiFruitAnyOfDiscAsOpenApiFruitType
+    extends OpenApiFruitAnyOfDisc {
+  const factory OpenApiFruitAnyOfDiscAsOpenApiFruitType(
+          {required final OpenApiFruitType openApiFruitTypeValue}) =
+      _$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl;
+  const OpenApiFruitAnyOfDiscAsOpenApiFruitType._() : super._();
 
-  FruitInlineDiscOneOf get fruitInlineDiscOneOfValue;
+  OpenApiFruitType get openApiFruitTypeValue;
   @JsonKey(ignore: true)
-  _$$FruitInlineDiscAsFruitInlineDiscOneOfCopyWith<
-          _$FruitInlineDiscAsFruitInlineDiscOneOf>
+  _$$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImplCopyWith<
+          _$OpenApiFruitAnyOfDiscAsOpenApiFruitTypeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitInlineDiscAsFruitInlineDiscOneOf1CopyWith<$Res> {
-  factory _$$FruitInlineDiscAsFruitInlineDiscOneOf1CopyWith(
-          _$FruitInlineDiscAsFruitInlineDiscOneOf1 value,
-          $Res Function(_$FruitInlineDiscAsFruitInlineDiscOneOf1) then) =
-      __$$FruitInlineDiscAsFruitInlineDiscOneOf1CopyWithImpl<$Res>;
-  @useResult
-  $Res call({FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value});
-
-  $FruitInlineDiscOneOf1CopyWith<$Res> get fruitInlineDiscOneOf1Value;
-}
-
-/// @nodoc
-class __$$FruitInlineDiscAsFruitInlineDiscOneOf1CopyWithImpl<$Res>
-    extends _$FruitInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineDiscAsFruitInlineDiscOneOf1>
-    implements _$$FruitInlineDiscAsFruitInlineDiscOneOf1CopyWith<$Res> {
-  __$$FruitInlineDiscAsFruitInlineDiscOneOf1CopyWithImpl(
-      _$FruitInlineDiscAsFruitInlineDiscOneOf1 _value,
-      $Res Function(_$FruitInlineDiscAsFruitInlineDiscOneOf1) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? fruitInlineDiscOneOf1Value = null,
-  }) {
-    return _then(_$FruitInlineDiscAsFruitInlineDiscOneOf1(
-      fruitInlineDiscOneOf1Value: null == fruitInlineDiscOneOf1Value
-          ? _value.fruitInlineDiscOneOf1Value
-          : fruitInlineDiscOneOf1Value // ignore: cast_nullable_to_non_nullable
-              as FruitInlineDiscOneOf1,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $FruitInlineDiscOneOf1CopyWith<$Res> get fruitInlineDiscOneOf1Value {
-    return $FruitInlineDiscOneOf1CopyWith<$Res>(
-        _value.fruitInlineDiscOneOf1Value, (value) {
-      return _then(_value.copyWith(fruitInlineDiscOneOf1Value: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$FruitInlineDiscAsFruitInlineDiscOneOf1
-    extends FruitInlineDiscAsFruitInlineDiscOneOf1 {
-  const _$FruitInlineDiscAsFruitInlineDiscOneOf1(
-      {required this.fruitInlineDiscOneOf1Value})
-      : super._();
-
-  @override
-  final FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value;
-
-  @override
-  String toString() {
-    return 'FruitInlineDisc.asFruitInlineDiscOneOf1(fruitInlineDiscOneOf1Value: $fruitInlineDiscOneOf1Value)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitInlineDiscAsFruitInlineDiscOneOf1 &&
-            (identical(other.fruitInlineDiscOneOf1Value,
-                    fruitInlineDiscOneOf1Value) ||
-                other.fruitInlineDiscOneOf1Value ==
-                    fruitInlineDiscOneOf1Value));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, fruitInlineDiscOneOf1Value);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitInlineDiscAsFruitInlineDiscOneOf1CopyWith<
-          _$FruitInlineDiscAsFruitInlineDiscOneOf1>
-      get copyWith => __$$FruitInlineDiscAsFruitInlineDiscOneOf1CopyWithImpl<
-          _$FruitInlineDiscAsFruitInlineDiscOneOf1>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)
-        asFruitInlineDiscOneOf,
-    required TResult Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)
-        asFruitInlineDiscOneOf1,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)
-        unknown,
-  }) {
-    return asFruitInlineDiscOneOf1(fruitInlineDiscOneOf1Value);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)?
-        asFruitInlineDiscOneOf,
-    TResult? Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)?
-        asFruitInlineDiscOneOf1,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)?
-        unknown,
-  }) {
-    return asFruitInlineDiscOneOf1?.call(fruitInlineDiscOneOf1Value);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)?
-        asFruitInlineDiscOneOf,
-    TResult Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)?
-        asFruitInlineDiscOneOf1,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineDiscOneOf1 != null) {
-      return asFruitInlineDiscOneOf1(fruitInlineDiscOneOf1Value);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf value)
-        asFruitInlineDiscOneOf,
-    required TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)
-        asFruitInlineDiscOneOf1,
-    required TResult Function(FruitInlineDiscUnknown value) unknown,
-  }) {
-    return asFruitInlineDiscOneOf1(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineDiscAsFruitInlineDiscOneOf value)?
-        asFruitInlineDiscOneOf,
-    TResult? Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)?
-        asFruitInlineDiscOneOf1,
-    TResult? Function(FruitInlineDiscUnknown value)? unknown,
-  }) {
-    return asFruitInlineDiscOneOf1?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf value)?
-        asFruitInlineDiscOneOf,
-    TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)?
-        asFruitInlineDiscOneOf1,
-    TResult Function(FruitInlineDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineDiscOneOf1 != null) {
-      return asFruitInlineDiscOneOf1(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitInlineDiscAsFruitInlineDiscOneOf1 extends FruitInlineDisc {
-  const factory FruitInlineDiscAsFruitInlineDiscOneOf1(
-          {required final FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value}) =
-      _$FruitInlineDiscAsFruitInlineDiscOneOf1;
-  const FruitInlineDiscAsFruitInlineDiscOneOf1._() : super._();
-
-  FruitInlineDiscOneOf1 get fruitInlineDiscOneOf1Value;
-  @JsonKey(ignore: true)
-  _$$FruitInlineDiscAsFruitInlineDiscOneOf1CopyWith<
-          _$FruitInlineDiscAsFruitInlineDiscOneOf1>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$FruitInlineDiscUnknownCopyWith<$Res> {
-  factory _$$FruitInlineDiscUnknownCopyWith(_$FruitInlineDiscUnknown value,
-          $Res Function(_$FruitInlineDiscUnknown) then) =
-      __$$FruitInlineDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitAnyOfDiscUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiFruitAnyOfDiscUnknownImplCopyWith(
+          _$OpenApiFruitAnyOfDiscUnknownImpl value,
+          $Res Function(_$OpenApiFruitAnyOfDiscUnknownImpl) then) =
+      __$$OpenApiFruitAnyOfDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<FruitInlineDisc> deserializedModels});
+      List<OpenApiFruitAnyOfDisc> deserializedModels});
 }
 
 /// @nodoc
-class __$$FruitInlineDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitInlineDiscCopyWithImpl<$Res, _$FruitInlineDiscUnknown>
-    implements _$$FruitInlineDiscUnknownCopyWith<$Res> {
-  __$$FruitInlineDiscUnknownCopyWithImpl(_$FruitInlineDiscUnknown _value,
-      $Res Function(_$FruitInlineDiscUnknown) _then)
+class __$$OpenApiFruitAnyOfDiscUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitAnyOfDiscCopyWithImpl<$Res,
+        _$OpenApiFruitAnyOfDiscUnknownImpl>
+    implements _$$OpenApiFruitAnyOfDiscUnknownImplCopyWith<$Res> {
+  __$$OpenApiFruitAnyOfDiscUnknownImplCopyWithImpl(
+      _$OpenApiFruitAnyOfDiscUnknownImpl _value,
+      $Res Function(_$OpenApiFruitAnyOfDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11128,7 +10345,7 @@ class __$$FruitInlineDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitInlineDiscUnknown(
+    return _then(_$OpenApiFruitAnyOfDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -11148,24 +10365,21 @@ class __$$FruitInlineDiscUnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitInlineDisc>,
+              as List<OpenApiFruitAnyOfDisc>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
-  const _$FruitInlineDiscUnknown(
+class _$OpenApiFruitAnyOfDiscUnknownImpl extends OpenApiFruitAnyOfDiscUnknown {
+  const _$OpenApiFruitAnyOfDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[
-        FruitInlineDiscOneOf,
-        FruitInlineDiscOneOf1
-      ],
-      final List<FruitInlineDisc> deserializedModels =
-          const <FruitInlineDisc>[]})
+      final List<Type> possibleTypes = const <Type>[OpenApiFruitType],
+      final List<OpenApiFruitAnyOfDisc> deserializedModels =
+          const <OpenApiFruitAnyOfDisc>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -11194,10 +10408,10 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<FruitInlineDisc> _deserializedModels;
+  final List<OpenApiFruitAnyOfDisc> _deserializedModels;
   @override
   @JsonKey()
-  List<FruitInlineDisc> get deserializedModels {
+  List<OpenApiFruitAnyOfDisc> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -11206,14 +10420,14 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
 
   @override
   String toString() {
-    return 'FruitInlineDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiFruitAnyOfDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineDiscUnknown &&
+            other is _$OpenApiFruitAnyOfDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -11236,23 +10450,22 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineDiscUnknownCopyWith<_$FruitInlineDiscUnknown> get copyWith =>
-      __$$FruitInlineDiscUnknownCopyWithImpl<_$FruitInlineDiscUnknown>(
-          this, _$identity);
+  _$$OpenApiFruitAnyOfDiscUnknownImplCopyWith<
+          _$OpenApiFruitAnyOfDiscUnknownImpl>
+      get copyWith => __$$OpenApiFruitAnyOfDiscUnknownImplCopyWithImpl<
+          _$OpenApiFruitAnyOfDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)
-        asFruitInlineDiscOneOf,
-    required TResult Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)
-        asFruitInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitType openApiFruitTypeValue)
+        asOpenApiFruitType,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)
+            List<OpenApiFruitAnyOfDisc> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -11261,16 +10474,14 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)?
-        asFruitInlineDiscOneOf,
-    TResult? Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)?
-        asFruitInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)?
+            List<OpenApiFruitAnyOfDisc> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -11280,16 +10491,14 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FruitInlineDiscOneOf fruitInlineDiscOneOfValue)?
-        asFruitInlineDiscOneOf,
-    TResult Function(FruitInlineDiscOneOf1 fruitInlineDiscOneOf1Value)?
-        asFruitInlineDiscOneOf1,
+    TResult Function(OpenApiFruitType openApiFruitTypeValue)?
+        asOpenApiFruitType,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineDisc> deserializedModels)?
+            List<OpenApiFruitAnyOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -11303,11 +10512,9 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf value)
-        asFruitInlineDiscOneOf,
-    required TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)
-        asFruitInlineDiscOneOf1,
-    required TResult Function(FruitInlineDiscUnknown value) unknown,
+    required TResult Function(OpenApiFruitAnyOfDiscAsOpenApiFruitType value)
+        asOpenApiFruitType,
+    required TResult Function(OpenApiFruitAnyOfDiscUnknown value) unknown,
   }) {
     return unknown(this);
   }
@@ -11315,11 +10522,9 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineDiscAsFruitInlineDiscOneOf value)?
-        asFruitInlineDiscOneOf,
-    TResult? Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)?
-        asFruitInlineDiscOneOf1,
-    TResult? Function(FruitInlineDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitAnyOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult? Function(OpenApiFruitAnyOfDiscUnknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -11327,11 +10532,9 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf value)?
-        asFruitInlineDiscOneOf,
-    TResult Function(FruitInlineDiscAsFruitInlineDiscOneOf1 value)?
-        asFruitInlineDiscOneOf1,
-    TResult Function(FruitInlineDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitAnyOfDiscAsOpenApiFruitType value)?
+        asOpenApiFruitType,
+    TResult Function(OpenApiFruitAnyOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -11341,32 +10544,1718 @@ class _$FruitInlineDiscUnknown extends FruitInlineDiscUnknown {
   }
 }
 
-abstract class FruitInlineDiscUnknown extends FruitInlineDisc {
-  const factory FruitInlineDiscUnknown(
+abstract class OpenApiFruitAnyOfDiscUnknown extends OpenApiFruitAnyOfDisc {
+  const factory OpenApiFruitAnyOfDiscUnknown(
           {final String message,
           required final Map<String, dynamic> json,
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
-          final List<FruitInlineDisc> deserializedModels}) =
-      _$FruitInlineDiscUnknown;
-  const FruitInlineDiscUnknown._() : super._();
+          final List<OpenApiFruitAnyOfDisc> deserializedModels}) =
+      _$OpenApiFruitAnyOfDiscUnknownImpl;
+  const OpenApiFruitAnyOfDiscUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<FruitInlineDisc> get deserializedModels;
+  List<OpenApiFruitAnyOfDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitInlineDiscUnknownCopyWith<_$FruitInlineDiscUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-FruitInlineDiscOneOf _$FruitInlineDiscOneOfFromJson(Map<String, dynamic> json) {
-  return _FruitInlineDiscOneOf.fromJson(json);
+  _$$OpenApiFruitAnyOfDiscUnknownImplCopyWith<
+          _$OpenApiFruitAnyOfDiscUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$FruitInlineDiscOneOf {
+mixin _$OpenApiFruitGrandparentDisc {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)
+        asOpenApiAppleGrandparentDisc,
+    required TResult Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)
+        asOpenApiBananaGrandparentDisc,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)?
+        asOpenApiAppleGrandparentDisc,
+    TResult? Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)?
+        asOpenApiBananaGrandparentDisc,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)?
+        asOpenApiAppleGrandparentDisc,
+    TResult Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)?
+        asOpenApiBananaGrandparentDisc,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)
+        asOpenApiAppleGrandparentDisc,
+    required TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)
+        asOpenApiBananaGrandparentDisc,
+    required TResult Function(OpenApiFruitGrandparentDiscUnknown value) unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)?
+        asOpenApiAppleGrandparentDisc,
+    TResult? Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)?
+        asOpenApiBananaGrandparentDisc,
+    TResult? Function(OpenApiFruitGrandparentDiscUnknown value)? unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)?
+        asOpenApiAppleGrandparentDisc,
+    TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)?
+        asOpenApiBananaGrandparentDisc,
+    TResult Function(OpenApiFruitGrandparentDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiFruitGrandparentDiscCopyWith<$Res> {
+  factory $OpenApiFruitGrandparentDiscCopyWith(
+          OpenApiFruitGrandparentDisc value,
+          $Res Function(OpenApiFruitGrandparentDisc) then) =
+      _$OpenApiFruitGrandparentDiscCopyWithImpl<$Res,
+          OpenApiFruitGrandparentDisc>;
+}
+
+/// @nodoc
+class _$OpenApiFruitGrandparentDiscCopyWithImpl<$Res,
+        $Val extends OpenApiFruitGrandparentDisc>
+    implements $OpenApiFruitGrandparentDiscCopyWith<$Res> {
+  _$OpenApiFruitGrandparentDiscCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImplCopyWith<
+    $Res> {
+  factory _$$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImplCopyWith(
+          _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl value,
+          $Res Function(
+                  _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl)
+              then) =
+      __$$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call({OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue});
+
+  $OpenApiAppleGrandparentDiscCopyWith<$Res>
+      get openApiAppleGrandparentDiscValue;
+}
+
+/// @nodoc
+class __$$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiFruitGrandparentDiscCopyWithImpl<$Res,
+        _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl>
+    implements
+        _$$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImplCopyWith<
+            $Res> {
+  __$$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImplCopyWithImpl(
+      _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl _value,
+      $Res Function(
+              _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiAppleGrandparentDiscValue = null,
+  }) {
+    return _then(_$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl(
+      openApiAppleGrandparentDiscValue: null == openApiAppleGrandparentDiscValue
+          ? _value.openApiAppleGrandparentDiscValue
+          : openApiAppleGrandparentDiscValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiAppleGrandparentDisc,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiAppleGrandparentDiscCopyWith<$Res>
+      get openApiAppleGrandparentDiscValue {
+    return $OpenApiAppleGrandparentDiscCopyWith<$Res>(
+        _value.openApiAppleGrandparentDiscValue, (value) {
+      return _then(_value.copyWith(openApiAppleGrandparentDiscValue: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl
+    extends OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc {
+  const _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl(
+      {required this.openApiAppleGrandparentDiscValue})
+      : super._();
+
+  @override
+  final OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue;
+
+  @override
+  String toString() {
+    return 'OpenApiFruitGrandparentDisc.asOpenApiAppleGrandparentDisc(openApiAppleGrandparentDiscValue: $openApiAppleGrandparentDiscValue)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other
+                is _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl &&
+            (identical(other.openApiAppleGrandparentDiscValue,
+                    openApiAppleGrandparentDiscValue) ||
+                other.openApiAppleGrandparentDiscValue ==
+                    openApiAppleGrandparentDiscValue));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, openApiAppleGrandparentDiscValue);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImplCopyWith<
+          _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl>
+      get copyWith =>
+          __$$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImplCopyWithImpl<
+                  _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)
+        asOpenApiAppleGrandparentDisc,
+    required TResult Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)
+        asOpenApiBananaGrandparentDisc,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiAppleGrandparentDisc(openApiAppleGrandparentDiscValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)?
+        asOpenApiAppleGrandparentDisc,
+    TResult? Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)?
+        asOpenApiBananaGrandparentDisc,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiAppleGrandparentDisc
+        ?.call(openApiAppleGrandparentDiscValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)?
+        asOpenApiAppleGrandparentDisc,
+    TResult Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)?
+        asOpenApiBananaGrandparentDisc,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiAppleGrandparentDisc != null) {
+      return asOpenApiAppleGrandparentDisc(openApiAppleGrandparentDiscValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)
+        asOpenApiAppleGrandparentDisc,
+    required TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)
+        asOpenApiBananaGrandparentDisc,
+    required TResult Function(OpenApiFruitGrandparentDiscUnknown value) unknown,
+  }) {
+    return asOpenApiAppleGrandparentDisc(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)?
+        asOpenApiAppleGrandparentDisc,
+    TResult? Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)?
+        asOpenApiBananaGrandparentDisc,
+    TResult? Function(OpenApiFruitGrandparentDiscUnknown value)? unknown,
+  }) {
+    return asOpenApiAppleGrandparentDisc?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)?
+        asOpenApiAppleGrandparentDisc,
+    TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)?
+        asOpenApiBananaGrandparentDisc,
+    TResult Function(OpenApiFruitGrandparentDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiAppleGrandparentDisc != null) {
+      return asOpenApiAppleGrandparentDisc(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc
+    extends OpenApiFruitGrandparentDisc {
+  const factory OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc(
+          {required final OpenApiAppleGrandparentDisc
+              openApiAppleGrandparentDiscValue}) =
+      _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl;
+  const OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc._()
+      : super._();
+
+  OpenApiAppleGrandparentDisc get openApiAppleGrandparentDiscValue;
+  @JsonKey(ignore: true)
+  _$$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImplCopyWith<
+          _$OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDiscImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImplCopyWith<
+    $Res> {
+  factory _$$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImplCopyWith(
+          _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl value,
+          $Res Function(
+                  _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl)
+              then) =
+      __$$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call({OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue});
+
+  $OpenApiBananaGrandparentDiscCopyWith<$Res>
+      get openApiBananaGrandparentDiscValue;
+}
+
+/// @nodoc
+class __$$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiFruitGrandparentDiscCopyWithImpl<$Res,
+        _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl>
+    implements
+        _$$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImplCopyWith<
+            $Res> {
+  __$$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImplCopyWithImpl(
+      _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl _value,
+      $Res Function(
+              _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiBananaGrandparentDiscValue = null,
+  }) {
+    return _then(
+        _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl(
+      openApiBananaGrandparentDiscValue: null ==
+              openApiBananaGrandparentDiscValue
+          ? _value.openApiBananaGrandparentDiscValue
+          : openApiBananaGrandparentDiscValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiBananaGrandparentDisc,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiBananaGrandparentDiscCopyWith<$Res>
+      get openApiBananaGrandparentDiscValue {
+    return $OpenApiBananaGrandparentDiscCopyWith<$Res>(
+        _value.openApiBananaGrandparentDiscValue, (value) {
+      return _then(_value.copyWith(openApiBananaGrandparentDiscValue: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl
+    extends OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc {
+  const _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl(
+      {required this.openApiBananaGrandparentDiscValue})
+      : super._();
+
+  @override
+  final OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue;
+
+  @override
+  String toString() {
+    return 'OpenApiFruitGrandparentDisc.asOpenApiBananaGrandparentDisc(openApiBananaGrandparentDiscValue: $openApiBananaGrandparentDiscValue)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other
+                is _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl &&
+            (identical(other.openApiBananaGrandparentDiscValue,
+                    openApiBananaGrandparentDiscValue) ||
+                other.openApiBananaGrandparentDiscValue ==
+                    openApiBananaGrandparentDiscValue));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, openApiBananaGrandparentDiscValue);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImplCopyWith<
+          _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl>
+      get copyWith =>
+          __$$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImplCopyWithImpl<
+                  _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)
+        asOpenApiAppleGrandparentDisc,
+    required TResult Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)
+        asOpenApiBananaGrandparentDisc,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiBananaGrandparentDisc(openApiBananaGrandparentDiscValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)?
+        asOpenApiAppleGrandparentDisc,
+    TResult? Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)?
+        asOpenApiBananaGrandparentDisc,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiBananaGrandparentDisc
+        ?.call(openApiBananaGrandparentDiscValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)?
+        asOpenApiAppleGrandparentDisc,
+    TResult Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)?
+        asOpenApiBananaGrandparentDisc,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiBananaGrandparentDisc != null) {
+      return asOpenApiBananaGrandparentDisc(openApiBananaGrandparentDiscValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)
+        asOpenApiAppleGrandparentDisc,
+    required TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)
+        asOpenApiBananaGrandparentDisc,
+    required TResult Function(OpenApiFruitGrandparentDiscUnknown value) unknown,
+  }) {
+    return asOpenApiBananaGrandparentDisc(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)?
+        asOpenApiAppleGrandparentDisc,
+    TResult? Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)?
+        asOpenApiBananaGrandparentDisc,
+    TResult? Function(OpenApiFruitGrandparentDiscUnknown value)? unknown,
+  }) {
+    return asOpenApiBananaGrandparentDisc?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)?
+        asOpenApiAppleGrandparentDisc,
+    TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)?
+        asOpenApiBananaGrandparentDisc,
+    TResult Function(OpenApiFruitGrandparentDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiBananaGrandparentDisc != null) {
+      return asOpenApiBananaGrandparentDisc(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc
+    extends OpenApiFruitGrandparentDisc {
+  const factory OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc(
+          {required final OpenApiBananaGrandparentDisc
+              openApiBananaGrandparentDiscValue}) =
+      _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl;
+  const OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc._()
+      : super._();
+
+  OpenApiBananaGrandparentDisc get openApiBananaGrandparentDiscValue;
+  @JsonKey(ignore: true)
+  _$$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImplCopyWith<
+          _$OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDiscImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiFruitGrandparentDiscUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiFruitGrandparentDiscUnknownImplCopyWith(
+          _$OpenApiFruitGrandparentDiscUnknownImpl value,
+          $Res Function(_$OpenApiFruitGrandparentDiscUnknownImpl) then) =
+      __$$OpenApiFruitGrandparentDiscUnknownImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call(
+      {String message,
+      Map<String, dynamic> json,
+      DeserializationErrorType errorType,
+      List<Type> possibleTypes,
+      List<OpenApiFruitGrandparentDisc> deserializedModels});
+}
+
+/// @nodoc
+class __$$OpenApiFruitGrandparentDiscUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitGrandparentDiscCopyWithImpl<$Res,
+        _$OpenApiFruitGrandparentDiscUnknownImpl>
+    implements _$$OpenApiFruitGrandparentDiscUnknownImplCopyWith<$Res> {
+  __$$OpenApiFruitGrandparentDiscUnknownImplCopyWithImpl(
+      _$OpenApiFruitGrandparentDiscUnknownImpl _value,
+      $Res Function(_$OpenApiFruitGrandparentDiscUnknownImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+    Object? json = null,
+    Object? errorType = null,
+    Object? possibleTypes = null,
+    Object? deserializedModels = null,
+  }) {
+    return _then(_$OpenApiFruitGrandparentDiscUnknownImpl(
+      message: null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      json: null == json
+          ? _value._json
+          : json // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      errorType: null == errorType
+          ? _value.errorType
+          : errorType // ignore: cast_nullable_to_non_nullable
+              as DeserializationErrorType,
+      possibleTypes: null == possibleTypes
+          ? _value._possibleTypes
+          : possibleTypes // ignore: cast_nullable_to_non_nullable
+              as List<Type>,
+      deserializedModels: null == deserializedModels
+          ? _value._deserializedModels
+          : deserializedModels // ignore: cast_nullable_to_non_nullable
+              as List<OpenApiFruitGrandparentDisc>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiFruitGrandparentDiscUnknownImpl
+    extends OpenApiFruitGrandparentDiscUnknown {
+  const _$OpenApiFruitGrandparentDiscUnknownImpl(
+      {this.message = 'Json does not satisfy any available types',
+      required final Map<String, dynamic> json,
+      this.errorType = DeserializationErrorType.UnKnownType,
+      final List<Type> possibleTypes = const <Type>[
+        OpenApiAppleGrandparentDisc,
+        OpenApiBananaGrandparentDisc
+      ],
+      final List<OpenApiFruitGrandparentDisc> deserializedModels =
+          const <OpenApiFruitGrandparentDisc>[]})
+      : _json = json,
+        _possibleTypes = possibleTypes,
+        _deserializedModels = deserializedModels,
+        super._();
+
+  @override
+  @JsonKey()
+  final String message;
+  final Map<String, dynamic> _json;
+  @override
+  Map<String, dynamic> get json {
+    if (_json is EqualUnmodifiableMapView) return _json;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_json);
+  }
+
+  @override
+  @JsonKey()
+  final DeserializationErrorType errorType;
+  final List<Type> _possibleTypes;
+  @override
+  @JsonKey()
+  List<Type> get possibleTypes {
+    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_possibleTypes);
+  }
+
+  final List<OpenApiFruitGrandparentDisc> _deserializedModels;
+  @override
+  @JsonKey()
+  List<OpenApiFruitGrandparentDisc> get deserializedModels {
+    if (_deserializedModels is EqualUnmodifiableListView)
+      return _deserializedModels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_deserializedModels);
+  }
+
+  @override
+  String toString() {
+    return 'OpenApiFruitGrandparentDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiFruitGrandparentDiscUnknownImpl &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality().equals(other._json, _json) &&
+            (identical(other.errorType, errorType) ||
+                other.errorType == errorType) &&
+            const DeepCollectionEquality()
+                .equals(other._possibleTypes, _possibleTypes) &&
+            const DeepCollectionEquality()
+                .equals(other._deserializedModels, _deserializedModels));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      message,
+      const DeepCollectionEquality().hash(_json),
+      errorType,
+      const DeepCollectionEquality().hash(_possibleTypes),
+      const DeepCollectionEquality().hash(_deserializedModels));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiFruitGrandparentDiscUnknownImplCopyWith<
+          _$OpenApiFruitGrandparentDiscUnknownImpl>
+      get copyWith => __$$OpenApiFruitGrandparentDiscUnknownImplCopyWithImpl<
+          _$OpenApiFruitGrandparentDiscUnknownImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)
+        asOpenApiAppleGrandparentDisc,
+    required TResult Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)
+        asOpenApiBananaGrandparentDisc,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)
+        unknown,
+  }) {
+    return unknown(message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)?
+        asOpenApiAppleGrandparentDisc,
+    TResult? Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)?
+        asOpenApiBananaGrandparentDisc,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)?
+        unknown,
+  }) {
+    return unknown?.call(
+        message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiAppleGrandparentDisc openApiAppleGrandparentDiscValue)?
+        asOpenApiAppleGrandparentDisc,
+    TResult Function(
+            OpenApiBananaGrandparentDisc openApiBananaGrandparentDiscValue)?
+        asOpenApiBananaGrandparentDisc,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitGrandparentDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(
+          message, json, errorType, possibleTypes, deserializedModels);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)
+        asOpenApiAppleGrandparentDisc,
+    required TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)
+        asOpenApiBananaGrandparentDisc,
+    required TResult Function(OpenApiFruitGrandparentDiscUnknown value) unknown,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)?
+        asOpenApiAppleGrandparentDisc,
+    TResult? Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)?
+        asOpenApiBananaGrandparentDisc,
+    TResult? Function(OpenApiFruitGrandparentDiscUnknown value)? unknown,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiAppleGrandparentDisc value)?
+        asOpenApiAppleGrandparentDisc,
+    TResult Function(
+            OpenApiFruitGrandparentDiscAsOpenApiBananaGrandparentDisc value)?
+        asOpenApiBananaGrandparentDisc,
+    TResult Function(OpenApiFruitGrandparentDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiFruitGrandparentDiscUnknown
+    extends OpenApiFruitGrandparentDisc {
+  const factory OpenApiFruitGrandparentDiscUnknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<OpenApiFruitGrandparentDisc> deserializedModels}) =
+      _$OpenApiFruitGrandparentDiscUnknownImpl;
+  const OpenApiFruitGrandparentDiscUnknown._() : super._();
+
+  String get message;
+  Map<String, dynamic> get json;
+  DeserializationErrorType get errorType;
+  List<Type> get possibleTypes;
+  List<OpenApiFruitGrandparentDisc> get deserializedModels;
+  @JsonKey(ignore: true)
+  _$$OpenApiFruitGrandparentDiscUnknownImplCopyWith<
+          _$OpenApiFruitGrandparentDiscUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+mixin _$OpenApiFruitInlineDisc {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)
+        asOpenApiFruitInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)
+        asOpenApiFruitInlineDiscOneOf1,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)
+        asOpenApiFruitInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)
+        asOpenApiFruitInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitInlineDiscUnknown value) unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitInlineDiscUnknown value)? unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult Function(OpenApiFruitInlineDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OpenApiFruitInlineDiscCopyWith<$Res> {
+  factory $OpenApiFruitInlineDiscCopyWith(OpenApiFruitInlineDisc value,
+          $Res Function(OpenApiFruitInlineDisc) then) =
+      _$OpenApiFruitInlineDiscCopyWithImpl<$Res, OpenApiFruitInlineDisc>;
+}
+
+/// @nodoc
+class _$OpenApiFruitInlineDiscCopyWithImpl<$Res,
+        $Val extends OpenApiFruitInlineDisc>
+    implements $OpenApiFruitInlineDiscCopyWith<$Res> {
+  _$OpenApiFruitInlineDiscCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImplCopyWith<
+    $Res> {
+  factory _$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImplCopyWith(
+          _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl value,
+          $Res Function(
+                  _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl)
+              then) =
+      __$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call({OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue});
+
+  $OpenApiFruitInlineDiscOneOfCopyWith<$Res>
+      get openApiFruitInlineDiscOneOfValue;
+}
+
+/// @nodoc
+class __$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiFruitInlineDiscCopyWithImpl<$Res,
+        _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl>
+    implements
+        _$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImplCopyWith<
+            $Res> {
+  __$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImplCopyWithImpl(
+      _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl _value,
+      $Res Function(_$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiFruitInlineDiscOneOfValue = null,
+  }) {
+    return _then(_$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl(
+      openApiFruitInlineDiscOneOfValue: null == openApiFruitInlineDiscOneOfValue
+          ? _value.openApiFruitInlineDiscOneOfValue
+          : openApiFruitInlineDiscOneOfValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitInlineDiscOneOf,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiFruitInlineDiscOneOfCopyWith<$Res>
+      get openApiFruitInlineDiscOneOfValue {
+    return $OpenApiFruitInlineDiscOneOfCopyWith<$Res>(
+        _value.openApiFruitInlineDiscOneOfValue, (value) {
+      return _then(_value.copyWith(openApiFruitInlineDiscOneOfValue: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl
+    extends OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf {
+  const _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl(
+      {required this.openApiFruitInlineDiscOneOfValue})
+      : super._();
+
+  @override
+  final OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue;
+
+  @override
+  String toString() {
+    return 'OpenApiFruitInlineDisc.asOpenApiFruitInlineDiscOneOf(openApiFruitInlineDiscOneOfValue: $openApiFruitInlineDiscOneOfValue)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other
+                is _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl &&
+            (identical(other.openApiFruitInlineDiscOneOfValue,
+                    openApiFruitInlineDiscOneOfValue) ||
+                other.openApiFruitInlineDiscOneOfValue ==
+                    openApiFruitInlineDiscOneOfValue));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, openApiFruitInlineDiscOneOfValue);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImplCopyWith<
+          _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl>
+      get copyWith =>
+          __$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImplCopyWithImpl<
+                  _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)
+        asOpenApiFruitInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)
+        asOpenApiFruitInlineDiscOneOf1,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiFruitInlineDiscOneOf(openApiFruitInlineDiscOneOfValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiFruitInlineDiscOneOf
+        ?.call(openApiFruitInlineDiscOneOfValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitInlineDiscOneOf != null) {
+      return asOpenApiFruitInlineDiscOneOf(openApiFruitInlineDiscOneOfValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)
+        asOpenApiFruitInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)
+        asOpenApiFruitInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitInlineDiscUnknown value) unknown,
+  }) {
+    return asOpenApiFruitInlineDiscOneOf(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitInlineDiscUnknown value)? unknown,
+  }) {
+    return asOpenApiFruitInlineDiscOneOf?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult Function(OpenApiFruitInlineDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitInlineDiscOneOf != null) {
+      return asOpenApiFruitInlineDiscOneOf(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf
+    extends OpenApiFruitInlineDisc {
+  const factory OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf(
+          {required final OpenApiFruitInlineDiscOneOf
+              openApiFruitInlineDiscOneOfValue}) =
+      _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl;
+  const OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf._() : super._();
+
+  OpenApiFruitInlineDiscOneOf get openApiFruitInlineDiscOneOfValue;
+  @JsonKey(ignore: true)
+  _$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImplCopyWith<
+          _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOfImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1ImplCopyWith<
+    $Res> {
+  factory _$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1ImplCopyWith(
+          _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl value,
+          $Res Function(
+                  _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl)
+              then) =
+      __$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1ImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call({OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value});
+
+  $OpenApiFruitInlineDiscOneOf1CopyWith<$Res>
+      get openApiFruitInlineDiscOneOf1Value;
+}
+
+/// @nodoc
+class __$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1ImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiFruitInlineDiscCopyWithImpl<$Res,
+        _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl>
+    implements
+        _$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1ImplCopyWith<
+            $Res> {
+  __$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1ImplCopyWithImpl(
+      _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl _value,
+      $Res Function(_$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiFruitInlineDiscOneOf1Value = null,
+  }) {
+    return _then(_$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl(
+      openApiFruitInlineDiscOneOf1Value: null ==
+              openApiFruitInlineDiscOneOf1Value
+          ? _value.openApiFruitInlineDiscOneOf1Value
+          : openApiFruitInlineDiscOneOf1Value // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitInlineDiscOneOf1,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiFruitInlineDiscOneOf1CopyWith<$Res>
+      get openApiFruitInlineDiscOneOf1Value {
+    return $OpenApiFruitInlineDiscOneOf1CopyWith<$Res>(
+        _value.openApiFruitInlineDiscOneOf1Value, (value) {
+      return _then(_value.copyWith(openApiFruitInlineDiscOneOf1Value: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl
+    extends OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 {
+  const _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl(
+      {required this.openApiFruitInlineDiscOneOf1Value})
+      : super._();
+
+  @override
+  final OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value;
+
+  @override
+  String toString() {
+    return 'OpenApiFruitInlineDisc.asOpenApiFruitInlineDiscOneOf1(openApiFruitInlineDiscOneOf1Value: $openApiFruitInlineDiscOneOf1Value)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other
+                is _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl &&
+            (identical(other.openApiFruitInlineDiscOneOf1Value,
+                    openApiFruitInlineDiscOneOf1Value) ||
+                other.openApiFruitInlineDiscOneOf1Value ==
+                    openApiFruitInlineDiscOneOf1Value));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, openApiFruitInlineDiscOneOf1Value);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1ImplCopyWith<
+          _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl>
+      get copyWith =>
+          __$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1ImplCopyWithImpl<
+                  _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)
+        asOpenApiFruitInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)
+        asOpenApiFruitInlineDiscOneOf1,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiFruitInlineDiscOneOf1(openApiFruitInlineDiscOneOf1Value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiFruitInlineDiscOneOf1
+        ?.call(openApiFruitInlineDiscOneOf1Value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitInlineDiscOneOf1 != null) {
+      return asOpenApiFruitInlineDiscOneOf1(openApiFruitInlineDiscOneOf1Value);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)
+        asOpenApiFruitInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)
+        asOpenApiFruitInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitInlineDiscUnknown value) unknown,
+  }) {
+    return asOpenApiFruitInlineDiscOneOf1(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitInlineDiscUnknown value)? unknown,
+  }) {
+    return asOpenApiFruitInlineDiscOneOf1?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult Function(OpenApiFruitInlineDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitInlineDiscOneOf1 != null) {
+      return asOpenApiFruitInlineDiscOneOf1(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1
+    extends OpenApiFruitInlineDisc {
+  const factory OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1(
+          {required final OpenApiFruitInlineDiscOneOf1
+              openApiFruitInlineDiscOneOf1Value}) =
+      _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl;
+  const OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1._() : super._();
+
+  OpenApiFruitInlineDiscOneOf1 get openApiFruitInlineDiscOneOf1Value;
+  @JsonKey(ignore: true)
+  _$$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1ImplCopyWith<
+          _$OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1Impl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiFruitInlineDiscUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiFruitInlineDiscUnknownImplCopyWith(
+          _$OpenApiFruitInlineDiscUnknownImpl value,
+          $Res Function(_$OpenApiFruitInlineDiscUnknownImpl) then) =
+      __$$OpenApiFruitInlineDiscUnknownImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call(
+      {String message,
+      Map<String, dynamic> json,
+      DeserializationErrorType errorType,
+      List<Type> possibleTypes,
+      List<OpenApiFruitInlineDisc> deserializedModels});
+}
+
+/// @nodoc
+class __$$OpenApiFruitInlineDiscUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitInlineDiscCopyWithImpl<$Res,
+        _$OpenApiFruitInlineDiscUnknownImpl>
+    implements _$$OpenApiFruitInlineDiscUnknownImplCopyWith<$Res> {
+  __$$OpenApiFruitInlineDiscUnknownImplCopyWithImpl(
+      _$OpenApiFruitInlineDiscUnknownImpl _value,
+      $Res Function(_$OpenApiFruitInlineDiscUnknownImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+    Object? json = null,
+    Object? errorType = null,
+    Object? possibleTypes = null,
+    Object? deserializedModels = null,
+  }) {
+    return _then(_$OpenApiFruitInlineDiscUnknownImpl(
+      message: null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      json: null == json
+          ? _value._json
+          : json // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      errorType: null == errorType
+          ? _value.errorType
+          : errorType // ignore: cast_nullable_to_non_nullable
+              as DeserializationErrorType,
+      possibleTypes: null == possibleTypes
+          ? _value._possibleTypes
+          : possibleTypes // ignore: cast_nullable_to_non_nullable
+              as List<Type>,
+      deserializedModels: null == deserializedModels
+          ? _value._deserializedModels
+          : deserializedModels // ignore: cast_nullable_to_non_nullable
+              as List<OpenApiFruitInlineDisc>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiFruitInlineDiscUnknownImpl
+    extends OpenApiFruitInlineDiscUnknown {
+  const _$OpenApiFruitInlineDiscUnknownImpl(
+      {this.message = 'Json does not satisfy any available types',
+      required final Map<String, dynamic> json,
+      this.errorType = DeserializationErrorType.UnKnownType,
+      final List<Type> possibleTypes = const <Type>[
+        OpenApiFruitInlineDiscOneOf,
+        OpenApiFruitInlineDiscOneOf1
+      ],
+      final List<OpenApiFruitInlineDisc> deserializedModels =
+          const <OpenApiFruitInlineDisc>[]})
+      : _json = json,
+        _possibleTypes = possibleTypes,
+        _deserializedModels = deserializedModels,
+        super._();
+
+  @override
+  @JsonKey()
+  final String message;
+  final Map<String, dynamic> _json;
+  @override
+  Map<String, dynamic> get json {
+    if (_json is EqualUnmodifiableMapView) return _json;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_json);
+  }
+
+  @override
+  @JsonKey()
+  final DeserializationErrorType errorType;
+  final List<Type> _possibleTypes;
+  @override
+  @JsonKey()
+  List<Type> get possibleTypes {
+    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_possibleTypes);
+  }
+
+  final List<OpenApiFruitInlineDisc> _deserializedModels;
+  @override
+  @JsonKey()
+  List<OpenApiFruitInlineDisc> get deserializedModels {
+    if (_deserializedModels is EqualUnmodifiableListView)
+      return _deserializedModels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_deserializedModels);
+  }
+
+  @override
+  String toString() {
+    return 'OpenApiFruitInlineDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiFruitInlineDiscUnknownImpl &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality().equals(other._json, _json) &&
+            (identical(other.errorType, errorType) ||
+                other.errorType == errorType) &&
+            const DeepCollectionEquality()
+                .equals(other._possibleTypes, _possibleTypes) &&
+            const DeepCollectionEquality()
+                .equals(other._deserializedModels, _deserializedModels));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      message,
+      const DeepCollectionEquality().hash(_json),
+      errorType,
+      const DeepCollectionEquality().hash(_possibleTypes),
+      const DeepCollectionEquality().hash(_deserializedModels));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiFruitInlineDiscUnknownImplCopyWith<
+          _$OpenApiFruitInlineDiscUnknownImpl>
+      get copyWith => __$$OpenApiFruitInlineDiscUnknownImplCopyWithImpl<
+          _$OpenApiFruitInlineDiscUnknownImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)
+        asOpenApiFruitInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)
+        asOpenApiFruitInlineDiscOneOf1,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)
+        unknown,
+  }) {
+    return unknown(message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)?
+        unknown,
+  }) {
+    return unknown?.call(
+        message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineDiscOneOf openApiFruitInlineDiscOneOfValue)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineDiscOneOf1 openApiFruitInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(
+          message, json, errorType, possibleTypes, deserializedModels);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)
+        asOpenApiFruitInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)
+        asOpenApiFruitInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitInlineDiscUnknown value) unknown,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitInlineDiscUnknown value)? unknown,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf value)?
+        asOpenApiFruitInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineDiscAsOpenApiFruitInlineDiscOneOf1 value)?
+        asOpenApiFruitInlineDiscOneOf1,
+    TResult Function(OpenApiFruitInlineDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiFruitInlineDiscUnknown extends OpenApiFruitInlineDisc {
+  const factory OpenApiFruitInlineDiscUnknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<OpenApiFruitInlineDisc> deserializedModels}) =
+      _$OpenApiFruitInlineDiscUnknownImpl;
+  const OpenApiFruitInlineDiscUnknown._() : super._();
+
+  String get message;
+  Map<String, dynamic> get json;
+  DeserializationErrorType get errorType;
+  List<Type> get possibleTypes;
+  List<OpenApiFruitInlineDisc> get deserializedModels;
+  @JsonKey(ignore: true)
+  _$$OpenApiFruitInlineDiscUnknownImplCopyWith<
+          _$OpenApiFruitInlineDiscUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+OpenApiFruitInlineDiscOneOf _$OpenApiFruitInlineDiscOneOfFromJson(
+    Map<String, dynamic> json) {
+  return _OpenApiFruitInlineDiscOneOf.fromJson(json);
+}
+
+/// @nodoc
+mixin _$OpenApiFruitInlineDiscOneOf {
   @JsonKey(name: r'seeds')
   int get seeds => throw _privateConstructorUsedError;
   @JsonKey(name: r'fruitType')
@@ -11374,15 +12263,17 @@ mixin _$FruitInlineDiscOneOf {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $FruitInlineDiscOneOfCopyWith<FruitInlineDiscOneOf> get copyWith =>
-      throw _privateConstructorUsedError;
+  $OpenApiFruitInlineDiscOneOfCopyWith<OpenApiFruitInlineDiscOneOf>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FruitInlineDiscOneOfCopyWith<$Res> {
-  factory $FruitInlineDiscOneOfCopyWith(FruitInlineDiscOneOf value,
-          $Res Function(FruitInlineDiscOneOf) then) =
-      _$FruitInlineDiscOneOfCopyWithImpl<$Res, FruitInlineDiscOneOf>;
+abstract class $OpenApiFruitInlineDiscOneOfCopyWith<$Res> {
+  factory $OpenApiFruitInlineDiscOneOfCopyWith(
+          OpenApiFruitInlineDiscOneOf value,
+          $Res Function(OpenApiFruitInlineDiscOneOf) then) =
+      _$OpenApiFruitInlineDiscOneOfCopyWithImpl<$Res,
+          OpenApiFruitInlineDiscOneOf>;
   @useResult
   $Res call(
       {@JsonKey(name: r'seeds') int seeds,
@@ -11390,10 +12281,10 @@ abstract class $FruitInlineDiscOneOfCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FruitInlineDiscOneOfCopyWithImpl<$Res,
-        $Val extends FruitInlineDiscOneOf>
-    implements $FruitInlineDiscOneOfCopyWith<$Res> {
-  _$FruitInlineDiscOneOfCopyWithImpl(this._value, this._then);
+class _$OpenApiFruitInlineDiscOneOfCopyWithImpl<$Res,
+        $Val extends OpenApiFruitInlineDiscOneOf>
+    implements $OpenApiFruitInlineDiscOneOfCopyWith<$Res> {
+  _$OpenApiFruitInlineDiscOneOfCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -11420,11 +12311,12 @@ class _$FruitInlineDiscOneOfCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_FruitInlineDiscOneOfCopyWith<$Res>
-    implements $FruitInlineDiscOneOfCopyWith<$Res> {
-  factory _$$_FruitInlineDiscOneOfCopyWith(_$_FruitInlineDiscOneOf value,
-          $Res Function(_$_FruitInlineDiscOneOf) then) =
-      __$$_FruitInlineDiscOneOfCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitInlineDiscOneOfImplCopyWith<$Res>
+    implements $OpenApiFruitInlineDiscOneOfCopyWith<$Res> {
+  factory _$$OpenApiFruitInlineDiscOneOfImplCopyWith(
+          _$OpenApiFruitInlineDiscOneOfImpl value,
+          $Res Function(_$OpenApiFruitInlineDiscOneOfImpl) then) =
+      __$$OpenApiFruitInlineDiscOneOfImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -11433,11 +12325,13 @@ abstract class _$$_FruitInlineDiscOneOfCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_FruitInlineDiscOneOfCopyWithImpl<$Res>
-    extends _$FruitInlineDiscOneOfCopyWithImpl<$Res, _$_FruitInlineDiscOneOf>
-    implements _$$_FruitInlineDiscOneOfCopyWith<$Res> {
-  __$$_FruitInlineDiscOneOfCopyWithImpl(_$_FruitInlineDiscOneOf _value,
-      $Res Function(_$_FruitInlineDiscOneOf) _then)
+class __$$OpenApiFruitInlineDiscOneOfImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitInlineDiscOneOfCopyWithImpl<$Res,
+        _$OpenApiFruitInlineDiscOneOfImpl>
+    implements _$$OpenApiFruitInlineDiscOneOfImplCopyWith<$Res> {
+  __$$OpenApiFruitInlineDiscOneOfImplCopyWithImpl(
+      _$OpenApiFruitInlineDiscOneOfImpl _value,
+      $Res Function(_$OpenApiFruitInlineDiscOneOfImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11446,7 +12340,7 @@ class __$$_FruitInlineDiscOneOfCopyWithImpl<$Res>
     Object? seeds = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_FruitInlineDiscOneOf(
+    return _then(_$OpenApiFruitInlineDiscOneOfImpl(
       seeds: null == seeds
           ? _value.seeds
           : seeds // ignore: cast_nullable_to_non_nullable
@@ -11461,14 +12355,15 @@ class __$$_FruitInlineDiscOneOfCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FruitInlineDiscOneOf extends _FruitInlineDiscOneOf {
-  const _$_FruitInlineDiscOneOf(
+class _$OpenApiFruitInlineDiscOneOfImpl extends _OpenApiFruitInlineDiscOneOf {
+  const _$OpenApiFruitInlineDiscOneOfImpl(
       {@JsonKey(name: r'seeds') required this.seeds,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_FruitInlineDiscOneOf.fromJson(Map<String, dynamic> json) =>
-      _$$_FruitInlineDiscOneOfFromJson(json);
+  factory _$OpenApiFruitInlineDiscOneOfImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$OpenApiFruitInlineDiscOneOfImplFromJson(json);
 
   @override
   @JsonKey(name: r'seeds')
@@ -11479,14 +12374,14 @@ class _$_FruitInlineDiscOneOf extends _FruitInlineDiscOneOf {
 
   @override
   String toString() {
-    return 'FruitInlineDiscOneOf(seeds: $seeds, fruitType: $fruitType)';
+    return 'OpenApiFruitInlineDiscOneOf(seeds: $seeds, fruitType: $fruitType)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FruitInlineDiscOneOf &&
+            other is _$OpenApiFruitInlineDiscOneOfImpl &&
             (identical(other.seeds, seeds) || other.seeds == seeds) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -11499,27 +12394,28 @@ class _$_FruitInlineDiscOneOf extends _FruitInlineDiscOneOf {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FruitInlineDiscOneOfCopyWith<_$_FruitInlineDiscOneOf> get copyWith =>
-      __$$_FruitInlineDiscOneOfCopyWithImpl<_$_FruitInlineDiscOneOf>(
-          this, _$identity);
+  _$$OpenApiFruitInlineDiscOneOfImplCopyWith<_$OpenApiFruitInlineDiscOneOfImpl>
+      get copyWith => __$$OpenApiFruitInlineDiscOneOfImplCopyWithImpl<
+          _$OpenApiFruitInlineDiscOneOfImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FruitInlineDiscOneOfToJson(
+    return _$$OpenApiFruitInlineDiscOneOfImplToJson(
       this,
     );
   }
 }
 
-abstract class _FruitInlineDiscOneOf extends FruitInlineDiscOneOf {
-  const factory _FruitInlineDiscOneOf(
+abstract class _OpenApiFruitInlineDiscOneOf
+    extends OpenApiFruitInlineDiscOneOf {
+  const factory _OpenApiFruitInlineDiscOneOf(
           {@JsonKey(name: r'seeds') required final int seeds,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_FruitInlineDiscOneOf;
-  const _FruitInlineDiscOneOf._() : super._();
+      _$OpenApiFruitInlineDiscOneOfImpl;
+  const _OpenApiFruitInlineDiscOneOf._() : super._();
 
-  factory _FruitInlineDiscOneOf.fromJson(Map<String, dynamic> json) =
-      _$_FruitInlineDiscOneOf.fromJson;
+  factory _OpenApiFruitInlineDiscOneOf.fromJson(Map<String, dynamic> json) =
+      _$OpenApiFruitInlineDiscOneOfImpl.fromJson;
 
   @override
   @JsonKey(name: r'seeds')
@@ -11529,17 +12425,17 @@ abstract class _FruitInlineDiscOneOf extends FruitInlineDiscOneOf {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_FruitInlineDiscOneOfCopyWith<_$_FruitInlineDiscOneOf> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OpenApiFruitInlineDiscOneOfImplCopyWith<_$OpenApiFruitInlineDiscOneOfImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
-FruitInlineDiscOneOf1 _$FruitInlineDiscOneOf1FromJson(
+OpenApiFruitInlineDiscOneOf1 _$OpenApiFruitInlineDiscOneOf1FromJson(
     Map<String, dynamic> json) {
-  return _FruitInlineDiscOneOf1.fromJson(json);
+  return _OpenApiFruitInlineDiscOneOf1.fromJson(json);
 }
 
 /// @nodoc
-mixin _$FruitInlineDiscOneOf1 {
+mixin _$OpenApiFruitInlineDiscOneOf1 {
   @JsonKey(name: r'length')
   int get length => throw _privateConstructorUsedError;
   @JsonKey(name: r'fruitType')
@@ -11547,15 +12443,17 @@ mixin _$FruitInlineDiscOneOf1 {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $FruitInlineDiscOneOf1CopyWith<FruitInlineDiscOneOf1> get copyWith =>
-      throw _privateConstructorUsedError;
+  $OpenApiFruitInlineDiscOneOf1CopyWith<OpenApiFruitInlineDiscOneOf1>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FruitInlineDiscOneOf1CopyWith<$Res> {
-  factory $FruitInlineDiscOneOf1CopyWith(FruitInlineDiscOneOf1 value,
-          $Res Function(FruitInlineDiscOneOf1) then) =
-      _$FruitInlineDiscOneOf1CopyWithImpl<$Res, FruitInlineDiscOneOf1>;
+abstract class $OpenApiFruitInlineDiscOneOf1CopyWith<$Res> {
+  factory $OpenApiFruitInlineDiscOneOf1CopyWith(
+          OpenApiFruitInlineDiscOneOf1 value,
+          $Res Function(OpenApiFruitInlineDiscOneOf1) then) =
+      _$OpenApiFruitInlineDiscOneOf1CopyWithImpl<$Res,
+          OpenApiFruitInlineDiscOneOf1>;
   @useResult
   $Res call(
       {@JsonKey(name: r'length') int length,
@@ -11563,10 +12461,10 @@ abstract class $FruitInlineDiscOneOf1CopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FruitInlineDiscOneOf1CopyWithImpl<$Res,
-        $Val extends FruitInlineDiscOneOf1>
-    implements $FruitInlineDiscOneOf1CopyWith<$Res> {
-  _$FruitInlineDiscOneOf1CopyWithImpl(this._value, this._then);
+class _$OpenApiFruitInlineDiscOneOf1CopyWithImpl<$Res,
+        $Val extends OpenApiFruitInlineDiscOneOf1>
+    implements $OpenApiFruitInlineDiscOneOf1CopyWith<$Res> {
+  _$OpenApiFruitInlineDiscOneOf1CopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -11593,11 +12491,12 @@ class _$FruitInlineDiscOneOf1CopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_FruitInlineDiscOneOf1CopyWith<$Res>
-    implements $FruitInlineDiscOneOf1CopyWith<$Res> {
-  factory _$$_FruitInlineDiscOneOf1CopyWith(_$_FruitInlineDiscOneOf1 value,
-          $Res Function(_$_FruitInlineDiscOneOf1) then) =
-      __$$_FruitInlineDiscOneOf1CopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitInlineDiscOneOf1ImplCopyWith<$Res>
+    implements $OpenApiFruitInlineDiscOneOf1CopyWith<$Res> {
+  factory _$$OpenApiFruitInlineDiscOneOf1ImplCopyWith(
+          _$OpenApiFruitInlineDiscOneOf1Impl value,
+          $Res Function(_$OpenApiFruitInlineDiscOneOf1Impl) then) =
+      __$$OpenApiFruitInlineDiscOneOf1ImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -11606,11 +12505,13 @@ abstract class _$$_FruitInlineDiscOneOf1CopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_FruitInlineDiscOneOf1CopyWithImpl<$Res>
-    extends _$FruitInlineDiscOneOf1CopyWithImpl<$Res, _$_FruitInlineDiscOneOf1>
-    implements _$$_FruitInlineDiscOneOf1CopyWith<$Res> {
-  __$$_FruitInlineDiscOneOf1CopyWithImpl(_$_FruitInlineDiscOneOf1 _value,
-      $Res Function(_$_FruitInlineDiscOneOf1) _then)
+class __$$OpenApiFruitInlineDiscOneOf1ImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitInlineDiscOneOf1CopyWithImpl<$Res,
+        _$OpenApiFruitInlineDiscOneOf1Impl>
+    implements _$$OpenApiFruitInlineDiscOneOf1ImplCopyWith<$Res> {
+  __$$OpenApiFruitInlineDiscOneOf1ImplCopyWithImpl(
+      _$OpenApiFruitInlineDiscOneOf1Impl _value,
+      $Res Function(_$OpenApiFruitInlineDiscOneOf1Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11619,7 +12520,7 @@ class __$$_FruitInlineDiscOneOf1CopyWithImpl<$Res>
     Object? length = null,
     Object? fruitType = null,
   }) {
-    return _then(_$_FruitInlineDiscOneOf1(
+    return _then(_$OpenApiFruitInlineDiscOneOf1Impl(
       length: null == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -11634,14 +12535,15 @@ class __$$_FruitInlineDiscOneOf1CopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FruitInlineDiscOneOf1 extends _FruitInlineDiscOneOf1 {
-  const _$_FruitInlineDiscOneOf1(
+class _$OpenApiFruitInlineDiscOneOf1Impl extends _OpenApiFruitInlineDiscOneOf1 {
+  const _$OpenApiFruitInlineDiscOneOf1Impl(
       {@JsonKey(name: r'length') required this.length,
       @JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_FruitInlineDiscOneOf1.fromJson(Map<String, dynamic> json) =>
-      _$$_FruitInlineDiscOneOf1FromJson(json);
+  factory _$OpenApiFruitInlineDiscOneOf1Impl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$OpenApiFruitInlineDiscOneOf1ImplFromJson(json);
 
   @override
   @JsonKey(name: r'length')
@@ -11652,14 +12554,14 @@ class _$_FruitInlineDiscOneOf1 extends _FruitInlineDiscOneOf1 {
 
   @override
   String toString() {
-    return 'FruitInlineDiscOneOf1(length: $length, fruitType: $fruitType)';
+    return 'OpenApiFruitInlineDiscOneOf1(length: $length, fruitType: $fruitType)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FruitInlineDiscOneOf1 &&
+            other is _$OpenApiFruitInlineDiscOneOf1Impl &&
             (identical(other.length, length) || other.length == length) &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
@@ -11672,27 +12574,29 @@ class _$_FruitInlineDiscOneOf1 extends _FruitInlineDiscOneOf1 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FruitInlineDiscOneOf1CopyWith<_$_FruitInlineDiscOneOf1> get copyWith =>
-      __$$_FruitInlineDiscOneOf1CopyWithImpl<_$_FruitInlineDiscOneOf1>(
-          this, _$identity);
+  _$$OpenApiFruitInlineDiscOneOf1ImplCopyWith<
+          _$OpenApiFruitInlineDiscOneOf1Impl>
+      get copyWith => __$$OpenApiFruitInlineDiscOneOf1ImplCopyWithImpl<
+          _$OpenApiFruitInlineDiscOneOf1Impl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FruitInlineDiscOneOf1ToJson(
+    return _$$OpenApiFruitInlineDiscOneOf1ImplToJson(
       this,
     );
   }
 }
 
-abstract class _FruitInlineDiscOneOf1 extends FruitInlineDiscOneOf1 {
-  const factory _FruitInlineDiscOneOf1(
+abstract class _OpenApiFruitInlineDiscOneOf1
+    extends OpenApiFruitInlineDiscOneOf1 {
+  const factory _OpenApiFruitInlineDiscOneOf1(
           {@JsonKey(name: r'length') required final int length,
           @JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_FruitInlineDiscOneOf1;
-  const _FruitInlineDiscOneOf1._() : super._();
+      _$OpenApiFruitInlineDiscOneOf1Impl;
+  const _OpenApiFruitInlineDiscOneOf1._() : super._();
 
-  factory _FruitInlineDiscOneOf1.fromJson(Map<String, dynamic> json) =
-      _$_FruitInlineDiscOneOf1.fromJson;
+  factory _OpenApiFruitInlineDiscOneOf1.fromJson(Map<String, dynamic> json) =
+      _$OpenApiFruitInlineDiscOneOf1Impl.fromJson;
 
   @override
   @JsonKey(name: r'length')
@@ -11702,60 +12606,67 @@ abstract class _FruitInlineDiscOneOf1 extends FruitInlineDiscOneOf1 {
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_FruitInlineDiscOneOf1CopyWith<_$_FruitInlineDiscOneOf1> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OpenApiFruitInlineDiscOneOf1ImplCopyWith<
+          _$OpenApiFruitInlineDiscOneOf1Impl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$FruitInlineInlineDisc {
+mixin _$OpenApiFruitInlineInlineDisc {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)
-        asFruitInlineInlineDiscOneOf,
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)
+        asOpenApiFruitInlineInlineDiscOneOf,
     required TResult Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)
-        asFruitInlineInlineDiscOneOf1,
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)
+        asOpenApiFruitInlineInlineDiscOneOf1,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)?
-        asFruitInlineInlineDiscOneOf,
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOf,
     TResult? Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)?
-        asFruitInlineInlineDiscOneOf1,
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)?
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)?
-        asFruitInlineInlineDiscOneOf,
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOf,
     TResult Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)?
-        asFruitInlineInlineDiscOneOf1,
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)?
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
@@ -11763,47 +12674,60 @@ mixin _$FruitInlineInlineDisc {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)
-        asFruitInlineInlineDiscOneOf,
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)
+        asOpenApiFruitInlineInlineDiscOneOf,
     required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)
-        asFruitInlineInlineDiscOneOf1,
-    required TResult Function(FruitInlineInlineDiscUnknown value) unknown,
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitInlineInlineDiscUnknown value)
+        unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)?
-        asFruitInlineInlineDiscOneOf,
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult? Function(FruitInlineInlineDiscUnknown value)? unknown,
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitInlineInlineDiscUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)?
-        asFruitInlineInlineDiscOneOf,
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult Function(FruitInlineInlineDiscUnknown value)? unknown,
+    TResult Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    TResult Function(OpenApiFruitInlineInlineDiscUnknown value)? unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FruitInlineInlineDiscCopyWith<$Res> {
-  factory $FruitInlineInlineDiscCopyWith(FruitInlineInlineDisc value,
-          $Res Function(FruitInlineInlineDisc) then) =
-      _$FruitInlineInlineDiscCopyWithImpl<$Res, FruitInlineInlineDisc>;
+abstract class $OpenApiFruitInlineInlineDiscCopyWith<$Res> {
+  factory $OpenApiFruitInlineInlineDiscCopyWith(
+          OpenApiFruitInlineInlineDisc value,
+          $Res Function(OpenApiFruitInlineInlineDisc) then) =
+      _$OpenApiFruitInlineInlineDiscCopyWithImpl<$Res,
+          OpenApiFruitInlineInlineDisc>;
 }
 
 /// @nodoc
-class _$FruitInlineInlineDiscCopyWithImpl<$Res,
-        $Val extends FruitInlineInlineDisc>
-    implements $FruitInlineInlineDiscCopyWith<$Res> {
-  _$FruitInlineInlineDiscCopyWithImpl(this._value, this._then);
+class _$OpenApiFruitInlineInlineDiscCopyWithImpl<$Res,
+        $Val extends OpenApiFruitInlineInlineDisc>
+    implements $OpenApiFruitInlineInlineDiscCopyWith<$Res> {
+  _$OpenApiFruitInlineInlineDiscCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -11812,958 +12736,180 @@ class _$FruitInlineInlineDiscCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOfCopyWith<
+abstract class _$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImplCopyWith<
     $Res> {
-  factory _$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOfCopyWith(
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value,
-          $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf)
-              then) =
-      __$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOfCopyWithImpl<$Res>;
-  @useResult
-  $Res call({FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue});
-
-  $FruitInlineInlineDiscOneOfCopyWith<$Res> get fruitInlineInlineDiscOneOfValue;
-}
-
-/// @nodoc
-class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOfCopyWithImpl<$Res>
-    extends _$FruitInlineInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf>
-    implements
-        _$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOfCopyWith<$Res> {
-  __$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOfCopyWithImpl(
-      _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf _value,
-      $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? fruitInlineInlineDiscOneOfValue = null,
-  }) {
-    return _then(_$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf(
-      fruitInlineInlineDiscOneOfValue: null == fruitInlineInlineDiscOneOfValue
-          ? _value.fruitInlineInlineDiscOneOfValue
-          : fruitInlineInlineDiscOneOfValue // ignore: cast_nullable_to_non_nullable
-              as FruitInlineInlineDiscOneOf,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $FruitInlineInlineDiscOneOfCopyWith<$Res>
-      get fruitInlineInlineDiscOneOfValue {
-    return $FruitInlineInlineDiscOneOfCopyWith<$Res>(
-        _value.fruitInlineInlineDiscOneOfValue, (value) {
-      return _then(_value.copyWith(fruitInlineInlineDiscOneOfValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf
-    extends FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf {
-  const _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf(
-      {required this.fruitInlineInlineDiscOneOfValue})
-      : super._();
-
-  @override
-  final FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue;
-
-  @override
-  String toString() {
-    return 'FruitInlineInlineDisc.asFruitInlineInlineDiscOneOf(fruitInlineInlineDiscOneOfValue: $fruitInlineInlineDiscOneOfValue)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf &&
-            (identical(other.fruitInlineInlineDiscOneOfValue,
-                    fruitInlineInlineDiscOneOfValue) ||
-                other.fruitInlineInlineDiscOneOfValue ==
-                    fruitInlineInlineDiscOneOfValue));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, fruitInlineInlineDiscOneOfValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOfCopyWith<
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf>
-      get copyWith =>
-          __$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOfCopyWithImpl<
-                  _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)
-        asFruitInlineInlineDiscOneOf,
-    required TResult Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)
-        asFruitInlineInlineDiscOneOf1,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)
-        unknown,
-  }) {
-    return asFruitInlineInlineDiscOneOf(fruitInlineInlineDiscOneOfValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)?
-        asFruitInlineInlineDiscOneOf,
-    TResult? Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)?
-        unknown,
-  }) {
-    return asFruitInlineInlineDiscOneOf?.call(fruitInlineInlineDiscOneOfValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)?
-        asFruitInlineInlineDiscOneOf,
-    TResult Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineInlineDiscOneOf != null) {
-      return asFruitInlineInlineDiscOneOf(fruitInlineInlineDiscOneOfValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)
-        asFruitInlineInlineDiscOneOf,
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)
-        asFruitInlineInlineDiscOneOf1,
-    required TResult Function(FruitInlineInlineDiscUnknown value) unknown,
-  }) {
-    return asFruitInlineInlineDiscOneOf(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)?
-        asFruitInlineInlineDiscOneOf,
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult? Function(FruitInlineInlineDiscUnknown value)? unknown,
-  }) {
-    return asFruitInlineInlineDiscOneOf?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)?
-        asFruitInlineInlineDiscOneOf,
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult Function(FruitInlineInlineDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineInlineDiscOneOf != null) {
-      return asFruitInlineInlineDiscOneOf(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf
-    extends FruitInlineInlineDisc {
-  const factory FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf(
-          {required final FruitInlineInlineDiscOneOf
-              fruitInlineInlineDiscOneOfValue}) =
-      _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf;
-  const FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf._() : super._();
-
-  FruitInlineInlineDiscOneOf get fruitInlineInlineDiscOneOfValue;
-  @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOfCopyWith<
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1CopyWith<
-    $Res> {
-  factory _$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1CopyWith(
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value,
-          $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1)
-              then) =
-      __$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1CopyWithImpl<$Res>;
-  @useResult
-  $Res call({FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value});
-
-  $FruitInlineInlineDiscOneOf1CopyWith<$Res>
-      get fruitInlineInlineDiscOneOf1Value;
-}
-
-/// @nodoc
-class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1CopyWithImpl<$Res>
-    extends _$FruitInlineInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1>
-    implements
-        _$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1CopyWith<$Res> {
-  __$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1CopyWithImpl(
-      _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 _value,
-      $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? fruitInlineInlineDiscOneOf1Value = null,
-  }) {
-    return _then(_$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1(
-      fruitInlineInlineDiscOneOf1Value: null == fruitInlineInlineDiscOneOf1Value
-          ? _value.fruitInlineInlineDiscOneOf1Value
-          : fruitInlineInlineDiscOneOf1Value // ignore: cast_nullable_to_non_nullable
-              as FruitInlineInlineDiscOneOf1,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $FruitInlineInlineDiscOneOf1CopyWith<$Res>
-      get fruitInlineInlineDiscOneOf1Value {
-    return $FruitInlineInlineDiscOneOf1CopyWith<$Res>(
-        _value.fruitInlineInlineDiscOneOf1Value, (value) {
-      return _then(_value.copyWith(fruitInlineInlineDiscOneOf1Value: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1
-    extends FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 {
-  const _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1(
-      {required this.fruitInlineInlineDiscOneOf1Value})
-      : super._();
-
-  @override
-  final FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value;
-
-  @override
-  String toString() {
-    return 'FruitInlineInlineDisc.asFruitInlineInlineDiscOneOf1(fruitInlineInlineDiscOneOf1Value: $fruitInlineInlineDiscOneOf1Value)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 &&
-            (identical(other.fruitInlineInlineDiscOneOf1Value,
-                    fruitInlineInlineDiscOneOf1Value) ||
-                other.fruitInlineInlineDiscOneOf1Value ==
-                    fruitInlineInlineDiscOneOf1Value));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, fruitInlineInlineDiscOneOf1Value);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1CopyWith<
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1>
-      get copyWith =>
-          __$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1CopyWithImpl<
-                  _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)
-        asFruitInlineInlineDiscOneOf,
-    required TResult Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)
-        asFruitInlineInlineDiscOneOf1,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)
-        unknown,
-  }) {
-    return asFruitInlineInlineDiscOneOf1(fruitInlineInlineDiscOneOf1Value);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)?
-        asFruitInlineInlineDiscOneOf,
-    TResult? Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)?
-        unknown,
-  }) {
-    return asFruitInlineInlineDiscOneOf1
-        ?.call(fruitInlineInlineDiscOneOf1Value);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)?
-        asFruitInlineInlineDiscOneOf,
-    TResult Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineInlineDiscOneOf1 != null) {
-      return asFruitInlineInlineDiscOneOf1(fruitInlineInlineDiscOneOf1Value);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)
-        asFruitInlineInlineDiscOneOf,
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)
-        asFruitInlineInlineDiscOneOf1,
-    required TResult Function(FruitInlineInlineDiscUnknown value) unknown,
-  }) {
-    return asFruitInlineInlineDiscOneOf1(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)?
-        asFruitInlineInlineDiscOneOf,
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult? Function(FruitInlineInlineDiscUnknown value)? unknown,
-  }) {
-    return asFruitInlineInlineDiscOneOf1?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)?
-        asFruitInlineInlineDiscOneOf,
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult Function(FruitInlineInlineDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineInlineDiscOneOf1 != null) {
-      return asFruitInlineInlineDiscOneOf1(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1
-    extends FruitInlineInlineDisc {
-  const factory FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1(
-          {required final FruitInlineInlineDiscOneOf1
-              fruitInlineInlineDiscOneOf1Value}) =
-      _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1;
-  const FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1._() : super._();
-
-  FruitInlineInlineDiscOneOf1 get fruitInlineInlineDiscOneOf1Value;
-  @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1CopyWith<
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$FruitInlineInlineDiscUnknownCopyWith<$Res> {
-  factory _$$FruitInlineInlineDiscUnknownCopyWith(
-          _$FruitInlineInlineDiscUnknown value,
-          $Res Function(_$FruitInlineInlineDiscUnknown) then) =
-      __$$FruitInlineInlineDiscUnknownCopyWithImpl<$Res>;
-  @useResult
-  $Res call(
-      {String message,
-      Map<String, dynamic> json,
-      DeserializationErrorType errorType,
-      List<Type> possibleTypes,
-      List<FruitInlineInlineDisc> deserializedModels});
-}
-
-/// @nodoc
-class __$$FruitInlineInlineDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitInlineInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscUnknown>
-    implements _$$FruitInlineInlineDiscUnknownCopyWith<$Res> {
-  __$$FruitInlineInlineDiscUnknownCopyWithImpl(
-      _$FruitInlineInlineDiscUnknown _value,
-      $Res Function(_$FruitInlineInlineDiscUnknown) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-    Object? json = null,
-    Object? errorType = null,
-    Object? possibleTypes = null,
-    Object? deserializedModels = null,
-  }) {
-    return _then(_$FruitInlineInlineDiscUnknown(
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      json: null == json
-          ? _value._json
-          : json // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      errorType: null == errorType
-          ? _value.errorType
-          : errorType // ignore: cast_nullable_to_non_nullable
-              as DeserializationErrorType,
-      possibleTypes: null == possibleTypes
-          ? _value._possibleTypes
-          : possibleTypes // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
-      deserializedModels: null == deserializedModels
-          ? _value._deserializedModels
-          : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitInlineInlineDisc>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$FruitInlineInlineDiscUnknown extends FruitInlineInlineDiscUnknown {
-  const _$FruitInlineInlineDiscUnknown(
-      {this.message = 'Json does not satisfy any available types',
-      required final Map<String, dynamic> json,
-      this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[
-        FruitInlineInlineDiscOneOf,
-        FruitInlineInlineDiscOneOf1
-      ],
-      final List<FruitInlineInlineDisc> deserializedModels =
-          const <FruitInlineInlineDisc>[]})
-      : _json = json,
-        _possibleTypes = possibleTypes,
-        _deserializedModels = deserializedModels,
-        super._();
-
-  @override
-  @JsonKey()
-  final String message;
-  final Map<String, dynamic> _json;
-  @override
-  Map<String, dynamic> get json {
-    if (_json is EqualUnmodifiableMapView) return _json;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_json);
-  }
-
-  @override
-  @JsonKey()
-  final DeserializationErrorType errorType;
-  final List<Type> _possibleTypes;
-  @override
-  @JsonKey()
-  List<Type> get possibleTypes {
-    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_possibleTypes);
-  }
-
-  final List<FruitInlineInlineDisc> _deserializedModels;
-  @override
-  @JsonKey()
-  List<FruitInlineInlineDisc> get deserializedModels {
-    if (_deserializedModels is EqualUnmodifiableListView)
-      return _deserializedModels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_deserializedModels);
-  }
-
-  @override
-  String toString() {
-    return 'FruitInlineInlineDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscUnknown &&
-            (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other._json, _json) &&
-            (identical(other.errorType, errorType) ||
-                other.errorType == errorType) &&
-            const DeepCollectionEquality()
-                .equals(other._possibleTypes, _possibleTypes) &&
-            const DeepCollectionEquality()
-                .equals(other._deserializedModels, _deserializedModels));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      message,
-      const DeepCollectionEquality().hash(_json),
-      errorType,
-      const DeepCollectionEquality().hash(_possibleTypes),
-      const DeepCollectionEquality().hash(_deserializedModels));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscUnknownCopyWith<_$FruitInlineInlineDiscUnknown>
-      get copyWith => __$$FruitInlineInlineDiscUnknownCopyWithImpl<
-          _$FruitInlineInlineDiscUnknown>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)
-        asFruitInlineInlineDiscOneOf,
-    required TResult Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)
-        asFruitInlineInlineDiscOneOf1,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)
-        unknown,
-  }) {
-    return unknown(message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)?
-        asFruitInlineInlineDiscOneOf,
-    TResult? Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)?
-        unknown,
-  }) {
-    return unknown?.call(
-        message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscOneOf fruitInlineInlineDiscOneOfValue)?
-        asFruitInlineInlineDiscOneOf,
-    TResult Function(
-            FruitInlineInlineDiscOneOf1 fruitInlineInlineDiscOneOf1Value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(
-          message, json, errorType, possibleTypes, deserializedModels);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)
-        asFruitInlineInlineDiscOneOf,
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)
-        asFruitInlineInlineDiscOneOf1,
-    required TResult Function(FruitInlineInlineDiscUnknown value) unknown,
-  }) {
-    return unknown(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)?
-        asFruitInlineInlineDiscOneOf,
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult? Function(FruitInlineInlineDiscUnknown value)? unknown,
-  }) {
-    return unknown?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf value)?
-        asFruitInlineInlineDiscOneOf,
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscOneOf1 value)?
-        asFruitInlineInlineDiscOneOf1,
-    TResult Function(FruitInlineInlineDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitInlineInlineDiscUnknown extends FruitInlineInlineDisc {
-  const factory FruitInlineInlineDiscUnknown(
-          {final String message,
-          required final Map<String, dynamic> json,
-          final DeserializationErrorType errorType,
-          final List<Type> possibleTypes,
-          final List<FruitInlineInlineDisc> deserializedModels}) =
-      _$FruitInlineInlineDiscUnknown;
-  const FruitInlineInlineDiscUnknown._() : super._();
-
-  String get message;
-  Map<String, dynamic> get json;
-  DeserializationErrorType get errorType;
-  List<Type> get possibleTypes;
-  List<FruitInlineInlineDisc> get deserializedModels;
-  @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscUnknownCopyWith<_$FruitInlineInlineDiscUnknown>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-mixin _$FruitInlineInlineDiscOneOf {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)
-        asFruitInlineInlineDiscOneOfOneOf,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf> deserializedModels)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf> deserializedModels)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf value)
-        asFruitInlineInlineDiscOneOfOneOf,
-    required TResult Function(FruitInlineInlineDiscOneOfUnknown value) unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult? Function(FruitInlineInlineDiscOneOfUnknown value)? unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult Function(FruitInlineInlineDiscOneOfUnknown value)? unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $FruitInlineInlineDiscOneOfCopyWith<$Res> {
-  factory $FruitInlineInlineDiscOneOfCopyWith(FruitInlineInlineDiscOneOf value,
-          $Res Function(FruitInlineInlineDiscOneOf) then) =
-      _$FruitInlineInlineDiscOneOfCopyWithImpl<$Res,
-          FruitInlineInlineDiscOneOf>;
-}
-
-/// @nodoc
-class _$FruitInlineInlineDiscOneOfCopyWithImpl<$Res,
-        $Val extends FruitInlineInlineDiscOneOf>
-    implements $FruitInlineInlineDiscOneOfCopyWith<$Res> {
-  _$FruitInlineInlineDiscOneOfCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOfCopyWith<
-    $Res> {
-  factory _$$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOfCopyWith(
-          _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf value,
+  factory _$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImplCopyWith(
+          _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl
+              value,
           $Res Function(
-                  _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf)
+                  _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl)
               then) =
-      __$$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOfCopyWithImpl<
+      __$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImplCopyWithImpl<
           $Res>;
   @useResult
   $Res call(
-      {FruitInlineInlineDiscOneOfOneOf fruitInlineInlineDiscOneOfOneOfValue});
+      {OpenApiFruitInlineInlineDiscOneOf
+          openApiFruitInlineInlineDiscOneOfValue});
 
-  $FruitInlineInlineDiscOneOfOneOfCopyWith<$Res>
-      get fruitInlineInlineDiscOneOfOneOfValue;
+  $OpenApiFruitInlineInlineDiscOneOfCopyWith<$Res>
+      get openApiFruitInlineInlineDiscOneOfValue;
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOfCopyWithImpl<
+class __$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImplCopyWithImpl<
         $Res>
-    extends _$FruitInlineInlineDiscOneOfCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf>
+    extends _$OpenApiFruitInlineInlineDiscCopyWithImpl<$Res,
+        _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl>
     implements
-        _$$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOfCopyWith<
+        _$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImplCopyWith<
             $Res> {
-  __$$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOfCopyWithImpl(
-      _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf _value,
+  __$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImplCopyWithImpl(
+      _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl
+          _value,
       $Res Function(
-              _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf)
+              _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl)
           _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? fruitInlineInlineDiscOneOfOneOfValue = null,
+    Object? openApiFruitInlineInlineDiscOneOfValue = null,
   }) {
-    return _then(_$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf(
-      fruitInlineInlineDiscOneOfOneOfValue: null ==
-              fruitInlineInlineDiscOneOfOneOfValue
-          ? _value.fruitInlineInlineDiscOneOfOneOfValue
-          : fruitInlineInlineDiscOneOfOneOfValue // ignore: cast_nullable_to_non_nullable
-              as FruitInlineInlineDiscOneOfOneOf,
+    return _then(
+        _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl(
+      openApiFruitInlineInlineDiscOneOfValue: null ==
+              openApiFruitInlineInlineDiscOneOfValue
+          ? _value.openApiFruitInlineInlineDiscOneOfValue
+          : openApiFruitInlineInlineDiscOneOfValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitInlineInlineDiscOneOf,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $FruitInlineInlineDiscOneOfOneOfCopyWith<$Res>
-      get fruitInlineInlineDiscOneOfOneOfValue {
-    return $FruitInlineInlineDiscOneOfOneOfCopyWith<$Res>(
-        _value.fruitInlineInlineDiscOneOfOneOfValue, (value) {
+  $OpenApiFruitInlineInlineDiscOneOfCopyWith<$Res>
+      get openApiFruitInlineInlineDiscOneOfValue {
+    return $OpenApiFruitInlineInlineDiscOneOfCopyWith<$Res>(
+        _value.openApiFruitInlineInlineDiscOneOfValue, (value) {
       return _then(
-          _value.copyWith(fruitInlineInlineDiscOneOfOneOfValue: value));
+          _value.copyWith(openApiFruitInlineInlineDiscOneOfValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf
-    extends FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf {
-  const _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf(
-      {required this.fruitInlineInlineDiscOneOfOneOfValue})
+class _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl
+    extends OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf {
+  const _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl(
+      {required this.openApiFruitInlineInlineDiscOneOfValue})
       : super._();
 
   @override
-  final FruitInlineInlineDiscOneOfOneOf fruitInlineInlineDiscOneOfOneOfValue;
+  final OpenApiFruitInlineInlineDiscOneOf
+      openApiFruitInlineInlineDiscOneOfValue;
 
   @override
   String toString() {
-    return 'FruitInlineInlineDiscOneOf.asFruitInlineInlineDiscOneOfOneOf(fruitInlineInlineDiscOneOfOneOfValue: $fruitInlineInlineDiscOneOfOneOfValue)';
+    return 'OpenApiFruitInlineInlineDisc.asOpenApiFruitInlineInlineDiscOneOf(openApiFruitInlineInlineDiscOneOfValue: $openApiFruitInlineInlineDiscOneOfValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf &&
-            (identical(other.fruitInlineInlineDiscOneOfOneOfValue,
-                    fruitInlineInlineDiscOneOfOneOfValue) ||
-                other.fruitInlineInlineDiscOneOfOneOfValue ==
-                    fruitInlineInlineDiscOneOfOneOfValue));
+                is _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl &&
+            (identical(other.openApiFruitInlineInlineDiscOneOfValue,
+                    openApiFruitInlineInlineDiscOneOfValue) ||
+                other.openApiFruitInlineInlineDiscOneOfValue ==
+                    openApiFruitInlineInlineDiscOneOfValue));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, fruitInlineInlineDiscOneOfOneOfValue);
+      Object.hash(runtimeType, openApiFruitInlineInlineDiscOneOfValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOfCopyWith<
-          _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf>
+  _$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl>
       get copyWith =>
-          __$$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOfCopyWithImpl<
-                  _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf>(
+          __$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImplCopyWithImpl<
+                  _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl>(
               this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)
+        asOpenApiFruitInlineInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)
+        asOpenApiFruitInlineInlineDiscOneOf1,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf> deserializedModels)
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)
         unknown,
   }) {
-    return asFruitInlineInlineDiscOneOfOneOf(
-        fruitInlineInlineDiscOneOfOneOfValue);
+    return asOpenApiFruitInlineInlineDiscOneOf(
+        openApiFruitInlineInlineDiscOneOfValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf> deserializedModels)?
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)?
         unknown,
   }) {
-    return asFruitInlineInlineDiscOneOfOneOf
-        ?.call(fruitInlineInlineDiscOneOfOneOfValue);
+    return asOpenApiFruitInlineInlineDiscOneOf
+        ?.call(openApiFruitInlineInlineDiscOneOfValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf> deserializedModels)?
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asFruitInlineInlineDiscOneOfOneOf != null) {
-      return asFruitInlineInlineDiscOneOfOneOf(
-          fruitInlineInlineDiscOneOfOneOfValue);
+    if (asOpenApiFruitInlineInlineDiscOneOf != null) {
+      return asOpenApiFruitInlineInlineDiscOneOf(
+          openApiFruitInlineInlineDiscOneOfValue);
     }
     return orElse();
   }
@@ -12772,79 +12918,345 @@ class _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf value)
-        asFruitInlineInlineDiscOneOfOneOf,
-    required TResult Function(FruitInlineInlineDiscOneOfUnknown value) unknown,
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)
+        asOpenApiFruitInlineInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitInlineInlineDiscUnknown value)
+        unknown,
   }) {
-    return asFruitInlineInlineDiscOneOfOneOf(this);
+    return asOpenApiFruitInlineInlineDiscOneOf(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult? Function(FruitInlineInlineDiscOneOfUnknown value)? unknown,
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitInlineInlineDiscUnknown value)? unknown,
   }) {
-    return asFruitInlineInlineDiscOneOfOneOf?.call(this);
+    return asOpenApiFruitInlineInlineDiscOneOf?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult Function(FruitInlineInlineDiscOneOfUnknown value)? unknown,
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    TResult Function(OpenApiFruitInlineInlineDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (asFruitInlineInlineDiscOneOfOneOf != null) {
-      return asFruitInlineInlineDiscOneOfOneOf(this);
+    if (asOpenApiFruitInlineInlineDiscOneOf != null) {
+      return asOpenApiFruitInlineInlineDiscOneOf(this);
     }
     return orElse();
   }
 }
 
-abstract class FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf
-    extends FruitInlineInlineDiscOneOf {
-  const factory FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf(
-          {required final FruitInlineInlineDiscOneOfOneOf
-              fruitInlineInlineDiscOneOfOneOfValue}) =
-      _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf;
-  const FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf._()
+abstract class OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+    extends OpenApiFruitInlineInlineDisc {
+  const factory OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf(
+          {required final OpenApiFruitInlineInlineDiscOneOf
+              openApiFruitInlineInlineDiscOneOfValue}) =
+      _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl;
+  const OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf._()
       : super._();
 
-  FruitInlineInlineDiscOneOfOneOf get fruitInlineInlineDiscOneOfOneOfValue;
+  OpenApiFruitInlineInlineDiscOneOf get openApiFruitInlineInlineDiscOneOfValue;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOfCopyWith<
-          _$FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf>
+  _$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOfImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscOneOfUnknownCopyWith<$Res> {
-  factory _$$FruitInlineInlineDiscOneOfUnknownCopyWith(
-          _$FruitInlineInlineDiscOneOfUnknown value,
-          $Res Function(_$FruitInlineInlineDiscOneOfUnknown) then) =
-      __$$FruitInlineInlineDiscOneOfUnknownCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1ImplCopyWith<
+    $Res> {
+  factory _$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1ImplCopyWith(
+          _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl
+              value,
+          $Res Function(
+                  _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl)
+              then) =
+      __$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1ImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call(
+      {OpenApiFruitInlineInlineDiscOneOf1
+          openApiFruitInlineInlineDiscOneOf1Value});
+
+  $OpenApiFruitInlineInlineDiscOneOf1CopyWith<$Res>
+      get openApiFruitInlineInlineDiscOneOf1Value;
+}
+
+/// @nodoc
+class __$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1ImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiFruitInlineInlineDiscCopyWithImpl<$Res,
+        _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl>
+    implements
+        _$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1ImplCopyWith<
+            $Res> {
+  __$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1ImplCopyWithImpl(
+      _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl
+          _value,
+      $Res Function(
+              _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiFruitInlineInlineDiscOneOf1Value = null,
+  }) {
+    return _then(
+        _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl(
+      openApiFruitInlineInlineDiscOneOf1Value: null ==
+              openApiFruitInlineInlineDiscOneOf1Value
+          ? _value.openApiFruitInlineInlineDiscOneOf1Value
+          : openApiFruitInlineInlineDiscOneOf1Value // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitInlineInlineDiscOneOf1,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiFruitInlineInlineDiscOneOf1CopyWith<$Res>
+      get openApiFruitInlineInlineDiscOneOf1Value {
+    return $OpenApiFruitInlineInlineDiscOneOf1CopyWith<$Res>(
+        _value.openApiFruitInlineInlineDiscOneOf1Value, (value) {
+      return _then(
+          _value.copyWith(openApiFruitInlineInlineDiscOneOf1Value: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl
+    extends OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1 {
+  const _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl(
+      {required this.openApiFruitInlineInlineDiscOneOf1Value})
+      : super._();
+
+  @override
+  final OpenApiFruitInlineInlineDiscOneOf1
+      openApiFruitInlineInlineDiscOneOf1Value;
+
+  @override
+  String toString() {
+    return 'OpenApiFruitInlineInlineDisc.asOpenApiFruitInlineInlineDiscOneOf1(openApiFruitInlineInlineDiscOneOf1Value: $openApiFruitInlineInlineDiscOneOf1Value)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other
+                is _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl &&
+            (identical(other.openApiFruitInlineInlineDiscOneOf1Value,
+                    openApiFruitInlineInlineDiscOneOf1Value) ||
+                other.openApiFruitInlineInlineDiscOneOf1Value ==
+                    openApiFruitInlineInlineDiscOneOf1Value));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, openApiFruitInlineInlineDiscOneOf1Value);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1ImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl>
+      get copyWith =>
+          __$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1ImplCopyWithImpl<
+                  _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)
+        asOpenApiFruitInlineInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiFruitInlineInlineDiscOneOf1(
+        openApiFruitInlineInlineDiscOneOf1Value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiFruitInlineInlineDiscOneOf1
+        ?.call(openApiFruitInlineInlineDiscOneOf1Value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitInlineInlineDiscOneOf1 != null) {
+      return asOpenApiFruitInlineInlineDiscOneOf1(
+          openApiFruitInlineInlineDiscOneOf1Value);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)
+        asOpenApiFruitInlineInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitInlineInlineDiscUnknown value)
+        unknown,
+  }) {
+    return asOpenApiFruitInlineInlineDiscOneOf1(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitInlineInlineDiscUnknown value)? unknown,
+  }) {
+    return asOpenApiFruitInlineInlineDiscOneOf1?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    TResult Function(OpenApiFruitInlineInlineDiscUnknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitInlineInlineDiscOneOf1 != null) {
+      return asOpenApiFruitInlineInlineDiscOneOf1(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+    extends OpenApiFruitInlineInlineDisc {
+  const factory OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1(
+          {required final OpenApiFruitInlineInlineDiscOneOf1
+              openApiFruitInlineInlineDiscOneOf1Value}) =
+      _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl;
+  const OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1._()
+      : super._();
+
+  OpenApiFruitInlineInlineDiscOneOf1
+      get openApiFruitInlineInlineDiscOneOf1Value;
+  @JsonKey(ignore: true)
+  _$$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1ImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1Impl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiFruitInlineInlineDiscUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiFruitInlineInlineDiscUnknownImplCopyWith(
+          _$OpenApiFruitInlineInlineDiscUnknownImpl value,
+          $Res Function(_$OpenApiFruitInlineInlineDiscUnknownImpl) then) =
+      __$$OpenApiFruitInlineInlineDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<FruitInlineInlineDiscOneOf> deserializedModels});
+      List<OpenApiFruitInlineInlineDisc> deserializedModels});
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscOneOfUnknownCopyWithImpl<$Res>
-    extends _$FruitInlineInlineDiscOneOfCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscOneOfUnknown>
-    implements _$$FruitInlineInlineDiscOneOfUnknownCopyWith<$Res> {
-  __$$FruitInlineInlineDiscOneOfUnknownCopyWithImpl(
-      _$FruitInlineInlineDiscOneOfUnknown _value,
-      $Res Function(_$FruitInlineInlineDiscOneOfUnknown) _then)
+class __$$OpenApiFruitInlineInlineDiscUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitInlineInlineDiscCopyWithImpl<$Res,
+        _$OpenApiFruitInlineInlineDiscUnknownImpl>
+    implements _$$OpenApiFruitInlineInlineDiscUnknownImplCopyWith<$Res> {
+  __$$OpenApiFruitInlineInlineDiscUnknownImplCopyWithImpl(
+      _$OpenApiFruitInlineInlineDiscUnknownImpl _value,
+      $Res Function(_$OpenApiFruitInlineInlineDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -12856,7 +13268,7 @@ class __$$FruitInlineInlineDiscOneOfUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitInlineInlineDiscOneOfUnknown(
+    return _then(_$OpenApiFruitInlineInlineDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -12876,24 +13288,25 @@ class __$$FruitInlineInlineDiscOneOfUnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitInlineInlineDiscOneOf>,
+              as List<OpenApiFruitInlineInlineDisc>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscOneOfUnknown
-    extends FruitInlineInlineDiscOneOfUnknown {
-  const _$FruitInlineInlineDiscOneOfUnknown(
+class _$OpenApiFruitInlineInlineDiscUnknownImpl
+    extends OpenApiFruitInlineInlineDiscUnknown {
+  const _$OpenApiFruitInlineInlineDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
       final List<Type> possibleTypes = const <Type>[
-        FruitInlineInlineDiscOneOfOneOf
+        OpenApiFruitInlineInlineDiscOneOf,
+        OpenApiFruitInlineInlineDiscOneOf1
       ],
-      final List<FruitInlineInlineDiscOneOf> deserializedModels =
-          const <FruitInlineInlineDiscOneOf>[]})
+      final List<OpenApiFruitInlineInlineDisc> deserializedModels =
+          const <OpenApiFruitInlineInlineDisc>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -12922,10 +13335,10 @@ class _$FruitInlineInlineDiscOneOfUnknown
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<FruitInlineInlineDiscOneOf> _deserializedModels;
+  final List<OpenApiFruitInlineInlineDisc> _deserializedModels;
   @override
   @JsonKey()
-  List<FruitInlineInlineDiscOneOf> get deserializedModels {
+  List<OpenApiFruitInlineInlineDisc> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -12934,14 +13347,14 @@ class _$FruitInlineInlineDiscOneOfUnknown
 
   @override
   String toString() {
-    return 'FruitInlineInlineDiscOneOf.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiFruitInlineInlineDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscOneOfUnknown &&
+            other is _$OpenApiFruitInlineInlineDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -12964,24 +13377,28 @@ class _$FruitInlineInlineDiscOneOfUnknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscOneOfUnknownCopyWith<
-          _$FruitInlineInlineDiscOneOfUnknown>
-      get copyWith => __$$FruitInlineInlineDiscOneOfUnknownCopyWithImpl<
-          _$FruitInlineInlineDiscOneOfUnknown>(this, _$identity);
+  _$$OpenApiFruitInlineInlineDiscUnknownImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscUnknownImpl>
+      get copyWith => __$$OpenApiFruitInlineInlineDiscUnknownImplCopyWithImpl<
+          _$OpenApiFruitInlineInlineDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)
+        asOpenApiFruitInlineInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)
+        asOpenApiFruitInlineInlineDiscOneOf1,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf> deserializedModels)
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -12991,15 +13408,19 @@ class _$FruitInlineInlineDiscOneOfUnknown
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf> deserializedModels)?
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -13010,15 +13431,19 @@ class _$FruitInlineInlineDiscOneOfUnknown
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOf
+                openApiFruitInlineInlineDiscOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1
+                openApiFruitInlineInlineDiscOneOf1Value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf> deserializedModels)?
+            List<OpenApiFruitInlineInlineDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -13033,9 +13458,15 @@ class _$FruitInlineInlineDiscOneOfUnknown
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf value)
-        asFruitInlineInlineDiscOneOfOneOf,
-    required TResult Function(FruitInlineInlineDiscOneOfUnknown value) unknown,
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)
+        asOpenApiFruitInlineInlineDiscOneOf,
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    required TResult Function(OpenApiFruitInlineInlineDiscUnknown value)
+        unknown,
   }) {
     return unknown(this);
   }
@@ -13044,9 +13475,14 @@ class _$FruitInlineInlineDiscOneOfUnknown
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult? Function(FruitInlineInlineDiscOneOfUnknown value)? unknown,
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    TResult? Function(OpenApiFruitInlineInlineDiscUnknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -13055,9 +13491,14 @@ class _$FruitInlineInlineDiscOneOfUnknown
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOfAsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult Function(FruitInlineInlineDiscOneOfUnknown value)? unknown,
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf,
+    TResult Function(
+            OpenApiFruitInlineInlineDiscAsOpenApiFruitInlineInlineDiscOneOf1
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOf1,
+    TResult Function(OpenApiFruitInlineInlineDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -13067,72 +13508,72 @@ class _$FruitInlineInlineDiscOneOfUnknown
   }
 }
 
-abstract class FruitInlineInlineDiscOneOfUnknown
-    extends FruitInlineInlineDiscOneOf {
-  const factory FruitInlineInlineDiscOneOfUnknown(
+abstract class OpenApiFruitInlineInlineDiscUnknown
+    extends OpenApiFruitInlineInlineDisc {
+  const factory OpenApiFruitInlineInlineDiscUnknown(
           {final String message,
           required final Map<String, dynamic> json,
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
-          final List<FruitInlineInlineDiscOneOf> deserializedModels}) =
-      _$FruitInlineInlineDiscOneOfUnknown;
-  const FruitInlineInlineDiscOneOfUnknown._() : super._();
+          final List<OpenApiFruitInlineInlineDisc> deserializedModels}) =
+      _$OpenApiFruitInlineInlineDiscUnknownImpl;
+  const OpenApiFruitInlineInlineDiscUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<FruitInlineInlineDiscOneOf> get deserializedModels;
+  List<OpenApiFruitInlineInlineDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscOneOfUnknownCopyWith<
-          _$FruitInlineInlineDiscOneOfUnknown>
+  _$$OpenApiFruitInlineInlineDiscUnknownImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$FruitInlineInlineDiscOneOf1 {
+mixin _$OpenApiFruitInlineInlineDiscOneOf {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf1> deserializedModels)
+            List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf1> deserializedModels)?
+            List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf1> deserializedModels)?
+            List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
@@ -13140,44 +13581,48 @@ mixin _$FruitInlineInlineDiscOneOf1 {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf value)
-        asFruitInlineInlineDiscOneOfOneOf,
-    required TResult Function(FruitInlineInlineDiscOneOf1Unknown value) unknown,
+            OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    required TResult Function(OpenApiFruitInlineInlineDiscOneOfUnknown value)
+        unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult? Function(FruitInlineInlineDiscOneOf1Unknown value)? unknown,
+            OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult? Function(OpenApiFruitInlineInlineDiscOneOfUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult Function(FruitInlineInlineDiscOneOf1Unknown value)? unknown,
+            OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult Function(OpenApiFruitInlineInlineDiscOneOfUnknown value)? unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FruitInlineInlineDiscOneOf1CopyWith<$Res> {
-  factory $FruitInlineInlineDiscOneOf1CopyWith(
-          FruitInlineInlineDiscOneOf1 value,
-          $Res Function(FruitInlineInlineDiscOneOf1) then) =
-      _$FruitInlineInlineDiscOneOf1CopyWithImpl<$Res,
-          FruitInlineInlineDiscOneOf1>;
+abstract class $OpenApiFruitInlineInlineDiscOneOfCopyWith<$Res> {
+  factory $OpenApiFruitInlineInlineDiscOneOfCopyWith(
+          OpenApiFruitInlineInlineDiscOneOf value,
+          $Res Function(OpenApiFruitInlineInlineDiscOneOf) then) =
+      _$OpenApiFruitInlineInlineDiscOneOfCopyWithImpl<$Res,
+          OpenApiFruitInlineInlineDiscOneOf>;
 }
 
 /// @nodoc
-class _$FruitInlineInlineDiscOneOf1CopyWithImpl<$Res,
-        $Val extends FruitInlineInlineDiscOneOf1>
-    implements $FruitInlineInlineDiscOneOf1CopyWith<$Res> {
-  _$FruitInlineInlineDiscOneOf1CopyWithImpl(this._value, this._then);
+class _$OpenApiFruitInlineInlineDiscOneOfCopyWithImpl<$Res,
+        $Val extends OpenApiFruitInlineInlineDiscOneOf>
+    implements $OpenApiFruitInlineInlineDiscOneOfCopyWith<$Res> {
+  _$OpenApiFruitInlineInlineDiscOneOfCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -13186,163 +13631,168 @@ class _$FruitInlineInlineDiscOneOf1CopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOfCopyWith<
+abstract class _$$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<
     $Res> {
-  factory _$$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOfCopyWith(
-          _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf value,
+  factory _$$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith(
+          _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl
+              value,
           $Res Function(
-                  _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf)
+                  _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl)
               then) =
-      __$$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOfCopyWithImpl<
+      __$$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl<
           $Res>;
   @useResult
   $Res call(
-      {FruitInlineInlineDiscOneOfOneOf fruitInlineInlineDiscOneOfOneOfValue});
+      {OpenApiFruitInlineInlineDiscOneOfOneOf
+          openApiFruitInlineInlineDiscOneOfOneOfValue});
 
-  $FruitInlineInlineDiscOneOfOneOfCopyWith<$Res>
-      get fruitInlineInlineDiscOneOfOneOfValue;
+  $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith<$Res>
+      get openApiFruitInlineInlineDiscOneOfOneOfValue;
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOfCopyWithImpl<
+class __$$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl<
         $Res>
-    extends _$FruitInlineInlineDiscOneOf1CopyWithImpl<$Res,
-        _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf>
+    extends _$OpenApiFruitInlineInlineDiscOneOfCopyWithImpl<$Res,
+        _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl>
     implements
-        _$$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOfCopyWith<
+        _$$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<
             $Res> {
-  __$$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOfCopyWithImpl(
-      _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf _value,
+  __$$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl(
+      _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl
+          _value,
       $Res Function(
-              _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf)
+              _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl)
           _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? fruitInlineInlineDiscOneOfOneOfValue = null,
+    Object? openApiFruitInlineInlineDiscOneOfOneOfValue = null,
   }) {
-    return _then(_$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf(
-      fruitInlineInlineDiscOneOfOneOfValue: null ==
-              fruitInlineInlineDiscOneOfOneOfValue
-          ? _value.fruitInlineInlineDiscOneOfOneOfValue
-          : fruitInlineInlineDiscOneOfOneOfValue // ignore: cast_nullable_to_non_nullable
-              as FruitInlineInlineDiscOneOfOneOf,
+    return _then(
+        _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl(
+      openApiFruitInlineInlineDiscOneOfOneOfValue: null ==
+              openApiFruitInlineInlineDiscOneOfOneOfValue
+          ? _value.openApiFruitInlineInlineDiscOneOfOneOfValue
+          : openApiFruitInlineInlineDiscOneOfOneOfValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitInlineInlineDiscOneOfOneOf,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $FruitInlineInlineDiscOneOfOneOfCopyWith<$Res>
-      get fruitInlineInlineDiscOneOfOneOfValue {
-    return $FruitInlineInlineDiscOneOfOneOfCopyWith<$Res>(
-        _value.fruitInlineInlineDiscOneOfOneOfValue, (value) {
+  $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith<$Res>
+      get openApiFruitInlineInlineDiscOneOfOneOfValue {
+    return $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith<$Res>(
+        _value.openApiFruitInlineInlineDiscOneOfOneOfValue, (value) {
       return _then(
-          _value.copyWith(fruitInlineInlineDiscOneOfOneOfValue: value));
+          _value.copyWith(openApiFruitInlineInlineDiscOneOfOneOfValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf
-    extends FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf {
-  const _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf(
-      {required this.fruitInlineInlineDiscOneOfOneOfValue})
+class _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl
+    extends OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf {
+  const _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl(
+      {required this.openApiFruitInlineInlineDiscOneOfOneOfValue})
       : super._();
 
   @override
-  final FruitInlineInlineDiscOneOfOneOf fruitInlineInlineDiscOneOfOneOfValue;
+  final OpenApiFruitInlineInlineDiscOneOfOneOf
+      openApiFruitInlineInlineDiscOneOfOneOfValue;
 
   @override
   String toString() {
-    return 'FruitInlineInlineDiscOneOf1.asFruitInlineInlineDiscOneOfOneOf(fruitInlineInlineDiscOneOfOneOfValue: $fruitInlineInlineDiscOneOfOneOfValue)';
+    return 'OpenApiFruitInlineInlineDiscOneOf.asOpenApiFruitInlineInlineDiscOneOfOneOf(openApiFruitInlineInlineDiscOneOfOneOfValue: $openApiFruitInlineInlineDiscOneOfOneOfValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf &&
-            (identical(other.fruitInlineInlineDiscOneOfOneOfValue,
-                    fruitInlineInlineDiscOneOfOneOfValue) ||
-                other.fruitInlineInlineDiscOneOfOneOfValue ==
-                    fruitInlineInlineDiscOneOfOneOfValue));
+                is _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl &&
+            (identical(other.openApiFruitInlineInlineDiscOneOfOneOfValue,
+                    openApiFruitInlineInlineDiscOneOfOneOfValue) ||
+                other.openApiFruitInlineInlineDiscOneOfOneOfValue ==
+                    openApiFruitInlineInlineDiscOneOfOneOfValue));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, fruitInlineInlineDiscOneOfOneOfValue);
+      Object.hash(runtimeType, openApiFruitInlineInlineDiscOneOfOneOfValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOfCopyWith<
-          _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf>
+  _$$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl>
       get copyWith =>
-          __$$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOfCopyWithImpl<
-                  _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf>(
+          __$$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl<
+                  _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl>(
               this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf1> deserializedModels)
+            List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels)
         unknown,
   }) {
-    return asFruitInlineInlineDiscOneOfOneOf(
-        fruitInlineInlineDiscOneOfOneOfValue);
+    return asOpenApiFruitInlineInlineDiscOneOfOneOf(
+        openApiFruitInlineInlineDiscOneOfOneOfValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf1> deserializedModels)?
+            List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels)?
         unknown,
   }) {
-    return asFruitInlineInlineDiscOneOfOneOf
-        ?.call(fruitInlineInlineDiscOneOfOneOfValue);
+    return asOpenApiFruitInlineInlineDiscOneOfOneOf
+        ?.call(openApiFruitInlineInlineDiscOneOfOneOfValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf1> deserializedModels)?
+            List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asFruitInlineInlineDiscOneOfOneOf != null) {
-      return asFruitInlineInlineDiscOneOfOneOf(
-          fruitInlineInlineDiscOneOfOneOfValue);
+    if (asOpenApiFruitInlineInlineDiscOneOfOneOf != null) {
+      return asOpenApiFruitInlineInlineDiscOneOfOneOf(
+          openApiFruitInlineInlineDiscOneOfOneOfValue);
     }
     return orElse();
   }
@@ -13351,79 +13801,84 @@ class _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf value)
-        asFruitInlineInlineDiscOneOfOneOf,
-    required TResult Function(FruitInlineInlineDiscOneOf1Unknown value) unknown,
+            OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    required TResult Function(OpenApiFruitInlineInlineDiscOneOfUnknown value)
+        unknown,
   }) {
-    return asFruitInlineInlineDiscOneOfOneOf(this);
+    return asOpenApiFruitInlineInlineDiscOneOfOneOf(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult? Function(FruitInlineInlineDiscOneOf1Unknown value)? unknown,
+            OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult? Function(OpenApiFruitInlineInlineDiscOneOfUnknown value)? unknown,
   }) {
-    return asFruitInlineInlineDiscOneOfOneOf?.call(this);
+    return asOpenApiFruitInlineInlineDiscOneOfOneOf?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult Function(FruitInlineInlineDiscOneOf1Unknown value)? unknown,
+            OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult Function(OpenApiFruitInlineInlineDiscOneOfUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (asFruitInlineInlineDiscOneOfOneOf != null) {
-      return asFruitInlineInlineDiscOneOfOneOf(this);
+    if (asOpenApiFruitInlineInlineDiscOneOfOneOf != null) {
+      return asOpenApiFruitInlineInlineDiscOneOfOneOf(this);
     }
     return orElse();
   }
 }
 
-abstract class FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf
-    extends FruitInlineInlineDiscOneOf1 {
-  const factory FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf(
-          {required final FruitInlineInlineDiscOneOfOneOf
-              fruitInlineInlineDiscOneOfOneOfValue}) =
-      _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf;
-  const FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf._()
+abstract class OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf
+    extends OpenApiFruitInlineInlineDiscOneOf {
+  const factory OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf(
+          {required final OpenApiFruitInlineInlineDiscOneOfOneOf
+              openApiFruitInlineInlineDiscOneOfOneOfValue}) =
+      _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl;
+  const OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf._()
       : super._();
 
-  FruitInlineInlineDiscOneOfOneOf get fruitInlineInlineDiscOneOfOneOfValue;
+  OpenApiFruitInlineInlineDiscOneOfOneOf
+      get openApiFruitInlineInlineDiscOneOfOneOfValue;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOfCopyWith<
-          _$FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf>
+  _$$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOfImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscOneOf1UnknownCopyWith<$Res> {
-  factory _$$FruitInlineInlineDiscOneOf1UnknownCopyWith(
-          _$FruitInlineInlineDiscOneOf1Unknown value,
-          $Res Function(_$FruitInlineInlineDiscOneOf1Unknown) then) =
-      __$$FruitInlineInlineDiscOneOf1UnknownCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitInlineInlineDiscOneOfUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiFruitInlineInlineDiscOneOfUnknownImplCopyWith(
+          _$OpenApiFruitInlineInlineDiscOneOfUnknownImpl value,
+          $Res Function(_$OpenApiFruitInlineInlineDiscOneOfUnknownImpl) then) =
+      __$$OpenApiFruitInlineInlineDiscOneOfUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<FruitInlineInlineDiscOneOf1> deserializedModels});
+      List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels});
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscOneOf1UnknownCopyWithImpl<$Res>
-    extends _$FruitInlineInlineDiscOneOf1CopyWithImpl<$Res,
-        _$FruitInlineInlineDiscOneOf1Unknown>
-    implements _$$FruitInlineInlineDiscOneOf1UnknownCopyWith<$Res> {
-  __$$FruitInlineInlineDiscOneOf1UnknownCopyWithImpl(
-      _$FruitInlineInlineDiscOneOf1Unknown _value,
-      $Res Function(_$FruitInlineInlineDiscOneOf1Unknown) _then)
+class __$$OpenApiFruitInlineInlineDiscOneOfUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitInlineInlineDiscOneOfCopyWithImpl<$Res,
+        _$OpenApiFruitInlineInlineDiscOneOfUnknownImpl>
+    implements _$$OpenApiFruitInlineInlineDiscOneOfUnknownImplCopyWith<$Res> {
+  __$$OpenApiFruitInlineInlineDiscOneOfUnknownImplCopyWithImpl(
+      _$OpenApiFruitInlineInlineDiscOneOfUnknownImpl _value,
+      $Res Function(_$OpenApiFruitInlineInlineDiscOneOfUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -13435,7 +13890,7 @@ class __$$FruitInlineInlineDiscOneOf1UnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitInlineInlineDiscOneOf1Unknown(
+    return _then(_$OpenApiFruitInlineInlineDiscOneOfUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -13455,24 +13910,24 @@ class __$$FruitInlineInlineDiscOneOf1UnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitInlineInlineDiscOneOf1>,
+              as List<OpenApiFruitInlineInlineDiscOneOf>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$FruitInlineInlineDiscOneOf1Unknown
-    extends FruitInlineInlineDiscOneOf1Unknown {
-  const _$FruitInlineInlineDiscOneOf1Unknown(
+class _$OpenApiFruitInlineInlineDiscOneOfUnknownImpl
+    extends OpenApiFruitInlineInlineDiscOneOfUnknown {
+  const _$OpenApiFruitInlineInlineDiscOneOfUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
       final List<Type> possibleTypes = const <Type>[
-        FruitInlineInlineDiscOneOfOneOf
+        OpenApiFruitInlineInlineDiscOneOfOneOf
       ],
-      final List<FruitInlineInlineDiscOneOf1> deserializedModels =
-          const <FruitInlineInlineDiscOneOf1>[]})
+      final List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels =
+          const <OpenApiFruitInlineInlineDiscOneOf>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -13501,10 +13956,10 @@ class _$FruitInlineInlineDiscOneOf1Unknown
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<FruitInlineInlineDiscOneOf1> _deserializedModels;
+  final List<OpenApiFruitInlineInlineDiscOneOf> _deserializedModels;
   @override
   @JsonKey()
-  List<FruitInlineInlineDiscOneOf1> get deserializedModels {
+  List<OpenApiFruitInlineInlineDiscOneOf> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -13513,14 +13968,14 @@ class _$FruitInlineInlineDiscOneOf1Unknown
 
   @override
   String toString() {
-    return 'FruitInlineInlineDiscOneOf1.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiFruitInlineInlineDiscOneOf.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscOneOf1Unknown &&
+            other is _$OpenApiFruitInlineInlineDiscOneOfUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -13543,24 +13998,25 @@ class _$FruitInlineInlineDiscOneOf1Unknown
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscOneOf1UnknownCopyWith<
-          _$FruitInlineInlineDiscOneOf1Unknown>
-      get copyWith => __$$FruitInlineInlineDiscOneOf1UnknownCopyWithImpl<
-          _$FruitInlineInlineDiscOneOf1Unknown>(this, _$identity);
+  _$$OpenApiFruitInlineInlineDiscOneOfUnknownImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscOneOfUnknownImpl>
+      get copyWith =>
+          __$$OpenApiFruitInlineInlineDiscOneOfUnknownImplCopyWithImpl<
+              _$OpenApiFruitInlineInlineDiscOneOfUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf1> deserializedModels)
+            List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -13570,15 +14026,15 @@ class _$FruitInlineInlineDiscOneOf1Unknown
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf1> deserializedModels)?
+            List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -13589,15 +14045,15 @@ class _$FruitInlineInlineDiscOneOf1Unknown
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOfOneOf
-                fruitInlineInlineDiscOneOfOneOfValue)?
-        asFruitInlineInlineDiscOneOfOneOf,
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitInlineInlineDiscOneOf1> deserializedModels)?
+            List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -13612,9 +14068,11 @@ class _$FruitInlineInlineDiscOneOf1Unknown
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(
-            FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf value)
-        asFruitInlineInlineDiscOneOfOneOf,
-    required TResult Function(FruitInlineInlineDiscOneOf1Unknown value) unknown,
+            OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    required TResult Function(OpenApiFruitInlineInlineDiscOneOfUnknown value)
+        unknown,
   }) {
     return unknown(this);
   }
@@ -13623,9 +14081,10 @@ class _$FruitInlineInlineDiscOneOf1Unknown
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(
-            FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult? Function(FruitInlineInlineDiscOneOf1Unknown value)? unknown,
+            OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult? Function(OpenApiFruitInlineInlineDiscOneOfUnknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -13634,9 +14093,10 @@ class _$FruitInlineInlineDiscOneOf1Unknown
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(
-            FruitInlineInlineDiscOneOf1AsFruitInlineInlineDiscOneOfOneOf value)?
-        asFruitInlineInlineDiscOneOfOneOf,
-    TResult Function(FruitInlineInlineDiscOneOf1Unknown value)? unknown,
+            OpenApiFruitInlineInlineDiscOneOfAsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult Function(OpenApiFruitInlineInlineDiscOneOfUnknown value)? unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -13646,60 +14106,661 @@ class _$FruitInlineInlineDiscOneOf1Unknown
   }
 }
 
-abstract class FruitInlineInlineDiscOneOf1Unknown
-    extends FruitInlineInlineDiscOneOf1 {
-  const factory FruitInlineInlineDiscOneOf1Unknown(
+abstract class OpenApiFruitInlineInlineDiscOneOfUnknown
+    extends OpenApiFruitInlineInlineDiscOneOf {
+  const factory OpenApiFruitInlineInlineDiscOneOfUnknown(
           {final String message,
           required final Map<String, dynamic> json,
           final DeserializationErrorType errorType,
           final List<Type> possibleTypes,
-          final List<FruitInlineInlineDiscOneOf1> deserializedModels}) =
-      _$FruitInlineInlineDiscOneOf1Unknown;
-  const FruitInlineInlineDiscOneOf1Unknown._() : super._();
+          final List<OpenApiFruitInlineInlineDiscOneOf> deserializedModels}) =
+      _$OpenApiFruitInlineInlineDiscOneOfUnknownImpl;
+  const OpenApiFruitInlineInlineDiscOneOfUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<FruitInlineInlineDiscOneOf1> get deserializedModels;
+  List<OpenApiFruitInlineInlineDiscOneOf> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscOneOf1UnknownCopyWith<
-          _$FruitInlineInlineDiscOneOf1Unknown>
+  _$$OpenApiFruitInlineInlineDiscOneOfUnknownImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscOneOfUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
-FruitInlineInlineDiscOneOfOneOf _$FruitInlineInlineDiscOneOfOneOfFromJson(
-    Map<String, dynamic> json) {
-  return _FruitInlineInlineDiscOneOfOneOf.fromJson(json);
+/// @nodoc
+mixin _$OpenApiFruitInlineInlineDiscOneOf1 {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels)?
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    required TResult Function(OpenApiFruitInlineInlineDiscOneOf1Unknown value)
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult? Function(OpenApiFruitInlineInlineDiscOneOf1Unknown value)? unknown,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult Function(OpenApiFruitInlineInlineDiscOneOf1Unknown value)? unknown,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$FruitInlineInlineDiscOneOfOneOf {
+abstract class $OpenApiFruitInlineInlineDiscOneOf1CopyWith<$Res> {
+  factory $OpenApiFruitInlineInlineDiscOneOf1CopyWith(
+          OpenApiFruitInlineInlineDiscOneOf1 value,
+          $Res Function(OpenApiFruitInlineInlineDiscOneOf1) then) =
+      _$OpenApiFruitInlineInlineDiscOneOf1CopyWithImpl<$Res,
+          OpenApiFruitInlineInlineDiscOneOf1>;
+}
+
+/// @nodoc
+class _$OpenApiFruitInlineInlineDiscOneOf1CopyWithImpl<$Res,
+        $Val extends OpenApiFruitInlineInlineDiscOneOf1>
+    implements $OpenApiFruitInlineInlineDiscOneOf1CopyWith<$Res> {
+  _$OpenApiFruitInlineInlineDiscOneOf1CopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<
+    $Res> {
+  factory _$$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith(
+          _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl
+              value,
+          $Res Function(
+                  _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl)
+              then) =
+      __$$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl<
+          $Res>;
+  @useResult
+  $Res call(
+      {OpenApiFruitInlineInlineDiscOneOfOneOf
+          openApiFruitInlineInlineDiscOneOfOneOfValue});
+
+  $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith<$Res>
+      get openApiFruitInlineInlineDiscOneOfOneOfValue;
+}
+
+/// @nodoc
+class __$$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl<
+        $Res>
+    extends _$OpenApiFruitInlineInlineDiscOneOf1CopyWithImpl<$Res,
+        _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl>
+    implements
+        _$$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<
+            $Res> {
+  __$$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl(
+      _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl
+          _value,
+      $Res Function(
+              _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl)
+          _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? openApiFruitInlineInlineDiscOneOfOneOfValue = null,
+  }) {
+    return _then(
+        _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl(
+      openApiFruitInlineInlineDiscOneOfOneOfValue: null ==
+              openApiFruitInlineInlineDiscOneOfOneOfValue
+          ? _value.openApiFruitInlineInlineDiscOneOfOneOfValue
+          : openApiFruitInlineInlineDiscOneOfOneOfValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiFruitInlineInlineDiscOneOfOneOf,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith<$Res>
+      get openApiFruitInlineInlineDiscOneOfOneOfValue {
+    return $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith<$Res>(
+        _value.openApiFruitInlineInlineDiscOneOfOneOfValue, (value) {
+      return _then(
+          _value.copyWith(openApiFruitInlineInlineDiscOneOfOneOfValue: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl
+    extends OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf {
+  const _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl(
+      {required this.openApiFruitInlineInlineDiscOneOfOneOfValue})
+      : super._();
+
+  @override
+  final OpenApiFruitInlineInlineDiscOneOfOneOf
+      openApiFruitInlineInlineDiscOneOfOneOfValue;
+
+  @override
+  String toString() {
+    return 'OpenApiFruitInlineInlineDiscOneOf1.asOpenApiFruitInlineInlineDiscOneOfOneOf(openApiFruitInlineInlineDiscOneOfOneOfValue: $openApiFruitInlineInlineDiscOneOfOneOfValue)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other
+                is _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl &&
+            (identical(other.openApiFruitInlineInlineDiscOneOfOneOfValue,
+                    openApiFruitInlineInlineDiscOneOfOneOfValue) ||
+                other.openApiFruitInlineInlineDiscOneOfOneOfValue ==
+                    openApiFruitInlineInlineDiscOneOfOneOfValue));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, openApiFruitInlineInlineDiscOneOfOneOfValue);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl>
+      get copyWith =>
+          __$$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl<
+                  _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels)
+        unknown,
+  }) {
+    return asOpenApiFruitInlineInlineDiscOneOfOneOf(
+        openApiFruitInlineInlineDiscOneOfOneOfValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels)?
+        unknown,
+  }) {
+    return asOpenApiFruitInlineInlineDiscOneOfOneOf
+        ?.call(openApiFruitInlineInlineDiscOneOfOneOfValue);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitInlineInlineDiscOneOfOneOf != null) {
+      return asOpenApiFruitInlineInlineDiscOneOfOneOf(
+          openApiFruitInlineInlineDiscOneOfOneOfValue);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    required TResult Function(OpenApiFruitInlineInlineDiscOneOf1Unknown value)
+        unknown,
+  }) {
+    return asOpenApiFruitInlineInlineDiscOneOfOneOf(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult? Function(OpenApiFruitInlineInlineDiscOneOf1Unknown value)? unknown,
+  }) {
+    return asOpenApiFruitInlineInlineDiscOneOfOneOf?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult Function(OpenApiFruitInlineInlineDiscOneOf1Unknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (asOpenApiFruitInlineInlineDiscOneOfOneOf != null) {
+      return asOpenApiFruitInlineInlineDiscOneOfOneOf(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf
+    extends OpenApiFruitInlineInlineDiscOneOf1 {
+  const factory OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf(
+          {required final OpenApiFruitInlineInlineDiscOneOfOneOf
+              openApiFruitInlineInlineDiscOneOfOneOfValue}) =
+      _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl;
+  const OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf._()
+      : super._();
+
+  OpenApiFruitInlineInlineDiscOneOfOneOf
+      get openApiFruitInlineInlineDiscOneOfOneOfValue;
+  @JsonKey(ignore: true)
+  _$$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOfImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$OpenApiFruitInlineInlineDiscOneOf1UnknownImplCopyWith<$Res> {
+  factory _$$OpenApiFruitInlineInlineDiscOneOf1UnknownImplCopyWith(
+          _$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl value,
+          $Res Function(_$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl) then) =
+      __$$OpenApiFruitInlineInlineDiscOneOf1UnknownImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call(
+      {String message,
+      Map<String, dynamic> json,
+      DeserializationErrorType errorType,
+      List<Type> possibleTypes,
+      List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels});
+}
+
+/// @nodoc
+class __$$OpenApiFruitInlineInlineDiscOneOf1UnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitInlineInlineDiscOneOf1CopyWithImpl<$Res,
+        _$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl>
+    implements _$$OpenApiFruitInlineInlineDiscOneOf1UnknownImplCopyWith<$Res> {
+  __$$OpenApiFruitInlineInlineDiscOneOf1UnknownImplCopyWithImpl(
+      _$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl _value,
+      $Res Function(_$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+    Object? json = null,
+    Object? errorType = null,
+    Object? possibleTypes = null,
+    Object? deserializedModels = null,
+  }) {
+    return _then(_$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl(
+      message: null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      json: null == json
+          ? _value._json
+          : json // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      errorType: null == errorType
+          ? _value.errorType
+          : errorType // ignore: cast_nullable_to_non_nullable
+              as DeserializationErrorType,
+      possibleTypes: null == possibleTypes
+          ? _value._possibleTypes
+          : possibleTypes // ignore: cast_nullable_to_non_nullable
+              as List<Type>,
+      deserializedModels: null == deserializedModels
+          ? _value._deserializedModels
+          : deserializedModels // ignore: cast_nullable_to_non_nullable
+              as List<OpenApiFruitInlineInlineDiscOneOf1>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl
+    extends OpenApiFruitInlineInlineDiscOneOf1Unknown {
+  const _$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl(
+      {this.message = 'Json does not satisfy any available types',
+      required final Map<String, dynamic> json,
+      this.errorType = DeserializationErrorType.UnKnownType,
+      final List<Type> possibleTypes = const <Type>[
+        OpenApiFruitInlineInlineDiscOneOfOneOf
+      ],
+      final List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels =
+          const <OpenApiFruitInlineInlineDiscOneOf1>[]})
+      : _json = json,
+        _possibleTypes = possibleTypes,
+        _deserializedModels = deserializedModels,
+        super._();
+
+  @override
+  @JsonKey()
+  final String message;
+  final Map<String, dynamic> _json;
+  @override
+  Map<String, dynamic> get json {
+    if (_json is EqualUnmodifiableMapView) return _json;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_json);
+  }
+
+  @override
+  @JsonKey()
+  final DeserializationErrorType errorType;
+  final List<Type> _possibleTypes;
+  @override
+  @JsonKey()
+  List<Type> get possibleTypes {
+    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_possibleTypes);
+  }
+
+  final List<OpenApiFruitInlineInlineDiscOneOf1> _deserializedModels;
+  @override
+  @JsonKey()
+  List<OpenApiFruitInlineInlineDiscOneOf1> get deserializedModels {
+    if (_deserializedModels is EqualUnmodifiableListView)
+      return _deserializedModels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_deserializedModels);
+  }
+
+  @override
+  String toString() {
+    return 'OpenApiFruitInlineInlineDiscOneOf1.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality().equals(other._json, _json) &&
+            (identical(other.errorType, errorType) ||
+                other.errorType == errorType) &&
+            const DeepCollectionEquality()
+                .equals(other._possibleTypes, _possibleTypes) &&
+            const DeepCollectionEquality()
+                .equals(other._deserializedModels, _deserializedModels));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      message,
+      const DeepCollectionEquality().hash(_json),
+      errorType,
+      const DeepCollectionEquality().hash(_possibleTypes),
+      const DeepCollectionEquality().hash(_deserializedModels));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OpenApiFruitInlineInlineDiscOneOf1UnknownImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl>
+      get copyWith =>
+          __$$OpenApiFruitInlineInlineDiscOneOf1UnknownImplCopyWithImpl<
+                  _$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    required TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels)
+        unknown,
+  }) {
+    return unknown(message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult? Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels)?
+        unknown,
+  }) {
+    return unknown?.call(
+        message, json, errorType, possibleTypes, deserializedModels);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineInlineDiscOneOfOneOf
+                openApiFruitInlineInlineDiscOneOfOneOfValue)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult Function(
+            String message,
+            Map<String, dynamic> json,
+            DeserializationErrorType errorType,
+            List<Type> possibleTypes,
+            List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels)?
+        unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(
+          message, json, errorType, possibleTypes, deserializedModels);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    required TResult Function(OpenApiFruitInlineInlineDiscOneOf1Unknown value)
+        unknown,
+  }) {
+    return unknown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(
+            OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult? Function(OpenApiFruitInlineInlineDiscOneOf1Unknown value)? unknown,
+  }) {
+    return unknown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(
+            OpenApiFruitInlineInlineDiscOneOf1AsOpenApiFruitInlineInlineDiscOneOfOneOf
+                value)?
+        asOpenApiFruitInlineInlineDiscOneOfOneOf,
+    TResult Function(OpenApiFruitInlineInlineDiscOneOf1Unknown value)? unknown,
+    required TResult orElse(),
+  }) {
+    if (unknown != null) {
+      return unknown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class OpenApiFruitInlineInlineDiscOneOf1Unknown
+    extends OpenApiFruitInlineInlineDiscOneOf1 {
+  const factory OpenApiFruitInlineInlineDiscOneOf1Unknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<OpenApiFruitInlineInlineDiscOneOf1> deserializedModels}) =
+      _$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl;
+  const OpenApiFruitInlineInlineDiscOneOf1Unknown._() : super._();
+
+  String get message;
+  Map<String, dynamic> get json;
+  DeserializationErrorType get errorType;
+  List<Type> get possibleTypes;
+  List<OpenApiFruitInlineInlineDiscOneOf1> get deserializedModels;
+  @JsonKey(ignore: true)
+  _$$OpenApiFruitInlineInlineDiscOneOf1UnknownImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscOneOf1UnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+OpenApiFruitInlineInlineDiscOneOfOneOf
+    _$OpenApiFruitInlineInlineDiscOneOfOneOfFromJson(
+        Map<String, dynamic> json) {
+  return _OpenApiFruitInlineInlineDiscOneOfOneOf.fromJson(json);
+}
+
+/// @nodoc
+mixin _$OpenApiFruitInlineInlineDiscOneOfOneOf {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $FruitInlineInlineDiscOneOfOneOfCopyWith<FruitInlineInlineDiscOneOfOneOf>
+  $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith<
+          OpenApiFruitInlineInlineDiscOneOfOneOf>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FruitInlineInlineDiscOneOfOneOfCopyWith<$Res> {
-  factory $FruitInlineInlineDiscOneOfOneOfCopyWith(
-          FruitInlineInlineDiscOneOfOneOf value,
-          $Res Function(FruitInlineInlineDiscOneOfOneOf) then) =
-      _$FruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res,
-          FruitInlineInlineDiscOneOfOneOf>;
+abstract class $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith<$Res> {
+  factory $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith(
+          OpenApiFruitInlineInlineDiscOneOfOneOf value,
+          $Res Function(OpenApiFruitInlineInlineDiscOneOfOneOf) then) =
+      _$OpenApiFruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res,
+          OpenApiFruitInlineInlineDiscOneOfOneOf>;
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class _$FruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res,
-        $Val extends FruitInlineInlineDiscOneOfOneOf>
-    implements $FruitInlineInlineDiscOneOfOneOfCopyWith<$Res> {
-  _$FruitInlineInlineDiscOneOfOneOfCopyWithImpl(this._value, this._then);
+class _$OpenApiFruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res,
+        $Val extends OpenApiFruitInlineInlineDiscOneOfOneOf>
+    implements $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith<$Res> {
+  _$OpenApiFruitInlineInlineDiscOneOfOneOfCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -13721,25 +14782,25 @@ class _$FruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_FruitInlineInlineDiscOneOfOneOfCopyWith<$Res>
-    implements $FruitInlineInlineDiscOneOfOneOfCopyWith<$Res> {
-  factory _$$_FruitInlineInlineDiscOneOfOneOfCopyWith(
-          _$_FruitInlineInlineDiscOneOfOneOf value,
-          $Res Function(_$_FruitInlineInlineDiscOneOfOneOf) then) =
-      __$$_FruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<$Res>
+    implements $OpenApiFruitInlineInlineDiscOneOfOneOfCopyWith<$Res> {
+  factory _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith(
+          _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl value,
+          $Res Function(_$OpenApiFruitInlineInlineDiscOneOfOneOfImpl) then) =
+      __$$OpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class __$$_FruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res>
-    extends _$FruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res,
-        _$_FruitInlineInlineDiscOneOfOneOf>
-    implements _$$_FruitInlineInlineDiscOneOfOneOfCopyWith<$Res> {
-  __$$_FruitInlineInlineDiscOneOfOneOfCopyWithImpl(
-      _$_FruitInlineInlineDiscOneOfOneOf _value,
-      $Res Function(_$_FruitInlineInlineDiscOneOfOneOf) _then)
+class __$$OpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res,
+        _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl>
+    implements _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<$Res> {
+  __$$OpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl(
+      _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl _value,
+      $Res Function(_$OpenApiFruitInlineInlineDiscOneOfOneOfImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -13747,7 +14808,7 @@ class __$$_FruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = null,
   }) {
-    return _then(_$_FruitInlineInlineDiscOneOfOneOf(
+    return _then(_$OpenApiFruitInlineInlineDiscOneOfOneOfImpl(
       fruitType: null == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -13758,15 +14819,15 @@ class __$$_FruitInlineInlineDiscOneOfOneOfCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FruitInlineInlineDiscOneOfOneOf
-    extends _FruitInlineInlineDiscOneOfOneOf {
-  const _$_FruitInlineInlineDiscOneOfOneOf(
+class _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl
+    extends _OpenApiFruitInlineInlineDiscOneOfOneOf {
+  const _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl(
       {@JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_FruitInlineInlineDiscOneOfOneOf.fromJson(
+  factory _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_FruitInlineInlineDiscOneOfOneOfFromJson(json);
+      _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -13774,14 +14835,14 @@ class _$_FruitInlineInlineDiscOneOfOneOf
 
   @override
   String toString() {
-    return 'FruitInlineInlineDiscOneOfOneOf(fruitType: $fruitType)';
+    return 'OpenApiFruitInlineInlineDiscOneOfOneOf(fruitType: $fruitType)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FruitInlineInlineDiscOneOfOneOf &&
+            other is _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -13793,120 +14854,134 @@ class _$_FruitInlineInlineDiscOneOfOneOf
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FruitInlineInlineDiscOneOfOneOfCopyWith<
-          _$_FruitInlineInlineDiscOneOfOneOf>
-      get copyWith => __$$_FruitInlineInlineDiscOneOfOneOfCopyWithImpl<
-          _$_FruitInlineInlineDiscOneOfOneOf>(this, _$identity);
+  _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl>
+      get copyWith =>
+          __$$OpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWithImpl<
+              _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FruitInlineInlineDiscOneOfOneOfToJson(
+    return _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplToJson(
       this,
     );
   }
 }
 
-abstract class _FruitInlineInlineDiscOneOfOneOf
-    extends FruitInlineInlineDiscOneOfOneOf {
-  const factory _FruitInlineInlineDiscOneOfOneOf(
+abstract class _OpenApiFruitInlineInlineDiscOneOfOneOf
+    extends OpenApiFruitInlineInlineDiscOneOfOneOf {
+  const factory _OpenApiFruitInlineInlineDiscOneOfOneOf(
           {@JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_FruitInlineInlineDiscOneOfOneOf;
-  const _FruitInlineInlineDiscOneOfOneOf._() : super._();
+      _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl;
+  const _OpenApiFruitInlineInlineDiscOneOfOneOf._() : super._();
 
-  factory _FruitInlineInlineDiscOneOfOneOf.fromJson(Map<String, dynamic> json) =
-      _$_FruitInlineInlineDiscOneOfOneOf.fromJson;
+  factory _OpenApiFruitInlineInlineDiscOneOfOneOf.fromJson(
+          Map<String, dynamic> json) =
+      _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_FruitInlineInlineDiscOneOfOneOfCopyWith<
-          _$_FruitInlineInlineDiscOneOfOneOf>
+  _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplCopyWith<
+          _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$FruitOneOfDisc {
+mixin _$OpenApiFruitOneOfDisc {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleOneOfDisc appleOneOfDiscValue)
-        asAppleOneOfDisc,
-    required TResult Function(BananaOneOfDisc bananaOneOfDiscValue)
-        asBananaOneOfDisc,
+    required TResult Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)
+        asOpenApiAppleOneOfDisc,
+    required TResult Function(
+            OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)
+        asOpenApiBananaOneOfDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)
+            List<OpenApiFruitOneOfDisc> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleOneOfDisc appleOneOfDiscValue)? asAppleOneOfDisc,
-    TResult? Function(BananaOneOfDisc bananaOneOfDiscValue)? asBananaOneOfDisc,
+    TResult? Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)?
+        asOpenApiAppleOneOfDisc,
+    TResult? Function(OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)?
+        asOpenApiBananaOneOfDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)?
+            List<OpenApiFruitOneOfDisc> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleOneOfDisc appleOneOfDiscValue)? asAppleOneOfDisc,
-    TResult Function(BananaOneOfDisc bananaOneOfDiscValue)? asBananaOneOfDisc,
+    TResult Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)?
+        asOpenApiAppleOneOfDisc,
+    TResult Function(OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)?
+        asOpenApiBananaOneOfDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)?
+            List<OpenApiFruitOneOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitOneOfDiscAsAppleOneOfDisc value)
-        asAppleOneOfDisc,
-    required TResult Function(FruitOneOfDiscAsBananaOneOfDisc value)
-        asBananaOneOfDisc,
-    required TResult Function(FruitOneOfDiscUnknown value) unknown,
+    required TResult Function(
+            OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)
+        asOpenApiAppleOneOfDisc,
+    required TResult Function(
+            OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)
+        asOpenApiBananaOneOfDisc,
+    required TResult Function(OpenApiFruitOneOfDiscUnknown value) unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitOneOfDiscAsAppleOneOfDisc value)? asAppleOneOfDisc,
-    TResult? Function(FruitOneOfDiscAsBananaOneOfDisc value)? asBananaOneOfDisc,
-    TResult? Function(FruitOneOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)?
+        asOpenApiAppleOneOfDisc,
+    TResult? Function(OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)?
+        asOpenApiBananaOneOfDisc,
+    TResult? Function(OpenApiFruitOneOfDiscUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitOneOfDiscAsAppleOneOfDisc value)? asAppleOneOfDisc,
-    TResult Function(FruitOneOfDiscAsBananaOneOfDisc value)? asBananaOneOfDisc,
-    TResult Function(FruitOneOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)?
+        asOpenApiAppleOneOfDisc,
+    TResult Function(OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)?
+        asOpenApiBananaOneOfDisc,
+    TResult Function(OpenApiFruitOneOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FruitOneOfDiscCopyWith<$Res> {
-  factory $FruitOneOfDiscCopyWith(
-          FruitOneOfDisc value, $Res Function(FruitOneOfDisc) then) =
-      _$FruitOneOfDiscCopyWithImpl<$Res, FruitOneOfDisc>;
+abstract class $OpenApiFruitOneOfDiscCopyWith<$Res> {
+  factory $OpenApiFruitOneOfDiscCopyWith(OpenApiFruitOneOfDisc value,
+          $Res Function(OpenApiFruitOneOfDisc) then) =
+      _$OpenApiFruitOneOfDiscCopyWithImpl<$Res, OpenApiFruitOneOfDisc>;
 }
 
 /// @nodoc
-class _$FruitOneOfDiscCopyWithImpl<$Res, $Val extends FruitOneOfDisc>
-    implements $FruitOneOfDiscCopyWith<$Res> {
-  _$FruitOneOfDiscCopyWithImpl(this._value, this._then);
+class _$OpenApiFruitOneOfDiscCopyWithImpl<$Res,
+        $Val extends OpenApiFruitOneOfDisc>
+    implements $OpenApiFruitOneOfDiscCopyWith<$Res> {
+  _$OpenApiFruitOneOfDiscCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -13915,131 +14990,148 @@ class _$FruitOneOfDiscCopyWithImpl<$Res, $Val extends FruitOneOfDisc>
 }
 
 /// @nodoc
-abstract class _$$FruitOneOfDiscAsAppleOneOfDiscCopyWith<$Res> {
-  factory _$$FruitOneOfDiscAsAppleOneOfDiscCopyWith(
-          _$FruitOneOfDiscAsAppleOneOfDisc value,
-          $Res Function(_$FruitOneOfDiscAsAppleOneOfDisc) then) =
-      __$$FruitOneOfDiscAsAppleOneOfDiscCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImplCopyWith<
+    $Res> {
+  factory _$$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImplCopyWith(
+          _$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl value,
+          $Res Function(_$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl)
+              then) =
+      __$$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({AppleOneOfDisc appleOneOfDiscValue});
+  $Res call({OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue});
 
-  $AppleOneOfDiscCopyWith<$Res> get appleOneOfDiscValue;
+  $OpenApiAppleOneOfDiscCopyWith<$Res> get openApiAppleOneOfDiscValue;
 }
 
 /// @nodoc
-class __$$FruitOneOfDiscAsAppleOneOfDiscCopyWithImpl<$Res>
-    extends _$FruitOneOfDiscCopyWithImpl<$Res, _$FruitOneOfDiscAsAppleOneOfDisc>
-    implements _$$FruitOneOfDiscAsAppleOneOfDiscCopyWith<$Res> {
-  __$$FruitOneOfDiscAsAppleOneOfDiscCopyWithImpl(
-      _$FruitOneOfDiscAsAppleOneOfDisc _value,
-      $Res Function(_$FruitOneOfDiscAsAppleOneOfDisc) _then)
+class __$$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitOneOfDiscCopyWithImpl<$Res,
+        _$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl>
+    implements
+        _$$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImplCopyWith<$Res> {
+  __$$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImplCopyWithImpl(
+      _$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl _value,
+      $Res Function(_$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? appleOneOfDiscValue = null,
+    Object? openApiAppleOneOfDiscValue = null,
   }) {
-    return _then(_$FruitOneOfDiscAsAppleOneOfDisc(
-      appleOneOfDiscValue: null == appleOneOfDiscValue
-          ? _value.appleOneOfDiscValue
-          : appleOneOfDiscValue // ignore: cast_nullable_to_non_nullable
-              as AppleOneOfDisc,
+    return _then(_$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl(
+      openApiAppleOneOfDiscValue: null == openApiAppleOneOfDiscValue
+          ? _value.openApiAppleOneOfDiscValue
+          : openApiAppleOneOfDiscValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiAppleOneOfDisc,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $AppleOneOfDiscCopyWith<$Res> get appleOneOfDiscValue {
-    return $AppleOneOfDiscCopyWith<$Res>(_value.appleOneOfDiscValue, (value) {
-      return _then(_value.copyWith(appleOneOfDiscValue: value));
+  $OpenApiAppleOneOfDiscCopyWith<$Res> get openApiAppleOneOfDiscValue {
+    return $OpenApiAppleOneOfDiscCopyWith<$Res>(
+        _value.openApiAppleOneOfDiscValue, (value) {
+      return _then(_value.copyWith(openApiAppleOneOfDiscValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$FruitOneOfDiscAsAppleOneOfDisc extends FruitOneOfDiscAsAppleOneOfDisc {
-  const _$FruitOneOfDiscAsAppleOneOfDisc({required this.appleOneOfDiscValue})
+class _$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl
+    extends OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc {
+  const _$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl(
+      {required this.openApiAppleOneOfDiscValue})
       : super._();
 
   @override
-  final AppleOneOfDisc appleOneOfDiscValue;
+  final OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue;
 
   @override
   String toString() {
-    return 'FruitOneOfDisc.asAppleOneOfDisc(appleOneOfDiscValue: $appleOneOfDiscValue)';
+    return 'OpenApiFruitOneOfDisc.asOpenApiAppleOneOfDisc(openApiAppleOneOfDiscValue: $openApiAppleOneOfDiscValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitOneOfDiscAsAppleOneOfDisc &&
-            (identical(other.appleOneOfDiscValue, appleOneOfDiscValue) ||
-                other.appleOneOfDiscValue == appleOneOfDiscValue));
+            other is _$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl &&
+            (identical(other.openApiAppleOneOfDiscValue,
+                    openApiAppleOneOfDiscValue) ||
+                other.openApiAppleOneOfDiscValue ==
+                    openApiAppleOneOfDiscValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, appleOneOfDiscValue);
+  int get hashCode => Object.hash(runtimeType, openApiAppleOneOfDiscValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitOneOfDiscAsAppleOneOfDiscCopyWith<_$FruitOneOfDiscAsAppleOneOfDisc>
-      get copyWith => __$$FruitOneOfDiscAsAppleOneOfDiscCopyWithImpl<
-          _$FruitOneOfDiscAsAppleOneOfDisc>(this, _$identity);
+  _$$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImplCopyWith<
+          _$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl>
+      get copyWith =>
+          __$$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImplCopyWithImpl<
+                  _$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleOneOfDisc appleOneOfDiscValue)
-        asAppleOneOfDisc,
-    required TResult Function(BananaOneOfDisc bananaOneOfDiscValue)
-        asBananaOneOfDisc,
+    required TResult Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)
+        asOpenApiAppleOneOfDisc,
+    required TResult Function(
+            OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)
+        asOpenApiBananaOneOfDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)
+            List<OpenApiFruitOneOfDisc> deserializedModels)
         unknown,
   }) {
-    return asAppleOneOfDisc(appleOneOfDiscValue);
+    return asOpenApiAppleOneOfDisc(openApiAppleOneOfDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleOneOfDisc appleOneOfDiscValue)? asAppleOneOfDisc,
-    TResult? Function(BananaOneOfDisc bananaOneOfDiscValue)? asBananaOneOfDisc,
+    TResult? Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)?
+        asOpenApiAppleOneOfDisc,
+    TResult? Function(OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)?
+        asOpenApiBananaOneOfDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)?
+            List<OpenApiFruitOneOfDisc> deserializedModels)?
         unknown,
   }) {
-    return asAppleOneOfDisc?.call(appleOneOfDiscValue);
+    return asOpenApiAppleOneOfDisc?.call(openApiAppleOneOfDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleOneOfDisc appleOneOfDiscValue)? asAppleOneOfDisc,
-    TResult Function(BananaOneOfDisc bananaOneOfDiscValue)? asBananaOneOfDisc,
+    TResult Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)?
+        asOpenApiAppleOneOfDisc,
+    TResult Function(OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)?
+        asOpenApiBananaOneOfDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)?
+            List<OpenApiFruitOneOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asAppleOneOfDisc != null) {
-      return asAppleOneOfDisc(appleOneOfDiscValue);
+    if (asOpenApiAppleOneOfDisc != null) {
+      return asOpenApiAppleOneOfDisc(openApiAppleOneOfDiscValue);
     }
     return orElse();
   }
@@ -14047,180 +15139,203 @@ class _$FruitOneOfDiscAsAppleOneOfDisc extends FruitOneOfDiscAsAppleOneOfDisc {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitOneOfDiscAsAppleOneOfDisc value)
-        asAppleOneOfDisc,
-    required TResult Function(FruitOneOfDiscAsBananaOneOfDisc value)
-        asBananaOneOfDisc,
-    required TResult Function(FruitOneOfDiscUnknown value) unknown,
+    required TResult Function(
+            OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)
+        asOpenApiAppleOneOfDisc,
+    required TResult Function(
+            OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)
+        asOpenApiBananaOneOfDisc,
+    required TResult Function(OpenApiFruitOneOfDiscUnknown value) unknown,
   }) {
-    return asAppleOneOfDisc(this);
+    return asOpenApiAppleOneOfDisc(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitOneOfDiscAsAppleOneOfDisc value)? asAppleOneOfDisc,
-    TResult? Function(FruitOneOfDiscAsBananaOneOfDisc value)? asBananaOneOfDisc,
-    TResult? Function(FruitOneOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)?
+        asOpenApiAppleOneOfDisc,
+    TResult? Function(OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)?
+        asOpenApiBananaOneOfDisc,
+    TResult? Function(OpenApiFruitOneOfDiscUnknown value)? unknown,
   }) {
-    return asAppleOneOfDisc?.call(this);
+    return asOpenApiAppleOneOfDisc?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitOneOfDiscAsAppleOneOfDisc value)? asAppleOneOfDisc,
-    TResult Function(FruitOneOfDiscAsBananaOneOfDisc value)? asBananaOneOfDisc,
-    TResult Function(FruitOneOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)?
+        asOpenApiAppleOneOfDisc,
+    TResult Function(OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)?
+        asOpenApiBananaOneOfDisc,
+    TResult Function(OpenApiFruitOneOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (asAppleOneOfDisc != null) {
-      return asAppleOneOfDisc(this);
+    if (asOpenApiAppleOneOfDisc != null) {
+      return asOpenApiAppleOneOfDisc(this);
     }
     return orElse();
   }
 }
 
-abstract class FruitOneOfDiscAsAppleOneOfDisc extends FruitOneOfDisc {
-  const factory FruitOneOfDiscAsAppleOneOfDisc(
-          {required final AppleOneOfDisc appleOneOfDiscValue}) =
-      _$FruitOneOfDiscAsAppleOneOfDisc;
-  const FruitOneOfDiscAsAppleOneOfDisc._() : super._();
+abstract class OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc
+    extends OpenApiFruitOneOfDisc {
+  const factory OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc(
+          {required final OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue}) =
+      _$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl;
+  const OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc._() : super._();
 
-  AppleOneOfDisc get appleOneOfDiscValue;
+  OpenApiAppleOneOfDisc get openApiAppleOneOfDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitOneOfDiscAsAppleOneOfDiscCopyWith<_$FruitOneOfDiscAsAppleOneOfDisc>
+  _$$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImplCopyWith<
+          _$OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitOneOfDiscAsBananaOneOfDiscCopyWith<$Res> {
-  factory _$$FruitOneOfDiscAsBananaOneOfDiscCopyWith(
-          _$FruitOneOfDiscAsBananaOneOfDisc value,
-          $Res Function(_$FruitOneOfDiscAsBananaOneOfDisc) then) =
-      __$$FruitOneOfDiscAsBananaOneOfDiscCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImplCopyWith<
+    $Res> {
+  factory _$$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImplCopyWith(
+          _$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl value,
+          $Res Function(_$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl)
+              then) =
+      __$$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({BananaOneOfDisc bananaOneOfDiscValue});
+  $Res call({OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue});
 
-  $BananaOneOfDiscCopyWith<$Res> get bananaOneOfDiscValue;
+  $OpenApiBananaOneOfDiscCopyWith<$Res> get openApiBananaOneOfDiscValue;
 }
 
 /// @nodoc
-class __$$FruitOneOfDiscAsBananaOneOfDiscCopyWithImpl<$Res>
-    extends _$FruitOneOfDiscCopyWithImpl<$Res,
-        _$FruitOneOfDiscAsBananaOneOfDisc>
-    implements _$$FruitOneOfDiscAsBananaOneOfDiscCopyWith<$Res> {
-  __$$FruitOneOfDiscAsBananaOneOfDiscCopyWithImpl(
-      _$FruitOneOfDiscAsBananaOneOfDisc _value,
-      $Res Function(_$FruitOneOfDiscAsBananaOneOfDisc) _then)
+class __$$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitOneOfDiscCopyWithImpl<$Res,
+        _$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl>
+    implements
+        _$$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImplCopyWith<$Res> {
+  __$$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImplCopyWithImpl(
+      _$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl _value,
+      $Res Function(_$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? bananaOneOfDiscValue = null,
+    Object? openApiBananaOneOfDiscValue = null,
   }) {
-    return _then(_$FruitOneOfDiscAsBananaOneOfDisc(
-      bananaOneOfDiscValue: null == bananaOneOfDiscValue
-          ? _value.bananaOneOfDiscValue
-          : bananaOneOfDiscValue // ignore: cast_nullable_to_non_nullable
-              as BananaOneOfDisc,
+    return _then(_$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl(
+      openApiBananaOneOfDiscValue: null == openApiBananaOneOfDiscValue
+          ? _value.openApiBananaOneOfDiscValue
+          : openApiBananaOneOfDiscValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiBananaOneOfDisc,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $BananaOneOfDiscCopyWith<$Res> get bananaOneOfDiscValue {
-    return $BananaOneOfDiscCopyWith<$Res>(_value.bananaOneOfDiscValue, (value) {
-      return _then(_value.copyWith(bananaOneOfDiscValue: value));
+  $OpenApiBananaOneOfDiscCopyWith<$Res> get openApiBananaOneOfDiscValue {
+    return $OpenApiBananaOneOfDiscCopyWith<$Res>(
+        _value.openApiBananaOneOfDiscValue, (value) {
+      return _then(_value.copyWith(openApiBananaOneOfDiscValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$FruitOneOfDiscAsBananaOneOfDisc
-    extends FruitOneOfDiscAsBananaOneOfDisc {
-  const _$FruitOneOfDiscAsBananaOneOfDisc({required this.bananaOneOfDiscValue})
+class _$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl
+    extends OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc {
+  const _$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl(
+      {required this.openApiBananaOneOfDiscValue})
       : super._();
 
   @override
-  final BananaOneOfDisc bananaOneOfDiscValue;
+  final OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue;
 
   @override
   String toString() {
-    return 'FruitOneOfDisc.asBananaOneOfDisc(bananaOneOfDiscValue: $bananaOneOfDiscValue)';
+    return 'OpenApiFruitOneOfDisc.asOpenApiBananaOneOfDisc(openApiBananaOneOfDiscValue: $openApiBananaOneOfDiscValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitOneOfDiscAsBananaOneOfDisc &&
-            (identical(other.bananaOneOfDiscValue, bananaOneOfDiscValue) ||
-                other.bananaOneOfDiscValue == bananaOneOfDiscValue));
+            other is _$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl &&
+            (identical(other.openApiBananaOneOfDiscValue,
+                    openApiBananaOneOfDiscValue) ||
+                other.openApiBananaOneOfDiscValue ==
+                    openApiBananaOneOfDiscValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, bananaOneOfDiscValue);
+  int get hashCode => Object.hash(runtimeType, openApiBananaOneOfDiscValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitOneOfDiscAsBananaOneOfDiscCopyWith<_$FruitOneOfDiscAsBananaOneOfDisc>
-      get copyWith => __$$FruitOneOfDiscAsBananaOneOfDiscCopyWithImpl<
-          _$FruitOneOfDiscAsBananaOneOfDisc>(this, _$identity);
+  _$$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImplCopyWith<
+          _$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl>
+      get copyWith =>
+          __$$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImplCopyWithImpl<
+                  _$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleOneOfDisc appleOneOfDiscValue)
-        asAppleOneOfDisc,
-    required TResult Function(BananaOneOfDisc bananaOneOfDiscValue)
-        asBananaOneOfDisc,
+    required TResult Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)
+        asOpenApiAppleOneOfDisc,
+    required TResult Function(
+            OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)
+        asOpenApiBananaOneOfDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)
+            List<OpenApiFruitOneOfDisc> deserializedModels)
         unknown,
   }) {
-    return asBananaOneOfDisc(bananaOneOfDiscValue);
+    return asOpenApiBananaOneOfDisc(openApiBananaOneOfDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleOneOfDisc appleOneOfDiscValue)? asAppleOneOfDisc,
-    TResult? Function(BananaOneOfDisc bananaOneOfDiscValue)? asBananaOneOfDisc,
+    TResult? Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)?
+        asOpenApiAppleOneOfDisc,
+    TResult? Function(OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)?
+        asOpenApiBananaOneOfDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)?
+            List<OpenApiFruitOneOfDisc> deserializedModels)?
         unknown,
   }) {
-    return asBananaOneOfDisc?.call(bananaOneOfDiscValue);
+    return asOpenApiBananaOneOfDisc?.call(openApiBananaOneOfDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleOneOfDisc appleOneOfDiscValue)? asAppleOneOfDisc,
-    TResult Function(BananaOneOfDisc bananaOneOfDiscValue)? asBananaOneOfDisc,
+    TResult Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)?
+        asOpenApiAppleOneOfDisc,
+    TResult Function(OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)?
+        asOpenApiBananaOneOfDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)?
+            List<OpenApiFruitOneOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asBananaOneOfDisc != null) {
-      return asBananaOneOfDisc(bananaOneOfDiscValue);
+    if (asOpenApiBananaOneOfDisc != null) {
+      return asOpenApiBananaOneOfDisc(openApiBananaOneOfDiscValue);
     }
     return orElse();
   }
@@ -14228,72 +15343,83 @@ class _$FruitOneOfDiscAsBananaOneOfDisc
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitOneOfDiscAsAppleOneOfDisc value)
-        asAppleOneOfDisc,
-    required TResult Function(FruitOneOfDiscAsBananaOneOfDisc value)
-        asBananaOneOfDisc,
-    required TResult Function(FruitOneOfDiscUnknown value) unknown,
+    required TResult Function(
+            OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)
+        asOpenApiAppleOneOfDisc,
+    required TResult Function(
+            OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)
+        asOpenApiBananaOneOfDisc,
+    required TResult Function(OpenApiFruitOneOfDiscUnknown value) unknown,
   }) {
-    return asBananaOneOfDisc(this);
+    return asOpenApiBananaOneOfDisc(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitOneOfDiscAsAppleOneOfDisc value)? asAppleOneOfDisc,
-    TResult? Function(FruitOneOfDiscAsBananaOneOfDisc value)? asBananaOneOfDisc,
-    TResult? Function(FruitOneOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)?
+        asOpenApiAppleOneOfDisc,
+    TResult? Function(OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)?
+        asOpenApiBananaOneOfDisc,
+    TResult? Function(OpenApiFruitOneOfDiscUnknown value)? unknown,
   }) {
-    return asBananaOneOfDisc?.call(this);
+    return asOpenApiBananaOneOfDisc?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitOneOfDiscAsAppleOneOfDisc value)? asAppleOneOfDisc,
-    TResult Function(FruitOneOfDiscAsBananaOneOfDisc value)? asBananaOneOfDisc,
-    TResult Function(FruitOneOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)?
+        asOpenApiAppleOneOfDisc,
+    TResult Function(OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)?
+        asOpenApiBananaOneOfDisc,
+    TResult Function(OpenApiFruitOneOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (asBananaOneOfDisc != null) {
-      return asBananaOneOfDisc(this);
+    if (asOpenApiBananaOneOfDisc != null) {
+      return asOpenApiBananaOneOfDisc(this);
     }
     return orElse();
   }
 }
 
-abstract class FruitOneOfDiscAsBananaOneOfDisc extends FruitOneOfDisc {
-  const factory FruitOneOfDiscAsBananaOneOfDisc(
-          {required final BananaOneOfDisc bananaOneOfDiscValue}) =
-      _$FruitOneOfDiscAsBananaOneOfDisc;
-  const FruitOneOfDiscAsBananaOneOfDisc._() : super._();
+abstract class OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc
+    extends OpenApiFruitOneOfDisc {
+  const factory OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc(
+          {required final OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue}) =
+      _$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl;
+  const OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc._() : super._();
 
-  BananaOneOfDisc get bananaOneOfDiscValue;
+  OpenApiBananaOneOfDisc get openApiBananaOneOfDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitOneOfDiscAsBananaOneOfDiscCopyWith<_$FruitOneOfDiscAsBananaOneOfDisc>
+  _$$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImplCopyWith<
+          _$OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitOneOfDiscUnknownCopyWith<$Res> {
-  factory _$$FruitOneOfDiscUnknownCopyWith(_$FruitOneOfDiscUnknown value,
-          $Res Function(_$FruitOneOfDiscUnknown) then) =
-      __$$FruitOneOfDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitOneOfDiscUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiFruitOneOfDiscUnknownImplCopyWith(
+          _$OpenApiFruitOneOfDiscUnknownImpl value,
+          $Res Function(_$OpenApiFruitOneOfDiscUnknownImpl) then) =
+      __$$OpenApiFruitOneOfDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<FruitOneOfDisc> deserializedModels});
+      List<OpenApiFruitOneOfDisc> deserializedModels});
 }
 
 /// @nodoc
-class __$$FruitOneOfDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitOneOfDiscCopyWithImpl<$Res, _$FruitOneOfDiscUnknown>
-    implements _$$FruitOneOfDiscUnknownCopyWith<$Res> {
-  __$$FruitOneOfDiscUnknownCopyWithImpl(_$FruitOneOfDiscUnknown _value,
-      $Res Function(_$FruitOneOfDiscUnknown) _then)
+class __$$OpenApiFruitOneOfDiscUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitOneOfDiscCopyWithImpl<$Res,
+        _$OpenApiFruitOneOfDiscUnknownImpl>
+    implements _$$OpenApiFruitOneOfDiscUnknownImplCopyWith<$Res> {
+  __$$OpenApiFruitOneOfDiscUnknownImplCopyWithImpl(
+      _$OpenApiFruitOneOfDiscUnknownImpl _value,
+      $Res Function(_$OpenApiFruitOneOfDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -14305,7 +15431,7 @@ class __$$FruitOneOfDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitOneOfDiscUnknown(
+    return _then(_$OpenApiFruitOneOfDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -14325,23 +15451,24 @@ class __$$FruitOneOfDiscUnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitOneOfDisc>,
+              as List<OpenApiFruitOneOfDisc>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$FruitOneOfDiscUnknown extends FruitOneOfDiscUnknown {
-  const _$FruitOneOfDiscUnknown(
+class _$OpenApiFruitOneOfDiscUnknownImpl extends OpenApiFruitOneOfDiscUnknown {
+  const _$OpenApiFruitOneOfDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
       final List<Type> possibleTypes = const <Type>[
-        AppleOneOfDisc,
-        BananaOneOfDisc
+        OpenApiAppleOneOfDisc,
+        OpenApiBananaOneOfDisc
       ],
-      final List<FruitOneOfDisc> deserializedModels = const <FruitOneOfDisc>[]})
+      final List<OpenApiFruitOneOfDisc> deserializedModels =
+          const <OpenApiFruitOneOfDisc>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -14370,10 +15497,10 @@ class _$FruitOneOfDiscUnknown extends FruitOneOfDiscUnknown {
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<FruitOneOfDisc> _deserializedModels;
+  final List<OpenApiFruitOneOfDisc> _deserializedModels;
   @override
   @JsonKey()
-  List<FruitOneOfDisc> get deserializedModels {
+  List<OpenApiFruitOneOfDisc> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -14382,14 +15509,14 @@ class _$FruitOneOfDiscUnknown extends FruitOneOfDiscUnknown {
 
   @override
   String toString() {
-    return 'FruitOneOfDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiFruitOneOfDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitOneOfDiscUnknown &&
+            other is _$OpenApiFruitOneOfDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -14412,23 +15539,25 @@ class _$FruitOneOfDiscUnknown extends FruitOneOfDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitOneOfDiscUnknownCopyWith<_$FruitOneOfDiscUnknown> get copyWith =>
-      __$$FruitOneOfDiscUnknownCopyWithImpl<_$FruitOneOfDiscUnknown>(
-          this, _$identity);
+  _$$OpenApiFruitOneOfDiscUnknownImplCopyWith<
+          _$OpenApiFruitOneOfDiscUnknownImpl>
+      get copyWith => __$$OpenApiFruitOneOfDiscUnknownImplCopyWithImpl<
+          _$OpenApiFruitOneOfDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleOneOfDisc appleOneOfDiscValue)
-        asAppleOneOfDisc,
-    required TResult Function(BananaOneOfDisc bananaOneOfDiscValue)
-        asBananaOneOfDisc,
+    required TResult Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)
+        asOpenApiAppleOneOfDisc,
+    required TResult Function(
+            OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)
+        asOpenApiBananaOneOfDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)
+            List<OpenApiFruitOneOfDisc> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -14437,14 +15566,16 @@ class _$FruitOneOfDiscUnknown extends FruitOneOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleOneOfDisc appleOneOfDiscValue)? asAppleOneOfDisc,
-    TResult? Function(BananaOneOfDisc bananaOneOfDiscValue)? asBananaOneOfDisc,
+    TResult? Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)?
+        asOpenApiAppleOneOfDisc,
+    TResult? Function(OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)?
+        asOpenApiBananaOneOfDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)?
+            List<OpenApiFruitOneOfDisc> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -14454,14 +15585,16 @@ class _$FruitOneOfDiscUnknown extends FruitOneOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleOneOfDisc appleOneOfDiscValue)? asAppleOneOfDisc,
-    TResult Function(BananaOneOfDisc bananaOneOfDiscValue)? asBananaOneOfDisc,
+    TResult Function(OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue)?
+        asOpenApiAppleOneOfDisc,
+    TResult Function(OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue)?
+        asOpenApiBananaOneOfDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitOneOfDisc> deserializedModels)?
+            List<OpenApiFruitOneOfDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -14475,11 +15608,13 @@ class _$FruitOneOfDiscUnknown extends FruitOneOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitOneOfDiscAsAppleOneOfDisc value)
-        asAppleOneOfDisc,
-    required TResult Function(FruitOneOfDiscAsBananaOneOfDisc value)
-        asBananaOneOfDisc,
-    required TResult Function(FruitOneOfDiscUnknown value) unknown,
+    required TResult Function(
+            OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)
+        asOpenApiAppleOneOfDisc,
+    required TResult Function(
+            OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)
+        asOpenApiBananaOneOfDisc,
+    required TResult Function(OpenApiFruitOneOfDiscUnknown value) unknown,
   }) {
     return unknown(this);
   }
@@ -14487,9 +15622,11 @@ class _$FruitOneOfDiscUnknown extends FruitOneOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitOneOfDiscAsAppleOneOfDisc value)? asAppleOneOfDisc,
-    TResult? Function(FruitOneOfDiscAsBananaOneOfDisc value)? asBananaOneOfDisc,
-    TResult? Function(FruitOneOfDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)?
+        asOpenApiAppleOneOfDisc,
+    TResult? Function(OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)?
+        asOpenApiBananaOneOfDisc,
+    TResult? Function(OpenApiFruitOneOfDiscUnknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -14497,9 +15634,11 @@ class _$FruitOneOfDiscUnknown extends FruitOneOfDiscUnknown {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitOneOfDiscAsAppleOneOfDisc value)? asAppleOneOfDisc,
-    TResult Function(FruitOneOfDiscAsBananaOneOfDisc value)? asBananaOneOfDisc,
-    TResult Function(FruitOneOfDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc value)?
+        asOpenApiAppleOneOfDisc,
+    TResult Function(OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc value)?
+        asOpenApiBananaOneOfDisc,
+    TResult Function(OpenApiFruitOneOfDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -14509,103 +15648,116 @@ class _$FruitOneOfDiscUnknown extends FruitOneOfDiscUnknown {
   }
 }
 
-abstract class FruitOneOfDiscUnknown extends FruitOneOfDisc {
-  const factory FruitOneOfDiscUnknown(
-      {final String message,
-      required final Map<String, dynamic> json,
-      final DeserializationErrorType errorType,
-      final List<Type> possibleTypes,
-      final List<FruitOneOfDisc> deserializedModels}) = _$FruitOneOfDiscUnknown;
-  const FruitOneOfDiscUnknown._() : super._();
+abstract class OpenApiFruitOneOfDiscUnknown extends OpenApiFruitOneOfDisc {
+  const factory OpenApiFruitOneOfDiscUnknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<OpenApiFruitOneOfDisc> deserializedModels}) =
+      _$OpenApiFruitOneOfDiscUnknownImpl;
+  const OpenApiFruitOneOfDiscUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<FruitOneOfDisc> get deserializedModels;
+  List<OpenApiFruitOneOfDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitOneOfDiscUnknownCopyWith<_$FruitOneOfDiscUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OpenApiFruitOneOfDiscUnknownImplCopyWith<
+          _$OpenApiFruitOneOfDiscUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$FruitReqDisc {
+mixin _$OpenApiFruitReqDisc {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleReqDisc appleReqDiscValue) asAppleReqDisc,
-    required TResult Function(BananaReqDisc bananaReqDiscValue) asBananaReqDisc,
+    required TResult Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)
+        asOpenApiAppleReqDisc,
+    required TResult Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)
+        asOpenApiBananaReqDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)
+            List<OpenApiFruitReqDisc> deserializedModels)
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleReqDisc appleReqDiscValue)? asAppleReqDisc,
-    TResult? Function(BananaReqDisc bananaReqDiscValue)? asBananaReqDisc,
+    TResult? Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)?
+        asOpenApiAppleReqDisc,
+    TResult? Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)?
+        asOpenApiBananaReqDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)?
+            List<OpenApiFruitReqDisc> deserializedModels)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleReqDisc appleReqDiscValue)? asAppleReqDisc,
-    TResult Function(BananaReqDisc bananaReqDiscValue)? asBananaReqDisc,
+    TResult Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)?
+        asOpenApiAppleReqDisc,
+    TResult Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)?
+        asOpenApiBananaReqDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)?
+            List<OpenApiFruitReqDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitReqDiscAsAppleReqDisc value) asAppleReqDisc,
-    required TResult Function(FruitReqDiscAsBananaReqDisc value)
-        asBananaReqDisc,
-    required TResult Function(FruitReqDiscUnknown value) unknown,
+    required TResult Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)
+        asOpenApiAppleReqDisc,
+    required TResult Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)
+        asOpenApiBananaReqDisc,
+    required TResult Function(OpenApiFruitReqDiscUnknown value) unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitReqDiscAsAppleReqDisc value)? asAppleReqDisc,
-    TResult? Function(FruitReqDiscAsBananaReqDisc value)? asBananaReqDisc,
-    TResult? Function(FruitReqDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)?
+        asOpenApiAppleReqDisc,
+    TResult? Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)?
+        asOpenApiBananaReqDisc,
+    TResult? Function(OpenApiFruitReqDiscUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitReqDiscAsAppleReqDisc value)? asAppleReqDisc,
-    TResult Function(FruitReqDiscAsBananaReqDisc value)? asBananaReqDisc,
-    TResult Function(FruitReqDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)?
+        asOpenApiAppleReqDisc,
+    TResult Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)?
+        asOpenApiBananaReqDisc,
+    TResult Function(OpenApiFruitReqDiscUnknown value)? unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FruitReqDiscCopyWith<$Res> {
-  factory $FruitReqDiscCopyWith(
-          FruitReqDisc value, $Res Function(FruitReqDisc) then) =
-      _$FruitReqDiscCopyWithImpl<$Res, FruitReqDisc>;
+abstract class $OpenApiFruitReqDiscCopyWith<$Res> {
+  factory $OpenApiFruitReqDiscCopyWith(
+          OpenApiFruitReqDisc value, $Res Function(OpenApiFruitReqDisc) then) =
+      _$OpenApiFruitReqDiscCopyWithImpl<$Res, OpenApiFruitReqDisc>;
 }
 
 /// @nodoc
-class _$FruitReqDiscCopyWithImpl<$Res, $Val extends FruitReqDisc>
-    implements $FruitReqDiscCopyWith<$Res> {
-  _$FruitReqDiscCopyWithImpl(this._value, this._then);
+class _$OpenApiFruitReqDiscCopyWithImpl<$Res, $Val extends OpenApiFruitReqDisc>
+    implements $OpenApiFruitReqDiscCopyWith<$Res> {
+  _$OpenApiFruitReqDiscCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -14614,129 +15766,142 @@ class _$FruitReqDiscCopyWithImpl<$Res, $Val extends FruitReqDisc>
 }
 
 /// @nodoc
-abstract class _$$FruitReqDiscAsAppleReqDiscCopyWith<$Res> {
-  factory _$$FruitReqDiscAsAppleReqDiscCopyWith(
-          _$FruitReqDiscAsAppleReqDisc value,
-          $Res Function(_$FruitReqDiscAsAppleReqDisc) then) =
-      __$$FruitReqDiscAsAppleReqDiscCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImplCopyWith<$Res> {
+  factory _$$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImplCopyWith(
+          _$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl value,
+          $Res Function(_$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl) then) =
+      __$$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({AppleReqDisc appleReqDiscValue});
+  $Res call({OpenApiAppleReqDisc openApiAppleReqDiscValue});
 
-  $AppleReqDiscCopyWith<$Res> get appleReqDiscValue;
+  $OpenApiAppleReqDiscCopyWith<$Res> get openApiAppleReqDiscValue;
 }
 
 /// @nodoc
-class __$$FruitReqDiscAsAppleReqDiscCopyWithImpl<$Res>
-    extends _$FruitReqDiscCopyWithImpl<$Res, _$FruitReqDiscAsAppleReqDisc>
-    implements _$$FruitReqDiscAsAppleReqDiscCopyWith<$Res> {
-  __$$FruitReqDiscAsAppleReqDiscCopyWithImpl(
-      _$FruitReqDiscAsAppleReqDisc _value,
-      $Res Function(_$FruitReqDiscAsAppleReqDisc) _then)
+class __$$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitReqDiscCopyWithImpl<$Res,
+        _$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl>
+    implements _$$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImplCopyWith<$Res> {
+  __$$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImplCopyWithImpl(
+      _$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl _value,
+      $Res Function(_$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? appleReqDiscValue = null,
+    Object? openApiAppleReqDiscValue = null,
   }) {
-    return _then(_$FruitReqDiscAsAppleReqDisc(
-      appleReqDiscValue: null == appleReqDiscValue
-          ? _value.appleReqDiscValue
-          : appleReqDiscValue // ignore: cast_nullable_to_non_nullable
-              as AppleReqDisc,
+    return _then(_$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl(
+      openApiAppleReqDiscValue: null == openApiAppleReqDiscValue
+          ? _value.openApiAppleReqDiscValue
+          : openApiAppleReqDiscValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiAppleReqDisc,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $AppleReqDiscCopyWith<$Res> get appleReqDiscValue {
-    return $AppleReqDiscCopyWith<$Res>(_value.appleReqDiscValue, (value) {
-      return _then(_value.copyWith(appleReqDiscValue: value));
+  $OpenApiAppleReqDiscCopyWith<$Res> get openApiAppleReqDiscValue {
+    return $OpenApiAppleReqDiscCopyWith<$Res>(_value.openApiAppleReqDiscValue,
+        (value) {
+      return _then(_value.copyWith(openApiAppleReqDiscValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$FruitReqDiscAsAppleReqDisc extends FruitReqDiscAsAppleReqDisc {
-  const _$FruitReqDiscAsAppleReqDisc({required this.appleReqDiscValue})
+class _$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl
+    extends OpenApiFruitReqDiscAsOpenApiAppleReqDisc {
+  const _$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl(
+      {required this.openApiAppleReqDiscValue})
       : super._();
 
   @override
-  final AppleReqDisc appleReqDiscValue;
+  final OpenApiAppleReqDisc openApiAppleReqDiscValue;
 
   @override
   String toString() {
-    return 'FruitReqDisc.asAppleReqDisc(appleReqDiscValue: $appleReqDiscValue)';
+    return 'OpenApiFruitReqDisc.asOpenApiAppleReqDisc(openApiAppleReqDiscValue: $openApiAppleReqDiscValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitReqDiscAsAppleReqDisc &&
-            (identical(other.appleReqDiscValue, appleReqDiscValue) ||
-                other.appleReqDiscValue == appleReqDiscValue));
+            other is _$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl &&
+            (identical(
+                    other.openApiAppleReqDiscValue, openApiAppleReqDiscValue) ||
+                other.openApiAppleReqDiscValue == openApiAppleReqDiscValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, appleReqDiscValue);
+  int get hashCode => Object.hash(runtimeType, openApiAppleReqDiscValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitReqDiscAsAppleReqDiscCopyWith<_$FruitReqDiscAsAppleReqDisc>
-      get copyWith => __$$FruitReqDiscAsAppleReqDiscCopyWithImpl<
-          _$FruitReqDiscAsAppleReqDisc>(this, _$identity);
+  _$$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImplCopyWith<
+          _$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl>
+      get copyWith =>
+          __$$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImplCopyWithImpl<
+              _$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleReqDisc appleReqDiscValue) asAppleReqDisc,
-    required TResult Function(BananaReqDisc bananaReqDiscValue) asBananaReqDisc,
+    required TResult Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)
+        asOpenApiAppleReqDisc,
+    required TResult Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)
+        asOpenApiBananaReqDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)
+            List<OpenApiFruitReqDisc> deserializedModels)
         unknown,
   }) {
-    return asAppleReqDisc(appleReqDiscValue);
+    return asOpenApiAppleReqDisc(openApiAppleReqDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleReqDisc appleReqDiscValue)? asAppleReqDisc,
-    TResult? Function(BananaReqDisc bananaReqDiscValue)? asBananaReqDisc,
+    TResult? Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)?
+        asOpenApiAppleReqDisc,
+    TResult? Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)?
+        asOpenApiBananaReqDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)?
+            List<OpenApiFruitReqDisc> deserializedModels)?
         unknown,
   }) {
-    return asAppleReqDisc?.call(appleReqDiscValue);
+    return asOpenApiAppleReqDisc?.call(openApiAppleReqDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleReqDisc appleReqDiscValue)? asAppleReqDisc,
-    TResult Function(BananaReqDisc bananaReqDiscValue)? asBananaReqDisc,
+    TResult Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)?
+        asOpenApiAppleReqDisc,
+    TResult Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)?
+        asOpenApiBananaReqDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)?
+            List<OpenApiFruitReqDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asAppleReqDisc != null) {
-      return asAppleReqDisc(appleReqDiscValue);
+    if (asOpenApiAppleReqDisc != null) {
+      return asOpenApiAppleReqDisc(openApiAppleReqDiscValue);
     }
     return orElse();
   }
@@ -14744,175 +15909,196 @@ class _$FruitReqDiscAsAppleReqDisc extends FruitReqDiscAsAppleReqDisc {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitReqDiscAsAppleReqDisc value) asAppleReqDisc,
-    required TResult Function(FruitReqDiscAsBananaReqDisc value)
-        asBananaReqDisc,
-    required TResult Function(FruitReqDiscUnknown value) unknown,
+    required TResult Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)
+        asOpenApiAppleReqDisc,
+    required TResult Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)
+        asOpenApiBananaReqDisc,
+    required TResult Function(OpenApiFruitReqDiscUnknown value) unknown,
   }) {
-    return asAppleReqDisc(this);
+    return asOpenApiAppleReqDisc(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitReqDiscAsAppleReqDisc value)? asAppleReqDisc,
-    TResult? Function(FruitReqDiscAsBananaReqDisc value)? asBananaReqDisc,
-    TResult? Function(FruitReqDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)?
+        asOpenApiAppleReqDisc,
+    TResult? Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)?
+        asOpenApiBananaReqDisc,
+    TResult? Function(OpenApiFruitReqDiscUnknown value)? unknown,
   }) {
-    return asAppleReqDisc?.call(this);
+    return asOpenApiAppleReqDisc?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitReqDiscAsAppleReqDisc value)? asAppleReqDisc,
-    TResult Function(FruitReqDiscAsBananaReqDisc value)? asBananaReqDisc,
-    TResult Function(FruitReqDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)?
+        asOpenApiAppleReqDisc,
+    TResult Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)?
+        asOpenApiBananaReqDisc,
+    TResult Function(OpenApiFruitReqDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (asAppleReqDisc != null) {
-      return asAppleReqDisc(this);
+    if (asOpenApiAppleReqDisc != null) {
+      return asOpenApiAppleReqDisc(this);
     }
     return orElse();
   }
 }
 
-abstract class FruitReqDiscAsAppleReqDisc extends FruitReqDisc {
-  const factory FruitReqDiscAsAppleReqDisc(
-          {required final AppleReqDisc appleReqDiscValue}) =
-      _$FruitReqDiscAsAppleReqDisc;
-  const FruitReqDiscAsAppleReqDisc._() : super._();
+abstract class OpenApiFruitReqDiscAsOpenApiAppleReqDisc
+    extends OpenApiFruitReqDisc {
+  const factory OpenApiFruitReqDiscAsOpenApiAppleReqDisc(
+          {required final OpenApiAppleReqDisc openApiAppleReqDiscValue}) =
+      _$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl;
+  const OpenApiFruitReqDiscAsOpenApiAppleReqDisc._() : super._();
 
-  AppleReqDisc get appleReqDiscValue;
+  OpenApiAppleReqDisc get openApiAppleReqDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitReqDiscAsAppleReqDiscCopyWith<_$FruitReqDiscAsAppleReqDisc>
+  _$$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImplCopyWith<
+          _$OpenApiFruitReqDiscAsOpenApiAppleReqDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitReqDiscAsBananaReqDiscCopyWith<$Res> {
-  factory _$$FruitReqDiscAsBananaReqDiscCopyWith(
-          _$FruitReqDiscAsBananaReqDisc value,
-          $Res Function(_$FruitReqDiscAsBananaReqDisc) then) =
-      __$$FruitReqDiscAsBananaReqDiscCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImplCopyWith<$Res> {
+  factory _$$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImplCopyWith(
+          _$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl value,
+          $Res Function(_$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl) then) =
+      __$$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({BananaReqDisc bananaReqDiscValue});
+  $Res call({OpenApiBananaReqDisc openApiBananaReqDiscValue});
 
-  $BananaReqDiscCopyWith<$Res> get bananaReqDiscValue;
+  $OpenApiBananaReqDiscCopyWith<$Res> get openApiBananaReqDiscValue;
 }
 
 /// @nodoc
-class __$$FruitReqDiscAsBananaReqDiscCopyWithImpl<$Res>
-    extends _$FruitReqDiscCopyWithImpl<$Res, _$FruitReqDiscAsBananaReqDisc>
-    implements _$$FruitReqDiscAsBananaReqDiscCopyWith<$Res> {
-  __$$FruitReqDiscAsBananaReqDiscCopyWithImpl(
-      _$FruitReqDiscAsBananaReqDisc _value,
-      $Res Function(_$FruitReqDiscAsBananaReqDisc) _then)
+class __$$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitReqDiscCopyWithImpl<$Res,
+        _$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl>
+    implements _$$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImplCopyWith<$Res> {
+  __$$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImplCopyWithImpl(
+      _$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl _value,
+      $Res Function(_$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? bananaReqDiscValue = null,
+    Object? openApiBananaReqDiscValue = null,
   }) {
-    return _then(_$FruitReqDiscAsBananaReqDisc(
-      bananaReqDiscValue: null == bananaReqDiscValue
-          ? _value.bananaReqDiscValue
-          : bananaReqDiscValue // ignore: cast_nullable_to_non_nullable
-              as BananaReqDisc,
+    return _then(_$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl(
+      openApiBananaReqDiscValue: null == openApiBananaReqDiscValue
+          ? _value.openApiBananaReqDiscValue
+          : openApiBananaReqDiscValue // ignore: cast_nullable_to_non_nullable
+              as OpenApiBananaReqDisc,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $BananaReqDiscCopyWith<$Res> get bananaReqDiscValue {
-    return $BananaReqDiscCopyWith<$Res>(_value.bananaReqDiscValue, (value) {
-      return _then(_value.copyWith(bananaReqDiscValue: value));
+  $OpenApiBananaReqDiscCopyWith<$Res> get openApiBananaReqDiscValue {
+    return $OpenApiBananaReqDiscCopyWith<$Res>(_value.openApiBananaReqDiscValue,
+        (value) {
+      return _then(_value.copyWith(openApiBananaReqDiscValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$FruitReqDiscAsBananaReqDisc extends FruitReqDiscAsBananaReqDisc {
-  const _$FruitReqDiscAsBananaReqDisc({required this.bananaReqDiscValue})
+class _$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl
+    extends OpenApiFruitReqDiscAsOpenApiBananaReqDisc {
+  const _$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl(
+      {required this.openApiBananaReqDiscValue})
       : super._();
 
   @override
-  final BananaReqDisc bananaReqDiscValue;
+  final OpenApiBananaReqDisc openApiBananaReqDiscValue;
 
   @override
   String toString() {
-    return 'FruitReqDisc.asBananaReqDisc(bananaReqDiscValue: $bananaReqDiscValue)';
+    return 'OpenApiFruitReqDisc.asOpenApiBananaReqDisc(openApiBananaReqDiscValue: $openApiBananaReqDiscValue)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitReqDiscAsBananaReqDisc &&
-            (identical(other.bananaReqDiscValue, bananaReqDiscValue) ||
-                other.bananaReqDiscValue == bananaReqDiscValue));
+            other is _$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl &&
+            (identical(other.openApiBananaReqDiscValue,
+                    openApiBananaReqDiscValue) ||
+                other.openApiBananaReqDiscValue == openApiBananaReqDiscValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, bananaReqDiscValue);
+  int get hashCode => Object.hash(runtimeType, openApiBananaReqDiscValue);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitReqDiscAsBananaReqDiscCopyWith<_$FruitReqDiscAsBananaReqDisc>
-      get copyWith => __$$FruitReqDiscAsBananaReqDiscCopyWithImpl<
-          _$FruitReqDiscAsBananaReqDisc>(this, _$identity);
+  _$$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImplCopyWith<
+          _$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl>
+      get copyWith =>
+          __$$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImplCopyWithImpl<
+                  _$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleReqDisc appleReqDiscValue) asAppleReqDisc,
-    required TResult Function(BananaReqDisc bananaReqDiscValue) asBananaReqDisc,
+    required TResult Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)
+        asOpenApiAppleReqDisc,
+    required TResult Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)
+        asOpenApiBananaReqDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)
+            List<OpenApiFruitReqDisc> deserializedModels)
         unknown,
   }) {
-    return asBananaReqDisc(bananaReqDiscValue);
+    return asOpenApiBananaReqDisc(openApiBananaReqDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleReqDisc appleReqDiscValue)? asAppleReqDisc,
-    TResult? Function(BananaReqDisc bananaReqDiscValue)? asBananaReqDisc,
+    TResult? Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)?
+        asOpenApiAppleReqDisc,
+    TResult? Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)?
+        asOpenApiBananaReqDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)?
+            List<OpenApiFruitReqDisc> deserializedModels)?
         unknown,
   }) {
-    return asBananaReqDisc?.call(bananaReqDiscValue);
+    return asOpenApiBananaReqDisc?.call(openApiBananaReqDiscValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleReqDisc appleReqDiscValue)? asAppleReqDisc,
-    TResult Function(BananaReqDisc bananaReqDiscValue)? asBananaReqDisc,
+    TResult Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)?
+        asOpenApiAppleReqDisc,
+    TResult Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)?
+        asOpenApiBananaReqDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)?
+            List<OpenApiFruitReqDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
-    if (asBananaReqDisc != null) {
-      return asBananaReqDisc(bananaReqDiscValue);
+    if (asOpenApiBananaReqDisc != null) {
+      return asOpenApiBananaReqDisc(openApiBananaReqDiscValue);
     }
     return orElse();
   }
@@ -14920,71 +16106,81 @@ class _$FruitReqDiscAsBananaReqDisc extends FruitReqDiscAsBananaReqDisc {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitReqDiscAsAppleReqDisc value) asAppleReqDisc,
-    required TResult Function(FruitReqDiscAsBananaReqDisc value)
-        asBananaReqDisc,
-    required TResult Function(FruitReqDiscUnknown value) unknown,
+    required TResult Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)
+        asOpenApiAppleReqDisc,
+    required TResult Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)
+        asOpenApiBananaReqDisc,
+    required TResult Function(OpenApiFruitReqDiscUnknown value) unknown,
   }) {
-    return asBananaReqDisc(this);
+    return asOpenApiBananaReqDisc(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitReqDiscAsAppleReqDisc value)? asAppleReqDisc,
-    TResult? Function(FruitReqDiscAsBananaReqDisc value)? asBananaReqDisc,
-    TResult? Function(FruitReqDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)?
+        asOpenApiAppleReqDisc,
+    TResult? Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)?
+        asOpenApiBananaReqDisc,
+    TResult? Function(OpenApiFruitReqDiscUnknown value)? unknown,
   }) {
-    return asBananaReqDisc?.call(this);
+    return asOpenApiBananaReqDisc?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitReqDiscAsAppleReqDisc value)? asAppleReqDisc,
-    TResult Function(FruitReqDiscAsBananaReqDisc value)? asBananaReqDisc,
-    TResult Function(FruitReqDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)?
+        asOpenApiAppleReqDisc,
+    TResult Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)?
+        asOpenApiBananaReqDisc,
+    TResult Function(OpenApiFruitReqDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (asBananaReqDisc != null) {
-      return asBananaReqDisc(this);
+    if (asOpenApiBananaReqDisc != null) {
+      return asOpenApiBananaReqDisc(this);
     }
     return orElse();
   }
 }
 
-abstract class FruitReqDiscAsBananaReqDisc extends FruitReqDisc {
-  const factory FruitReqDiscAsBananaReqDisc(
-          {required final BananaReqDisc bananaReqDiscValue}) =
-      _$FruitReqDiscAsBananaReqDisc;
-  const FruitReqDiscAsBananaReqDisc._() : super._();
+abstract class OpenApiFruitReqDiscAsOpenApiBananaReqDisc
+    extends OpenApiFruitReqDisc {
+  const factory OpenApiFruitReqDiscAsOpenApiBananaReqDisc(
+          {required final OpenApiBananaReqDisc openApiBananaReqDiscValue}) =
+      _$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl;
+  const OpenApiFruitReqDiscAsOpenApiBananaReqDisc._() : super._();
 
-  BananaReqDisc get bananaReqDiscValue;
+  OpenApiBananaReqDisc get openApiBananaReqDiscValue;
   @JsonKey(ignore: true)
-  _$$FruitReqDiscAsBananaReqDiscCopyWith<_$FruitReqDiscAsBananaReqDisc>
+  _$$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImplCopyWith<
+          _$OpenApiFruitReqDiscAsOpenApiBananaReqDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FruitReqDiscUnknownCopyWith<$Res> {
-  factory _$$FruitReqDiscUnknownCopyWith(_$FruitReqDiscUnknown value,
-          $Res Function(_$FruitReqDiscUnknown) then) =
-      __$$FruitReqDiscUnknownCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitReqDiscUnknownImplCopyWith<$Res> {
+  factory _$$OpenApiFruitReqDiscUnknownImplCopyWith(
+          _$OpenApiFruitReqDiscUnknownImpl value,
+          $Res Function(_$OpenApiFruitReqDiscUnknownImpl) then) =
+      __$$OpenApiFruitReqDiscUnknownImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String message,
       Map<String, dynamic> json,
       DeserializationErrorType errorType,
       List<Type> possibleTypes,
-      List<FruitReqDisc> deserializedModels});
+      List<OpenApiFruitReqDisc> deserializedModels});
 }
 
 /// @nodoc
-class __$$FruitReqDiscUnknownCopyWithImpl<$Res>
-    extends _$FruitReqDiscCopyWithImpl<$Res, _$FruitReqDiscUnknown>
-    implements _$$FruitReqDiscUnknownCopyWith<$Res> {
-  __$$FruitReqDiscUnknownCopyWithImpl(
-      _$FruitReqDiscUnknown _value, $Res Function(_$FruitReqDiscUnknown) _then)
+class __$$OpenApiFruitReqDiscUnknownImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitReqDiscCopyWithImpl<$Res,
+        _$OpenApiFruitReqDiscUnknownImpl>
+    implements _$$OpenApiFruitReqDiscUnknownImplCopyWith<$Res> {
+  __$$OpenApiFruitReqDiscUnknownImplCopyWithImpl(
+      _$OpenApiFruitReqDiscUnknownImpl _value,
+      $Res Function(_$OpenApiFruitReqDiscUnknownImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -14996,7 +16192,7 @@ class __$$FruitReqDiscUnknownCopyWithImpl<$Res>
     Object? possibleTypes = null,
     Object? deserializedModels = null,
   }) {
-    return _then(_$FruitReqDiscUnknown(
+    return _then(_$OpenApiFruitReqDiscUnknownImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -15016,23 +16212,24 @@ class __$$FruitReqDiscUnknownCopyWithImpl<$Res>
       deserializedModels: null == deserializedModels
           ? _value._deserializedModels
           : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitReqDisc>,
+              as List<OpenApiFruitReqDisc>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
-  const _$FruitReqDiscUnknown(
+class _$OpenApiFruitReqDiscUnknownImpl extends OpenApiFruitReqDiscUnknown {
+  const _$OpenApiFruitReqDiscUnknownImpl(
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
       final List<Type> possibleTypes = const <Type>[
-        AppleReqDisc,
-        BananaReqDisc
+        OpenApiAppleReqDisc,
+        OpenApiBananaReqDisc
       ],
-      final List<FruitReqDisc> deserializedModels = const <FruitReqDisc>[]})
+      final List<OpenApiFruitReqDisc> deserializedModels =
+          const <OpenApiFruitReqDisc>[]})
       : _json = json,
         _possibleTypes = possibleTypes,
         _deserializedModels = deserializedModels,
@@ -15061,10 +16258,10 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
     return EqualUnmodifiableListView(_possibleTypes);
   }
 
-  final List<FruitReqDisc> _deserializedModels;
+  final List<OpenApiFruitReqDisc> _deserializedModels;
   @override
   @JsonKey()
-  List<FruitReqDisc> get deserializedModels {
+  List<OpenApiFruitReqDisc> get deserializedModels {
     if (_deserializedModels is EqualUnmodifiableListView)
       return _deserializedModels;
     // ignore: implicit_dynamic_type
@@ -15073,14 +16270,14 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
 
   @override
   String toString() {
-    return 'FruitReqDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
+    return 'OpenApiFruitReqDisc.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitReqDiscUnknown &&
+            other is _$OpenApiFruitReqDiscUnknownImpl &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality().equals(other._json, _json) &&
             (identical(other.errorType, errorType) ||
@@ -15103,21 +16300,23 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitReqDiscUnknownCopyWith<_$FruitReqDiscUnknown> get copyWith =>
-      __$$FruitReqDiscUnknownCopyWithImpl<_$FruitReqDiscUnknown>(
-          this, _$identity);
+  _$$OpenApiFruitReqDiscUnknownImplCopyWith<_$OpenApiFruitReqDiscUnknownImpl>
+      get copyWith => __$$OpenApiFruitReqDiscUnknownImplCopyWithImpl<
+          _$OpenApiFruitReqDiscUnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AppleReqDisc appleReqDiscValue) asAppleReqDisc,
-    required TResult Function(BananaReqDisc bananaReqDiscValue) asBananaReqDisc,
+    required TResult Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)
+        asOpenApiAppleReqDisc,
+    required TResult Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)
+        asOpenApiBananaReqDisc,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)
+            List<OpenApiFruitReqDisc> deserializedModels)
         unknown,
   }) {
     return unknown(message, json, errorType, possibleTypes, deserializedModels);
@@ -15126,14 +16325,16 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppleReqDisc appleReqDiscValue)? asAppleReqDisc,
-    TResult? Function(BananaReqDisc bananaReqDiscValue)? asBananaReqDisc,
+    TResult? Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)?
+        asOpenApiAppleReqDisc,
+    TResult? Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)?
+        asOpenApiBananaReqDisc,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)?
+            List<OpenApiFruitReqDisc> deserializedModels)?
         unknown,
   }) {
     return unknown?.call(
@@ -15143,14 +16344,16 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppleReqDisc appleReqDiscValue)? asAppleReqDisc,
-    TResult Function(BananaReqDisc bananaReqDiscValue)? asBananaReqDisc,
+    TResult Function(OpenApiAppleReqDisc openApiAppleReqDiscValue)?
+        asOpenApiAppleReqDisc,
+    TResult Function(OpenApiBananaReqDisc openApiBananaReqDiscValue)?
+        asOpenApiBananaReqDisc,
     TResult Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
             List<Type> possibleTypes,
-            List<FruitReqDisc> deserializedModels)?
+            List<OpenApiFruitReqDisc> deserializedModels)?
         unknown,
     required TResult orElse(),
   }) {
@@ -15164,10 +16367,11 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FruitReqDiscAsAppleReqDisc value) asAppleReqDisc,
-    required TResult Function(FruitReqDiscAsBananaReqDisc value)
-        asBananaReqDisc,
-    required TResult Function(FruitReqDiscUnknown value) unknown,
+    required TResult Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)
+        asOpenApiAppleReqDisc,
+    required TResult Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)
+        asOpenApiBananaReqDisc,
+    required TResult Function(OpenApiFruitReqDiscUnknown value) unknown,
   }) {
     return unknown(this);
   }
@@ -15175,9 +16379,11 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitReqDiscAsAppleReqDisc value)? asAppleReqDisc,
-    TResult? Function(FruitReqDiscAsBananaReqDisc value)? asBananaReqDisc,
-    TResult? Function(FruitReqDiscUnknown value)? unknown,
+    TResult? Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)?
+        asOpenApiAppleReqDisc,
+    TResult? Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)?
+        asOpenApiBananaReqDisc,
+    TResult? Function(OpenApiFruitReqDiscUnknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -15185,9 +16391,11 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitReqDiscAsAppleReqDisc value)? asAppleReqDisc,
-    TResult Function(FruitReqDiscAsBananaReqDisc value)? asBananaReqDisc,
-    TResult Function(FruitReqDiscUnknown value)? unknown,
+    TResult Function(OpenApiFruitReqDiscAsOpenApiAppleReqDisc value)?
+        asOpenApiAppleReqDisc,
+    TResult Function(OpenApiFruitReqDiscAsOpenApiBananaReqDisc value)?
+        asOpenApiBananaReqDisc,
+    TResult Function(OpenApiFruitReqDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -15197,52 +16405,54 @@ class _$FruitReqDiscUnknown extends FruitReqDiscUnknown {
   }
 }
 
-abstract class FruitReqDiscUnknown extends FruitReqDisc {
-  const factory FruitReqDiscUnknown(
-      {final String message,
-      required final Map<String, dynamic> json,
-      final DeserializationErrorType errorType,
-      final List<Type> possibleTypes,
-      final List<FruitReqDisc> deserializedModels}) = _$FruitReqDiscUnknown;
-  const FruitReqDiscUnknown._() : super._();
+abstract class OpenApiFruitReqDiscUnknown extends OpenApiFruitReqDisc {
+  const factory OpenApiFruitReqDiscUnknown(
+          {final String message,
+          required final Map<String, dynamic> json,
+          final DeserializationErrorType errorType,
+          final List<Type> possibleTypes,
+          final List<OpenApiFruitReqDisc> deserializedModels}) =
+      _$OpenApiFruitReqDiscUnknownImpl;
+  const OpenApiFruitReqDiscUnknown._() : super._();
 
   String get message;
   Map<String, dynamic> get json;
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
-  List<FruitReqDisc> get deserializedModels;
+  List<OpenApiFruitReqDisc> get deserializedModels;
   @JsonKey(ignore: true)
-  _$$FruitReqDiscUnknownCopyWith<_$FruitReqDiscUnknown> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OpenApiFruitReqDiscUnknownImplCopyWith<_$OpenApiFruitReqDiscUnknownImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
-FruitType _$FruitTypeFromJson(Map<String, dynamic> json) {
-  return _FruitType.fromJson(json);
+OpenApiFruitType _$OpenApiFruitTypeFromJson(Map<String, dynamic> json) {
+  return _OpenApiFruitType.fromJson(json);
 }
 
 /// @nodoc
-mixin _$FruitType {
+mixin _$OpenApiFruitType {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $FruitTypeCopyWith<FruitType> get copyWith =>
+  $OpenApiFruitTypeCopyWith<OpenApiFruitType> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FruitTypeCopyWith<$Res> {
-  factory $FruitTypeCopyWith(FruitType value, $Res Function(FruitType) then) =
-      _$FruitTypeCopyWithImpl<$Res, FruitType>;
+abstract class $OpenApiFruitTypeCopyWith<$Res> {
+  factory $OpenApiFruitTypeCopyWith(
+          OpenApiFruitType value, $Res Function(OpenApiFruitType) then) =
+      _$OpenApiFruitTypeCopyWithImpl<$Res, OpenApiFruitType>;
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class _$FruitTypeCopyWithImpl<$Res, $Val extends FruitType>
-    implements $FruitTypeCopyWith<$Res> {
-  _$FruitTypeCopyWithImpl(this._value, this._then);
+class _$OpenApiFruitTypeCopyWithImpl<$Res, $Val extends OpenApiFruitType>
+    implements $OpenApiFruitTypeCopyWith<$Res> {
+  _$OpenApiFruitTypeCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -15264,21 +16474,22 @@ class _$FruitTypeCopyWithImpl<$Res, $Val extends FruitType>
 }
 
 /// @nodoc
-abstract class _$$_FruitTypeCopyWith<$Res> implements $FruitTypeCopyWith<$Res> {
-  factory _$$_FruitTypeCopyWith(
-          _$_FruitType value, $Res Function(_$_FruitType) then) =
-      __$$_FruitTypeCopyWithImpl<$Res>;
+abstract class _$$OpenApiFruitTypeImplCopyWith<$Res>
+    implements $OpenApiFruitTypeCopyWith<$Res> {
+  factory _$$OpenApiFruitTypeImplCopyWith(_$OpenApiFruitTypeImpl value,
+          $Res Function(_$OpenApiFruitTypeImpl) then) =
+      __$$OpenApiFruitTypeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class __$$_FruitTypeCopyWithImpl<$Res>
-    extends _$FruitTypeCopyWithImpl<$Res, _$_FruitType>
-    implements _$$_FruitTypeCopyWith<$Res> {
-  __$$_FruitTypeCopyWithImpl(
-      _$_FruitType _value, $Res Function(_$_FruitType) _then)
+class __$$OpenApiFruitTypeImplCopyWithImpl<$Res>
+    extends _$OpenApiFruitTypeCopyWithImpl<$Res, _$OpenApiFruitTypeImpl>
+    implements _$$OpenApiFruitTypeImplCopyWith<$Res> {
+  __$$OpenApiFruitTypeImplCopyWithImpl(_$OpenApiFruitTypeImpl _value,
+      $Res Function(_$OpenApiFruitTypeImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -15286,7 +16497,7 @@ class __$$_FruitTypeCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = null,
   }) {
-    return _then(_$_FruitType(
+    return _then(_$OpenApiFruitTypeImpl(
       fruitType: null == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -15297,12 +16508,13 @@ class __$$_FruitTypeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FruitType extends _FruitType {
-  const _$_FruitType({@JsonKey(name: r'fruitType') required this.fruitType})
+class _$OpenApiFruitTypeImpl extends _OpenApiFruitType {
+  const _$OpenApiFruitTypeImpl(
+      {@JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_FruitType.fromJson(Map<String, dynamic> json) =>
-      _$$_FruitTypeFromJson(json);
+  factory _$OpenApiFruitTypeImpl.fromJson(Map<String, dynamic> json) =>
+      _$$OpenApiFruitTypeImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -15310,14 +16522,14 @@ class _$_FruitType extends _FruitType {
 
   @override
   String toString() {
-    return 'FruitType(fruitType: $fruitType)';
+    return 'OpenApiFruitType(fruitType: $fruitType)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FruitType &&
+            other is _$OpenApiFruitTypeImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -15329,61 +16541,64 @@ class _$_FruitType extends _FruitType {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FruitTypeCopyWith<_$_FruitType> get copyWith =>
-      __$$_FruitTypeCopyWithImpl<_$_FruitType>(this, _$identity);
+  _$$OpenApiFruitTypeImplCopyWith<_$OpenApiFruitTypeImpl> get copyWith =>
+      __$$OpenApiFruitTypeImplCopyWithImpl<_$OpenApiFruitTypeImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FruitTypeToJson(
+    return _$$OpenApiFruitTypeImplToJson(
       this,
     );
   }
 }
 
-abstract class _FruitType extends FruitType {
-  const factory _FruitType(
+abstract class _OpenApiFruitType extends OpenApiFruitType {
+  const factory _OpenApiFruitType(
           {@JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_FruitType;
-  const _FruitType._() : super._();
+      _$OpenApiFruitTypeImpl;
+  const _OpenApiFruitType._() : super._();
 
-  factory _FruitType.fromJson(Map<String, dynamic> json) =
-      _$_FruitType.fromJson;
+  factory _OpenApiFruitType.fromJson(Map<String, dynamic> json) =
+      _$OpenApiFruitTypeImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_FruitTypeCopyWith<_$_FruitType> get copyWith =>
+  _$$OpenApiFruitTypeImplCopyWith<_$OpenApiFruitTypeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
-Parent _$ParentFromJson(Map<String, dynamic> json) {
-  return _Parent.fromJson(json);
+OpenApiParent _$OpenApiParentFromJson(Map<String, dynamic> json) {
+  return _OpenApiParent.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Parent {
+mixin _$OpenApiParent {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ParentCopyWith<Parent> get copyWith => throw _privateConstructorUsedError;
+  $OpenApiParentCopyWith<OpenApiParent> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ParentCopyWith<$Res> {
-  factory $ParentCopyWith(Parent value, $Res Function(Parent) then) =
-      _$ParentCopyWithImpl<$Res, Parent>;
+abstract class $OpenApiParentCopyWith<$Res> {
+  factory $OpenApiParentCopyWith(
+          OpenApiParent value, $Res Function(OpenApiParent) then) =
+      _$OpenApiParentCopyWithImpl<$Res, OpenApiParent>;
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class _$ParentCopyWithImpl<$Res, $Val extends Parent>
-    implements $ParentCopyWith<$Res> {
-  _$ParentCopyWithImpl(this._value, this._then);
+class _$OpenApiParentCopyWithImpl<$Res, $Val extends OpenApiParent>
+    implements $OpenApiParentCopyWith<$Res> {
+  _$OpenApiParentCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -15405,19 +16620,22 @@ class _$ParentCopyWithImpl<$Res, $Val extends Parent>
 }
 
 /// @nodoc
-abstract class _$$_ParentCopyWith<$Res> implements $ParentCopyWith<$Res> {
-  factory _$$_ParentCopyWith(_$_Parent value, $Res Function(_$_Parent) then) =
-      __$$_ParentCopyWithImpl<$Res>;
+abstract class _$$OpenApiParentImplCopyWith<$Res>
+    implements $OpenApiParentCopyWith<$Res> {
+  factory _$$OpenApiParentImplCopyWith(
+          _$OpenApiParentImpl value, $Res Function(_$OpenApiParentImpl) then) =
+      __$$OpenApiParentImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class __$$_ParentCopyWithImpl<$Res>
-    extends _$ParentCopyWithImpl<$Res, _$_Parent>
-    implements _$$_ParentCopyWith<$Res> {
-  __$$_ParentCopyWithImpl(_$_Parent _value, $Res Function(_$_Parent) _then)
+class __$$OpenApiParentImplCopyWithImpl<$Res>
+    extends _$OpenApiParentCopyWithImpl<$Res, _$OpenApiParentImpl>
+    implements _$$OpenApiParentImplCopyWith<$Res> {
+  __$$OpenApiParentImplCopyWithImpl(
+      _$OpenApiParentImpl _value, $Res Function(_$OpenApiParentImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -15425,7 +16643,7 @@ class __$$_ParentCopyWithImpl<$Res>
   $Res call({
     Object? fruitType = null,
   }) {
-    return _then(_$_Parent(
+    return _then(_$OpenApiParentImpl(
       fruitType: null == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -15436,12 +16654,13 @@ class __$$_ParentCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Parent extends _Parent {
-  const _$_Parent({@JsonKey(name: r'fruitType') required this.fruitType})
+class _$OpenApiParentImpl extends _OpenApiParent {
+  const _$OpenApiParentImpl(
+      {@JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$_Parent.fromJson(Map<String, dynamic> json) =>
-      _$$_ParentFromJson(json);
+  factory _$OpenApiParentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$OpenApiParentImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -15449,14 +16668,14 @@ class _$_Parent extends _Parent {
 
   @override
   String toString() {
-    return 'Parent(fruitType: $fruitType)';
+    return 'OpenApiParent(fruitType: $fruitType)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Parent &&
+            other is _$OpenApiParentImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
@@ -15468,30 +16687,31 @@ class _$_Parent extends _Parent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ParentCopyWith<_$_Parent> get copyWith =>
-      __$$_ParentCopyWithImpl<_$_Parent>(this, _$identity);
+  _$$OpenApiParentImplCopyWith<_$OpenApiParentImpl> get copyWith =>
+      __$$OpenApiParentImplCopyWithImpl<_$OpenApiParentImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ParentToJson(
+    return _$$OpenApiParentImplToJson(
       this,
     );
   }
 }
 
-abstract class _Parent extends Parent {
-  const factory _Parent(
+abstract class _OpenApiParent extends OpenApiParent {
+  const factory _OpenApiParent(
           {@JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$_Parent;
-  const _Parent._() : super._();
+      _$OpenApiParentImpl;
+  const _OpenApiParent._() : super._();
 
-  factory _Parent.fromJson(Map<String, dynamic> json) = _$_Parent.fromJson;
+  factory _OpenApiParent.fromJson(Map<String, dynamic> json) =
+      _$OpenApiParentImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
   @override
   @JsonKey(ignore: true)
-  _$$_ParentCopyWith<_$_Parent> get copyWith =>
+  _$$OpenApiParentImplCopyWith<_$OpenApiParentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -29,25 +29,27 @@ class FruitAnyOfDisc with _$FruitAnyOfDisc {
   }) = FruitAnyOfDiscUnknown;
 
   factory FruitAnyOfDisc.fromJson(Map<String, dynamic> json) {
+    FruitAnyOfDisc? deserializedModel;
+    // A discriminator property is not defined in the spec so
+    // we try to parse the json against all the models and try to
+    // return one of the valid model. Note: this approach tries
+    // to return one valid model and if more than one model
+    // is valid it then returns unknown type along with the json so
+    // the consumer can decide which model it is.
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       FruitType.fromJson,
     ];
     final deserializedModels = <FruitAnyOfDisc>[];
-    FruitAnyOfDisc? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case FruitType:
-            deserializedModel = FruitAnyOfDisc.asFruitType(
-              fruitTypeValue: parsedModel as FruitType,
-            );
-            break;
-          default:
-            deserializedModel = FruitAnyOfDisc.unknown(
-              json: json,
-            );
+        if (parsedModel is FruitType) {
+          deserializedModel = FruitAnyOfDisc.asFruitType(
+            fruitTypeValue: parsedModel,
+          );
+        } else {
+          deserializedModel = FruitAnyOfDisc.unknown(json: json);
         }
         deserializedModels.add(deserializedModel);
       } catch (e) {
@@ -67,6 +69,7 @@ class FruitAnyOfDisc with _$FruitAnyOfDisc {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
+
     return deserializedModel ?? FruitAnyOfDisc.unknown(json: json);
   }
 

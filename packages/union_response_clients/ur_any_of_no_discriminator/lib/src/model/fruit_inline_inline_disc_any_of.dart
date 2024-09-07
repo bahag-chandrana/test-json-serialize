@@ -33,27 +33,28 @@ class FruitInlineInlineDiscAnyOf with _$FruitInlineInlineDiscAnyOf {
   }) = FruitInlineInlineDiscAnyOfUnknown;
 
   factory FruitInlineInlineDiscAnyOf.fromJson(Map<String, dynamic> json) {
+    FruitInlineInlineDiscAnyOf? deserializedModel;
+    // A discriminator property is not defined in the spec so
+    // we try to parse the json against all the models and try to
+    // return one of the valid model. Note: this approach tries
+    // to return one valid model and if more than one model
+    // is valid it then returns unknown type along with the json so
+    // the consumer can decide which model it is.
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       FruitInlineInlineDiscAnyOfAnyOf.fromJson,
     ];
     final deserializedModels = <FruitInlineInlineDiscAnyOf>[];
-    FruitInlineInlineDiscAnyOf? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case FruitInlineInlineDiscAnyOfAnyOf:
-            deserializedModel =
-                FruitInlineInlineDiscAnyOf.asFruitInlineInlineDiscAnyOfAnyOf(
-              fruitInlineInlineDiscAnyOfAnyOfValue:
-                  parsedModel as FruitInlineInlineDiscAnyOfAnyOf,
-            );
-            break;
-          default:
-            deserializedModel = FruitInlineInlineDiscAnyOf.unknown(
-              json: json,
-            );
+        if (parsedModel is FruitInlineInlineDiscAnyOfAnyOf) {
+          deserializedModel =
+              FruitInlineInlineDiscAnyOf.asFruitInlineInlineDiscAnyOfAnyOf(
+            fruitInlineInlineDiscAnyOfAnyOfValue: parsedModel,
+          );
+        } else {
+          deserializedModel = FruitInlineInlineDiscAnyOf.unknown(json: json);
         }
         deserializedModels.add(deserializedModel);
       } catch (e) {
@@ -73,6 +74,7 @@ class FruitInlineInlineDiscAnyOf with _$FruitInlineInlineDiscAnyOf {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
+
     return deserializedModel ?? FruitInlineInlineDiscAnyOf.unknown(json: json);
   }
 

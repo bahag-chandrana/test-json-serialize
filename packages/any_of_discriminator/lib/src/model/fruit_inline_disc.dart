@@ -36,31 +36,32 @@ class FruitInlineDisc with _$FruitInlineDisc {
   }) = FruitInlineDiscUnknown;
 
   factory FruitInlineDisc.fromJson(Map<String, dynamic> json) {
+    FruitInlineDisc? deserializedModel;
+    // A discriminator property is not defined in the spec so
+    // we try to parse the json against all the models and try to
+    // return one of the valid model. Note: this approach tries
+    // to return one valid model and if more than one model
+    // is valid it then returns unknown type along with the json so
+    // the consumer can decide which model it is.
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       FruitInlineDiscAnyOf.fromJson,
       FruitInlineDiscAnyOf1.fromJson,
     ];
     final deserializedModels = <FruitInlineDisc>[];
-    FruitInlineDisc? deserializedModel;
     for (final fromJsonMethod in fromJsonMethods) {
       try {
         final dynamic parsedModel = fromJsonMethod.call(json);
         // Note following line won't be executed if already the above parsing fails.
-        switch (deserializedModel.runtimeType) {
-          case FruitInlineDiscAnyOf:
-            deserializedModel = FruitInlineDisc.asFruitInlineDiscAnyOf(
-              fruitInlineDiscAnyOfValue: parsedModel as FruitInlineDiscAnyOf,
-            );
-            break;
-          case FruitInlineDiscAnyOf1:
-            deserializedModel = FruitInlineDisc.asFruitInlineDiscAnyOf1(
-              fruitInlineDiscAnyOf1Value: parsedModel as FruitInlineDiscAnyOf1,
-            );
-            break;
-          default:
-            deserializedModel = FruitInlineDisc.unknown(
-              json: json,
-            );
+        if (parsedModel is FruitInlineDiscAnyOf) {
+          deserializedModel = FruitInlineDisc.asFruitInlineDiscAnyOf(
+            fruitInlineDiscAnyOfValue: parsedModel,
+          );
+        } else if (parsedModel is FruitInlineDiscAnyOf1) {
+          deserializedModel = FruitInlineDisc.asFruitInlineDiscAnyOf1(
+            fruitInlineDiscAnyOf1Value: parsedModel,
+          );
+        } else {
+          deserializedModel = FruitInlineDisc.unknown(json: json);
         }
         deserializedModels.add(deserializedModel);
       } catch (e) {
@@ -80,6 +81,7 @@ class FruitInlineDisc with _$FruitInlineDisc {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
+
     return deserializedModel ?? FruitInlineDisc.unknown(json: json);
   }
 

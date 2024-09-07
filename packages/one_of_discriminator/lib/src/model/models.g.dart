@@ -6,252 +6,271 @@ part of 'models.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_IntInUnion _$$_IntInUnionFromJson(Map<String, dynamic> json) =>
-    _$_IntInUnion(
-      intValue: json['intValue'] as int,
+_$IntInUnionImpl _$$IntInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$IntInUnionImpl(
+      intValue: (json['intValue'] as num).toInt(),
     );
 
-Map<String, dynamic> _$$_IntInUnionToJson(_$_IntInUnion instance) =>
+Map<String, dynamic> _$$IntInUnionImplToJson(_$IntInUnionImpl instance) =>
     <String, dynamic>{
       'intValue': instance.intValue,
     };
 
-_$_StringInUnion _$$_StringInUnionFromJson(Map<String, dynamic> json) =>
-    _$_StringInUnion(
+_$StringInUnionImpl _$$StringInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$StringInUnionImpl(
       stringValue: json['stringValue'] as String,
     );
 
-Map<String, dynamic> _$$_StringInUnionToJson(_$_StringInUnion instance) =>
+Map<String, dynamic> _$$StringInUnionImplToJson(_$StringInUnionImpl instance) =>
     <String, dynamic>{
       'stringValue': instance.stringValue,
     };
 
-_$_BoolInUnion _$$_BoolInUnionFromJson(Map<String, dynamic> json) =>
-    _$_BoolInUnion(
+_$BoolInUnionImpl _$$BoolInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$BoolInUnionImpl(
       boolValue: json['boolValue'] as bool,
     );
 
-Map<String, dynamic> _$$_BoolInUnionToJson(_$_BoolInUnion instance) =>
+Map<String, dynamic> _$$BoolInUnionImplToJson(_$BoolInUnionImpl instance) =>
     <String, dynamic>{
       'boolValue': instance.boolValue,
     };
 
-_$_DoubleInUnion _$$_DoubleInUnionFromJson(Map<String, dynamic> json) =>
-    _$_DoubleInUnion(
+_$DoubleInUnionImpl _$$DoubleInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$DoubleInUnionImpl(
       doubleValue: (json['doubleValue'] as num).toDouble(),
     );
 
-Map<String, dynamic> _$$_DoubleInUnionToJson(_$_DoubleInUnion instance) =>
+Map<String, dynamic> _$$DoubleInUnionImplToJson(_$DoubleInUnionImpl instance) =>
     <String, dynamic>{
       'doubleValue': instance.doubleValue,
     };
 
-_$_ObjectInUnion _$$_ObjectInUnionFromJson(Map<String, dynamic> json) =>
-    _$_ObjectInUnion(
+_$ObjectInUnionImpl _$$ObjectInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$ObjectInUnionImpl(
       objectValue: json['objectValue'] as Object,
     );
 
-Map<String, dynamic> _$$_ObjectInUnionToJson(_$_ObjectInUnion instance) =>
+Map<String, dynamic> _$$ObjectInUnionImplToJson(_$ObjectInUnionImpl instance) =>
     <String, dynamic>{
       'objectValue': instance.objectValue,
     };
 
-_$_NumInUnion _$$_NumInUnionFromJson(Map<String, dynamic> json) =>
-    _$_NumInUnion(
+_$NumInUnionImpl _$$NumInUnionImplFromJson(Map<String, dynamic> json) =>
+    _$NumInUnionImpl(
       numValue: json['numValue'] as num,
     );
 
-Map<String, dynamic> _$$_NumInUnionToJson(_$_NumInUnion instance) =>
+Map<String, dynamic> _$$NumInUnionImplToJson(_$NumInUnionImpl instance) =>
     <String, dynamic>{
       'numValue': instance.numValue,
     };
 
-_$_DateTimeInUnion _$$_DateTimeInUnionFromJson(Map<String, dynamic> json) =>
-    _$_DateTimeInUnion(
+_$DateTimeInUnionImpl _$$DateTimeInUnionImplFromJson(
+        Map<String, dynamic> json) =>
+    _$DateTimeInUnionImpl(
       dateTimeValue: DateTime.parse(json['dateTimeValue'] as String),
     );
 
-Map<String, dynamic> _$$_DateTimeInUnionToJson(_$_DateTimeInUnion instance) =>
+Map<String, dynamic> _$$DateTimeInUnionImplToJson(
+        _$DateTimeInUnionImpl instance) =>
     <String, dynamic>{
       'dateTimeValue': instance.dateTimeValue.toIso8601String(),
     };
 
-_$_AppleAllOfDisc _$$_AppleAllOfDiscFromJson(Map<String, dynamic> json) =>
-    _$_AppleAllOfDisc(
-      seeds: json['seeds'] as int,
+_$OpenApiAppleAllOfDiscImpl _$$OpenApiAppleAllOfDiscImplFromJson(
+        Map<String, dynamic> json) =>
+    _$OpenApiAppleAllOfDiscImpl(
+      seeds: (json['seeds'] as num).toInt(),
       fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_AppleAllOfDiscToJson(_$_AppleAllOfDisc instance) =>
+Map<String, dynamic> _$$OpenApiAppleAllOfDiscImplToJson(
+        _$OpenApiAppleAllOfDiscImpl instance) =>
     <String, dynamic>{
       'seeds': instance.seeds,
       'fruitType': instance.fruitType,
     };
 
-_$_AppleGrandparentDisc _$$_AppleGrandparentDiscFromJson(
+_$OpenApiAppleGrandparentDiscImpl _$$OpenApiAppleGrandparentDiscImplFromJson(
         Map<String, dynamic> json) =>
-    _$_AppleGrandparentDisc(
-      seeds: json['seeds'] as int,
+    _$OpenApiAppleGrandparentDiscImpl(
+      seeds: (json['seeds'] as num).toInt(),
       fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_AppleGrandparentDiscToJson(
-        _$_AppleGrandparentDisc instance) =>
+Map<String, dynamic> _$$OpenApiAppleGrandparentDiscImplToJson(
+        _$OpenApiAppleGrandparentDiscImpl instance) =>
     <String, dynamic>{
       'seeds': instance.seeds,
       'fruitType': instance.fruitType,
     };
 
-_$_AppleReqDisc _$$_AppleReqDiscFromJson(Map<String, dynamic> json) =>
-    _$_AppleReqDisc(
-      seeds: json['seeds'] as int,
+_$OpenApiAppleReqDiscImpl _$$OpenApiAppleReqDiscImplFromJson(
+        Map<String, dynamic> json) =>
+    _$OpenApiAppleReqDiscImpl(
+      seeds: (json['seeds'] as num).toInt(),
       fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_AppleReqDiscToJson(_$_AppleReqDisc instance) =>
+Map<String, dynamic> _$$OpenApiAppleReqDiscImplToJson(
+        _$OpenApiAppleReqDiscImpl instance) =>
     <String, dynamic>{
       'seeds': instance.seeds,
       'fruitType': instance.fruitType,
     };
 
-_$_BananaAllOfDisc _$$_BananaAllOfDiscFromJson(Map<String, dynamic> json) =>
-    _$_BananaAllOfDisc(
-      length: json['length'] as int,
+_$OpenApiBananaAllOfDiscImpl _$$OpenApiBananaAllOfDiscImplFromJson(
+        Map<String, dynamic> json) =>
+    _$OpenApiBananaAllOfDiscImpl(
+      length: (json['length'] as num).toInt(),
       fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_BananaAllOfDiscToJson(_$_BananaAllOfDisc instance) =>
+Map<String, dynamic> _$$OpenApiBananaAllOfDiscImplToJson(
+        _$OpenApiBananaAllOfDiscImpl instance) =>
     <String, dynamic>{
       'length': instance.length,
       'fruitType': instance.fruitType,
     };
 
-_$_BananaGrandparentDisc _$$_BananaGrandparentDiscFromJson(
+_$OpenApiBananaGrandparentDiscImpl _$$OpenApiBananaGrandparentDiscImplFromJson(
         Map<String, dynamic> json) =>
-    _$_BananaGrandparentDisc(
-      length: json['length'] as int,
+    _$OpenApiBananaGrandparentDiscImpl(
+      length: (json['length'] as num).toInt(),
       fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_BananaGrandparentDiscToJson(
-        _$_BananaGrandparentDisc instance) =>
+Map<String, dynamic> _$$OpenApiBananaGrandparentDiscImplToJson(
+        _$OpenApiBananaGrandparentDiscImpl instance) =>
     <String, dynamic>{
       'length': instance.length,
       'fruitType': instance.fruitType,
     };
 
-_$_BananaReqDisc _$$_BananaReqDiscFromJson(Map<String, dynamic> json) =>
-    _$_BananaReqDisc(
-      length: json['length'] as int,
+_$OpenApiBananaReqDiscImpl _$$OpenApiBananaReqDiscImplFromJson(
+        Map<String, dynamic> json) =>
+    _$OpenApiBananaReqDiscImpl(
+      length: (json['length'] as num).toInt(),
       fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_BananaReqDiscToJson(_$_BananaReqDisc instance) =>
+Map<String, dynamic> _$$OpenApiBananaReqDiscImplToJson(
+        _$OpenApiBananaReqDiscImpl instance) =>
     <String, dynamic>{
       'length': instance.length,
       'fruitType': instance.fruitType,
     };
 
-_$_DiscMissingFromProperties _$$_DiscMissingFromPropertiesFromJson(
-        Map<String, dynamic> json) =>
-    _$_DiscMissingFromProperties(
-      length: json['length'] as int?,
-    );
+_$OpenApiDiscMissingFromPropertiesImpl
+    _$$OpenApiDiscMissingFromPropertiesImplFromJson(
+            Map<String, dynamic> json) =>
+        _$OpenApiDiscMissingFromPropertiesImpl(
+          length: (json['length'] as num?)?.toInt(),
+        );
 
-Map<String, dynamic> _$$_DiscMissingFromPropertiesToJson(
-        _$_DiscMissingFromProperties instance) =>
+Map<String, dynamic> _$$OpenApiDiscMissingFromPropertiesImplToJson(
+        _$OpenApiDiscMissingFromPropertiesImpl instance) =>
     <String, dynamic>{
       'length': instance.length,
     };
 
-_$_DiscOptionalTypeCorrect _$$_DiscOptionalTypeCorrectFromJson(
-        Map<String, dynamic> json) =>
-    _$_DiscOptionalTypeCorrect(
-      fruitType: json['fruitType'] as String?,
-    );
+_$OpenApiDiscOptionalTypeCorrectImpl
+    _$$OpenApiDiscOptionalTypeCorrectImplFromJson(Map<String, dynamic> json) =>
+        _$OpenApiDiscOptionalTypeCorrectImpl(
+          fruitType: json['fruitType'] as String?,
+        );
 
-Map<String, dynamic> _$$_DiscOptionalTypeCorrectToJson(
-        _$_DiscOptionalTypeCorrect instance) =>
+Map<String, dynamic> _$$OpenApiDiscOptionalTypeCorrectImplToJson(
+        _$OpenApiDiscOptionalTypeCorrectImpl instance) =>
     <String, dynamic>{
       'fruitType': instance.fruitType,
     };
 
-_$_DiscOptionalTypeIncorrect _$$_DiscOptionalTypeIncorrectFromJson(
-        Map<String, dynamic> json) =>
-    _$_DiscOptionalTypeIncorrect(
-      fruitType: json['fruitType'] as int?,
-    );
+_$OpenApiDiscOptionalTypeIncorrectImpl
+    _$$OpenApiDiscOptionalTypeIncorrectImplFromJson(
+            Map<String, dynamic> json) =>
+        _$OpenApiDiscOptionalTypeIncorrectImpl(
+          fruitType: (json['fruitType'] as num?)?.toInt(),
+        );
 
-Map<String, dynamic> _$$_DiscOptionalTypeIncorrectToJson(
-        _$_DiscOptionalTypeIncorrect instance) =>
+Map<String, dynamic> _$$OpenApiDiscOptionalTypeIncorrectImplToJson(
+        _$OpenApiDiscOptionalTypeIncorrectImpl instance) =>
     <String, dynamic>{
       'fruitType': instance.fruitType,
     };
 
-_$_DiscTypeIncorrect _$$_DiscTypeIncorrectFromJson(Map<String, dynamic> json) =>
-    _$_DiscTypeIncorrect(
-      fruitType: json['fruitType'] as int,
+_$OpenApiDiscTypeIncorrectImpl _$$OpenApiDiscTypeIncorrectImplFromJson(
+        Map<String, dynamic> json) =>
+    _$OpenApiDiscTypeIncorrectImpl(
+      fruitType: (json['fruitType'] as num).toInt(),
     );
 
-Map<String, dynamic> _$$_DiscTypeIncorrectToJson(
-        _$_DiscTypeIncorrect instance) =>
+Map<String, dynamic> _$$OpenApiDiscTypeIncorrectImplToJson(
+        _$OpenApiDiscTypeIncorrectImpl instance) =>
     <String, dynamic>{
       'fruitType': instance.fruitType,
     };
 
-_$_FruitInlineDiscOneOf _$$_FruitInlineDiscOneOfFromJson(
+_$OpenApiFruitInlineDiscOneOfImpl _$$OpenApiFruitInlineDiscOneOfImplFromJson(
         Map<String, dynamic> json) =>
-    _$_FruitInlineDiscOneOf(
-      seeds: json['seeds'] as int,
+    _$OpenApiFruitInlineDiscOneOfImpl(
+      seeds: (json['seeds'] as num).toInt(),
       fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_FruitInlineDiscOneOfToJson(
-        _$_FruitInlineDiscOneOf instance) =>
+Map<String, dynamic> _$$OpenApiFruitInlineDiscOneOfImplToJson(
+        _$OpenApiFruitInlineDiscOneOfImpl instance) =>
     <String, dynamic>{
       'seeds': instance.seeds,
       'fruitType': instance.fruitType,
     };
 
-_$_FruitInlineDiscOneOf1 _$$_FruitInlineDiscOneOf1FromJson(
+_$OpenApiFruitInlineDiscOneOf1Impl _$$OpenApiFruitInlineDiscOneOf1ImplFromJson(
         Map<String, dynamic> json) =>
-    _$_FruitInlineDiscOneOf1(
-      length: json['length'] as int,
+    _$OpenApiFruitInlineDiscOneOf1Impl(
+      length: (json['length'] as num).toInt(),
       fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_FruitInlineDiscOneOf1ToJson(
-        _$_FruitInlineDiscOneOf1 instance) =>
+Map<String, dynamic> _$$OpenApiFruitInlineDiscOneOf1ImplToJson(
+        _$OpenApiFruitInlineDiscOneOf1Impl instance) =>
     <String, dynamic>{
       'length': instance.length,
       'fruitType': instance.fruitType,
     };
 
-_$_FruitInlineInlineDiscOneOfOneOf _$$_FruitInlineInlineDiscOneOfOneOfFromJson(
+_$OpenApiFruitInlineInlineDiscOneOfOneOfImpl
+    _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplFromJson(
+            Map<String, dynamic> json) =>
+        _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl(
+          fruitType: json['fruitType'] as String,
+        );
+
+Map<String, dynamic> _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplToJson(
+        _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl instance) =>
+    <String, dynamic>{
+      'fruitType': instance.fruitType,
+    };
+
+_$OpenApiFruitTypeImpl _$$OpenApiFruitTypeImplFromJson(
         Map<String, dynamic> json) =>
-    _$_FruitInlineInlineDiscOneOfOneOf(
+    _$OpenApiFruitTypeImpl(
       fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_FruitInlineInlineDiscOneOfOneOfToJson(
-        _$_FruitInlineInlineDiscOneOfOneOf instance) =>
+Map<String, dynamic> _$$OpenApiFruitTypeImplToJson(
+        _$OpenApiFruitTypeImpl instance) =>
     <String, dynamic>{
       'fruitType': instance.fruitType,
     };
 
-_$_FruitType _$$_FruitTypeFromJson(Map<String, dynamic> json) => _$_FruitType(
+_$OpenApiParentImpl _$$OpenApiParentImplFromJson(Map<String, dynamic> json) =>
+    _$OpenApiParentImpl(
       fruitType: json['fruitType'] as String,
     );
 
-Map<String, dynamic> _$$_FruitTypeToJson(_$_FruitType instance) =>
+Map<String, dynamic> _$$OpenApiParentImplToJson(_$OpenApiParentImpl instance) =>
     <String, dynamic>{
-      'fruitType': instance.fruitType,
-    };
-
-_$_Parent _$$_ParentFromJson(Map<String, dynamic> json) => _$_Parent(
-      fruitType: json['fruitType'] as String,
-    );
-
-Map<String, dynamic> _$$_ParentToJson(_$_Parent instance) => <String, dynamic>{
       'fruitType': instance.fruitType,
     };
