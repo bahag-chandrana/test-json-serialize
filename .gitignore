@@ -1,3 +1,5 @@
 .idea
 .vscode
 .dart_tool
+packages/built_value_gen
+packages/local_spec_gen
