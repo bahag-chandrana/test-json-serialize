@@ -271,3 +271,12 @@ scripts:
     packageFilters:
       scope:
         - "customer_master_data_bv"
+  one_of_discriminator_2:
+    run: |
+      melos exec -- java -jar ../openapi-generator-cli.jar generate \
+      -i ../specs/one_of_discriminator.yaml \
+      -o csharp \
+      -g csharp
+    packageFilters:
+      scope:
+        - "one_of_discriminator"
