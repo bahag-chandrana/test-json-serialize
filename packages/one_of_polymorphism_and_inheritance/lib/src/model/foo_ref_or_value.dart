@@ -58,9 +58,52 @@ class FooRefOrValue with _$FooRefOrValue {
         );
         break;
       default:
+
+        /// If deserializedModel is still null, then we try to parse
+        /// the json against all the models and try to return one of the valid model.
+        /// Note: this approach tries to return one valid model and if more than one model
+        /// is valid it then returns unknown type along with the json so
+        /// the consumer can decide which model it is.
+        final fromJsonMethods = <FromJsonMethodType<dynamic>>[
+          Foo.fromJson,
+          FooRef.fromJson,
+        ];
+        final deserializedModels = <FooRefOrValue>[];
+        for (final fromJsonMethod in fromJsonMethods) {
+          try {
+            final dynamic parsedModel = fromJsonMethod.call(json);
+            // Note following line won't be executed if already the above parsing fails.
+            if (parsedModel is Foo) {
+              deserializedModel = FooRefOrValue.asFoo(
+                fooValue: parsedModel,
+              );
+            } else if (parsedModel is FooRef) {
+              deserializedModel = FooRefOrValue.asFooRef(
+                fooRefValue: parsedModel,
+              );
+            } else {
+              deserializedModel = FooRefOrValue.unknown(json: json);
+            }
+            deserializedModels.add(deserializedModel);
+          } catch (e) {
+            // We are suppressing the deserialization error when the json could not
+            // be parsed into one of the model. Because we return [FooRefOrValue.unknown]
+            // if the deserialization fails.
+          }
+        }
+        // Return an unknown type when the incoming json parses into more than one models.
+        // Since we pass deserializedModels, clients can still use the deserialized model.
+        // EvenThough this is valid for AnyOf types, Dart doesn't have polymorphic types.
+        // So we still return this as an unknown type.
+        if (deserializedModels.length > 1) {
+          deserializedModel = FooRefOrValue.unknown(
+            json: json,
+            deserializedModels: deserializedModels,
+            errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
+          );
+        }
         break;
     }
-
     return deserializedModel ?? FooRefOrValue.unknown(json: json);
   }
 

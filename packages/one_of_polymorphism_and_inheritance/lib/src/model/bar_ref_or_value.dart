@@ -41,13 +41,13 @@ class BarRefOrValue with _$BarRefOrValue {
   }) = BarRefOrValueUnknown;
 
   factory BarRefOrValue.fromJson(Map<String, dynamic> json) {
-    BarRefOrValue? deserializedModel;
     // A discriminator property is not defined in the spec so
     // we try to parse the json against all the models and try to
     // return one of the valid model. Note: this approach tries
     // to return one valid model and if more than one model
     // is valid it then returns unknown type along with the json so
     // the consumer can decide which model it is.
+    BarRefOrValue? deserializedModel;
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       Bar.fromJson,
       BarRef.fromJson,
@@ -86,7 +86,6 @@ class BarRefOrValue with _$BarRefOrValue {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
-
     return deserializedModel ?? BarRefOrValue.unknown(json: json);
   }
 

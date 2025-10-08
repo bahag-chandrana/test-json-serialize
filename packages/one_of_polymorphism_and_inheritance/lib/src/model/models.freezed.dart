@@ -22,8 +22,12 @@ IntInUnion _$IntInUnionFromJson(Map<String, dynamic> json) {
 mixin _$IntInUnion {
   int get intValue => throw _privateConstructorUsedError;
 
+  /// Serializes this IntInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of IntInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $IntInUnionCopyWith<IntInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -47,6 +51,8 @@ class _$IntInUnionCopyWithImpl<$Res, $Val extends IntInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of IntInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$IntInUnionImplCopyWithImpl<$Res>
       _$IntInUnionImpl _value, $Res Function(_$IntInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of IntInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -119,11 +127,13 @@ class _$IntInUnionImpl implements _IntInUnion {
                 other.intValue == intValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, intValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of IntInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$IntInUnionImplCopyWith<_$IntInUnionImpl> get copyWith =>
@@ -145,8 +155,11 @@ abstract class _IntInUnion implements IntInUnion {
 
   @override
   int get intValue;
+
+  /// Create a copy of IntInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$IntInUnionImplCopyWith<_$IntInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -159,8 +172,12 @@ StringInUnion _$StringInUnionFromJson(Map<String, dynamic> json) {
 mixin _$StringInUnion {
   String get stringValue => throw _privateConstructorUsedError;
 
+  /// Serializes this StringInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StringInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $StringInUnionCopyWith<StringInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -184,6 +201,8 @@ class _$StringInUnionCopyWithImpl<$Res, $Val extends StringInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of StringInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -217,6 +236,8 @@ class __$$StringInUnionImplCopyWithImpl<$Res>
       _$StringInUnionImpl _value, $Res Function(_$StringInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StringInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -256,11 +277,13 @@ class _$StringInUnionImpl implements _StringInUnion {
                 other.stringValue == stringValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, stringValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StringInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StringInUnionImplCopyWith<_$StringInUnionImpl> get copyWith =>
@@ -283,8 +306,11 @@ abstract class _StringInUnion implements StringInUnion {
 
   @override
   String get stringValue;
+
+  /// Create a copy of StringInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StringInUnionImplCopyWith<_$StringInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -297,8 +323,12 @@ BoolInUnion _$BoolInUnionFromJson(Map<String, dynamic> json) {
 mixin _$BoolInUnion {
   bool get boolValue => throw _privateConstructorUsedError;
 
+  /// Serializes this BoolInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BoolInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BoolInUnionCopyWith<BoolInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -322,6 +352,8 @@ class _$BoolInUnionCopyWithImpl<$Res, $Val extends BoolInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BoolInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -355,6 +387,8 @@ class __$$BoolInUnionImplCopyWithImpl<$Res>
       _$BoolInUnionImpl _value, $Res Function(_$BoolInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BoolInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -394,11 +428,13 @@ class _$BoolInUnionImpl implements _BoolInUnion {
                 other.boolValue == boolValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, boolValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BoolInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BoolInUnionImplCopyWith<_$BoolInUnionImpl> get copyWith =>
@@ -421,8 +457,11 @@ abstract class _BoolInUnion implements BoolInUnion {
 
   @override
   bool get boolValue;
+
+  /// Create a copy of BoolInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BoolInUnionImplCopyWith<_$BoolInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -435,8 +474,12 @@ DoubleInUnion _$DoubleInUnionFromJson(Map<String, dynamic> json) {
 mixin _$DoubleInUnion {
   double get doubleValue => throw _privateConstructorUsedError;
 
+  /// Serializes this DoubleInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DoubleInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DoubleInUnionCopyWith<DoubleInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -460,6 +503,8 @@ class _$DoubleInUnionCopyWithImpl<$Res, $Val extends DoubleInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DoubleInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -493,6 +538,8 @@ class __$$DoubleInUnionImplCopyWithImpl<$Res>
       _$DoubleInUnionImpl _value, $Res Function(_$DoubleInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DoubleInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -532,11 +579,13 @@ class _$DoubleInUnionImpl implements _DoubleInUnion {
                 other.doubleValue == doubleValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, doubleValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DoubleInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DoubleInUnionImplCopyWith<_$DoubleInUnionImpl> get copyWith =>
@@ -559,8 +608,11 @@ abstract class _DoubleInUnion implements DoubleInUnion {
 
   @override
   double get doubleValue;
+
+  /// Create a copy of DoubleInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DoubleInUnionImplCopyWith<_$DoubleInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -573,8 +625,12 @@ ObjectInUnion _$ObjectInUnionFromJson(Map<String, dynamic> json) {
 mixin _$ObjectInUnion {
   Object get objectValue => throw _privateConstructorUsedError;
 
+  /// Serializes this ObjectInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ObjectInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ObjectInUnionCopyWith<ObjectInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -598,6 +654,8 @@ class _$ObjectInUnionCopyWithImpl<$Res, $Val extends ObjectInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ObjectInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -628,6 +686,8 @@ class __$$ObjectInUnionImplCopyWithImpl<$Res>
       _$ObjectInUnionImpl _value, $Res Function(_$ObjectInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ObjectInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -664,12 +724,14 @@ class _$ObjectInUnionImpl implements _ObjectInUnion {
                 .equals(other.objectValue, objectValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(objectValue));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ObjectInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ObjectInUnionImplCopyWith<_$ObjectInUnionImpl> get copyWith =>
@@ -692,8 +754,11 @@ abstract class _ObjectInUnion implements ObjectInUnion {
 
   @override
   Object get objectValue;
+
+  /// Create a copy of ObjectInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ObjectInUnionImplCopyWith<_$ObjectInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -706,8 +771,12 @@ NumInUnion _$NumInUnionFromJson(Map<String, dynamic> json) {
 mixin _$NumInUnion {
   num get numValue => throw _privateConstructorUsedError;
 
+  /// Serializes this NumInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NumInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $NumInUnionCopyWith<NumInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -731,6 +800,8 @@ class _$NumInUnionCopyWithImpl<$Res, $Val extends NumInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of NumInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -764,6 +835,8 @@ class __$$NumInUnionImplCopyWithImpl<$Res>
       _$NumInUnionImpl _value, $Res Function(_$NumInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NumInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -803,11 +876,13 @@ class _$NumInUnionImpl implements _NumInUnion {
                 other.numValue == numValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, numValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NumInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$NumInUnionImplCopyWith<_$NumInUnionImpl> get copyWith =>
@@ -829,8 +904,11 @@ abstract class _NumInUnion implements NumInUnion {
 
   @override
   num get numValue;
+
+  /// Create a copy of NumInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$NumInUnionImplCopyWith<_$NumInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -843,8 +921,12 @@ DateTimeInUnion _$DateTimeInUnionFromJson(Map<String, dynamic> json) {
 mixin _$DateTimeInUnion {
   DateTime get dateTimeValue => throw _privateConstructorUsedError;
 
+  /// Serializes this DateTimeInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DateTimeInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DateTimeInUnionCopyWith<DateTimeInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -868,6 +950,8 @@ class _$DateTimeInUnionCopyWithImpl<$Res, $Val extends DateTimeInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DateTimeInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -901,6 +985,8 @@ class __$$DateTimeInUnionImplCopyWithImpl<$Res>
       _$DateTimeInUnionImpl _value, $Res Function(_$DateTimeInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DateTimeInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -940,11 +1026,13 @@ class _$DateTimeInUnionImpl implements _DateTimeInUnion {
                 other.dateTimeValue == dateTimeValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, dateTimeValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DateTimeInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DateTimeInUnionImplCopyWith<_$DateTimeInUnionImpl> get copyWith =>
@@ -968,8 +1056,11 @@ abstract class _DateTimeInUnion implements DateTimeInUnion {
 
   @override
   DateTime get dateTimeValue;
+
+  /// Create a copy of DateTimeInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DateTimeInUnionImplCopyWith<_$DateTimeInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -988,8 +1079,12 @@ mixin _$Addressable {
   @JsonKey(name: r'id')
   String? get id => throw _privateConstructorUsedError;
 
+  /// Serializes this Addressable to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Addressable
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AddressableCopyWith<Addressable> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1014,6 +1109,8 @@ class _$AddressableCopyWithImpl<$Res, $Val extends Addressable>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Addressable
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1053,6 +1150,8 @@ class __$$AddressableImplCopyWithImpl<$Res>
       _$AddressableImpl _value, $Res Function(_$AddressableImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Addressable
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1106,11 +1205,13 @@ class _$AddressableImpl extends _Addressable {
             (identical(other.id, id) || other.id == id));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, href, id);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Addressable
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AddressableImplCopyWith<_$AddressableImpl> get copyWith =>
@@ -1133,18 +1234,20 @@ abstract class _Addressable extends Addressable {
   factory _Addressable.fromJson(Map<String, dynamic> json) =
       _$AddressableImpl.fromJson;
 
-  @override
-
   /// Hyperlink reference
+  @override
   @JsonKey(name: r'href')
   String? get href;
-  @override
 
   /// unique identifier
+  @override
   @JsonKey(name: r'id')
   String? get id;
+
+  /// Create a copy of Addressable
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AddressableImplCopyWith<_$AddressableImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1180,8 +1283,12 @@ mixin _$Bar {
   @JsonKey(name: r'@type')
   String get atType => throw _privateConstructorUsedError;
 
+  /// Serializes this Bar to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Bar
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BarCopyWith<Bar> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -1212,6 +1319,8 @@ class _$BarCopyWithImpl<$Res, $Val extends Bar> implements $BarCopyWith<$Res> {
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Bar
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1260,6 +1369,8 @@ class _$BarCopyWithImpl<$Res, $Val extends Bar> implements $BarCopyWith<$Res> {
     ) as $Val);
   }
 
+  /// Create a copy of Bar
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FooRefOrValueCopyWith<$Res>? get foo {
@@ -1299,6 +1410,8 @@ class __$$BarImplCopyWithImpl<$Res> extends _$BarCopyWithImpl<$Res, _$BarImpl>
   __$$BarImplCopyWithImpl(_$BarImpl _value, $Res Function(_$BarImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Bar
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1422,12 +1535,14 @@ class _$BarImpl extends _Bar {
             (identical(other.atType, atType) || other.atType == atType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, id, barPropA, fooPropB, foo,
       href, atSchemaLocation, atBaseType, atType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Bar
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BarImplCopyWith<_$BarImpl> get copyWith =>
@@ -1467,28 +1582,31 @@ abstract class _Bar extends Bar {
   @override
   @JsonKey(name: r'foo')
   FooRefOrValue? get foo;
-  @override
 
   /// Hyperlink reference
+  @override
   @JsonKey(name: r'href')
   String? get href;
-  @override
 
   /// A URI to a JSON-Schema file that defines additional attributes and relationships
+  @override
   @JsonKey(name: r'@schemaLocation')
   String? get atSchemaLocation;
-  @override
 
   /// When sub-classing, this defines the super-class
+  @override
   @JsonKey(name: r'@baseType')
   String? get atBaseType;
-  @override
 
   /// When sub-classing, this defines the sub-class Extensible name
+  @override
   @JsonKey(name: r'@type')
   String get atType;
+
+  /// Create a copy of Bar
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BarImplCopyWith<_$BarImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1526,8 +1644,12 @@ mixin _$BarCreate {
   @JsonKey(name: r'@type')
   String get atType => throw _privateConstructorUsedError;
 
+  /// Serializes this BarCreate to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BarCreate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BarCreateCopyWith<BarCreate> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1560,6 +1682,8 @@ class _$BarCreateCopyWithImpl<$Res, $Val extends BarCreate>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BarCreate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1608,6 +1732,8 @@ class _$BarCreateCopyWithImpl<$Res, $Val extends BarCreate>
     ) as $Val);
   }
 
+  /// Create a copy of BarCreate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FooRefOrValueCopyWith<$Res>? get foo {
@@ -1651,6 +1777,8 @@ class __$$BarCreateImplCopyWithImpl<$Res>
       _$BarCreateImpl _value, $Res Function(_$BarCreateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BarCreate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1776,12 +1904,14 @@ class _$BarCreateImpl extends _BarCreate {
             (identical(other.atType, atType) || other.atType == atType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, barPropA, fooPropB, foo, href,
       id, atSchemaLocation, atBaseType, atType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BarCreate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BarCreateImplCopyWith<_$BarCreateImpl> get copyWith =>
@@ -1819,33 +1949,36 @@ abstract class _BarCreate extends BarCreate {
   @override
   @JsonKey(name: r'foo')
   FooRefOrValue? get foo;
-  @override
 
   /// Hyperlink reference
+  @override
   @JsonKey(name: r'href')
   String? get href;
-  @override
 
   /// unique identifier
+  @override
   @JsonKey(name: r'id')
   String? get id;
-  @override
 
   /// A URI to a JSON-Schema file that defines additional attributes and relationships
+  @override
   @JsonKey(name: r'@schemaLocation')
   String? get atSchemaLocation;
-  @override
 
   /// When sub-classing, this defines the super-class
+  @override
   @JsonKey(name: r'@baseType')
   String? get atBaseType;
-  @override
 
   /// When sub-classing, this defines the sub-class Extensible name
+  @override
   @JsonKey(name: r'@type')
   String get atType;
+
+  /// Create a copy of BarCreate
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BarCreateImplCopyWith<_$BarCreateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1884,8 +2017,12 @@ mixin _$BarRef {
   @JsonKey(name: r'@type')
   String get atType => throw _privateConstructorUsedError;
 
+  /// Serializes this BarRef to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BarRef
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BarRefCopyWith<BarRef> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -1914,6 +2051,8 @@ class _$BarRefCopyWithImpl<$Res, $Val extends BarRef>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BarRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1983,6 +2122,8 @@ class __$$BarRefImplCopyWithImpl<$Res>
       _$BarRefImpl _value, $Res Function(_$BarRefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BarRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2100,12 +2241,14 @@ class _$BarRefImpl extends _BarRef {
             (identical(other.atType, atType) || other.atType == atType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, name, atReferredType, href, id,
       atSchemaLocation, atBaseType, atType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BarRef
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BarRefImplCopyWith<_$BarRefImpl> get copyWith =>
@@ -2132,43 +2275,45 @@ abstract class _BarRef extends BarRef {
 
   factory _BarRef.fromJson(Map<String, dynamic> json) = _$BarRefImpl.fromJson;
 
-  @override
-
   /// Name of the related entity.
+  @override
   @JsonKey(name: r'name')
   String? get name;
-  @override
 
   /// The actual type of the target instance when needed for disambiguation.
+  @override
   @JsonKey(name: r'@referredType')
   String? get atReferredType;
-  @override
 
   /// Hyperlink reference
+  @override
   @JsonKey(name: r'href')
   String? get href;
-  @override
 
   /// unique identifier
+  @override
   @JsonKey(name: r'id')
   String? get id;
-  @override
 
   /// A URI to a JSON-Schema file that defines additional attributes and relationships
+  @override
   @JsonKey(name: r'@schemaLocation')
   String? get atSchemaLocation;
-  @override
 
   /// When sub-classing, this defines the super-class
+  @override
   @JsonKey(name: r'@baseType')
   String? get atBaseType;
-  @override
 
   /// When sub-classing, this defines the sub-class Extensible name
+  @override
   @JsonKey(name: r'@type')
   String get atType;
+
+  /// Create a copy of BarRef
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BarRefImplCopyWith<_$BarRefImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2255,6 +2400,9 @@ class _$BarRefOrValueCopyWithImpl<$Res, $Val extends BarRefOrValue>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2276,6 +2424,8 @@ class __$$BarRefOrValueAsBarImplCopyWithImpl<$Res>
       $Res Function(_$BarRefOrValueAsBarImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2289,6 +2439,8 @@ class __$$BarRefOrValueAsBarImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BarCopyWith<$Res> get barValue {
@@ -2323,7 +2475,9 @@ class _$BarRefOrValueAsBarImpl extends BarRefOrValueAsBar {
   @override
   int get hashCode => Object.hash(runtimeType, barValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BarRefOrValueAsBarImplCopyWith<_$BarRefOrValueAsBarImpl> get copyWith =>
@@ -2423,7 +2577,10 @@ abstract class BarRefOrValueAsBar extends BarRefOrValue {
   const BarRefOrValueAsBar._() : super._();
 
   Bar get barValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BarRefOrValueAsBarImplCopyWith<_$BarRefOrValueAsBarImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2448,6 +2605,8 @@ class __$$BarRefOrValueAsBarRefImplCopyWithImpl<$Res>
       $Res Function(_$BarRefOrValueAsBarRefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2461,6 +2620,8 @@ class __$$BarRefOrValueAsBarRefImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BarRefCopyWith<$Res> get barRefValue {
@@ -2495,7 +2656,9 @@ class _$BarRefOrValueAsBarRefImpl extends BarRefOrValueAsBarRef {
   @override
   int get hashCode => Object.hash(runtimeType, barRefValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BarRefOrValueAsBarRefImplCopyWith<_$BarRefOrValueAsBarRefImpl>
@@ -2595,7 +2758,10 @@ abstract class BarRefOrValueAsBarRef extends BarRefOrValue {
   const BarRefOrValueAsBarRef._() : super._();
 
   BarRef get barRefValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BarRefOrValueAsBarRefImplCopyWith<_$BarRefOrValueAsBarRefImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2622,6 +2788,8 @@ class __$$BarRefOrValueUnknownImplCopyWithImpl<$Res>
       $Res Function(_$BarRefOrValueUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2732,7 +2900,9 @@ class _$BarRefOrValueUnknownImpl extends BarRefOrValueUnknown {
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BarRefOrValueUnknownImplCopyWith<_$BarRefOrValueUnknownImpl>
@@ -2844,7 +3014,10 @@ abstract class BarRefOrValueUnknown extends BarRefOrValue {
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<BarRefOrValue> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BarRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BarRefOrValueUnknownImplCopyWith<_$BarRefOrValueUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2853,12 +3026,12 @@ abstract class BarRefOrValueUnknown extends BarRefOrValue {
 mixin _$Entity {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(Bar bar) bar,
-    required TResult Function(BarCreate barCreate) barCreate,
-    required TResult Function(Foo foo) foo,
-    required TResult Function(Pasta pasta) pasta,
-    required TResult Function(Pizza pizza) pizza,
-    required TResult Function(PizzaSpeziale pizzaSpeziale) pizzaspeziale,
+    required TResult Function(Bar barValue) asBar,
+    required TResult Function(BarCreate barCreateValue) asBarCreate,
+    required TResult Function(Foo fooValue) asFoo,
+    required TResult Function(Pasta pastaValue) asPasta,
+    required TResult Function(Pizza pizzaValue) asPizza,
+    required TResult Function(PizzaSpeziale pizzaSpezialeValue) asPizzaSpeziale,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -2870,12 +3043,12 @@ mixin _$Entity {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(Bar bar)? bar,
-    TResult? Function(BarCreate barCreate)? barCreate,
-    TResult? Function(Foo foo)? foo,
-    TResult? Function(Pasta pasta)? pasta,
-    TResult? Function(Pizza pizza)? pizza,
-    TResult? Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult? Function(Bar barValue)? asBar,
+    TResult? Function(BarCreate barCreateValue)? asBarCreate,
+    TResult? Function(Foo fooValue)? asFoo,
+    TResult? Function(Pasta pastaValue)? asPasta,
+    TResult? Function(Pizza pizzaValue)? asPizza,
+    TResult? Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -2887,12 +3060,12 @@ mixin _$Entity {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(Bar bar)? bar,
-    TResult Function(BarCreate barCreate)? barCreate,
-    TResult Function(Foo foo)? foo,
-    TResult Function(Pasta pasta)? pasta,
-    TResult Function(Pizza pizza)? pizza,
-    TResult Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult Function(Bar barValue)? asBar,
+    TResult Function(BarCreate barCreateValue)? asBarCreate,
+    TResult Function(Foo fooValue)? asFoo,
+    TResult Function(Pasta pastaValue)? asPasta,
+    TResult Function(Pizza pizzaValue)? asPizza,
+    TResult Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -2905,34 +3078,34 @@ mixin _$Entity {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityBar value) bar,
-    required TResult Function(EntityBar_create value) barCreate,
-    required TResult Function(EntityFoo value) foo,
-    required TResult Function(EntityPasta value) pasta,
-    required TResult Function(EntityPizza value) pizza,
-    required TResult Function(EntityPizzaspeziale value) pizzaspeziale,
+    required TResult Function(EntityAsBar value) asBar,
+    required TResult Function(EntityAsBarCreate value) asBarCreate,
+    required TResult Function(EntityAsFoo value) asFoo,
+    required TResult Function(EntityAsPasta value) asPasta,
+    required TResult Function(EntityAsPizza value) asPizza,
+    required TResult Function(EntityAsPizzaSpeziale value) asPizzaSpeziale,
     required TResult Function(EntityUnknown value) unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityBar value)? bar,
-    TResult? Function(EntityBar_create value)? barCreate,
-    TResult? Function(EntityFoo value)? foo,
-    TResult? Function(EntityPasta value)? pasta,
-    TResult? Function(EntityPizza value)? pizza,
-    TResult? Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult? Function(EntityAsBar value)? asBar,
+    TResult? Function(EntityAsBarCreate value)? asBarCreate,
+    TResult? Function(EntityAsFoo value)? asFoo,
+    TResult? Function(EntityAsPasta value)? asPasta,
+    TResult? Function(EntityAsPizza value)? asPizza,
+    TResult? Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult? Function(EntityUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityBar value)? bar,
-    TResult Function(EntityBar_create value)? barCreate,
-    TResult Function(EntityFoo value)? foo,
-    TResult Function(EntityPasta value)? pasta,
-    TResult Function(EntityPizza value)? pizza,
-    TResult Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult Function(EntityAsBar value)? asBar,
+    TResult Function(EntityAsBarCreate value)? asBarCreate,
+    TResult Function(EntityAsFoo value)? asFoo,
+    TResult Function(EntityAsPasta value)? asPasta,
+    TResult Function(EntityAsPizza value)? asPizza,
+    TResult Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult Function(EntityUnknown value)? unknown,
     required TResult orElse(),
   }) =>
@@ -2954,88 +3127,98 @@ class _$EntityCopyWithImpl<$Res, $Val extends Entity>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
-abstract class _$$EntityBarImplCopyWith<$Res> {
-  factory _$$EntityBarImplCopyWith(
-          _$EntityBarImpl value, $Res Function(_$EntityBarImpl) then) =
-      __$$EntityBarImplCopyWithImpl<$Res>;
+abstract class _$$EntityAsBarImplCopyWith<$Res> {
+  factory _$$EntityAsBarImplCopyWith(
+          _$EntityAsBarImpl value, $Res Function(_$EntityAsBarImpl) then) =
+      __$$EntityAsBarImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({Bar bar});
+  $Res call({Bar barValue});
 
-  $BarCopyWith<$Res> get bar;
+  $BarCopyWith<$Res> get barValue;
 }
 
 /// @nodoc
-class __$$EntityBarImplCopyWithImpl<$Res>
-    extends _$EntityCopyWithImpl<$Res, _$EntityBarImpl>
-    implements _$$EntityBarImplCopyWith<$Res> {
-  __$$EntityBarImplCopyWithImpl(
-      _$EntityBarImpl _value, $Res Function(_$EntityBarImpl) _then)
+class __$$EntityAsBarImplCopyWithImpl<$Res>
+    extends _$EntityCopyWithImpl<$Res, _$EntityAsBarImpl>
+    implements _$$EntityAsBarImplCopyWith<$Res> {
+  __$$EntityAsBarImplCopyWithImpl(
+      _$EntityAsBarImpl _value, $Res Function(_$EntityAsBarImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? bar = null,
+    Object? barValue = null,
   }) {
-    return _then(_$EntityBarImpl(
-      bar: null == bar
-          ? _value.bar
-          : bar // ignore: cast_nullable_to_non_nullable
+    return _then(_$EntityAsBarImpl(
+      barValue: null == barValue
+          ? _value.barValue
+          : barValue // ignore: cast_nullable_to_non_nullable
               as Bar,
     ));
   }
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $BarCopyWith<$Res> get bar {
-    return $BarCopyWith<$Res>(_value.bar, (value) {
-      return _then(_value.copyWith(bar: value));
+  $BarCopyWith<$Res> get barValue {
+    return $BarCopyWith<$Res>(_value.barValue, (value) {
+      return _then(_value.copyWith(barValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$EntityBarImpl extends EntityBar {
-  const _$EntityBarImpl({required this.bar}) : super._();
+class _$EntityAsBarImpl extends EntityAsBar {
+  const _$EntityAsBarImpl({required this.barValue}) : super._();
 
   @override
-  final Bar bar;
+  final Bar barValue;
 
   @override
   String toString() {
-    return 'Entity.bar(bar: $bar)';
+    return 'Entity.asBar(barValue: $barValue)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$EntityBarImpl &&
-            (identical(other.bar, bar) || other.bar == bar));
+            other is _$EntityAsBarImpl &&
+            (identical(other.barValue, barValue) ||
+                other.barValue == barValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, bar);
+  int get hashCode => Object.hash(runtimeType, barValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$EntityBarImplCopyWith<_$EntityBarImpl> get copyWith =>
-      __$$EntityBarImplCopyWithImpl<_$EntityBarImpl>(this, _$identity);
+  _$$EntityAsBarImplCopyWith<_$EntityAsBarImpl> get copyWith =>
+      __$$EntityAsBarImplCopyWithImpl<_$EntityAsBarImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(Bar bar) bar,
-    required TResult Function(BarCreate barCreate) barCreate,
-    required TResult Function(Foo foo) foo,
-    required TResult Function(Pasta pasta) pasta,
-    required TResult Function(Pizza pizza) pizza,
-    required TResult Function(PizzaSpeziale pizzaSpeziale) pizzaspeziale,
+    required TResult Function(Bar barValue) asBar,
+    required TResult Function(BarCreate barCreateValue) asBarCreate,
+    required TResult Function(Foo fooValue) asFoo,
+    required TResult Function(Pasta pastaValue) asPasta,
+    required TResult Function(Pizza pizzaValue) asPizza,
+    required TResult Function(PizzaSpeziale pizzaSpezialeValue) asPizzaSpeziale,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -3044,18 +3227,18 @@ class _$EntityBarImpl extends EntityBar {
             List<Entity> deserializedModels)
         unknown,
   }) {
-    return bar(this.bar);
+    return asBar(barValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(Bar bar)? bar,
-    TResult? Function(BarCreate barCreate)? barCreate,
-    TResult? Function(Foo foo)? foo,
-    TResult? Function(Pasta pasta)? pasta,
-    TResult? Function(Pizza pizza)? pizza,
-    TResult? Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult? Function(Bar barValue)? asBar,
+    TResult? Function(BarCreate barCreateValue)? asBarCreate,
+    TResult? Function(Foo fooValue)? asFoo,
+    TResult? Function(Pasta pastaValue)? asPasta,
+    TResult? Function(Pizza pizzaValue)? asPizza,
+    TResult? Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -3064,18 +3247,18 @@ class _$EntityBarImpl extends EntityBar {
             List<Entity> deserializedModels)?
         unknown,
   }) {
-    return bar?.call(this.bar);
+    return asBar?.call(barValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(Bar bar)? bar,
-    TResult Function(BarCreate barCreate)? barCreate,
-    TResult Function(Foo foo)? foo,
-    TResult Function(Pasta pasta)? pasta,
-    TResult Function(Pizza pizza)? pizza,
-    TResult Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult Function(Bar barValue)? asBar,
+    TResult Function(BarCreate barCreateValue)? asBarCreate,
+    TResult Function(Foo fooValue)? asFoo,
+    TResult Function(Pasta pastaValue)? asPasta,
+    TResult Function(Pizza pizzaValue)? asPizza,
+    TResult Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -3085,8 +3268,8 @@ class _$EntityBarImpl extends EntityBar {
         unknown,
     required TResult orElse(),
   }) {
-    if (bar != null) {
-      return bar(this.bar);
+    if (asBar != null) {
+      return asBar(barValue);
     }
     return orElse();
   }
@@ -3094,142 +3277,151 @@ class _$EntityBarImpl extends EntityBar {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityBar value) bar,
-    required TResult Function(EntityBar_create value) barCreate,
-    required TResult Function(EntityFoo value) foo,
-    required TResult Function(EntityPasta value) pasta,
-    required TResult Function(EntityPizza value) pizza,
-    required TResult Function(EntityPizzaspeziale value) pizzaspeziale,
+    required TResult Function(EntityAsBar value) asBar,
+    required TResult Function(EntityAsBarCreate value) asBarCreate,
+    required TResult Function(EntityAsFoo value) asFoo,
+    required TResult Function(EntityAsPasta value) asPasta,
+    required TResult Function(EntityAsPizza value) asPizza,
+    required TResult Function(EntityAsPizzaSpeziale value) asPizzaSpeziale,
     required TResult Function(EntityUnknown value) unknown,
   }) {
-    return bar(this);
+    return asBar(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityBar value)? bar,
-    TResult? Function(EntityBar_create value)? barCreate,
-    TResult? Function(EntityFoo value)? foo,
-    TResult? Function(EntityPasta value)? pasta,
-    TResult? Function(EntityPizza value)? pizza,
-    TResult? Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult? Function(EntityAsBar value)? asBar,
+    TResult? Function(EntityAsBarCreate value)? asBarCreate,
+    TResult? Function(EntityAsFoo value)? asFoo,
+    TResult? Function(EntityAsPasta value)? asPasta,
+    TResult? Function(EntityAsPizza value)? asPizza,
+    TResult? Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult? Function(EntityUnknown value)? unknown,
   }) {
-    return bar?.call(this);
+    return asBar?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityBar value)? bar,
-    TResult Function(EntityBar_create value)? barCreate,
-    TResult Function(EntityFoo value)? foo,
-    TResult Function(EntityPasta value)? pasta,
-    TResult Function(EntityPizza value)? pizza,
-    TResult Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult Function(EntityAsBar value)? asBar,
+    TResult Function(EntityAsBarCreate value)? asBarCreate,
+    TResult Function(EntityAsFoo value)? asFoo,
+    TResult Function(EntityAsPasta value)? asPasta,
+    TResult Function(EntityAsPizza value)? asPizza,
+    TResult Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult Function(EntityUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (bar != null) {
-      return bar(this);
+    if (asBar != null) {
+      return asBar(this);
     }
     return orElse();
   }
 }
 
-abstract class EntityBar extends Entity {
-  const factory EntityBar({required final Bar bar}) = _$EntityBarImpl;
-  const EntityBar._() : super._();
+abstract class EntityAsBar extends Entity {
+  const factory EntityAsBar({required final Bar barValue}) = _$EntityAsBarImpl;
+  const EntityAsBar._() : super._();
 
-  Bar get bar;
-  @JsonKey(ignore: true)
-  _$$EntityBarImplCopyWith<_$EntityBarImpl> get copyWith =>
+  Bar get barValue;
+
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$EntityAsBarImplCopyWith<_$EntityAsBarImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$EntityBar_createImplCopyWith<$Res> {
-  factory _$$EntityBar_createImplCopyWith(_$EntityBar_createImpl value,
-          $Res Function(_$EntityBar_createImpl) then) =
-      __$$EntityBar_createImplCopyWithImpl<$Res>;
+abstract class _$$EntityAsBarCreateImplCopyWith<$Res> {
+  factory _$$EntityAsBarCreateImplCopyWith(_$EntityAsBarCreateImpl value,
+          $Res Function(_$EntityAsBarCreateImpl) then) =
+      __$$EntityAsBarCreateImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({BarCreate barCreate});
+  $Res call({BarCreate barCreateValue});
 
-  $BarCreateCopyWith<$Res> get barCreate;
+  $BarCreateCopyWith<$Res> get barCreateValue;
 }
 
 /// @nodoc
-class __$$EntityBar_createImplCopyWithImpl<$Res>
-    extends _$EntityCopyWithImpl<$Res, _$EntityBar_createImpl>
-    implements _$$EntityBar_createImplCopyWith<$Res> {
-  __$$EntityBar_createImplCopyWithImpl(_$EntityBar_createImpl _value,
-      $Res Function(_$EntityBar_createImpl) _then)
+class __$$EntityAsBarCreateImplCopyWithImpl<$Res>
+    extends _$EntityCopyWithImpl<$Res, _$EntityAsBarCreateImpl>
+    implements _$$EntityAsBarCreateImplCopyWith<$Res> {
+  __$$EntityAsBarCreateImplCopyWithImpl(_$EntityAsBarCreateImpl _value,
+      $Res Function(_$EntityAsBarCreateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? barCreate = null,
+    Object? barCreateValue = null,
   }) {
-    return _then(_$EntityBar_createImpl(
-      barCreate: null == barCreate
-          ? _value.barCreate
-          : barCreate // ignore: cast_nullable_to_non_nullable
+    return _then(_$EntityAsBarCreateImpl(
+      barCreateValue: null == barCreateValue
+          ? _value.barCreateValue
+          : barCreateValue // ignore: cast_nullable_to_non_nullable
               as BarCreate,
     ));
   }
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $BarCreateCopyWith<$Res> get barCreate {
-    return $BarCreateCopyWith<$Res>(_value.barCreate, (value) {
-      return _then(_value.copyWith(barCreate: value));
+  $BarCreateCopyWith<$Res> get barCreateValue {
+    return $BarCreateCopyWith<$Res>(_value.barCreateValue, (value) {
+      return _then(_value.copyWith(barCreateValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$EntityBar_createImpl extends EntityBar_create {
-  const _$EntityBar_createImpl({required this.barCreate}) : super._();
+class _$EntityAsBarCreateImpl extends EntityAsBarCreate {
+  const _$EntityAsBarCreateImpl({required this.barCreateValue}) : super._();
 
   @override
-  final BarCreate barCreate;
+  final BarCreate barCreateValue;
 
   @override
   String toString() {
-    return 'Entity.barCreate(barCreate: $barCreate)';
+    return 'Entity.asBarCreate(barCreateValue: $barCreateValue)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$EntityBar_createImpl &&
-            (identical(other.barCreate, barCreate) ||
-                other.barCreate == barCreate));
+            other is _$EntityAsBarCreateImpl &&
+            (identical(other.barCreateValue, barCreateValue) ||
+                other.barCreateValue == barCreateValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, barCreate);
+  int get hashCode => Object.hash(runtimeType, barCreateValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$EntityBar_createImplCopyWith<_$EntityBar_createImpl> get copyWith =>
-      __$$EntityBar_createImplCopyWithImpl<_$EntityBar_createImpl>(
+  _$$EntityAsBarCreateImplCopyWith<_$EntityAsBarCreateImpl> get copyWith =>
+      __$$EntityAsBarCreateImplCopyWithImpl<_$EntityAsBarCreateImpl>(
           this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(Bar bar) bar,
-    required TResult Function(BarCreate barCreate) barCreate,
-    required TResult Function(Foo foo) foo,
-    required TResult Function(Pasta pasta) pasta,
-    required TResult Function(Pizza pizza) pizza,
-    required TResult Function(PizzaSpeziale pizzaSpeziale) pizzaspeziale,
+    required TResult Function(Bar barValue) asBar,
+    required TResult Function(BarCreate barCreateValue) asBarCreate,
+    required TResult Function(Foo fooValue) asFoo,
+    required TResult Function(Pasta pastaValue) asPasta,
+    required TResult Function(Pizza pizzaValue) asPizza,
+    required TResult Function(PizzaSpeziale pizzaSpezialeValue) asPizzaSpeziale,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -3238,18 +3430,18 @@ class _$EntityBar_createImpl extends EntityBar_create {
             List<Entity> deserializedModels)
         unknown,
   }) {
-    return barCreate(this.barCreate);
+    return asBarCreate(barCreateValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(Bar bar)? bar,
-    TResult? Function(BarCreate barCreate)? barCreate,
-    TResult? Function(Foo foo)? foo,
-    TResult? Function(Pasta pasta)? pasta,
-    TResult? Function(Pizza pizza)? pizza,
-    TResult? Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult? Function(Bar barValue)? asBar,
+    TResult? Function(BarCreate barCreateValue)? asBarCreate,
+    TResult? Function(Foo fooValue)? asFoo,
+    TResult? Function(Pasta pastaValue)? asPasta,
+    TResult? Function(Pizza pizzaValue)? asPizza,
+    TResult? Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -3258,18 +3450,18 @@ class _$EntityBar_createImpl extends EntityBar_create {
             List<Entity> deserializedModels)?
         unknown,
   }) {
-    return barCreate?.call(this.barCreate);
+    return asBarCreate?.call(barCreateValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(Bar bar)? bar,
-    TResult Function(BarCreate barCreate)? barCreate,
-    TResult Function(Foo foo)? foo,
-    TResult Function(Pasta pasta)? pasta,
-    TResult Function(Pizza pizza)? pizza,
-    TResult Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult Function(Bar barValue)? asBar,
+    TResult Function(BarCreate barCreateValue)? asBarCreate,
+    TResult Function(Foo fooValue)? asFoo,
+    TResult Function(Pasta pastaValue)? asPasta,
+    TResult Function(Pizza pizzaValue)? asPizza,
+    TResult Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -3279,8 +3471,8 @@ class _$EntityBar_createImpl extends EntityBar_create {
         unknown,
     required TResult orElse(),
   }) {
-    if (barCreate != null) {
-      return barCreate(this.barCreate);
+    if (asBarCreate != null) {
+      return asBarCreate(barCreateValue);
     }
     return orElse();
   }
@@ -3288,141 +3480,151 @@ class _$EntityBar_createImpl extends EntityBar_create {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityBar value) bar,
-    required TResult Function(EntityBar_create value) barCreate,
-    required TResult Function(EntityFoo value) foo,
-    required TResult Function(EntityPasta value) pasta,
-    required TResult Function(EntityPizza value) pizza,
-    required TResult Function(EntityPizzaspeziale value) pizzaspeziale,
+    required TResult Function(EntityAsBar value) asBar,
+    required TResult Function(EntityAsBarCreate value) asBarCreate,
+    required TResult Function(EntityAsFoo value) asFoo,
+    required TResult Function(EntityAsPasta value) asPasta,
+    required TResult Function(EntityAsPizza value) asPizza,
+    required TResult Function(EntityAsPizzaSpeziale value) asPizzaSpeziale,
     required TResult Function(EntityUnknown value) unknown,
   }) {
-    return barCreate(this);
+    return asBarCreate(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityBar value)? bar,
-    TResult? Function(EntityBar_create value)? barCreate,
-    TResult? Function(EntityFoo value)? foo,
-    TResult? Function(EntityPasta value)? pasta,
-    TResult? Function(EntityPizza value)? pizza,
-    TResult? Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult? Function(EntityAsBar value)? asBar,
+    TResult? Function(EntityAsBarCreate value)? asBarCreate,
+    TResult? Function(EntityAsFoo value)? asFoo,
+    TResult? Function(EntityAsPasta value)? asPasta,
+    TResult? Function(EntityAsPizza value)? asPizza,
+    TResult? Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult? Function(EntityUnknown value)? unknown,
   }) {
-    return barCreate?.call(this);
+    return asBarCreate?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityBar value)? bar,
-    TResult Function(EntityBar_create value)? barCreate,
-    TResult Function(EntityFoo value)? foo,
-    TResult Function(EntityPasta value)? pasta,
-    TResult Function(EntityPizza value)? pizza,
-    TResult Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult Function(EntityAsBar value)? asBar,
+    TResult Function(EntityAsBarCreate value)? asBarCreate,
+    TResult Function(EntityAsFoo value)? asFoo,
+    TResult Function(EntityAsPasta value)? asPasta,
+    TResult Function(EntityAsPizza value)? asPizza,
+    TResult Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult Function(EntityUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (barCreate != null) {
-      return barCreate(this);
+    if (asBarCreate != null) {
+      return asBarCreate(this);
     }
     return orElse();
   }
 }
 
-abstract class EntityBar_create extends Entity {
-  const factory EntityBar_create({required final BarCreate barCreate}) =
-      _$EntityBar_createImpl;
-  const EntityBar_create._() : super._();
+abstract class EntityAsBarCreate extends Entity {
+  const factory EntityAsBarCreate({required final BarCreate barCreateValue}) =
+      _$EntityAsBarCreateImpl;
+  const EntityAsBarCreate._() : super._();
 
-  BarCreate get barCreate;
-  @JsonKey(ignore: true)
-  _$$EntityBar_createImplCopyWith<_$EntityBar_createImpl> get copyWith =>
+  BarCreate get barCreateValue;
+
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$EntityAsBarCreateImplCopyWith<_$EntityAsBarCreateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$EntityFooImplCopyWith<$Res> {
-  factory _$$EntityFooImplCopyWith(
-          _$EntityFooImpl value, $Res Function(_$EntityFooImpl) then) =
-      __$$EntityFooImplCopyWithImpl<$Res>;
+abstract class _$$EntityAsFooImplCopyWith<$Res> {
+  factory _$$EntityAsFooImplCopyWith(
+          _$EntityAsFooImpl value, $Res Function(_$EntityAsFooImpl) then) =
+      __$$EntityAsFooImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({Foo foo});
+  $Res call({Foo fooValue});
 
-  $FooCopyWith<$Res> get foo;
+  $FooCopyWith<$Res> get fooValue;
 }
 
 /// @nodoc
-class __$$EntityFooImplCopyWithImpl<$Res>
-    extends _$EntityCopyWithImpl<$Res, _$EntityFooImpl>
-    implements _$$EntityFooImplCopyWith<$Res> {
-  __$$EntityFooImplCopyWithImpl(
-      _$EntityFooImpl _value, $Res Function(_$EntityFooImpl) _then)
+class __$$EntityAsFooImplCopyWithImpl<$Res>
+    extends _$EntityCopyWithImpl<$Res, _$EntityAsFooImpl>
+    implements _$$EntityAsFooImplCopyWith<$Res> {
+  __$$EntityAsFooImplCopyWithImpl(
+      _$EntityAsFooImpl _value, $Res Function(_$EntityAsFooImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? foo = null,
+    Object? fooValue = null,
   }) {
-    return _then(_$EntityFooImpl(
-      foo: null == foo
-          ? _value.foo
-          : foo // ignore: cast_nullable_to_non_nullable
+    return _then(_$EntityAsFooImpl(
+      fooValue: null == fooValue
+          ? _value.fooValue
+          : fooValue // ignore: cast_nullable_to_non_nullable
               as Foo,
     ));
   }
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $FooCopyWith<$Res> get foo {
-    return $FooCopyWith<$Res>(_value.foo, (value) {
-      return _then(_value.copyWith(foo: value));
+  $FooCopyWith<$Res> get fooValue {
+    return $FooCopyWith<$Res>(_value.fooValue, (value) {
+      return _then(_value.copyWith(fooValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$EntityFooImpl extends EntityFoo {
-  const _$EntityFooImpl({required this.foo}) : super._();
+class _$EntityAsFooImpl extends EntityAsFoo {
+  const _$EntityAsFooImpl({required this.fooValue}) : super._();
 
   @override
-  final Foo foo;
+  final Foo fooValue;
 
   @override
   String toString() {
-    return 'Entity.foo(foo: $foo)';
+    return 'Entity.asFoo(fooValue: $fooValue)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$EntityFooImpl &&
-            (identical(other.foo, foo) || other.foo == foo));
+            other is _$EntityAsFooImpl &&
+            (identical(other.fooValue, fooValue) ||
+                other.fooValue == fooValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, foo);
+  int get hashCode => Object.hash(runtimeType, fooValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$EntityFooImplCopyWith<_$EntityFooImpl> get copyWith =>
-      __$$EntityFooImplCopyWithImpl<_$EntityFooImpl>(this, _$identity);
+  _$$EntityAsFooImplCopyWith<_$EntityAsFooImpl> get copyWith =>
+      __$$EntityAsFooImplCopyWithImpl<_$EntityAsFooImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(Bar bar) bar,
-    required TResult Function(BarCreate barCreate) barCreate,
-    required TResult Function(Foo foo) foo,
-    required TResult Function(Pasta pasta) pasta,
-    required TResult Function(Pizza pizza) pizza,
-    required TResult Function(PizzaSpeziale pizzaSpeziale) pizzaspeziale,
+    required TResult Function(Bar barValue) asBar,
+    required TResult Function(BarCreate barCreateValue) asBarCreate,
+    required TResult Function(Foo fooValue) asFoo,
+    required TResult Function(Pasta pastaValue) asPasta,
+    required TResult Function(Pizza pizzaValue) asPizza,
+    required TResult Function(PizzaSpeziale pizzaSpezialeValue) asPizzaSpeziale,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -3431,18 +3633,18 @@ class _$EntityFooImpl extends EntityFoo {
             List<Entity> deserializedModels)
         unknown,
   }) {
-    return foo(this.foo);
+    return asFoo(fooValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(Bar bar)? bar,
-    TResult? Function(BarCreate barCreate)? barCreate,
-    TResult? Function(Foo foo)? foo,
-    TResult? Function(Pasta pasta)? pasta,
-    TResult? Function(Pizza pizza)? pizza,
-    TResult? Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult? Function(Bar barValue)? asBar,
+    TResult? Function(BarCreate barCreateValue)? asBarCreate,
+    TResult? Function(Foo fooValue)? asFoo,
+    TResult? Function(Pasta pastaValue)? asPasta,
+    TResult? Function(Pizza pizzaValue)? asPizza,
+    TResult? Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -3451,18 +3653,18 @@ class _$EntityFooImpl extends EntityFoo {
             List<Entity> deserializedModels)?
         unknown,
   }) {
-    return foo?.call(this.foo);
+    return asFoo?.call(fooValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(Bar bar)? bar,
-    TResult Function(BarCreate barCreate)? barCreate,
-    TResult Function(Foo foo)? foo,
-    TResult Function(Pasta pasta)? pasta,
-    TResult Function(Pizza pizza)? pizza,
-    TResult Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult Function(Bar barValue)? asBar,
+    TResult Function(BarCreate barCreateValue)? asBarCreate,
+    TResult Function(Foo fooValue)? asFoo,
+    TResult Function(Pasta pastaValue)? asPasta,
+    TResult Function(Pizza pizzaValue)? asPizza,
+    TResult Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -3472,8 +3674,8 @@ class _$EntityFooImpl extends EntityFoo {
         unknown,
     required TResult orElse(),
   }) {
-    if (foo != null) {
-      return foo(this.foo);
+    if (asFoo != null) {
+      return asFoo(fooValue);
     }
     return orElse();
   }
@@ -3481,140 +3683,150 @@ class _$EntityFooImpl extends EntityFoo {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityBar value) bar,
-    required TResult Function(EntityBar_create value) barCreate,
-    required TResult Function(EntityFoo value) foo,
-    required TResult Function(EntityPasta value) pasta,
-    required TResult Function(EntityPizza value) pizza,
-    required TResult Function(EntityPizzaspeziale value) pizzaspeziale,
+    required TResult Function(EntityAsBar value) asBar,
+    required TResult Function(EntityAsBarCreate value) asBarCreate,
+    required TResult Function(EntityAsFoo value) asFoo,
+    required TResult Function(EntityAsPasta value) asPasta,
+    required TResult Function(EntityAsPizza value) asPizza,
+    required TResult Function(EntityAsPizzaSpeziale value) asPizzaSpeziale,
     required TResult Function(EntityUnknown value) unknown,
   }) {
-    return foo(this);
+    return asFoo(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityBar value)? bar,
-    TResult? Function(EntityBar_create value)? barCreate,
-    TResult? Function(EntityFoo value)? foo,
-    TResult? Function(EntityPasta value)? pasta,
-    TResult? Function(EntityPizza value)? pizza,
-    TResult? Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult? Function(EntityAsBar value)? asBar,
+    TResult? Function(EntityAsBarCreate value)? asBarCreate,
+    TResult? Function(EntityAsFoo value)? asFoo,
+    TResult? Function(EntityAsPasta value)? asPasta,
+    TResult? Function(EntityAsPizza value)? asPizza,
+    TResult? Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult? Function(EntityUnknown value)? unknown,
   }) {
-    return foo?.call(this);
+    return asFoo?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityBar value)? bar,
-    TResult Function(EntityBar_create value)? barCreate,
-    TResult Function(EntityFoo value)? foo,
-    TResult Function(EntityPasta value)? pasta,
-    TResult Function(EntityPizza value)? pizza,
-    TResult Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult Function(EntityAsBar value)? asBar,
+    TResult Function(EntityAsBarCreate value)? asBarCreate,
+    TResult Function(EntityAsFoo value)? asFoo,
+    TResult Function(EntityAsPasta value)? asPasta,
+    TResult Function(EntityAsPizza value)? asPizza,
+    TResult Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult Function(EntityUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (foo != null) {
-      return foo(this);
+    if (asFoo != null) {
+      return asFoo(this);
     }
     return orElse();
   }
 }
 
-abstract class EntityFoo extends Entity {
-  const factory EntityFoo({required final Foo foo}) = _$EntityFooImpl;
-  const EntityFoo._() : super._();
+abstract class EntityAsFoo extends Entity {
+  const factory EntityAsFoo({required final Foo fooValue}) = _$EntityAsFooImpl;
+  const EntityAsFoo._() : super._();
 
-  Foo get foo;
-  @JsonKey(ignore: true)
-  _$$EntityFooImplCopyWith<_$EntityFooImpl> get copyWith =>
+  Foo get fooValue;
+
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$EntityAsFooImplCopyWith<_$EntityAsFooImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$EntityPastaImplCopyWith<$Res> {
-  factory _$$EntityPastaImplCopyWith(
-          _$EntityPastaImpl value, $Res Function(_$EntityPastaImpl) then) =
-      __$$EntityPastaImplCopyWithImpl<$Res>;
+abstract class _$$EntityAsPastaImplCopyWith<$Res> {
+  factory _$$EntityAsPastaImplCopyWith(
+          _$EntityAsPastaImpl value, $Res Function(_$EntityAsPastaImpl) then) =
+      __$$EntityAsPastaImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({Pasta pasta});
+  $Res call({Pasta pastaValue});
 
-  $PastaCopyWith<$Res> get pasta;
+  $PastaCopyWith<$Res> get pastaValue;
 }
 
 /// @nodoc
-class __$$EntityPastaImplCopyWithImpl<$Res>
-    extends _$EntityCopyWithImpl<$Res, _$EntityPastaImpl>
-    implements _$$EntityPastaImplCopyWith<$Res> {
-  __$$EntityPastaImplCopyWithImpl(
-      _$EntityPastaImpl _value, $Res Function(_$EntityPastaImpl) _then)
+class __$$EntityAsPastaImplCopyWithImpl<$Res>
+    extends _$EntityCopyWithImpl<$Res, _$EntityAsPastaImpl>
+    implements _$$EntityAsPastaImplCopyWith<$Res> {
+  __$$EntityAsPastaImplCopyWithImpl(
+      _$EntityAsPastaImpl _value, $Res Function(_$EntityAsPastaImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pasta = null,
+    Object? pastaValue = null,
   }) {
-    return _then(_$EntityPastaImpl(
-      pasta: null == pasta
-          ? _value.pasta
-          : pasta // ignore: cast_nullable_to_non_nullable
+    return _then(_$EntityAsPastaImpl(
+      pastaValue: null == pastaValue
+          ? _value.pastaValue
+          : pastaValue // ignore: cast_nullable_to_non_nullable
               as Pasta,
     ));
   }
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $PastaCopyWith<$Res> get pasta {
-    return $PastaCopyWith<$Res>(_value.pasta, (value) {
-      return _then(_value.copyWith(pasta: value));
+  $PastaCopyWith<$Res> get pastaValue {
+    return $PastaCopyWith<$Res>(_value.pastaValue, (value) {
+      return _then(_value.copyWith(pastaValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$EntityPastaImpl extends EntityPasta {
-  const _$EntityPastaImpl({required this.pasta}) : super._();
+class _$EntityAsPastaImpl extends EntityAsPasta {
+  const _$EntityAsPastaImpl({required this.pastaValue}) : super._();
 
   @override
-  final Pasta pasta;
+  final Pasta pastaValue;
 
   @override
   String toString() {
-    return 'Entity.pasta(pasta: $pasta)';
+    return 'Entity.asPasta(pastaValue: $pastaValue)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$EntityPastaImpl &&
-            (identical(other.pasta, pasta) || other.pasta == pasta));
+            other is _$EntityAsPastaImpl &&
+            (identical(other.pastaValue, pastaValue) ||
+                other.pastaValue == pastaValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, pasta);
+  int get hashCode => Object.hash(runtimeType, pastaValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$EntityPastaImplCopyWith<_$EntityPastaImpl> get copyWith =>
-      __$$EntityPastaImplCopyWithImpl<_$EntityPastaImpl>(this, _$identity);
+  _$$EntityAsPastaImplCopyWith<_$EntityAsPastaImpl> get copyWith =>
+      __$$EntityAsPastaImplCopyWithImpl<_$EntityAsPastaImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(Bar bar) bar,
-    required TResult Function(BarCreate barCreate) barCreate,
-    required TResult Function(Foo foo) foo,
-    required TResult Function(Pasta pasta) pasta,
-    required TResult Function(Pizza pizza) pizza,
-    required TResult Function(PizzaSpeziale pizzaSpeziale) pizzaspeziale,
+    required TResult Function(Bar barValue) asBar,
+    required TResult Function(BarCreate barCreateValue) asBarCreate,
+    required TResult Function(Foo fooValue) asFoo,
+    required TResult Function(Pasta pastaValue) asPasta,
+    required TResult Function(Pizza pizzaValue) asPizza,
+    required TResult Function(PizzaSpeziale pizzaSpezialeValue) asPizzaSpeziale,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -3623,18 +3835,18 @@ class _$EntityPastaImpl extends EntityPasta {
             List<Entity> deserializedModels)
         unknown,
   }) {
-    return pasta(this.pasta);
+    return asPasta(pastaValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(Bar bar)? bar,
-    TResult? Function(BarCreate barCreate)? barCreate,
-    TResult? Function(Foo foo)? foo,
-    TResult? Function(Pasta pasta)? pasta,
-    TResult? Function(Pizza pizza)? pizza,
-    TResult? Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult? Function(Bar barValue)? asBar,
+    TResult? Function(BarCreate barCreateValue)? asBarCreate,
+    TResult? Function(Foo fooValue)? asFoo,
+    TResult? Function(Pasta pastaValue)? asPasta,
+    TResult? Function(Pizza pizzaValue)? asPizza,
+    TResult? Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -3643,18 +3855,18 @@ class _$EntityPastaImpl extends EntityPasta {
             List<Entity> deserializedModels)?
         unknown,
   }) {
-    return pasta?.call(this.pasta);
+    return asPasta?.call(pastaValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(Bar bar)? bar,
-    TResult Function(BarCreate barCreate)? barCreate,
-    TResult Function(Foo foo)? foo,
-    TResult Function(Pasta pasta)? pasta,
-    TResult Function(Pizza pizza)? pizza,
-    TResult Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult Function(Bar barValue)? asBar,
+    TResult Function(BarCreate barCreateValue)? asBarCreate,
+    TResult Function(Foo fooValue)? asFoo,
+    TResult Function(Pasta pastaValue)? asPasta,
+    TResult Function(Pizza pizzaValue)? asPizza,
+    TResult Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -3664,8 +3876,8 @@ class _$EntityPastaImpl extends EntityPasta {
         unknown,
     required TResult orElse(),
   }) {
-    if (pasta != null) {
-      return pasta(this.pasta);
+    if (asPasta != null) {
+      return asPasta(pastaValue);
     }
     return orElse();
   }
@@ -3673,140 +3885,151 @@ class _$EntityPastaImpl extends EntityPasta {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityBar value) bar,
-    required TResult Function(EntityBar_create value) barCreate,
-    required TResult Function(EntityFoo value) foo,
-    required TResult Function(EntityPasta value) pasta,
-    required TResult Function(EntityPizza value) pizza,
-    required TResult Function(EntityPizzaspeziale value) pizzaspeziale,
+    required TResult Function(EntityAsBar value) asBar,
+    required TResult Function(EntityAsBarCreate value) asBarCreate,
+    required TResult Function(EntityAsFoo value) asFoo,
+    required TResult Function(EntityAsPasta value) asPasta,
+    required TResult Function(EntityAsPizza value) asPizza,
+    required TResult Function(EntityAsPizzaSpeziale value) asPizzaSpeziale,
     required TResult Function(EntityUnknown value) unknown,
   }) {
-    return pasta(this);
+    return asPasta(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityBar value)? bar,
-    TResult? Function(EntityBar_create value)? barCreate,
-    TResult? Function(EntityFoo value)? foo,
-    TResult? Function(EntityPasta value)? pasta,
-    TResult? Function(EntityPizza value)? pizza,
-    TResult? Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult? Function(EntityAsBar value)? asBar,
+    TResult? Function(EntityAsBarCreate value)? asBarCreate,
+    TResult? Function(EntityAsFoo value)? asFoo,
+    TResult? Function(EntityAsPasta value)? asPasta,
+    TResult? Function(EntityAsPizza value)? asPizza,
+    TResult? Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult? Function(EntityUnknown value)? unknown,
   }) {
-    return pasta?.call(this);
+    return asPasta?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityBar value)? bar,
-    TResult Function(EntityBar_create value)? barCreate,
-    TResult Function(EntityFoo value)? foo,
-    TResult Function(EntityPasta value)? pasta,
-    TResult Function(EntityPizza value)? pizza,
-    TResult Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult Function(EntityAsBar value)? asBar,
+    TResult Function(EntityAsBarCreate value)? asBarCreate,
+    TResult Function(EntityAsFoo value)? asFoo,
+    TResult Function(EntityAsPasta value)? asPasta,
+    TResult Function(EntityAsPizza value)? asPizza,
+    TResult Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult Function(EntityUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (pasta != null) {
-      return pasta(this);
+    if (asPasta != null) {
+      return asPasta(this);
     }
     return orElse();
   }
 }
 
-abstract class EntityPasta extends Entity {
-  const factory EntityPasta({required final Pasta pasta}) = _$EntityPastaImpl;
-  const EntityPasta._() : super._();
+abstract class EntityAsPasta extends Entity {
+  const factory EntityAsPasta({required final Pasta pastaValue}) =
+      _$EntityAsPastaImpl;
+  const EntityAsPasta._() : super._();
 
-  Pasta get pasta;
-  @JsonKey(ignore: true)
-  _$$EntityPastaImplCopyWith<_$EntityPastaImpl> get copyWith =>
+  Pasta get pastaValue;
+
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$EntityAsPastaImplCopyWith<_$EntityAsPastaImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$EntityPizzaImplCopyWith<$Res> {
-  factory _$$EntityPizzaImplCopyWith(
-          _$EntityPizzaImpl value, $Res Function(_$EntityPizzaImpl) then) =
-      __$$EntityPizzaImplCopyWithImpl<$Res>;
+abstract class _$$EntityAsPizzaImplCopyWith<$Res> {
+  factory _$$EntityAsPizzaImplCopyWith(
+          _$EntityAsPizzaImpl value, $Res Function(_$EntityAsPizzaImpl) then) =
+      __$$EntityAsPizzaImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({Pizza pizza});
+  $Res call({Pizza pizzaValue});
 
-  $PizzaCopyWith<$Res> get pizza;
+  $PizzaCopyWith<$Res> get pizzaValue;
 }
 
 /// @nodoc
-class __$$EntityPizzaImplCopyWithImpl<$Res>
-    extends _$EntityCopyWithImpl<$Res, _$EntityPizzaImpl>
-    implements _$$EntityPizzaImplCopyWith<$Res> {
-  __$$EntityPizzaImplCopyWithImpl(
-      _$EntityPizzaImpl _value, $Res Function(_$EntityPizzaImpl) _then)
+class __$$EntityAsPizzaImplCopyWithImpl<$Res>
+    extends _$EntityCopyWithImpl<$Res, _$EntityAsPizzaImpl>
+    implements _$$EntityAsPizzaImplCopyWith<$Res> {
+  __$$EntityAsPizzaImplCopyWithImpl(
+      _$EntityAsPizzaImpl _value, $Res Function(_$EntityAsPizzaImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pizza = null,
+    Object? pizzaValue = null,
   }) {
-    return _then(_$EntityPizzaImpl(
-      pizza: null == pizza
-          ? _value.pizza
-          : pizza // ignore: cast_nullable_to_non_nullable
+    return _then(_$EntityAsPizzaImpl(
+      pizzaValue: null == pizzaValue
+          ? _value.pizzaValue
+          : pizzaValue // ignore: cast_nullable_to_non_nullable
               as Pizza,
     ));
   }
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $PizzaCopyWith<$Res> get pizza {
-    return $PizzaCopyWith<$Res>(_value.pizza, (value) {
-      return _then(_value.copyWith(pizza: value));
+  $PizzaCopyWith<$Res> get pizzaValue {
+    return $PizzaCopyWith<$Res>(_value.pizzaValue, (value) {
+      return _then(_value.copyWith(pizzaValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$EntityPizzaImpl extends EntityPizza {
-  const _$EntityPizzaImpl({required this.pizza}) : super._();
+class _$EntityAsPizzaImpl extends EntityAsPizza {
+  const _$EntityAsPizzaImpl({required this.pizzaValue}) : super._();
 
   @override
-  final Pizza pizza;
+  final Pizza pizzaValue;
 
   @override
   String toString() {
-    return 'Entity.pizza(pizza: $pizza)';
+    return 'Entity.asPizza(pizzaValue: $pizzaValue)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$EntityPizzaImpl &&
-            (identical(other.pizza, pizza) || other.pizza == pizza));
+            other is _$EntityAsPizzaImpl &&
+            (identical(other.pizzaValue, pizzaValue) ||
+                other.pizzaValue == pizzaValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, pizza);
+  int get hashCode => Object.hash(runtimeType, pizzaValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$EntityPizzaImplCopyWith<_$EntityPizzaImpl> get copyWith =>
-      __$$EntityPizzaImplCopyWithImpl<_$EntityPizzaImpl>(this, _$identity);
+  _$$EntityAsPizzaImplCopyWith<_$EntityAsPizzaImpl> get copyWith =>
+      __$$EntityAsPizzaImplCopyWithImpl<_$EntityAsPizzaImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(Bar bar) bar,
-    required TResult Function(BarCreate barCreate) barCreate,
-    required TResult Function(Foo foo) foo,
-    required TResult Function(Pasta pasta) pasta,
-    required TResult Function(Pizza pizza) pizza,
-    required TResult Function(PizzaSpeziale pizzaSpeziale) pizzaspeziale,
+    required TResult Function(Bar barValue) asBar,
+    required TResult Function(BarCreate barCreateValue) asBarCreate,
+    required TResult Function(Foo fooValue) asFoo,
+    required TResult Function(Pasta pastaValue) asPasta,
+    required TResult Function(Pizza pizzaValue) asPizza,
+    required TResult Function(PizzaSpeziale pizzaSpezialeValue) asPizzaSpeziale,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -3815,18 +4038,18 @@ class _$EntityPizzaImpl extends EntityPizza {
             List<Entity> deserializedModels)
         unknown,
   }) {
-    return pizza(this.pizza);
+    return asPizza(pizzaValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(Bar bar)? bar,
-    TResult? Function(BarCreate barCreate)? barCreate,
-    TResult? Function(Foo foo)? foo,
-    TResult? Function(Pasta pasta)? pasta,
-    TResult? Function(Pizza pizza)? pizza,
-    TResult? Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult? Function(Bar barValue)? asBar,
+    TResult? Function(BarCreate barCreateValue)? asBarCreate,
+    TResult? Function(Foo fooValue)? asFoo,
+    TResult? Function(Pasta pastaValue)? asPasta,
+    TResult? Function(Pizza pizzaValue)? asPizza,
+    TResult? Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -3835,18 +4058,18 @@ class _$EntityPizzaImpl extends EntityPizza {
             List<Entity> deserializedModels)?
         unknown,
   }) {
-    return pizza?.call(this.pizza);
+    return asPizza?.call(pizzaValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(Bar bar)? bar,
-    TResult Function(BarCreate barCreate)? barCreate,
-    TResult Function(Foo foo)? foo,
-    TResult Function(Pasta pasta)? pasta,
-    TResult Function(Pizza pizza)? pizza,
-    TResult Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult Function(Bar barValue)? asBar,
+    TResult Function(BarCreate barCreateValue)? asBarCreate,
+    TResult Function(Foo fooValue)? asFoo,
+    TResult Function(Pasta pastaValue)? asPasta,
+    TResult Function(Pizza pizzaValue)? asPizza,
+    TResult Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -3856,8 +4079,8 @@ class _$EntityPizzaImpl extends EntityPizza {
         unknown,
     required TResult orElse(),
   }) {
-    if (pizza != null) {
-      return pizza(this.pizza);
+    if (asPizza != null) {
+      return asPizza(pizzaValue);
     }
     return orElse();
   }
@@ -3865,142 +4088,154 @@ class _$EntityPizzaImpl extends EntityPizza {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityBar value) bar,
-    required TResult Function(EntityBar_create value) barCreate,
-    required TResult Function(EntityFoo value) foo,
-    required TResult Function(EntityPasta value) pasta,
-    required TResult Function(EntityPizza value) pizza,
-    required TResult Function(EntityPizzaspeziale value) pizzaspeziale,
+    required TResult Function(EntityAsBar value) asBar,
+    required TResult Function(EntityAsBarCreate value) asBarCreate,
+    required TResult Function(EntityAsFoo value) asFoo,
+    required TResult Function(EntityAsPasta value) asPasta,
+    required TResult Function(EntityAsPizza value) asPizza,
+    required TResult Function(EntityAsPizzaSpeziale value) asPizzaSpeziale,
     required TResult Function(EntityUnknown value) unknown,
   }) {
-    return pizza(this);
+    return asPizza(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityBar value)? bar,
-    TResult? Function(EntityBar_create value)? barCreate,
-    TResult? Function(EntityFoo value)? foo,
-    TResult? Function(EntityPasta value)? pasta,
-    TResult? Function(EntityPizza value)? pizza,
-    TResult? Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult? Function(EntityAsBar value)? asBar,
+    TResult? Function(EntityAsBarCreate value)? asBarCreate,
+    TResult? Function(EntityAsFoo value)? asFoo,
+    TResult? Function(EntityAsPasta value)? asPasta,
+    TResult? Function(EntityAsPizza value)? asPizza,
+    TResult? Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult? Function(EntityUnknown value)? unknown,
   }) {
-    return pizza?.call(this);
+    return asPizza?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityBar value)? bar,
-    TResult Function(EntityBar_create value)? barCreate,
-    TResult Function(EntityFoo value)? foo,
-    TResult Function(EntityPasta value)? pasta,
-    TResult Function(EntityPizza value)? pizza,
-    TResult Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult Function(EntityAsBar value)? asBar,
+    TResult Function(EntityAsBarCreate value)? asBarCreate,
+    TResult Function(EntityAsFoo value)? asFoo,
+    TResult Function(EntityAsPasta value)? asPasta,
+    TResult Function(EntityAsPizza value)? asPizza,
+    TResult Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult Function(EntityUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (pizza != null) {
-      return pizza(this);
+    if (asPizza != null) {
+      return asPizza(this);
     }
     return orElse();
   }
 }
 
-abstract class EntityPizza extends Entity {
-  const factory EntityPizza({required final Pizza pizza}) = _$EntityPizzaImpl;
-  const EntityPizza._() : super._();
+abstract class EntityAsPizza extends Entity {
+  const factory EntityAsPizza({required final Pizza pizzaValue}) =
+      _$EntityAsPizzaImpl;
+  const EntityAsPizza._() : super._();
 
-  Pizza get pizza;
-  @JsonKey(ignore: true)
-  _$$EntityPizzaImplCopyWith<_$EntityPizzaImpl> get copyWith =>
+  Pizza get pizzaValue;
+
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$EntityAsPizzaImplCopyWith<_$EntityAsPizzaImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$EntityPizzaspezialeImplCopyWith<$Res> {
-  factory _$$EntityPizzaspezialeImplCopyWith(_$EntityPizzaspezialeImpl value,
-          $Res Function(_$EntityPizzaspezialeImpl) then) =
-      __$$EntityPizzaspezialeImplCopyWithImpl<$Res>;
+abstract class _$$EntityAsPizzaSpezialeImplCopyWith<$Res> {
+  factory _$$EntityAsPizzaSpezialeImplCopyWith(
+          _$EntityAsPizzaSpezialeImpl value,
+          $Res Function(_$EntityAsPizzaSpezialeImpl) then) =
+      __$$EntityAsPizzaSpezialeImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({PizzaSpeziale pizzaSpeziale});
+  $Res call({PizzaSpeziale pizzaSpezialeValue});
 
-  $PizzaSpezialeCopyWith<$Res> get pizzaSpeziale;
+  $PizzaSpezialeCopyWith<$Res> get pizzaSpezialeValue;
 }
 
 /// @nodoc
-class __$$EntityPizzaspezialeImplCopyWithImpl<$Res>
-    extends _$EntityCopyWithImpl<$Res, _$EntityPizzaspezialeImpl>
-    implements _$$EntityPizzaspezialeImplCopyWith<$Res> {
-  __$$EntityPizzaspezialeImplCopyWithImpl(_$EntityPizzaspezialeImpl _value,
-      $Res Function(_$EntityPizzaspezialeImpl) _then)
+class __$$EntityAsPizzaSpezialeImplCopyWithImpl<$Res>
+    extends _$EntityCopyWithImpl<$Res, _$EntityAsPizzaSpezialeImpl>
+    implements _$$EntityAsPizzaSpezialeImplCopyWith<$Res> {
+  __$$EntityAsPizzaSpezialeImplCopyWithImpl(_$EntityAsPizzaSpezialeImpl _value,
+      $Res Function(_$EntityAsPizzaSpezialeImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pizzaSpeziale = null,
+    Object? pizzaSpezialeValue = null,
   }) {
-    return _then(_$EntityPizzaspezialeImpl(
-      pizzaSpeziale: null == pizzaSpeziale
-          ? _value.pizzaSpeziale
-          : pizzaSpeziale // ignore: cast_nullable_to_non_nullable
+    return _then(_$EntityAsPizzaSpezialeImpl(
+      pizzaSpezialeValue: null == pizzaSpezialeValue
+          ? _value.pizzaSpezialeValue
+          : pizzaSpezialeValue // ignore: cast_nullable_to_non_nullable
               as PizzaSpeziale,
     ));
   }
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $PizzaSpezialeCopyWith<$Res> get pizzaSpeziale {
-    return $PizzaSpezialeCopyWith<$Res>(_value.pizzaSpeziale, (value) {
-      return _then(_value.copyWith(pizzaSpeziale: value));
+  $PizzaSpezialeCopyWith<$Res> get pizzaSpezialeValue {
+    return $PizzaSpezialeCopyWith<$Res>(_value.pizzaSpezialeValue, (value) {
+      return _then(_value.copyWith(pizzaSpezialeValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$EntityPizzaspezialeImpl extends EntityPizzaspeziale {
-  const _$EntityPizzaspezialeImpl({required this.pizzaSpeziale}) : super._();
+class _$EntityAsPizzaSpezialeImpl extends EntityAsPizzaSpeziale {
+  const _$EntityAsPizzaSpezialeImpl({required this.pizzaSpezialeValue})
+      : super._();
 
   @override
-  final PizzaSpeziale pizzaSpeziale;
+  final PizzaSpeziale pizzaSpezialeValue;
 
   @override
   String toString() {
-    return 'Entity.pizzaspeziale(pizzaSpeziale: $pizzaSpeziale)';
+    return 'Entity.asPizzaSpeziale(pizzaSpezialeValue: $pizzaSpezialeValue)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$EntityPizzaspezialeImpl &&
-            (identical(other.pizzaSpeziale, pizzaSpeziale) ||
-                other.pizzaSpeziale == pizzaSpeziale));
+            other is _$EntityAsPizzaSpezialeImpl &&
+            (identical(other.pizzaSpezialeValue, pizzaSpezialeValue) ||
+                other.pizzaSpezialeValue == pizzaSpezialeValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, pizzaSpeziale);
+  int get hashCode => Object.hash(runtimeType, pizzaSpezialeValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$EntityPizzaspezialeImplCopyWith<_$EntityPizzaspezialeImpl> get copyWith =>
-      __$$EntityPizzaspezialeImplCopyWithImpl<_$EntityPizzaspezialeImpl>(
-          this, _$identity);
+  _$$EntityAsPizzaSpezialeImplCopyWith<_$EntityAsPizzaSpezialeImpl>
+      get copyWith => __$$EntityAsPizzaSpezialeImplCopyWithImpl<
+          _$EntityAsPizzaSpezialeImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(Bar bar) bar,
-    required TResult Function(BarCreate barCreate) barCreate,
-    required TResult Function(Foo foo) foo,
-    required TResult Function(Pasta pasta) pasta,
-    required TResult Function(Pizza pizza) pizza,
-    required TResult Function(PizzaSpeziale pizzaSpeziale) pizzaspeziale,
+    required TResult Function(Bar barValue) asBar,
+    required TResult Function(BarCreate barCreateValue) asBarCreate,
+    required TResult Function(Foo fooValue) asFoo,
+    required TResult Function(Pasta pastaValue) asPasta,
+    required TResult Function(Pizza pizzaValue) asPizza,
+    required TResult Function(PizzaSpeziale pizzaSpezialeValue) asPizzaSpeziale,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4009,18 +4244,18 @@ class _$EntityPizzaspezialeImpl extends EntityPizzaspeziale {
             List<Entity> deserializedModels)
         unknown,
   }) {
-    return pizzaspeziale(pizzaSpeziale);
+    return asPizzaSpeziale(pizzaSpezialeValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(Bar bar)? bar,
-    TResult? Function(BarCreate barCreate)? barCreate,
-    TResult? Function(Foo foo)? foo,
-    TResult? Function(Pasta pasta)? pasta,
-    TResult? Function(Pizza pizza)? pizza,
-    TResult? Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult? Function(Bar barValue)? asBar,
+    TResult? Function(BarCreate barCreateValue)? asBarCreate,
+    TResult? Function(Foo fooValue)? asFoo,
+    TResult? Function(Pasta pastaValue)? asPasta,
+    TResult? Function(Pizza pizzaValue)? asPizza,
+    TResult? Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -4029,18 +4264,18 @@ class _$EntityPizzaspezialeImpl extends EntityPizzaspeziale {
             List<Entity> deserializedModels)?
         unknown,
   }) {
-    return pizzaspeziale?.call(pizzaSpeziale);
+    return asPizzaSpeziale?.call(pizzaSpezialeValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(Bar bar)? bar,
-    TResult Function(BarCreate barCreate)? barCreate,
-    TResult Function(Foo foo)? foo,
-    TResult Function(Pasta pasta)? pasta,
-    TResult Function(Pizza pizza)? pizza,
-    TResult Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult Function(Bar barValue)? asBar,
+    TResult Function(BarCreate barCreateValue)? asBarCreate,
+    TResult Function(Foo fooValue)? asFoo,
+    TResult Function(Pasta pastaValue)? asPasta,
+    TResult Function(Pizza pizzaValue)? asPizza,
+    TResult Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4050,8 +4285,8 @@ class _$EntityPizzaspezialeImpl extends EntityPizzaspeziale {
         unknown,
     required TResult orElse(),
   }) {
-    if (pizzaspeziale != null) {
-      return pizzaspeziale(pizzaSpeziale);
+    if (asPizzaSpeziale != null) {
+      return asPizzaSpeziale(pizzaSpezialeValue);
     }
     return orElse();
   }
@@ -4059,59 +4294,63 @@ class _$EntityPizzaspezialeImpl extends EntityPizzaspeziale {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityBar value) bar,
-    required TResult Function(EntityBar_create value) barCreate,
-    required TResult Function(EntityFoo value) foo,
-    required TResult Function(EntityPasta value) pasta,
-    required TResult Function(EntityPizza value) pizza,
-    required TResult Function(EntityPizzaspeziale value) pizzaspeziale,
+    required TResult Function(EntityAsBar value) asBar,
+    required TResult Function(EntityAsBarCreate value) asBarCreate,
+    required TResult Function(EntityAsFoo value) asFoo,
+    required TResult Function(EntityAsPasta value) asPasta,
+    required TResult Function(EntityAsPizza value) asPizza,
+    required TResult Function(EntityAsPizzaSpeziale value) asPizzaSpeziale,
     required TResult Function(EntityUnknown value) unknown,
   }) {
-    return pizzaspeziale(this);
+    return asPizzaSpeziale(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityBar value)? bar,
-    TResult? Function(EntityBar_create value)? barCreate,
-    TResult? Function(EntityFoo value)? foo,
-    TResult? Function(EntityPasta value)? pasta,
-    TResult? Function(EntityPizza value)? pizza,
-    TResult? Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult? Function(EntityAsBar value)? asBar,
+    TResult? Function(EntityAsBarCreate value)? asBarCreate,
+    TResult? Function(EntityAsFoo value)? asFoo,
+    TResult? Function(EntityAsPasta value)? asPasta,
+    TResult? Function(EntityAsPizza value)? asPizza,
+    TResult? Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult? Function(EntityUnknown value)? unknown,
   }) {
-    return pizzaspeziale?.call(this);
+    return asPizzaSpeziale?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityBar value)? bar,
-    TResult Function(EntityBar_create value)? barCreate,
-    TResult Function(EntityFoo value)? foo,
-    TResult Function(EntityPasta value)? pasta,
-    TResult Function(EntityPizza value)? pizza,
-    TResult Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult Function(EntityAsBar value)? asBar,
+    TResult Function(EntityAsBarCreate value)? asBarCreate,
+    TResult Function(EntityAsFoo value)? asFoo,
+    TResult Function(EntityAsPasta value)? asPasta,
+    TResult Function(EntityAsPizza value)? asPizza,
+    TResult Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult Function(EntityUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (pizzaspeziale != null) {
-      return pizzaspeziale(this);
+    if (asPizzaSpeziale != null) {
+      return asPizzaSpeziale(this);
     }
     return orElse();
   }
 }
 
-abstract class EntityPizzaspeziale extends Entity {
-  const factory EntityPizzaspeziale(
-      {required final PizzaSpeziale pizzaSpeziale}) = _$EntityPizzaspezialeImpl;
-  const EntityPizzaspeziale._() : super._();
+abstract class EntityAsPizzaSpeziale extends Entity {
+  const factory EntityAsPizzaSpeziale(
+          {required final PizzaSpeziale pizzaSpezialeValue}) =
+      _$EntityAsPizzaSpezialeImpl;
+  const EntityAsPizzaSpeziale._() : super._();
 
-  PizzaSpeziale get pizzaSpeziale;
-  @JsonKey(ignore: true)
-  _$$EntityPizzaspezialeImplCopyWith<_$EntityPizzaspezialeImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  PizzaSpeziale get pizzaSpezialeValue;
+
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$EntityAsPizzaSpezialeImplCopyWith<_$EntityAsPizzaSpezialeImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -4136,6 +4375,8 @@ class __$$EntityUnknownImplCopyWithImpl<$Res>
       _$EntityUnknownImpl _value, $Res Function(_$EntityUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4246,7 +4487,9 @@ class _$EntityUnknownImpl extends EntityUnknown {
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EntityUnknownImplCopyWith<_$EntityUnknownImpl> get copyWith =>
@@ -4255,12 +4498,12 @@ class _$EntityUnknownImpl extends EntityUnknown {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(Bar bar) bar,
-    required TResult Function(BarCreate barCreate) barCreate,
-    required TResult Function(Foo foo) foo,
-    required TResult Function(Pasta pasta) pasta,
-    required TResult Function(Pizza pizza) pizza,
-    required TResult Function(PizzaSpeziale pizzaSpeziale) pizzaspeziale,
+    required TResult Function(Bar barValue) asBar,
+    required TResult Function(BarCreate barCreateValue) asBarCreate,
+    required TResult Function(Foo fooValue) asFoo,
+    required TResult Function(Pasta pastaValue) asPasta,
+    required TResult Function(Pizza pizzaValue) asPizza,
+    required TResult Function(PizzaSpeziale pizzaSpezialeValue) asPizzaSpeziale,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4275,12 +4518,12 @@ class _$EntityUnknownImpl extends EntityUnknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(Bar bar)? bar,
-    TResult? Function(BarCreate barCreate)? barCreate,
-    TResult? Function(Foo foo)? foo,
-    TResult? Function(Pasta pasta)? pasta,
-    TResult? Function(Pizza pizza)? pizza,
-    TResult? Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult? Function(Bar barValue)? asBar,
+    TResult? Function(BarCreate barCreateValue)? asBarCreate,
+    TResult? Function(Foo fooValue)? asFoo,
+    TResult? Function(Pasta pastaValue)? asPasta,
+    TResult? Function(Pizza pizzaValue)? asPizza,
+    TResult? Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -4296,12 +4539,12 @@ class _$EntityUnknownImpl extends EntityUnknown {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(Bar bar)? bar,
-    TResult Function(BarCreate barCreate)? barCreate,
-    TResult Function(Foo foo)? foo,
-    TResult Function(Pasta pasta)? pasta,
-    TResult Function(Pizza pizza)? pizza,
-    TResult Function(PizzaSpeziale pizzaSpeziale)? pizzaspeziale,
+    TResult Function(Bar barValue)? asBar,
+    TResult Function(BarCreate barCreateValue)? asBarCreate,
+    TResult Function(Foo fooValue)? asFoo,
+    TResult Function(Pasta pastaValue)? asPasta,
+    TResult Function(Pizza pizzaValue)? asPizza,
+    TResult Function(PizzaSpeziale pizzaSpezialeValue)? asPizzaSpeziale,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4321,12 +4564,12 @@ class _$EntityUnknownImpl extends EntityUnknown {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityBar value) bar,
-    required TResult Function(EntityBar_create value) barCreate,
-    required TResult Function(EntityFoo value) foo,
-    required TResult Function(EntityPasta value) pasta,
-    required TResult Function(EntityPizza value) pizza,
-    required TResult Function(EntityPizzaspeziale value) pizzaspeziale,
+    required TResult Function(EntityAsBar value) asBar,
+    required TResult Function(EntityAsBarCreate value) asBarCreate,
+    required TResult Function(EntityAsFoo value) asFoo,
+    required TResult Function(EntityAsPasta value) asPasta,
+    required TResult Function(EntityAsPizza value) asPizza,
+    required TResult Function(EntityAsPizzaSpeziale value) asPizzaSpeziale,
     required TResult Function(EntityUnknown value) unknown,
   }) {
     return unknown(this);
@@ -4335,12 +4578,12 @@ class _$EntityUnknownImpl extends EntityUnknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityBar value)? bar,
-    TResult? Function(EntityBar_create value)? barCreate,
-    TResult? Function(EntityFoo value)? foo,
-    TResult? Function(EntityPasta value)? pasta,
-    TResult? Function(EntityPizza value)? pizza,
-    TResult? Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult? Function(EntityAsBar value)? asBar,
+    TResult? Function(EntityAsBarCreate value)? asBarCreate,
+    TResult? Function(EntityAsFoo value)? asFoo,
+    TResult? Function(EntityAsPasta value)? asPasta,
+    TResult? Function(EntityAsPizza value)? asPizza,
+    TResult? Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult? Function(EntityUnknown value)? unknown,
   }) {
     return unknown?.call(this);
@@ -4349,12 +4592,12 @@ class _$EntityUnknownImpl extends EntityUnknown {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityBar value)? bar,
-    TResult Function(EntityBar_create value)? barCreate,
-    TResult Function(EntityFoo value)? foo,
-    TResult Function(EntityPasta value)? pasta,
-    TResult Function(EntityPizza value)? pizza,
-    TResult Function(EntityPizzaspeziale value)? pizzaspeziale,
+    TResult Function(EntityAsBar value)? asBar,
+    TResult Function(EntityAsBarCreate value)? asBarCreate,
+    TResult Function(EntityAsFoo value)? asFoo,
+    TResult Function(EntityAsPasta value)? asPasta,
+    TResult Function(EntityAsPizza value)? asPizza,
+    TResult Function(EntityAsPizzaSpeziale value)? asPizzaSpeziale,
     TResult Function(EntityUnknown value)? unknown,
     required TResult orElse(),
   }) {
@@ -4379,7 +4622,10 @@ abstract class EntityUnknown extends Entity {
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<Entity> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Entity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EntityUnknownImplCopyWith<_$EntityUnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4388,8 +4634,8 @@ abstract class EntityUnknown extends Entity {
 mixin _$EntityRef {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(BarRef barRef) barref,
-    required TResult Function(FooRef fooRef) fooref,
+    required TResult Function(BarRef barRefValue) asBarRef,
+    required TResult Function(FooRef fooRefValue) asFooRef,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4401,8 +4647,8 @@ mixin _$EntityRef {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(BarRef barRef)? barref,
-    TResult? Function(FooRef fooRef)? fooref,
+    TResult? Function(BarRef barRefValue)? asBarRef,
+    TResult? Function(FooRef fooRefValue)? asFooRef,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -4414,8 +4660,8 @@ mixin _$EntityRef {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(BarRef barRef)? barref,
-    TResult Function(FooRef fooRef)? fooref,
+    TResult Function(BarRef barRefValue)? asBarRef,
+    TResult Function(FooRef fooRefValue)? asFooRef,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4428,22 +4674,22 @@ mixin _$EntityRef {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityRefBarref value) barref,
-    required TResult Function(EntityRefFooref value) fooref,
+    required TResult Function(EntityRefAsBarRef value) asBarRef,
+    required TResult Function(EntityRefAsFooRef value) asFooRef,
     required TResult Function(EntityRefUnknown value) unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityRefBarref value)? barref,
-    TResult? Function(EntityRefFooref value)? fooref,
+    TResult? Function(EntityRefAsBarRef value)? asBarRef,
+    TResult? Function(EntityRefAsFooRef value)? asFooRef,
     TResult? Function(EntityRefUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityRefBarref value)? barref,
-    TResult Function(EntityRefFooref value)? fooref,
+    TResult Function(EntityRefAsBarRef value)? asBarRef,
+    TResult Function(EntityRefAsFooRef value)? asFooRef,
     TResult Function(EntityRefUnknown value)? unknown,
     required TResult orElse(),
   }) =>
@@ -4465,85 +4711,95 @@ class _$EntityRefCopyWithImpl<$Res, $Val extends EntityRef>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
-abstract class _$$EntityRefBarrefImplCopyWith<$Res> {
-  factory _$$EntityRefBarrefImplCopyWith(_$EntityRefBarrefImpl value,
-          $Res Function(_$EntityRefBarrefImpl) then) =
-      __$$EntityRefBarrefImplCopyWithImpl<$Res>;
+abstract class _$$EntityRefAsBarRefImplCopyWith<$Res> {
+  factory _$$EntityRefAsBarRefImplCopyWith(_$EntityRefAsBarRefImpl value,
+          $Res Function(_$EntityRefAsBarRefImpl) then) =
+      __$$EntityRefAsBarRefImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({BarRef barRef});
+  $Res call({BarRef barRefValue});
 
-  $BarRefCopyWith<$Res> get barRef;
+  $BarRefCopyWith<$Res> get barRefValue;
 }
 
 /// @nodoc
-class __$$EntityRefBarrefImplCopyWithImpl<$Res>
-    extends _$EntityRefCopyWithImpl<$Res, _$EntityRefBarrefImpl>
-    implements _$$EntityRefBarrefImplCopyWith<$Res> {
-  __$$EntityRefBarrefImplCopyWithImpl(
-      _$EntityRefBarrefImpl _value, $Res Function(_$EntityRefBarrefImpl) _then)
+class __$$EntityRefAsBarRefImplCopyWithImpl<$Res>
+    extends _$EntityRefCopyWithImpl<$Res, _$EntityRefAsBarRefImpl>
+    implements _$$EntityRefAsBarRefImplCopyWith<$Res> {
+  __$$EntityRefAsBarRefImplCopyWithImpl(_$EntityRefAsBarRefImpl _value,
+      $Res Function(_$EntityRefAsBarRefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? barRef = null,
+    Object? barRefValue = null,
   }) {
-    return _then(_$EntityRefBarrefImpl(
-      barRef: null == barRef
-          ? _value.barRef
-          : barRef // ignore: cast_nullable_to_non_nullable
+    return _then(_$EntityRefAsBarRefImpl(
+      barRefValue: null == barRefValue
+          ? _value.barRefValue
+          : barRefValue // ignore: cast_nullable_to_non_nullable
               as BarRef,
     ));
   }
 
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $BarRefCopyWith<$Res> get barRef {
-    return $BarRefCopyWith<$Res>(_value.barRef, (value) {
-      return _then(_value.copyWith(barRef: value));
+  $BarRefCopyWith<$Res> get barRefValue {
+    return $BarRefCopyWith<$Res>(_value.barRefValue, (value) {
+      return _then(_value.copyWith(barRefValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$EntityRefBarrefImpl extends EntityRefBarref {
-  const _$EntityRefBarrefImpl({required this.barRef}) : super._();
+class _$EntityRefAsBarRefImpl extends EntityRefAsBarRef {
+  const _$EntityRefAsBarRefImpl({required this.barRefValue}) : super._();
 
   @override
-  final BarRef barRef;
+  final BarRef barRefValue;
 
   @override
   String toString() {
-    return 'EntityRef.barref(barRef: $barRef)';
+    return 'EntityRef.asBarRef(barRefValue: $barRefValue)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$EntityRefBarrefImpl &&
-            (identical(other.barRef, barRef) || other.barRef == barRef));
+            other is _$EntityRefAsBarRefImpl &&
+            (identical(other.barRefValue, barRefValue) ||
+                other.barRefValue == barRefValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, barRef);
+  int get hashCode => Object.hash(runtimeType, barRefValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$EntityRefBarrefImplCopyWith<_$EntityRefBarrefImpl> get copyWith =>
-      __$$EntityRefBarrefImplCopyWithImpl<_$EntityRefBarrefImpl>(
+  _$$EntityRefAsBarRefImplCopyWith<_$EntityRefAsBarRefImpl> get copyWith =>
+      __$$EntityRefAsBarRefImplCopyWithImpl<_$EntityRefAsBarRefImpl>(
           this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(BarRef barRef) barref,
-    required TResult Function(FooRef fooRef) fooref,
+    required TResult Function(BarRef barRefValue) asBarRef,
+    required TResult Function(FooRef fooRefValue) asFooRef,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4552,14 +4808,14 @@ class _$EntityRefBarrefImpl extends EntityRefBarref {
             List<EntityRef> deserializedModels)
         unknown,
   }) {
-    return barref(barRef);
+    return asBarRef(barRefValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(BarRef barRef)? barref,
-    TResult? Function(FooRef fooRef)? fooref,
+    TResult? Function(BarRef barRefValue)? asBarRef,
+    TResult? Function(FooRef fooRefValue)? asFooRef,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -4568,14 +4824,14 @@ class _$EntityRefBarrefImpl extends EntityRefBarref {
             List<EntityRef> deserializedModels)?
         unknown,
   }) {
-    return barref?.call(barRef);
+    return asBarRef?.call(barRefValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(BarRef barRef)? barref,
-    TResult Function(FooRef fooRef)? fooref,
+    TResult Function(BarRef barRefValue)? asBarRef,
+    TResult Function(FooRef fooRefValue)? asFooRef,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4585,8 +4841,8 @@ class _$EntityRefBarrefImpl extends EntityRefBarref {
         unknown,
     required TResult orElse(),
   }) {
-    if (barref != null) {
-      return barref(barRef);
+    if (asBarRef != null) {
+      return asBarRef(barRefValue);
     }
     return orElse();
   }
@@ -4594,126 +4850,136 @@ class _$EntityRefBarrefImpl extends EntityRefBarref {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityRefBarref value) barref,
-    required TResult Function(EntityRefFooref value) fooref,
+    required TResult Function(EntityRefAsBarRef value) asBarRef,
+    required TResult Function(EntityRefAsFooRef value) asFooRef,
     required TResult Function(EntityRefUnknown value) unknown,
   }) {
-    return barref(this);
+    return asBarRef(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityRefBarref value)? barref,
-    TResult? Function(EntityRefFooref value)? fooref,
+    TResult? Function(EntityRefAsBarRef value)? asBarRef,
+    TResult? Function(EntityRefAsFooRef value)? asFooRef,
     TResult? Function(EntityRefUnknown value)? unknown,
   }) {
-    return barref?.call(this);
+    return asBarRef?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityRefBarref value)? barref,
-    TResult Function(EntityRefFooref value)? fooref,
+    TResult Function(EntityRefAsBarRef value)? asBarRef,
+    TResult Function(EntityRefAsFooRef value)? asFooRef,
     TResult Function(EntityRefUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (barref != null) {
-      return barref(this);
+    if (asBarRef != null) {
+      return asBarRef(this);
     }
     return orElse();
   }
 }
 
-abstract class EntityRefBarref extends EntityRef {
-  const factory EntityRefBarref({required final BarRef barRef}) =
-      _$EntityRefBarrefImpl;
-  const EntityRefBarref._() : super._();
+abstract class EntityRefAsBarRef extends EntityRef {
+  const factory EntityRefAsBarRef({required final BarRef barRefValue}) =
+      _$EntityRefAsBarRefImpl;
+  const EntityRefAsBarRef._() : super._();
 
-  BarRef get barRef;
-  @JsonKey(ignore: true)
-  _$$EntityRefBarrefImplCopyWith<_$EntityRefBarrefImpl> get copyWith =>
+  BarRef get barRefValue;
+
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$EntityRefAsBarRefImplCopyWith<_$EntityRefAsBarRefImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$EntityRefFoorefImplCopyWith<$Res> {
-  factory _$$EntityRefFoorefImplCopyWith(_$EntityRefFoorefImpl value,
-          $Res Function(_$EntityRefFoorefImpl) then) =
-      __$$EntityRefFoorefImplCopyWithImpl<$Res>;
+abstract class _$$EntityRefAsFooRefImplCopyWith<$Res> {
+  factory _$$EntityRefAsFooRefImplCopyWith(_$EntityRefAsFooRefImpl value,
+          $Res Function(_$EntityRefAsFooRefImpl) then) =
+      __$$EntityRefAsFooRefImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({FooRef fooRef});
+  $Res call({FooRef fooRefValue});
 
-  $FooRefCopyWith<$Res> get fooRef;
+  $FooRefCopyWith<$Res> get fooRefValue;
 }
 
 /// @nodoc
-class __$$EntityRefFoorefImplCopyWithImpl<$Res>
-    extends _$EntityRefCopyWithImpl<$Res, _$EntityRefFoorefImpl>
-    implements _$$EntityRefFoorefImplCopyWith<$Res> {
-  __$$EntityRefFoorefImplCopyWithImpl(
-      _$EntityRefFoorefImpl _value, $Res Function(_$EntityRefFoorefImpl) _then)
+class __$$EntityRefAsFooRefImplCopyWithImpl<$Res>
+    extends _$EntityRefCopyWithImpl<$Res, _$EntityRefAsFooRefImpl>
+    implements _$$EntityRefAsFooRefImplCopyWith<$Res> {
+  __$$EntityRefAsFooRefImplCopyWithImpl(_$EntityRefAsFooRefImpl _value,
+      $Res Function(_$EntityRefAsFooRefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? fooRef = null,
+    Object? fooRefValue = null,
   }) {
-    return _then(_$EntityRefFoorefImpl(
-      fooRef: null == fooRef
-          ? _value.fooRef
-          : fooRef // ignore: cast_nullable_to_non_nullable
+    return _then(_$EntityRefAsFooRefImpl(
+      fooRefValue: null == fooRefValue
+          ? _value.fooRefValue
+          : fooRefValue // ignore: cast_nullable_to_non_nullable
               as FooRef,
     ));
   }
 
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $FooRefCopyWith<$Res> get fooRef {
-    return $FooRefCopyWith<$Res>(_value.fooRef, (value) {
-      return _then(_value.copyWith(fooRef: value));
+  $FooRefCopyWith<$Res> get fooRefValue {
+    return $FooRefCopyWith<$Res>(_value.fooRefValue, (value) {
+      return _then(_value.copyWith(fooRefValue: value));
     });
   }
 }
 
 /// @nodoc
 
-class _$EntityRefFoorefImpl extends EntityRefFooref {
-  const _$EntityRefFoorefImpl({required this.fooRef}) : super._();
+class _$EntityRefAsFooRefImpl extends EntityRefAsFooRef {
+  const _$EntityRefAsFooRefImpl({required this.fooRefValue}) : super._();
 
   @override
-  final FooRef fooRef;
+  final FooRef fooRefValue;
 
   @override
   String toString() {
-    return 'EntityRef.fooref(fooRef: $fooRef)';
+    return 'EntityRef.asFooRef(fooRefValue: $fooRefValue)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$EntityRefFoorefImpl &&
-            (identical(other.fooRef, fooRef) || other.fooRef == fooRef));
+            other is _$EntityRefAsFooRefImpl &&
+            (identical(other.fooRefValue, fooRefValue) ||
+                other.fooRefValue == fooRefValue));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, fooRef);
+  int get hashCode => Object.hash(runtimeType, fooRefValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$EntityRefFoorefImplCopyWith<_$EntityRefFoorefImpl> get copyWith =>
-      __$$EntityRefFoorefImplCopyWithImpl<_$EntityRefFoorefImpl>(
+  _$$EntityRefAsFooRefImplCopyWith<_$EntityRefAsFooRefImpl> get copyWith =>
+      __$$EntityRefAsFooRefImplCopyWithImpl<_$EntityRefAsFooRefImpl>(
           this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(BarRef barRef) barref,
-    required TResult Function(FooRef fooRef) fooref,
+    required TResult Function(BarRef barRefValue) asBarRef,
+    required TResult Function(FooRef fooRefValue) asFooRef,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4722,14 +4988,14 @@ class _$EntityRefFoorefImpl extends EntityRefFooref {
             List<EntityRef> deserializedModels)
         unknown,
   }) {
-    return fooref(fooRef);
+    return asFooRef(fooRefValue);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(BarRef barRef)? barref,
-    TResult? Function(FooRef fooRef)? fooref,
+    TResult? Function(BarRef barRefValue)? asBarRef,
+    TResult? Function(FooRef fooRefValue)? asFooRef,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -4738,14 +5004,14 @@ class _$EntityRefFoorefImpl extends EntityRefFooref {
             List<EntityRef> deserializedModels)?
         unknown,
   }) {
-    return fooref?.call(fooRef);
+    return asFooRef?.call(fooRefValue);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(BarRef barRef)? barref,
-    TResult Function(FooRef fooRef)? fooref,
+    TResult Function(BarRef barRefValue)? asBarRef,
+    TResult Function(FooRef fooRefValue)? asFooRef,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4755,8 +5021,8 @@ class _$EntityRefFoorefImpl extends EntityRefFooref {
         unknown,
     required TResult orElse(),
   }) {
-    if (fooref != null) {
-      return fooref(fooRef);
+    if (asFooRef != null) {
+      return asFooRef(fooRefValue);
     }
     return orElse();
   }
@@ -4764,46 +5030,49 @@ class _$EntityRefFoorefImpl extends EntityRefFooref {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityRefBarref value) barref,
-    required TResult Function(EntityRefFooref value) fooref,
+    required TResult Function(EntityRefAsBarRef value) asBarRef,
+    required TResult Function(EntityRefAsFooRef value) asFooRef,
     required TResult Function(EntityRefUnknown value) unknown,
   }) {
-    return fooref(this);
+    return asFooRef(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityRefBarref value)? barref,
-    TResult? Function(EntityRefFooref value)? fooref,
+    TResult? Function(EntityRefAsBarRef value)? asBarRef,
+    TResult? Function(EntityRefAsFooRef value)? asFooRef,
     TResult? Function(EntityRefUnknown value)? unknown,
   }) {
-    return fooref?.call(this);
+    return asFooRef?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityRefBarref value)? barref,
-    TResult Function(EntityRefFooref value)? fooref,
+    TResult Function(EntityRefAsBarRef value)? asBarRef,
+    TResult Function(EntityRefAsFooRef value)? asFooRef,
     TResult Function(EntityRefUnknown value)? unknown,
     required TResult orElse(),
   }) {
-    if (fooref != null) {
-      return fooref(this);
+    if (asFooRef != null) {
+      return asFooRef(this);
     }
     return orElse();
   }
 }
 
-abstract class EntityRefFooref extends EntityRef {
-  const factory EntityRefFooref({required final FooRef fooRef}) =
-      _$EntityRefFoorefImpl;
-  const EntityRefFooref._() : super._();
+abstract class EntityRefAsFooRef extends EntityRef {
+  const factory EntityRefAsFooRef({required final FooRef fooRefValue}) =
+      _$EntityRefAsFooRefImpl;
+  const EntityRefAsFooRef._() : super._();
 
-  FooRef get fooRef;
-  @JsonKey(ignore: true)
-  _$$EntityRefFoorefImplCopyWith<_$EntityRefFoorefImpl> get copyWith =>
+  FooRef get fooRefValue;
+
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$EntityRefAsFooRefImplCopyWith<_$EntityRefAsFooRefImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -4829,6 +5098,8 @@ class __$$EntityRefUnknownImplCopyWithImpl<$Res>
       $Res Function(_$EntityRefUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4939,7 +5210,9 @@ class _$EntityRefUnknownImpl extends EntityRefUnknown {
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EntityRefUnknownImplCopyWith<_$EntityRefUnknownImpl> get copyWith =>
@@ -4949,8 +5222,8 @@ class _$EntityRefUnknownImpl extends EntityRefUnknown {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(BarRef barRef) barref,
-    required TResult Function(FooRef fooRef) fooref,
+    required TResult Function(BarRef barRefValue) asBarRef,
+    required TResult Function(FooRef fooRefValue) asFooRef,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -4965,8 +5238,8 @@ class _$EntityRefUnknownImpl extends EntityRefUnknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(BarRef barRef)? barref,
-    TResult? Function(FooRef fooRef)? fooref,
+    TResult? Function(BarRef barRefValue)? asBarRef,
+    TResult? Function(FooRef fooRefValue)? asFooRef,
     TResult? Function(
             String message,
             Map<String, dynamic> json,
@@ -4982,8 +5255,8 @@ class _$EntityRefUnknownImpl extends EntityRefUnknown {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(BarRef barRef)? barref,
-    TResult Function(FooRef fooRef)? fooref,
+    TResult Function(BarRef barRefValue)? asBarRef,
+    TResult Function(FooRef fooRefValue)? asFooRef,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -5003,8 +5276,8 @@ class _$EntityRefUnknownImpl extends EntityRefUnknown {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(EntityRefBarref value) barref,
-    required TResult Function(EntityRefFooref value) fooref,
+    required TResult Function(EntityRefAsBarRef value) asBarRef,
+    required TResult Function(EntityRefAsFooRef value) asFooRef,
     required TResult Function(EntityRefUnknown value) unknown,
   }) {
     return unknown(this);
@@ -5013,8 +5286,8 @@ class _$EntityRefUnknownImpl extends EntityRefUnknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(EntityRefBarref value)? barref,
-    TResult? Function(EntityRefFooref value)? fooref,
+    TResult? Function(EntityRefAsBarRef value)? asBarRef,
+    TResult? Function(EntityRefAsFooRef value)? asFooRef,
     TResult? Function(EntityRefUnknown value)? unknown,
   }) {
     return unknown?.call(this);
@@ -5023,8 +5296,8 @@ class _$EntityRefUnknownImpl extends EntityRefUnknown {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(EntityRefBarref value)? barref,
-    TResult Function(EntityRefFooref value)? fooref,
+    TResult Function(EntityRefAsBarRef value)? asBarRef,
+    TResult Function(EntityRefAsFooRef value)? asFooRef,
     TResult Function(EntityRefUnknown value)? unknown,
     required TResult orElse(),
   }) {
@@ -5049,7 +5322,10 @@ abstract class EntityRefUnknown extends EntityRef {
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<EntityRef> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of EntityRef
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EntityRefUnknownImplCopyWith<_$EntityRefUnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5072,8 +5348,12 @@ mixin _$Extensible {
   @JsonKey(name: r'@type')
   String get atType => throw _privateConstructorUsedError;
 
+  /// Serializes this Extensible to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Extensible
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ExtensibleCopyWith<Extensible> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5100,6 +5380,8 @@ class _$ExtensibleCopyWithImpl<$Res, $Val extends Extensible>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Extensible
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5146,6 +5428,8 @@ class __$$ExtensibleImplCopyWithImpl<$Res>
       _$ExtensibleImpl _value, $Res Function(_$ExtensibleImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Extensible
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5214,12 +5498,14 @@ class _$ExtensibleImpl extends _Extensible {
             (identical(other.atType, atType) || other.atType == atType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, atSchemaLocation, atBaseType, atType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Extensible
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ExtensibleImplCopyWith<_$ExtensibleImpl> get copyWith =>
@@ -5244,23 +5530,25 @@ abstract class _Extensible extends Extensible {
   factory _Extensible.fromJson(Map<String, dynamic> json) =
       _$ExtensibleImpl.fromJson;
 
-  @override
-
   /// A URI to a JSON-Schema file that defines additional attributes and relationships
+  @override
   @JsonKey(name: r'@schemaLocation')
   String? get atSchemaLocation;
-  @override
 
   /// When sub-classing, this defines the super-class
+  @override
   @JsonKey(name: r'@baseType')
   String? get atBaseType;
-  @override
 
   /// When sub-classing, this defines the sub-class Extensible name
+  @override
   @JsonKey(name: r'@type')
   String get atType;
+
+  /// Create a copy of Extensible
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ExtensibleImplCopyWith<_$ExtensibleImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5296,8 +5584,12 @@ mixin _$Foo {
   @JsonKey(name: r'@type')
   String get atType => throw _privateConstructorUsedError;
 
+  /// Serializes this Foo to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Foo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FooCopyWith<Foo> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -5325,6 +5617,8 @@ class _$FooCopyWithImpl<$Res, $Val extends Foo> implements $FooCopyWith<$Res> {
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Foo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5391,6 +5685,8 @@ class __$$FooImplCopyWithImpl<$Res> extends _$FooCopyWithImpl<$Res, _$FooImpl>
   __$$FooImplCopyWithImpl(_$FooImpl _value, $Res Function(_$FooImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Foo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5506,12 +5802,14 @@ class _$FooImpl extends _Foo {
             (identical(other.atType, atType) || other.atType == atType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, fooPropA, fooPropB, href, id,
       atSchemaLocation, atBaseType, atType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Foo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FooImplCopyWith<_$FooImpl> get copyWith =>
@@ -5544,33 +5842,36 @@ abstract class _Foo extends Foo {
   @override
   @JsonKey(name: r'fooPropB')
   String? get fooPropB;
-  @override
 
   /// Hyperlink reference
+  @override
   @JsonKey(name: r'href')
   String? get href;
-  @override
 
   /// unique identifier
+  @override
   @JsonKey(name: r'id')
   String? get id;
-  @override
 
   /// A URI to a JSON-Schema file that defines additional attributes and relationships
+  @override
   @JsonKey(name: r'@schemaLocation')
   String? get atSchemaLocation;
-  @override
 
   /// When sub-classing, this defines the super-class
+  @override
   @JsonKey(name: r'@baseType')
   String? get atBaseType;
-  @override
 
   /// When sub-classing, this defines the sub-class Extensible name
+  @override
   @JsonKey(name: r'@type')
   String get atType;
+
+  /// Create a copy of Foo
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FooImplCopyWith<_$FooImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5612,8 +5913,12 @@ mixin _$FooRef {
   @JsonKey(name: r'@type')
   String get atType => throw _privateConstructorUsedError;
 
+  /// Serializes this FooRef to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FooRef
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FooRefCopyWith<FooRef> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -5643,6 +5948,8 @@ class _$FooRefCopyWithImpl<$Res, $Val extends FooRef>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FooRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5718,6 +6025,8 @@ class __$$FooRefImplCopyWithImpl<$Res>
       _$FooRefImpl _value, $Res Function(_$FooRefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FooRef
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5847,12 +6156,14 @@ class _$FooRefImpl extends _FooRef {
             (identical(other.atType, atType) || other.atType == atType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, foorefPropA, name,
       atReferredType, href, id, atSchemaLocation, atBaseType, atType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FooRef
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FooRefImplCopyWith<_$FooRefImpl> get copyWith =>
@@ -5883,43 +6194,46 @@ abstract class _FooRef extends FooRef {
   @override
   @JsonKey(name: r'foorefPropA')
   String? get foorefPropA;
-  @override
 
   /// Name of the related entity.
+  @override
   @JsonKey(name: r'name')
   String? get name;
-  @override
 
   /// The actual type of the target instance when needed for disambiguation.
+  @override
   @JsonKey(name: r'@referredType')
   String? get atReferredType;
-  @override
 
   /// Hyperlink reference
+  @override
   @JsonKey(name: r'href')
   String? get href;
-  @override
 
   /// unique identifier
+  @override
   @JsonKey(name: r'id')
   String? get id;
-  @override
 
   /// A URI to a JSON-Schema file that defines additional attributes and relationships
+  @override
   @JsonKey(name: r'@schemaLocation')
   String? get atSchemaLocation;
-  @override
 
   /// When sub-classing, this defines the super-class
+  @override
   @JsonKey(name: r'@baseType')
   String? get atBaseType;
-  @override
 
   /// When sub-classing, this defines the sub-class Extensible name
+  @override
   @JsonKey(name: r'@type')
   String get atType;
+
+  /// Create a copy of FooRef
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FooRefImplCopyWith<_$FooRefImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6006,6 +6320,9 @@ class _$FooRefOrValueCopyWithImpl<$Res, $Val extends FooRefOrValue>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -6027,6 +6344,8 @@ class __$$FooRefOrValueAsFooImplCopyWithImpl<$Res>
       $Res Function(_$FooRefOrValueAsFooImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6040,6 +6359,8 @@ class __$$FooRefOrValueAsFooImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FooCopyWith<$Res> get fooValue {
@@ -6074,7 +6395,9 @@ class _$FooRefOrValueAsFooImpl extends FooRefOrValueAsFoo {
   @override
   int get hashCode => Object.hash(runtimeType, fooValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FooRefOrValueAsFooImplCopyWith<_$FooRefOrValueAsFooImpl> get copyWith =>
@@ -6174,7 +6497,10 @@ abstract class FooRefOrValueAsFoo extends FooRefOrValue {
   const FooRefOrValueAsFoo._() : super._();
 
   Foo get fooValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FooRefOrValueAsFooImplCopyWith<_$FooRefOrValueAsFooImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6199,6 +6525,8 @@ class __$$FooRefOrValueAsFooRefImplCopyWithImpl<$Res>
       $Res Function(_$FooRefOrValueAsFooRefImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6212,6 +6540,8 @@ class __$$FooRefOrValueAsFooRefImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FooRefCopyWith<$Res> get fooRefValue {
@@ -6246,7 +6576,9 @@ class _$FooRefOrValueAsFooRefImpl extends FooRefOrValueAsFooRef {
   @override
   int get hashCode => Object.hash(runtimeType, fooRefValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FooRefOrValueAsFooRefImplCopyWith<_$FooRefOrValueAsFooRefImpl>
@@ -6346,7 +6678,10 @@ abstract class FooRefOrValueAsFooRef extends FooRefOrValue {
   const FooRefOrValueAsFooRef._() : super._();
 
   FooRef get fooRefValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FooRefOrValueAsFooRefImplCopyWith<_$FooRefOrValueAsFooRefImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -6373,6 +6708,8 @@ class __$$FooRefOrValueUnknownImplCopyWithImpl<$Res>
       $Res Function(_$FooRefOrValueUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6483,7 +6820,9 @@ class _$FooRefOrValueUnknownImpl extends FooRefOrValueUnknown {
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FooRefOrValueUnknownImplCopyWith<_$FooRefOrValueUnknownImpl>
@@ -6595,7 +6934,10 @@ abstract class FooRefOrValueUnknown extends FooRefOrValue {
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<FooRefOrValue> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FooRefOrValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FooRefOrValueUnknownImplCopyWith<_$FooRefOrValueUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -6629,8 +6971,12 @@ mixin _$Pasta {
   @JsonKey(name: r'@type')
   String get atType => throw _privateConstructorUsedError;
 
+  /// Serializes this Pasta to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Pasta
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PastaCopyWith<Pasta> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -6658,6 +7004,8 @@ class _$PastaCopyWithImpl<$Res, $Val extends Pasta>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Pasta
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6721,6 +7069,8 @@ class __$$PastaImplCopyWithImpl<$Res>
       _$PastaImpl _value, $Res Function(_$PastaImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Pasta
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6824,12 +7174,14 @@ class _$PastaImpl extends _Pasta {
             (identical(other.atType, atType) || other.atType == atType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, vendor, href, id, atSchemaLocation, atBaseType, atType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Pasta
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PastaImplCopyWith<_$PastaImpl> get copyWith =>
@@ -6858,33 +7210,36 @@ abstract class _Pasta extends Pasta {
   @override
   @JsonKey(name: r'vendor')
   String? get vendor;
-  @override
 
   /// Hyperlink reference
+  @override
   @JsonKey(name: r'href')
   String? get href;
-  @override
 
   /// unique identifier
+  @override
   @JsonKey(name: r'id')
   String? get id;
-  @override
 
   /// A URI to a JSON-Schema file that defines additional attributes and relationships
+  @override
   @JsonKey(name: r'@schemaLocation')
   String? get atSchemaLocation;
-  @override
 
   /// When sub-classing, this defines the super-class
+  @override
   @JsonKey(name: r'@baseType')
   String? get atBaseType;
-  @override
 
   /// When sub-classing, this defines the sub-class Extensible name
+  @override
   @JsonKey(name: r'@type')
   String get atType;
+
+  /// Create a copy of Pasta
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PastaImplCopyWith<_$PastaImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6918,8 +7273,12 @@ mixin _$Pizza {
   @JsonKey(name: r'@type')
   String get atType => throw _privateConstructorUsedError;
 
+  /// Serializes this Pizza to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Pizza
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PizzaCopyWith<Pizza> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -6947,6 +7306,8 @@ class _$PizzaCopyWithImpl<$Res, $Val extends Pizza>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Pizza
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7010,6 +7371,8 @@ class __$$PizzaImplCopyWithImpl<$Res>
       _$PizzaImpl _value, $Res Function(_$PizzaImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Pizza
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7114,12 +7477,14 @@ class _$PizzaImpl extends _Pizza {
             (identical(other.atType, atType) || other.atType == atType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, pizzaSize, href, id, atSchemaLocation, atBaseType, atType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Pizza
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PizzaImplCopyWith<_$PizzaImpl> get copyWith =>
@@ -7148,33 +7513,36 @@ abstract class _Pizza extends Pizza {
   @override
   @JsonKey(name: r'pizzaSize')
   num? get pizzaSize;
-  @override
 
   /// Hyperlink reference
+  @override
   @JsonKey(name: r'href')
   String? get href;
-  @override
 
   /// unique identifier
+  @override
   @JsonKey(name: r'id')
   String? get id;
-  @override
 
   /// A URI to a JSON-Schema file that defines additional attributes and relationships
+  @override
   @JsonKey(name: r'@schemaLocation')
   String? get atSchemaLocation;
-  @override
 
   /// When sub-classing, this defines the super-class
+  @override
   @JsonKey(name: r'@baseType')
   String? get atBaseType;
-  @override
 
   /// When sub-classing, this defines the sub-class Extensible name
+  @override
   @JsonKey(name: r'@type')
   String get atType;
+
+  /// Create a copy of Pizza
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PizzaImplCopyWith<_$PizzaImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -7210,8 +7578,12 @@ mixin _$PizzaSpeziale {
   @JsonKey(name: r'@type')
   String get atType => throw _privateConstructorUsedError;
 
+  /// Serializes this PizzaSpeziale to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of PizzaSpeziale
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PizzaSpezialeCopyWith<PizzaSpeziale> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -7242,6 +7614,8 @@ class _$PizzaSpezialeCopyWithImpl<$Res, $Val extends PizzaSpeziale>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PizzaSpeziale
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7312,6 +7686,8 @@ class __$$PizzaSpezialeImplCopyWithImpl<$Res>
       _$PizzaSpezialeImpl _value, $Res Function(_$PizzaSpezialeImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PizzaSpeziale
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7427,12 +7803,14 @@ class _$PizzaSpezialeImpl extends _PizzaSpeziale {
             (identical(other.atType, atType) || other.atType == atType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, toppings, pizzaSize, href, id,
       atSchemaLocation, atBaseType, atType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PizzaSpeziale
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PizzaSpezialeImplCopyWith<_$PizzaSpezialeImpl> get copyWith =>
@@ -7467,33 +7845,36 @@ abstract class _PizzaSpeziale extends PizzaSpeziale {
   @override
   @JsonKey(name: r'pizzaSize')
   num? get pizzaSize;
-  @override
 
   /// Hyperlink reference
+  @override
   @JsonKey(name: r'href')
   String? get href;
-  @override
 
   /// unique identifier
+  @override
   @JsonKey(name: r'id')
   String? get id;
-  @override
 
   /// A URI to a JSON-Schema file that defines additional attributes and relationships
+  @override
   @JsonKey(name: r'@schemaLocation')
   String? get atSchemaLocation;
-  @override
 
   /// When sub-classing, this defines the super-class
+  @override
   @JsonKey(name: r'@baseType')
   String? get atBaseType;
-  @override
 
   /// When sub-classing, this defines the sub-class Extensible name
+  @override
   @JsonKey(name: r'@type')
   String get atType;
+
+  /// Create a copy of PizzaSpeziale
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PizzaSpezialeImplCopyWith<_$PizzaSpezialeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

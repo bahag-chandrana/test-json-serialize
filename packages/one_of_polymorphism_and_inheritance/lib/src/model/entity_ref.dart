@@ -20,12 +20,10 @@ part of 'models.dart';
 class EntityRef with _$EntityRef {
   const EntityRef._();
 
-  const factory EntityRef.barref({
-    required BarRef barRef,
-  }) = EntityRefBarref;
-  const factory EntityRef.fooref({
-    required FooRef fooRef,
-  }) = EntityRefFooref;
+  const factory EntityRef.asBarRef({required BarRef barRefValue}) =
+      EntityRefAsBarRef;
+  const factory EntityRef.asFooRef({required FooRef fooRefValue}) =
+      EntityRefAsFooRef;
   const factory EntityRef.unknown({
     @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
@@ -38,12 +36,12 @@ class EntityRef with _$EntityRef {
   factory EntityRef.fromJson(Map<String, dynamic> json) {
     switch (json['@type']) {
       case 'BarRef':
-        return EntityRef.barref(
-          barRef: BarRef.fromJson(json),
+        return EntityRef.asBarRef(
+          barRefValue: BarRef.fromJson(json),
         );
       case 'FooRef':
-        return EntityRef.fooref(
-          fooRef: FooRef.fromJson(json),
+        return EntityRef.asFooRef(
+          fooRefValue: FooRef.fromJson(json),
         );
     }
     return EntityRef.unknown(json: json);
@@ -51,8 +49,8 @@ class EntityRef with _$EntityRef {
 
   Map<String, dynamic> toJson() {
     return when(
-      barref: (barRef) => barRef.toJson(),
-      fooref: (fooRef) => fooRef.toJson(),
+      asBarRef: (asBarRef) => asBarRef.toJson(),
+      asFooRef: (asFooRef) => asFooRef.toJson(),
       unknown: (message, json, errorType, possibleTypes, deserializedModels) =>
           <String, dynamic>{},
     );
