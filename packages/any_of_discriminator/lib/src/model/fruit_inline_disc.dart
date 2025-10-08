@@ -36,13 +36,13 @@ class FruitInlineDisc with _$FruitInlineDisc {
   }) = FruitInlineDiscUnknown;
 
   factory FruitInlineDisc.fromJson(Map<String, dynamic> json) {
-    FruitInlineDisc? deserializedModel;
     // A discriminator property is not defined in the spec so
     // we try to parse the json against all the models and try to
     // return one of the valid model. Note: this approach tries
     // to return one valid model and if more than one model
     // is valid it then returns unknown type along with the json so
     // the consumer can decide which model it is.
+    FruitInlineDisc? deserializedModel;
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       FruitInlineDiscAnyOf.fromJson,
       FruitInlineDiscAnyOf1.fromJson,
@@ -81,7 +81,6 @@ class FruitInlineDisc with _$FruitInlineDisc {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
-
     return deserializedModel ?? FruitInlineDisc.unknown(json: json);
   }
 

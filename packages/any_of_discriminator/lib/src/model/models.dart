@@ -26,8 +26,6 @@ part 'fruit_inline_disc_any_of.dart';
 part 'fruit_inline_disc_any_of1.dart';
 part 'fruit_inline_inline_disc.dart';
 part 'fruit_inline_inline_disc_any_of.dart';
-part 'fruit_inline_inline_disc_any_of1.dart';
-part 'fruit_inline_inline_disc_any_of_any_of.dart';
 part 'fruit_req_disc.dart';
 part 'fruit_type.dart';
 part 'parent.dart';

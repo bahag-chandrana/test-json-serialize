@@ -233,14 +233,14 @@ Map<String, dynamic> _$$FruitInlineDiscAnyOf1ImplToJson(
       'fruitType': instance.fruitType,
     };
 
-_$FruitInlineInlineDiscAnyOfAnyOfImpl
-    _$$FruitInlineInlineDiscAnyOfAnyOfImplFromJson(Map<String, dynamic> json) =>
-        _$FruitInlineInlineDiscAnyOfAnyOfImpl(
-          fruitType: json['fruitType'] as String,
-        );
+_$FruitInlineInlineDiscAnyOfImpl _$$FruitInlineInlineDiscAnyOfImplFromJson(
+        Map<String, dynamic> json) =>
+    _$FruitInlineInlineDiscAnyOfImpl(
+      fruitType: json['fruitType'] as String,
+    );
 
-Map<String, dynamic> _$$FruitInlineInlineDiscAnyOfAnyOfImplToJson(
-        _$FruitInlineInlineDiscAnyOfAnyOfImpl instance) =>
+Map<String, dynamic> _$$FruitInlineInlineDiscAnyOfImplToJson(
+        _$FruitInlineInlineDiscAnyOfImpl instance) =>
     <String, dynamic>{
       'fruitType': instance.fruitType,
     };

@@ -22,8 +22,12 @@ IntInUnion _$IntInUnionFromJson(Map<String, dynamic> json) {
 mixin _$IntInUnion {
   int get intValue => throw _privateConstructorUsedError;
 
+  /// Serializes this IntInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of IntInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $IntInUnionCopyWith<IntInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -47,6 +51,8 @@ class _$IntInUnionCopyWithImpl<$Res, $Val extends IntInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of IntInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$IntInUnionImplCopyWithImpl<$Res>
       _$IntInUnionImpl _value, $Res Function(_$IntInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of IntInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -119,11 +127,13 @@ class _$IntInUnionImpl implements _IntInUnion {
                 other.intValue == intValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, intValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of IntInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$IntInUnionImplCopyWith<_$IntInUnionImpl> get copyWith =>
@@ -145,8 +155,11 @@ abstract class _IntInUnion implements IntInUnion {
 
   @override
   int get intValue;
+
+  /// Create a copy of IntInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$IntInUnionImplCopyWith<_$IntInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -159,8 +172,12 @@ StringInUnion _$StringInUnionFromJson(Map<String, dynamic> json) {
 mixin _$StringInUnion {
   String get stringValue => throw _privateConstructorUsedError;
 
+  /// Serializes this StringInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StringInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $StringInUnionCopyWith<StringInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -184,6 +201,8 @@ class _$StringInUnionCopyWithImpl<$Res, $Val extends StringInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of StringInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -217,6 +236,8 @@ class __$$StringInUnionImplCopyWithImpl<$Res>
       _$StringInUnionImpl _value, $Res Function(_$StringInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StringInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -256,11 +277,13 @@ class _$StringInUnionImpl implements _StringInUnion {
                 other.stringValue == stringValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, stringValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StringInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StringInUnionImplCopyWith<_$StringInUnionImpl> get copyWith =>
@@ -283,8 +306,11 @@ abstract class _StringInUnion implements StringInUnion {
 
   @override
   String get stringValue;
+
+  /// Create a copy of StringInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StringInUnionImplCopyWith<_$StringInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -297,8 +323,12 @@ BoolInUnion _$BoolInUnionFromJson(Map<String, dynamic> json) {
 mixin _$BoolInUnion {
   bool get boolValue => throw _privateConstructorUsedError;
 
+  /// Serializes this BoolInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BoolInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BoolInUnionCopyWith<BoolInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -322,6 +352,8 @@ class _$BoolInUnionCopyWithImpl<$Res, $Val extends BoolInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BoolInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -355,6 +387,8 @@ class __$$BoolInUnionImplCopyWithImpl<$Res>
       _$BoolInUnionImpl _value, $Res Function(_$BoolInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BoolInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -394,11 +428,13 @@ class _$BoolInUnionImpl implements _BoolInUnion {
                 other.boolValue == boolValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, boolValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BoolInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BoolInUnionImplCopyWith<_$BoolInUnionImpl> get copyWith =>
@@ -421,8 +457,11 @@ abstract class _BoolInUnion implements BoolInUnion {
 
   @override
   bool get boolValue;
+
+  /// Create a copy of BoolInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BoolInUnionImplCopyWith<_$BoolInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -435,8 +474,12 @@ DoubleInUnion _$DoubleInUnionFromJson(Map<String, dynamic> json) {
 mixin _$DoubleInUnion {
   double get doubleValue => throw _privateConstructorUsedError;
 
+  /// Serializes this DoubleInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DoubleInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DoubleInUnionCopyWith<DoubleInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -460,6 +503,8 @@ class _$DoubleInUnionCopyWithImpl<$Res, $Val extends DoubleInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DoubleInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -493,6 +538,8 @@ class __$$DoubleInUnionImplCopyWithImpl<$Res>
       _$DoubleInUnionImpl _value, $Res Function(_$DoubleInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DoubleInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -532,11 +579,13 @@ class _$DoubleInUnionImpl implements _DoubleInUnion {
                 other.doubleValue == doubleValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, doubleValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DoubleInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DoubleInUnionImplCopyWith<_$DoubleInUnionImpl> get copyWith =>
@@ -559,8 +608,11 @@ abstract class _DoubleInUnion implements DoubleInUnion {
 
   @override
   double get doubleValue;
+
+  /// Create a copy of DoubleInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DoubleInUnionImplCopyWith<_$DoubleInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -573,8 +625,12 @@ ObjectInUnion _$ObjectInUnionFromJson(Map<String, dynamic> json) {
 mixin _$ObjectInUnion {
   Object get objectValue => throw _privateConstructorUsedError;
 
+  /// Serializes this ObjectInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ObjectInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ObjectInUnionCopyWith<ObjectInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -598,6 +654,8 @@ class _$ObjectInUnionCopyWithImpl<$Res, $Val extends ObjectInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ObjectInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -628,6 +686,8 @@ class __$$ObjectInUnionImplCopyWithImpl<$Res>
       _$ObjectInUnionImpl _value, $Res Function(_$ObjectInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ObjectInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -664,12 +724,14 @@ class _$ObjectInUnionImpl implements _ObjectInUnion {
                 .equals(other.objectValue, objectValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(objectValue));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ObjectInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ObjectInUnionImplCopyWith<_$ObjectInUnionImpl> get copyWith =>
@@ -692,8 +754,11 @@ abstract class _ObjectInUnion implements ObjectInUnion {
 
   @override
   Object get objectValue;
+
+  /// Create a copy of ObjectInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ObjectInUnionImplCopyWith<_$ObjectInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -706,8 +771,12 @@ NumInUnion _$NumInUnionFromJson(Map<String, dynamic> json) {
 mixin _$NumInUnion {
   num get numValue => throw _privateConstructorUsedError;
 
+  /// Serializes this NumInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NumInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $NumInUnionCopyWith<NumInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -731,6 +800,8 @@ class _$NumInUnionCopyWithImpl<$Res, $Val extends NumInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of NumInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -764,6 +835,8 @@ class __$$NumInUnionImplCopyWithImpl<$Res>
       _$NumInUnionImpl _value, $Res Function(_$NumInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NumInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -803,11 +876,13 @@ class _$NumInUnionImpl implements _NumInUnion {
                 other.numValue == numValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, numValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NumInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$NumInUnionImplCopyWith<_$NumInUnionImpl> get copyWith =>
@@ -829,8 +904,11 @@ abstract class _NumInUnion implements NumInUnion {
 
   @override
   num get numValue;
+
+  /// Create a copy of NumInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$NumInUnionImplCopyWith<_$NumInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -843,8 +921,12 @@ DateTimeInUnion _$DateTimeInUnionFromJson(Map<String, dynamic> json) {
 mixin _$DateTimeInUnion {
   DateTime get dateTimeValue => throw _privateConstructorUsedError;
 
+  /// Serializes this DateTimeInUnion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DateTimeInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DateTimeInUnionCopyWith<DateTimeInUnion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -868,6 +950,8 @@ class _$DateTimeInUnionCopyWithImpl<$Res, $Val extends DateTimeInUnion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DateTimeInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -901,6 +985,8 @@ class __$$DateTimeInUnionImplCopyWithImpl<$Res>
       _$DateTimeInUnionImpl _value, $Res Function(_$DateTimeInUnionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DateTimeInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -940,11 +1026,13 @@ class _$DateTimeInUnionImpl implements _DateTimeInUnion {
                 other.dateTimeValue == dateTimeValue));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, dateTimeValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DateTimeInUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DateTimeInUnionImplCopyWith<_$DateTimeInUnionImpl> get copyWith =>
@@ -968,8 +1056,11 @@ abstract class _DateTimeInUnion implements DateTimeInUnion {
 
   @override
   DateTime get dateTimeValue;
+
+  /// Create a copy of DateTimeInUnion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DateTimeInUnionImplCopyWith<_$DateTimeInUnionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -985,8 +1076,12 @@ mixin _$AppleAllOfDisc {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this AppleAllOfDisc to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppleAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AppleAllOfDiscCopyWith<AppleAllOfDisc> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1012,6 +1107,8 @@ class _$AppleAllOfDiscCopyWithImpl<$Res, $Val extends AppleAllOfDisc>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AppleAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1052,6 +1149,8 @@ class __$$AppleAllOfDiscImplCopyWithImpl<$Res>
       _$AppleAllOfDiscImpl _value, $Res Function(_$AppleAllOfDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppleAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1104,11 +1203,13 @@ class _$AppleAllOfDiscImpl extends _AppleAllOfDisc {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, seeds, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppleAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AppleAllOfDiscImplCopyWith<_$AppleAllOfDiscImpl> get copyWith =>
@@ -1139,8 +1240,11 @@ abstract class _AppleAllOfDisc extends AppleAllOfDisc {
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of AppleAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AppleAllOfDiscImplCopyWith<_$AppleAllOfDiscImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1156,8 +1260,12 @@ mixin _$AppleGrandparentDisc {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this AppleGrandparentDisc to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppleGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AppleGrandparentDiscCopyWith<AppleGrandparentDisc> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1184,6 +1292,8 @@ class _$AppleGrandparentDiscCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AppleGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1224,6 +1334,8 @@ class __$$AppleGrandparentDiscImplCopyWithImpl<$Res>
       $Res Function(_$AppleGrandparentDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppleGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1276,11 +1388,13 @@ class _$AppleGrandparentDiscImpl extends _AppleGrandparentDisc {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, seeds, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppleGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AppleGrandparentDiscImplCopyWith<_$AppleGrandparentDiscImpl>
@@ -1312,8 +1426,11 @@ abstract class _AppleGrandparentDisc extends AppleGrandparentDisc {
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of AppleGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AppleGrandparentDiscImplCopyWith<_$AppleGrandparentDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1329,8 +1446,12 @@ mixin _$AppleReqDisc {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this AppleReqDisc to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppleReqDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AppleReqDiscCopyWith<AppleReqDisc> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1356,6 +1477,8 @@ class _$AppleReqDiscCopyWithImpl<$Res, $Val extends AppleReqDisc>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AppleReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1396,6 +1519,8 @@ class __$$AppleReqDiscImplCopyWithImpl<$Res>
       _$AppleReqDiscImpl _value, $Res Function(_$AppleReqDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppleReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1448,11 +1573,13 @@ class _$AppleReqDiscImpl extends _AppleReqDisc {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, seeds, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppleReqDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AppleReqDiscImplCopyWith<_$AppleReqDiscImpl> get copyWith =>
@@ -1482,8 +1609,11 @@ abstract class _AppleReqDisc extends AppleReqDisc {
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of AppleReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AppleReqDiscImplCopyWith<_$AppleReqDiscImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1499,8 +1629,12 @@ mixin _$BananaAllOfDisc {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this BananaAllOfDisc to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BananaAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BananaAllOfDiscCopyWith<BananaAllOfDisc> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1526,6 +1660,8 @@ class _$BananaAllOfDiscCopyWithImpl<$Res, $Val extends BananaAllOfDisc>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BananaAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1566,6 +1702,8 @@ class __$$BananaAllOfDiscImplCopyWithImpl<$Res>
       _$BananaAllOfDiscImpl _value, $Res Function(_$BananaAllOfDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BananaAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1618,11 +1756,13 @@ class _$BananaAllOfDiscImpl extends _BananaAllOfDisc {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, length, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BananaAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BananaAllOfDiscImplCopyWith<_$BananaAllOfDiscImpl> get copyWith =>
@@ -1653,8 +1793,11 @@ abstract class _BananaAllOfDisc extends BananaAllOfDisc {
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of BananaAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BananaAllOfDiscImplCopyWith<_$BananaAllOfDiscImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1671,8 +1814,12 @@ mixin _$BananaGrandparentDisc {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this BananaGrandparentDisc to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BananaGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BananaGrandparentDiscCopyWith<BananaGrandparentDisc> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1699,6 +1846,8 @@ class _$BananaGrandparentDiscCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BananaGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1741,6 +1890,8 @@ class __$$BananaGrandparentDiscImplCopyWithImpl<$Res>
       $Res Function(_$BananaGrandparentDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BananaGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1793,11 +1944,13 @@ class _$BananaGrandparentDiscImpl extends _BananaGrandparentDisc {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, length, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BananaGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BananaGrandparentDiscImplCopyWith<_$BananaGrandparentDiscImpl>
@@ -1828,8 +1981,11 @@ abstract class _BananaGrandparentDisc extends BananaGrandparentDisc {
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of BananaGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BananaGrandparentDiscImplCopyWith<_$BananaGrandparentDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1845,8 +2001,12 @@ mixin _$BananaReqDisc {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this BananaReqDisc to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BananaReqDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BananaReqDiscCopyWith<BananaReqDisc> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1872,6 +2032,8 @@ class _$BananaReqDiscCopyWithImpl<$Res, $Val extends BananaReqDisc>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BananaReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1912,6 +2074,8 @@ class __$$BananaReqDiscImplCopyWithImpl<$Res>
       _$BananaReqDiscImpl _value, $Res Function(_$BananaReqDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BananaReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1964,11 +2128,13 @@ class _$BananaReqDiscImpl extends _BananaReqDisc {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, length, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BananaReqDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BananaReqDiscImplCopyWith<_$BananaReqDiscImpl> get copyWith =>
@@ -1998,8 +2164,11 @@ abstract class _BananaReqDisc extends BananaReqDisc {
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of BananaReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BananaReqDiscImplCopyWith<_$BananaReqDiscImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2117,6 +2286,9 @@ class _$ComposedDiscOptionalTypeInconsistentCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2151,6 +2323,8 @@ class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyW
           _then)
       : super(_value, _then);
 
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2165,6 +2339,8 @@ class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyW
     ));
   }
 
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DiscOptionalTypeCorrectCopyWith<$Res> get discOptionalTypeCorrectValue {
@@ -2206,7 +2382,9 @@ class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl
   @override
   int get hashCode => Object.hash(runtimeType, discOptionalTypeCorrectValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
@@ -2341,7 +2519,10 @@ abstract class ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrect
       : super._();
 
   DiscOptionalTypeCorrect get discOptionalTypeCorrectValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
           _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeCorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2380,6 +2561,8 @@ class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCop
           _then)
       : super(_value, _then);
 
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2394,6 +2577,8 @@ class __$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCop
     ));
   }
 
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DiscOptionalTypeIncorrectCopyWith<$Res> get discOptionalTypeIncorrectValue {
@@ -2435,7 +2620,9 @@ class _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl
   @override
   int get hashCode => Object.hash(runtimeType, discOptionalTypeIncorrectValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWith<
@@ -2570,7 +2757,10 @@ abstract class ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrect
       : super._();
 
   DiscOptionalTypeIncorrect get discOptionalTypeIncorrectValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImplCopyWith<
           _$ComposedDiscOptionalTypeInconsistentAsDiscOptionalTypeIncorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2604,6 +2794,8 @@ class __$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWithImpl<$Res>
       $Res Function(_$ComposedDiscOptionalTypeInconsistentUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2719,7 +2911,9 @@ class _$ComposedDiscOptionalTypeInconsistentUnknownImpl
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWith<
@@ -2863,7 +3057,10 @@ abstract class ComposedDiscOptionalTypeInconsistentUnknown
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<ComposedDiscOptionalTypeInconsistent> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ComposedDiscOptionalTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ComposedDiscOptionalTypeInconsistentUnknownImplCopyWith<
           _$ComposedDiscOptionalTypeInconsistentUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2968,6 +3165,9 @@ class _$ComposedDiscRequiredInconsistentCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3001,6 +3201,8 @@ class __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWithI
           _then)
       : super(_value, _then);
 
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3015,6 +3217,8 @@ class __$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWithI
     ));
   }
 
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DiscOptionalTypeCorrectCopyWith<$Res> get discOptionalTypeCorrectValue {
@@ -3056,7 +3260,9 @@ class _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl
   @override
   int get hashCode => Object.hash(runtimeType, discOptionalTypeCorrectValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
@@ -3177,7 +3383,10 @@ abstract class ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrect
       : super._();
 
   DiscOptionalTypeCorrect get discOptionalTypeCorrectValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImplCopyWith<
           _$ComposedDiscRequiredInconsistentAsDiscOptionalTypeCorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3208,6 +3417,8 @@ class __$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWithImpl<$Res>
       $Res Function(_$ComposedDiscRequiredInconsistentAsFruitTypeImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3221,6 +3432,8 @@ class __$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FruitTypeCopyWith<$Res> get fruitTypeValue {
@@ -3258,7 +3471,9 @@ class _$ComposedDiscRequiredInconsistentAsFruitTypeImpl
   @override
   int get hashCode => Object.hash(runtimeType, fruitTypeValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWith<
@@ -3377,7 +3592,10 @@ abstract class ComposedDiscRequiredInconsistentAsFruitType
   const ComposedDiscRequiredInconsistentAsFruitType._() : super._();
 
   FruitType get fruitTypeValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ComposedDiscRequiredInconsistentAsFruitTypeImplCopyWith<
           _$ComposedDiscRequiredInconsistentAsFruitTypeImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3408,6 +3626,8 @@ class __$$ComposedDiscRequiredInconsistentUnknownImplCopyWithImpl<$Res>
       $Res Function(_$ComposedDiscRequiredInconsistentUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3523,7 +3743,9 @@ class _$ComposedDiscRequiredInconsistentUnknownImpl
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ComposedDiscRequiredInconsistentUnknownImplCopyWith<
@@ -3651,7 +3873,10 @@ abstract class ComposedDiscRequiredInconsistentUnknown
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<ComposedDiscRequiredInconsistent> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ComposedDiscRequiredInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ComposedDiscRequiredInconsistentUnknownImplCopyWith<
           _$ComposedDiscRequiredInconsistentUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3753,6 +3978,9 @@ class _$ComposedDiscTypeInconsistentCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3781,6 +4009,8 @@ class __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWithImpl<$Res>
           _then)
       : super(_value, _then);
 
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3794,6 +4024,8 @@ class __$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DiscTypeIncorrectCopyWith<$Res> get discTypeIncorrectValue {
@@ -3832,7 +4064,9 @@ class _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl
   @override
   int get hashCode => Object.hash(runtimeType, discTypeIncorrectValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWith<
@@ -3948,7 +4182,10 @@ abstract class ComposedDiscTypeInconsistentAsDiscTypeIncorrect
   const ComposedDiscTypeInconsistentAsDiscTypeIncorrect._() : super._();
 
   DiscTypeIncorrect get discTypeIncorrectValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImplCopyWith<
           _$ComposedDiscTypeInconsistentAsDiscTypeIncorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3976,6 +4213,8 @@ class __$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWithImpl<$Res>
       $Res Function(_$ComposedDiscTypeInconsistentAsFruitTypeImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3989,6 +4228,8 @@ class __$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FruitTypeCopyWith<$Res> get fruitTypeValue {
@@ -4026,7 +4267,9 @@ class _$ComposedDiscTypeInconsistentAsFruitTypeImpl
   @override
   int get hashCode => Object.hash(runtimeType, fruitTypeValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWith<
@@ -4141,7 +4384,10 @@ abstract class ComposedDiscTypeInconsistentAsFruitType
   const ComposedDiscTypeInconsistentAsFruitType._() : super._();
 
   FruitType get fruitTypeValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ComposedDiscTypeInconsistentAsFruitTypeImplCopyWith<
           _$ComposedDiscTypeInconsistentAsFruitTypeImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4172,6 +4418,8 @@ class __$$ComposedDiscTypeInconsistentUnknownImplCopyWithImpl<$Res>
       $Res Function(_$ComposedDiscTypeInconsistentUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4287,7 +4535,9 @@ class _$ComposedDiscTypeInconsistentUnknownImpl
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ComposedDiscTypeInconsistentUnknownImplCopyWith<
@@ -4411,7 +4661,10 @@ abstract class ComposedDiscTypeInconsistentUnknown
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<ComposedDiscTypeInconsistent> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ComposedDiscTypeInconsistent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ComposedDiscTypeInconsistentUnknownImplCopyWith<
           _$ComposedDiscTypeInconsistentUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4427,8 +4680,12 @@ mixin _$DiscMissingFromProperties {
   @JsonKey(name: r'length')
   int? get length => throw _privateConstructorUsedError;
 
+  /// Serializes this DiscMissingFromProperties to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DiscMissingFromProperties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DiscMissingFromPropertiesCopyWith<DiscMissingFromProperties> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4453,6 +4710,8 @@ class _$DiscMissingFromPropertiesCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DiscMissingFromProperties
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4489,6 +4748,8 @@ class __$$DiscMissingFromPropertiesImplCopyWithImpl<$Res>
       $Res Function(_$DiscMissingFromPropertiesImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DiscMissingFromProperties
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4529,11 +4790,13 @@ class _$DiscMissingFromPropertiesImpl extends _DiscMissingFromProperties {
             (identical(other.length, length) || other.length == length));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, length);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DiscMissingFromProperties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DiscMissingFromPropertiesImplCopyWith<_$DiscMissingFromPropertiesImpl>
@@ -4560,8 +4823,11 @@ abstract class _DiscMissingFromProperties extends DiscMissingFromProperties {
   @override
   @JsonKey(name: r'length')
   int? get length;
+
+  /// Create a copy of DiscMissingFromProperties
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DiscMissingFromPropertiesImplCopyWith<_$DiscMissingFromPropertiesImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4576,8 +4842,12 @@ mixin _$DiscOptionalTypeCorrect {
   @JsonKey(name: r'fruitType')
   String? get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this DiscOptionalTypeCorrect to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DiscOptionalTypeCorrect
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DiscOptionalTypeCorrectCopyWith<DiscOptionalTypeCorrect> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4602,6 +4872,8 @@ class _$DiscOptionalTypeCorrectCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DiscOptionalTypeCorrect
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4638,6 +4910,8 @@ class __$$DiscOptionalTypeCorrectImplCopyWithImpl<$Res>
       $Res Function(_$DiscOptionalTypeCorrectImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DiscOptionalTypeCorrect
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4680,11 +4954,13 @@ class _$DiscOptionalTypeCorrectImpl extends _DiscOptionalTypeCorrect {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DiscOptionalTypeCorrect
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DiscOptionalTypeCorrectImplCopyWith<_$DiscOptionalTypeCorrectImpl>
@@ -4711,8 +4987,11 @@ abstract class _DiscOptionalTypeCorrect extends DiscOptionalTypeCorrect {
   @override
   @JsonKey(name: r'fruitType')
   String? get fruitType;
+
+  /// Create a copy of DiscOptionalTypeCorrect
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DiscOptionalTypeCorrectImplCopyWith<_$DiscOptionalTypeCorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4727,8 +5006,12 @@ mixin _$DiscOptionalTypeIncorrect {
   @JsonKey(name: r'fruitType')
   int? get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this DiscOptionalTypeIncorrect to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DiscOptionalTypeIncorrect
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DiscOptionalTypeIncorrectCopyWith<DiscOptionalTypeIncorrect> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4753,6 +5036,8 @@ class _$DiscOptionalTypeIncorrectCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DiscOptionalTypeIncorrect
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4789,6 +5074,8 @@ class __$$DiscOptionalTypeIncorrectImplCopyWithImpl<$Res>
       $Res Function(_$DiscOptionalTypeIncorrectImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DiscOptionalTypeIncorrect
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4831,11 +5118,13 @@ class _$DiscOptionalTypeIncorrectImpl extends _DiscOptionalTypeIncorrect {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DiscOptionalTypeIncorrect
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DiscOptionalTypeIncorrectImplCopyWith<_$DiscOptionalTypeIncorrectImpl>
@@ -4862,8 +5151,11 @@ abstract class _DiscOptionalTypeIncorrect extends DiscOptionalTypeIncorrect {
   @override
   @JsonKey(name: r'fruitType')
   int? get fruitType;
+
+  /// Create a copy of DiscOptionalTypeIncorrect
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DiscOptionalTypeIncorrectImplCopyWith<_$DiscOptionalTypeIncorrectImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4877,8 +5169,12 @@ mixin _$DiscTypeIncorrect {
   @JsonKey(name: r'fruitType')
   int get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this DiscTypeIncorrect to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DiscTypeIncorrect
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DiscTypeIncorrectCopyWith<DiscTypeIncorrect> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4902,6 +5198,8 @@ class _$DiscTypeIncorrectCopyWithImpl<$Res, $Val extends DiscTypeIncorrect>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DiscTypeIncorrect
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4935,6 +5233,8 @@ class __$$DiscTypeIncorrectImplCopyWithImpl<$Res>
       $Res Function(_$DiscTypeIncorrectImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DiscTypeIncorrect
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4977,11 +5277,13 @@ class _$DiscTypeIncorrectImpl extends _DiscTypeIncorrect {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DiscTypeIncorrect
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DiscTypeIncorrectImplCopyWith<_$DiscTypeIncorrectImpl> get copyWith =>
@@ -5008,8 +5310,11 @@ abstract class _DiscTypeIncorrect extends DiscTypeIncorrect {
   @override
   @JsonKey(name: r'fruitType')
   int get fruitType;
+
+  /// Create a copy of DiscTypeIncorrect
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DiscTypeIncorrectImplCopyWith<_$DiscTypeIncorrectImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5100,6 +5405,9 @@ class _$FruitAllOfDiscCopyWithImpl<$Res, $Val extends FruitAllOfDisc>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -5124,6 +5432,8 @@ class __$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWithImpl<$Res>
       $Res Function(_$FruitAllOfDiscAsAppleAllOfDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5137,6 +5447,8 @@ class __$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AppleAllOfDiscCopyWith<$Res> get appleAllOfDiscValue {
@@ -5174,7 +5486,9 @@ class _$FruitAllOfDiscAsAppleAllOfDiscImpl
   @override
   int get hashCode => Object.hash(runtimeType, appleAllOfDiscValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWith<
@@ -5280,7 +5594,10 @@ abstract class FruitAllOfDiscAsAppleAllOfDisc extends FruitAllOfDisc {
   const FruitAllOfDiscAsAppleAllOfDisc._() : super._();
 
   AppleAllOfDisc get appleAllOfDiscValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitAllOfDiscAsAppleAllOfDiscImplCopyWith<
           _$FruitAllOfDiscAsAppleAllOfDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -5308,6 +5625,8 @@ class __$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWithImpl<$Res>
       $Res Function(_$FruitAllOfDiscAsBananaAllOfDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5321,6 +5640,8 @@ class __$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BananaAllOfDiscCopyWith<$Res> get bananaAllOfDiscValue {
@@ -5358,7 +5679,9 @@ class _$FruitAllOfDiscAsBananaAllOfDiscImpl
   @override
   int get hashCode => Object.hash(runtimeType, bananaAllOfDiscValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWith<
@@ -5464,7 +5787,10 @@ abstract class FruitAllOfDiscAsBananaAllOfDisc extends FruitAllOfDisc {
   const FruitAllOfDiscAsBananaAllOfDisc._() : super._();
 
   BananaAllOfDisc get bananaAllOfDiscValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitAllOfDiscAsBananaAllOfDiscImplCopyWith<
           _$FruitAllOfDiscAsBananaAllOfDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -5493,6 +5819,8 @@ class __$$FruitAllOfDiscUnknownImplCopyWithImpl<$Res>
       $Res Function(_$FruitAllOfDiscUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5606,7 +5934,9 @@ class _$FruitAllOfDiscUnknownImpl extends FruitAllOfDiscUnknown {
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitAllOfDiscUnknownImplCopyWith<_$FruitAllOfDiscUnknownImpl>
@@ -5721,7 +6051,10 @@ abstract class FruitAllOfDiscUnknown extends FruitAllOfDisc {
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<FruitAllOfDisc> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitAllOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitAllOfDiscUnknownImplCopyWith<_$FruitAllOfDiscUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -5802,6 +6135,9 @@ class _$FruitAnyOfDiscCopyWithImpl<$Res, $Val extends FruitAnyOfDisc>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of FruitAnyOfDisc
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -5825,6 +6161,8 @@ class __$$FruitAnyOfDiscAsFruitTypeImplCopyWithImpl<$Res>
       $Res Function(_$FruitAnyOfDiscAsFruitTypeImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitAnyOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5838,6 +6176,8 @@ class __$$FruitAnyOfDiscAsFruitTypeImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FruitAnyOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FruitTypeCopyWith<$Res> get fruitTypeValue {
@@ -5873,7 +6213,9 @@ class _$FruitAnyOfDiscAsFruitTypeImpl extends FruitAnyOfDiscAsFruitType {
   @override
   int get hashCode => Object.hash(runtimeType, fruitTypeValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitAnyOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitAnyOfDiscAsFruitTypeImplCopyWith<_$FruitAnyOfDiscAsFruitTypeImpl>
@@ -5968,7 +6310,10 @@ abstract class FruitAnyOfDiscAsFruitType extends FruitAnyOfDisc {
   const FruitAnyOfDiscAsFruitType._() : super._();
 
   FruitType get fruitTypeValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitAnyOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitAnyOfDiscAsFruitTypeImplCopyWith<_$FruitAnyOfDiscAsFruitTypeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -5996,6 +6341,8 @@ class __$$FruitAnyOfDiscUnknownImplCopyWithImpl<$Res>
       $Res Function(_$FruitAnyOfDiscUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitAnyOfDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6106,7 +6453,9 @@ class _$FruitAnyOfDiscUnknownImpl extends FruitAnyOfDiscUnknown {
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitAnyOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitAnyOfDiscUnknownImplCopyWith<_$FruitAnyOfDiscUnknownImpl>
@@ -6211,7 +6560,10 @@ abstract class FruitAnyOfDiscUnknown extends FruitAnyOfDisc {
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<FruitAnyOfDisc> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitAnyOfDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitAnyOfDiscUnknownImplCopyWith<_$FruitAnyOfDiscUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -6311,6 +6663,9 @@ class _$FruitGrandparentDiscCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -6336,6 +6691,8 @@ class __$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWithImpl<$Res>
       $Res Function(_$FruitGrandparentDiscAsAppleGrandparentDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6349,6 +6706,8 @@ class __$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AppleGrandparentDiscCopyWith<$Res> get appleGrandparentDiscValue {
@@ -6388,7 +6747,9 @@ class _$FruitGrandparentDiscAsAppleGrandparentDiscImpl
   @override
   int get hashCode => Object.hash(runtimeType, appleGrandparentDiscValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWith<
@@ -6505,7 +6866,10 @@ abstract class FruitGrandparentDiscAsAppleGrandparentDisc
   const FruitGrandparentDiscAsAppleGrandparentDisc._() : super._();
 
   AppleGrandparentDisc get appleGrandparentDiscValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitGrandparentDiscAsAppleGrandparentDiscImplCopyWith<
           _$FruitGrandparentDiscAsAppleGrandparentDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -6536,6 +6900,8 @@ class __$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWithImpl<$Res>
       $Res Function(_$FruitGrandparentDiscAsBananaGrandparentDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6549,6 +6915,8 @@ class __$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BananaGrandparentDiscCopyWith<$Res> get bananaGrandparentDiscValue {
@@ -6589,7 +6957,9 @@ class _$FruitGrandparentDiscAsBananaGrandparentDiscImpl
   @override
   int get hashCode => Object.hash(runtimeType, bananaGrandparentDiscValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWith<
@@ -6706,7 +7076,10 @@ abstract class FruitGrandparentDiscAsBananaGrandparentDisc
   const FruitGrandparentDiscAsBananaGrandparentDisc._() : super._();
 
   BananaGrandparentDisc get bananaGrandparentDiscValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitGrandparentDiscAsBananaGrandparentDiscImplCopyWith<
           _$FruitGrandparentDiscAsBananaGrandparentDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -6737,6 +7110,8 @@ class __$$FruitGrandparentDiscUnknownImplCopyWithImpl<$Res>
       $Res Function(_$FruitGrandparentDiscUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6851,7 +7226,9 @@ class _$FruitGrandparentDiscUnknownImpl extends FruitGrandparentDiscUnknown {
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitGrandparentDiscUnknownImplCopyWith<_$FruitGrandparentDiscUnknownImpl>
@@ -6974,7 +7351,10 @@ abstract class FruitGrandparentDiscUnknown extends FruitGrandparentDisc {
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<FruitGrandparentDisc> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitGrandparentDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitGrandparentDiscUnknownImplCopyWith<_$FruitGrandparentDiscUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -7073,6 +7453,9 @@ class _$FruitInlineDiscCopyWithImpl<$Res, $Val extends FruitInlineDisc>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -7097,6 +7480,8 @@ class __$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWithImpl<$Res>
       $Res Function(_$FruitInlineDiscAsFruitInlineDiscAnyOfImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7110,6 +7495,8 @@ class __$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FruitInlineDiscAnyOfCopyWith<$Res> get fruitInlineDiscAnyOfValue {
@@ -7149,7 +7536,9 @@ class _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl
   @override
   int get hashCode => Object.hash(runtimeType, fruitInlineDiscAnyOfValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWith<
@@ -7263,7 +7652,10 @@ abstract class FruitInlineDiscAsFruitInlineDiscAnyOf extends FruitInlineDisc {
   const FruitInlineDiscAsFruitInlineDiscAnyOf._() : super._();
 
   FruitInlineDiscAnyOf get fruitInlineDiscAnyOfValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitInlineDiscAsFruitInlineDiscAnyOfImplCopyWith<
           _$FruitInlineDiscAsFruitInlineDiscAnyOfImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -7291,6 +7683,8 @@ class __$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWithImpl<$Res>
       $Res Function(_$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7304,6 +7698,8 @@ class __$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FruitInlineDiscAnyOf1CopyWith<$Res> get fruitInlineDiscAnyOf1Value {
@@ -7344,7 +7740,9 @@ class _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl
   @override
   int get hashCode => Object.hash(runtimeType, fruitInlineDiscAnyOf1Value);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWith<
@@ -7459,7 +7857,10 @@ abstract class FruitInlineDiscAsFruitInlineDiscAnyOf1 extends FruitInlineDisc {
   const FruitInlineDiscAsFruitInlineDiscAnyOf1._() : super._();
 
   FruitInlineDiscAnyOf1 get fruitInlineDiscAnyOf1Value;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitInlineDiscAsFruitInlineDiscAnyOf1ImplCopyWith<
           _$FruitInlineDiscAsFruitInlineDiscAnyOf1Impl>
       get copyWith => throw _privateConstructorUsedError;
@@ -7489,6 +7890,8 @@ class __$$FruitInlineDiscUnknownImplCopyWithImpl<$Res>
       $Res Function(_$FruitInlineDiscUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7603,7 +8006,9 @@ class _$FruitInlineDiscUnknownImpl extends FruitInlineDiscUnknown {
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitInlineDiscUnknownImplCopyWith<_$FruitInlineDiscUnknownImpl>
@@ -7726,7 +8131,10 @@ abstract class FruitInlineDiscUnknown extends FruitInlineDisc {
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<FruitInlineDisc> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitInlineDiscUnknownImplCopyWith<_$FruitInlineDiscUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -7742,8 +8150,12 @@ mixin _$FruitInlineDiscAnyOf {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this FruitInlineDiscAnyOf to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitInlineDiscAnyOf
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FruitInlineDiscAnyOfCopyWith<FruitInlineDiscAnyOf> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -7770,6 +8182,8 @@ class _$FruitInlineDiscAnyOfCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FruitInlineDiscAnyOf
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7810,6 +8224,8 @@ class __$$FruitInlineDiscAnyOfImplCopyWithImpl<$Res>
       $Res Function(_$FruitInlineDiscAnyOfImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitInlineDiscAnyOf
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7862,11 +8278,13 @@ class _$FruitInlineDiscAnyOfImpl extends _FruitInlineDiscAnyOf {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, seeds, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitInlineDiscAnyOf
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitInlineDiscAnyOfImplCopyWith<_$FruitInlineDiscAnyOfImpl>
@@ -7898,8 +8316,11 @@ abstract class _FruitInlineDiscAnyOf extends FruitInlineDiscAnyOf {
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of FruitInlineDiscAnyOf
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitInlineDiscAnyOfImplCopyWith<_$FruitInlineDiscAnyOfImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -7916,8 +8337,12 @@ mixin _$FruitInlineDiscAnyOf1 {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this FruitInlineDiscAnyOf1 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitInlineDiscAnyOf1
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FruitInlineDiscAnyOf1CopyWith<FruitInlineDiscAnyOf1> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -7944,6 +8369,8 @@ class _$FruitInlineDiscAnyOf1CopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FruitInlineDiscAnyOf1
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7986,6 +8413,8 @@ class __$$FruitInlineDiscAnyOf1ImplCopyWithImpl<$Res>
       $Res Function(_$FruitInlineDiscAnyOf1Impl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitInlineDiscAnyOf1
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8038,11 +8467,13 @@ class _$FruitInlineDiscAnyOf1Impl extends _FruitInlineDiscAnyOf1 {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, length, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitInlineDiscAnyOf1
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitInlineDiscAnyOf1ImplCopyWith<_$FruitInlineDiscAnyOf1Impl>
@@ -8073,8 +8504,11 @@ abstract class _FruitInlineDiscAnyOf1 extends FruitInlineDiscAnyOf1 {
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of FruitInlineDiscAnyOf1
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitInlineDiscAnyOf1ImplCopyWith<_$FruitInlineDiscAnyOf1Impl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -8086,9 +8520,6 @@ mixin _$FruitInlineInlineDisc {
     required TResult Function(
             FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)
         asFruitInlineInlineDiscAnyOf,
-    required TResult Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)
-        asFruitInlineInlineDiscAnyOf1,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -8104,9 +8535,6 @@ mixin _$FruitInlineInlineDisc {
             FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)?
         asFruitInlineInlineDiscAnyOf,
     TResult? Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)?
-        asFruitInlineInlineDiscAnyOf1,
-    TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
@@ -8120,9 +8548,6 @@ mixin _$FruitInlineInlineDisc {
     TResult Function(
             FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)?
         asFruitInlineInlineDiscAnyOf,
-    TResult Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)?
-        asFruitInlineInlineDiscAnyOf1,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -8138,9 +8563,6 @@ mixin _$FruitInlineInlineDisc {
     required TResult Function(
             FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)
         asFruitInlineInlineDiscAnyOf,
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)
-        asFruitInlineInlineDiscAnyOf1,
     required TResult Function(FruitInlineInlineDiscUnknown value) unknown,
   }) =>
       throw _privateConstructorUsedError;
@@ -8148,8 +8570,6 @@ mixin _$FruitInlineInlineDisc {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)?
         asFruitInlineInlineDiscAnyOf,
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)?
-        asFruitInlineInlineDiscAnyOf1,
     TResult? Function(FruitInlineInlineDiscUnknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
@@ -8157,8 +8577,6 @@ mixin _$FruitInlineInlineDisc {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)?
         asFruitInlineInlineDiscAnyOf,
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)?
-        asFruitInlineInlineDiscAnyOf1,
     TResult Function(FruitInlineInlineDiscUnknown value)? unknown,
     required TResult orElse(),
   }) =>
@@ -8182,6 +8600,9 @@ class _$FruitInlineInlineDiscCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of FruitInlineInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -8212,6 +8633,8 @@ class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWithImpl<
           _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitInlineInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8225,6 +8648,8 @@ class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWithImpl<
     ));
   }
 
+  /// Create a copy of FruitInlineInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FruitInlineInlineDiscAnyOfCopyWith<$Res>
@@ -8266,7 +8691,9 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl
   @override
   int get hashCode => Object.hash(runtimeType, fruitInlineInlineDiscAnyOfValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitInlineInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWith<
@@ -8282,9 +8709,6 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl
     required TResult Function(
             FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)
         asFruitInlineInlineDiscAnyOf,
-    required TResult Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)
-        asFruitInlineInlineDiscAnyOf1,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -8303,9 +8727,6 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl
             FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)?
         asFruitInlineInlineDiscAnyOf,
     TResult? Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)?
-        asFruitInlineInlineDiscAnyOf1,
-    TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
@@ -8322,9 +8743,6 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl
     TResult Function(
             FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)?
         asFruitInlineInlineDiscAnyOf,
-    TResult Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)?
-        asFruitInlineInlineDiscAnyOf1,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -8346,9 +8764,6 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl
     required TResult Function(
             FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)
         asFruitInlineInlineDiscAnyOf,
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)
-        asFruitInlineInlineDiscAnyOf1,
     required TResult Function(FruitInlineInlineDiscUnknown value) unknown,
   }) {
     return asFruitInlineInlineDiscAnyOf(this);
@@ -8359,8 +8774,6 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)?
         asFruitInlineInlineDiscAnyOf,
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)?
-        asFruitInlineInlineDiscAnyOf1,
     TResult? Function(FruitInlineInlineDiscUnknown value)? unknown,
   }) {
     return asFruitInlineInlineDiscAnyOf?.call(this);
@@ -8371,8 +8784,6 @@ class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl
   TResult maybeMap<TResult extends Object?>({
     TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)?
         asFruitInlineInlineDiscAnyOf,
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)?
-        asFruitInlineInlineDiscAnyOf1,
     TResult Function(FruitInlineInlineDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
@@ -8392,228 +8803,12 @@ abstract class FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf
   const FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf._() : super._();
 
   FruitInlineInlineDiscAnyOf get fruitInlineInlineDiscAnyOfValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitInlineInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImplCopyWith<
           _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOfImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWith<
-    $Res> {
-  factory _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWith(
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl value,
-          $Res Function(
-                  _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl)
-              then) =
-      __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWithImpl<
-          $Res>;
-  @useResult
-  $Res call({FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value});
-
-  $FruitInlineInlineDiscAnyOf1CopyWith<$Res>
-      get fruitInlineInlineDiscAnyOf1Value;
-}
-
-/// @nodoc
-class __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWithImpl<
-        $Res>
-    extends _$FruitInlineInlineDiscCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl>
-    implements
-        _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWith<
-            $Res> {
-  __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWithImpl(
-      _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl _value,
-      $Res Function(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl)
-          _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? fruitInlineInlineDiscAnyOf1Value = null,
-  }) {
-    return _then(_$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl(
-      fruitInlineInlineDiscAnyOf1Value: null == fruitInlineInlineDiscAnyOf1Value
-          ? _value.fruitInlineInlineDiscAnyOf1Value
-          : fruitInlineInlineDiscAnyOf1Value // ignore: cast_nullable_to_non_nullable
-              as FruitInlineInlineDiscAnyOf1,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $FruitInlineInlineDiscAnyOf1CopyWith<$Res>
-      get fruitInlineInlineDiscAnyOf1Value {
-    return $FruitInlineInlineDiscAnyOf1CopyWith<$Res>(
-        _value.fruitInlineInlineDiscAnyOf1Value, (value) {
-      return _then(_value.copyWith(fruitInlineInlineDiscAnyOf1Value: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl
-    extends FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 {
-  const _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl(
-      {required this.fruitInlineInlineDiscAnyOf1Value})
-      : super._();
-
-  @override
-  final FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value;
-
-  @override
-  String toString() {
-    return 'FruitInlineInlineDisc.asFruitInlineInlineDiscAnyOf1(fruitInlineInlineDiscAnyOf1Value: $fruitInlineInlineDiscAnyOf1Value)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl &&
-            (identical(other.fruitInlineInlineDiscAnyOf1Value,
-                    fruitInlineInlineDiscAnyOf1Value) ||
-                other.fruitInlineInlineDiscAnyOf1Value ==
-                    fruitInlineInlineDiscAnyOf1Value));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, fruitInlineInlineDiscAnyOf1Value);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWith<
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl>
-      get copyWith =>
-          __$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWithImpl<
-                  _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)
-        asFruitInlineInlineDiscAnyOf,
-    required TResult Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)
-        asFruitInlineInlineDiscAnyOf1,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)
-        unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOf1(fruitInlineInlineDiscAnyOf1Value);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)?
-        asFruitInlineInlineDiscAnyOf,
-    TResult? Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)?
-        asFruitInlineInlineDiscAnyOf1,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)?
-        unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOf1
-        ?.call(fruitInlineInlineDiscAnyOf1Value);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)?
-        asFruitInlineInlineDiscAnyOf,
-    TResult Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)?
-        asFruitInlineInlineDiscAnyOf1,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDisc> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineInlineDiscAnyOf1 != null) {
-      return asFruitInlineInlineDiscAnyOf1(fruitInlineInlineDiscAnyOf1Value);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)
-        asFruitInlineInlineDiscAnyOf,
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)
-        asFruitInlineInlineDiscAnyOf1,
-    required TResult Function(FruitInlineInlineDiscUnknown value) unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOf1(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)?
-        asFruitInlineInlineDiscAnyOf,
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)?
-        asFruitInlineInlineDiscAnyOf1,
-    TResult? Function(FruitInlineInlineDiscUnknown value)? unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOf1?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)?
-        asFruitInlineInlineDiscAnyOf,
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)?
-        asFruitInlineInlineDiscAnyOf1,
-    TResult Function(FruitInlineInlineDiscUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineInlineDiscAnyOf1 != null) {
-      return asFruitInlineInlineDiscAnyOf1(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1
-    extends FruitInlineInlineDisc {
-  const factory FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1(
-          {required final FruitInlineInlineDiscAnyOf1
-              fruitInlineInlineDiscAnyOf1Value}) =
-      _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl;
-  const FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1._() : super._();
-
-  FruitInlineInlineDiscAnyOf1 get fruitInlineInlineDiscAnyOf1Value;
-  @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1ImplCopyWith<
-          _$FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1Impl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -8642,6 +8837,8 @@ class __$$FruitInlineInlineDiscUnknownImplCopyWithImpl<$Res>
       $Res Function(_$FruitInlineInlineDiscUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitInlineInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8683,10 +8880,7 @@ class _$FruitInlineInlineDiscUnknownImpl extends FruitInlineInlineDiscUnknown {
       {this.message = 'Json does not satisfy any available types',
       required final Map<String, dynamic> json,
       this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[
-        FruitInlineInlineDiscAnyOf,
-        FruitInlineInlineDiscAnyOf1
-      ],
+      final List<Type> possibleTypes = const <Type>[FruitInlineInlineDiscAnyOf],
       final List<FruitInlineInlineDisc> deserializedModels =
           const <FruitInlineInlineDisc>[]})
       : _json = json,
@@ -8756,7 +8950,9 @@ class _$FruitInlineInlineDiscUnknownImpl extends FruitInlineInlineDiscUnknown {
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitInlineInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitInlineInlineDiscUnknownImplCopyWith<
@@ -8770,9 +8966,6 @@ class _$FruitInlineInlineDiscUnknownImpl extends FruitInlineInlineDiscUnknown {
     required TResult Function(
             FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)
         asFruitInlineInlineDiscAnyOf,
-    required TResult Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)
-        asFruitInlineInlineDiscAnyOf1,
     required TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -8791,9 +8984,6 @@ class _$FruitInlineInlineDiscUnknownImpl extends FruitInlineInlineDiscUnknown {
             FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)?
         asFruitInlineInlineDiscAnyOf,
     TResult? Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)?
-        asFruitInlineInlineDiscAnyOf1,
-    TResult? Function(
             String message,
             Map<String, dynamic> json,
             DeserializationErrorType errorType,
@@ -8811,9 +9001,6 @@ class _$FruitInlineInlineDiscUnknownImpl extends FruitInlineInlineDiscUnknown {
     TResult Function(
             FruitInlineInlineDiscAnyOf fruitInlineInlineDiscAnyOfValue)?
         asFruitInlineInlineDiscAnyOf,
-    TResult Function(
-            FruitInlineInlineDiscAnyOf1 fruitInlineInlineDiscAnyOf1Value)?
-        asFruitInlineInlineDiscAnyOf1,
     TResult Function(
             String message,
             Map<String, dynamic> json,
@@ -8836,9 +9023,6 @@ class _$FruitInlineInlineDiscUnknownImpl extends FruitInlineInlineDiscUnknown {
     required TResult Function(
             FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)
         asFruitInlineInlineDiscAnyOf,
-    required TResult Function(
-            FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)
-        asFruitInlineInlineDiscAnyOf1,
     required TResult Function(FruitInlineInlineDiscUnknown value) unknown,
   }) {
     return unknown(this);
@@ -8849,8 +9033,6 @@ class _$FruitInlineInlineDiscUnknownImpl extends FruitInlineInlineDiscUnknown {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)?
         asFruitInlineInlineDiscAnyOf,
-    TResult? Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)?
-        asFruitInlineInlineDiscAnyOf1,
     TResult? Function(FruitInlineInlineDiscUnknown value)? unknown,
   }) {
     return unknown?.call(this);
@@ -8861,8 +9043,6 @@ class _$FruitInlineInlineDiscUnknownImpl extends FruitInlineInlineDiscUnknown {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf value)?
         asFruitInlineInlineDiscAnyOf,
-    TResult Function(FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1 value)?
-        asFruitInlineInlineDiscAnyOf1,
     TResult Function(FruitInlineInlineDiscUnknown value)? unknown,
     required TResult orElse(),
   }) {
@@ -8888,85 +9068,33 @@ abstract class FruitInlineInlineDiscUnknown extends FruitInlineInlineDisc {
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<FruitInlineInlineDisc> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitInlineInlineDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitInlineInlineDiscUnknownImplCopyWith<
           _$FruitInlineInlineDiscUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
+FruitInlineInlineDiscAnyOf _$FruitInlineInlineDiscAnyOfFromJson(
+    Map<String, dynamic> json) {
+  return _FruitInlineInlineDiscAnyOf.fromJson(json);
+}
+
 /// @nodoc
 mixin _$FruitInlineInlineDiscAnyOf {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf> deserializedModels)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(FruitInlineInlineDiscAnyOfUnknown value) unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  @JsonKey(name: r'fruitType')
+  String get fruitType => throw _privateConstructorUsedError;
+
+  /// Serializes this FruitInlineInlineDiscAnyOf to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of FruitInlineInlineDiscAnyOf
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $FruitInlineInlineDiscAnyOfCopyWith<FruitInlineInlineDiscAnyOf>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -8975,6 +9103,8 @@ abstract class $FruitInlineInlineDiscAnyOfCopyWith<$Res> {
           $Res Function(FruitInlineInlineDiscAnyOf) then) =
       _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
           FruitInlineInlineDiscAnyOf>;
+  @useResult
+  $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
@@ -8987,1110 +9117,9 @@ class _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
-}
 
-/// @nodoc
-abstract class _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
-    $Res> {
-  factory _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith(
-          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl value,
-          $Res Function(
-                  _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl)
-              then) =
-      __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
-          $Res>;
-  @useResult
-  $Res call(
-      {FruitInlineInlineDiscAnyOfAnyOf fruitInlineInlineDiscAnyOfAnyOfValue});
-
-  $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>
-      get fruitInlineInlineDiscAnyOfAnyOfValue;
-}
-
-/// @nodoc
-class __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
-        $Res>
-    extends _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl>
-    implements
-        _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
-            $Res> {
-  __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl(
-      _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl _value,
-      $Res Function(
-              _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl)
-          _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? fruitInlineInlineDiscAnyOfAnyOfValue = null,
-  }) {
-    return _then(
-        _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl(
-      fruitInlineInlineDiscAnyOfAnyOfValue: null ==
-              fruitInlineInlineDiscAnyOfAnyOfValue
-          ? _value.fruitInlineInlineDiscAnyOfAnyOfValue
-          : fruitInlineInlineDiscAnyOfAnyOfValue // ignore: cast_nullable_to_non_nullable
-              as FruitInlineInlineDiscAnyOfAnyOf,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>
-      get fruitInlineInlineDiscAnyOfAnyOfValue {
-    return $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>(
-        _value.fruitInlineInlineDiscAnyOfAnyOfValue, (value) {
-      return _then(
-          _value.copyWith(fruitInlineInlineDiscAnyOfAnyOfValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl
-    extends FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf {
-  const _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl(
-      {required this.fruitInlineInlineDiscAnyOfAnyOfValue})
-      : super._();
-
-  @override
-  final FruitInlineInlineDiscAnyOfAnyOf fruitInlineInlineDiscAnyOfAnyOfValue;
-
-  @override
-  String toString() {
-    return 'FruitInlineInlineDiscAnyOf.asFruitInlineInlineDiscAnyOfAnyOf(fruitInlineInlineDiscAnyOfAnyOfValue: $fruitInlineInlineDiscAnyOfAnyOfValue)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other
-                is _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl &&
-            (identical(other.fruitInlineInlineDiscAnyOfAnyOfValue,
-                    fruitInlineInlineDiscAnyOfAnyOfValue) ||
-                other.fruitInlineInlineDiscAnyOfAnyOfValue ==
-                    fruitInlineInlineDiscAnyOfAnyOfValue));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, fruitInlineInlineDiscAnyOfAnyOfValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
-          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl>
-      get copyWith =>
-          __$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
-                  _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf> deserializedModels)
-        unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOfAnyOf(
-        fruitInlineInlineDiscAnyOfAnyOfValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
-        unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOfAnyOf
-        ?.call(fruitInlineInlineDiscAnyOfAnyOfValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineInlineDiscAnyOfAnyOf != null) {
-      return asFruitInlineInlineDiscAnyOfAnyOf(
-          fruitInlineInlineDiscAnyOfAnyOfValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(FruitInlineInlineDiscAnyOfUnknown value) unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOfAnyOf(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOfAnyOf?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineInlineDiscAnyOfAnyOf != null) {
-      return asFruitInlineInlineDiscAnyOfAnyOf(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf
-    extends FruitInlineInlineDiscAnyOf {
-  const factory FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf(
-          {required final FruitInlineInlineDiscAnyOfAnyOf
-              fruitInlineInlineDiscAnyOfAnyOfValue}) =
-      _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl;
-  const FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf._()
-      : super._();
-
-  FruitInlineInlineDiscAnyOfAnyOf get fruitInlineInlineDiscAnyOfAnyOfValue;
-  @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
-          _$FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOfImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$FruitInlineInlineDiscAnyOfUnknownImplCopyWith<$Res> {
-  factory _$$FruitInlineInlineDiscAnyOfUnknownImplCopyWith(
-          _$FruitInlineInlineDiscAnyOfUnknownImpl value,
-          $Res Function(_$FruitInlineInlineDiscAnyOfUnknownImpl) then) =
-      __$$FruitInlineInlineDiscAnyOfUnknownImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call(
-      {String message,
-      Map<String, dynamic> json,
-      DeserializationErrorType errorType,
-      List<Type> possibleTypes,
-      List<FruitInlineInlineDiscAnyOf> deserializedModels});
-}
-
-/// @nodoc
-class __$$FruitInlineInlineDiscAnyOfUnknownImplCopyWithImpl<$Res>
-    extends _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAnyOfUnknownImpl>
-    implements _$$FruitInlineInlineDiscAnyOfUnknownImplCopyWith<$Res> {
-  __$$FruitInlineInlineDiscAnyOfUnknownImplCopyWithImpl(
-      _$FruitInlineInlineDiscAnyOfUnknownImpl _value,
-      $Res Function(_$FruitInlineInlineDiscAnyOfUnknownImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-    Object? json = null,
-    Object? errorType = null,
-    Object? possibleTypes = null,
-    Object? deserializedModels = null,
-  }) {
-    return _then(_$FruitInlineInlineDiscAnyOfUnknownImpl(
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      json: null == json
-          ? _value._json
-          : json // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      errorType: null == errorType
-          ? _value.errorType
-          : errorType // ignore: cast_nullable_to_non_nullable
-              as DeserializationErrorType,
-      possibleTypes: null == possibleTypes
-          ? _value._possibleTypes
-          : possibleTypes // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
-      deserializedModels: null == deserializedModels
-          ? _value._deserializedModels
-          : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitInlineInlineDiscAnyOf>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$FruitInlineInlineDiscAnyOfUnknownImpl
-    extends FruitInlineInlineDiscAnyOfUnknown {
-  const _$FruitInlineInlineDiscAnyOfUnknownImpl(
-      {this.message = 'Json does not satisfy any available types',
-      required final Map<String, dynamic> json,
-      this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[
-        FruitInlineInlineDiscAnyOfAnyOf
-      ],
-      final List<FruitInlineInlineDiscAnyOf> deserializedModels =
-          const <FruitInlineInlineDiscAnyOf>[]})
-      : _json = json,
-        _possibleTypes = possibleTypes,
-        _deserializedModels = deserializedModels,
-        super._();
-
-  @override
-  @JsonKey()
-  final String message;
-  final Map<String, dynamic> _json;
-  @override
-  Map<String, dynamic> get json {
-    if (_json is EqualUnmodifiableMapView) return _json;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_json);
-  }
-
-  @override
-  @JsonKey()
-  final DeserializationErrorType errorType;
-  final List<Type> _possibleTypes;
-  @override
-  @JsonKey()
-  List<Type> get possibleTypes {
-    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_possibleTypes);
-  }
-
-  final List<FruitInlineInlineDiscAnyOf> _deserializedModels;
-  @override
-  @JsonKey()
-  List<FruitInlineInlineDiscAnyOf> get deserializedModels {
-    if (_deserializedModels is EqualUnmodifiableListView)
-      return _deserializedModels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_deserializedModels);
-  }
-
-  @override
-  String toString() {
-    return 'FruitInlineInlineDiscAnyOf.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscAnyOfUnknownImpl &&
-            (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other._json, _json) &&
-            (identical(other.errorType, errorType) ||
-                other.errorType == errorType) &&
-            const DeepCollectionEquality()
-                .equals(other._possibleTypes, _possibleTypes) &&
-            const DeepCollectionEquality()
-                .equals(other._deserializedModels, _deserializedModels));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      message,
-      const DeepCollectionEquality().hash(_json),
-      errorType,
-      const DeepCollectionEquality().hash(_possibleTypes),
-      const DeepCollectionEquality().hash(_deserializedModels));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAnyOfUnknownImplCopyWith<
-          _$FruitInlineInlineDiscAnyOfUnknownImpl>
-      get copyWith => __$$FruitInlineInlineDiscAnyOfUnknownImplCopyWithImpl<
-          _$FruitInlineInlineDiscAnyOfUnknownImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf> deserializedModels)
-        unknown,
-  }) {
-    return unknown(message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
-        unknown,
-  }) {
-    return unknown?.call(
-        message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(
-          message, json, errorType, possibleTypes, deserializedModels);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(FruitInlineInlineDiscAnyOfUnknown value) unknown,
-  }) {
-    return unknown(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
-  }) {
-    return unknown?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOfAsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(FruitInlineInlineDiscAnyOfUnknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitInlineInlineDiscAnyOfUnknown
-    extends FruitInlineInlineDiscAnyOf {
-  const factory FruitInlineInlineDiscAnyOfUnknown(
-          {final String message,
-          required final Map<String, dynamic> json,
-          final DeserializationErrorType errorType,
-          final List<Type> possibleTypes,
-          final List<FruitInlineInlineDiscAnyOf> deserializedModels}) =
-      _$FruitInlineInlineDiscAnyOfUnknownImpl;
-  const FruitInlineInlineDiscAnyOfUnknown._() : super._();
-
-  String get message;
-  Map<String, dynamic> get json;
-  DeserializationErrorType get errorType;
-  List<Type> get possibleTypes;
-  List<FruitInlineInlineDiscAnyOf> get deserializedModels;
-  @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAnyOfUnknownImplCopyWith<
-          _$FruitInlineInlineDiscAnyOfUnknownImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-mixin _$FruitInlineInlineDiscAnyOf1 {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf1> deserializedModels)
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
-        unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(FruitInlineInlineDiscAnyOf1Unknown value) unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $FruitInlineInlineDiscAnyOf1CopyWith<$Res> {
-  factory $FruitInlineInlineDiscAnyOf1CopyWith(
-          FruitInlineInlineDiscAnyOf1 value,
-          $Res Function(FruitInlineInlineDiscAnyOf1) then) =
-      _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
-          FruitInlineInlineDiscAnyOf1>;
-}
-
-/// @nodoc
-class _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
-        $Val extends FruitInlineInlineDiscAnyOf1>
-    implements $FruitInlineInlineDiscAnyOf1CopyWith<$Res> {
-  _$FruitInlineInlineDiscAnyOf1CopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
-    $Res> {
-  factory _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith(
-          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl value,
-          $Res Function(
-                  _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl)
-              then) =
-      __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
-          $Res>;
-  @useResult
-  $Res call(
-      {FruitInlineInlineDiscAnyOfAnyOf fruitInlineInlineDiscAnyOfAnyOfValue});
-
-  $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>
-      get fruitInlineInlineDiscAnyOfAnyOfValue;
-}
-
-/// @nodoc
-class __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
-        $Res>
-    extends _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl>
-    implements
-        _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
-            $Res> {
-  __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl(
-      _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl _value,
-      $Res Function(
-              _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl)
-          _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? fruitInlineInlineDiscAnyOfAnyOfValue = null,
-  }) {
-    return _then(
-        _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl(
-      fruitInlineInlineDiscAnyOfAnyOfValue: null ==
-              fruitInlineInlineDiscAnyOfAnyOfValue
-          ? _value.fruitInlineInlineDiscAnyOfAnyOfValue
-          : fruitInlineInlineDiscAnyOfAnyOfValue // ignore: cast_nullable_to_non_nullable
-              as FruitInlineInlineDiscAnyOfAnyOf,
-    ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>
-      get fruitInlineInlineDiscAnyOfAnyOfValue {
-    return $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res>(
-        _value.fruitInlineInlineDiscAnyOfAnyOfValue, (value) {
-      return _then(
-          _value.copyWith(fruitInlineInlineDiscAnyOfAnyOfValue: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl
-    extends FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf {
-  const _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl(
-      {required this.fruitInlineInlineDiscAnyOfAnyOfValue})
-      : super._();
-
-  @override
-  final FruitInlineInlineDiscAnyOfAnyOf fruitInlineInlineDiscAnyOfAnyOfValue;
-
-  @override
-  String toString() {
-    return 'FruitInlineInlineDiscAnyOf1.asFruitInlineInlineDiscAnyOfAnyOf(fruitInlineInlineDiscAnyOfAnyOfValue: $fruitInlineInlineDiscAnyOfAnyOfValue)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other
-                is _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl &&
-            (identical(other.fruitInlineInlineDiscAnyOfAnyOfValue,
-                    fruitInlineInlineDiscAnyOfAnyOfValue) ||
-                other.fruitInlineInlineDiscAnyOfAnyOfValue ==
-                    fruitInlineInlineDiscAnyOfAnyOfValue));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, fruitInlineInlineDiscAnyOfAnyOfValue);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
-          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl>
-      get copyWith =>
-          __$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
-                  _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf1> deserializedModels)
-        unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOfAnyOf(
-        fruitInlineInlineDiscAnyOfAnyOfValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
-        unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOfAnyOf
-        ?.call(fruitInlineInlineDiscAnyOfAnyOfValue);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineInlineDiscAnyOfAnyOf != null) {
-      return asFruitInlineInlineDiscAnyOfAnyOf(
-          fruitInlineInlineDiscAnyOfAnyOfValue);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(FruitInlineInlineDiscAnyOf1Unknown value) unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOfAnyOf(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
-  }) {
-    return asFruitInlineInlineDiscAnyOfAnyOf?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (asFruitInlineInlineDiscAnyOfAnyOf != null) {
-      return asFruitInlineInlineDiscAnyOfAnyOf(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf
-    extends FruitInlineInlineDiscAnyOf1 {
-  const factory FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf(
-          {required final FruitInlineInlineDiscAnyOfAnyOf
-              fruitInlineInlineDiscAnyOfAnyOfValue}) =
-      _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl;
-  const FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf._()
-      : super._();
-
-  FruitInlineInlineDiscAnyOfAnyOf get fruitInlineInlineDiscAnyOfAnyOfValue;
-  @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
-          _$FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOfImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWith<$Res> {
-  factory _$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWith(
-          _$FruitInlineInlineDiscAnyOf1UnknownImpl value,
-          $Res Function(_$FruitInlineInlineDiscAnyOf1UnknownImpl) then) =
-      __$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call(
-      {String message,
-      Map<String, dynamic> json,
-      DeserializationErrorType errorType,
-      List<Type> possibleTypes,
-      List<FruitInlineInlineDiscAnyOf1> deserializedModels});
-}
-
-/// @nodoc
-class __$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWithImpl<$Res>
-    extends _$FruitInlineInlineDiscAnyOf1CopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAnyOf1UnknownImpl>
-    implements _$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWith<$Res> {
-  __$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWithImpl(
-      _$FruitInlineInlineDiscAnyOf1UnknownImpl _value,
-      $Res Function(_$FruitInlineInlineDiscAnyOf1UnknownImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-    Object? json = null,
-    Object? errorType = null,
-    Object? possibleTypes = null,
-    Object? deserializedModels = null,
-  }) {
-    return _then(_$FruitInlineInlineDiscAnyOf1UnknownImpl(
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      json: null == json
-          ? _value._json
-          : json // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      errorType: null == errorType
-          ? _value.errorType
-          : errorType // ignore: cast_nullable_to_non_nullable
-              as DeserializationErrorType,
-      possibleTypes: null == possibleTypes
-          ? _value._possibleTypes
-          : possibleTypes // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
-      deserializedModels: null == deserializedModels
-          ? _value._deserializedModels
-          : deserializedModels // ignore: cast_nullable_to_non_nullable
-              as List<FruitInlineInlineDiscAnyOf1>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$FruitInlineInlineDiscAnyOf1UnknownImpl
-    extends FruitInlineInlineDiscAnyOf1Unknown {
-  const _$FruitInlineInlineDiscAnyOf1UnknownImpl(
-      {this.message = 'Json does not satisfy any available types',
-      required final Map<String, dynamic> json,
-      this.errorType = DeserializationErrorType.UnKnownType,
-      final List<Type> possibleTypes = const <Type>[
-        FruitInlineInlineDiscAnyOfAnyOf
-      ],
-      final List<FruitInlineInlineDiscAnyOf1> deserializedModels =
-          const <FruitInlineInlineDiscAnyOf1>[]})
-      : _json = json,
-        _possibleTypes = possibleTypes,
-        _deserializedModels = deserializedModels,
-        super._();
-
-  @override
-  @JsonKey()
-  final String message;
-  final Map<String, dynamic> _json;
-  @override
-  Map<String, dynamic> get json {
-    if (_json is EqualUnmodifiableMapView) return _json;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_json);
-  }
-
-  @override
-  @JsonKey()
-  final DeserializationErrorType errorType;
-  final List<Type> _possibleTypes;
-  @override
-  @JsonKey()
-  List<Type> get possibleTypes {
-    if (_possibleTypes is EqualUnmodifiableListView) return _possibleTypes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_possibleTypes);
-  }
-
-  final List<FruitInlineInlineDiscAnyOf1> _deserializedModels;
-  @override
-  @JsonKey()
-  List<FruitInlineInlineDiscAnyOf1> get deserializedModels {
-    if (_deserializedModels is EqualUnmodifiableListView)
-      return _deserializedModels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_deserializedModels);
-  }
-
-  @override
-  String toString() {
-    return 'FruitInlineInlineDiscAnyOf1.unknown(message: $message, json: $json, errorType: $errorType, possibleTypes: $possibleTypes, deserializedModels: $deserializedModels)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscAnyOf1UnknownImpl &&
-            (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other._json, _json) &&
-            (identical(other.errorType, errorType) ||
-                other.errorType == errorType) &&
-            const DeepCollectionEquality()
-                .equals(other._possibleTypes, _possibleTypes) &&
-            const DeepCollectionEquality()
-                .equals(other._deserializedModels, _deserializedModels));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      message,
-      const DeepCollectionEquality().hash(_json),
-      errorType,
-      const DeepCollectionEquality().hash(_possibleTypes),
-      const DeepCollectionEquality().hash(_deserializedModels));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWith<
-          _$FruitInlineInlineDiscAnyOf1UnknownImpl>
-      get copyWith => __$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWithImpl<
-          _$FruitInlineInlineDiscAnyOf1UnknownImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf1> deserializedModels)
-        unknown,
-  }) {
-    return unknown(message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
-        unknown,
-  }) {
-    return unknown?.call(
-        message, json, errorType, possibleTypes, deserializedModels);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOfAnyOf
-                fruitInlineInlineDiscAnyOfAnyOfValue)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(
-            String message,
-            Map<String, dynamic> json,
-            DeserializationErrorType errorType,
-            List<Type> possibleTypes,
-            List<FruitInlineInlineDiscAnyOf1> deserializedModels)?
-        unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(
-          message, json, errorType, possibleTypes, deserializedModels);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(
-            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    required TResult Function(FruitInlineInlineDiscAnyOf1Unknown value) unknown,
-  }) {
-    return unknown(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(
-            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult? Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
-  }) {
-    return unknown?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(
-            FruitInlineInlineDiscAnyOf1AsFruitInlineInlineDiscAnyOfAnyOf value)?
-        asFruitInlineInlineDiscAnyOfAnyOf,
-    TResult Function(FruitInlineInlineDiscAnyOf1Unknown value)? unknown,
-    required TResult orElse(),
-  }) {
-    if (unknown != null) {
-      return unknown(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class FruitInlineInlineDiscAnyOf1Unknown
-    extends FruitInlineInlineDiscAnyOf1 {
-  const factory FruitInlineInlineDiscAnyOf1Unknown(
-          {final String message,
-          required final Map<String, dynamic> json,
-          final DeserializationErrorType errorType,
-          final List<Type> possibleTypes,
-          final List<FruitInlineInlineDiscAnyOf1> deserializedModels}) =
-      _$FruitInlineInlineDiscAnyOf1UnknownImpl;
-  const FruitInlineInlineDiscAnyOf1Unknown._() : super._();
-
-  String get message;
-  Map<String, dynamic> get json;
-  DeserializationErrorType get errorType;
-  List<Type> get possibleTypes;
-  List<FruitInlineInlineDiscAnyOf1> get deserializedModels;
-  @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAnyOf1UnknownImplCopyWith<
-          _$FruitInlineInlineDiscAnyOf1UnknownImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-FruitInlineInlineDiscAnyOfAnyOf _$FruitInlineInlineDiscAnyOfAnyOfFromJson(
-    Map<String, dynamic> json) {
-  return _FruitInlineInlineDiscAnyOfAnyOf.fromJson(json);
-}
-
-/// @nodoc
-mixin _$FruitInlineInlineDiscAnyOfAnyOf {
-  @JsonKey(name: r'fruitType')
-  String get fruitType => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $FruitInlineInlineDiscAnyOfAnyOfCopyWith<FruitInlineInlineDiscAnyOfAnyOf>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res> {
-  factory $FruitInlineInlineDiscAnyOfAnyOfCopyWith(
-          FruitInlineInlineDiscAnyOfAnyOf value,
-          $Res Function(FruitInlineInlineDiscAnyOfAnyOf) then) =
-      _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res,
-          FruitInlineInlineDiscAnyOfAnyOf>;
-  @useResult
-  $Res call({@JsonKey(name: r'fruitType') String fruitType});
-}
-
-/// @nodoc
-class _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res,
-        $Val extends FruitInlineInlineDiscAnyOfAnyOf>
-    implements $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res> {
-  _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of FruitInlineInlineDiscAnyOf
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -10106,33 +9135,35 @@ class _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWith<$Res>
-    implements $FruitInlineInlineDiscAnyOfAnyOfCopyWith<$Res> {
-  factory _$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWith(
-          _$FruitInlineInlineDiscAnyOfAnyOfImpl value,
-          $Res Function(_$FruitInlineInlineDiscAnyOfAnyOfImpl) then) =
-      __$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<$Res>;
+abstract class _$$FruitInlineInlineDiscAnyOfImplCopyWith<$Res>
+    implements $FruitInlineInlineDiscAnyOfCopyWith<$Res> {
+  factory _$$FruitInlineInlineDiscAnyOfImplCopyWith(
+          _$FruitInlineInlineDiscAnyOfImpl value,
+          $Res Function(_$FruitInlineInlineDiscAnyOfImpl) then) =
+      __$$FruitInlineInlineDiscAnyOfImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: r'fruitType') String fruitType});
 }
 
 /// @nodoc
-class __$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<$Res>
-    extends _$FruitInlineInlineDiscAnyOfAnyOfCopyWithImpl<$Res,
-        _$FruitInlineInlineDiscAnyOfAnyOfImpl>
-    implements _$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWith<$Res> {
-  __$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl(
-      _$FruitInlineInlineDiscAnyOfAnyOfImpl _value,
-      $Res Function(_$FruitInlineInlineDiscAnyOfAnyOfImpl) _then)
+class __$$FruitInlineInlineDiscAnyOfImplCopyWithImpl<$Res>
+    extends _$FruitInlineInlineDiscAnyOfCopyWithImpl<$Res,
+        _$FruitInlineInlineDiscAnyOfImpl>
+    implements _$$FruitInlineInlineDiscAnyOfImplCopyWith<$Res> {
+  __$$FruitInlineInlineDiscAnyOfImplCopyWithImpl(
+      _$FruitInlineInlineDiscAnyOfImpl _value,
+      $Res Function(_$FruitInlineInlineDiscAnyOfImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitInlineInlineDiscAnyOf
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? fruitType = null,
   }) {
-    return _then(_$FruitInlineInlineDiscAnyOfAnyOfImpl(
+    return _then(_$FruitInlineInlineDiscAnyOfImpl(
       fruitType: null == fruitType
           ? _value.fruitType
           : fruitType // ignore: cast_nullable_to_non_nullable
@@ -10143,15 +9174,14 @@ class __$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$FruitInlineInlineDiscAnyOfAnyOfImpl
-    extends _FruitInlineInlineDiscAnyOfAnyOf {
-  const _$FruitInlineInlineDiscAnyOfAnyOfImpl(
+class _$FruitInlineInlineDiscAnyOfImpl extends _FruitInlineInlineDiscAnyOf {
+  const _$FruitInlineInlineDiscAnyOfImpl(
       {@JsonKey(name: r'fruitType') required this.fruitType})
       : super._();
 
-  factory _$FruitInlineInlineDiscAnyOfAnyOfImpl.fromJson(
+  factory _$FruitInlineInlineDiscAnyOfImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$FruitInlineInlineDiscAnyOfAnyOfImplFromJson(json);
+      _$$FruitInlineInlineDiscAnyOfImplFromJson(json);
 
   @override
   @JsonKey(name: r'fruitType')
@@ -10159,55 +9189,57 @@ class _$FruitInlineInlineDiscAnyOfAnyOfImpl
 
   @override
   String toString() {
-    return 'FruitInlineInlineDiscAnyOfAnyOf(fruitType: $fruitType)';
+    return 'FruitInlineInlineDiscAnyOf(fruitType: $fruitType)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FruitInlineInlineDiscAnyOfAnyOfImpl &&
+            other is _$FruitInlineInlineDiscAnyOfImpl &&
             (identical(other.fruitType, fruitType) ||
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitInlineInlineDiscAnyOf
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
-          _$FruitInlineInlineDiscAnyOfAnyOfImpl>
-      get copyWith => __$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWithImpl<
-          _$FruitInlineInlineDiscAnyOfAnyOfImpl>(this, _$identity);
+  _$$FruitInlineInlineDiscAnyOfImplCopyWith<_$FruitInlineInlineDiscAnyOfImpl>
+      get copyWith => __$$FruitInlineInlineDiscAnyOfImplCopyWithImpl<
+          _$FruitInlineInlineDiscAnyOfImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$FruitInlineInlineDiscAnyOfAnyOfImplToJson(
+    return _$$FruitInlineInlineDiscAnyOfImplToJson(
       this,
     );
   }
 }
 
-abstract class _FruitInlineInlineDiscAnyOfAnyOf
-    extends FruitInlineInlineDiscAnyOfAnyOf {
-  const factory _FruitInlineInlineDiscAnyOfAnyOf(
+abstract class _FruitInlineInlineDiscAnyOf extends FruitInlineInlineDiscAnyOf {
+  const factory _FruitInlineInlineDiscAnyOf(
           {@JsonKey(name: r'fruitType') required final String fruitType}) =
-      _$FruitInlineInlineDiscAnyOfAnyOfImpl;
-  const _FruitInlineInlineDiscAnyOfAnyOf._() : super._();
+      _$FruitInlineInlineDiscAnyOfImpl;
+  const _FruitInlineInlineDiscAnyOf._() : super._();
 
-  factory _FruitInlineInlineDiscAnyOfAnyOf.fromJson(Map<String, dynamic> json) =
-      _$FruitInlineInlineDiscAnyOfAnyOfImpl.fromJson;
+  factory _FruitInlineInlineDiscAnyOf.fromJson(Map<String, dynamic> json) =
+      _$FruitInlineInlineDiscAnyOfImpl.fromJson;
 
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of FruitInlineInlineDiscAnyOf
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
-  _$$FruitInlineInlineDiscAnyOfAnyOfImplCopyWith<
-          _$FruitInlineInlineDiscAnyOfAnyOfImpl>
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$FruitInlineInlineDiscAnyOfImplCopyWith<_$FruitInlineInlineDiscAnyOfImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -10294,6 +9326,9 @@ class _$FruitReqDiscCopyWithImpl<$Res, $Val extends FruitReqDisc>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -10317,6 +9352,8 @@ class __$$FruitReqDiscAsAppleReqDiscImplCopyWithImpl<$Res>
       $Res Function(_$FruitReqDiscAsAppleReqDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -10330,6 +9367,8 @@ class __$$FruitReqDiscAsAppleReqDiscImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AppleReqDiscCopyWith<$Res> get appleReqDiscValue {
@@ -10365,7 +9404,9 @@ class _$FruitReqDiscAsAppleReqDiscImpl extends FruitReqDiscAsAppleReqDisc {
   @override
   int get hashCode => Object.hash(runtimeType, appleReqDiscValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitReqDiscAsAppleReqDiscImplCopyWith<_$FruitReqDiscAsAppleReqDiscImpl>
@@ -10467,7 +9508,10 @@ abstract class FruitReqDiscAsAppleReqDisc extends FruitReqDisc {
   const FruitReqDiscAsAppleReqDisc._() : super._();
 
   AppleReqDisc get appleReqDiscValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitReqDiscAsAppleReqDiscImplCopyWith<_$FruitReqDiscAsAppleReqDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -10493,6 +9537,8 @@ class __$$FruitReqDiscAsBananaReqDiscImplCopyWithImpl<$Res>
       $Res Function(_$FruitReqDiscAsBananaReqDiscImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -10506,6 +9552,8 @@ class __$$FruitReqDiscAsBananaReqDiscImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BananaReqDiscCopyWith<$Res> get bananaReqDiscValue {
@@ -10541,7 +9589,9 @@ class _$FruitReqDiscAsBananaReqDiscImpl extends FruitReqDiscAsBananaReqDisc {
   @override
   int get hashCode => Object.hash(runtimeType, bananaReqDiscValue);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitReqDiscAsBananaReqDiscImplCopyWith<_$FruitReqDiscAsBananaReqDiscImpl>
@@ -10643,7 +9693,10 @@ abstract class FruitReqDiscAsBananaReqDisc extends FruitReqDisc {
   const FruitReqDiscAsBananaReqDisc._() : super._();
 
   BananaReqDisc get bananaReqDiscValue;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitReqDiscAsBananaReqDiscImplCopyWith<_$FruitReqDiscAsBananaReqDiscImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -10670,6 +9723,8 @@ class __$$FruitReqDiscUnknownImplCopyWithImpl<$Res>
       $Res Function(_$FruitReqDiscUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -10783,7 +9838,9 @@ class _$FruitReqDiscUnknownImpl extends FruitReqDiscUnknown {
       const DeepCollectionEquality().hash(_possibleTypes),
       const DeepCollectionEquality().hash(_deserializedModels));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitReqDiscUnknownImplCopyWith<_$FruitReqDiscUnknownImpl> get copyWith =>
@@ -10894,7 +9951,10 @@ abstract class FruitReqDiscUnknown extends FruitReqDisc {
   DeserializationErrorType get errorType;
   List<Type> get possibleTypes;
   List<FruitReqDisc> get deserializedModels;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitReqDisc
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitReqDiscUnknownImplCopyWith<_$FruitReqDiscUnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -10908,8 +9968,12 @@ mixin _$FruitType {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this FruitType to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FruitType
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FruitTypeCopyWith<FruitType> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -10932,6 +9996,8 @@ class _$FruitTypeCopyWithImpl<$Res, $Val extends FruitType>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FruitType
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -10965,6 +10031,8 @@ class __$$FruitTypeImplCopyWithImpl<$Res>
       _$FruitTypeImpl _value, $Res Function(_$FruitTypeImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FruitType
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -11006,11 +10074,13 @@ class _$FruitTypeImpl extends _FruitType {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FruitType
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FruitTypeImplCopyWith<_$FruitTypeImpl> get copyWith =>
@@ -11036,8 +10106,11 @@ abstract class _FruitType extends FruitType {
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of FruitType
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FruitTypeImplCopyWith<_$FruitTypeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -11051,8 +10124,12 @@ mixin _$Parent {
   @JsonKey(name: r'fruitType')
   String get fruitType => throw _privateConstructorUsedError;
 
+  /// Serializes this Parent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Parent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ParentCopyWith<Parent> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -11074,6 +10151,8 @@ class _$ParentCopyWithImpl<$Res, $Val extends Parent>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Parent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -11106,6 +10185,8 @@ class __$$ParentImplCopyWithImpl<$Res>
       _$ParentImpl _value, $Res Function(_$ParentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Parent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -11147,11 +10228,13 @@ class _$ParentImpl extends _Parent {
                 other.fruitType == fruitType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, fruitType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Parent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParentImplCopyWith<_$ParentImpl> get copyWith =>
@@ -11176,8 +10259,11 @@ abstract class _Parent extends Parent {
   @override
   @JsonKey(name: r'fruitType')
   String get fruitType;
+
+  /// Create a copy of Parent
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParentImplCopyWith<_$ParentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

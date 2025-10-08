@@ -35,13 +35,13 @@ class ComposedDiscTypeInconsistent with _$ComposedDiscTypeInconsistent {
   }) = ComposedDiscTypeInconsistentUnknown;
 
   factory ComposedDiscTypeInconsistent.fromJson(Map<String, dynamic> json) {
-    ComposedDiscTypeInconsistent? deserializedModel;
     // A discriminator property is not defined in the spec so
     // we try to parse the json against all the models and try to
     // return one of the valid model. Note: this approach tries
     // to return one valid model and if more than one model
     // is valid it then returns unknown type along with the json so
     // the consumer can decide which model it is.
+    ComposedDiscTypeInconsistent? deserializedModel;
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       DiscTypeIncorrect.fromJson,
       FruitType.fromJson,
@@ -80,7 +80,6 @@ class ComposedDiscTypeInconsistent with _$ComposedDiscTypeInconsistent {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
-
     return deserializedModel ??
         ComposedDiscTypeInconsistent.unknown(json: json);
   }

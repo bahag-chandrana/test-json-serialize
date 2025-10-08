@@ -1,0 +1,5 @@
+pubName: one_of_reuse_ref
+pubDescription: An
+pubLibrary: "OneOfReuseRefApiClient"
+additionalProperties:
+  serializationLibrary: freezed

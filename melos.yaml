@@ -15,6 +15,7 @@ scripts:
       melos run one_of_non_primitive &&
       melos run one_of_polymorphism_and_inheritance &&
       melos run one_of_primitive &&
+      melos run one_of_reuse_ref &&
       melos run ur_pet_store &&
       melos run ur_any_of_discriminator &&
       melos run ur_any_of_no_discriminator &&
@@ -95,6 +96,14 @@ scripts:
     packageFilters:
       scope:
         - "one_of_primitive"
+
+  one_of_reuse_ref:
+    run: melos run generate_api
+    env:
+      SPEC: one_of_reuse_ref
+    packageFilters:
+      scope:
+        - "one_of_reuse_ref"
 
   ur_pet_store:
     run: melos run ur_generate_api
@@ -190,3 +199,75 @@ scripts:
       melos exec -- dart run build_runner build -d &&
       melos exec -- dart fix --apply
       melos exec -- dart format .
+
+  one_of_discriminator_bv:
+    run: melos run generate_api_bv
+    env:
+      SPEC: one_of_discriminator
+    packageFilters:
+      scope:
+        - "one_of_discriminator_bv"
+
+  generate_api_bv:
+    run: |
+      melos exec -- java -jar ../../openapi-generator-cli.jar generate \
+      -i ../../specs/$SPEC.yaml \
+      -g dart-dio \
+      -c generator_config.yaml &&
+      melos exec -- rm -rf test &&
+      melos run build_runner_delete
+
+  content_delivery:
+    run: |
+      melos exec -- java -jar ../../openapi-generator-cli.jar generate \
+      -i spec.yaml \
+      -g dart-dio \
+      -c generator_config.yaml &&
+      melos exec -- rm -rf test &&
+      melos run build_runner_delete
+    packageFilters:
+      scope:
+        - "content_delivery"
+  content_delivery_bv:
+    run: |
+      melos exec -- java -jar ../../openapi-generator-cli.jar generate \
+      -i spec.yaml \
+      -g dart-dio \
+      -c generator_config.yaml &&
+      melos exec -- rm -rf test &&
+      melos run build_runner_delete
+    packageFilters:
+      scope:
+        - "content_delivery_bv"
+
+  any_of_reuse_ref_ts:
+    run: |
+      melos exec -- java -jar ../../openapi-generator-cli.jar generate \
+      -i spec.yaml \
+      -o csharp \
+      -g csharp
+    packageFilters:
+      scope:
+        - "any_of_reuse_ref_ts"
+  customer_master_data:
+    run: |
+      melos exec -- java -jar ../../openapi-generator-cli.jar generate \
+      -i spec.yaml \
+      -g dart-dio \
+      -c generator_config.yaml &&
+      melos exec -- rm -rf test &&
+      melos run build_runner_delete
+    packageFilters:
+      scope:
+        - "customer_master_data"
+  customer_master_data_bv:
+    run: |
+      melos exec -- java -jar ../../openapi-generator-cli.jar generate \
+      -i spec.yaml \
+      -g dart-dio \
+      -c generator_config.yaml &&
+      melos exec -- rm -rf test &&
+      melos run build_runner_delete
+    packageFilters:
+      scope:
+        - "customer_master_data_bv"

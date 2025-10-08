@@ -8,9 +8,7 @@ part of 'models.dart';
 /// FruitInlineInlineDisc
 ///
 /// Properties:
-/// * [seeds]
 /// * [fruitType]
-/// * [length]
 
 @freezed
 class FruitInlineInlineDisc with _$FruitInlineInlineDisc {
@@ -20,10 +18,6 @@ class FruitInlineInlineDisc with _$FruitInlineInlineDisc {
           {required FruitInlineInlineDiscAnyOf
               fruitInlineInlineDiscAnyOfValue}) =
       FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf;
-  const factory FruitInlineInlineDisc.asFruitInlineInlineDiscAnyOf1(
-          {required FruitInlineInlineDiscAnyOf1
-              fruitInlineInlineDiscAnyOf1Value}) =
-      FruitInlineInlineDiscAsFruitInlineInlineDiscAnyOf1;
   const factory FruitInlineInlineDisc.unknown({
     @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
@@ -31,7 +25,6 @@ class FruitInlineInlineDisc with _$FruitInlineInlineDisc {
     DeserializationErrorType errorType,
     @Default(<Type>[
       FruitInlineInlineDiscAnyOf,
-      FruitInlineInlineDiscAnyOf1,
     ])
     List<Type> possibleTypes,
     @Default(<FruitInlineInlineDisc>[])
@@ -39,16 +32,15 @@ class FruitInlineInlineDisc with _$FruitInlineInlineDisc {
   }) = FruitInlineInlineDiscUnknown;
 
   factory FruitInlineInlineDisc.fromJson(Map<String, dynamic> json) {
-    FruitInlineInlineDisc? deserializedModel;
     // A discriminator property is not defined in the spec so
     // we try to parse the json against all the models and try to
     // return one of the valid model. Note: this approach tries
     // to return one valid model and if more than one model
     // is valid it then returns unknown type along with the json so
     // the consumer can decide which model it is.
+    FruitInlineInlineDisc? deserializedModel;
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       FruitInlineInlineDiscAnyOf.fromJson,
-      FruitInlineInlineDiscAnyOf1.fromJson,
     ];
     final deserializedModels = <FruitInlineInlineDisc>[];
     for (final fromJsonMethod in fromJsonMethods) {
@@ -59,11 +51,6 @@ class FruitInlineInlineDisc with _$FruitInlineInlineDisc {
           deserializedModel =
               FruitInlineInlineDisc.asFruitInlineInlineDiscAnyOf(
             fruitInlineInlineDiscAnyOfValue: parsedModel,
-          );
-        } else if (parsedModel is FruitInlineInlineDiscAnyOf1) {
-          deserializedModel =
-              FruitInlineInlineDisc.asFruitInlineInlineDiscAnyOf1(
-            fruitInlineInlineDiscAnyOf1Value: parsedModel,
           );
         } else {
           deserializedModel = FruitInlineInlineDisc.unknown(json: json);
@@ -86,7 +73,6 @@ class FruitInlineInlineDisc with _$FruitInlineInlineDisc {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
-
     return deserializedModel ?? FruitInlineInlineDisc.unknown(json: json);
   }
 
@@ -94,8 +80,6 @@ class FruitInlineInlineDisc with _$FruitInlineInlineDisc {
     return when(
       asFruitInlineInlineDiscAnyOf: (asFruitInlineInlineDiscAnyOf) =>
           asFruitInlineInlineDiscAnyOf.toJson(),
-      asFruitInlineInlineDiscAnyOf1: (asFruitInlineInlineDiscAnyOf1) =>
-          asFruitInlineInlineDiscAnyOf1.toJson(),
       unknown: (message, json, errorType, possibleTypes, deserializedModels) =>
           <String, dynamic>{},
     );
