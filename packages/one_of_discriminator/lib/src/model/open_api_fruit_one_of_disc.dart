@@ -8,28 +8,22 @@ part of 'models.dart';
 /// OpenApiFruitOneOfDisc
 ///
 /// Properties:
-/// * [seeds]
 /// * [fruitType]
-/// * [length]
 
 @freezed
 class OpenApiFruitOneOfDisc with _$OpenApiFruitOneOfDisc {
   const OpenApiFruitOneOfDisc._();
 
-  const factory OpenApiFruitOneOfDisc.asOpenApiAppleOneOfDisc(
-          {required OpenApiAppleOneOfDisc openApiAppleOneOfDiscValue}) =
-      OpenApiFruitOneOfDiscAsOpenApiAppleOneOfDisc;
-  const factory OpenApiFruitOneOfDisc.asOpenApiBananaOneOfDisc(
-          {required OpenApiBananaOneOfDisc openApiBananaOneOfDiscValue}) =
-      OpenApiFruitOneOfDiscAsOpenApiBananaOneOfDisc;
+  const factory OpenApiFruitOneOfDisc.asOpenApiFruitType(
+          {required OpenApiFruitType openApiFruitTypeValue}) =
+      OpenApiFruitOneOfDiscAsOpenApiFruitType;
   const factory OpenApiFruitOneOfDisc.unknown({
     @Default('Json does not satisfy any available types') String message,
     required Map<String, dynamic> json,
     @Default(DeserializationErrorType.UnKnownType)
     DeserializationErrorType errorType,
     @Default(<Type>[
-      OpenApiAppleOneOfDisc,
-      OpenApiBananaOneOfDisc,
+      OpenApiFruitType,
     ])
     List<Type> possibleTypes,
     @Default(<OpenApiFruitOneOfDisc>[])
@@ -43,29 +37,59 @@ class OpenApiFruitOneOfDisc with _$OpenApiFruitOneOfDisc {
     // have the value of the name of the model. Model prefix &
     // suffix are ignored, as this is not known by the api provider
     switch (json['fruitType']) {
-      case 'AppleOneOfDisc':
-        deserializedModel = OpenApiFruitOneOfDisc.asOpenApiAppleOneOfDisc(
-          openApiAppleOneOfDiscValue: OpenApiAppleOneOfDisc.fromJson(json),
-        );
-        break;
-      case 'BananaOneOfDisc':
-        deserializedModel = OpenApiFruitOneOfDisc.asOpenApiBananaOneOfDisc(
-          openApiBananaOneOfDiscValue: OpenApiBananaOneOfDisc.fromJson(json),
+      case 'FruitType':
+        deserializedModel = OpenApiFruitOneOfDisc.asOpenApiFruitType(
+          openApiFruitTypeValue: OpenApiFruitType.fromJson(json),
         );
         break;
       default:
+
+        /// If deserializedModel is still null, then we try to parse
+        /// the json against all the models and try to return one of the valid model.
+        /// Note: this approach tries to return one valid model and if more than one model
+        /// is valid it then returns unknown type along with the json so
+        /// the consumer can decide which model it is.
+        final fromJsonMethods = <FromJsonMethodType<dynamic>>[
+          OpenApiFruitType.fromJson,
+        ];
+        final deserializedModels = <OpenApiFruitOneOfDisc>[];
+        for (final fromJsonMethod in fromJsonMethods) {
+          try {
+            final dynamic parsedModel = fromJsonMethod.call(json);
+            // Note following line won't be executed if already the above parsing fails.
+            if (parsedModel is OpenApiFruitType) {
+              deserializedModel = OpenApiFruitOneOfDisc.asOpenApiFruitType(
+                openApiFruitTypeValue: parsedModel,
+              );
+            } else {
+              deserializedModel = OpenApiFruitOneOfDisc.unknown(json: json);
+            }
+            deserializedModels.add(deserializedModel);
+          } catch (e) {
+            // We are suppressing the deserialization error when the json could not
+            // be parsed into one of the model. Because we return [OpenApiFruitOneOfDisc.unknown]
+            // if the deserialization fails.
+          }
+        }
+        // Return an unknown type when the incoming json parses into more than one models.
+        // Since we pass deserializedModels, clients can still use the deserialized model.
+        // EvenThough this is valid for AnyOf types, Dart doesn't have polymorphic types.
+        // So we still return this as an unknown type.
+        if (deserializedModels.length > 1) {
+          deserializedModel = OpenApiFruitOneOfDisc.unknown(
+            json: json,
+            deserializedModels: deserializedModels,
+            errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
+          );
+        }
         break;
     }
-
     return deserializedModel ?? OpenApiFruitOneOfDisc.unknown(json: json);
   }
 
   Map<String, dynamic> toJson() {
     return when(
-      asOpenApiAppleOneOfDisc: (asOpenApiAppleOneOfDisc) =>
-          asOpenApiAppleOneOfDisc.toJson(),
-      asOpenApiBananaOneOfDisc: (asOpenApiBananaOneOfDisc) =>
-          asOpenApiBananaOneOfDisc.toJson(),
+      asOpenApiFruitType: (asOpenApiFruitType) => asOpenApiFruitType.toJson(),
       unknown: (message, json, errorType, possibleTypes, deserializedModels) =>
           <String, dynamic>{},
     );

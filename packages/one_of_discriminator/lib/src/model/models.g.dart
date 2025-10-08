@@ -240,15 +240,15 @@ Map<String, dynamic> _$$OpenApiFruitInlineDiscOneOf1ImplToJson(
       'fruitType': instance.fruitType,
     };
 
-_$OpenApiFruitInlineInlineDiscOneOfOneOfImpl
-    _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplFromJson(
+_$OpenApiFruitInlineInlineDiscOneOfImpl
+    _$$OpenApiFruitInlineInlineDiscOneOfImplFromJson(
             Map<String, dynamic> json) =>
-        _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl(
+        _$OpenApiFruitInlineInlineDiscOneOfImpl(
           fruitType: json['fruitType'] as String,
         );
 
-Map<String, dynamic> _$$OpenApiFruitInlineInlineDiscOneOfOneOfImplToJson(
-        _$OpenApiFruitInlineInlineDiscOneOfOneOfImpl instance) =>
+Map<String, dynamic> _$$OpenApiFruitInlineInlineDiscOneOfImplToJson(
+        _$OpenApiFruitInlineInlineDiscOneOfImpl instance) =>
     <String, dynamic>{
       'fruitType': instance.fruitType,
     };
