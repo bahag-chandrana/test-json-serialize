@@ -16,7 +16,6 @@ part of 'models.dart';
 class Fruit with _$Fruit {
   const Fruit._();
 
-  // Path 6
   const factory Fruit.asApple({required Apple appleValue}) = FruitAsApple;
   const factory Fruit.asBanana({required Banana bananaValue}) = FruitAsBanana;
   const factory Fruit.unknown({
@@ -50,7 +49,6 @@ class Fruit with _$Fruit {
     return Fruit.unknown(json: json);
   }
 
-  // path 1
   Map<String, dynamic> toJson() {
     return when(
       asApple: (asApple) => asApple.toJson(),
