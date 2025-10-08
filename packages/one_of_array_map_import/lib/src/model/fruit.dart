@@ -33,13 +33,13 @@ class Fruit with _$Fruit {
   }) = FruitUnknown;
 
   factory Fruit.fromJson(Map<String, dynamic> json) {
-    Fruit? deserializedModel;
     // A discriminator property is not defined in the spec so
     // we try to parse the json against all the models and try to
     // return one of the valid model. Note: this approach tries
     // to return one valid model and if more than one model
     // is valid it then returns unknown type along with the json so
     // the consumer can decide which model it is.
+    Fruit? deserializedModel;
     final fromJsonMethods = <FromJsonMethodType<dynamic>>[
       <Grape>[].fromJson,
       <String, Apple>{}.fromJson,
@@ -78,7 +78,6 @@ class Fruit with _$Fruit {
         errorType: DeserializationErrorType.MoreThanOneTypeSatisfied,
       );
     }
-
     return deserializedModel ?? Fruit.unknown(json: json);
   }
 
