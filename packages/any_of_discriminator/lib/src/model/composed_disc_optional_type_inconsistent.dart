@@ -11,7 +11,7 @@ part of 'models.dart';
 /// * [fruitType]
 
 @freezed
-class ComposedDiscOptionalTypeInconsistent
+sealed class ComposedDiscOptionalTypeInconsistent
     with _$ComposedDiscOptionalTypeInconsistent {
   const ComposedDiscOptionalTypeInconsistent._();
 

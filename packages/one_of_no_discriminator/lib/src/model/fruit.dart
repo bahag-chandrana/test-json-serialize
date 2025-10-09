@@ -13,7 +13,7 @@ part of 'models.dart';
 /// * [count]
 
 @freezed
-class Fruit with _$Fruit {
+sealed class Fruit with _$Fruit {
   const Fruit._();
 
   const factory Fruit.asApple({required Apple appleValue}) = FruitAsApple;

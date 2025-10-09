@@ -11,7 +11,7 @@ part of 'models.dart';
 /// * [color]
 
 @freezed
-class Fruit with _$Fruit {
+sealed class Fruit with _$Fruit {
   const Fruit._();
 
   const factory Fruit.asListGrape({required List<Grape> listGrapeValue}) =

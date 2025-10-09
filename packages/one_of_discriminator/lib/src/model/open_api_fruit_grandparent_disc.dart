@@ -13,7 +13,7 @@ part of 'models.dart';
 /// * [length]
 
 @freezed
-class OpenApiFruitGrandparentDisc with _$OpenApiFruitGrandparentDisc {
+sealed class OpenApiFruitGrandparentDisc with _$OpenApiFruitGrandparentDisc {
   const OpenApiFruitGrandparentDisc._();
 
   const factory OpenApiFruitGrandparentDisc.asOpenApiAppleGrandparentDisc(

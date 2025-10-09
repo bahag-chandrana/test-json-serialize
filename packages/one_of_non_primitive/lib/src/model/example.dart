@@ -8,7 +8,7 @@ part of 'models.dart';
 /// Example
 
 @freezed
-class Example with _$Example {
+sealed class Example with _$Example {
   const Example._();
 
   const factory Example.asDateTime({required DateTimeInUnion dateTimeValue}) =

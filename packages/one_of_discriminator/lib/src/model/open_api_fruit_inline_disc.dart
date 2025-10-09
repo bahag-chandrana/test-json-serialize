@@ -13,7 +13,7 @@ part of 'models.dart';
 /// * [length]
 
 @freezed
-class OpenApiFruitInlineDisc with _$OpenApiFruitInlineDisc {
+sealed class OpenApiFruitInlineDisc with _$OpenApiFruitInlineDisc {
   const OpenApiFruitInlineDisc._();
 
   const factory OpenApiFruitInlineDisc.asOpenApiFruitInlineDiscOneOf(

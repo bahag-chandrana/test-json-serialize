@@ -11,7 +11,8 @@ part of 'models.dart';
 /// * [fruitType]
 
 @freezed
-class ComposedDiscRequiredInconsistent with _$ComposedDiscRequiredInconsistent {
+sealed class ComposedDiscRequiredInconsistent
+    with _$ComposedDiscRequiredInconsistent {
   const ComposedDiscRequiredInconsistent._();
 
   const factory ComposedDiscRequiredInconsistent.asDiscOptionalTypeCorrect(

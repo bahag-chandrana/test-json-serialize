@@ -11,7 +11,7 @@ part of 'models.dart';
 /// * [name]
 
 @freezed
-class Example with _$Example {
+sealed class Example with _$Example {
   const Example._();
 
   const factory Example.asChild({required Child childValue}) = ExampleAsChild;

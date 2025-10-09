@@ -15,7 +15,7 @@ part of 'models.dart';
 /// * [atType] - When sub-classing, this defines the sub-class Extensible name
 
 @freezed
-class Entity with _$Entity {
+sealed class Entity with _$Entity {
   const Entity._();
 
   const factory Entity.asBar({required Bar barValue}) = EntityAsBar;

@@ -13,7 +13,7 @@ part of 'models.dart';
 /// * [length]
 
 @freezed
-class FruitGrandparentDisc with _$FruitGrandparentDisc {
+sealed class FruitGrandparentDisc with _$FruitGrandparentDisc {
   const FruitGrandparentDisc._();
 
   const factory FruitGrandparentDisc.asAppleGrandparentDisc(

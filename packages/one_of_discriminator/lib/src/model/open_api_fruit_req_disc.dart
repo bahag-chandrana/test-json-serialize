@@ -13,7 +13,7 @@ part of 'models.dart';
 /// * [length]
 
 @freezed
-class OpenApiFruitReqDisc with _$OpenApiFruitReqDisc {
+sealed class OpenApiFruitReqDisc with _$OpenApiFruitReqDisc {
   const OpenApiFruitReqDisc._();
 
   const factory OpenApiFruitReqDisc.asOpenApiAppleReqDisc(

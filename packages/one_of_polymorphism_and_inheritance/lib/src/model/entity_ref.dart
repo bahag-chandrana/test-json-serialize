@@ -17,7 +17,7 @@ part of 'models.dart';
 /// * [atType] - When sub-classing, this defines the sub-class Extensible name
 
 @freezed
-class EntityRef with _$EntityRef {
+sealed class EntityRef with _$EntityRef {
   const EntityRef._();
 
   const factory EntityRef.asBarRef({required BarRef barRefValue}) =

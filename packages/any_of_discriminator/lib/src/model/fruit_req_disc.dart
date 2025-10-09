@@ -13,7 +13,7 @@ part of 'models.dart';
 /// * [length]
 
 @freezed
-class FruitReqDisc with _$FruitReqDisc {
+sealed class FruitReqDisc with _$FruitReqDisc {
   const FruitReqDisc._();
 
   const factory FruitReqDisc.asAppleReqDisc(

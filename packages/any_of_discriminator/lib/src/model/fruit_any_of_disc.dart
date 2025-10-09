@@ -11,7 +11,7 @@ part of 'models.dart';
 /// * [fruitType]
 
 @freezed
-class FruitAnyOfDisc with _$FruitAnyOfDisc {
+sealed class FruitAnyOfDisc with _$FruitAnyOfDisc {
   const FruitAnyOfDisc._();
 
   const factory FruitAnyOfDisc.asFruitType(

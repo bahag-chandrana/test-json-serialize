@@ -11,7 +11,7 @@ part of 'models.dart';
 /// * [fruitType]
 
 @freezed
-class OpenApiFruitOneOfDisc with _$OpenApiFruitOneOfDisc {
+sealed class OpenApiFruitOneOfDisc with _$OpenApiFruitOneOfDisc {
   const OpenApiFruitOneOfDisc._();
 
   const factory OpenApiFruitOneOfDisc.asOpenApiFruitType(

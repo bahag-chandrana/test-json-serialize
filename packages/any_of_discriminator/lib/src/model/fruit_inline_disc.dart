@@ -13,7 +13,7 @@ part of 'models.dart';
 /// * [length]
 
 @freezed
-class FruitInlineDisc with _$FruitInlineDisc {
+sealed class FruitInlineDisc with _$FruitInlineDisc {
   const FruitInlineDisc._();
 
   const factory FruitInlineDisc.asFruitInlineDiscAnyOf(

@@ -11,7 +11,7 @@ part of 'models.dart';
 /// * [fruitType]
 
 @freezed
-class OpenApiComposedDiscTypeInconsistent
+sealed class OpenApiComposedDiscTypeInconsistent
     with _$OpenApiComposedDiscTypeInconsistent {
   const OpenApiComposedDiscTypeInconsistent._();
 

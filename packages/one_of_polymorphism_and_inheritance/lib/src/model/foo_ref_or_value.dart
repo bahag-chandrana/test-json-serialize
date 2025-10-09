@@ -20,7 +20,7 @@ part of 'models.dart';
 /// * [atReferredType] - The actual type of the target instance when needed for disambiguation.
 
 @freezed
-class FooRefOrValue with _$FooRefOrValue {
+sealed class FooRefOrValue with _$FooRefOrValue {
   const FooRefOrValue._();
 
   const factory FooRefOrValue.asFoo({required Foo fooValue}) =
